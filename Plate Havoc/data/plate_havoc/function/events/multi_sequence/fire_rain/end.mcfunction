@@ -1,0 +1,1 @@
+tellraw @a [{text:"The Fire Rain has stopped!"}]

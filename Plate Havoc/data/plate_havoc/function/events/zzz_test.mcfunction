@@ -1,0 +1,2 @@
+##Obama
+#summon skeleton ~ ~1 ~ {PersistenceRequired:true,Silent:true,equipment:{feet:{count:1,id:leather_boots,components:{dyed_color:1908001}},legs:{count:1,id:leather_leggings,components:{dyed_color:1908001}},chest:{count:1,id:leather_chestplate,components:{dyed_color:1908001}},head:{count:1,id:player_head,components:{profile:{name:CatLoveCraft}}}},CustomName:"Barack Obama"}

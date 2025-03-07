@@ -1,0 +1,1 @@
+$execute store result storage plate_havoc selected int 1 run random value 0..$(max)

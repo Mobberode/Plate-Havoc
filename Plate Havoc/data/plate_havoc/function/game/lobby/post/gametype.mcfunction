@@ -1,0 +1,2 @@
+execute if score #Value plate_havoc.players matches 1 run return run function plate_havoc:game/lobby/post/gametype/endurance
+execute if score #Value plate_havoc.players matches 2.. run function plate_havoc:game/lobby/post/gametype/mixed

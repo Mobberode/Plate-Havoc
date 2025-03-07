@@ -1,0 +1,2 @@
+tellraw @a [{text:"A Player without a shield will get one!"}]
+execute as @r[tag=plate_havoc.survivor] unless items entity @s hotbar.* shield unless items entity @s weapon.offhand shield unless items entity @s inventory.* shield unless items entity @s player.cursor shield unless items entity @s player.crafting.* shield run return run give @s shield 1
