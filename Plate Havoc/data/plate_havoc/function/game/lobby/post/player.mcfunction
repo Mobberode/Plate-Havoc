@@ -1,6 +1,7 @@
 gamemode adventure
 team join plate_havoc.player
 tag @s add plate_havoc.survivor
+tag @s add plate_havoc.player
 bossbar set plate_havoc.ui players @a
 execute in plate_havoc:arena positioned 0 64 0 run function plate_havoc:game/lobby/post/dimension
 
