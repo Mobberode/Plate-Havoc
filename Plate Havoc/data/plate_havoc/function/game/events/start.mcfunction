@@ -1,9 +1,8 @@
-execute store result score #Value plate_havoc.timer run random value 25..125
+execute store result score #Value plate_havoc.timer run random value 30..135
 
-execute if score #Value plate_havoc.intensity matches 600..1999 run scoreboard players operation #Value plate_havoc.timer /= #2 plate_havoc.num
-execute if score #Value plate_havoc.intensity matches 2000..4999 run scoreboard players operation #Value plate_havoc.timer /= #3 plate_havoc.num
-execute if score #Value plate_havoc.intensity matches 5000.. run scoreboard players operation #Value plate_havoc.timer /= #4 plate_havoc.num
-
+execute if score #Duration plate_havoc.timer matches 180..299 run scoreboard players operation #Value plate_havoc.timer /= #2 plate_havoc.num
+execute if score #Duration plate_havoc.timer matches 300..599 run scoreboard players operation #Value plate_havoc.timer /= #3 plate_havoc.num
+execute if score #Duration plate_havoc.timer matches 600.. run scoreboard players operation #Value plate_havoc.timer /= #4 plate_havoc.num
 
 execute store result bossbar plate_havoc.ui max run scoreboard players get #Value plate_havoc.timer
 
