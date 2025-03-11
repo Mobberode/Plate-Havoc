@@ -13,6 +13,14 @@ scoreboard objectives add plate_havoc.rng dummy
 scoreboard objectives add plate_havoc.died deathCount
 scoreboard objectives add plate_havoc.relogged custom:leave_game
 
+scoreboard objectives add plate_havoc.plr.stats.playtime dummy
+scoreboard objectives add plate_havoc.plr.stats.taken_damage custom:damage_taken
+
+scoreboard objectives add plate_havoc.t.stats trigger
+scoreboard objectives add plate_havoc.t.spectator trigger
+
+function plate_havoc:game/triggers/loop
+
 scoreboard players set #2 plate_havoc.num 2
 scoreboard players set #3 plate_havoc.num 3
 scoreboard players set #4 plate_havoc.num 4
