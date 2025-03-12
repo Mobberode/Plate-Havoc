@@ -1,4 +1,4 @@
-tellraw @a [{text:"Iron Golem at your service."}]
+tellraw @a [{text:"Iron Golem at your service.",color:gray}]
 
 execute as @n[type=marker,tag=plate_havoc.event_place] at @s run function plate_havoc:placements/event_standard
 

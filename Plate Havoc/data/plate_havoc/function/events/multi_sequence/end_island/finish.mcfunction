@@ -1,4 +1,4 @@
-tellraw @a [{text:"A new end island has appeared!"}]
+tellraw @a [{text:"A new end island has appeared!",color:gray}]
 execute at @s run place feature end_island
 kill @s
 

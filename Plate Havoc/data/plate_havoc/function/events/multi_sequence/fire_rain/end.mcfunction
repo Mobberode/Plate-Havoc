@@ -1,1 +1,1 @@
-tellraw @a [{text:"The Fire Rain has stopped!"}]
+tellraw @a [{text:"The Fire Rain has stopped!",color:gray}]

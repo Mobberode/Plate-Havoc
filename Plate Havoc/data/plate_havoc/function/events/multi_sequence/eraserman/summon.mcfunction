@@ -1,0 +1,2 @@
+summon enderman ~ ~-1 ~ {Tags:["plate_havoc.eraserman.init"],NoAI:true,NoGravity:true,Silent:true}
+execute as @e[tag=plate_havoc.eraserman.init] run function plate_havoc:events/multi_sequence/eraserman/set
