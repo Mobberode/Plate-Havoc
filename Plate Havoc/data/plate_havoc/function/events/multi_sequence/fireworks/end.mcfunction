@@ -1,0 +1,1 @@
+tellraw @a {text:"Fireworks has stopped!",color:gray}

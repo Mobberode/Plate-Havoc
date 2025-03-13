@@ -1,0 +1,2 @@
+execute in plate_havoc:arena run summon firework_rocket 0 -64 0 {LifeTime:500,FireworksItem:{id:firework_rocket,count:1,components:{fireworks:{explosions:[{shape:"small_ball",colors:[I;1005000000],fade_colors:[I;0]}]}}},ShotAtAngle:true,Tags:["plate_havoc.firework.init"]}
+execute at @r[tag=plate_havoc.survivor,sort=random] rotated ~ 0 as @e[tag=plate_havoc.firework.init] run function plate_havoc:events/multi_sequence/fireworks/set
