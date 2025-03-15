@@ -6,6 +6,6 @@ execute if score #Value plate_havoc.timer matches ..0 run return run function pl
 
 execute store result bossbar plate_havoc.ui value run scoreboard players remove #Value plate_havoc.timer 1
 
-bossbar set plate_havoc.ui name [{score:{name:"#Value",objective:plate_havoc.timer}}]
+bossbar set plate_havoc.ui name [{storage:plate_havoc.ui,nbt:intermission,interpret:true}]
 
 schedule function plate_havoc:game/lobby/intermission 1s

@@ -1,2 +1,3 @@
 fill ~-100 ~-128 ~-100 ~100 ~255 ~100 air replace
-fill ~-5 ~-1 ~-5 ~5 ~-1 ~5 stone replace
+#20x1 plate
+fill ~-9 ~-1 ~-9 ~9 ~-1 ~9 stone replace

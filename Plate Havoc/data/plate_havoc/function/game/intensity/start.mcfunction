@@ -1,2 +1,2 @@
-execute store result score #Add plate_havoc.intensity run random value 3..31
+execute store result score #Add plate_havoc.intensity run random value 1..13
 execute store result storage plate_havoc intensity double 0.01 run scoreboard players operation #Value plate_havoc.intensity += #Add plate_havoc.intensity
