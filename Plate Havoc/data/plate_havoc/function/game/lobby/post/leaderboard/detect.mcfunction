@@ -1,0 +1,2 @@
+execute if data storage plate_havoc {leaderboard_status:true} run return run tellraw @a {text:"Post-Game Results will be saved to the Leaderboard!",color:aqua}
+tellraw @a {text:"Post-Game Results wont be saved to the Leaderboard!",color:red}

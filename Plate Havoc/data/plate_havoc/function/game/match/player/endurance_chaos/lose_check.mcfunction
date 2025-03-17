@@ -1,0 +1,1 @@
+execute unless entity @a[tag=plate_havoc.survivor] run function plate_havoc:game/match/player/endurance/lose
