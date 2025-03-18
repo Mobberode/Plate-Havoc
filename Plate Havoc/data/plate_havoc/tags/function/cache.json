@@ -1,0 +1,9 @@
+{
+    "values": [
+        "plate_havoc:cache/game/signs/default",
+        "plate_havoc:cache/game/events/default",
+        "plate_havoc:cache/game/data/default",
+        "plate_havoc:cache/game/gametypes/default",
+        "plate_havoc:cache/ui/default"
+    ]
+}

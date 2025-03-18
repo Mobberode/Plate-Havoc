@@ -1,1 +1,0 @@
-$execute store result score #Value plate_havoc.timer run data get storage plate_havoc intensity_timer $(base_speed)

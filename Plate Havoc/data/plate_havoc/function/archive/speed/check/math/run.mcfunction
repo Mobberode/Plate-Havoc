@@ -1,2 +1,0 @@
-execute if data storage plate_havoc modifier{operation:custom} run return run function plate_havoc:game/events/speed/check/math/custom with storage plate_havoc
-scoreboard players operation #BaseSpeed plate_havoc.intensity += #Speed plate_havoc.intensity

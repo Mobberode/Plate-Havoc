@@ -1,4 +1,4 @@
-data modify storage plate_havoc.ui intermission set value {score:{name:"#Value",objective:plate_havoc.timer}}
+data modify storage plate_havoc.ui intermission set value [{text:"Intermission | "},{score:{name:"#Value",objective:plate_havoc.timer}}]
 data modify storage plate_havoc.ui pre_init set value {text:"Waiting for players to join."}
 
 #Fallback (based on endurance and sotf)

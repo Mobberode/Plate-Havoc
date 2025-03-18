@@ -1,1 +1,0 @@
-execute if data storage plate_havoc modifier run function plate_havoc:game/events/speed/check/apply with storage plate_havoc
