@@ -6,5 +6,4 @@ data modify storage plate_havoc.ui element_players set value [{text:" Players: "
 data modify storage plate_havoc.ui element_extra set value []
 
 scoreboard players set #BaseEventTimePercentage plate_havoc.num 300
-
-function plate_havoc:game/lobby/post/arena
+scoreboard players set #BaseIntensityPercentage plate_havoc.num 75

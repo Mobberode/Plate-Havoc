@@ -1,6 +1,6 @@
 say loaded
 
-team add plate_havoc.player {text:Plater}
+team add plate_havoc.player {text:Player}
 team modify plate_havoc.player collisionRule never
 team modify plate_havoc.player friendlyFire false
 
