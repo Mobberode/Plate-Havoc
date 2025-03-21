@@ -43,4 +43,5 @@ data modify storage plate_havoc events set value [\
 {id:soul,intensity:2.6,function:"plate_havoc:events/multi_sequence/soulsand/start"},\
 {id:blaze,intensity:7,function:"plate_havoc:events/blaze"},\
 {id:bucket,intensity:1.8,function:"plate_havoc:events/bucket"},\
+{id:herobrine,intensity:5,function:"plate_havoc:events/multi_sequence/herobrine/start"},\
 ]

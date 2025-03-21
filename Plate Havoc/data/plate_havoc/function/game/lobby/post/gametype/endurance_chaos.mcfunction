@@ -1,4 +1,4 @@
-tellraw @a [{text:"Endurance Chaos",color:gold},{text:"\nSurvive as long as possible with or without others... Without intensity!",color:"gray"}]
+tellraw @a [{text:"Endurance Chaos",color:gold},{text:"\nStruggle to survive the harsh pacing with or without others!",color:"gray"}]
 
 data modify storage plate_havoc.ui element_intensity set value [{text:"Intensity: "},{storage:plate_havoc,nbt:intensity,color:red}]
 data modify storage plate_havoc.ui element_timer set value [{text:" Time: "},{score:{name:"#Duration",objective:plate_havoc.timer},color:red}]

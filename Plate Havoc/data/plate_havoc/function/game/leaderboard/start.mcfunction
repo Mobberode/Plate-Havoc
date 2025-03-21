@@ -19,5 +19,8 @@ execute store result storage plate_havoc entries_processed int 1 run scoreboard 
 #Run with macro
 function plate_havoc:game/leaderboard/sort with storage plate_havoc
 
+##Remove loop
+function plate_havoc:game/leaderboard/detect_overflow
+
 ##Tellraw
 tellraw @a [{text:"Server Leaderboard:\n"},{storage:plate_havoc,nbt:leaderboard,interpret:true},{text:"Sorted by Most Intensity",color:gray}]

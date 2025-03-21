@@ -1,0 +1,1 @@
+execute at @s unless predicate plate_havoc:in_arena in plate_havoc:arena run tp 0 64 0

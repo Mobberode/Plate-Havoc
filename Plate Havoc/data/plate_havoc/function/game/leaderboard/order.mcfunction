@@ -9,4 +9,4 @@ execute if score #LB plate_havoc.intensity > #LBC plate_havoc.intensity run retu
 
 #Else compare fails
 execute store result storage plate_havoc entries_processed int 1 run scoreboard players add #LBEntries plate_havoc.num 1
-execute unless score #LBEntries plate_havoc.num matches 3.. run function plate_havoc:game/leaderboard/sort with storage plate_havoc
+execute if score #LBEntries plate_havoc.num < #LBLimit plate_havoc.num run function plate_havoc:game/leaderboard/sort with storage plate_havoc

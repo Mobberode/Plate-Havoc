@@ -1,4 +1,3 @@
-bossbar set plate_havoc.ui players @a
 bossbar set plate_havoc.ui visible false
 bossbar set plate_havoc.ui visible true
 

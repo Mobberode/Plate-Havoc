@@ -3,7 +3,6 @@ bossbar set plate_havoc.ui name [{text:"Intensity: "},{storage:plate_havoc,nbt:i
 bossbar set plate_havoc.ui color red
 bossbar set plate_havoc.ui style progress
 bossbar set plate_havoc.ui visible true
-bossbar set plate_havoc.ui players @a
 
 execute store result bossbar plate_havoc.ui max run scoreboard players set #Value plate_havoc.timer 15
 
