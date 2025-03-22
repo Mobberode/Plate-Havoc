@@ -1,4 +1,3 @@
-clear @a
 function #plate_havoc:cache
 
 data modify storage plate_havoc gametype_list set value []
