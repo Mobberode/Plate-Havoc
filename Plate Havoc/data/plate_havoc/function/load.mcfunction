@@ -7,9 +7,12 @@ team modify plate_havoc.player friendlyFire false
 scoreboard objectives add plate_havoc.gamestatus dummy
 scoreboard objectives add plate_havoc.num dummy
 scoreboard objectives add plate_havoc.players dummy
+scoreboard objectives add plate_havoc.spawnpoint_energy dummy
 scoreboard objectives add plate_havoc.timer dummy
 scoreboard objectives add plate_havoc.intensity dummy
 scoreboard objectives add plate_havoc.rng dummy
+
+
 scoreboard objectives add plate_havoc.died deathCount
 scoreboard objectives add plate_havoc.relogged custom:leave_game
 

@@ -8,3 +8,4 @@ scoreboard players set @s plate_havoc.died 0
 scoreboard players set @s plate_havoc.relogged 0
 effect give @s instant_health 5 5
 effect give @s saturation 5 5
+effect give @s resistance 5 5
