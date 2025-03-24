@@ -1,0 +1,1 @@
+attribute @s max_health modifier add plate_havoc:juggernaut 40 add_value

@@ -1,0 +1,2 @@
+execute if entity @p[tag=plate_havoc.survivor] unless entity @p[tag=plate_havoc.juggernaut,tag=plate_havoc.survivor] run return run function plate_havoc:game/match/player/juggernaut/every_win
+execute unless entity @p[tag=plate_havoc.survivor,tag=!plate_havoc.juggernaut] if entity @p[tag=plate_havoc.juggernaut] run return run function plate_havoc:game/match/player/juggernaut/jug_win

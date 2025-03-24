@@ -12,6 +12,5 @@ scoreboard players set #BaseIntensityPercentage plate_havoc.num 125
 function plate_havoc:game/lobby/post/gametype/internal/teams/run
 
 scoreboard players set #BaseCapValue plate_havoc.spawnpoint_energy 1
-scoreboard players set #BaseCapPercentage plate_havoc.spawnpoint_energy 100
 scoreboard players set #BaseGainValue plate_havoc.spawnpoint_energy 0
 scoreboard players set #BaseGainPercentage plate_havoc.spawnpoint_energy 0

@@ -39,9 +39,12 @@ data modify storage plate_havoc events set value [\
 {id:anvil,intensity:2.1,function:"plate_havoc:events/anvil"},\
 {id:blackhole,intensity:5,function:"plate_havoc:events/multi_sequence/black_hole/start"},\
 {id:breeze,intensity:6,function:"plate_havoc:events/breeze"},\
-{id:wall,intensity:1.5,function:"plate_havoc:events/wall"},\
+{id:wall,intensity:0.85,function:"plate_havoc:events/wall"},\
 {id:soul,intensity:2.6,function:"plate_havoc:events/multi_sequence/soulsand/start"},\
 {id:blaze,intensity:7,function:"plate_havoc:events/blaze"},\
 {id:bucket,intensity:1.8,function:"plate_havoc:events/bucket"},\
 {id:herobrine,intensity:5,function:"plate_havoc:events/multi_sequence/herobrine/start"},\
+{id:frail_stairs,intensity:0.7,function:"plate_havoc:events/multi_sequence/frail_stairs/start"},\
+{id:scaffolding,intensity:0.7,function:"plate_havoc:events/scaffolding"},\
+{id:slime,intensity:1,function:"plate_havoc:events/slime"},\
 ]
