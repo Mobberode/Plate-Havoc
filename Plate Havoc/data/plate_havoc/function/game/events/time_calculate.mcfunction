@@ -1,4 +1,5 @@
 scoreboard players operation #Value plate_havoc.timer *= #BaseEventTimePercentage plate_havoc.num
+
 scoreboard players operation #Value plate_havoc.timer /= #100 plate_havoc.num
 
 #Old

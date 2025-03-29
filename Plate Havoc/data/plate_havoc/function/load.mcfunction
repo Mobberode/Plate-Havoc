@@ -12,7 +12,6 @@ scoreboard objectives add plate_havoc.timer dummy
 scoreboard objectives add plate_havoc.intensity dummy
 scoreboard objectives add plate_havoc.rng dummy
 
-
 scoreboard objectives add plate_havoc.died deathCount
 scoreboard objectives add plate_havoc.relogged custom:leave_game
 
