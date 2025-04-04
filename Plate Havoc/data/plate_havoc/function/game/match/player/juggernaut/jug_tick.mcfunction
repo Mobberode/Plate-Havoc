@@ -1,0 +1,2 @@
+data modify storage plate_havoc.custom jug_health set from entity @s Health
+execute unless entity @p[tag=plate_havoc.survivor,tag=!plate_havoc.juggernaut] run function plate_havoc:game/match/player/juggernaut/jug_win

@@ -1,4 +1,5 @@
 clear @a
+effect clear @a
 function plate_havoc:game/lobby/post/leaderboard/detect
 
 execute in plate_havoc:arena positioned 0.0 64 0.0 run function plate_havoc:game/lobby/arena/setup
