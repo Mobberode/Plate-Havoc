@@ -2,7 +2,6 @@ tellraw @a [{text:"Survival of the Fittest",color:gold},{text:"\nSurvive to be t
 
 data modify storage plate_havoc.ui element_spawnpoint_status set value [{text:"You cannot respawn",color:red}]
 
-
 scoreboard players set #BaseCapValue plate_havoc.spawnpoint_energy 1
 scoreboard players set #BaseGainValue plate_havoc.spawnpoint_energy 0
 scoreboard players set #BaseGainPercentage plate_havoc.spawnpoint_energy 0

@@ -1,0 +1,1 @@
+execute as @a[tag=!plate_havoc.spectator] run function plate_havoc:game/lobby/post/gametype/internal/lava_rush/give

@@ -4,6 +4,8 @@
         "plate_havoc:cache/game/events/default",
         "plate_havoc:cache/game/data/default",
         "plate_havoc:cache/game/gametypes/default",
-        "plate_havoc:cache/ui/default"
+        "plate_havoc:cache/ui/default",
+        "plate_havoc:cache/game/teams/default",
+        "plate_havoc:cache/game/gamerules/default"
     ]
 }

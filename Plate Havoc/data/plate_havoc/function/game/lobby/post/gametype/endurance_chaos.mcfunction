@@ -9,3 +9,5 @@ scoreboard players set #BaseEventTimePercentage plate_havoc.num 50
 scoreboard players set #BaseIntensityPercentage plate_havoc.num 150
 
 scoreboard players set #BaseGainPercentage plate_havoc.spawnpoint_energy 33
+
+scoreboard players set #BaseWorldBorderWidth plate_havoc.num 850

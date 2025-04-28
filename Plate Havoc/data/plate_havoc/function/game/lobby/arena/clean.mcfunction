@@ -1,1 +1,1 @@
-execute in plate_havoc:arena positioned 0.0 64 0.0 run function plate_havoc:game/lobby/arena/fill
+fill ~-100 ~-128 ~-100 ~100 ~255 ~100 air replace

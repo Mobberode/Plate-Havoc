@@ -1,0 +1,12 @@
+gamerule maxCommandChainLength 2147184930
+gamerule maxCommandForkCount 2147184930
+gamerule commandModificationBlockLimit 2147184930
+gamerule doTileDrops false
+gamerule doMobLoot false
+gamerule randomTickSpeed 3
+gamerule doDaylightCycle false
+gamerule doWeatherCycle false
+gamerule projectilesCanBreakBlocks true
+gamerule doImmediateRespawn true
+defaultgamemode adventure
+difficulty normal

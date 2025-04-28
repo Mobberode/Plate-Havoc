@@ -1,9 +1,5 @@
 say loaded
 
-team add plate_havoc.player {text:Player}
-team modify plate_havoc.player collisionRule never
-team modify plate_havoc.player friendlyFire false
-
 scoreboard objectives add plate_havoc.gamestatus dummy
 scoreboard objectives add plate_havoc.num dummy
 scoreboard objectives add plate_havoc.players dummy
@@ -32,16 +28,6 @@ scoreboard players set #2 plate_havoc.num 2
 scoreboard players set #3 plate_havoc.num 3
 scoreboard players set #4 plate_havoc.num 4
 execute unless score #LBLimit plate_havoc.num matches 0.. run scoreboard players set #LBLimit plate_havoc.num 3
-
-gamerule maxCommandChainLength 2147184930
-gamerule maxCommandForkCount 2147184930
-gamerule commandModificationBlockLimit 2147184930
-gamerule doTileDrops
-gamerule doMobLoot false
-gamerule projectilesCanBreakBlocks true
-gamerule doImmediateRespawn true
-defaultgamemode adventure
-difficulty normal
 
 function #plate_havoc:cache
 

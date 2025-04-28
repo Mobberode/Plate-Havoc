@@ -1,12 +1,11 @@
 {
     "pack": {
-        "pack_format": 71,
+        "pack_format": 74,
         "description": "Plate Havoc!"
     },
     "filter": {
         "block": [
-        {"namespace":"minecraft","path":"advancement"},
-        {"namespace":"minecraft","path":"recipe"}
+        {"namespace":"minecraft","path":"advancement"}
     ]
     }
 }
