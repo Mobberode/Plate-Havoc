@@ -21,6 +21,8 @@ gamerule randomTickSpeed 115
 gamerule doDaylightCycle true
 gamerule doWeatherCycle true
 
+team modify plate_havoc.player friendlyFire true
+
 time set noon
 
 #

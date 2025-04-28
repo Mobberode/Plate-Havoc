@@ -7,3 +7,5 @@ tag @a remove plate_havoc.vip
 tag @r[tag=plate_havoc.survivor,sort=random] add plate_havoc.vip
 
 scoreboard players set #BaseGainValue plate_havoc.spawnpoint_energy 50
+
+data modify storage plate_havoc game_end_condition_function set value "plate_havoc:game/match/player/vip/check"

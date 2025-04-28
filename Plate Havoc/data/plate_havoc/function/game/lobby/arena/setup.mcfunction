@@ -1,5 +1,5 @@
 gamemode spectator @a
-tp @a @n[type=marker,tag=plate_havoc.plate_spawnpoint]
+tp @a ~ ~ ~
 
 forceload add ~-5 ~-5 ~5 ~5
 

@@ -10,6 +10,8 @@ execute store result bossbar plate_havoc.ui value run scoreboard players remove 
 
 #
 
+function plate_havoc:game/match/tick with storage plate_havoc
+
 execute if score #Value plate_havoc.timer matches ..0 run function plate_havoc:game/match/macro with storage plate_havoc
 
 execute if score #Value plate_havoc.gamestatus matches 1 run schedule function plate_havoc:game/match/loop 1t

@@ -13,10 +13,11 @@ scoreboard players set #BaseGainPercentage plate_havoc.spawnpoint_energy 100
 
 #1000 = 100.0
 scoreboard players set #BaseWorldBorderWidth plate_havoc.num 1000
-#-1 = -0.1
-scoreboard players set #BaseWorldBorderValue plate_havoc.num -1
 
 data modify storage plate_havoc default_gamemode set value "adventure"
 
+data modify storage plate_havoc tick_function set value ""
 data modify storage plate_havoc set_plate_function set value "plate_havoc:game/lobby/arena/fill"
 data modify storage plate_havoc on_event_function set value "plate_havoc:game/match/action"
+
+data modify storage plate_havoc game_end_condition_function set value "plate_havoc:game/match/player/endurance/lose_check"
