@@ -10,5 +10,6 @@ data modify storage plate_havoc gametypes set value [\
 {id:bleed,function:"plate_havoc:game/lobby/post/gametype/haemorrhage",leaderboard_status:false,players:[{single:true},{multi:true}],console_only:true},\
 {id:vip,function:"plate_havoc:game/lobby/post/gametype/vip",leaderboard_status:false,players:[{multi:true}],console_only:true},\
 {id:lava_rush,function:"plate_havoc:game/lobby/post/gametype/lava_rush",leaderboard_status:false,players:[{single:true},{multi:true}],console_only:true},\
-{id:border_says,function:"plate_havoc:game/lobby/post/gametype/border_says",leaderboard_status:false,players:[{single:true},{multi:true}],console_only:true}\
+{id:border_says,function:"plate_havoc:game/lobby/post/gametype/border_says",leaderboard_status:false,players:[{single:true},{multi:true}],console_only:true},\
+{id:dev,function:"plate_havoc:game/lobby/post/gametype/dev",leaderboard_status:false,players:[{single:true},{multi:true}],console_only:true}\
 ]

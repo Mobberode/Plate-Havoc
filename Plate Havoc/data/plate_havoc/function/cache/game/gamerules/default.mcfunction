@@ -8,5 +8,5 @@ gamerule doDaylightCycle false
 gamerule doWeatherCycle false
 gamerule projectilesCanBreakBlocks true
 gamerule doImmediateRespawn true
-defaultgamemode adventure
+defaultgamemode spectator
 difficulty normal

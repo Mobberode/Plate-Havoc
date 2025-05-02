@@ -2,11 +2,7 @@ tellraw @a [{text:"Lava Rush",color:red},{text:"\nGather, Build, Kill, Survive. 
 
 data modify storage plate_havoc.ui element_intensity set value [{text:"Lava Height: "},{score:{name:"#LavaHeight",objective:plate_havoc.num},color:red}]
 
-data modify storage plate_havoc.ui element_spawnpoint_status set value [{text:"You cannot respawn",color:red}]
-
-scoreboard players set #BaseCapValue plate_havoc.spawnpoint_energy 1
-scoreboard players set #BaseGainValue plate_havoc.spawnpoint_energy 0
-scoreboard players set #BaseGainPercentage plate_havoc.spawnpoint_energy 0
+data modify storage plate_havoc spectator_tick_function set value ""
 
 scoreboard players set #BaseWorldBorderWidth plate_havoc.num 500
 

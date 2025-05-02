@@ -1,0 +1,1 @@
+$function $(spectator_tick_function)

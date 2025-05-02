@@ -4,7 +4,7 @@ data modify storage plate_havoc.ui element_players set value [{text:" Protect VI
 data modify storage plate_havoc.ui element_extra set value []
 
 tag @a remove plate_havoc.vip
-tag @r[tag=plate_havoc.survivor,sort=random] add plate_havoc.vip
+tag @r[tag=!plate_havoc.spectator,sort=random] add plate_havoc.vip
 
 scoreboard players set #BaseGainValue plate_havoc.spawnpoint_energy 50
 

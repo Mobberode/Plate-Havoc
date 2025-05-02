@@ -1,2 +1,1 @@
-execute if score #BorderType plate_havoc.num matches 1 unless entity @a[tag=plate_havoc.survivor,predicate=plate_havoc:sneak_detect] run function plate_havoc:game/match/misc/gametype/border_says/drain
-execute if score #BorderType plate_havoc.num matches 2 unless entity @a[tag=plate_havoc.survivor,predicate=plate_havoc:jump_detect] run function plate_havoc:game/match/misc/gametype/border_says/drain
+execute as @a[tag=plate_havoc.survivor] run function plate_havoc:game/match/misc/gametype/border_says/drain_check

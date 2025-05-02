@@ -19,5 +19,5 @@ data modify storage plate_havoc default_gamemode set value "adventure"
 data modify storage plate_havoc tick_function set value ""
 data modify storage plate_havoc set_plate_function set value "plate_havoc:game/lobby/arena/fill"
 data modify storage plate_havoc on_event_function set value "plate_havoc:game/match/action"
-
+data modify storage plate_havoc spectator_tick_function set value "plate_havoc:game/match/player/spectator/energy"
 data modify storage plate_havoc game_end_condition_function set value "plate_havoc:game/match/player/endurance/lose_check"

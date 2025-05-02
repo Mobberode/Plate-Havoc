@@ -4,7 +4,7 @@ data modify storage plate_havoc.ui element_intensity set value [{text:""},{stora
 data modify storage plate_havoc.ui element_timer set value [{score:{name:"#Duration",objective:plate_havoc.timer},color:gold},{text:" "}]
 data modify storage plate_havoc.ui element_players set value [{score:{name:"#Current",objective:plate_havoc.players},color:green},{text:"/"},{score:{name:"#Match",objective:plate_havoc.players},color:green},{text:" "}]
 
-data modify storage plate_havoc.ui element_extra set value [{text:"Border: "},{score:{name:"#BaseWorldBorderWidth",objective:plate_havoc.num},color:aqua},{id:"warning",text:" | "}]
+data modify storage plate_havoc.ui element_extra set value [{text:"Border: "},{score:{name:"#BaseWorldBorderWidth",objective:plate_havoc.num},color:aqua},{text:" | Dont "},{id:"warning",storage:plate_havoc.custom,nbt:"border_says_warnings[]",color:red}]
 
 scoreboard players set #BaseWorldBorderWidth plate_havoc.num 250
 

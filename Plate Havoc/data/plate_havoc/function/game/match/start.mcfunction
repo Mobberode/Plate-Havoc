@@ -1,4 +1,3 @@
-execute store result score #Match plate_havoc.players if entity @a[tag=!plate_havoc.spectator]
 execute as @a run function plate_havoc:game/lobby/post/player
 
 scoreboard players set #Duration plate_havoc.timer -1

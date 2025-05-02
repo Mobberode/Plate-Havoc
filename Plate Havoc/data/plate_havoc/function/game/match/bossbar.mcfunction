@@ -1,0 +1,2 @@
+bossbar set plate_havoc.ui players @a
+bossbar set plate_havoc.ui name [{storage:plate_havoc.ui,nbt:element_intensity,interpret:true},{storage:plate_havoc.ui,nbt:element_timer,interpret:true},{storage:plate_havoc.ui,nbt:element_players,interpret:true},{storage:plate_havoc.ui,nbt:element_extra,interpret:true}]
