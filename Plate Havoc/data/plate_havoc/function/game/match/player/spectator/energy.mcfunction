@@ -1,10 +1,17 @@
+scoreboard players operation #1Less plate_havoc.players = #Current plate_havoc.players
+scoreboard players remove #1Less plate_havoc.players 1
+scoreboard players set #Nerf plate_havoc.spawnpoint_energy 10
+scoreboard players operation #Nerf plate_havoc.spawnpoint_energy += #1Less plate_havoc.players
 ##Maths
 scoreboard players operation #Add plate_havoc.spawnpoint_energy = #BaseGainValue plate_havoc.spawnpoint_energy
 scoreboard players operation #Add plate_havoc.spawnpoint_energy *= #BaseGainPercentage plate_havoc.spawnpoint_energy
-scoreboard players operation #Add plate_havoc.spawnpoint_energy /= #100 plate_havoc.num
+
+scoreboard players operation #Add plate_havoc.spawnpoint_energy *= #100 plate_havoc.num
+
+scoreboard players operation #Add plate_havoc.spawnpoint_energy /= #1000 plate_havoc.num
 
 #Nerf depending on players
-scoreboard players operation #Add plate_havoc.spawnpoint_energy /= #Match plate_havoc.players
+scoreboard players operation #Add plate_havoc.spawnpoint_energy /= #Nerf plate_havoc.spawnpoint_energy
 
 #Fallback
 execute if score #Add plate_havoc.spawnpoint_energy matches 0 run scoreboard players set #Add plate_havoc.spawnpoint_energy 1
