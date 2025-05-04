@@ -1,4 +1,4 @@
-scoreboard players operation #1Less plate_havoc.players = #Current plate_havoc.players
+scoreboard players operation #1Less plate_havoc.players = #Match plate_havoc.players
 scoreboard players remove #1Less plate_havoc.players 1
 scoreboard players set #Nerf plate_havoc.spawnpoint_energy 10
 scoreboard players operation #Nerf plate_havoc.spawnpoint_energy += #1Less plate_havoc.players

@@ -4,6 +4,3 @@ scoreboard players set #Duration plate_havoc.timer -1
 function plate_havoc:game/time/match
 
 function plate_havoc:game/match/loop
-
-##Pity Deaths
-function plate_havoc:game/match/player/pity_check

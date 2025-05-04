@@ -1,0 +1,15 @@
+{
+    "values": [
+        "marker",
+        "item",
+        "item_display",
+        "item_frame",
+        "glow_item_frame",
+        "ominous_item_spawner",
+        "block_display",
+        "text_display",
+        "end_crystal",
+        "leash_knot",
+        "interaction" 
+    ]
+}
