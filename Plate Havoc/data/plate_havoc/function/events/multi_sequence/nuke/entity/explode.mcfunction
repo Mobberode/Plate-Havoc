@@ -1,4 +1,4 @@
 execute on passengers run kill
 kill
 
-summon tnt ~ ~ ~ {explosion_power:45,fuse:0}
+summon tnt ~ ~1 ~ {explosion_power:20,fuse:0}

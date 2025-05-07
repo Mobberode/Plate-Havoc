@@ -4,4 +4,4 @@ scoreboard players set #BaseEventTimePercentage plate_havoc.num 90
 
 data modify storage plate_havoc spectator_tick_function set value ""
 
-data modify storage plate_havoc game_end_condition_function set value "plate_havoc:game/match/player/haemorrhage/check"
+data modify storage plate_havoc game_end_condition_function set value "plate_havoc:game/match/misc/gametype/haemorrhage/check"

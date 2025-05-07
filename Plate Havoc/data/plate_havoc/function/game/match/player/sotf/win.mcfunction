@@ -1,4 +1,10 @@
 scoreboard players add @s plate_havoc.plr.stats.wins 1
-tellraw @a [{text:""},{selector:"@s",color:gold},{text:" Won!"},{text:"\nElasped Time: ",color:gray},{score:{name:"#Duration",objective:plate_havoc.timer},color:gold}]
+tag @s add plate_havoc.winner
+
+data modify storage plate_havoc.ui game_end_visuals_queue[{id:message}].extra set value [{selector:"@a[tag=plate_havoc.winner]",color:gold},{text:" Won!"}]
+
+function plate_havoc:game/misc/ui/end_visuals/tellraw
+
+tag @a remove plate_havoc.winner
 
 function plate_havoc:game/match/game_over

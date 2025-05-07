@@ -1,0 +1,1 @@
+execute as @e[tag=plate_havoc.obama] at @s run function plate_havoc:events/multi_sequence/console/obama_drone_strike/fallout

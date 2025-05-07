@@ -1,4 +1,4 @@
-execute store result score #Add plate_havoc.intensity run random value 1..13
+execute store result score #Add plate_havoc.intensity run random value 3..17
 
 scoreboard players operation #Add plate_havoc.intensity *= #BaseIntensityPercentage plate_havoc.num
 scoreboard players operation #Add plate_havoc.intensity /= #100 plate_havoc.num

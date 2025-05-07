@@ -10,3 +10,9 @@ gamerule projectilesCanBreakBlocks true
 gamerule doImmediateRespawn true
 defaultgamemode spectator
 difficulty normal
+
+scoreboard objectives add plate_havoc.temp dummy
+scoreboard objectives setdisplay below_name plate_havoc.temp
+scoreboard objectives setdisplay list plate_havoc.temp
+scoreboard objectives setdisplay sidebar plate_havoc.temp
+scoreboard objectives remove plate_havoc.temp
