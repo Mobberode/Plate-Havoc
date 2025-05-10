@@ -1,1 +1,1 @@
-execute facing entity @p[tag=plate_havoc.survivor] feet run tp ^ ^ ^.05
+execute facing entity @n[tag=!plate_havoc.dont_interact,tag=!plate_havoc.spectator] feet run tp ^ ^ ^.0675

@@ -1,6 +1,7 @@
 tellraw @a [{text:"Lava Rush",color:red},{text:"\nGather, Build, Kill, Survive. ",color:"gray"}]
 
-data modify storage plate_havoc.ui element_intensity set value [{text:"Lava Height: "},{score:{name:"#LavaHeight",objective:plate_havoc.num},color:red}]
+data remove storage plate_havoc.ui bar_visuals_queue[{id:intensity}]
+data modify storage plate_havoc.ui bar_visuals_queue prepend value {id:lava_height,text:"",extra:[{text:"Lava Height: "},{score:{name:"#LavaHeight",objective:plate_havoc.num},color:red}]}
 
 data modify storage plate_havoc spectator_tick_function set value ""
 

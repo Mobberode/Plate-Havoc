@@ -1,4 +1,4 @@
-execute as @a[predicate=plate_havoc:can_see_sky] run damage @s 2
+execute as @a[predicate=plate_havoc:can_see_sky] run damage @s 1
 
 scoreboard players remove #AcidRain plate_havoc.timer 1
 

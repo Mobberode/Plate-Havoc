@@ -1,2 +1,2 @@
 scoreboard players set #HaemorrhageHeal plate_havoc.timer 0
-summon item_display ~ ~ ~ {Tags:["plate_havoc.haemorrhage.heal.init","plate_havoc.dont_interact"],item:{id:heart_pottery_sherd},Glowing:true,glow_color_override:65297,width:1,height:1}
+summon item_display ~ ~ ~ {Tags:["plate_havoc.haemorrhage.heal.init","plate_havoc.dont_interact"],item:{id:heart_pottery_sherd},Glowing:true,glow_color_override:65297,transformation:{translation:[0.0,0.5,0.0],left_rotation:[0,0,0,1],right_rotation:[0,0,0,1],scale:[1,1,1]},Passengers:[{id:interaction,Tags:["plate_havoc.dont_interact"]}]}

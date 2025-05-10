@@ -7,4 +7,4 @@ item replace entity @s hotbar.0 with stone_pickaxe
 item replace entity @s hotbar.1 with stone_shovel
 item replace entity @s hotbar.2 with stone_axe
 
-attribute @s attack_damage modifier add plate_havoc:lava_rush.debuff -1.5 add_multiplied_total
+#attribute @s attack_damage modifier add plate_havoc:lava_rush.debuff -1.5 add_multiplied_total

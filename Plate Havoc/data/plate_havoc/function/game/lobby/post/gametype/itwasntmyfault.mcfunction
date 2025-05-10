@@ -1,9 +1,7 @@
 tellraw @a [{text:"boss_1",color:gold},{text:"\nDo you have what it takes?",color:"gray"}]
 
-data modify storage plate_havoc.ui element_intensity set value []
-data modify storage plate_havoc.ui element_timer set value [{text:"Time: "},{score:{name:"#Duration",objective:plate_havoc.timer},color:gold}]
-data modify storage plate_havoc.ui element_players set value [{text:" Alive: "},{score:{name:"#Current",objective:plate_havoc.players},color:green}]
-data modify storage plate_havoc.ui element_extra set value []
+data remove storage minecraft:plate_havoc.ui bar_visuals_queue[{id:intensity}]
+data modify storage minecraft:plate_havoc.ui bar_visuals_queue[{id:players}] set value {id:players,text:"",extra:[{text:"Alive: "},{score:{name:"#Current",objective:plate_havoc.players},color:green}]}
 
 scoreboard players set #BaseEventTimePercentage plate_havoc.num 100
 scoreboard players set #BaseIntensityPercentage plate_havoc.num 100

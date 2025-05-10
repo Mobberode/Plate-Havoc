@@ -53,6 +53,8 @@ data modify storage plate_havoc events set value [\
 {id:dripleaf,intensity:1.1,function:"plate_havoc:events/dripleaf"},\
 {id:spinning_laser,intensity:4.5,function:"plate_havoc:events/multi_sequence/spinning_laser/start"},\
 {id:swap,intensity:3.6,function:"plate_havoc:events/multi_sequence/swap/start"},\
+{id:shuffle,intensity:4.5,function:"plate_havoc:events/multi_sequence/shuffle/start"},\
 \
 {id:obama_drone_strike,function:"plate_havoc:events/multi_sequence/console/obama_drone_strike/start",console_only:true},\
+{id:boost_bot,function:"plate_havoc:events/multi_sequence/console/boost_bot/start",console_only:true},\
 ]
