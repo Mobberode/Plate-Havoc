@@ -16,6 +16,8 @@ data modify storage plate_havoc.ui bar_visuals_queue append value {id:time,text:
 
 data modify storage plate_havoc.ui bar_visuals_queue append value {id:players,text:"",extra:[{text:"Players: "},{score:{name:"#Current",objective:plate_havoc.players},color:green},{text:"/"},{score:{name:"#Match",objective:plate_havoc.players},color:green}]}
 
+data modify storage plate_havoc.ui bar_visuals_queue prepend value {id:version,text:"",extra:[{text:"(0.63 PROTOTYPE)",color:yellow}]}
+
 ##Game End UI
 data modify storage plate_havoc.ui game_end_visuals set value [{text:""}]
 

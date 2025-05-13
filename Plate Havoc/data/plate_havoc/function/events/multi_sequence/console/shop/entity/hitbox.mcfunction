@@ -1,0 +1,1 @@
+execute if data entity @s interaction run function plate_havoc:events/multi_sequence/console/shop/entity/process_action

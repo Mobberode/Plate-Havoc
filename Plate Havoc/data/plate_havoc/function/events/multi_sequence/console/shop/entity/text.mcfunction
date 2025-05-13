@@ -1,0 +1,1 @@
+data modify entity @s text set value [{text:" "},{storage:plate_havoc.custom,nbt:shop_cost,color:aqua},{text:" "},{storage:plate_havoc.custom,nbt:shop_timer,color:red},{text:" "}]

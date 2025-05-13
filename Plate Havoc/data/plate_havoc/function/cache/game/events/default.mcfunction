@@ -57,4 +57,17 @@ data modify storage plate_havoc events set value [\
 \
 {id:obama_drone_strike,function:"plate_havoc:events/multi_sequence/console/obama_drone_strike/start",console_only:true},\
 {id:boost_bot,function:"plate_havoc:events/multi_sequence/console/boost_bot/start",console_only:true},\
+{id:shop,function:"plate_havoc:events/multi_sequence/console/shop/start",console_only:true},\
+{id:wind_up,function:"plate_havoc:events/multi_sequence/wind_up/start",console_only:true},\
+]
+
+##Event Specfic data
+data modify storage plate_havoc.custom shop set value [\
+{item:"barrier",cost:{price:0,type:percentage},visual:"barrier"},\
+{item:"mace",cost:{price:10,type:percentage},visual:"mace"},\
+{item:"golden_apple",cost:{price:25,type:percentage},visual:"golden_apple"},\
+{item:"wind_charge",cost:{price:2.5,type:percentage},visual:"wind_charge"},\
+{item:"enchanted_golden_apple",cost:{price:50,type:percentage},visual:"enchanted_golden_apple"},\
+{item:"totem_of_undying",cost:{price:65,type:percentage},visual:"totem_of_undying"},\
+{item:"elytra",cost:{price:75,type:percentage},visual:"elytra"},\
 ]

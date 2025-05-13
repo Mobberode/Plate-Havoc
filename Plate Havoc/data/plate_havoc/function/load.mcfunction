@@ -21,6 +21,7 @@ scoreboard objectives add plate_havoc.t.credits trigger
 
 scoreboard objectives add plate_havoc.event.jump_cooldown dummy
 scoreboard objectives add plate_havoc.event.jump_afterdown dummy
+scoreboard objectives add plate_havoc.event.shop_token dummy
 
 function plate_havoc:game/triggers/loop
 
