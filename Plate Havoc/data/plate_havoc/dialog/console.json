@@ -1,0 +1,25 @@
+{
+    "type": "multi_action",
+    "title": "Plate Havoc Console",
+    "body": [{"type":"plain_message","contents":[{"text":"Version: 0.7A","color":"red"}]}],
+    "actions": [
+        {
+            "label":"Events","on_click":{"action":"show_dialog","dialog":"plate_havoc:console_event"}
+        },
+        {
+            "label":"Gametypes","on_click":{"action":"show_dialog","dialog":"plate_havoc:console_gametype"}
+        },
+        {
+            "label": "Regenerate Plate","on_click":{"action":"run_command","command":"function plate_havoc:console/regenerate_plate"}
+        },
+        {
+            "label": "Force Revive","on_click":{"action":"run_command","command":"function plate_havoc:game/match/player/spectator/revive"}
+        },
+        {
+            "label": "Force Game Over","on_click":{"action":"run_command","command":"function plate_havoc:game/match/game_over"}
+        },
+        {
+            "label": "Reset Leaderboard","on_click":{"action":"run_command","command":"function plate_havoc:cache/leaderboard/reset"}
+        }
+    ]
+}

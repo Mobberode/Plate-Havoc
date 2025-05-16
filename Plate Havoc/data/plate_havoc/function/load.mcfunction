@@ -19,6 +19,8 @@ scoreboard objectives add plate_havoc.t.stats trigger
 scoreboard objectives add plate_havoc.t.spectator trigger
 scoreboard objectives add plate_havoc.t.credits trigger
 
+scoreboard objectives add plate_havoc.t.console trigger
+
 scoreboard objectives add plate_havoc.event.jump_cooldown dummy
 scoreboard objectives add plate_havoc.event.jump_afterdown dummy
 scoreboard objectives add plate_havoc.event.shop_token dummy
@@ -33,3 +35,5 @@ execute unless score #LBLimit plate_havoc.num matches 0.. run scoreboard players
 function #plate_havoc:cache
 
 function plate_havoc:game/init
+
+tag @a add plate_havoc.has_console_access

@@ -1,0 +1,8 @@
+{
+    "type": "simple_input_form",
+    "title": "Plate Havoc Console",
+    "inputs": [{
+        "key": "id","type": "text","label":"Event ID"
+    }],
+    "action": {"id":"id","label":"Force Event","on_submit":{"type":"command_template","template":"function plate_havoc:console/force_event {id:$(id)}"}}
+}

@@ -1,0 +1,8 @@
+{
+    "type": "simple_input_form",
+    "title": "Plate Havoc Console",
+    "inputs": [{
+        "key": "id","type": "text","label":"Gametype ID"
+    }],
+    "action": {"id":"id","label":"Force Gametype","on_submit":{"type":"command_template","template":"function plate_havoc:console/force_gametype {id:$(id)}"}}
+}

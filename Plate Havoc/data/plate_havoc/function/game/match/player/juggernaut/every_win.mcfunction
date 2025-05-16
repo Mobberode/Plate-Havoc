@@ -2,6 +2,4 @@ scoreboard players add @a[tag=plate_havoc.survivor,tag=!plate_havoc.juggernaut] 
 
 data modify storage plate_havoc.ui game_end_visuals_queue[{id:message}].extra set value [{text:"The non-juggernauts won!",color:gold}]
 
-function plate_havoc:game/misc/ui/end_visuals/tellraw
-
 function plate_havoc:game/match/game_over
