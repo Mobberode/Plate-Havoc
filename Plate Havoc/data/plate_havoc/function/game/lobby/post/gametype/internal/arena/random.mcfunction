@@ -1,2 +1,2 @@
-execute store result score #Value plate_havoc.intensity run random value 150..1500
+execute store result score #Value plate_havoc.intensity run random value 150..1250
 execute store result storage plate_havoc intensity double 0.01 run scoreboard players get #Value plate_havoc.intensity

@@ -21,3 +21,6 @@ data modify storage plate_havoc set_plate_function set value "plate_havoc:game/l
 data modify storage plate_havoc on_event_function set value "plate_havoc:game/match/action"
 data modify storage plate_havoc spectator_tick_function set value "plate_havoc:game/match/player/spectator/energy"
 data modify storage plate_havoc game_end_condition_function set value "plate_havoc:game/match/player/endurance/lose_check"
+
+##Holds all functions that will be ran when game starts
+data modify storage plate_havoc on_game_start set value []

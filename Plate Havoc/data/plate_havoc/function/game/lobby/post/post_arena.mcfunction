@@ -8,5 +8,6 @@ worldborder center 0.0 0.0
 data modify storage plate_havoc events_pool set from storage plate_havoc events
 data remove storage plate_havoc events_pool[{console_only:true}]
 
-scoreboard players set #Value plate_havoc.gamestatus 1
+scoreboard players set #Value plate_havoc.gamestatus 2
+
 schedule function plate_havoc:game/match/start 5s
