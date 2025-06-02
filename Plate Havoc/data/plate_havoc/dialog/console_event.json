@@ -1,8 +1,7 @@
 {
-    "type": "simple_input_form",
+    "type": "multi_action",
     "title": "Plate Havoc Console",
-    "inputs": [{
-        "key": "id","type": "text","label":"Event ID"
-    }],
-    "action": {"id":"id","label":"Force Event","on_submit":{"type":"command_template","template":"function plate_havoc:console/force_event {id:$(id)}"}}
+    "inputs": [{"key":"id","type":"text","label":"Event ID"}],
+    
+    "actions": [{"label":"Force Event","action":{"type":"dynamic/run_command","template":"function plate_havoc:console/force_event {id:$(id)}"}}]
 }
