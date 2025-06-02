@@ -13,5 +13,6 @@ data modify storage plate_havoc gametypes set value [\
 {id:lava_rush,function:"plate_havoc:game/lobby/post/gametype/lava_rush",leaderboard_status:false,players:[{single:true},{multi:true}],console_only:true},\
 {id:endurance_survival,function:"plate_havoc:game/lobby/post/gametype/endurance_survival",leaderboard_status:false,players:[{single:true},{multi:true}],console_only:true},\
 {id:deathzone,function:"plate_havoc:game/lobby/post/gametype/deathzone",leaderboard_status:false,players:[{single:true},{multi:true}],console_only:true},\
+{id:arena,function:"plate_havoc:game/lobby/post/gametype/arena",leaderboard_status:false,players:[{single:true},{multi:true}],console_only:true},\
 {id:dev,function:"plate_havoc:game/lobby/post/gametype/dev",leaderboard_status:false,players:[{single:true},{multi:true}],console_only:true}\
 ]
