@@ -1,0 +1,15 @@
+{
+    "type": "multi_action",
+    "title": "Card Select",
+    "columns": 1,
+    "can_close_with_escape": false,
+    "body": [
+        {"type":"plain_message","contents":{"text":"Select a Card!","color":"gold"}},
+        {"type":"plain_message","contents":{"storage":"plate_havoc.ui","nbt":"game_select_cards","interpret":true}}
+    ],
+    "actions": [
+        {"label":{"text":"a"},"action":{"type":"run_command","command":"function plate_havoc:events/anvil"}},
+        {"label":"Chilled Temper","action":{"type":"run_command","command":"function plate_havoc:events/anvil"}},
+        {"label":"Swift Feets","action":{"type":"run_command","command":"function plate_havoc:events/anvil"}}
+    ]
+}

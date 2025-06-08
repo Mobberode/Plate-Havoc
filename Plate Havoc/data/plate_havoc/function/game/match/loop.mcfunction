@@ -14,4 +14,4 @@ function plate_havoc:game/match/tick with storage plate_havoc
 execute if score #Value plate_havoc.timer matches ..0 run function plate_havoc:game/match/macro with storage plate_havoc
 
 ##Loop
-execute if score #Value plate_havoc.gamestatus matches 1.. run schedule function plate_havoc:game/match/loop 1t
+execute if score #Value plate_havoc.gamestatus matches 2.. run schedule function plate_havoc:game/match/loop 1t

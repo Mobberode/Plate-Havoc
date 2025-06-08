@@ -1,3 +1,5 @@
+dialog clear @a
+
 bossbar add plate_havoc.ui {text:""}
 bossbar set plate_havoc.ui name [{text:"Intensity: "},{storage:plate_havoc,nbt:intensity,color:gold}]
 bossbar set plate_havoc.ui color red

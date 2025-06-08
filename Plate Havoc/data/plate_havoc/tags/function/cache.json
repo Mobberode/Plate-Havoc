@@ -6,6 +6,7 @@
         "plate_havoc:cache/game/gametypes/default",
         "plate_havoc:cache/ui/default",
         "plate_havoc:cache/game/teams/default",
-        "plate_havoc:cache/game/gamerules/default"
+        "plate_havoc:cache/game/gamerules/default",
+        "plate_havoc:cache/game/cards/default"
     ]
 }

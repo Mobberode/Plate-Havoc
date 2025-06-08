@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:overworld",
+    "generator": {
+      "type": "flat",
+      "settings": {
+        "biome": "plate_havoc:distant_void",
+        "layers": []
+      }
+    }
+  }
