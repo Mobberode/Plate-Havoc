@@ -15,4 +15,5 @@ scoreboard players set #Value plate_havoc.round 0
 
 data modify storage plate_havoc on_game_start append value {function:"plate_havoc:game/time/tick_down"}
 
+data modify storage plate_havoc.cards running set value {loop:[],on_start:[],total:[]}
 data modify storage plate_havoc.cards pool set from storage plate_havoc.cards data

@@ -1,6 +1,8 @@
 data modify storage plate_havoc default_gamemode set value "spectator"
 execute as @a run function plate_havoc:game/misc/apply_gamemode with storage plate_havoc
 
+kill @e[type=!player]
+
 scoreboard players set #Value plate_havoc.gamestatus 1
 
 scoreboard players add #Value plate_havoc.round 1

@@ -1,1 +1,1 @@
-$execute store result storage plate_havoc.cards slots.$(slot).votes int 1 if entity @a[predicate=plate_havoc:specfic/card]
+$execute store result storage plate_havoc.cards slots[{slot:$(slot)}].votes int 1 if entity @a[predicate=plate_havoc:specfic/card]

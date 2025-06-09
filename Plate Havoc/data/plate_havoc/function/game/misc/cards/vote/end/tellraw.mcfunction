@@ -1,0 +1,1 @@
+tellraw @a {storage:plate_havoc.cards,nbt:body,interpret:true}

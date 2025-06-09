@@ -1,4 +1,7 @@
 dialog clear @a
+
+function plate_havoc:game/misc/cards/vote/end
+
 execute as @a at @s run spreadplayers ~ ~ 0 64 false @s
 
 data modify storage plate_havoc default_gamemode set value "adventure"

@@ -1,5 +1,6 @@
 ##Input
 scoreboard players operation @s plate_havoc.z.select = @s plate_havoc.t.select
+#Used in predicate
 scoreboard players operation #Slot plate_havoc.z.select = @s plate_havoc.z.select
 
 scoreboard players set #ProcessedCards plate_havoc.num 0

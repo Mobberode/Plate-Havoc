@@ -1,0 +1,1 @@
+execute as @e[tag=plate_havoc.laser_drill] at @s run function plate_havoc:events/multi_sequence/laser_drill/entity/tick

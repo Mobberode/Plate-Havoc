@@ -1,15 +1,11 @@
 {
     "type": "multi_action",
-    "title": "Card Select",
-    "columns": 1,
-    "can_close_with_escape": false,
+    "title": "",
+    "can_close_with_escape": true,
     "body": [
-        {"type":"plain_message","contents":{"text":"Select a Card!","color":"gold"}},
-        {"type":"plain_message","contents":{"storage":"plate_havoc.ui","nbt":"game_select_cards","interpret":true}}
-    ],
-    "actions": [
-        {"label":{"text":"a"},"action":{"type":"run_command","command":"function plate_havoc:events/anvil"}},
-        {"label":"Chilled Temper","action":{"type":"run_command","command":"function plate_havoc:events/anvil"}},
-        {"label":"Swift Feets","action":{"type":"run_command","command":"function plate_havoc:events/anvil"}}
-    ]
+        {"type":"plain_message","contents":{"text":"Game Over","color":"red"}},
+                {"type":"plain_message","contents":{"text":"- Everyone Died -","color":"gray"}},
+                {"type":"plain_message","contents":{"text":"\nIntensity: 6.4d","color":"gold"}},
+            {"type":"plain_message","contents":{"text":"Time Elasped: 141","color":"gold"}}],
+            "actions": [{"label":"Close screen"}]
 }

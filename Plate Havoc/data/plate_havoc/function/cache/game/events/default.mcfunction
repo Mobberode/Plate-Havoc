@@ -59,6 +59,7 @@ data modify storage plate_havoc events set value [\
 {id:boost_bot,function:"plate_havoc:events/multi_sequence/console/boost_bot/start",console_only:true},\
 {id:shop,function:"plate_havoc:events/multi_sequence/console/shop/start",console_only:true},\
 {id:wind_up,intensity:4.71,function:"plate_havoc:events/multi_sequence/wind_up/start",console_only:true},\
+{id:laser_drill,intensity:-1,function:"plate_havoc:events/multi_sequence/laser_drill/start",console_only:true},\
 ]
 
 ##Event Specfic data

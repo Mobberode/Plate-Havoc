@@ -1,7 +1,9 @@
+##Input the slot num into its trigger
 $data modify storage plate_havoc.cards card.action.action set value {type:run_command,command:"trigger plate_havoc.t.select set $(slot)"}
 
-$scoreboard players set #Slot$(slot) plate_havoc.num 0
-$execute store result storage plate_havoc.cards slots.$(slot).votes int 1 run scoreboard players get #Slot$(slot) plate_havoc.num
+##Default visuals to 0
+$data modify storage plate_havoc.cards template.slots set value {slot:$(slot),votes:0}
+data modify storage plate_havoc.cards slots append from storage plate_havoc.cards template.slots
 
 data modify storage plate_havoc.cards card.action.slot set from storage plate_havoc.cards slot
 
