@@ -1,4 +1,4 @@
-execute store result storage plate_havoc.custom shop_timer double 0.05 run scoreboard players remove @s plate_havoc.timer 1
+execute store result storage plate_havoc.custom shop_timer double 0.05 run scoreboard players remove @s plate_havoc.event 1
 data modify storage plate_havoc.custom shop_timer set string storage plate_havoc.custom shop_timer 0 4
 
 scoreboard players operation #Cost plate_havoc.event.shop_token = @s plate_havoc.event.shop_token

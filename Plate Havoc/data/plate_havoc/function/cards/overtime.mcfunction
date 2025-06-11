@@ -1,0 +1,1 @@
+scoreboard players add #Time plate_havoc.card 6

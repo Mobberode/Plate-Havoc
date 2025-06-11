@@ -1,4 +1,4 @@
-scoreboard players set @s plate_havoc.timer 10
+scoreboard players set @s plate_havoc.event 10
 function plate_havoc:placements/event_standard
 execute store result entity @s Rotation[0] float 1 run random value -180..180
 execute store result entity @s Rotation[1] float 1 run random value -45..-10

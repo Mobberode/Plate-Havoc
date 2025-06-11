@@ -1,0 +1,1 @@
+execute at @a[tag=plate_havoc.survivor] if block ~ ~ ~ cobweb run setblock ~ ~ ~ air destroy

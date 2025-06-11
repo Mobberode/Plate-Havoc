@@ -5,3 +5,6 @@ tag @s remove plate_havoc.player
 tag @s remove plate_havoc.winner
 gamemode spectator
 clear @s
+
+##Remove attribute modifiers
+kill @s

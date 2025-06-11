@@ -3,7 +3,7 @@ tag @s add plate_havoc.shop
 
 #2s x 20 = 40t
 ##Time
-scoreboard players set @s plate_havoc.timer 1600
+scoreboard players set @s plate_havoc.event 1600
 
 ##Item (PLACE HOLDER)
 execute store result score #MaxShop plate_havoc.num if data storage plate_havoc.custom shop[]

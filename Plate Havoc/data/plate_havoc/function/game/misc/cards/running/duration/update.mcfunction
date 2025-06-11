@@ -1,0 +1,1 @@
+$data modify storage plate_havoc.cards running.total[{id:$(id)}].duration set from storage plate_havoc.cards duration

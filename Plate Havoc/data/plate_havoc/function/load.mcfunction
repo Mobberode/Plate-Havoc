@@ -1,6 +1,8 @@
 say loaded
 
 scoreboard objectives add plate_havoc.gamestatus dummy
+scoreboard players set #Value plate_havoc.gamestatus 0
+
 scoreboard objectives add plate_havoc.round dummy
 
 scoreboard objectives add plate_havoc.num dummy
@@ -9,6 +11,9 @@ scoreboard objectives add plate_havoc.spawnpoint_energy dummy
 scoreboard objectives add plate_havoc.timer dummy
 scoreboard objectives add plate_havoc.intensity dummy
 scoreboard objectives add plate_havoc.rng dummy
+
+scoreboard objectives add plate_havoc.card dummy
+scoreboard objectives add plate_havoc.event dummy
 
 scoreboard objectives add plate_havoc.died deathCount
 scoreboard objectives add plate_havoc.relogged custom:leave_game

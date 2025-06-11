@@ -1,0 +1,1 @@
+function plate_havoc:console/force_event {id:fireworks}
