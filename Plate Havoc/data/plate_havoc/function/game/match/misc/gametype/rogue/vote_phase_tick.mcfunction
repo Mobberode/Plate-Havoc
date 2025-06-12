@@ -1,4 +1,4 @@
-data modify storage plate_havoc.cards type set value negative
+data modify storage plate_havoc:cards type set value negative
 
 function plate_havoc:game/misc/cards/vote/end
 function plate_havoc:game/match/misc/gametype/rogue/set_cards

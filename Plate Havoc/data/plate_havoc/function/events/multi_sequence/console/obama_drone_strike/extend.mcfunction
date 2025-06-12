@@ -1,2 +1,2 @@
 tellraw @a {text:"MORE OBAMA!!!",color:gray}
-scoreboard players add #ObamaDroneStrike plate_havoc.event 100
+scoreboard players operation #ObamaDroneStrike plate_havoc.event += #Template.Event.ObamaDroneStrike.Extension plate_havoc.num

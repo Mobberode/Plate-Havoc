@@ -1,4 +1,4 @@
-data modify storage plate_havoc events set value [\
+data modify storage plate_havoc:data events set value [\
 {id:cactus,intensity:0.5,function:"plate_havoc:events/cactus"},\
 {id:powdered_snow,intensity:0.5,function:"plate_havoc:events/powdered_snow"},\
 {id:tumor,intensity:0.5,function:"plate_havoc:events/tumor"},\
@@ -63,7 +63,7 @@ data modify storage plate_havoc events set value [\
 ]
 
 ##Event Specfic data
-data modify storage plate_havoc.custom shop set value [\
+data modify storage plate_havoc:custom shop set value [\
 {item:"barrier",cost:{price:0,type:percentage},visual:"barrier"},\
 {item:"mace",cost:{price:10,type:percentage},visual:"mace"},\
 {item:"golden_apple",cost:{price:25,type:percentage},visual:"golden_apple"},\

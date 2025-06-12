@@ -1,1 +1,1 @@
-$data modify storage plate_havoc.cards pool[{id:$(id)}].on_select.left set from storage plate_havoc.cards count
+$data modify storage plate_havoc:cards pool[{id:$(id)}].on_select.left set from storage plate_havoc:cards count

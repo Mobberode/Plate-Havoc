@@ -1,0 +1,1 @@
+scoreboard players remove #Time plate_havoc.card 4

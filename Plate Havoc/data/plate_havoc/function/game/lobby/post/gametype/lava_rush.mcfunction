@@ -1,16 +1,16 @@
 tellraw @a [{text:"Lava Rush",color:red},{text:"\nGather, Build, Kill, Survive. ",color:"gray"}]
 
-data remove storage plate_havoc.ui bar_visuals_queue[{id:intensity}]
-data modify storage plate_havoc.ui bar_visuals_queue prepend value {id:lava_height,text:"",extra:[{text:"Lava Height: "},{score:{name:"#LavaHeight",objective:plate_havoc.num},color:red}]}
+data remove storage plate_havoc:ui bar_visuals_queue[{id:intensity}]
+data modify storage plate_havoc:ui bar_visuals_queue prepend value {id:lava_height,text:"",extra:[{text:"Lava Height: "},{score:{name:"#LavaHeight",objective:plate_havoc.num},color:red}]}
 
-data modify storage plate_havoc spectator_tick_function set value ""
+data modify storage plate_havoc:data spectator_tick_function set value ""
 
 scoreboard players set #BaseWorldBorderWidth plate_havoc.num 500
 
-data modify storage plate_havoc default_gamemode set value "survival"
+data modify storage plate_havoc:data default_gamemode set value "survival"
 
-data modify storage plate_havoc set_plate_function set value "plate_havoc:game/lobby/arena/misc/gametype/lava_rush/fill"
-data modify storage plate_havoc on_event_function set value "plate_havoc:game/match/misc/gametype/lava_rush/action"
+data modify storage plate_havoc:data set_plate_function set value "plate_havoc:game/lobby/arena/misc/gametype/lava_rush/fill"
+data modify storage plate_havoc:data on_event_function set value "plate_havoc:game/match/misc/gametype/lava_rush/action"
 
 gamerule doTileDrops true
 gamerule doMobLoot true

@@ -15,6 +15,8 @@ scoreboard objectives add plate_havoc.rng dummy
 scoreboard objectives add plate_havoc.card dummy
 scoreboard objectives add plate_havoc.event dummy
 
+scoreboard objectives add plate_havoc.config dummy
+
 scoreboard objectives add plate_havoc.died deathCount
 scoreboard objectives add plate_havoc.relogged custom:leave_game
 
@@ -37,12 +39,7 @@ scoreboard objectives add plate_havoc.event.shop_token dummy
 
 function plate_havoc:game/triggers/loop
 
-scoreboard players set #2 plate_havoc.num 2
-scoreboard players set #3 plate_havoc.num 3
-scoreboard players set #4 plate_havoc.num 4
-execute unless score #LBLimit plate_havoc.num matches 0.. run scoreboard players set #LBLimit plate_havoc.num 3
-
-function #plate_havoc:cache
+execute unless score #LBLimit plate_havoc.config matches 0.. run scoreboard players set #LBLimit plate_havoc.config 3
 
 function plate_havoc:game/init
 

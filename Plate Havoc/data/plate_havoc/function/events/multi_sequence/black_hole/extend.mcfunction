@@ -1,2 +1,2 @@
 tellraw @a [{text:"Blackhole event extended by 5 seconds!",color:gray}]
-scoreboard players add #BlackHole plate_havoc.event 100
+scoreboard players operation #BlackHole plate_havoc.event += #Template.Event.BlackHole.Extension plate_havoc.num

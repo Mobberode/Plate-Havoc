@@ -1,1 +1,1 @@
-data modify storage plate_havoc.cards final append from storage plate_havoc.cards compare[-1]
+data modify storage plate_havoc:cards final append from storage plate_havoc:cards compare[-1]

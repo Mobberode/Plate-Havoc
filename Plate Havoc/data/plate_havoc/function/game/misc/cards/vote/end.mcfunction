@@ -1,9 +1,9 @@
 ##Get all scores, get the highest score and then eliminate those that are not equal to the highest
 
 ##Store in temp
-data modify storage plate_havoc.cards compare set value []
-data modify storage plate_havoc.cards final set value []
-data modify storage plate_havoc.cards temp_slots set from storage plate_havoc.cards slots
+data modify storage plate_havoc:cards compare set value []
+data modify storage plate_havoc:cards final set value []
+data modify storage plate_havoc:cards temp_slots set from storage plate_havoc:cards slots
 
 #Set0
 scoreboard players set #HighestVotes plate_havoc.num 0

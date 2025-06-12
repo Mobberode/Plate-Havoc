@@ -1,4 +1,4 @@
-function plate_havoc:game/misc/apply_gamemode with storage plate_havoc
+function plate_havoc:game/misc/apply_gamemode with storage plate_havoc:data
 team join plate_havoc.player
 tag @s add plate_havoc.survivor
 tag @s add plate_havoc.player

@@ -1,0 +1,8 @@
+{
+    "type": "multi_action",
+    "title": "Plate Havoc Console",
+    "exit_action": {"label":"Back","action":{"type":"show_dialog","dialog":"plate_havoc:console"}},
+    "inputs": [{"key":"id","type":"text","label":"Card ID"}],
+    
+    "actions": [{"label":"Force Card","action":{"type":"dynamic/run_command","template":"function plate_havoc:console/force_card {id:$(id)}"}}]
+}

@@ -1,1 +1,1 @@
-$execute store result storage plate_havoc selected int 1 run random value 0..$(max)
+$execute store result storage plate_havoc:data selected int 1 run random value 0..$(max)

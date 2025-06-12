@@ -1,4 +1,4 @@
-data modify storage plate_havoc gametypes set value [\
+data modify storage plate_havoc:data gametypes set value [\
 {id:endurance,function:"plate_havoc:game/lobby/post/gametype/endurance",leaderboard_status:true,players:[{single:true},{multi:true}],console_only:false},\
 {id:sotf,function:"plate_havoc:game/lobby/post/gametype/sotf",leaderboard_status:false,players:[{multi:true}],console_only:false},\
 {id:bleed,function:"plate_havoc:game/lobby/post/gametype/haemorrhage",leaderboard_status:false,players:[{single:true},{multi:true}],console_only:false},\

@@ -10,6 +10,9 @@
             "label":"Gametypes","action":{"type":"show_dialog","dialog":"plate_havoc:console_gametype"}
         },
         {
+            "label":"Cards","action":{"type":"show_dialog","dialog":"plate_havoc:console_card"}
+        },
+        {
             "label": "Regenerate Plate","action":{"type":"run_command","command":"function plate_havoc:console/regenerate_plate"}
         },
         {

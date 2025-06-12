@@ -1,0 +1,1 @@
+execute as @e[tag=!plate_havoc.dont_interact] unless predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{}}}} run effect give @s infested infinite 10

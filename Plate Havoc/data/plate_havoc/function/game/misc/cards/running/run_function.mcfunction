@@ -1,1 +1,1 @@
-$function $(function) with storage plate_havoc.cards
+$function $(function) with storage plate_havoc:cards

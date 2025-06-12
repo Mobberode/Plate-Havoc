@@ -1,7 +1,7 @@
 function plate_havoc:game/misc/cards/running/types/on_start/start
 function plate_havoc:game/misc/cards/running/types/loop/start
 
-data modify storage plate_havoc default_gamemode set value "adventure"
+data modify storage plate_havoc:data default_gamemode set value "adventure"
 execute as @a at @s run function plate_havoc:game/match/misc/gametype/rogue/player_start
 
 scoreboard players set #Value plate_havoc.gamestatus 2

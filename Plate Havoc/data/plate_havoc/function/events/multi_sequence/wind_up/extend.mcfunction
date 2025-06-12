@@ -1,2 +1,2 @@
 tellraw @a {text:"100 More Wind Chagres will come from above!",color:gray}
-scoreboard players add #WindCharges plate_havoc.event 100
+scoreboard players operation #WindCharges plate_havoc.event += #Template.Event.WindCharges.Extension plate_havoc.num

@@ -1,1 +1,1 @@
-$data modify storage plate_havoc.cards card.action.label[{partition:votes}].extra[{id:$(id)}].text set string storage plate_havoc.cards slots[{slot:$(slot)}].votes
+$data modify storage plate_havoc:cards card.action.label[{partition:votes}].extra[{id:$(id)}].text set string storage plate_havoc:cards slots[{slot:$(slot)}].votes

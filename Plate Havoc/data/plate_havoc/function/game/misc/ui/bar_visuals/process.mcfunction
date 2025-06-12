@@ -1,8 +1,8 @@
 ##Loop
-data modify storage plate_havoc.ui bar_visuals.visible append from storage plate_havoc.ui temp_bar_visuals[0]
+data modify storage plate_havoc:ui bar_visuals.visible append from storage plate_havoc:ui temp_bar_visuals[0]
 
 #Remove
-data remove storage plate_havoc.ui temp_bar_visuals[0]
+data remove storage plate_havoc:ui temp_bar_visuals[0]
 
 #If more
-execute if data storage plate_havoc.ui temp_bar_visuals[0] run function plate_havoc:game/misc/ui/bar_visuals/loopback
+execute if data storage plate_havoc:ui temp_bar_visuals[0] run function plate_havoc:game/misc/ui/bar_visuals/loopback

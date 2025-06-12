@@ -1,1 +1,1 @@
-data modify entity @s LifeTime set from storage plate_havoc_motion life
+data modify entity @s LifeTime set from storage plate_havoc:motion life
