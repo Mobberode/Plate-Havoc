@@ -2,7 +2,10 @@ attribute @s max_health base reset
 attribute @s jump_strength base reset
 attribute @s movement_speed base reset
 attribute @s block_break_speed base reset
+attribute @s block_break_speed modifier add plate_havoc:restrict.block_break -1 add_multiplied_total
 attribute @s block_interaction_range base reset
+attribute @s block_interaction_range modifier add plate_havoc:restrict.block_interaction -1 add_multiplied_total
+attribute @s entity_interaction_range base reset
 attribute @s burning_time base reset
 attribute @s attack_damage base reset
 attribute @s attack_knockback base reset

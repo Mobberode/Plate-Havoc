@@ -20,6 +20,8 @@ scoreboard players set #Left plate_havoc.timer 25
 
 scoreboard players set #Value plate_havoc.round 0
 
+data modify storage plate_havoc:data default_gamemode set value "survival"
+
 data modify storage plate_havoc:data on_game_start append value {function:"plate_havoc:game/time/tick_down"}
 
 data modify storage plate_havoc:cards pool set from storage plate_havoc:cards data

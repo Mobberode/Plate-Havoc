@@ -8,11 +8,12 @@ gamerule doDaylightCycle false
 gamerule doWeatherCycle false
 gamerule projectilesCanBreakBlocks true
 gamerule doImmediateRespawn true
+gamerule showDeathMessages true
 defaultgamemode spectator
 difficulty normal
 
-scoreboard objectives add plate_havoc.temp dummy
-scoreboard objectives setdisplay below_name plate_havoc.temp
-scoreboard objectives setdisplay list plate_havoc.temp
-scoreboard objectives setdisplay sidebar plate_havoc.temp
-scoreboard objectives remove plate_havoc.temp
+scoreboard objectives add plate_havoc.refresh dummy
+scoreboard objectives setdisplay below_name plate_havoc.refresh
+scoreboard objectives setdisplay list plate_havoc.refresh
+scoreboard objectives setdisplay sidebar plate_havoc.refresh
+scoreboard objectives remove plate_havoc.refresh

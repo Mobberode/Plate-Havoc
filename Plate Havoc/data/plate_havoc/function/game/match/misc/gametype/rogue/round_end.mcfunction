@@ -3,6 +3,7 @@ execute as @a run function plate_havoc:game/misc/apply_gamemode with storage pla
 
 kill @e[type=!player]
 scoreboard players reset * plate_havoc.event
+scoreboard players reset * plate_havoc.temp
 
 scoreboard players set #Value plate_havoc.gamestatus 1
 

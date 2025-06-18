@@ -1,0 +1,1 @@
+execute store result score #Glitched plate_havoc.timer run random value -1073741823..1073741823

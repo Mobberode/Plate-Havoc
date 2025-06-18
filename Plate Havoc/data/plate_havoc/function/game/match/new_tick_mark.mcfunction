@@ -1,0 +1,1 @@
+scoreboard players reset * plate_havoc.triggers

@@ -6,7 +6,7 @@ $dialog show @a {\
     pause: false,\
     after_action:none,\
     body:[\
-        {type:plain_message,contents:[{text:"Players: "},{text:"$(players)",color:green},{text:" Time Left: "},{text:"$(time)",color:gold},{text:" Intensity: "},{text:"$(intensity)",color:red},{text:" Cycle: "},{text:"$(round)",color:aqua}],width:512},\
+        {type:plain_message,contents:[{text:"Intensity: "},{text:"$(intensity)",color:red},{text:" Time Left: "},{text:"$(time)",color:gold},{text:" Cycle: "},{text:"$(round)",color:aqua},{text:" Players: "},{text:"$(players)",color:green}],width:512},\
         {type:"plain_message",contents:{text:"Select a Card!",color:"gold"}},\
         {type:"plain_message",contents:{text:"",extra:[$(game_select_cards)]},width:512}\
     ],\

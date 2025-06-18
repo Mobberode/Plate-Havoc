@@ -1,1 +1,1 @@
-scoreboard players add #Template.Event.Piranha.Damage plate_havoc.num 25
+scoreboard players add #Template.Event.Piranha.Damage plate_havoc.num 45

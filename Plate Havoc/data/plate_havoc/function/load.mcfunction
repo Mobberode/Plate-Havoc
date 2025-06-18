@@ -12,6 +12,9 @@ scoreboard objectives add plate_havoc.timer dummy
 scoreboard objectives add plate_havoc.intensity dummy
 scoreboard objectives add plate_havoc.rng dummy
 
+scoreboard objectives add plate_havoc.triggers dummy
+scoreboard objectives add plate_havoc.temp dummy
+
 scoreboard objectives add plate_havoc.card dummy
 scoreboard objectives add plate_havoc.event dummy
 
@@ -43,4 +46,4 @@ execute unless score #LBLimit plate_havoc.config matches 0.. run scoreboard play
 
 function plate_havoc:game/init
 
-tag @a add plate_havoc.has_console_access
+#tag @a add plate_havoc.has_console_access
