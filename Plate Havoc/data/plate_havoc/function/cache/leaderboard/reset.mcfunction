@@ -1,3 +1,2 @@
-data remove storage plate_havoc:data leaderboard
-data remove storage plate_havoc:data leaderboard_data
-tellraw @a [{text:"Operator has wiped the Server Leaderboard!",color:red}]
+$data remove storage plate_havoc:leaderboard $(directory)
+$tellraw @a [{text:"Operator has wiped the $(directory) of Server Leaderboard!",color:red}]

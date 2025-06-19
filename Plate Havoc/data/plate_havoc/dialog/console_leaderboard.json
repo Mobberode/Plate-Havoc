@@ -1,0 +1,8 @@
+{
+    "type": "multi_action",
+    "title": "Plate Havoc Console",
+    "exit_action": {"label":"Back","action":{"type":"show_dialog","dialog":"plate_havoc:console"}},
+    "inputs": [{"key":"directory","type":"text","label":"Leaderboard Directory","initial":"root"}],
+    
+    "actions": [{"label":"Wipe","action":{"type":"dynamic/run_command","template":"function plate_havoc:cache/leaderboard/reset {directory:$(directory)}"}}]
+}

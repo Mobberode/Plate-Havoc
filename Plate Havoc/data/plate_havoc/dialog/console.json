@@ -22,7 +22,7 @@
             "label": "Force Game Over","action":{"type":"run_command","command":"function plate_havoc:game/match/game_over"}
         },
         {
-            "label": "Reset Leaderboard","action":{"type":"run_command","command":"function plate_havoc:cache/leaderboard/reset"}
+            "label": "Reset Leaderboard","action":{"type":"show_dialog","dialog":"plate_havoc:console_leaderboard"}
         }
     ]
 }
