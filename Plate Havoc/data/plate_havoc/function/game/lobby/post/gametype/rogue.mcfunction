@@ -15,8 +15,8 @@ data modify storage plate_havoc:data game_end_condition_function set value "plat
 
 data modify storage plate_havoc:data tick_function set value "plate_havoc:game/match/misc/gametype/rogue/tick"
 
-scoreboard players set #Time plate_havoc.card 25
-scoreboard players set #Left plate_havoc.timer 25
+function plate_havoc:game/match/player_count
+function plate_havoc:game/match/misc/gametype/rogue/calc_time
 
 scoreboard players set #Value plate_havoc.round 0
 function plate_havoc:game/match/misc/gametype/rogue/push_stats

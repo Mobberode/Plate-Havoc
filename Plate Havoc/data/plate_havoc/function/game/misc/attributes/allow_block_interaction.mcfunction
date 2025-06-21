@@ -1,0 +1,2 @@
+attribute @s block_break_speed modifier remove plate_havoc:restrict.block_break
+attribute @s block_interaction_range modifier remove plate_havoc:restrict.block_interaction

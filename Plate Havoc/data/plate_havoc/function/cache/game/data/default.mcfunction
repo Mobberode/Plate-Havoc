@@ -19,6 +19,9 @@ scoreboard players set #BaseGainPercentage plate_havoc.spawnpoint_energy 100
 #1000 = 100.0
 scoreboard players set #BaseWorldBorderWidth plate_havoc.num 1000
 
+##AllowBlockInteraction
+scoreboard players set #AllowBlockInteraction plate_havoc.num 0
+
 data modify storage plate_havoc:data default_gamemode set value "adventure"
 
 data modify storage plate_havoc:data tick_function set value ""

@@ -22,6 +22,8 @@ team modify plate_havoc.player friendlyFire true
 
 time set noon
 
+scoreboard players set #AllowBlockInteraction plate_havoc.num 1
+
 #
 scoreboard players set #LavaHeight plate_havoc.num -65
 

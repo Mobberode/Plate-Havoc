@@ -1,5 +1,4 @@
-execute store result score #Current plate_havoc.players if entity @a[tag=plate_havoc.survivor]
-execute store result score #Match plate_havoc.players if entity @a[tag=!plate_havoc.spectator]
+function plate_havoc:game/match/player_count
 
 execute as @a[tag=!plate_havoc.spectator] run function plate_havoc:game/match/player/status
 

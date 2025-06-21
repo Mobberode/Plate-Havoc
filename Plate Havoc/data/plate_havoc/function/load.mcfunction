@@ -1,7 +1,7 @@
 say loaded
 
-scoreboard objectives add plate_havoc.gamestatus dummy
-scoreboard players set #Value plate_havoc.gamestatus 0
+scoreboard objectives add plate_havoc.status dummy
+scoreboard players set #Game plate_havoc.status 0
 
 scoreboard objectives add plate_havoc.round dummy
 
