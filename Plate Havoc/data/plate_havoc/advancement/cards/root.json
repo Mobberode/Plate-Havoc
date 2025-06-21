@@ -1,0 +1,7 @@
+{
+  "criteria": {
+    "internal": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

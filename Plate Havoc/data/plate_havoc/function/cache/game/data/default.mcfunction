@@ -27,6 +27,10 @@ data modify storage plate_havoc:data on_event_function set value "plate_havoc:ga
 data modify storage plate_havoc:data spectator_tick_function set value "plate_havoc:game/match/player/spectator/energy"
 data modify storage plate_havoc:data game_end_condition_function set value "plate_havoc:game/match/player/endurance/lose_check"
 
+#Leaderboard
+data modify storage plate_havoc:leaderboard sort_function set value "plate_havoc:game/leaderboard/check/intensity"
+data modify storage plate_havoc:leaderboard include_stats set value [{storage:"plate_havoc:data",nbt:time},{storage:"plate_havoc:data",nbt:intensity}]
+
 ##Holds all functions that will be ran when game starts
 data modify storage plate_havoc:data on_game_start set value []
 

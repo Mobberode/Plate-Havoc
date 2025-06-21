@@ -26,3 +26,11 @@ data modify storage plate_havoc:ui game_end_visuals_queue append value {id:messa
 data modify storage plate_havoc:ui game_end_visuals_queue append value {id:elasped,text:"",extra:[{text:"Elasped Time: ",color:gray},{score:{name:"#Duration",objective:plate_havoc.timer},color:gold}]}
 
 data modify storage plate_havoc:ui game_end_visuals_queue append value {id:intensity,text:"",extra:[{text:"Intensity: ",color:gray},{storage:"plate_havoc:data",nbt:intensity,color:gold}]}
+
+##Leaderboard UI
+data modify storage plate_havoc:ui leaderboard_ui set value []
+data modify storage plate_havoc:ui leaderboard_ui_queue set value []
+
+data modify storage plate_havoc:ui leaderboard_ui_queue append value {id:time,visual:{text:"",extra:[{text:"Elasped Time: ",color:gray},{id:time,text:"?",color:gold}]}}
+
+data modify storage plate_havoc:ui leaderboard_ui_queue append value {id:intensity,visual:{text:"",extra:[{text:"Intensity: ",color:gray},{id:intensity,text:"?",color:red}]}}

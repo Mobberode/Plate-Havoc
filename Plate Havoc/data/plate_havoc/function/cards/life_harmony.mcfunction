@@ -1,0 +1,1 @@
+execute as @a[tag=plate_havoc.survivor,advancements={plate_havoc:cards/life_harmony=true}] run function plate_havoc:cards/life_harmony/activate

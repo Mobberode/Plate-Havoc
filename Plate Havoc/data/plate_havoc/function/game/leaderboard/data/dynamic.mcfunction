@@ -1,0 +1,1 @@
+$data modify storage plate_havoc:leaderboard temp.data.$(nbt) set from storage $(storage) $(nbt)

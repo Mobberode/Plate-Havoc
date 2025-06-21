@@ -1,6 +1,6 @@
 #Get
 say order
-function plate_havoc:game/leaderboard/check/intensity
+function plate_havoc:game/leaderboard/check/dynamic with storage plate_havoc:leaderboard
 
 #Compare
 execute if score #LB plate_havoc.num > #LBC plate_havoc.num run return run function plate_havoc:game/leaderboard/set

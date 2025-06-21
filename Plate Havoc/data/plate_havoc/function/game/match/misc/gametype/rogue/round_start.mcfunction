@@ -1,3 +1,5 @@
+advancement revoke @a from plate_havoc:cards/root
+
 function plate_havoc:game/misc/cards/running/types/on_start/start
 function plate_havoc:game/misc/cards/running/types/loop/start
 

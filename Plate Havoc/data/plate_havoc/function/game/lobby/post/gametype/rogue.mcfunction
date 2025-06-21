@@ -19,9 +19,15 @@ scoreboard players set #Time plate_havoc.card 25
 scoreboard players set #Left plate_havoc.timer 25
 
 scoreboard players set #Value plate_havoc.round 0
+function plate_havoc:game/match/misc/gametype/rogue/push_stats
 
 data modify storage plate_havoc:data default_gamemode set value "survival"
 
 data modify storage plate_havoc:data on_game_start append value {function:"plate_havoc:game/time/tick_down"}
 
 data modify storage plate_havoc:cards pool set from storage plate_havoc:cards data
+
+data modify storage plate_havoc:ui leaderboard_ui_queue prepend value {id:cycle,visual:{text:"",extra:[{text:"Cycle: ",color:gray},{id:cycle,text:"?",color:aqua}]}}
+
+data modify storage plate_havoc:leaderboard sort_function set value "plate_havoc:game/leaderboard/check/cycle"
+data modify storage plate_havoc:leaderboard include_stats set value [{storage:"plate_havoc:data",nbt:cycle},{storage:"plate_havoc:data",nbt:time},{storage:"plate_havoc:data",nbt:intensity}]

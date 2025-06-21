@@ -1,0 +1,1 @@
+execute store result storage plate_havoc:data cycle int 1 run scoreboard players get #Value plate_havoc.round
