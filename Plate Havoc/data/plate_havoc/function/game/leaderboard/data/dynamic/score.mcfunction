@@ -1,0 +1,1 @@
+$execute store result storage plate_havoc:leaderboard temp.data.$(holder) int 1 run scoreboard players get $(location)

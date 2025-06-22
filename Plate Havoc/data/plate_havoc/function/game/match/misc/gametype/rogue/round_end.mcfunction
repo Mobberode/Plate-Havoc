@@ -8,7 +8,6 @@ scoreboard players reset * plate_havoc.temp
 scoreboard players set #Game plate_havoc.status 1
 
 scoreboard players add #Value plate_havoc.round 1
-function plate_havoc:game/match/misc/gametype/rogue/push_stats
 
 data modify storage plate_havoc:cards type set value positive
 

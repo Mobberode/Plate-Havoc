@@ -32,7 +32,7 @@ data modify storage plate_havoc:data game_end_condition_function set value "plat
 
 #Leaderboard
 data modify storage plate_havoc:leaderboard sort_function set value "plate_havoc:game/leaderboard/check/intensity"
-data modify storage plate_havoc:leaderboard include_stats set value [{storage:"plate_havoc:data",nbt:time},{storage:"plate_havoc:data",nbt:intensity}]
+data modify storage plate_havoc:leaderboard include_stats set value [{type:score,location:"#Duration plate_havoc.timer",holder:time},{type:storage,location:"plate_havoc:data",holder:intensity}]
 
 ##Holds all functions that will be ran when game starts
 data modify storage plate_havoc:data on_game_start set value []

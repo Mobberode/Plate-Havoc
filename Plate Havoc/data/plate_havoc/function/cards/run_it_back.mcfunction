@@ -1,1 +1,1 @@
-execute if score #EventRan plate_havoc.triggers matches 1.. run function plate_havoc:game/events/init
+execute if score #EventRan plate_havoc.triggers matches 1.. run function plate_havoc:cards/run_it_back/init
