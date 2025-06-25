@@ -19,7 +19,9 @@ data modify storage plate_havoc:cards data set value [\
 \
 {id:hands_of_creativity,type:positive,body:{text:"",extra:[{text:"Hands of Creativity",color:green},{text:"\nGain the ability to break and place blocks but with halved range"}]},action:{label:[{text:"Hands of Creativity"}]},on_select:{function:"plate_havoc:cards/hands_of_creativity",duration:-1,left:1,type:on_start}},\
 \
-{id:locked_spacebar,type:negative,body:{text:"",extra:[{text:"Locked Spacebar",color:red},{text:"\n I can't jump!"}]},action:{label:[{text:"Locked Spacebar"}]},on_select:{function:"plate_havoc:cards/locked_spacebar",duration:-1,left:1,type:on_start}},\
+{id:box_of_meats,type:positive,body:{text:"",extra:[{text:"Box of Meats",color:green},{text:"\n3 Steaks for all players"}]},action:{label:[{text:"Box of Meats"}]},on_select:{function:"plate_havoc:cards/box_of_meats",duration:-1,left:1,type:on_start}},\
+\
+{id:locked_spacebar,type:negative,body:{text:"",extra:[{text:"Locked Spacebar",color:red},{text:"\nI can't jump!"}]},action:{label:[{text:"Locked Spacebar"}]},on_select:{function:"plate_havoc:cards/locked_spacebar",duration:-1,left:1,type:on_start}},\
 \
 {id:piranha_season,type:negative,body:{text:"",extra:[{text:"Piranha Season",color:red},{text:"\nPiranhas deal +4.5 (2.5 Hearts) more damage to players"}]},action:{label:[{text:"Piranha Season"}]},on_select:{function:"plate_havoc:cards/piranha_season",duration:1,left:1,type:on_start}},\
 \
