@@ -3,7 +3,7 @@ tag @s remove plate_havoc.card.decay_cube.init
 #Value
 execute store result score @s plate_havoc.temp run random value 100..250
 scoreboard players operation @s plate_havoc.temp *= #Value plate_havoc.round
-execute store result storage plate_havoc:cards temp double 0.0025 run scoreboard players get @s plate_havoc.temp
+execute store result storage plate_havoc:cards temp double 0.0025 run scoreboard players operation @s plate_havoc.temp /= #2 plate_havoc.num
 
 #Time in ticks
 execute store result score @s plate_havoc.timer run random value 200..400
