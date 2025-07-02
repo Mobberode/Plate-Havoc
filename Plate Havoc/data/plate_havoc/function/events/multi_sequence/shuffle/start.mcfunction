@@ -1,4 +1,4 @@
-tellraw @a [{text:"A Shuffle has occured!",color:gray}]
+data modify storage plate_havoc:ui event_message set value [{text:"A Shuffle has occured!",color:gray}]
 
 execute as @e[tag=!plate_havoc.dont_interact,predicate=plate_havoc:on_ground] at @s run function plate_havoc:events/multi_sequence/shuffle/teleport
 

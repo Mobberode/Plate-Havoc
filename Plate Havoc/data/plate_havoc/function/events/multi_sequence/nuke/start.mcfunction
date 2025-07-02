@@ -1,4 +1,4 @@
-tellraw @a [{text:"A Nuke will slowly fall to the plate!",color:gray}]
+data modify storage plate_havoc:ui event_message set value [{text:"A Nuke will slowly fall to the plate!",color:gray}]
 
 execute as @n[type=marker,tag=plate_havoc.event_place] at @r[tag=plate_havoc.survivor,sort=random] run function plate_havoc:placements/event_standard
 

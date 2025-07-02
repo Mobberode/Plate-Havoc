@@ -2,4 +2,4 @@ execute at @r[tag=plate_havoc.survivor] run summon marker ~ 320 ~ {Rotation:[0,9
 
 function plate_havoc:events/multi_sequence/laser_drill/loop
 
-tellraw @a [{text:"A laser will drill through the ground from the skies!",color:gray}]
+data modify storage plate_havoc:ui event_message set value [{text:"A laser will drill through the ground from the skies!",color:gray}]

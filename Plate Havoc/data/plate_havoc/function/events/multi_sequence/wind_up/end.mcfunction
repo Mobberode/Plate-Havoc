@@ -1,1 +1,1 @@
-tellraw @a {text:"Wind Charges has stopped coming from above!",color:gray}
+data modify storage plate_havoc:ui event_message set value {text:"Wind Charges has stopped coming from above!",color:gray}

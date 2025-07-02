@@ -4,5 +4,5 @@ scoreboard players operation #AcidRain plate_havoc.event = #Template.Event.AcidR
 weather rain
 execute in plate_havoc:arena positioned 0 0 0 run fillbiome ~-100 ~ ~-100 ~100 ~256 ~100 plate_havoc:acid_rain
 
-tellraw @a [{text:"There's a Acid Rain! Get under cover!",color:gray}]
+data modify storage plate_havoc:ui event_message set value [{text:"There's a Acid Rain! Get under cover!",color:gray}]
 function plate_havoc:events/multi_sequence/acid_rain/loop

@@ -1,0 +1,1 @@
+execute unless score #EventNotify plate_havoc.num matches ..0 run tellraw @a {storage:"plate_havoc:ui",nbt:event_message,interpret:true}

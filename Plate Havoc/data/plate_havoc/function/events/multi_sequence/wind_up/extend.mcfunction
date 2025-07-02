@@ -1,2 +1,2 @@
-tellraw @a {text:"100 More Wind Chagres will come from above!",color:gray}
+data modify storage plate_havoc:ui event_message set value {text:"100 More Wind Chagres will come from above!",color:gray}
 scoreboard players operation #WindCharges plate_havoc.event += #Template.Event.WindCharges.Extension plate_havoc.num

@@ -7,7 +7,7 @@ function plate_havoc:game/misc/cards/reset
 data modify storage plate_havoc:cards data set value [\
 {id:chilled_temper,type:positive,body:{text:"",extra:[{text:"Chilled Temper",color:green},{text:"\n-25% Intensity Gain Percentage"}]},action:{label:[{text:"Chilled Temper"}]},on_select:{function:"plate_havoc:cards/chilled_temper",duration:1,left:1,type:on_start}},\
 \
-{id:swift_feets,type:positive,body:{text:"",extra:[{text:"Swift Feets",color:green},{text:"\nIncrease Movement Speed (30% *Level) (Max: 2)"}]},action:{label:[{text:"Swift Feets"}]},on_select:{function:"plate_havoc:cards/swift_feets",duration:-1,left:2,type:on_start}},\
+{id:swift_feets,type:positive,body:{text:"",extra:[{text:"Swift Feets",color:green},{text:"\nIncrease Movement Speed (10% *Level) (Max: 3)"}]},action:{label:[{text:"Swift Feets"}]},on_select:{function:"plate_havoc:cards/swift_feets",duration:-1,left:3,type:on_start}},\
 \
 {id:hearty,type:positive,body:{text:"",extra:[{text:"Hearty",color:green},{text:"\nIncreases Max Health (2.5 *Level) (Max: 4)"}]},action:{label:[{text:"Hearty"}]},on_select:{function:"plate_havoc:cards/hearty",duration:-1,left:4,type:on_start}},\
 \
@@ -23,11 +23,11 @@ data modify storage plate_havoc:cards data set value [\
 \
 {id:locked_spacebar,type:negative,body:{text:"",extra:[{text:"Locked Spacebar",color:red},{text:"\nI can't jump!"}]},action:{label:[{text:"Locked Spacebar"}]},on_select:{function:"plate_havoc:cards/locked_spacebar",duration:-1,left:1,type:on_start}},\
 \
-{id:piranha_season,type:negative,body:{text:"",extra:[{text:"Piranha Season",color:red},{text:"\nPiranhas deal +4.5 (2.5 Hearts) more damage to players"}]},action:{label:[{text:"Piranha Season"}]},on_select:{function:"plate_havoc:cards/piranha_season",duration:1,left:1,type:on_start}},\
+{id:piranha_season,type:negative,body:{text:"",extra:[{text:"Piranha Season",color:red},{text:"\nWater is no longer safe and piranhas deal +3.5 (1.5 Hearts) more damage to players"}]},action:{label:[{text:"Piranha Season"}]},on_select:{function:"plate_havoc:cards/piranha_season",duration:-1,left:1,type:on_start}},\
 \
 {id:enraged,type:negative,body:{text:"",extra:[{text:"Enraged",color:red},{text:"\nIncreased event frequency (-25%) and intensity gain (+30%) (Max: 2)"}]},action:{label:[{text:"Enraged"}]},on_select:{function:"plate_havoc:cards/enraged",duration:1,left:2,type:on_start}},\
 \
-{id:new_years,type:negative,body:{text:"",extra:[{text:"New Years",color:red},{text:"\nThe Fireworks event is guaranteed at the start of every cycle"}]},action:{label:[{text:"New Years"}]},on_select:{function:"plate_havoc:cards/new_years",duration:-1,left:1,type:on_start}},\
+{id:new_years,type:negative,body:{text:"",extra:[{text:"New Years",color:red},{text:"\nThe Fireworks event is guaranteed at the start of every cycle. Upgrades when stack is at 2"}]},action:{label:[{text:"New Years"}]},on_select:{function:"plate_havoc:cards/new_years",duration:-1,left:2,type:on_start}},\
 \
 {id:silverfestation,type:negative,body:{text:"",extra:[{text:"Silverfestation",color:red},{text:"\nTHERE'S SILVERFISH EVERYWHERE!"}]},action:{label:[{text:"Silverfestation"}]},on_select:{function:"plate_havoc:cards/silverfestation",duration:-1,left:1,type:loop}},\
 \
@@ -35,9 +35,9 @@ data modify storage plate_havoc:cards data set value [\
 \
 {id:fragile_legs,type:negative,body:{text:"",extra:[{text:"Fragile Legs",color:red},{text:"\nFall Damage is multiplied (75% *Level) (Max: 3)"}]},action:{label:[{text:"Fragile Legs"}]},on_select:{function:"plate_havoc:cards/fragile_legs",duration:-1,left:3,type:on_start}},\
 \
-{id:glitched_timer,type:negative,body:{text:"",extra:[{text:"Glitched Timer",color:red},{text:"\nTimer will become inaccurate and wont show the real time"}]},action:{label:[{text:"Glitched Timer"}]},on_select:{function:"plate_havoc:cards/glitched_timer",duration:-1,left:1,type:loop}},\
+{id:glitched_timer,type:negative,body:{text:"",extra:[{text:"Glitched Timer",color:red},{text:"\nTimer will become inaccurate and wont show the real time. Can add an unknown amount of time."}]},action:{label:[{text:"Glitched Timer"}]},on_select:{function:"plate_havoc:cards/glitched_timer",duration:-1,left:1,type:loop}},\
 \
-{id:no_evidence,type:negative,body:{text:"",extra:[{text:"No Evidence",color:red},{text:"\nPlayer count is hidden and Death messages are hidden"}]},action:{label:[{text:"No Evidence"}]},on_select:{function:"plate_havoc:cards/no_evidence",duration:1,left:1,type:loop}},\
+{id:no_evidence,type:negative,body:{text:"",extra:[{text:"No Evidence",color:red},{text:"\nPlayer count is hidden and Death messages are hidden. Event messages are also hidden"}]},action:{label:[{text:"No Evidence"}]},on_select:{function:"plate_havoc:cards/no_evidence",duration:1,left:1,type:on_start}},\
 \
 {id:run_it_back,type:negative,body:{text:"",extra:[{text:"Run it Back!",color:red},{text:"\nHave an additional event occur on event. Cant be triggered again and cannot add to the Intensity (A = 1*Level) (Max:2)"}]},action:{label:[{text:"Run it Back!"}]},on_select:{function:"plate_havoc:cards/run_it_back",duration:-1,left:2,type:loop}},\
 \
@@ -45,7 +45,7 @@ data modify storage plate_havoc:cards data set value [\
 \
 {id:always_hungry,type:negative,body:{text:"",extra:[{text:"Always Hungry",color:red},{text:"\nPlayers get incredibly hungry real fast. Hunger Management required"}]},action:{label:[{text:"Always Hungry"}]},on_select:{function:"plate_havoc:cards/always_hungry",duration:-1,left:1,type:loop}},\
 \
-{id:life_harmony,type:negative,body:{text:"",extra:[{text:"Life Harmony",color:red},{text:"\nDeaths of entities caused by a player will extend the time left by 4"}]},action:{label:[{text:"Life Harmony"}]},on_select:{function:"plate_havoc:cards/life_harmony",duration:-1,left:1,type:loop}},\
+{id:life_harmony,type:negative,body:{text:"",extra:[{text:"Life Harmony",color:red},{text:"\nDeath of entities caused by players adds 4 to the timer and also cuts the time till an event by a quarter"}]},action:{label:[{text:"Life Harmony"}]},on_select:{function:"plate_havoc:cards/life_harmony",duration:-1,left:1,type:loop}},\
 ]
 #
 

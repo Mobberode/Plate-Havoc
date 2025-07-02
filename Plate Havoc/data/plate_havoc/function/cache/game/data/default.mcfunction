@@ -40,6 +40,8 @@ data modify storage plate_havoc:leaderboard include_stats set value [{type:score
 ##Holds all functions that will be ran when game starts
 data modify storage plate_havoc:data on_game_start set value []
 
+##Events Global
+scoreboard players set #EventNotify plate_havoc.num 1
 ###Event specific data
 ##Acid Rain (seconds)
 scoreboard players set #Template.Event.AcidRain plate_havoc.num 15

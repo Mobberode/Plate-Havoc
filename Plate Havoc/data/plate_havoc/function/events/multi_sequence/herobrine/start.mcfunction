@@ -1,6 +1,6 @@
 execute if score #Herobrine plate_havoc.event matches 1.. run return run function plate_havoc:events/multi_sequence/herobrine/extend
 
-tellraw @a {text:"Herobrine has arrived. (30s)",color:gray}
+data modify storage plate_havoc:ui event_message set value {text:"Herobrine has arrived. (30s)",color:gray}
 scoreboard players operation #Herobrine plate_havoc.event = #Template.Event.Herobrine plate_havoc.num
 
 execute as @n[type=marker,tag=plate_havoc.event_place] at @s run function plate_havoc:placements/event_standard

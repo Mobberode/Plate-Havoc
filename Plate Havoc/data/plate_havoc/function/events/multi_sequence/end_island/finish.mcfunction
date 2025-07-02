@@ -1,4 +1,5 @@
-tellraw @a [{text:"A new end island has appeared!",color:gray}]
+data modify storage plate_havoc:ui event_message set value [{text:"A new end island has appeared!",color:gray}]
+function plate_havoc:game/events/event_message
 execute at @s run place feature end_island
 kill @s
 
