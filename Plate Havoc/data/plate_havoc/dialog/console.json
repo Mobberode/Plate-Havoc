@@ -1,7 +1,7 @@
 {
     "type": "multi_action",
     "title": "Plate Havoc Console",
-    "body": [{"type":"plain_message","contents":[{"text":"Version: 0.71A","color":"red"}]}],
+    "body": [{"type":"plain_message","contents":[{"text":"Version: 0.72A","color":"red"}]}],
     "actions": [
         {
             "label":"Events","action":{"type":"show_dialog","dialog":"plate_havoc:console_event"}

@@ -1,1 +1,1 @@
-give @a cooked_beef 3
+give @a cooked_mutton 3

@@ -15,7 +15,7 @@ data modify storage plate_havoc:data events set value [\
 {id:bridge,intensity:0.6,function:"plate_havoc:events/bridge"},\
 {id:ghast,intensity:4.6,function:"plate_havoc:events/ghast"},\
 {id:acid_rain,intensity:5.55,function:"plate_havoc:events/multi_sequence/acid_rain/start"},\
-{id:null,intensity:3.7,function:"plate_havoc:events/null"},\
+{id:null,intensity:3.7,function:"plate_havoc:events/multi_sequence/null/start"},\
 {id:buff_wind,intensity:1.6,function:"plate_havoc:events/buff_wind"},\
 {id:buff_heal,intensity:2.56,function:"plate_havoc:events/buff_heal"},\
 {id:end_island,intensity:2.1,function:"plate_havoc:events/multi_sequence/end_island/start"},\

@@ -5,7 +5,7 @@ function plate_havoc:game/misc/cards/reset
 ##Card Data
 # -1 = inf
 data modify storage plate_havoc:cards data set value [\
-{id:chilled_temper,type:positive,body:{text:"",extra:[{text:"Chilled Temper",color:green},{text:"\n-10% Intensity Gain Percentage"}]},action:{label:[{text:"Chilled Temper"}]},on_select:{function:"plate_havoc:cards/chilled_temper",duration:1,left:1,type:on_start}},\
+{id:chilled_temper,type:positive,body:{text:"",extra:[{text:"Chilled Temper",color:green},{text:"\n-25% Intensity Gain Percentage"}]},action:{label:[{text:"Chilled Temper"}]},on_select:{function:"plate_havoc:cards/chilled_temper",duration:1,left:1,type:on_start}},\
 \
 {id:swift_feets,type:positive,body:{text:"",extra:[{text:"Swift Feets",color:green},{text:"\nIncrease Movement Speed (30% *Level) (Max: 2)"}]},action:{label:[{text:"Swift Feets"}]},on_select:{function:"plate_havoc:cards/swift_feets",duration:-1,left:2,type:on_start}},\
 \
@@ -39,7 +39,7 @@ data modify storage plate_havoc:cards data set value [\
 \
 {id:no_evidence,type:negative,body:{text:"",extra:[{text:"No Evidence",color:red},{text:"\nPlayer count is hidden and Death messages are hidden"}]},action:{label:[{text:"No Evidence"}]},on_select:{function:"plate_havoc:cards/no_evidence",duration:1,left:1,type:loop}},\
 \
-{id:run_it_back,type:negative,body:{text:"",extra:[{text:"Run it Back!",color:red},{text:"\nHave  additional event occur on event. Cant be triggered again and cannot add to the Intensity (A = 1*Level) (Max:2)"}]},action:{label:[{text:"Run it Back!"}]},on_select:{function:"plate_havoc:cards/run_it_back",duration:-1,left:2,type:loop}},\
+{id:run_it_back,type:negative,body:{text:"",extra:[{text:"Run it Back!",color:red},{text:"\nHave an additional event occur on event. Cant be triggered again and cannot add to the Intensity (A = 1*Level) (Max:2)"}]},action:{label:[{text:"Run it Back!"}]},on_select:{function:"plate_havoc:cards/run_it_back",duration:-1,left:2,type:loop}},\
 \
 {id:cube_of_decay,type:negative,body:{text:"",extra:[{text:"Cube of Decay",color:red},{text:"\nSummons a Cube that permanently boosts Intensity gain if left untreated. Be near the cube for it to shrink. Time left and needed to treat the cube is times cycle"}]},action:{label:[{text:"Cube of Decay"}]},on_select:{function:"plate_havoc:cards/cube_of_decay",duration:-1,left:1,type:loop}},\
 \

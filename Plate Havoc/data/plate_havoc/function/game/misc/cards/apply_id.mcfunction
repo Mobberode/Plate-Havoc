@@ -7,9 +7,9 @@ data modify storage plate_havoc:cards slots append from storage plate_havoc:card
 
 data modify storage plate_havoc:cards card.action.slot set from storage plate_havoc:cards slot
 
-data modify storage plate_havoc:cards card.action.label append value {partition:votes,text:" Votes: ",color:gray,extra:[{text:"null",color:gold}]}
+data modify storage plate_havoc:cards card.action.label append value {partition:votes,text:" (",extra:[{text:"null",extra:[{text:"/"},{part:max,text:"1"},{text:")"}]}]}
 data modify storage plate_havoc:cards card.action.label[{partition:votes}].extra[].id set from storage plate_havoc:cards card.id
 
-data modify storage plate_havoc:cards card.action.width set value 256
+data modify storage plate_havoc:cards card.action.width set value 320
 
 function plate_havoc:game/misc/cards/vote/apply_visual with storage plate_havoc:cards

@@ -2,9 +2,9 @@ tellraw @a [{text:"Endurance | Modern",color:gold},{text:"\nThe intended Enduran
 
 scoreboard players set #BaseEventTimePercentage plate_havoc.num 150
 
-scoreboard players set #BaseIntensityPercentage plate_havoc.num 30
+scoreboard players set #BaseIntensityPercentage plate_havoc.num 50
 
-data modify storage plate_havoc:ui bar_visuals_queue[{id:time}].extra set value [{text:"Time Left: "},{score:{name:"#Left",objective:plate_havoc.timer},color:gold}]
+data modify storage plate_havoc:ui bar_visuals_queue[{id:time}].extra set value [{text:"Time: "},{score:{name:"#Left",objective:plate_havoc.timer},color:gold}]
 data modify storage plate_havoc:ui bar_visuals_queue[{id:players}].extra set value [{score:{name:"#Current",objective:plate_havoc.players},color:green},{text:"/"},{score:{name:"#Match",objective:plate_havoc.players},color:green}]
 
 data modify storage plate_havoc:ui bar_visuals_queue insert 2 value {id:cycle,text:"",extra:[{text:"Cycle: "},{score:{name:"#Value",objective:plate_havoc.round},color:aqua}]}
@@ -18,6 +18,7 @@ data modify storage plate_havoc:data game_end_condition_function set value "plat
 data modify storage plate_havoc:data tick_function set value "plate_havoc:game/match/misc/gametype/rogue/tick"
 
 data modify storage plate_havoc:data default_gamemode set value "survival"
+difficulty hard
 
 data modify storage plate_havoc:data on_game_start append value {function:"plate_havoc:game/time/tick_down"}
 
