@@ -5,21 +5,33 @@ function plate_havoc:game/misc/cards/reset
 ##Card Data
 # -1 = inf
 data modify storage plate_havoc:cards data set value [\
-{id:chilled_temper,type:positive,body:{text:"",extra:[{text:"Chilled Temper",color:green},{text:"\n-25% Intensity Gain Percentage"}]},action:{label:[{text:"Chilled Temper"}]},on_select:{function:"plate_havoc:cards/chilled_temper",duration:1,left:1,type:on_start}},\
+{id:chilled_temper,type:positive,cost:30,body:{text:"",extra:[{text:"Chilled Temper",color:green},{text:"\n-25% Intensity Gain Percentage"}]},action:{label:[{text:"Chilled Temper"}]},on_select:{function:"plate_havoc:cards/chilled_temper",duration:1,left:1,type:on_start}},\
 \
-{id:swift_feets,type:positive,body:{text:"",extra:[{text:"Swift Feets",color:green},{text:"\nIncrease Movement Speed (10% *Level) (Max: 3)"}]},action:{label:[{text:"Swift Feets"}]},on_select:{function:"plate_havoc:cards/swift_feets",duration:-1,left:3,type:on_start}},\
+{id:swift_feets,type:positive,cost:20,body:{text:"",extra:[{text:"Swift Feets",color:green},{text:"\nIncrease Movement Speed (10% *Level) (Max: 3)"}]},action:{label:[{text:"Swift Feets"}]},on_select:{function:"plate_havoc:cards/swift_feets",duration:-1,left:3,type:on_start}},\
 \
-{id:hearty,type:positive,body:{text:"",extra:[{text:"Hearty",color:green},{text:"\nIncreases Max Health (2.5 *Level) (Max: 4)"}]},action:{label:[{text:"Hearty"}]},on_select:{function:"plate_havoc:cards/hearty",duration:-1,left:4,type:on_start}},\
+{id:hearty,type:positive,cost:35,body:{text:"",extra:[{text:"Hearty",color:green},{text:"\nIncreases Max Health (2.5 *Level) (Max: 4)"}]},action:{label:[{text:"Hearty"}]},on_select:{function:"plate_havoc:cards/hearty",duration:-1,left:4,type:on_start}},\
 \
-{id:armoured_up,type:positive,body:{text:"",extra:[{text:"Armoured Up",color:green},{text:"\nGain Armour (2 *Level) and Toughness (Armour /2) (Max: 5)"}]},action:{label:[{text:"Armoured Up"}]},on_select:{function:"plate_havoc:cards/armoured_up",duration:-1,left:5,type:on_start}},\
+{id:armoured_up,type:positive,cost:50,body:{text:"",extra:[{text:"Armoured Up",color:green},{text:"\nGain Armour (2 *Level) and Toughness (Armour /2) (Max: 5)"}]},action:{label:[{text:"Armoured Up"}]},on_select:{function:"plate_havoc:cards/armoured_up",duration:-1,left:5,type:on_start}},\
 \
-{id:shearing_webs,type:positive,body:{text:"",extra:[{text:"Shearing Webs",color:green},{text:"\nShear away cobwebs that players step on"}]},action:{label:[{text:"Shearing Webs"}]},on_select:{function:"plate_havoc:cards/shearing_webs",duration:-1,left:1,type:loop}},\
+{id:shearing_webs,type:positive,cost:70,body:{text:"",extra:[{text:"Shearing Webs",color:green},{text:"\nShear away cobwebs that players step on"}]},action:{label:[{text:"Shearing Webs"}]},on_select:{function:"plate_havoc:cards/shearing_webs",duration:-1,left:1,type:loop}},\
 \
-{id:strength_training,type:positive,body:{text:"",extra:[{text:"Strength Training",color:green},{text:"\nHits hit harder (33.3% *Level) (Max: 3)"}]},action:{label:[{text:"Strength Training"}]},on_select:{function:"plate_havoc:cards/strength_training",duration:1,left:3,type:on_start}},\
+{id:strength_training,type:positive,cost:30,body:{text:"",extra:[{text:"Strength Training",color:green},{text:"\nHits hit harder (1 *Level) (Max: 3)"}]},action:{label:[{text:"Strength Training"}]},on_select:{function:"plate_havoc:cards/strength_training",duration:1,left:3,type:on_start}},\
 \
-{id:hands_of_creativity,type:positive,body:{text:"",extra:[{text:"Hands of Creativity",color:green},{text:"\nGain the ability to break and place blocks but with halved range"}]},action:{label:[{text:"Hands of Creativity"}]},on_select:{function:"plate_havoc:cards/hands_of_creativity",duration:-1,left:1,type:on_start}},\
+{id:hands_of_creativity,type:positive,cost:150,body:{text:"",extra:[{text:"Hands of Creativity",color:green},{text:"\nGain the ability to break and place blocks but range is cut by a third"}]},action:{label:[{text:"Hands of Creativity"}]},on_select:{function:"plate_havoc:cards/hands_of_creativity",duration:-1,left:1,type:on_start}},\
 \
-{id:box_of_meats,type:positive,body:{text:"",extra:[{text:"Box of Meats",color:green},{text:"\n3 Steaks for all players"}]},action:{label:[{text:"Box of Meats"}]},on_select:{function:"plate_havoc:cards/box_of_meats",duration:-1,left:1,type:on_start}},\
+{id:box_of_meats,type:positive,cost:90,body:{text:"",extra:[{text:"Box of Meats",color:green},{text:"\n3 Cooked Mutton for all players"}]},action:{label:[{text:"Box of Meats"}]},on_select:{function:"plate_havoc:cards/box_of_meats",duration:-1,left:1,type:on_start}},\
+\
+{id:flippers,type:positive,cost:40,body:{text:"",extra:[{text:"Flippers",color:green},{text:"\nImproves Water Mobility by (+25% *Level) (Max: 2)"}]},action:{label:[{text:"Flippers"}]},on_select:{function:"plate_havoc:cards/flippers",duration:-1,left:2,type:on_start}},\
+\
+{id:box_of_wind,type:positive,cost:90,body:{text:"",extra:[{text:"Box of Wind Charges",color:green},{text:"\n5 Wind Charges for all players"}]},action:{label:[{text:"Box of Wind Charges"}]},on_select:{function:"plate_havoc:cards/box_of_wind",duration:-1,left:1,type:on_start}},\
+\
+{id:boxless_desires,type:positive,cost:260,body:{text:"",extra:[{text:"Boxless Desires",color:green},{text:"\n15 Wind Charges, 7 Cooked Mutton\n+2 Wind Charge per 30s, +1 Cooked Mutton per 1m 30s"}]},action:{label:[{text:"Boxless Desires"}]},on_select:{function:"plate_havoc:cards/boxless_desires",duration:-1,left:1,type:loop}},\
+\
+{id:octagonal_move_normalizer,type:positive,cost:420,body:{text:"",extra:[{text:"Octagonal Move-Normalizer",color:green},{text:"\n+100% Movement Efficency alongside +30% Speed, +50% Water Mobility"}]},action:{label:[{text:"Octagonal Move-Normalizer"}]},on_select:{function:"plate_havoc:cards/octagonal_move_normalizer",duration:-1,left:1,type:on_start}},\
+\
+{id:vampiristic_lifeblood,type:positive,cost:600,body:{text:"",extra:[{text:"Vampiristic Lifeblood",color:green},{text:"\nKilling Mobs restores the killer's health. Increases Max Health by 10"}]},action:{label:[{text:"Vampiristic Lifeblood"}]},on_select:{function:"plate_havoc:cards/vampiristic_lifeblood",duration:-1,left:1,type:on_start}},\
+\
+{id:gods_hand,type:positive,cost:1200,body:{text:"",extra:[{text:"God's Hands",color:green},{text:"\nUnlock your full potential. Block range no longer halved and now has increased range (+1 Range). Interact with Mobs farther away (+1 Range) Blocks now drop, allowing the ability to craft"}]},action:{label:[{text:"God's Hands"}]},on_select:{function:"plate_havoc:cards/gods_hand",duration:-1,left:1,type:on_start}},\
 \
 {id:locked_spacebar,type:negative,body:{text:"",extra:[{text:"Locked Spacebar",color:red},{text:"\nI can't jump!"}]},action:{label:[{text:"Locked Spacebar"}]},on_select:{function:"plate_havoc:cards/locked_spacebar",duration:-1,left:1,type:on_start}},\
 \
@@ -45,7 +57,7 @@ data modify storage plate_havoc:cards data set value [\
 \
 {id:always_hungry,type:negative,body:{text:"",extra:[{text:"Always Hungry",color:red},{text:"\nPlayers get incredibly hungry real fast. Hunger Management required"}]},action:{label:[{text:"Always Hungry"}]},on_select:{function:"plate_havoc:cards/always_hungry",duration:-1,left:1,type:loop}},\
 \
-{id:life_harmony,type:negative,body:{text:"",extra:[{text:"Life Harmony",color:red},{text:"\nDeath of entities caused by players adds 4 to the timer and also cuts the time till an event by a quarter"}]},action:{label:[{text:"Life Harmony"}]},on_select:{function:"plate_havoc:cards/life_harmony",duration:-1,left:1,type:loop}},\
+{id:life_harmony,type:negative,body:{text:"",extra:[{text:"Life Harmony",color:red},{text:"\nDeath of entities caused by players adds 8 to the timer and also cuts the time till an event by a quarter"}]},action:{label:[{text:"Life Harmony"}]},on_select:{function:"plate_havoc:cards/life_harmony",duration:-1,left:1,type:loop}},\
 ]
 #
 

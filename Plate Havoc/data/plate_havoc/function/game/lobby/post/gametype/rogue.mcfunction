@@ -8,6 +8,7 @@ data modify storage plate_havoc:ui bar_visuals_queue[{id:time}].extra set value 
 data modify storage plate_havoc:ui bar_visuals_queue[{id:players}].extra set value [{score:{name:"#Current",objective:plate_havoc.players},color:green},{text:"/"},{score:{name:"#Match",objective:plate_havoc.players},color:green}]
 
 data modify storage plate_havoc:ui bar_visuals_queue insert 2 value {id:cycle,text:"",extra:[{text:"Cycle: "},{score:{name:"#Value",objective:plate_havoc.round},color:aqua}]}
+data modify storage plate_havoc:ui bar_visuals_queue insert 3 value {id:cycle,text:"",extra:[{text:"Cyclathrons: "},{score:{name:"#Cyclathron",objective:plate_havoc.num},color:aqua}]}
 
 data modify storage plate_havoc:ui game_end_visuals_queue insert 1 value {id:cycle,text:"",extra:[{text:"Cycle: ",color:gray},{score:{name:"#Value",objective:plate_havoc.round},color:aqua}]}
 
@@ -19,6 +20,7 @@ data modify storage plate_havoc:data tick_function set value "plate_havoc:game/m
 
 data modify storage plate_havoc:data default_gamemode set value "survival"
 difficulty hard
+gamerule keepInventory true
 
 data modify storage plate_havoc:data on_game_start append value {function:"plate_havoc:game/time/tick_down"}
 
@@ -30,6 +32,7 @@ data modify storage plate_havoc:leaderboard sort_function set value "plate_havoc
 data modify storage plate_havoc:leaderboard include_stats prepend value {type:score,location:"#Value plate_havoc.round",holder:cycle}
 
 scoreboard players set #Value plate_havoc.round 0
+scoreboard players set #Cyclathron plate_havoc.num 0
 
 function plate_havoc:game/match/player_count
 function plate_havoc:game/match/misc/gametype/rogue/calc_time

@@ -1,4 +1,4 @@
-scoreboard players set #Left plate_havoc.timer 45
+scoreboard players set #FinishVoting plate_havoc.num 0
 function plate_havoc:game/time/tick_down
 
 function plate_havoc:game/misc/cards/list/setup

@@ -1,4 +1,5 @@
-$dialog show @a {\
+say 2
+$dialog show @s {\
     type:"multi_action",\
     title:"",\
     columns:1,\
@@ -8,7 +9,7 @@ $dialog show @a {\
     body:[\
         {type:plain_message,contents:[\
         {text:"Intensity: "},{text:"$(intensity)",color:red},\
-        {text:" Time Left: "},{text:"$(time)",color:gold},\
+        {text:" Cyclathrons: "},{text:"$(cyclathron)",color:aqua},\
         {text:" Cycle: "},{text:"$(round)",color:aqua},\
         {text:" Players: "},{text:"$(players)",color:green},\
         ],width:512},\
