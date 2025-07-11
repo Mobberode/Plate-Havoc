@@ -1,4 +1,3 @@
-say 2
 $dialog show @s {\
     type:"multi_action",\
     title:"",\
