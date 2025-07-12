@@ -25,13 +25,15 @@ data modify storage plate_havoc:cards data set value [\
 \
 {id:box_of_meats,type:positive,requirement:{type:cycle,cycle:5},cost:90,body:{text:"",extra:[{text:"Box of Meats",color:green},{text:"\n3 Cooked Mutton for all players"}]},action:{label:[{text:"Box of Meats"}]},on_select:{function:"plate_havoc:cards/box_of_meats",duration:-1,left:1,type:on_start}},\
 \
-{id:boxless_desires,type:positive,requirement:{type:cycle,cycle:8},cost:260,body:{text:"",extra:[{text:"Boxless Desires",color:green},{text:"\n15 Wind Charges, 7 Cooked Mutton\n+2 Wind Charge per 30s, +1 Cooked Mutton per 1m 30s"}]},action:{label:[{text:"Boxless Desires"}]},on_select:{function:"plate_havoc:cards/boxless_desires",duration:-1,left:1,type:loop}},\
+{id:boxless_desires,type:positive,requirement:{type:multi_condition,conditions:[{type:card,needed:[{id:box_of_meats,count:1},{id:box_of_wind,count:1}]},{type:cycle,cycle:8}]},cost:260,body:{text:"",extra:[{text:"Boxless Desires",color:green},{text:"\n15 Wind Charges, 7 Cooked Mutton\n+2 Wind Charge and +1 Cooked Mutton per 30s"}]},action:{label:[{text:"Boxless Desires"}]},on_select:{function:"plate_havoc:cards/boxless_desires",duration:-1,left:1,type:loop}},\
 \
-{id:octagonal_move_normalizer,type:positive,requirement:{type:cycle,cycle:10},cost:420,body:{text:"",extra:[{text:"Octagonal Move-Normalizer",color:green},{text:"\n+100% Movement Efficency alongside +30% Speed, +50% Water Mobility"}]},action:{label:[{text:"Octagonal Move-Normalizer"}]},on_select:{function:"plate_havoc:cards/octagonal_move_normalizer",duration:-1,left:1,type:on_start}},\
+{id:octagonal_move_normalizer,type:positive,requirement:{type:multi_condition,conditions:[{type:cycle,cycle:10},{type:card,needed:[{id:swift_feets,count:3},{id:flippers,count:2}]}]},cost:420,body:{text:"",extra:[{text:"Octagonal Move-Normalizer",color:green},{text:"\n+100% Movement Efficency alongside +30% Speed, +50% Water Mobility"}]},action:{label:[{text:"Octagonal Move-Normalizer"}]},on_select:{function:"plate_havoc:cards/octagonal_move_normalizer",duration:-1,left:1,type:on_start}},\
 \
-{id:vampiristic_lifeblood,type:positive,requirement:{type:cycle,cycle:10},cost:600,body:{text:"",extra:[{text:"Vampiristic Lifeblood",color:green},{text:"\nKilling Mobs restores the killer's health. Increases Max Health by 10"}]},action:{label:[{text:"Vampiristic Lifeblood"}]},on_select:{function:"plate_havoc:cards/vampiristic_lifeblood",duration:-1,left:1,type:on_start}},\
+{id:vampiristic_lifeblood,type:positive,requirement:{type:cycle,cycle:10},cost:600,body:{text:"",extra:[{text:"Vampiristic Lifeblood",color:green},{text:"\nKilling Mobs restores the killer's health. Increases Max Health by 10"}]},action:{label:[{text:"Vampiristic Lifeblood"}]},on_select:{function:"plate_havoc:cards/vampiristic_lifeblood",duration:-1,left:1,type:loop}},\
 \
-{id:gods_hand,type:positive,requirement:{type:cycle,cycle:10},cost:1200,body:{text:"",extra:[{text:"God's Hands",color:green},{text:"\nUnlock your full potential. Block range no longer halved and now has increased range (+1 Range). Interact with Mobs farther away (+1 Range) Blocks now drop, allowing the ability to craft"}]},action:{label:[{text:"God's Hands"}]},on_select:{function:"plate_havoc:cards/gods_hand",duration:-1,left:1,type:on_start}},\
+{id:gods_hand,type:positive,requirement:{type:multi_condition,conditions:[{type:cycle,cycle:10},{type:card,needed:[{id:hands_of_creativity}]}]},cost:1200,body:{text:"",extra:[{text:"God's Hands",color:green},{text:"\nUnlock your full potential. Block range no longer halved and now has increased range (+1 Range). Interact with Mobs farther away (+1 Range) Blocks now drop, allowing the ability to craft"}]},action:{label:[{text:"God's Hands"}]},on_select:{function:"plate_havoc:cards/gods_hand",duration:-1,left:1,type:on_start}},\
+\
+\
 \
 {id:locked_spacebar,type:negative,body:{text:"",extra:[{text:"Locked Spacebar",color:red},{text:"\nI can't jump!"}]},action:{label:[{text:"Locked Spacebar"}]},on_select:{function:"plate_havoc:cards/locked_spacebar",duration:-1,left:1,type:on_start}},\
 \
@@ -66,3 +68,5 @@ data modify storage plate_havoc:cards data set value [\
 #data modify storage plate_havoc:ui game_select_cards_queue append value {text:"",extra:[{text:"Test Card3",color:yellow},{text:"\nSpectator Energy is boosted by 10% but alive players get damaged half a heart for every death"}]}
 
 #data modify storage plate_havoc:ui game_select_cards_queue append value {text:"",extra:[{text:"Test Card4",color:light_purple},{text:"\nStart the Obama Drone Strike event, completion grants a 20+ to max health for all players"}]}
+
+#{id:test100,type:positive,requirement:{type:custom,function:"test:test_function"},cost:420,body:{text:"",extra:[{text:"test100",color:green},{text:"\n+100% Movement Efficency alongside +30% Speed, +50% Water Mobility"}]},action:{label:[{text:"test100"}]},on_select:{function:"plate_havoc:cards/octagonal_move_normalizer",duration:-1,left:1,type:on_start}}
