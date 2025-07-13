@@ -13,5 +13,4 @@ function plate_havoc:game/misc/cards/vote/end/left_check
 function plate_havoc:game/misc/cards/vote/end/duplicate_check with storage plate_havoc:cards
 
 ##Visual
-data modify storage plate_havoc:cards body set from storage plate_havoc:cards template.body
 function plate_havoc:game/misc/cards/vote/end/tellraw
