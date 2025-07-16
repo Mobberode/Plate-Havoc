@@ -1,4 +1,4 @@
-scoreboard players set #FinishVoting plate_havoc.num 0
+function plate_havoc:game/match/misc/gametype/rogue/set_voting
 
 function plate_havoc:game/misc/cards/list/setup
 function plate_havoc:game/misc/cards/reset

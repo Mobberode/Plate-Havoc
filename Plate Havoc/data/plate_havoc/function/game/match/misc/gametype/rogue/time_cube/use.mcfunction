@@ -2,7 +2,7 @@ execute store result score #TimeRemove plate_havoc.temp run random value 1..5
 
 scoreboard players operation #Left plate_havoc.timer -= #TimeRemove plate_havoc.temp
 
-scoreboard players add #Cyclathron plate_havoc.num 100
+function plate_havoc:game/match/misc/gametype/rogue/time_cube/calc_cyclathron
 
 execute on vehicle run kill
 kill

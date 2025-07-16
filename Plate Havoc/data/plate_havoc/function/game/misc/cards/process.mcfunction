@@ -8,5 +8,3 @@ execute if data storage plate_havoc:cards card run return run function plate_hav
 
 ##If no cards left
 execute unless data storage plate_havoc:ui game_select_actions[0] run function plate_havoc:game/misc/cards/fallback
-
-#execute if data storage plate_havoc:cards {type:positive} run function plate_havoc:game/misc/cards/polish

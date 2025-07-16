@@ -2,4 +2,4 @@ data modify storage plate_havoc:ui game_select_actions append value {label:[{tex
 
 data modify storage plate_havoc:cards slots append value {slot:256,votes:0,cost:0}
 
-data modify storage plate_havoc:cards active append value {slot:256}
+data modify storage plate_havoc:cards active append value {slot:256,non_card:true}

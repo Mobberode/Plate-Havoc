@@ -1,3 +1,6 @@
+#Finish processing of currency
+scoreboard players operation #Cyclathron plate_havoc.num -= #CyclathronCost plate_havoc.num
+
 data modify storage plate_havoc:cards id set from storage plate_havoc:cards template.id
 
 #Template

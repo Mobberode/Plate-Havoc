@@ -1,4 +1,4 @@
-scoreboard players set #Time plate_havoc.card 30
+scoreboard players set #Time plate_havoc.card 45
 
 #Players
 scoreboard players operation #Temp plate_havoc.card = #Match plate_havoc.players
