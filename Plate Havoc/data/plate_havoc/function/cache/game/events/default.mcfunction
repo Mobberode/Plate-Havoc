@@ -52,8 +52,8 @@ data modify storage plate_havoc:data events set value [\
 {id:piranha,intensity:2.0,function:"plate_havoc:events/multi_sequence/piranha/start"},\
 {id:dripleaf,intensity:1.1,function:"plate_havoc:events/dripleaf"},\
 {id:spinning_laser,intensity:4.5,function:"plate_havoc:events/multi_sequence/spinning_laser/start"},\
-{id:swap,intensity:3.6,function:"plate_havoc:events/multi_sequence/swap/start"},\
-{id:shuffle,intensity:4.5,function:"plate_havoc:events/multi_sequence/shuffle/start"},\
+{id:swap,intensity:3.6,function:"plate_havoc:events/multi_sequence/swap/start",console_only:true},\
+{id:shuffle,intensity:4.5,function:"plate_havoc:events/multi_sequence/shuffle/start",console_only:true},\
 {id:wind_up,intensity:3.9,function:"plate_havoc:events/multi_sequence/wind_up/start"},\
 {id:laser_drill,intensity:2.46,function:"plate_havoc:events/multi_sequence/laser_drill/start"},\
 \

@@ -62,7 +62,7 @@ scoreboard players set #Template.Event.Fireworks.Extension plate_havoc.num 10
 scoreboard players set #Template.Event.Herobrine plate_havoc.num 30
 scoreboard players set #Template.Event.Herobrine.Extension plate_havoc.num 5
 ##Jump Cooldown (in ticks)
-scoreboard players set #Template.Event.JumpCooldown plate_havoc.num 600
+scoreboard players set #Template.Event.JumpCooldown plate_havoc.num 500
 ##Netherrack (in blocks to spread)
 scoreboard players set #Template.Event.Netherrack plate_havoc.num 15
 ##Piranha (in seconds) (damage x 0.1)

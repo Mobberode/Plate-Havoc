@@ -27,7 +27,7 @@ data modify storage plate_havoc:cards data set value [\
 \
 {id:box_of_meats,type:positive,requirement:{type:cycle,cycle:5},cost:37.5,body:{text:"",extra:[{text:"Box of Meats",color:green},{text:"\n3 Cooked Mutton for all players"}]},action:{label:[{text:"Box of Meats"}]},on_select:{function:"plate_havoc:cards/box_of_meats",duration:-1,left:1,type:on_start}},\
 \
-{id:diamond_clock,type:positive,requirement:{type:multi_condition,conditions:[{type:card,needed:[{id:iron_clock,count:1}]},{type:cycle,cycle:7}]},cost:110,body:{text:"",extra:[{text:"Iron Clock",color:green},{text:"\n+130% Cyclathrons and Events happen +50% slower. This card will be fully completed at a later date"}]},action:{label:[{text:"Iron Clock"}]},on_select:{function:"plate_havoc:cards/diamond_clock",duration:1,left:1,type:on_start}},\
+{id:diamond_clock,type:positive,requirement:{type:multi_condition,conditions:[{type:card,needed:[{id:iron_clock,count:1}]},{type:cycle,cycle:7}]},cost:110,body:{text:"",extra:[{text:"Diamond Clock",color:green},{text:"\n+130% Cyclathrons and Events happen +50% slower. This card will be fully completed at a later date"}]},action:{label:[{text:"Diamond Clock"}]},on_select:{function:"plate_havoc:cards/diamond_clock",duration:1,left:1,type:on_start}},\
 \
 {id:boxless_desires,type:positive,requirement:{type:multi_condition,conditions:[{type:card,needed:[{id:box_of_meats,count:1},{id:box_of_wind,count:1}]},{type:cycle,cycle:7}]},cost:62.5,body:{text:"",extra:[{text:"Boxless Desires",color:green},{text:"\n15 Wind Charges, 7 Cooked Mutton\n+2 Wind Charge and +1 Cooked Mutton per 30s"}]},action:{label:[{text:"Boxless Desires"}]},on_select:{function:"plate_havoc:cards/boxless_desires",duration:-1,left:1,type:loop}},\
 \

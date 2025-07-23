@@ -1,4 +1,4 @@
-execute as @a[predicate=plate_havoc:can_see_sky] run damage @s 1
+execute as @a[predicate=plate_havoc:can_see_sky] run function plate_havoc:events/multi_sequence/acid_rain/player/get_health
 
 scoreboard players remove #AcidRain plate_havoc.event 1
 
