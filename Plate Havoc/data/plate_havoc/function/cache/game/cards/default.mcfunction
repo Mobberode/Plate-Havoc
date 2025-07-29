@@ -27,7 +27,7 @@ data modify storage plate_havoc:cards data set value [\
 \
 {id:box_of_meats,type:positive,requirement:{type:cycle,cycle:5},cost:37.5,body:{text:"",extra:[{text:"Box of Meats",color:green},{text:"\n3 Cooked Mutton for all players"}]},action:{label:[{text:"Box of Meats"}]},on_select:{function:"plate_havoc:cards/box_of_meats",duration:-1,left:1,type:on.start}},\
 \
-{id:intense_investment,type:positive,requirement:{type:cycle,cycle:5},cost:65,body:{text:"",extra:[{text:"Intense Investment",color:green},{text:"\n15% of the Intensity is turned into Cyclathrons at the end of a Cycle"}]},action:{label:[{text:"Intense Investment"}]},on_select:{function:"plate_havoc:cards/intense_investment",duration:-1,left:1,type:on.end}},\
+{id:intense_investment,type:positive,requirement:{type:cycle,cycle:5},cost:65,body:{text:"",extra:[{text:"Intense Investment",color:green},{text:"\n10% of Intensity is converted into Cyclathrons at the end of a Cycle"}]},action:{label:[{text:"Intense Investment"}]},on_select:{function:"plate_havoc:cards/intense_investment",duration:-1,left:1,type:on.end}},\
 \
 {id:diamond_clock,type:positive,requirement:{type:multi_condition,conditions:[{type:card,needed:[{id:iron_clock,count:1}]},{type:cycle,cycle:7}]},cost:110,body:{text:"",extra:[{text:"Diamond Clock",color:green},{text:"\n+130% Cyclathrons and Events happen +50% slower. This card will be fully completed at a later date"}]},action:{label:[{text:"Diamond Clock"}]},on_select:{function:"plate_havoc:cards/diamond_clock",duration:1,left:1,type:on.start}},\
 \

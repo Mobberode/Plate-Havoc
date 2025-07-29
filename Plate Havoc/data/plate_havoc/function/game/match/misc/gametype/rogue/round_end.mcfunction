@@ -1,3 +1,5 @@
+function plate_havoc:game/misc/cards/running/types/on/end/start
+
 data modify storage plate_havoc:data default_gamemode set value "spectator"
 execute as @a run function plate_havoc:game/misc/apply_gamemode with storage plate_havoc:data
 

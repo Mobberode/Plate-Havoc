@@ -1,0 +1,1 @@
+execute store result storage plate_havoc:data intensity double 0.01 run scoreboard players get #Value plate_havoc.intensity
