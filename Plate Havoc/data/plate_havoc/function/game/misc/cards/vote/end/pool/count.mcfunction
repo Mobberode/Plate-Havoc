@@ -6,4 +6,4 @@ execute store result storage plate_havoc:cards count int 1 run scoreboard player
 
 $data modify storage plate_havoc:cards running.total[{id:$(id)}].count set from storage plate_havoc:cards count
 
-$data modify storage plate_havoc:cards running.total[{id:$(id)}].visual[{part:count}].text set string storage plate_havoc:cards count
+$data modify storage plate_havoc:cards running.total[{id:$(id)}].visual.extra[{id:count}].extra[{part:count}].text set string storage plate_havoc:cards count

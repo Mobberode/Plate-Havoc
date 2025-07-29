@@ -1,0 +1,1 @@
+execute if data storage plate_havoc:custom {CostType:percentage} run function plate_havoc:events/multi_sequence/console/shop/entity/type/percentage

@@ -1,5 +1,4 @@
 #Get
-say order
 function plate_havoc:game/leaderboard/check/dynamic with storage plate_havoc:leaderboard
 
 #Compare

@@ -25,6 +25,10 @@ scoreboard players set #AllowBlockInteraction plate_havoc.num 0
 ##Timer
 scoreboard players set #Remove plate_havoc.timer 1
 
+##void
+scoreboard players set #BaseVoidHeight plate_havoc.num -128
+scoreboard players set #BaseVoidDamage plate_havoc.num 0
+
 data modify storage plate_havoc:data default_gamemode set value "adventure"
 
 data modify storage plate_havoc:data tick_function set value ""

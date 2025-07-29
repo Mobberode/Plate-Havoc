@@ -4,6 +4,8 @@ tag @s remove plate_havoc.card.decay_cube.init
 execute store result score @s plate_havoc.temp run random value 100..250
 scoreboard players operation @s plate_havoc.temp *= #Value plate_havoc.round
 execute store result storage plate_havoc:cards temp double 0.0025 run scoreboard players operation @s plate_havoc.temp /= #2 plate_havoc.num
+#fallback if too large
+execute if score @s plate_havoc.temp matches 3750.. run data modify storage plate_havoc:cards temp set value 9.375
 
 #Time in ticks
 execute store result score @s plate_havoc.timer run random value 200..400

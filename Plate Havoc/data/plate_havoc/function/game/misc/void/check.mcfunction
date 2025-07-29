@@ -1,0 +1,1 @@
+$execute if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{location:{position:{y:{min:-128,max:$(void_height)}}}}} run damage @s $(void_damage) out_of_world

@@ -1,4 +1,4 @@
-data modify storage plate_havoc:ui event_message set value [{text:"Seems like something's got a grown tumor.",color:gray}]
+data modify storage plate_havoc:ui event_message set value [{text:"Something's grown a tumor.",color:gray}]
 
 execute as @n[type=marker,tag=plate_havoc.event_place] at @s run function plate_havoc:placements/event_standard
 

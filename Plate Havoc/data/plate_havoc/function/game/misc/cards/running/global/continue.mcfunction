@@ -1,5 +1,3 @@
-function plate_havoc:game/misc/cards/running/global/store_storages
-
 #Run dynamic
 function plate_havoc:game/misc/cards/running/run_function with storage plate_havoc:cards
 #Duration tick

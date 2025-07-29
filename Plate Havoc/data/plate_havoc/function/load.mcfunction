@@ -1,4 +1,4 @@
-say loaded
+say PH loaded
 
 scoreboard objectives add plate_havoc.status dummy
 scoreboard players set #Game plate_havoc.status 0

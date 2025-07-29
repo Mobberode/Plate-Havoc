@@ -4,3 +4,4 @@ function plate_havoc:game/events/time_calculate
 execute store result bossbar plate_havoc:ui max run scoreboard players get #Value plate_havoc.timer
 
 function plate_havoc:game/events/init
+function plate_havoc:game/misc/cards/running/types/on/event/start

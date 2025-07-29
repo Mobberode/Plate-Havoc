@@ -3,4 +3,3 @@ data modify storage plate_havoc:ui bar_visuals.active[{id:players}].extra set va
 function plate_havoc:game/misc/ui/bar_visuals/visible/update {id:players}
 
 gamerule showDeathMessages false
-scoreboard players set #EventNotify plate_havoc.num 0

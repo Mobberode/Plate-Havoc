@@ -1,5 +1,4 @@
 #Apply to leaderboard
-say set
 function plate_havoc:game/misc/ui/leaderboard/process
 data modify storage plate_havoc:leaderboard temp.extra set from storage plate_havoc:ui leaderboard_ui
 

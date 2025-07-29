@@ -3,6 +3,7 @@ execute on vehicle run data modify storage plate_havoc:custom ShopData set from 
 execute on vehicle run data modify storage plate_havoc:custom ShopItem set from storage plate_havoc:custom ShopData.item
 
 execute on vehicle run data modify storage plate_havoc:custom Cost set from storage plate_havoc:custom ShopData.cost.price
+execute on vehicle run data modify storage plate_havoc:custom CostType set from storage plate_havoc:custom ShopData.cost.type
 
 execute on target run function plate_havoc:events/multi_sequence/console/shop/entity/process_transaction
 

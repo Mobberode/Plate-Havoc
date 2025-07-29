@@ -1,6 +1,6 @@
 execute if score #BlackHole plate_havoc.event matches 1.. run return run function plate_havoc:events/multi_sequence/black_hole/extend
 
-data modify storage plate_havoc:ui event_message set value [{text:"A Blackhole has spawned and it will chase the nearest player!",color:gray}]
+data modify storage plate_havoc:ui event_message set value [{text:"A Blackhole has appeared and will gravitate towards the nearest entity!",color:gray}]
 scoreboard players operation #BlackHole plate_havoc.event = #Template.Event.BlackHole plate_havoc.num
 
 execute as @n[type=marker,tag=plate_havoc.event_place] at @s run function plate_havoc:placements/event_standard
