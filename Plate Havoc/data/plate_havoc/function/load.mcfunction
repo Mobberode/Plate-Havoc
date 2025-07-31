@@ -47,3 +47,5 @@ execute unless score #LBLimit plate_havoc.config matches 0.. run scoreboard play
 function plate_havoc:game/init
 
 #tag @a add plate_havoc.has_console_access
+
+forceload add 0 0

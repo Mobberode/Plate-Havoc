@@ -1,4 +1,5 @@
-title @a actionbar [{text:"Waiting for Game contents to finish loading",color:gray}]
+title @a actionbar {text:"Waiting for Game contents to load. Game will lag!",color:gray}
+bossbar set plate_havoc:ui name {text:"Loading Game Contents"}
 
 execute if score #Loaded plate_havoc.status matches 1.. run return run function plate_havoc:game/lobby/post/post_arena
 

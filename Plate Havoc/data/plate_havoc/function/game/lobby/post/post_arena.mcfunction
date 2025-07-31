@@ -1,4 +1,5 @@
-title @a actionbar [{text:"Game contents finished loading. Starting game",color:green}]
+title @a actionbar {text:"Game contents finished loading. Starting game",color:green}
+bossbar set plate_havoc:ui name {text:"Starting Game"}
 
 function plate_havoc:game/misc/ui/bar_visuals/active/process
 function plate_havoc:game/misc/ui/bar_visuals/start

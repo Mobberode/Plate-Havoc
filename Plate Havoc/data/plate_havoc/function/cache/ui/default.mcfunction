@@ -21,7 +21,7 @@ data modify storage plate_havoc:ui game_end_visuals set value [{text:""}]
 
 data modify storage plate_havoc:ui game_end_visuals_queue set value []
 
-data modify storage plate_havoc:ui game_end_visuals_queue append value {id:message,text:"",extra:[{text:"Game Over!",color:red}]}
+data modify storage plate_havoc:ui game_end_visuals_queue append value {id:message,text:"",extra:[{text:"Game Over...",color:red}]}
 
 data modify storage plate_havoc:ui game_end_visuals_queue append value {id:elasped,text:"",extra:[{text:"Elasped Time: ",color:gray},{score:{name:"#Duration",objective:plate_havoc.timer},color:gold}]}
 
