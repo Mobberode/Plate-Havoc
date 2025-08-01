@@ -9,4 +9,5 @@ data modify storage plate_havoc:cards temp_slots set from storage plate_havoc:ca
 scoreboard players set #HighestVotes plate_havoc.num 0
 
 ##Start phase 1: get all scores and compare
-function plate_havoc:game/misc/cards/vote/end/compare
+#function plate_havoc:game/misc/cards/vote/end/compare
+function plate_havoc:game/misc/cards/vote/end/store_to_running with storage plate_havoc:cards

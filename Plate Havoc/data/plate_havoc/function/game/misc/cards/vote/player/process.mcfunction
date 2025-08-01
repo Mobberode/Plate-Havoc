@@ -1,5 +1,4 @@
-data modify storage plate_havoc:cards slot set from storage plate_havoc:cards temp[0].slot
-execute store result score #ProcessedCards plate_havoc.num run data get storage plate_havoc:cards slot
+execute store result storage plate_havoc:cards slot int 1 run scoreboard players operation #ProcessedCards plate_havoc.num = #Slot plate_havoc.z.select
 
 execute store result score #SavedVotes plate_havoc.num if entity @a[predicate=plate_havoc:specfic/card]
 
@@ -10,8 +9,4 @@ function plate_havoc:game/misc/cards/vote/player/get_cost with storage plate_hav
 
 execute if score #SavedVotes plate_havoc.num >= #Half plate_havoc.players if score #Cyclathron plate_havoc.num >= #CyclathronCost plate_havoc.num run return run scoreboard players set #FinishVoting plate_havoc.num 1
 
-function plate_havoc:game/misc/cards/vote/player/refresh with storage plate_havoc:cards
-
-data remove storage plate_havoc:cards temp[0]
-
-execute if data storage plate_havoc:cards temp[0] run function plate_havoc:game/misc/cards/vote/player/loop
+function plate_havoc:game/misc/cards/vote/player/visual_loop
