@@ -3,9 +3,7 @@ execute store result storage plate_havoc:ui cyclathron double 0.01 run scoreboar
 function plate_havoc:game/match/misc/gametype/rogue/time_cube/tick
 
 ##Cards
-data remove storage plate_havoc:cards run_functions
-data modify storage plate_havoc:cards run_functions set from storage plate_havoc:cards running.loop.run
+function plate_havoc:game/misc/cards/running/types/run {type:loop}
 
 ##loop
 function plate_havoc:game/match/misc/gametype/rogue/push_stats
-function plate_havoc:game/match/misc/gametype/rogue/tick/loop

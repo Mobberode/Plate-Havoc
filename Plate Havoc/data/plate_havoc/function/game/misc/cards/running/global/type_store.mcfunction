@@ -1,0 +1,1 @@
+$data modify storage plate_havoc:cards running.active.$(type) append from storage plate_havoc:cards type_data

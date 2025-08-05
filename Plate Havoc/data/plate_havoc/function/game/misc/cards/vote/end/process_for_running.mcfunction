@@ -4,12 +4,16 @@ scoreboard players operation #Cyclathron plate_havoc.num -= #CyclathronCost plat
 data modify storage plate_havoc:cards id set from storage plate_havoc:cards template.id
 
 #Template
-data modify storage plate_havoc:cards template_running set from storage plate_havoc:cards template.on_select
+data remove storage plate_havoc:cards template_running
+data modify storage plate_havoc:cards template_running.data set from storage plate_havoc:cards template.on_select
+
+data modify storage plate_havoc:cards template_running.data.id set from storage plate_havoc:cards id
 data modify storage plate_havoc:cards template_running.id set from storage plate_havoc:cards id
+data modify storage plate_havoc:cards template_running.visual.id set from storage plate_havoc:cards id
 
 ##Update pool
-execute store result score #CardsLeft plate_havoc.num run data get storage plate_havoc:cards template_running.left
-data remove storage plate_havoc:cards template_running.left
+execute store result score #CardsLeft plate_havoc.num run data get storage plate_havoc:cards template_running.data.left
+data remove storage plate_havoc:cards template_running.data.left
 function plate_havoc:game/misc/cards/vote/end/left_check
 
 ##Check if entry is already existing

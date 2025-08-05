@@ -1,0 +1,1 @@
+item replace entity @a armor.head with carved_pumpkin[enchantments={binding_curse:1},enchantment_glint_override=false]

@@ -1,7 +1,7 @@
 data modify storage plate_havoc:data events set value [\
-{id:cactus,intensity:0.5,function:"plate_havoc:events/cactus"},\
-{id:powdered_snow,intensity:0.5,function:"plate_havoc:events/powdered_snow"},\
-{id:tumor,intensity:0.5,function:"plate_havoc:events/tumor"},\
+{id:cactus,intensity:0,function:"plate_havoc:events/cactus"},\
+{id:powdered_snow,intensity:0,function:"plate_havoc:events/powdered_snow"},\
+{id:tumor,intensity:0,function:"plate_havoc:events/tumor"},\
 {id:creeper,intensity:0.62,function:"plate_havoc:events/creeper"},\
 {id:lava,intensity:0.76,function:"plate_havoc:events/lava"},\
 {id:falling_sand,intensity:0.6,function:"plate_havoc:events/falling_sand"},\

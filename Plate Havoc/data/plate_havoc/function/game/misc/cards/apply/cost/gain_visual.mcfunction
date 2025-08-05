@@ -1,0 +1,2 @@
+data modify storage plate_havoc:cards card.action.label[{partition:cost}].extra[].extra[{part:cost}].text set string storage plate_havoc:cards cost 1
+data modify storage plate_havoc:cards card.action.label[{partition:cost}].extra[].extra[{part:sign}].text set value "+"
