@@ -7,9 +7,6 @@
         "input": {
           "jump": false
         }
-      },
-      "location": {
-        "fluid": {}
       }
     }
   }

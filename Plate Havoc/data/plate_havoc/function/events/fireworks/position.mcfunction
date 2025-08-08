@@ -1,0 +1,1 @@
+$rotate @s $(rotation_horizontal) $(rotation_vertical)

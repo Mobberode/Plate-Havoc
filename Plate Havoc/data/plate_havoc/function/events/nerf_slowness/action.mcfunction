@@ -1,0 +1,1 @@
+$effect give @r[tag=plate_havoc.survivor] slowness $(duration) 1

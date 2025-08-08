@@ -14,4 +14,4 @@ execute store result storage plate_havoc:motion life int 1 run random value 155.
 execute store result storage plate_havoc:motion dist int 1 run random value -85..-50
 execute store result storage plate_havoc:motion speed int 1 run random value 35..100
 
-function plate_havoc:events/multi_sequence/fireworks/apply with storage plate_havoc:motion
+function plate_havoc:events/fireworks/apply with storage plate_havoc:motion

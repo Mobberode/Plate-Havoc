@@ -1,0 +1,1 @@
+$effect give @e[type=!player] wind_charged $(duration)

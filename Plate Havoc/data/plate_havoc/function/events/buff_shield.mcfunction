@@ -1,2 +1,0 @@
-data modify storage plate_havoc:ui event_message set value [{text:"A Player without a shield will get one!",color:gray}]
-execute as @r[tag=plate_havoc.survivor,sort=random] unless items entity @s hotbar.* shield unless items entity @s weapon.offhand shield unless items entity @s inventory.* shield unless items entity @s player.cursor shield unless items entity @s player.crafting.* shield run return run give @s shield 1

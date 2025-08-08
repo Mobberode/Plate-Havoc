@@ -1,2 +1,0 @@
-data modify storage plate_havoc:ui event_message set value {text:"A player is in the path of a Eraserman!",color:gray}
-execute at @r[tag=plate_havoc.survivor,sort=random] rotated ~ 0 positioned ^ ^ ^-100 run function plate_havoc:events/multi_sequence/eraserman/summon
