@@ -1,1 +1,0 @@
-execute as @e[tag=plate_havoc.spinning_laser] on passengers at @s run function plate_havoc:events/multi_sequence/spinning_laser/entity/loop

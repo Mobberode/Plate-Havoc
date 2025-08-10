@@ -1,0 +1,1 @@
+$rotate @s ~$(speed) 0

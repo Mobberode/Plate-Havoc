@@ -1,0 +1,1 @@
+$summon tnt ~ ~ ~ {explosion_power:$(explosion_power),fuse:0}

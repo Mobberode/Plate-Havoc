@@ -1,0 +1,2 @@
+execute store result storage plate_havoc:custom damage float 0.1 run scoreboard players get #Template.Event.Piranha.Damage plate_havoc.num
+function plate_havoc:events/piranha/activate/damage with storage plate_havoc:custom

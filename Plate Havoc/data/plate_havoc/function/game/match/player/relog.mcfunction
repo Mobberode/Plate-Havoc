@@ -7,4 +7,4 @@ gamemode spectator
 clear @s
 
 ##Remove attribute modifiers
-kill @s
+kill

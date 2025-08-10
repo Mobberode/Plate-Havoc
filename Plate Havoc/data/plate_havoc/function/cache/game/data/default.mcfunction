@@ -3,6 +3,7 @@ scoreboard players set #3 plate_havoc.num 3
 scoreboard players set #4 plate_havoc.num 4
 scoreboard players set #5 plate_havoc.num 5
 scoreboard players set #10 plate_havoc.num 10
+scoreboard players set #25 plate_havoc.num 25
 scoreboard players set #100 plate_havoc.num 100
 scoreboard players set #1000 plate_havoc.num 1000
 
@@ -150,9 +151,9 @@ scoreboard players set #Template.Event.Eraserman.MaxRunCount plate_havoc.num 1
 scoreboard players set #Template.Event.Eraserman.Distance plate_havoc.num 100
 ## fireworks (Max Run Count) (Summons) (Summon Delay (in ticks)) (Summon Extension)
 scoreboard players set #Template.Event.Fireworks.MaxRunCount plate_havoc.num 1
-scoreboard players set #Template.Event.Fireworks.Summon plate_havoc.num 150
+scoreboard players set #Template.Event.Fireworks.Summon plate_havoc.num 100
 scoreboard players set #Template.Event.Fireworks.Summon_Delay plate_havoc.num 5
-scoreboard players set #Template.Event.Fireworks.Summon_Extension plate_havoc.num 75
+scoreboard players set #Template.Event.Fireworks.Summon_Extension plate_havoc.num 50
 ## jump_cooldown (Max Run Count) (Cooldown Duration (in ticks)) (Event Duration (in ticks))
 scoreboard players set #Template.Event.JumpCooldown.MaxRunCount plate_havoc.num 1
 scoreboard players set #Template.Event.JumpCooldown.Cooldown_Duration plate_havoc.num 25
@@ -160,25 +161,71 @@ scoreboard players set #Template.Event.JumpCooldown.Duration plate_havoc.num 300
 ## anvil (Max Run Count) (Distance (in blocks))
 scoreboard players set #Template.Event.Anvil.MaxRunCount plate_havoc.num 1
 scoreboard players set #Template.Event.Anvil.Distance plate_havoc.num 75
-
-
-##Black Hole (ticks) (extension to ticks)
-scoreboard players set #Template.Event.BlackHole plate_havoc.num 600
-scoreboard players set #Template.Event.BlackHole.Extension plate_havoc.num 100
-##Obama Drone Strike (summons distributed every tick) (extension to summons)
-scoreboard players set #Template.Event.ObamaDroneStrike plate_havoc.num 500
-scoreboard players set #Template.Event.ObamaDroneStrike.Extension plate_havoc.num 100
-##Egg Rain (eggs distributed every 5 ticks)
-scoreboard players set #Template.Event.EggRain plate_havoc.num 125
-##Herobrine (seconds) (extension to seconds)
-scoreboard players set #Template.Event.Herobrine plate_havoc.num 30
-scoreboard players set #Template.Event.Herobrine.Extension plate_havoc.num 5
-##Piranha (in seconds) (damage x 0.1)
-scoreboard players set #Template.Event.Piranha plate_havoc.num 60
+## black_hole (Max Run Count) (Duration) (Duration Extension) (Base Size (x0.01))
+scoreboard players set #Template.Event.BlackHole.MaxRunCount plate_havoc.num 1
+scoreboard players set #Template.Event.BlackHole.Duration plate_havoc.num 900
+scoreboard players set #Template.Event.BlackHole.Duration_Extension plate_havoc.num 450
+scoreboard players set #Template.Event.BlackHole.Entity_Size plate_havoc.num 125
+## breeze (Max Run Count)
+scoreboard players set #Template.Event.Breeze.MaxRunCount plate_havoc.num 1
+## breeze (Max Run Count)
+scoreboard players set #Template.Event.Breeze.MaxRunCount plate_havoc.num 1
+## wall (Max Run Count)
+scoreboard players set #Template.Event.Wall.MaxRunCount plate_havoc.num 1
+## soulsand (Max Run Count) (Amount of blocks to corrupt)
+scoreboard players set #Template.Event.SoulSand.MaxRunCount plate_havoc.num 1
+scoreboard players set #Template.Event.SoulSand.SpreadAmount plate_havoc.num 10
+## blaze (Max Run Count)
+scoreboard players set #Template.Event.Blaze.MaxRunCount plate_havoc.num 1
+## bucket (Max Run Count) (Amount)
+scoreboard players set #Template.Event.Bucket.MaxRunCount plate_havoc.num 1
+scoreboard players set #Template.Event.Bucket.Amount plate_havoc.num 1
+## herobrine (Max Run Count) (Duration) (Duration Extension) (Acitvate Time) (Movement Distance(x0.01))
+scoreboard players set #Template.Event.Herobrine.MaxRunCount plate_havoc.num 1
+scoreboard players set #Template.Event.Herobrine.Duration plate_havoc.num 600
+scoreboard players set #Template.Event.Herobrine.Duration_Extension plate_havoc.num 150
+scoreboard players set #Template.Event.Herobrine.Activate_Time plate_havoc.num 20
+scoreboard players set #Template.Event.Herobrine.Movement_Distance plate_havoc.num 275
+## frail_stairs (Max Run Count) (Blocks)
+scoreboard players set #Template.Event.Frail_Stairs.MaxRunCount plate_havoc.num 1
+scoreboard players set #Template.Event.Frail_Stairs.Blocks plate_havoc.num 25
+## scaffolding (MaxRunCount) (Height)
+scoreboard players set #Template.Event.Scaffolding.MaxRunCount plate_havoc.num 1
+scoreboard players set #Template.Event.Scaffolding.Height plate_havoc.num 8
+## slime (Max Run Count)
+scoreboard players set #Template.Event.Slime.MaxRunCount plate_havoc.num 1
+## egg_rain (Max Run Count) (Eggs to summon) (Summon Delay (in ticks)) (Block Height)
+scoreboard players set #Template.Event.Egg_Rain.MaxRunCount plate_havoc.num 1
+scoreboard players set #Template.Event.Egg_Rain.Summon_Amount plate_havoc.num 125
+scoreboard players set #Template.Event.Egg_Rain.Summon_Delay plate_havoc.num 5
+scoreboard players set #Template.Event.Egg_Rain.Height plate_havoc.num 35
+## nuke (Max Run Count) (Height) (Movement Distance (x0.01)) (Failure Chance) (Explosion Power (x0.1))
+scoreboard players set #Template.Event.Nuke.MaxRunCount plate_havoc.num 1
+scoreboard players set #Template.Event.Nuke.Height plate_havoc.num 100
+scoreboard players set #Template.Event.Nuke.Movement_Distance plate_havoc.num 25
+scoreboard players set #Template.Event.Nuke.Failure_Chance plate_havoc.num 20
+scoreboard players set #Template.Event.Nuke.Explosion_Power plate_havoc.num 75
+## piranha (Max Run Count) (Duration (seconds)) (Damage (x0.1))
+scoreboard players set #Template.Event.Piranha.MaxRunCount plate_havoc.num 1
+scoreboard players set #Template.Event.Piranha.Duration plate_havoc.num 60
 scoreboard players set #Template.Event.Piranha.Damage plate_havoc.num 15
-##Soul Sand (in blocks to spread)
-scoreboard players set #Template.Event.SoulSand plate_havoc.num 7
-##Wind Charges (ticks) (extension to ticks) (summons per tick)
-scoreboard players set #Template.Event.WindCharges plate_havoc.num 500
-scoreboard players set #Template.Event.WindCharges.Extension plate_havoc.num 100
-scoreboard players set #Template.Event.WindCharges.Summon plate_havoc.num 5
+## dripleaf (Max Run Count)
+scoreboard players set #Template.Event.Dripleaf.MaxRunCount plate_havoc.num 1
+## spinning_laser (Max Run Count) (Base Width (x0.1)) (Base Speed (x0.1))
+scoreboard players set #Template.Event.Spinning_Laser.MaxRunCount plate_havoc.num 1
+scoreboard players set #Template.Event.Spinning_Laser.Base_Width plate_havoc.num 50
+scoreboard players set #Template.Event.Spinning_Laser.Base_Speed plate_havoc.num 50
+## wind_up (Max Run Count) (Summons) (Extension to Summons) (Entity Summons inside 1 Summon)
+scoreboard players set #Template.Event.Wind_Up.MaxRunCount plate_havoc.num 1
+scoreboard players set #Template.Event.Wind_Up.Summon_Amount plate_havoc.num 500
+scoreboard players set #Template.Event.Wind_Up.Summon_Extension plate_havoc.num 100
+scoreboard players set #Template.Event.Wind_Up.Summon_Pack.Size plate_havoc.num 5
+## laser_drill (Max Run Count) (Winding Time (ticks)) (Explosion Power (x0.1))
+scoreboard players set #Template.Event.Laser_Drill.MaxRunCount plate_havoc.num 1
+scoreboard players set #Template.Event.Laser_Drill.Winding_Time plate_havoc.num 140
+scoreboard players set #Template.Event.Laser_Drill.Explosion_Power plate_havoc.num 25
+
+## obama_drone_strike (Max Run Count) (Summons) (Summon Extension)
+scoreboard players set #Template.Event.Obama_Drone_Strike.MaxRunCount plate_havoc.num 1
+scoreboard players set #Template.Event.Obama_Drone_Strike.Summon plate_havoc.num 500
+scoreboard players set #Template.Event.Obama_Drone_Strike.Summon_Extension plate_havoc.num 100

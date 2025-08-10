@@ -1,0 +1,1 @@
+data modify entity @s transformation.scale[] set from storage plate_havoc:events size

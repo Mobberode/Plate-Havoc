@@ -1,4 +1,4 @@
-tp @s 0 64 0
+tp 0 64 0
 execute positioned as @s run spreadplayers ~ ~ 1 64 false @s
 execute positioned as @s run tp ~ ~ ~
 

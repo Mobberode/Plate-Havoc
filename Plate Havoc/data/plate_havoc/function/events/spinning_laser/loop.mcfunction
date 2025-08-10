@@ -1,0 +1,1 @@
+execute as @e[tag=plate_havoc.spinning_laser] run function plate_havoc:events/spinning_laser/entity/tick

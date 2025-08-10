@@ -1,0 +1,3 @@
+$give @r[tag=plate_havoc.survivor] bucket $(count)
+
+execute unless score #EventRunCount plate_havoc.num >= #Template.Event.Bucket.MaxRunCount plate_havoc.num run function plate_havoc:events/bucket/run

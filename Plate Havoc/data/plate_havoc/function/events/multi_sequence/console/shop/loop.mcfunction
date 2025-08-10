@@ -1,1 +1,0 @@
-execute as @e[tag=plate_havoc.shop] at @s run function plate_havoc:events/multi_sequence/console/shop/entity/tick

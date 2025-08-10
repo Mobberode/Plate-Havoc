@@ -1,0 +1,1 @@
+$summon egg ~ ~$(height) ~ {Tags:[plate_havoc.dont_interact]}
