@@ -101,7 +101,7 @@ scoreboard players set #Template.Event.Buff_Heal.MaxRunCount plate_havoc.num 1
 scoreboard players set #Template.Event.Buff_Heal.Amount plate_havoc.num 1
 ## end_island (Max Run Count) (WaitTime)
 scoreboard players set #Template.Event.End_Island.MaxRunCount plate_havoc.num 1
-scoreboard players set #Template.Event.End_Island.Wait_Time plate_havoc.num 35
+scoreboard players set #Template.Event.End_Island.Wait_Time plate_havoc.num 15
 ## snow_golem (Max Run Count)
 scoreboard players set #Template.Event.Snow_Golem.MaxRunCount plate_havoc.num 1
 ## fire_rain (Max Run Count) (Amount (0 = end rain)) (Delay (How fast each fireball is summoned))
@@ -229,3 +229,5 @@ scoreboard players set #Template.Event.Laser_Drill.Explosion_Power plate_havoc.n
 scoreboard players set #Template.Event.Obama_Drone_Strike.MaxRunCount plate_havoc.num 1
 scoreboard players set #Template.Event.Obama_Drone_Strike.Summon plate_havoc.num 500
 scoreboard players set #Template.Event.Obama_Drone_Strike.Summon_Extension plate_havoc.num 100
+## shop (Max Run Count)
+scoreboard players set #Template.Event.Shop.MaxRunCount plate_havoc.num 1
