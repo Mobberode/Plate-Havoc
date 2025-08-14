@@ -1,0 +1,3 @@
+$execute store result score $n_full_exp zzz_embed_bound.motion.math run data get storage zzz_embed_bound:trig arr[$(angle)]
+scoreboard players operation $n_full_exp zzz_embed_bound.motion.math *= $motion_y zzz_embed_bound.motion.math
+execute store result score $sub_power zzz_embed_bound.motion.math run scoreboard players operation $n_full_exp zzz_embed_bound.motion.math /= #constant.1000 zzz_embed_bound.motion.const

@@ -1,1 +1,1 @@
-execute at @a[tag=plate_havoc.survivor] as @e[tag=plate_havoc.card.decay_cube,distance=..10] run function plate_havoc:cards/cube_of_decay/tick
+execute as @e[tag=plate_havoc.card.decay_cube] at @s run function plate_havoc:cards/cube_of_decay/tick

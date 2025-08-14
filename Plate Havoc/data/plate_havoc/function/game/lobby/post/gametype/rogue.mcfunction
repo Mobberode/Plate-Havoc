@@ -1,8 +1,8 @@
 tellraw @a [{text:"Endurance | Modern",color:gold},{text:"\nThe intended Endurance experience. Survive with or without others.",color:"gray"}]
 
-scoreboard players set #BaseEventTimePercentage plate_havoc.num 215
+scoreboard players set #BaseEventTimePercentage plate_havoc.num 165
 
-scoreboard players set #BaseIntensityPercentage plate_havoc.num 45
+scoreboard players set #BaseIntensityPercentage plate_havoc.num 40
 
 data modify storage plate_havoc:ui bar_visuals_queue[{id:time}].extra set value [{text:"Time: "},{score:{name:"#Left",objective:plate_havoc.timer},color:gold}]
 data modify storage plate_havoc:ui bar_visuals_queue[{id:players}].extra set value [{score:{name:"#Current",objective:plate_havoc.players},color:green},{text:"/"},{score:{name:"#Match",objective:plate_havoc.players},color:green}]
@@ -33,11 +33,14 @@ data modify storage plate_havoc:leaderboard include_stats prepend value {type:sc
 
 scoreboard players set #Value plate_havoc.round 0
 scoreboard players set #Cyclathron plate_havoc.num 0
+
 scoreboard players set #BaseCyclathronAmount plate_havoc.num 100
 scoreboard players set #CyclathronMultiplier plate_havoc.num 100
+scoreboard players set #ClockCollectTimeReduction plate_havoc.num 2
 
 scoreboard players set #BaseCardLimit plate_havoc.num 3
 scoreboard players operation #MaxCardLimit plate_havoc.num = #BaseCardLimit plate_havoc.num
+
 data modify storage plate_havoc:cards locked set from storage plate_havoc:cards data
 data modify storage plate_havoc:cards pool set value []
 function plate_havoc:game/misc/cards/locked/init

@@ -1,0 +1,1 @@
+execute as @a[tag=plate_havoc.survivor] at @s run function zzz_embed_bound:player

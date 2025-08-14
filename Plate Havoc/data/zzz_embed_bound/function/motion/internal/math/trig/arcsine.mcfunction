@@ -1,0 +1,1 @@
+$execute store result score $d zzz_embed_bound.motion.math run data get storage zzz_embed_bound:arcsine arr[$(quotient)]

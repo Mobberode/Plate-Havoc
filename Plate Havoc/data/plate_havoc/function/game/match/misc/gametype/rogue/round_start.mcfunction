@@ -11,6 +11,7 @@ function plate_havoc:game/match/misc/gametype/rogue/calc_time
 
 scoreboard players set #Remove plate_havoc.timer 1
 function plate_havoc:game/time/tick_down
-tellraw @a [{text:"Cycle Time: ",color:aqua},{score:{name:"#Time",objective:plate_havoc.card},color:gold}]
+
+tellraw @a [{text:"Cycle Time: ",color:aqua},{score:{name:"#Time",objective:plate_havoc.card},color:gold},{text:"\nCyclathron Multiplier: ",color:aqua},{score:{name:"#CyclathronMultiplier",objective:plate_havoc.num},color:gold},{text:"\nClock Time Reduction: ",color:aqua},{score:{name:"#ClockCollectTimeReduction",objective:plate_havoc.num},color:gold}]
 
 function plate_havoc:game/match/loop

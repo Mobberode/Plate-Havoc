@@ -1,0 +1,2 @@
+$execute if score $n_full_exp zzz_embed_bound.motion.math matches 1.. anchored eyes positioned ^ ^ ^$(full_d) run function zzz_embed_bound:motion/internal/summon/loop
+$execute anchored eyes positioned ^ ^ ^$(d) summon end_crystal run damage @s 0

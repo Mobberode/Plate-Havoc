@@ -1,1 +1,2 @@
 data modify entity @s transformation.scale[] set from storage plate_havoc:cards temp
+execute on passengers run data modify entity @s text set value [{storage:"plate_havoc:cards",nbt:temp,color:"#bf00ff"},{text:"\n"},{score:{name:"#Temp",objective:plate_havoc.timer},color:"#ff1ce8"}]

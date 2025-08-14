@@ -1,0 +1,3 @@
+$execute store result score $sine zzz_embed_bound.motion.math run data get storage zzz_embed_bound:sine arr[$(angle)]
+execute if score $negative_sine zzz_embed_bound.motion.math matches 1 run scoreboard players operation $sine zzz_embed_bound.motion.math *= #constant.-1 zzz_embed_bound.motion.const
+$execute store result score $cosine zzz_embed_bound.motion.math run data get storage zzz_embed_bound:cosine arr[$(angle)]

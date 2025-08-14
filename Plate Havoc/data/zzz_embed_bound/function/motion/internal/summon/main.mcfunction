@@ -1,0 +1,1 @@
+$execute facing ~$(motion_x) ~$(motion_y) ~$(motion_z) run function zzz_embed_bound:motion/internal/summon/crystal with storage zzz_embed_bound:math

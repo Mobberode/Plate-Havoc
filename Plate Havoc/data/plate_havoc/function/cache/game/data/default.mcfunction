@@ -3,6 +3,7 @@ scoreboard players set #3 plate_havoc.num 3
 scoreboard players set #4 plate_havoc.num 4
 scoreboard players set #5 plate_havoc.num 5
 scoreboard players set #10 plate_havoc.num 10
+scoreboard players set #20 plate_havoc.num 20
 scoreboard players set #25 plate_havoc.num 25
 scoreboard players set #100 plate_havoc.num 100
 scoreboard players set #1000 plate_havoc.num 1000
@@ -54,12 +55,12 @@ scoreboard players set #Template.Event.Cactus.MaxRunCount plate_havoc.num 1
 scoreboard players set #Template.Event.Powdered_Snow.MaxRunCount plate_havoc.num 1
 ## tumor (Max Run Count) (From Pos (XYZ)) (To Pos (XYZ))
 scoreboard players set #Template.Event.Tumor.MaxRunCount plate_havoc.num 1
-scoreboard players set #Template.Event.Tumor.Pos.From.X plate_havoc.num -2
+scoreboard players set #Template.Event.Tumor.Pos.From.X plate_havoc.num -3
 scoreboard players set #Template.Event.Tumor.Pos.From.Y plate_havoc.num 0
-scoreboard players set #Template.Event.Tumor.Pos.From.Z plate_havoc.num -2
-scoreboard players set #Template.Event.Tumor.Pos.To.X plate_havoc.num 2
+scoreboard players set #Template.Event.Tumor.Pos.From.Z plate_havoc.num -3
+scoreboard players set #Template.Event.Tumor.Pos.To.X plate_havoc.num 3
 scoreboard players set #Template.Event.Tumor.Pos.To.Y plate_havoc.num 0
-scoreboard players set #Template.Event.Tumor.Pos.To.Z plate_havoc.num 2
+scoreboard players set #Template.Event.Tumor.Pos.To.Z plate_havoc.num 3
 ## creeper (Max Run Count)
 scoreboard players set #Template.Event.Creeper.MaxRunCount plate_havoc.num 1
 ## lava (Max Run Count)
@@ -78,7 +79,7 @@ scoreboard players set #Template.Event.TNT.MaxRunCount plate_havoc.num 1
 scoreboard players set #Template.Event.Trap_Door.MaxRunCount plate_havoc.num 1
 ## netherrack (Max Run Count) (Amount of blocks to corrupt)
 scoreboard players set #Template.Event.Netherrack.MaxRunCount plate_havoc.num 1
-scoreboard players set #Template.Event.Netherrack.SpreadAmount plate_havoc.num 15
+scoreboard players set #Template.Event.Netherrack.SpreadAmount plate_havoc.num 16
 ## water (Max Run Count)
 scoreboard players set #Template.Event.Water.MaxRunCount plate_havoc.num 1
 ## iron_golem (Max Run Count)
@@ -89,7 +90,7 @@ scoreboard players set #Template.Event.Bridge.MaxRunCount plate_havoc.num 1
 scoreboard players set #Template.Event.Ghast.MaxRunCount plate_havoc.num 1
 ## acid_rain (Max Run Count) (Duration) (Damage Multiplier (100 = 0.01))
 scoreboard players set #Template.Event.AcidRain.MaxRunCount plate_havoc.num 1
-scoreboard players set #Template.Event.AcidRain.Duration plate_havoc.num 15
+scoreboard players set #Template.Event.AcidRain.Duration plate_havoc.num 20
 scoreboard players set #Template.Event.AcidRain.Damage_Multiplier plate_havoc.num 100
 ## null (Max Run Count)
 scoreboard players set #Template.Event.Null.MaxRunCount plate_havoc.num 1
@@ -106,15 +107,15 @@ scoreboard players set #Template.Event.End_Island.Wait_Time plate_havoc.num 15
 scoreboard players set #Template.Event.Snow_Golem.MaxRunCount plate_havoc.num 1
 ## fire_rain (Max Run Count) (Amount (0 = end rain)) (Delay (How fast each fireball is summoned))
 scoreboard players set #Template.Event.Fire_Rain.MaxRunCount plate_havoc.num 1
-scoreboard players set #Template.Event.Fire_Rain.Amount plate_havoc.num 10
-scoreboard players set #Template.Event.Fire_Rain.Delay plate_havoc.num 40
+scoreboard players set #Template.Event.Fire_Rain.Amount plate_havoc.num 20
+scoreboard players set #Template.Event.Fire_Rain.Delay plate_havoc.num 20
 ## fireballs (Max Run Count) (Distance in Blocks away from Target)
 scoreboard players set #Template.Event.Fireballs.MaxRunCount plate_havoc.num 1
-scoreboard players set #Template.Event.Fireballs.Distance plate_havoc.num 50
+scoreboard players set #Template.Event.Fireballs.Distance plate_havoc.num 65
 ## dragonball (Max Run Count) (Distance in Blocks away from Target) (Speed (100 = 0.01))
 scoreboard players set #Template.Event.Dragonball.MaxRunCount plate_havoc.num 1
 scoreboard players set #Template.Event.Dragonball.Distance plate_havoc.num 100
-scoreboard players set #Template.Event.Dragonball.Speed plate_havoc.num 75
+scoreboard players set #Template.Event.Dragonball.Speed plate_havoc.num 65
 ## honey (Max Run Count)
 scoreboard players set #Template.Event.Honey.MaxRunCount plate_havoc.num 1
 ## buff_shield (Max Run Count) (Amount)
@@ -128,7 +129,7 @@ scoreboard players set #Template.Event.Buff_Mace.MaxRunCount plate_havoc.num 1
 scoreboard players set #Template.Event.Buff_Mace.Amount plate_havoc.num 1
 ## nerf_slowness (Max Run Count) (Duration)
 scoreboard players set #Template.Event.Nerf_Slowness.MaxRunCount plate_havoc.num 1
-scoreboard players set #Template.Event.Nerf_Slowness.Duration plate_havoc.num 10
+scoreboard players set #Template.Event.Nerf_Slowness.Duration plate_havoc.num 20
 ## sign (Max Run Count)
 scoreboard players set #Template.Event.Sign.MaxRunCount plate_havoc.num 1
 ## bars (Max Run Count) (From Pos (XYZ)) (To Pos (XYZ))
@@ -145,7 +146,7 @@ scoreboard players set #Template.Event.Wither.MaxRunCount plate_havoc.num 1
 scoreboard players set #Template.Event.Cobweb.MaxRunCount plate_havoc.num 1
 ## effect_wind_charged (Max Run Count) (Duration)
 scoreboard players set #Template.Event.Effect_Wind_Charged.MaxRunCount plate_havoc.num 1
-scoreboard players set #Template.Event.Effect_Wind_Charged.Duration plate_havoc.num 60
+scoreboard players set #Template.Event.Effect_Wind_Charged.Duration plate_havoc.num 90
 ## eraserman (Max Run Count) (Distance in Blocks)
 scoreboard players set #Template.Event.Eraserman.MaxRunCount plate_havoc.num 1
 scoreboard players set #Template.Event.Eraserman.Distance plate_havoc.num 100
@@ -156,7 +157,7 @@ scoreboard players set #Template.Event.Fireworks.Summon_Delay plate_havoc.num 5
 scoreboard players set #Template.Event.Fireworks.Summon_Extension plate_havoc.num 50
 ## jump_cooldown (Max Run Count) (Cooldown Duration (in ticks)) (Event Duration (in ticks))
 scoreboard players set #Template.Event.JumpCooldown.MaxRunCount plate_havoc.num 1
-scoreboard players set #Template.Event.JumpCooldown.Cooldown_Duration plate_havoc.num 25
+scoreboard players set #Template.Event.JumpCooldown.Cooldown_Duration plate_havoc.num 30
 scoreboard players set #Template.Event.JumpCooldown.Duration plate_havoc.num 300
 ## anvil (Max Run Count) (Distance (in blocks))
 scoreboard players set #Template.Event.Anvil.MaxRunCount plate_havoc.num 1
@@ -174,7 +175,7 @@ scoreboard players set #Template.Event.Breeze.MaxRunCount plate_havoc.num 1
 scoreboard players set #Template.Event.Wall.MaxRunCount plate_havoc.num 1
 ## soulsand (Max Run Count) (Amount of blocks to corrupt)
 scoreboard players set #Template.Event.SoulSand.MaxRunCount plate_havoc.num 1
-scoreboard players set #Template.Event.SoulSand.SpreadAmount plate_havoc.num 10
+scoreboard players set #Template.Event.SoulSand.SpreadAmount plate_havoc.num 12
 ## blaze (Max Run Count)
 scoreboard players set #Template.Event.Blaze.MaxRunCount plate_havoc.num 1
 ## bucket (Max Run Count) (Amount)
@@ -182,10 +183,10 @@ scoreboard players set #Template.Event.Bucket.MaxRunCount plate_havoc.num 1
 scoreboard players set #Template.Event.Bucket.Amount plate_havoc.num 1
 ## herobrine (Max Run Count) (Duration) (Duration Extension) (Acitvate Time) (Movement Distance(x0.01))
 scoreboard players set #Template.Event.Herobrine.MaxRunCount plate_havoc.num 1
-scoreboard players set #Template.Event.Herobrine.Duration plate_havoc.num 600
-scoreboard players set #Template.Event.Herobrine.Duration_Extension plate_havoc.num 150
+scoreboard players set #Template.Event.Herobrine.Duration plate_havoc.num 900
+scoreboard players set #Template.Event.Herobrine.Duration_Extension plate_havoc.num 300
 scoreboard players set #Template.Event.Herobrine.Activate_Time plate_havoc.num 20
-scoreboard players set #Template.Event.Herobrine.Movement_Distance plate_havoc.num 275
+scoreboard players set #Template.Event.Herobrine.Movement_Distance plate_havoc.num 375
 ## frail_stairs (Max Run Count) (Blocks)
 scoreboard players set #Template.Event.Frail_Stairs.MaxRunCount plate_havoc.num 1
 scoreboard players set #Template.Event.Frail_Stairs.Blocks plate_havoc.num 25
@@ -204,7 +205,7 @@ scoreboard players set #Template.Event.Nuke.MaxRunCount plate_havoc.num 1
 scoreboard players set #Template.Event.Nuke.Height plate_havoc.num 100
 scoreboard players set #Template.Event.Nuke.Movement_Distance plate_havoc.num 25
 scoreboard players set #Template.Event.Nuke.Failure_Chance plate_havoc.num 20
-scoreboard players set #Template.Event.Nuke.Explosion_Power plate_havoc.num 75
+scoreboard players set #Template.Event.Nuke.Explosion_Power plate_havoc.num 125
 ## piranha (Max Run Count) (Duration (seconds)) (Damage (x0.1))
 scoreboard players set #Template.Event.Piranha.MaxRunCount plate_havoc.num 1
 scoreboard players set #Template.Event.Piranha.Duration plate_havoc.num 60
@@ -219,11 +220,11 @@ scoreboard players set #Template.Event.Spinning_Laser.Base_Speed plate_havoc.num
 scoreboard players set #Template.Event.Wind_Up.MaxRunCount plate_havoc.num 1
 scoreboard players set #Template.Event.Wind_Up.Summon_Amount plate_havoc.num 500
 scoreboard players set #Template.Event.Wind_Up.Summon_Extension plate_havoc.num 100
-scoreboard players set #Template.Event.Wind_Up.Summon_Pack.Size plate_havoc.num 5
+scoreboard players set #Template.Event.Wind_Up.Summon_Pack.Size plate_havoc.num 2
 ## laser_drill (Max Run Count) (Winding Time (ticks)) (Explosion Power (x0.1))
 scoreboard players set #Template.Event.Laser_Drill.MaxRunCount plate_havoc.num 1
 scoreboard players set #Template.Event.Laser_Drill.Winding_Time plate_havoc.num 140
-scoreboard players set #Template.Event.Laser_Drill.Explosion_Power plate_havoc.num 25
+scoreboard players set #Template.Event.Laser_Drill.Explosion_Power plate_havoc.num 35
 
 ## obama_drone_strike (Max Run Count) (Summons) (Summon Extension)
 scoreboard players set #Template.Event.Obama_Drone_Strike.MaxRunCount plate_havoc.num 1
