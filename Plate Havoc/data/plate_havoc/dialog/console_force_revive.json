@@ -2,7 +2,7 @@
     "type": "multi_action",
     "title": "Plate Havoc Console",
     "exit_action": {"label":"Back","action":{"type":"show_dialog","dialog":"plate_havoc:console"}},
-    "inputs": [{"key":"selector","type":"text","label":"Player(s) (Name, UUID or Selector)","initial":"root"}],
+    "inputs": [{"key":"selector","type":"text","label":"Player(s) (Name, UUID or Selector)","initial":"@s"}],
     
-    "actions": [{"label":"Revive Specified Player(s)","action":{"type":"dynamic/run_command","template":"execute as $(selector) run plate_havoc:game/match/player/spectator/revive"}}]
+    "actions": [{"label":"Revive Specified Player(s)","action":{"type":"dynamic/run_command","template":"execute as $(selector) run function plate_havoc:game/match/player/spectator/revive"}}]
 }

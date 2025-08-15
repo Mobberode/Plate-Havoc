@@ -1,1 +1,0 @@
-scoreboard players set #EventNotify plate_havoc.num 0

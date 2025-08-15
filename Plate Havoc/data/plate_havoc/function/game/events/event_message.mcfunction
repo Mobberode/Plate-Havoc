@@ -1,5 +1,11 @@
 execute if score #EventNotify plate_havoc.num matches ..0 run return fail
 
-execute unless score #EventNotify.Display_Count plate_havoc.num matches ..0 run return run tellraw @a [{storage:"plate_havoc:ui",nbt:event_message,interpret:true},{text:" (x",color:"red"},{score:{name:"#EventRunCount",objective:plate_havoc.num},color:yellow},{text:")",color:red}]
+data modify storage plate_havoc:ui edit_event_message set value []
 
-tellraw @a [{storage:"plate_havoc:ui",nbt:event_message,interpret:true}]
+function plate_havoc:game/events/event_message_append
+
+function plate_havoc:game/misc/cards/running/types/run {type:on.event.message}
+
+data modify storage plate_havoc:ui event_message_output set from storage plate_havoc:ui edit_event_message
+
+function plate_havoc:game/events/event_message_mode

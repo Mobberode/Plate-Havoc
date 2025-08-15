@@ -1,1 +1,1 @@
-execute as @a[tag=plate_havoc.survivor] run function plate_havoc:cards/pitch_black/tick
+execute as @a[tag=plate_havoc.survivor] at @s run function plate_havoc:cards/pitch_black/tick

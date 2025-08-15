@@ -1,5 +1,5 @@
-gamerule maxCommandChainLength 65535
-gamerule maxCommandForkCount 65535
+gamerule maxCommandChainLength 4294369
+gamerule maxCommandForkCount 4294369
 gamerule commandModificationBlockLimit 2147184930
 gamerule doTileDrops false
 gamerule doMobLoot false

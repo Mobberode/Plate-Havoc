@@ -1,0 +1,1 @@
+summon marker 0 1024 0 {Tags:["plate_havoc.card.glacier_player","plate_havoc.survivor","plate_havoc.dont_interact"]}
