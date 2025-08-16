@@ -1,0 +1,1 @@
+execute at @e[tag=plate_havoc.rogue.time_cube.c.cursed] run function plate_havoc:cards/cursed_clocks/loop_vsfx

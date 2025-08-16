@@ -16,3 +16,5 @@ attribute @s fall_damage_multiplier base reset
 attribute @s gravity base reset
 
 execute if score #AllowBlockInteraction plate_havoc.num matches 1.. run function plate_havoc:game/misc/attributes/allow_block_interaction
+
+function plate_havoc:game/misc/cards/running/types/run {type:set.attribute}

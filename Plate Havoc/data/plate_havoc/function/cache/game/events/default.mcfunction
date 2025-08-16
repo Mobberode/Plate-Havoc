@@ -40,7 +40,7 @@ data modify storage plate_havoc:data events set value [\
 {id:blackhole,intensity:4.5,function:"plate_havoc:events/black_hole/start"},\
 {id:breeze,intensity:4,function:"plate_havoc:events/breeze/start"},\
 {id:wall,intensity:0.75,function:"plate_havoc:events/wall/start"},\
-{id:soul,intensity:2.1,function:"plate_havoc:events/soulsand/start"},\
+{id:soulsand,intensity:2.1,function:"plate_havoc:events/soulsand/start"},\
 {id:blaze,intensity:5.75,function:"plate_havoc:events/blaze/start"},\
 {id:bucket,intensity:1.3,function:"plate_havoc:events/bucket/start"},\
 {id:herobrine,intensity:2.9,function:"plate_havoc:events/herobrine/start"},\

@@ -4,3 +4,4 @@ function plate_havoc:game/misc/cards/vote/end/process_for_running
 
 function plate_havoc:game/misc/cards/running/types/start
 function plate_havoc:game/misc/cards/running/types/run {type:on.start}
+function plate_havoc:game/misc/cards/running/types/run {type:set.attribute}

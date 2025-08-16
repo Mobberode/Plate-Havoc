@@ -3,6 +3,8 @@ advancement revoke @a from plate_havoc:cards/root
 
 function plate_havoc:game/misc/cards/running/types/start
 function plate_havoc:game/misc/cards/running/types/run {type:on.start}
+function plate_havoc:game/misc/cards/running/types/run {type:set.attribute}
+
 
 data modify storage plate_havoc:data default_gamemode set value "survival"
 execute as @a[tag=!plate_havoc.spectator] in plate_havoc:arena run function plate_havoc:game/match/misc/gametype/rogue/player_start
