@@ -2,4 +2,4 @@ data modify storage plate_havoc:ui event_message set value [{text:"Seems like th
 scoreboard players set #EventNotify.Display_Count plate_havoc.num 0
 function plate_havoc:game/events/event_message
 
-execute in plate_havoc:arena positioned 0 0 0 run fillbiome ~-100 ~ ~-100 ~100 ~256 ~100 plate_havoc:void
+execute in plate_havoc:arena positioned 0 0 0 run function plate_havoc:game/misc/biome/set with storage plate_havoc:data

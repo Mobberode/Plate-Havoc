@@ -1,0 +1,1 @@
+scoreboard players operation #Left plate_havoc.timer *= #2 plate_havoc.num

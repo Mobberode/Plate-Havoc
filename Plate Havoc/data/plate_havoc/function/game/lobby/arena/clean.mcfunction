@@ -1,2 +1,2 @@
-fill ~-100 -64 ~-100 ~100 319 ~100 air strict
-fillbiome ~-100 -64 ~-100 ~100 319 ~100 plate_havoc:void
+fill ~-250 -64 ~-250 ~250 319 ~250 air strict
+function plate_havoc:game/misc/biome/set with storage plate_havoc:data

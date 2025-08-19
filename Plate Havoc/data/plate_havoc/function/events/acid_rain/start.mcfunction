@@ -13,6 +13,6 @@ scoreboard players operation #AcidRain.Damage_Multiplier plate_havoc.event *= #T
 #
 
 weather rain
-execute positioned 0 0 0 run fillbiome ~-100 ~ ~-100 ~100 ~256 ~100 plate_havoc:acid_rain
+execute in plate_havoc:arena positioned 0 0 0 run function plate_havoc:game/misc/biome/set {biome:"plate_havoc:acid_rain"}
 
 function plate_havoc:events/acid_rain/loop

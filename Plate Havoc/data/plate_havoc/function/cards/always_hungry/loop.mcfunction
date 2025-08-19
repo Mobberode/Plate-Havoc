@@ -1,1 +1,1 @@
-effect give @a[tag=plate_havoc.survivor] hunger infinite 5
+effect give @a[tag=plate_havoc.survivor] hunger infinite 9

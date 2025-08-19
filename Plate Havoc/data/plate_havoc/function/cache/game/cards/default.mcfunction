@@ -15,9 +15,9 @@ data modify storage plate_havoc:cards data set value [\
 \
 {id:armoured_up,type:positive,cost:8,body:{text:"",extra:[{text:"Armoured Up",color:green},{text:"\nGain Armour (2 *Level) and Toughness (Armour /2) (Max: 5)"}]},action:{label:[{text:"Armoured Up"}]},on_select:{functions:[{type:set.attribute,function:"plate_havoc:cards/armoured_up/start"}],duration:-1,left:5}},\
 \
-{id:strength_training,type:positive,cost:9,body:{text:"",extra:[{text:"Strength Training",color:green},{text:"\nHits hit harder (2 *Level) (Max: 3)"}]},action:{label:[{text:"Strength Training"}]},on_select:{functions:[{type:set.attribute,function:"plate_havoc:cards/strength_training/start"}],duration:1,left:3}},\
+{id:strength_training,type:positive,cost:9,requirement:{type:cycle,cycle:3},body:{text:"",extra:[{text:"Strength Training",color:green},{text:"\nHits hit harder (2 *Level) (Max: 3)"}]},action:{label:[{text:"Strength Training"}]},on_select:{functions:[{type:set.attribute,function:"plate_havoc:cards/strength_training/start"}],duration:1,left:3}},\
 \
-{id:flippers,type:positive,cost:4,requirement:{type:cycle,cycle:3},body:{text:"",extra:[{text:"Flippers",color:green},{text:"\nIncreases Water Mobility by (+0.1 *Level) (Max: 2)"}]},action:{label:[{text:"Flippers"}]},on_select:{functions:[{type:set.attribute,function:"plate_havoc:cards/flippers/start"}],duration:-1,left:2}},\
+{id:flippers,type:positive,cost:4,requirement:{type:cycle,cycle:3},body:{text:"",extra:[{text:"Flippers",color:green},{text:"\nIncreases Water Mobility by (10% *Level) (Max: 2)"}]},action:{label:[{text:"Flippers"}]},on_select:{functions:[{type:set.attribute,function:"plate_havoc:cards/flippers/start"}],duration:-1,left:2}},\
 \
 {id:box_of_wind,type:positive,cost:11.5,requirement:{type:cycle,cycle:3},body:{text:"",extra:[{text:"Box of Wind Charges",color:green},{text:"\n5 Wind Charges for all players"}]},action:{label:[{text:"Box of Wind Charges"}]},on_select:{functions:[{type:on.start,function:"plate_havoc:cards/box_of_wind/start"}],duration:-1,left:1}},\
 \
@@ -59,11 +59,11 @@ data modify storage plate_havoc:cards data set value [\
 \
 {id:piranha_season,type:negative,body:{text:"",extra:[{text:"Piranha Season",color:red},{text:"\nWater is no longer safe and piranhas deal +3.5 (1.5 Hearts) more damage to players"}]},action:{label:[{text:"Piranha Season"}]},on_select:{functions:[{type:on.start,function:"plate_havoc:cards/piranha_season/start"}],duration:-1,left:1}},\
 \
-{id:enraged,type:negative,body:{text:"",extra:[{text:"Enraged",color:red},{text:"\n+40% event frequency, +10% Intensity gain and +115% Cyclathrons (Max: 2)"}]},action:{label:[{text:"Enraged"}]},on_select:{functions:[{type:on.start,function:"plate_havoc:cards/enraged/start"}],duration:1,left:2}},\
+{id:enraged,type:negative,exclusive:[{id:slow_passing}],body:{text:"",extra:[{text:"Enraged",color:red},{text:"\n+40% event frequency, +10% Intensity gain and +115% Cyclathrons (Max: 2)"}]},action:{label:[{text:"Enraged"}]},on_select:{functions:[{type:on.start,function:"plate_havoc:cards/enraged/start"}],duration:1,left:2}},\
 \
-{id:cursed_clocks,type:negative,reward:30,requirement:{type:cycle,cycle:3},body:{text:"",extra:[{text:"Cursed Clocks",color:red},{text:"\nCollecting Cursed Clocks which have a small chance to spawn, will take away Cyclathrons by the Multiplier. Adds to the timer by the Time Reduction and emits particles"}]},action:{label:[{text:"Cursed Clocks"}]},on_select:{functions:[{type:on.clock.spawn,function:"plate_havoc:cards/cursed_clocks/spawn"},{type:on.clock.collect,function:"plate_havoc:cards/cursed_clocks/collect"},{type:loop,function:"plate_havoc:cards/cursed_clocks/loop"}],duration:-1,left:1}},\
+{id:cursed_clocks,type:negative,reward:50,requirement:{type:cycle,cycle:5},body:{text:"",extra:[{text:"Cursed Clocks",color:red},{text:"\nCollecting Cursed Clocks which have a small chance to spawn, will take away Cyclathrons by the Multiplier. Adds to the timer by the Time Reduction and emits particles"}]},action:{label:[{text:"Cursed Clocks"}]},on_select:{functions:[{type:on.clock.spawn,function:"plate_havoc:cards/cursed_clocks/spawn"},{type:on.clock.collect,function:"plate_havoc:cards/cursed_clocks/collect"},{type:loop,function:"plate_havoc:cards/cursed_clocks/loop"}],duration:-1,left:1}},\
 \
-{id:new_years,type:negative,reward:20,requirement:{type:cycle,cycle:5},body:{text:"",extra:[{text:"New Years",color:red},{text:"\nThe Fireworks event is guaranteed at the start of every cycle. Upgrades when stack is at 2"}]},action:{label:[{text:"New Years"}]},on_select:{functions:[{type:on.start,function:"plate_havoc:cards/new_years/start"}],duration:-1,left:2}},\
+{id:new_years,type:negative,reward:20,requirement:{type:cycle,cycle:3},body:{text:"",extra:[{text:"New Years",color:red},{text:"\nThe Fireworks event is guaranteed at the start of every cycle. Upgrades when stack is at 2"}]},action:{label:[{text:"New Years"}]},on_select:{functions:[{type:on.start,function:"plate_havoc:cards/new_years/start"}],duration:-1,left:2}},\
 \
 {id:silverfestation,type:negative,requirement:{type:cycle,cycle:5},body:{text:"",extra:[{text:"Silverfestation",color:red},{text:"\nTHERE'S SILVERFISH EVERYWHERE!"}]},action:{label:[{text:"Silverfestation"}]},on_select:{functions:[{type:loop,function:"plate_havoc:cards/silverfestation/start"}],duration:-1,left:1}},\
 \
@@ -73,13 +73,13 @@ data modify storage plate_havoc:cards data set value [\
 \
 {id:glitched_timer,type:negative,requirement:{type:cycle,cycle:7},body:{text:"",extra:[{text:"Glitched Timer",color:red},{text:"\nTimer will become inaccurate and wont show the real time. Can add an unknown amount of time."}]},action:{label:[{text:"Glitched Timer"}]},on_select:{functions:[{type:on.start,function:"plate_havoc:cards/glitched_timer/start"},{type:loop,function:"plate_havoc:cards/glitched_timer/loop"}],duration:-1,left:1}},\
 \
-{id:no_evidence,type:negative,requirement:{type:cycle,cycle:7},body:{text:"",extra:[{text:"No Evidence",color:red},{text:"\nPlayer count is hidden and Death messages are hidden"}]},action:{label:[{text:"No Evidence"}]},on_select:{functions:[{type:on.start,function:"plate_havoc:cards/no_evidence/start"}],duration:1,left:1}},\
+{id:no_evidence,type:negative,requirement:{type:cycle,cycle:5},body:{text:"",extra:[{text:"No Evidence",color:red},{text:"\nPlayer count is hidden and Death messages are hidden"}]},action:{label:[{text:"No Evidence"}]},on_select:{functions:[{type:on.start,function:"plate_havoc:cards/no_evidence/start"}],duration:1,left:1}},\
 \
-{id:run_it_back,type:negative,reward:150,requirement:{type:cycle,cycle:12},body:{text:"",extra:[{text:"Run it Back!",color:red},{text:"\nHave an additional event occur on event. Cant be triggered again and cannot add to the Intensity (A = 1*Level) (Max:2)"}]},action:{label:[{text:"Run it Back!"}]},on_select:{functions:[{type:on.event,function:"plate_havoc:cards/run_it_back/event"}],duration:-1,left:2}},\
+{id:run_it_back,type:negative,reward:150,requirement:{type:cycle,cycle:10},body:{text:"",extra:[{text:"Run it Back!",color:red},{text:"\nHave an additional event occur on event. Cant be triggered again and cannot add to the Intensity (A = 1*Level) (Max:2)"}]},action:{label:[{text:"Run it Back!"}]},on_select:{functions:[{type:on.event,function:"plate_havoc:cards/run_it_back/event"}],duration:-1,left:2}},\
 \
 {id:cube_of_decay,type:negative,requirement:{type:cycle,cycle:5},body:{text:"",extra:[{text:"Cube of Decay",color:red},{text:"\nSummons a Cube that permanently boosts Intensity gain if left untreated. Be near the cube for it to shrink. Time left and needed to treat the cube is times cycle"}]},action:{label:[{text:"Cube of Decay"}]},on_select:{functions:[{type:on.start,function:"plate_havoc:cards/cube_of_decay/start"},{type:loop,function:"plate_havoc:cards/cube_of_decay/loop"}],duration:-1,left:1}},\
 \
-{id:always_hungry,type:negative,reward:25,requirement:{type:cycle,cycle:5},body:{text:"",extra:[{text:"Always Hungry",color:red},{text:"\nPlayers get incredibly hungry real fast. Hunger Management required"}]},action:{label:[{text:"Always Hungry"}]},on_select:{functions:[{type:loop,function:"plate_havoc:cards/always_hungry/loop"}],duration:-1,left:1}},\
+{id:always_hungry,type:negative,reward:35,requirement:{type:cycle,cycle:5},body:{text:"",extra:[{text:"Always Hungry",color:red},{text:"\nPlayers get incredibly hungry real fast. Hunger Management required"}]},action:{label:[{text:"Always Hungry"}]},on_select:{functions:[{type:loop,function:"plate_havoc:cards/always_hungry/loop"}],duration:-1,left:1}},\
 \
 {id:life_harmony,type:negative,requirement:{type:cycle,cycle:5},body:{text:"",extra:[{text:"Life Harmony",color:red},{text:"\nDeath of entities caused by players adds 8 to the timer and also cuts the time till an event by a quarter"}]},action:{label:[{text:"Life Harmony"}]},on_select:{functions:[{type:loop,function:"plate_havoc:cards/life_harmony/loop"}],duration:-1,left:1}},\
 \
@@ -91,6 +91,7 @@ data modify storage plate_havoc:cards data set value [\
 \
 {id:hatred,type:negative,requirement:{type:multi_condition,conditions:[{type:cycle,cycle:10},{type:card,needed:[{id:enraged,count:2}]}]},body:{text:"",extra:[{text:"Hatred",color:red},{text:"\n-60% event frequency, +20% Intensity gain"}]},action:{label:[{text:"Hatred"}]},on_select:{functions:[{type:on.start,function:"plate_havoc:cards/hatred/start"}],duration:1,left:1}},\
 \
+{id:slow_passing,type:negative,exclusive:[{id:enraged}],body:{text:"",extra:[{text:"Slow Passing",color:red},{text:"\nTime is multiplied by 2."}]},action:{label:[{text:"Slow Passing"}]},on_select:{functions:[{type:on.start,function:"plate_havoc:cards/slow_passing/start"}],duration:-1,left:1}},\
 ]
 
 #{id:shadow_baby,type:negative,reward:999999999,body:{text:"",extra:[{text:"Shadow Baby",color:red},{text:"\nMuch quicker dash. Much deadlier. Present for 1 Cycle only"}]},action:{label:[{text:"Shadow Baby"}]},duration:1,left:1}}

@@ -19,7 +19,7 @@ scoreboard players set #BaseGainValue plate_havoc.spawnpoint_energy 100
 scoreboard players set #BaseGainPercentage plate_havoc.spawnpoint_energy 100
 
 #1000 = 100.0
-scoreboard players set #BaseWorldBorderWidth plate_havoc.num 1000
+scoreboard players set #BaseWorldBorderWidth plate_havoc.num 4750
 
 ##AllowBlockInteraction
 scoreboard players set #AllowBlockInteraction plate_havoc.num 0
@@ -30,6 +30,9 @@ scoreboard players set #Remove plate_havoc.timer 1
 ##void
 scoreboard players set #BaseVoidHeight plate_havoc.num -128
 scoreboard players set #BaseVoidDamage plate_havoc.num 0
+
+##biome
+data modify storage plate_havoc:data biome set value "plate_havoc:void"
 
 data modify storage plate_havoc:data default_gamemode set value "adventure"
 
@@ -225,6 +228,10 @@ scoreboard players set #Template.Event.Wind_Up.Summon_Pack.Size plate_havoc.num 
 scoreboard players set #Template.Event.Laser_Drill.MaxRunCount plate_havoc.num 1
 scoreboard players set #Template.Event.Laser_Drill.Winding_Time plate_havoc.num 140
 scoreboard players set #Template.Event.Laser_Drill.Explosion_Power plate_havoc.num 35
+## end_crystal (Max Run Count)
+scoreboard players set #Template.Event.End_Crystal.MaxRunCount plate_havoc.num 1
+## shulker (Max Run Count)
+scoreboard players set #Template.Event.Shulker.MaxRunCount plate_havoc.num 1
 
 ## obama_drone_strike (Max Run Count) (Summons) (Summon Extension)
 scoreboard players set #Template.Event.Obama_Drone_Strike.MaxRunCount plate_havoc.num 1

@@ -1,0 +1,14 @@
+{
+    "type": "multi_action",
+    "title": "Plate Havoc Roguelike Test Intro",
+    "can_close_with_escape": false,
+    "body": [
+        {"type":"plain_message","contents":{"text":"Welcome to the Plate Havoc | Roguelike Test! This is here to explain the game and how it will play out."},"width":512},
+        {"type":"plain_message","contents":{"text":"The first thing is what to do? Plate Havoc is mostly a cooperative minigame thats based on the Plate Survival genre with the goal of lasting as long as possible.","color":"gold"},"width":512},
+        {"type":"plain_message","contents":[{"text":""},{"text":"- Gameplay -\n","color":"aqua"},{"text":"Survive events that will randomly happen. Intensity will rise when events happen, controlling the severity of the events (Look at the Bossbar located at the top of the screen to get the essiental information). While doing this, collect Clocks that reduce the time needed till the next Cycle and get \"Cyclathrons\" that is used for bying Upgrades that makes the game easier. Advancing to the next Cycle, you and your team will have to deal with any Curses that were selected, making the game harder. Good luck."}],"width":384},
+        {"type":"plain_message","contents":[{"text":""},{"text":"","color":"gold"},{"text":"Skipping this is not reccomended for first time players","color":"red"}],"width":256}
+    ],
+    "actions": [
+        {"label":{"text":"I have read the above text"},"width":256,"action":{"type":"run_command","command":"/trigger plate_havoc.test.read"}}
+    ]
+}

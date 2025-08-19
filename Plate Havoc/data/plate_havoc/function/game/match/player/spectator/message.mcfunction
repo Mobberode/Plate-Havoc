@@ -1,0 +1,1 @@
+title @s actionbar [{storage:"plate_havoc:ui",nbt:element_spawnpoint_status,interpret:true}]

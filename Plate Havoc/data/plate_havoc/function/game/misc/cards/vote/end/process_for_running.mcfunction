@@ -16,6 +16,8 @@ data modify storage plate_havoc:cards template_running.visual.id set from storag
 execute store result score #CardsLeft plate_havoc.num run data get storage plate_havoc:cards template_running.data.left
 data remove storage plate_havoc:cards template_running.data.left
 function plate_havoc:game/misc/cards/vote/end/left_check
+#Exclusive
+function plate_havoc:game/misc/cards/exclusive/loop
 
 ##Check if entry is already existing
 function plate_havoc:game/misc/cards/vote/end/duplicate_check with storage plate_havoc:cards
