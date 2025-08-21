@@ -45,9 +45,9 @@ data modify storage plate_havoc:cards data set value [\
 \
 {id:netherite_clock,type:positive,cost:80,requirement:{type:multi_condition,conditions:[{type:card,needed:[{id:diamond_clock,count:1}]},{type:cycle,cycle:10}]},body:{text:"",extra:[{text:"Netherite Clock",color:green},{text:"\n+750% Cyclathrons. +1 Time Reduction"}]},action:{label:[{text:"Netherite Clock"}]},on_select:{functions:[{type:on.start,function:"plate_havoc:cards/netherite_clock/start"}],duration:1,left:1}},\
 \
-{id:gravity_coil,type:positive,cost:-350,requirement:{type:cycle,cycle:20},body:{text:"",extra:[{text:"Gravity Coil",color:green},{text:"\n"}]},action:{label:[{text:"Gravity Coil"}]},on_select:{functions:[],duration:-1,left:1}},\
+{id:gravity_coil,type:positive,cost:-750,requirement:{type:cycle,cycle:20},body:{text:"",extra:[{text:"Gravity Coil",color:green},{text:"\n"}]},action:{label:[{text:"Gravity Coil"}]},on_select:{functions:[],duration:-1,left:1}},\
 \
-{id:dasher_pack,type:positive,cost:-500,requirement:{type:cycle,cycle:20},body:{text:"",extra:[{text:"Dasher Pack",color:green},{text:"\n"}]},action:{label:[{text:"Dasher Pack"}]},on_select:{functions:[],duration:-1,left:1}},\
+{id:dasher_pack,type:positive,cost:-1000,requirement:{type:cycle,cycle:20},body:{text:"",extra:[{text:"Dasher Pack",color:green},{text:"\n"}]},action:{label:[{text:"Dasher Pack"}]},on_select:{functions:[],duration:-1,left:1}},\
 \
 \
 \
@@ -83,11 +83,11 @@ data modify storage plate_havoc:cards data set value [\
 \
 {id:life_harmony,type:negative,requirement:{type:cycle,cycle:5},body:{text:"",extra:[{text:"Life Harmony",color:red},{text:"\nDeath of entities caused by players adds 8 to the timer and also cuts the time till an event by a quarter"}]},action:{label:[{text:"Life Harmony"}]},on_select:{functions:[{type:loop,function:"plate_havoc:cards/life_harmony/loop"}],duration:-1,left:1}},\
 \
-{id:abyssal_reach,type:negative,reward:25,requirement:{type:cycle,cycle:10},body:{text:"",extra:[{text:"Abyssal Reach",color:red},{text:"\nTeetering on the brink, facing the abyss... The Void is 64 blocks closer and deadlier"}]},action:{label:[{text:"Abyssal Reach"}]},on_select:{functions:[{type:on.start,function:"plate_havoc:cards/abyssal_reach/start"}],duration:1,left:1}},\
+{id:abyssal_reach,type:negative,reward:20,requirement:{type:cycle,cycle:10},body:{text:"",extra:[{text:"Abyssal Reach",color:red},{text:"\nTeetering on the brink, facing the abyss... The Void is 64 blocks closer and deadlier"}]},action:{label:[{text:"Abyssal Reach"}]},on_select:{functions:[{type:on.start,function:"plate_havoc:cards/abyssal_reach/start"}],duration:1,left:1}},\
 \
 {id:unreliable_notifier,type:negative,reward:50,requirement:{type:cycle,cycle:10},body:{text:"",extra:[{text:"Unreliable Notifier",color:red},{text:"\nEvent messages can be ofbuscated"}]},action:{label:[{text:"Unreliable Notifier"}]},on_select:{functions:[{type:on.event.message,function:"plate_havoc:cards/unreliable_notifier/start"}],duration:-1,left:1}},\
 \
-{id:pitch_black,type:negative,reward:35,requirement:{type:multi_condition,conditions:[{type:cycle,cycle:12},{type:card,needed:[{id:abyssal_reach,count:1}]}]},body:{text:"",extra:[{text:"Pitch Black",color:red},{text:"\nDark consumes all. Shrouded in Darkness, players will slowly wither away if left in the dark for 15 seconds"}]},action:{label:[{text:"Pitch Black"}]},on_select:{functions:[{type:loop,function:"plate_havoc:cards/pitch_black/loop"}],duration:-1,left:1}},\
+{id:pitch_black,type:negative,reward:80,requirement:{type:multi_condition,conditions:[{type:cycle,cycle:12},{type:card,needed:[{id:abyssal_reach,count:1}]}]},body:{text:"",extra:[{text:"Pitch Black",color:red},{text:"\nDark consumes all. Shrouded in Darkness, players will slowly wither away if left in the dark for 15 seconds"}]},action:{label:[{text:"Pitch Black"}]},on_select:{functions:[{type:loop,function:"plate_havoc:cards/pitch_black/loop"}],duration:-1,left:1}},\
 \
 {id:hatred,type:negative,requirement:{type:multi_condition,conditions:[{type:cycle,cycle:10},{type:card,needed:[{id:enraged,count:2}]}]},body:{text:"",extra:[{text:"Hatred",color:red},{text:"\n-60% event frequency, +20% Intensity gain"}]},action:{label:[{text:"Hatred"}]},on_select:{functions:[{type:on.start,function:"plate_havoc:cards/hatred/start"}],duration:1,left:1}},\
 \

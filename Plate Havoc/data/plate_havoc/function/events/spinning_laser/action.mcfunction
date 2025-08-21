@@ -2,4 +2,4 @@ summon item_display ~ ~ ~ {Tags:["plate_havoc.spinning_laser.init","plate_havoc.
 
 setblock ~ ~-1 ~ iron_block
 
-execute unless score #EventRunCount plate_havoc.num >= #Template.Event.Spinning_Laser.MaxRunCount plate_havoc.num run function plate_havoc:events/spinning_laser/run
+execute if score #EventRunCount plate_havoc.num < #Template.Event.Spinning_Laser.MaxRunCount plate_havoc.num run function plate_havoc:events/spinning_laser/run

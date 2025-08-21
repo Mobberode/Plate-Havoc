@@ -23,7 +23,7 @@ gamerule doWeatherCycle true
 
 team modify plate_havoc.player friendlyFire true
 
-time set noon
+scoreboard players set #BaseWorldTime plate_havoc.num 6000
 
 scoreboard players set #AllowBlockInteraction plate_havoc.num 1
 

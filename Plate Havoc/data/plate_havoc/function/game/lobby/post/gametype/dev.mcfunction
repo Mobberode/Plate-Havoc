@@ -11,7 +11,7 @@ data modify storage plate_havoc:ui element_spawnpoint_status set value [{text:"R
 scoreboard players set #BaseCapValue plate_havoc.spawnpoint_energy 1
 scoreboard players set #BaseGainValue plate_havoc.spawnpoint_energy 1
 
-time set 12625
+scoreboard players set #BaseWorldTime plate_havoc.num 12625
 
 data modify storage plate_havoc:data on_event_function set value ""
 data modify storage plate_havoc:data game_end_condition_function set value ""

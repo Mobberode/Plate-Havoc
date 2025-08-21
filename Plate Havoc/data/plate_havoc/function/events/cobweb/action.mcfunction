@@ -1,3 +1,3 @@
 setblock ~ ~ ~ cobweb
 
-execute unless score #EventRunCount plate_havoc.num >= #Template.Event.Cobweb.MaxRunCount plate_havoc.num run function plate_havoc:events/cobweb/run
+execute if score #EventRunCount plate_havoc.num < #Template.Event.Cobweb.MaxRunCount plate_havoc.num run function plate_havoc:events/cobweb/run
