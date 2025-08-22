@@ -236,6 +236,12 @@ scoreboard players set #Template.Event.End_Crystal.MaxRunCount plate_havoc.num 1
 scoreboard players set #Template.Event.Shulker.MaxRunCount plate_havoc.num 1
 ## skeleton_pillar (Max Run Count)
 scoreboard players set #Template.Event.Skeleton_Pillar.MaxRunCount plate_havoc.num 1
+## motion_sniper (Max Run Count) (Ammo (How many times till event end)) (Delay (ticks)) (WarningTime (ticks)) (Damage Multiplier)
+scoreboard players set #Template.Event.Motion_Sniper.MaxRunCount plate_havoc.num 1
+scoreboard players set #Template.Event.Motion_Sniper.Ammo plate_havoc.num 6
+scoreboard players set #Template.Event.Motion_Sniper.Delay plate_havoc.num 200
+scoreboard players set #Template.Event.Motion_Sniper.WarningTime plate_havoc.num 50
+scoreboard players set #Template.Event.Motion_Sniper.Damage_Multiplier plate_havoc.num 100
 
 ## obama_drone_strike (Max Run Count) (Summons) (Summon Extension)
 scoreboard players set #Template.Event.Obama_Drone_Strike.MaxRunCount plate_havoc.num 1

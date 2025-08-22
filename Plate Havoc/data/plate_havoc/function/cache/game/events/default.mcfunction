@@ -57,6 +57,7 @@ data modify storage plate_havoc:data events set value [\
 {id:end_crystal,intensity:4,function:"plate_havoc:events/end_crystal/start"},\
 {id:shulker,intensity:6,function:"plate_havoc:events/shulker/start"},\
 {id:skeleton_pillar,intensity:6,function:"plate_havoc:events/skeleton_pillar/start"},\
+{id:motion_sniper,intensity:8,function:"plate_havoc:events/motion_sniper/start"},\
 \
 {id:obama_drone_strike,function:"plate_havoc:events/zzz_console/obama_drone_strike/start",console_only:true},\
 {id:boost_bot,function:"plate_havoc:events/zzz_console/boost_bot/start",console_only:true},\
