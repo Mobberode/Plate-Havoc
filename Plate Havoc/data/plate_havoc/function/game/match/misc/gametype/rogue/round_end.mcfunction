@@ -12,7 +12,7 @@ scoreboard players add #Value plate_havoc.round 1
 
 execute if score #Value plate_havoc.round matches 15 in plate_havoc:arena run function plate_havoc:game/match/misc/gametype/rogue/endgame_arena_visual
 
-function plate_havoc:game/misc/world/apply_all
+execute in plate_havoc:arena run function plate_havoc:game/misc/world/apply_all
 
 function plate_havoc:game/misc/cards/locked/init
 data modify storage plate_havoc:cards type set value positive
