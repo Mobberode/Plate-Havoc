@@ -1,1 +1,1 @@
-scoreboard players remove #BaseIntensityPercentage plate_havoc.num 20
+scoreboard players remove #BaseIntensityPercentage plate_havoc.num 10

@@ -11,7 +11,7 @@ data modify storage plate_havoc:ui bar_visuals_queue append value {id:time,text:
 scoreboard players set #BaseEventTimePercentage plate_havoc.num 125
 scoreboard players set #BaseIntensityPercentage plate_havoc.num 125
 
-function plate_havoc:game/lobby/post/gametype/internal/teams/run
+data modify storage plate_havoc:data on_game_start append value {function:"plate_havoc:game/lobby/post/gametype/internal/teams/run"}
 
 data modify storage plate_havoc:data spectator_tick_function set value ""
 

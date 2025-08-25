@@ -1,5 +1,3 @@
-execute store result storage plate_havoc:cards slot int 1 run scoreboard players operation #ProcessedCards plate_havoc.num = #Slot plate_havoc.z.select
-
 execute store result score #SavedVotes plate_havoc.num if entity @a[predicate=plate_havoc:specfic/card]
 
 function plate_havoc:game/misc/cards/vote/player/get_votes with storage plate_havoc:cards

@@ -5,6 +5,6 @@ scoreboard players operation #Slot plate_havoc.z.select = @s plate_havoc.z.selec
 
 data modify storage plate_havoc:cards temp set from storage plate_havoc:cards active
 
-function plate_havoc:game/misc/cards/vote/player/process
+function plate_havoc:game/misc/cards/vote/player/slot_exist_check
 
 scoreboard players reset @s plate_havoc.t.select

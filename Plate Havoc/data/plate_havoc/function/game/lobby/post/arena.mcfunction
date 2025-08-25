@@ -1,7 +1,3 @@
-clear @a
-effect clear @a
-recipe take @a *
-
 scoreboard players set #Value plate_havoc.timer 60
 
 function plate_havoc:game/lobby/post/leaderboard/detect

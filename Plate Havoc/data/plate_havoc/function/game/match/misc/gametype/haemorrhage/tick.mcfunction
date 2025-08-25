@@ -5,4 +5,4 @@ scoreboard players add #Haemorrhage plate_havoc.timer 1
 scoreboard players add #HaemorrhageHeal plate_havoc.timer 1
 
 execute if score #HaemorrhageHeal plate_havoc.timer matches 150.. run function plate_havoc:game/match/misc/gametype/haemorrhage/heal
-execute if score #Haemorrhage plate_havoc.timer matches 20.. run function plate_havoc:game/match/misc/gametype/haemorrhage/run
+execute if score #Haemorrhage plate_havoc.timer matches 25.. run function plate_havoc:game/match/misc/gametype/haemorrhage/run

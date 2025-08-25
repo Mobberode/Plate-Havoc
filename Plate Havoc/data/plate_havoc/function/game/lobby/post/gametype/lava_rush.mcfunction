@@ -21,7 +21,9 @@ gamerule randomTickSpeed 115
 gamerule doDaylightCycle true
 gamerule doWeatherCycle true
 
-team modify plate_havoc.player friendlyFire true
+data modify storage plate_havoc:data on_game_start append value {function:"plate_havoc:game/lobby/post/gametype/internal/lava_rush/run"}
+
+team modify plate_havoc.player friendlyFire false
 
 scoreboard players set #BaseWorldTime plate_havoc.num 6000
 
@@ -39,5 +41,3 @@ data remove storage plate_havoc:leaderboard include_stats[{holder:intensity}]
 scoreboard players set #LavaHeight plate_havoc.num -65
 
 scoreboard players set #Value plate_havoc.timer 600
-
-function plate_havoc:game/lobby/post/gametype/internal/lava_rush/run

@@ -9,3 +9,6 @@ execute store result bossbar plate_havoc:ui value run scoreboard players remove 
 execute if score #Value plate_havoc.timer matches ..0 run function plate_havoc:game/match/macro with storage plate_havoc:data
 #Tick
 function plate_havoc:game/match/tick with storage plate_havoc:data
+
+##Cards
+function plate_havoc:game/misc/cards/running/types/run {type:loop}

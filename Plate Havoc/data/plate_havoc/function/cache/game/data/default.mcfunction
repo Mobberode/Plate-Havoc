@@ -167,11 +167,12 @@ scoreboard players set #Template.Event.JumpCooldown.Duration plate_havoc.num 300
 ## anvil (Max Run Count) (Distance (in blocks))
 scoreboard players set #Template.Event.Anvil.MaxRunCount plate_havoc.num 1
 scoreboard players set #Template.Event.Anvil.Distance plate_havoc.num 75
-## black_hole (Max Run Count) (Duration) (Duration Extension) (Base Size (x0.01))
+## black_hole (Max Run Count) (Duration) (Duration Extension) (Base Size (x0.01)) (Growth Limit)
 scoreboard players set #Template.Event.BlackHole.MaxRunCount plate_havoc.num 1
 scoreboard players set #Template.Event.BlackHole.Duration plate_havoc.num 900
 scoreboard players set #Template.Event.BlackHole.Duration_Extension plate_havoc.num 450
 scoreboard players set #Template.Event.BlackHole.Entity_Size plate_havoc.num 125
+scoreboard players set #Template.Event.BlackHole.Growth_Limit plate_havoc.num 10
 ## breeze (Max Run Count)
 scoreboard players set #Template.Event.Breeze.MaxRunCount plate_havoc.num 1
 ## breeze (Max Run Count)
@@ -242,6 +243,19 @@ scoreboard players set #Template.Event.Motion_Sniper.Ammo plate_havoc.num 6
 scoreboard players set #Template.Event.Motion_Sniper.Delay plate_havoc.num 200
 scoreboard players set #Template.Event.Motion_Sniper.WarningTime plate_havoc.num 50
 scoreboard players set #Template.Event.Motion_Sniper.Damage_Multiplier plate_havoc.num 100
+## outer_space_gravity (Max Run Count) (Duration (seconds)) (Effect Strength (x0.01))
+scoreboard players set #Template.Event.Outer_Space_Gravity.MaxRunCount plate_havoc.num 1
+scoreboard players set #Template.Event.Outer_Space_Gravity.Duration plate_havoc.num 30
+scoreboard players set #Template.Event.Outer_Space_Gravity.Effect_Strength plate_havoc.num 75
+## sapling_drop (Max Run Count) (Amount (0 = end planting)) (Delay (How fast a tree is planted))
+scoreboard players set #Template.Event.Sapling_Drop.MaxRunCount plate_havoc.num 1
+scoreboard players set #Template.Event.Sapling_Drop.Amount plate_havoc.num 5
+scoreboard players set #Template.Event.Sapling_Drop.Delay plate_havoc.num 100
+## buff_bow (Max Run Count) (Amount)
+scoreboard players set #Template.Event.Buff_Bow.MaxRunCount plate_havoc.num 1
+scoreboard players set #Template.Event.Buff_Bow.Amount plate_havoc.num 6
+## creaking (Max Run Count)
+scoreboard players set #Template.Event.Creaking.MaxRunCount plate_havoc.num 1
 
 ## obama_drone_strike (Max Run Count) (Summons) (Summon Extension)
 scoreboard players set #Template.Event.Obama_Drone_Strike.MaxRunCount plate_havoc.num 1

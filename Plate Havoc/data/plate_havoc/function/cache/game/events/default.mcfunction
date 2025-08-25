@@ -22,7 +22,7 @@ data modify storage plate_havoc:data events set value [\
 {id:snow_golem,intensity:2.4,function:"plate_havoc:events/snow_golem/start"},\
 {id:fire_rain,intensity:1.9,function:"plate_havoc:events/fire_rain/start"},\
 {id:fireballs,intensity:2,function:"plate_havoc:events/fireballs/start"},\
-{id:dragonball,intensity:3.6,function:"plate_havoc:events/dragonball/start"},\
+{id:dragonball,intensity:3.4,function:"plate_havoc:events/dragonball/start"},\
 {id:honey,intensity:0.8,function:"plate_havoc:events/honey/start"},\
 {id:buff_shield,intensity:1.7,function:"plate_havoc:events/buff_shield/start"},\
 {id:buff_pearl,intensity:2.3,function:"plate_havoc:events/buff_pearl/start"},\
@@ -41,7 +41,7 @@ data modify storage plate_havoc:data events set value [\
 {id:breeze,intensity:4,function:"plate_havoc:events/breeze/start"},\
 {id:wall,intensity:0.75,function:"plate_havoc:events/wall/start"},\
 {id:soulsand,intensity:2.1,function:"plate_havoc:events/soulsand/start"},\
-{id:blaze,intensity:5.75,function:"plate_havoc:events/blaze/start"},\
+{id:blaze,intensity:5.8,function:"plate_havoc:events/blaze/start"},\
 {id:bucket,intensity:1.3,function:"plate_havoc:events/bucket/start"},\
 {id:herobrine,intensity:2.9,function:"plate_havoc:events/herobrine/start"},\
 {id:frail_stairs,intensity:0.64,function:"plate_havoc:events/frail_stairs/start"},\
@@ -55,9 +55,13 @@ data modify storage plate_havoc:data events set value [\
 {id:wind_up,intensity:5.6,function:"plate_havoc:events/wind_up/start"},\
 {id:laser_drill,intensity:3.46,function:"plate_havoc:events/laser_drill/start"},\
 {id:end_crystal,intensity:4,function:"plate_havoc:events/end_crystal/start"},\
-{id:shulker,intensity:6,function:"plate_havoc:events/shulker/start"},\
-{id:skeleton_pillar,intensity:6,function:"plate_havoc:events/skeleton_pillar/start"},\
-{id:motion_sniper,intensity:8,function:"plate_havoc:events/motion_sniper/start"},\
+{id:shulker,intensity:4,function:"plate_havoc:events/shulker/start"},\
+{id:skeleton_pillar,intensity:3.6,function:"plate_havoc:events/skeleton_pillar/start"},\
+{id:motion_sniper,intensity:4,function:"plate_havoc:events/motion_sniper/start"},\
+{id:outer_space_gravity,intensity:4,function:"plate_havoc:events/outer_space_gravity/start"},\
+{id:sapling_drop,intensity:3.2,function:"plate_havoc:events/sapling_drop/start"},\
+{id:buff_bow,intensity:2.8,function:"plate_havoc:events/buff_bow/start"},\
+{id:creaking,intensity:3.5,function:"plate_havoc:events/creaking/start"},\
 \
 {id:obama_drone_strike,function:"plate_havoc:events/zzz_console/obama_drone_strike/start",console_only:true},\
 {id:boost_bot,function:"plate_havoc:events/zzz_console/boost_bot/start",console_only:true},\

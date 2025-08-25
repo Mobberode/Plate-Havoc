@@ -2,7 +2,7 @@ tellraw @a [{text:"Endurance | Modern",color:gold},{text:"\nThe intended Enduran
 
 scoreboard players set #BaseEventTimePercentage plate_havoc.num 150
 
-scoreboard players set #BaseIntensityPercentage plate_havoc.num 40
+scoreboard players set #BaseIntensityPercentage plate_havoc.num 50
 
 data modify storage plate_havoc:ui bar_visuals_queue[{id:time}].extra set value [{text:"Time: "},{score:{name:"#Left",objective:plate_havoc.timer},color:gold}]
 data modify storage plate_havoc:ui bar_visuals_queue[{id:players}].extra set value [{score:{name:"#Current_Total",objective:plate_havoc.players},color:green},{text:"/"},{score:{name:"#Match",objective:plate_havoc.players},color:green}]

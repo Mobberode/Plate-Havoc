@@ -2,13 +2,17 @@
     "type": "multi_action",
     "title": "Plate Havoc Roguelike Test Intro",
     "can_close_with_escape": false,
+    "after_action":"wait_for_response",
     "body": [
-        {"type":"plain_message","contents":{"text":"Welcome to the Plate Havoc | Roguelike Test! This is here to explain the game and how it will play out."},"width":512},
-        {"type":"plain_message","contents":{"text":"The first thing is what to do? Plate Havoc is mostly a cooperative minigame thats based on the Plate Survival genre with the goal of lasting as long as possible.","color":"gold"},"width":512},
-        {"type":"plain_message","contents":[{"text":""},{"text":"- Gameplay -\n","color":"aqua"},{"text":"Survive events that will randomly happen. Intensity will rise when events happen, controlling the severity of the events (Look at the Bossbar located at the top of the screen to get the essiental information). While doing this, collect Clocks that reduce the time needed till the next Cycle and get \"Cyclathrons\" that is used for bying Upgrades that makes the game easier. Advancing to the next Cycle, you and your team will have to deal with any Curses that were selected, making the game harder. Good luck."}],"width":384},
-        {"type":"plain_message","contents":[{"text":""},{"text":"","color":"gold"},{"text":"Skipping this is not reccomended for first time players","color":"red"}],"width":256}
+        {"type":"plain_message","contents":{"text":"Welcome to Plate Havoc | Roguelike Test! This is here to explain the basics of the game"},"width":448},
+        {"type":"plain_message","contents":{"text":"Plate Havoc is mostly a cooperative minigame, based on the Plate genre from Roblox with the goal of lasting the longest","color":"gold"},"width":448},
+
+        {"type":"plain_message","contents":[{"text":""},{"text":"- Fundamental Gameplay -\n","color":"green"},{"text":"Survive events that will randomly happen. The bossbar at the top shows how long until an event. Intensity will rise when events happen, controlling the severity of the events"}],"width":448},
+
+        {"type":"plain_message","contents":[{"text":""},{"text":"","color":"gold"},{"text":"Skipping this is not reccomended for first time players","color":"red"}],"width":448},
+        {"type":"plain_message","contents":[{"text":""},{"text":"","color":"gold"},{"text":"If you want to leave in this state. Press the warning symbol at the top of the screen and [Disconnect] / [Save and Quit to Title]","color":"yellow"}],"width":448}
     ],
     "actions": [
-        {"label":{"text":"I have read the above text"},"width":256,"action":{"type":"run_command","command":"/trigger plate_havoc.test.read"}}
+        {"label":{"text":"Proceed to next section"},"width":256,"action":{"type":"run_command","command":"/trigger plate_havoc.test.read set 1"}}
     ]
 }

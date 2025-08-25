@@ -3,12 +3,20 @@ gamerule maxCommandForkCount 4294369
 gamerule commandModificationBlockLimit 2147184930
 gamerule doTileDrops false
 gamerule doMobLoot false
+gamerule doMobSpawning true
+gamerule doInsomnia false
 gamerule randomTickSpeed 3
 gamerule doDaylightCycle false
 gamerule doWeatherCycle false
 gamerule projectilesCanBreakBlocks true
 gamerule doImmediateRespawn true
 gamerule showDeathMessages true
+
+gamerule fallDamage true
+gamerule fireDamage true
+gamerule freezeDamage true
+gamerule drowningDamage true
+
 defaultgamemode spectator
 difficulty normal
 
