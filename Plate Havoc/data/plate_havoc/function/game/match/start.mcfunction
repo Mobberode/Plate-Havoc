@@ -1,3 +1,5 @@
+function plate_havoc:misc/player/clear
+kill @e[type=!player,tag=!plate_havoc.never_kill]
 execute as @a run function plate_havoc:game/lobby/post/player
 
 scoreboard players set #Duration plate_havoc.timer -1

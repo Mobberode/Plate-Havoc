@@ -14,4 +14,4 @@ data remove storage plate_havoc:data events_pool[{console_only:true}]
 
 scoreboard players set #Game plate_havoc.status 2
 
-schedule function plate_havoc:game/match/prepare 2.5s
+schedule function plate_havoc:game/match/start 2.5s

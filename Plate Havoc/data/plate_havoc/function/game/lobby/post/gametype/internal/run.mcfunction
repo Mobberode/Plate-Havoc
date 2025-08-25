@@ -1,3 +1,5 @@
+kill @a
+
 execute in plate_havoc:arena positioned 0 64 0 run function plate_havoc:game/lobby/post/pre_arena
 
 scoreboard players set #Game plate_havoc.status 1
