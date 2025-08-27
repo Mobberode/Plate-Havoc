@@ -1,0 +1,1 @@
+scoreboard players set @a plate_havoc.c.card.cranked 300

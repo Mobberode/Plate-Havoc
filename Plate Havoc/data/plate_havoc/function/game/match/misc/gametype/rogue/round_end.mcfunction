@@ -1,3 +1,5 @@
+effect clear @a
+
 function plate_havoc:game/misc/cards/running/types/run {type:on.end}
 
 data modify storage plate_havoc:data default_gamemode set value "spectator"

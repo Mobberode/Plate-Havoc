@@ -44,6 +44,9 @@ scoreboard objectives add plate_havoc.event.jump_cooldown dummy
 scoreboard objectives add plate_havoc.event.jump_afterdown dummy
 scoreboard objectives add plate_havoc.event.shop_token dummy
 
+scoreboard objectives add plate_havoc.ui.player_health health
+scoreboard objectives add plate_havoc.ui.player_food food
+
 function plate_havoc:game/triggers/loop
 
 execute unless score #LBLimit plate_havoc.config matches 0.. run scoreboard players set #LBLimit plate_havoc.config 3

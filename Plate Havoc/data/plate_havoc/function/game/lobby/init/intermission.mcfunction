@@ -1,4 +1,4 @@
-dialog clear @a
+dialog clear @a[tag=!plate_havoc.spectator]
 
 bossbar add plate_havoc:ui {text:""}
 bossbar set plate_havoc:ui name [{text:"Intensity: "},{storage:"plate_havoc:data",nbt:intensity,color:gold}]

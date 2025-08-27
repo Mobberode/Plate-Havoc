@@ -2,7 +2,6 @@
     "type": "multi_action",
     "title": "Plate Havoc Roguelike Test Intro",
     "can_close_with_escape": false,
-    "after_action":"wait_for_response",
     "body": [
         {"type":"plain_message","contents":{"text":"Welcome to Plate Havoc | Roguelike Test! This is here to explain the basics of the game"},"width":448},
         {"type":"plain_message","contents":{"text":"Plate Havoc is mostly a cooperative minigame, based on the Plate genre from Roblox with the goal of lasting the longest","color":"gold"},"width":448},
@@ -13,6 +12,6 @@
         {"type":"plain_message","contents":[{"text":""},{"text":"","color":"gold"},{"text":"If you want to leave in this state. Press the warning symbol at the top of the screen and [Disconnect] / [Save and Quit to Title]","color":"yellow"}],"width":448}
     ],
     "actions": [
-        {"label":{"text":"Proceed to next section"},"width":256,"action":{"type":"run_command","command":"/trigger plate_havoc.test.read set 1"}}
+        {"label":{"text":"Proceed to next section"},"width":256,"action":{"type":"show_dialog","dialog":"plate_havoc:tutorial/rogue/cyclathrons"}}
     ]
 }

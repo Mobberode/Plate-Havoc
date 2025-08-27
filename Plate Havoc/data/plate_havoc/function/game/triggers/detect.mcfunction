@@ -1,6 +1,5 @@
-execute unless score @s plate_havoc.test.read matches 100.. run function plate_havoc:test/prompt_roguelike_tutorial
+execute unless score @s plate_havoc.test.read matches 100.. if predicate plate_havoc:moving run function plate_havoc:test/prompt_roguelike_tutorial
 execute if score @s plate_havoc.test.read matches 100 run function plate_havoc:test/read_roguelike_test_tutorial
-
 
 scoreboard players enable @s plate_havoc.t.spectator
 scoreboard players enable @s plate_havoc.t.stats

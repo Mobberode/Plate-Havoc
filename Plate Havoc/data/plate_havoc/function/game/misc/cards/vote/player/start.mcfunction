@@ -8,3 +8,6 @@ data modify storage plate_havoc:cards temp set from storage plate_havoc:cards ac
 function plate_havoc:game/misc/cards/vote/player/slot_exist_check
 
 scoreboard players reset @s plate_havoc.t.select
+
+##Refresh dialog
+function plate_havoc:game/match/misc/gametype/rogue/dialog_refresh

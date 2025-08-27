@@ -13,7 +13,7 @@ data modify storage plate_havoc:ui bar_visuals_queue insert 3 value {id:cycle,te
 data modify storage plate_havoc:ui game_end_visuals_queue insert 1 value {id:cycle,text:"",extra:[{text:"Cycle: ",color:gray},{score:{name:"#Value",objective:plate_havoc.round},color:aqua}]}
 data modify storage plate_havoc:ui game_end_visuals_queue append value {id:cycle,text:"",extra:[{text:"Cards: ",color:gray},{storage:"plate_havoc:ui",nbt:card_list,interpret:true}]}
 
-
+scoreboard objectives setdisplay list plate_havoc.ui.player_health
 
 data modify storage plate_havoc:data spectator_tick_function set value "plate_havoc:game/match/player/spectator/message"
 data modify storage plate_havoc:ui element_spawnpoint_status set value [{text:"You will respawn next Cycle! Time till next Cycle: ",color:gray},{score:{name:"#Left",objective:plate_havoc.timer},color:gold}]

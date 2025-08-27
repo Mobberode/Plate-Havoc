@@ -30,7 +30,7 @@ data modify storage plate_havoc:data events set value [\
 {id:nerf_slowness,intensity:2.18,function:"plate_havoc:events/nerf_slowness/start"},\
 {id:sign,intensity:1.03,function:"plate_havoc:events/sign/start"},\
 {id:bars,intensity:1.1,function:"plate_havoc:events/bars/start"},\
-{id:wither,intensity:8,function:"plate_havoc:events/wither/start"},\
+{id:wither,intensity:10,function:"plate_havoc:events/wither/start"},\
 {id:cobweb,intensity:2.3,function:"plate_havoc:events/cobweb/start"},\
 {id:effect_wind_charged,intensity:2.18,function:"plate_havoc:events/effect_wind_charged/start"},\
 {id:eraserman,intensity:1.8,function:"plate_havoc:events/eraserman/start"},\
@@ -62,6 +62,7 @@ data modify storage plate_havoc:data events set value [\
 {id:sapling_drop,intensity:3.2,function:"plate_havoc:events/sapling_drop/start"},\
 {id:buff_bow,intensity:2.8,function:"plate_havoc:events/buff_bow/start"},\
 {id:creaking,intensity:3.5,function:"plate_havoc:events/creaking/start"},\
+{id:lava_pillar,intensity:4.4,function:"plate_havoc:events/lava_pillar/start"},\
 \
 {id:obama_drone_strike,function:"plate_havoc:events/zzz_console/obama_drone_strike/start",console_only:true},\
 {id:boost_bot,function:"plate_havoc:events/zzz_console/boost_bot/start",console_only:true},\

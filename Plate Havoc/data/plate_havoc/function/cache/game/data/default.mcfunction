@@ -134,7 +134,7 @@ scoreboard players set #Template.Event.Buff_Mace.MaxRunCount plate_havoc.num 1
 scoreboard players set #Template.Event.Buff_Mace.Amount plate_havoc.num 1
 ## nerf_slowness (Max Run Count) (Duration)
 scoreboard players set #Template.Event.Nerf_Slowness.MaxRunCount plate_havoc.num 1
-scoreboard players set #Template.Event.Nerf_Slowness.Duration plate_havoc.num 20
+scoreboard players set #Template.Event.Nerf_Slowness.Duration plate_havoc.num 25
 ## sign (Max Run Count)
 scoreboard players set #Template.Event.Sign.MaxRunCount plate_havoc.num 1
 ## bars (Max Run Count) (From Pos (XYZ)) (To Pos (XYZ))
@@ -157,9 +157,9 @@ scoreboard players set #Template.Event.Eraserman.MaxRunCount plate_havoc.num 1
 scoreboard players set #Template.Event.Eraserman.Distance plate_havoc.num 100
 ## fireworks (Max Run Count) (Summons) (Summon Delay (in ticks)) (Summon Extension)
 scoreboard players set #Template.Event.Fireworks.MaxRunCount plate_havoc.num 1
-scoreboard players set #Template.Event.Fireworks.Summon plate_havoc.num 100
-scoreboard players set #Template.Event.Fireworks.Summon_Delay plate_havoc.num 5
-scoreboard players set #Template.Event.Fireworks.Summon_Extension plate_havoc.num 50
+scoreboard players set #Template.Event.Fireworks.Summon plate_havoc.num 80
+scoreboard players set #Template.Event.Fireworks.Summon_Delay plate_havoc.num 6
+scoreboard players set #Template.Event.Fireworks.Summon_Extension plate_havoc.num 40
 ## jump_cooldown (Max Run Count) (Cooldown Duration (in ticks)) (Event Duration (in ticks))
 scoreboard players set #Template.Event.JumpCooldown.MaxRunCount plate_havoc.num 1
 scoreboard players set #Template.Event.JumpCooldown.Cooldown_Duration plate_havoc.num 30
@@ -172,7 +172,7 @@ scoreboard players set #Template.Event.BlackHole.MaxRunCount plate_havoc.num 1
 scoreboard players set #Template.Event.BlackHole.Duration plate_havoc.num 900
 scoreboard players set #Template.Event.BlackHole.Duration_Extension plate_havoc.num 450
 scoreboard players set #Template.Event.BlackHole.Entity_Size plate_havoc.num 125
-scoreboard players set #Template.Event.BlackHole.Growth_Limit plate_havoc.num 10
+scoreboard players set #Template.Event.BlackHole.Growth_Limit plate_havoc.num 2
 ## breeze (Max Run Count)
 scoreboard players set #Template.Event.Breeze.MaxRunCount plate_havoc.num 1
 ## breeze (Max Run Count)
@@ -215,7 +215,7 @@ scoreboard players set #Template.Event.Nuke.Explosion_Power plate_havoc.num 125
 ## piranha (Max Run Count) (Duration (seconds)) (Damage (x0.1))
 scoreboard players set #Template.Event.Piranha.MaxRunCount plate_havoc.num 1
 scoreboard players set #Template.Event.Piranha.Duration plate_havoc.num 60
-scoreboard players set #Template.Event.Piranha.Damage plate_havoc.num 15
+scoreboard players set #Template.Event.Piranha.Damage plate_havoc.num 20
 ## dripleaf (Max Run Count)
 scoreboard players set #Template.Event.Dripleaf.MaxRunCount plate_havoc.num 1
 ## spinning_laser (Max Run Count) (Base Width (x0.1)) (Base Speed (x0.1))
@@ -240,7 +240,7 @@ scoreboard players set #Template.Event.Skeleton_Pillar.MaxRunCount plate_havoc.n
 ## motion_sniper (Max Run Count) (Ammo (How many times till event end)) (Delay (ticks)) (WarningTime (ticks)) (Damage Multiplier)
 scoreboard players set #Template.Event.Motion_Sniper.MaxRunCount plate_havoc.num 1
 scoreboard players set #Template.Event.Motion_Sniper.Ammo plate_havoc.num 6
-scoreboard players set #Template.Event.Motion_Sniper.Delay plate_havoc.num 200
+scoreboard players set #Template.Event.Motion_Sniper.Delay plate_havoc.num 160
 scoreboard players set #Template.Event.Motion_Sniper.WarningTime plate_havoc.num 50
 scoreboard players set #Template.Event.Motion_Sniper.Damage_Multiplier plate_havoc.num 100
 ## outer_space_gravity (Max Run Count) (Duration (seconds)) (Effect Strength (x0.01))
@@ -253,13 +253,19 @@ scoreboard players set #Template.Event.Sapling_Drop.Amount plate_havoc.num 5
 scoreboard players set #Template.Event.Sapling_Drop.Delay plate_havoc.num 100
 ## buff_bow (Max Run Count) (Amount)
 scoreboard players set #Template.Event.Buff_Bow.MaxRunCount plate_havoc.num 1
-scoreboard players set #Template.Event.Buff_Bow.Amount plate_havoc.num 6
+scoreboard players set #Template.Event.Buff_Bow.Amount plate_havoc.num 8
 ## creaking (Max Run Count)
 scoreboard players set #Template.Event.Creaking.MaxRunCount plate_havoc.num 1
+## lava_pillar (Max Run Count) (Delay) (Size) (Randomize Height) (Offset)
+scoreboard players set #Template.Event.Lava_Pillar.MaxRunCount plate_havoc.num 1
+scoreboard players set #Template.Event.Lava_Pillar.Delay plate_havoc.num 2
+scoreboard players set #Template.Event.Lava_Pillar.Size plate_havoc.num 0
+scoreboard players set #Template.Event.Lava_Pillar.Height_Randomize_Max plate_havoc.num 40
+scoreboard players set #Template.Event.Lava_Pillar.Offset plate_havoc.num 50
 
 ## obama_drone_strike (Max Run Count) (Summons) (Summon Extension)
 scoreboard players set #Template.Event.Obama_Drone_Strike.MaxRunCount plate_havoc.num 1
-scoreboard players set #Template.Event.Obama_Drone_Strike.Summon plate_havoc.num 500
+scoreboard players set #Template.Event.Obama_Drone_Strike.Summon plate_havoc.num 400
 scoreboard players set #Template.Event.Obama_Drone_Strike.Summon_Extension plate_havoc.num 100
 ## shop (Max Run Count)
 scoreboard players set #Template.Event.Shop.MaxRunCount plate_havoc.num 1

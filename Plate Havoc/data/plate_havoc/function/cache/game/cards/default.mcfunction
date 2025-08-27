@@ -15,7 +15,7 @@ data modify storage plate_havoc:cards data set value [\
 \
 {id:armoured_up,type:positive,cost:7,body:{text:"",extra:[{text:"Armoured Up",color:green},{text:"\nGain Armour (2 *Level) and Toughness (Armour /2) (Max: 5)"}]},action:{label:[{text:"Armoured Up"}]},on_select:{functions:[{type:set.attribute,function:"plate_havoc:cards/armoured_up/start"}],duration:-1,left:5}},\
 \
-{id:strength_training,type:positive,cost:10,requirement:{type:cycle,cycle:3},body:{text:"",extra:[{text:"Strength Training",color:green},{text:"\nHits hit harder (2 *Level) (Max: 3)"}]},action:{label:[{text:"Strength Training"}]},on_select:{functions:[{type:set.attribute,function:"plate_havoc:cards/strength_training/start"}],duration:1,left:3}},\
+{id:strength_training,type:positive,cost:10,requirement:{type:cycle,cycle:3},body:{text:"",extra:[{text:"Strength Training",color:green},{text:"\nHits hit harder (2 *Level) and Knockback from attacks is lessened (0.1 *Level) (Max: 3)"}]},action:{label:[{text:"Strength Training"}]},on_select:{functions:[{type:set.attribute,function:"plate_havoc:cards/strength_training/start"}],duration:1,left:3}},\
 \
 {id:flippers,type:positive,cost:3.5,requirement:{type:cycle,cycle:3},body:{text:"",extra:[{text:"Flippers",color:green},{text:"\nIncreases Water Mobility by (10% *Level) (Max: 2)"}]},action:{label:[{text:"Flippers"}]},on_select:{functions:[{type:set.attribute,function:"plate_havoc:cards/flippers/start"}],duration:-1,left:2}},\
 \
@@ -23,7 +23,7 @@ data modify storage plate_havoc:cards data set value [\
 \
 {id:shearing_webs,type:positive,cost:17.5,requirement:{type:cycle,cycle:5},body:{text:"",extra:[{text:"Shearing Webs",color:green},{text:"\nShear away cobwebs that players step on"}]},action:{label:[{text:"Shearing Webs"}]},on_select:{functions:[{type:loop,function:"plate_havoc:cards/shearing_webs/loop"}],duration:-1,left:1}},\
 \
-{id:hands_of_creativity,type:positive,cost:25,requirement:{type:cycle,cycle:5},body:{text:"",extra:[{text:"Hands of Creativity",color:green},{text:"\nGain the ability to break and place blocks but range is cut by a third"}]},action:{label:[{text:"Hands of Creativity"}]},on_select:{functions:[{type:set.attribute,function:"plate_havoc:cards/hands_of_creativity/start"}],duration:-1,left:1}},\
+{id:hands_of_creativity,type:positive,cost:20,requirement:{type:cycle,cycle:5},body:{text:"",extra:[{text:"Hands of Creativity",color:green},{text:"\nGain the ability to break and place blocks but range is cut by a third"}]},action:{label:[{text:"Hands of Creativity"}]},on_select:{functions:[{type:set.attribute,function:"plate_havoc:cards/hands_of_creativity/start"}],duration:-1,left:1}},\
 \
 {id:box_of_meats,type:positive,cost:25,requirement:{type:cycle,cycle:5},body:{text:"",extra:[{text:"Box of Meats",color:green},{text:"\n3 Cooked Mutton for all players"}]},action:{label:[{text:"Box of Meats"}]},on_select:{functions:[{type:on.start,function:"plate_havoc:cards/box_of_meats/start"}],duration:-1,left:1}},\
 \
@@ -31,9 +31,11 @@ data modify storage plate_havoc:cards data set value [\
 \
 {id:diamond_clock,type:positive,cost:40,requirement:{type:multi_condition,conditions:[{type:card,needed:[{id:iron_clock,count:1}]},{type:cycle,cycle:5}]},body:{text:"",extra:[{text:"Diamond Clock",color:green},{text:"\n+50% Cyclathrons and Events happen +30% slower. +1 Time Reduction"}]},action:{label:[{text:"Diamond Clock"}]},on_select:{functions:[{type:on.start,function:"plate_havoc:cards/diamond_clock/start"}],duration:1,left:1}},\
 \
+{id:determination,type:positive,cost:30,requirement:{type:cycle,cycle:5},body:{text:"",extra:[{text:"Determination",color:green},{text:"\nVarious buffs are given to the last alive player. Extra buffs are given out on Solo"}]},action:{label:[{text:"Determination"}]},on_select:{functions:[{type:on.start,function:"plate_havoc:cards/determination/start"},{type:on.last_alive,function:"plate_havoc:cards/determination/last_alive"},{type:on.end,function:"plate_havoc:cards/determination/end"}],duration:-1,left:1}},\
+\
 {id:boxless_desires,type:positive,cost:60,requirement:{type:multi_condition,conditions:[{type:card,needed:[{id:box_of_meats,count:1},{id:box_of_wind,count:1}]},{type:cycle,cycle:7}]},body:{text:"",extra:[{text:"Boxless Desires",color:green},{text:"\n15 Wind Charges, 7 Cooked Mutton\n+2 Wind Charge and +1 Cooked Mutton per 30s"}]},action:{label:[{text:"Boxless Desires"}]},on_select:{functions:[{type:on.start,function:"plate_havoc:cards/boxless_desires/start"},{type:loop,function:"plate_havoc:cards/boxless_desires/loop"}],duration:-1,left:1}},\
 \
-{id:octagonal_move_normalizer,type:positive,cost:80,requirement:{type:multi_condition,conditions:[{type:cycle,cycle:7},{type:card,needed:[{id:swift_feets,count:3},{id:flippers,count:2}]}]},body:{text:"",extra:[{text:"Octagonal Move-Normalizer",color:green},{text:"\n+100% Movement Efficency alongside +30% Speed, *2 Water Mobility Percentage. -20% Fall Damage"}]},action:{label:[{text:"Octagonal Move-Normalizer"}]},on_select:{functions:[{type:set.attribute,function:"plate_havoc:cards/octagonal_move_normalizer/start"}],duration:-1,left:1}},\
+{id:octagonal_move_normalizer,type:positive,cost:80,requirement:{type:multi_condition,conditions:[{type:cycle,cycle:7},{type:card,needed:[{id:swift_feets,count:3},{id:flippers,count:2}]}]},body:{text:"",extra:[{text:"Octagonal Move-Normalizer",color:green},{text:"\n+100% Movement Efficency alongside +30% Speed, *2 Water Mobility Percentage. -20% Fall Damage. +0.5 Step Height"}]},action:{label:[{text:"Octagonal Move-Normalizer"}]},on_select:{functions:[{type:set.attribute,function:"plate_havoc:cards/octagonal_move_normalizer/start"}],duration:-1,left:1}},\
 \
 {id:vampiristic_lifeblood,type:positive,cost:130,requirement:{type:cycle,cycle:10},body:{text:"",extra:[{text:"Vampiristic Lifeblood",color:green},{text:"\nKilling Mobs restores the killer's health. Increases Max Health by 10"}]},action:{label:[{text:"Vampiristic Lifeblood"}]},on_select:{functions:[{type:set.attribute,function:"plate_havoc:cards/vampiristic_lifeblood/start"},{type:loop,function:"plate_havoc:cards/vampiristic_lifeblood/loop"}],duration:-1,left:1}},\
 \
@@ -51,9 +53,9 @@ data modify storage plate_havoc:cards data set value [\
 \
 \
 \
-{id:faulty_spacebar,type:negative,reward:75,requirement:{type:cycle,cycle:12},body:{text:"",extra:[{text:"Faulty Spacebar",color:red},{text:"\nJumping will be periodically locked and unlocked"}]},action:{label:[{text:"Faulty Spacebar"}]},on_select:{functions:[{type:on.start,function:"plate_havoc:cards/faulty_spacebar/start"},{type:loop,function:"plate_havoc:cards/faulty_spacebar/loop"}],duration:-1,left:1}},\
+{id:faulty_spacebar,type:negative,reward:75,requirement:{type:cycle,cycle:15},body:{text:"",extra:[{text:"Faulty Spacebar",color:red},{text:"\nJumping will be periodically locked and unlocked"}]},action:{label:[{text:"Faulty Spacebar"}]},on_select:{functions:[{type:on.start,function:"plate_havoc:cards/faulty_spacebar/start"},{type:loop,function:"plate_havoc:cards/faulty_spacebar/loop"}],duration:-1,left:1}},\
 \
-{id:pumpkin_vision,type:negative,reward:75,requirement:{type:cycle,cycle:10},body:{text:"",extra:[{text:"Pumpkin Vision",color:red},{text:"\nApplies the Carved Pumpkin overlay"}]},action:{label:[{text:"Pumpkin Vision"}]},on_select:{functions:[{type:on.start,function:"plate_havoc:cards/pumpkin_vision/start"}],duration:-1,left:1}},\
+{id:pumpkin_vision,type:negative,reward:75,requirement:{type:cycle,cycle:15},body:{text:"",extra:[{text:"Pumpkin Vision",color:red},{text:"\nApplies the Carved Pumpkin overlay"}]},action:{label:[{text:"Pumpkin Vision"}]},on_select:{functions:[{type:on.start,function:"plate_havoc:cards/pumpkin_vision/start"}],duration:-1,left:1}},\
 \
 {id:higher_gravity,type:negative,body:{text:"",extra:[{text:"Higher Gravity",color:red},{text:"\n+15% Gravity but take +15% more Fall Damage"}]},action:{label:[{text:"Higher Gravity"}]},on_select:{functions:[{type:set.attribute,function:"plate_havoc:cards/higher_gravity/start"}],duration:-1,left:1}},\
 \
@@ -75,7 +77,7 @@ data modify storage plate_havoc:cards data set value [\
 \
 {id:no_evidence,type:negative,requirement:{type:cycle,cycle:5},body:{text:"",extra:[{text:"No Evidence",color:red},{text:"\nPlayer count is hidden and Death messages are hidden"}]},action:{label:[{text:"No Evidence"}]},on_select:{functions:[{type:on.start,function:"plate_havoc:cards/no_evidence/start"}],duration:1,left:1}},\
 \
-{id:run_it_back,type:negative,reward:65,requirement:{type:cycle,cycle:10},body:{text:"",extra:[{text:"Run it Back!",color:red},{text:"\nHave an additional event occur on event. Cant be triggered again and cannot add to the Intensity (A = 1*Level) (Max:2)"}]},action:{label:[{text:"Run it Back!"}]},on_select:{functions:[{type:on.event,function:"plate_havoc:cards/run_it_back/event"}],duration:-1,left:2}},\
+{id:run_it_back,type:negative,reward:65,requirement:{type:cycle,cycle:12},body:{text:"",extra:[{text:"Run it Back!",color:red},{text:"\nHave an additional event occur on event. Cant be triggered again and cannot add to the Intensity (A = 1*Level) (Max:2)"}]},action:{label:[{text:"Run it Back!"}]},on_select:{functions:[{type:on.event,function:"plate_havoc:cards/run_it_back/event"}],duration:-1,left:2}},\
 \
 {id:cube_of_decay,type:negative,requirement:{type:cycle,cycle:5},body:{text:"",extra:[{text:"Cube of Decay",color:red},{text:"\nSummons a Cube that permanently boosts Intensity gain if left untreated. Be near the cube for it to shrink. Time left and needed to treat the cube is times cycle"}]},action:{label:[{text:"Cube of Decay"}]},on_select:{functions:[{type:on.start,function:"plate_havoc:cards/cube_of_decay/start"},{type:loop,function:"plate_havoc:cards/cube_of_decay/loop"}],duration:-1,left:1}},\
 \
@@ -83,7 +85,7 @@ data modify storage plate_havoc:cards data set value [\
 \
 {id:life_harmony,type:negative,requirement:{type:cycle,cycle:5},body:{text:"",extra:[{text:"Life Harmony",color:red},{text:"\nDeath of entities caused by players adds 8 to the timer and also cuts the time till an event by a quarter"}]},action:{label:[{text:"Life Harmony"}]},on_select:{functions:[{type:loop,function:"plate_havoc:cards/life_harmony/loop"}],duration:-1,left:1}},\
 \
-{id:abyssal_reach,type:negative,reward:15,requirement:{type:cycle,cycle:10},body:{text:"",extra:[{text:"Abyssal Reach",color:red},{text:"\nTeetering on the brink, facing the abyss... The Void is 64 blocks closer and deadlier"}]},action:{label:[{text:"Abyssal Reach"}]},on_select:{functions:[{type:on.start,function:"plate_havoc:cards/abyssal_reach/start"}],duration:1,left:1}},\
+{id:abyssal_reach,type:negative,reward:15,requirement:{type:cycle,cycle:7},body:{text:"",extra:[{text:"Abyssal Reach",color:red},{text:"\nTeetering on the brink, facing the abyss... The Void is 64 blocks closer and deadlier"}]},action:{label:[{text:"Abyssal Reach"}]},on_select:{functions:[{type:on.start,function:"plate_havoc:cards/abyssal_reach/start"}],duration:1,left:1}},\
 \
 {id:unreliable_notifier,type:negative,reward:30,requirement:{type:cycle,cycle:10},body:{text:"",extra:[{text:"Unreliable Notifier",color:red},{text:"\nEvent messages can be ofbuscated"}]},action:{label:[{text:"Unreliable Notifier"}]},on_select:{functions:[{type:on.event.message,function:"plate_havoc:cards/unreliable_notifier/start"}],duration:-1,left:1}},\
 \
@@ -91,8 +93,13 @@ data modify storage plate_havoc:cards data set value [\
 \
 {id:hatred,type:negative,requirement:{type:multi_condition,conditions:[{type:cycle,cycle:10},{type:card,needed:[{id:enraged,count:2}]}]},body:{text:"",extra:[{text:"Hatred",color:red},{text:"\n-25% event frequency, +20% Intensity gain"}]},action:{label:[{text:"Hatred"}]},on_select:{functions:[{type:on.start,function:"plate_havoc:cards/hatred/start"}],duration:1,left:1}},\
 \
-{id:slow_passing,type:negative,exclusive:[{id:enraged}],body:{text:"",extra:[{text:"Slow Passing",color:red},{text:"\nTime is multiplied by 2."}]},action:{label:[{text:"Slow Passing"}]},on_select:{functions:[{type:on.start,function:"plate_havoc:cards/slow_passing/start"}],duration:-1,left:1}},\
+{id:slow_passing,type:negative,exclusive:[{id:enraged}],body:{text:"",extra:[{text:"Slow Passing",color:red},{text:"\nTime is multiplied by 1.2x"}]},action:{label:[{text:"Slow Passing"}]},on_select:{functions:[{type:on.start,function:"plate_havoc:cards/slow_passing/start"}],duration:-1,left:1}},\
+\
 {id:hidden_funds,type:negative,requirement:{type:cycle,cycle:5},body:{text:"",extra:[{text:"Hidden Funds",color:red},{text:"\nShow me my MONEY you CLANKER!"}]},action:{label:[{text:"Hidden Funds"}]},on_select:{functions:[{type:on.start,function:"plate_havoc:cards/hidden_funds/start"}],duration:1,left:1}},\
+\
+{id:rf_strike_pack,type:negative,requirement:{type:cycle,cycle:10},body:{text:"",extra:[{text:"RF Strike Pack",color:red},{text:"\nMotion Snipers shoot faster at rapid fire speeds. Ammo is multiplied by 4x and Damage is halved to compenstate for increased rate of fire"}]},action:{label:[{text:"RF Strike Pack"}]},on_select:{functions:[{type:on.start,function:"plate_havoc:cards/rf_strike_pack/start"}],duration:1,left:1}},\
+\
+{id:cranked,type:negative,reward:75,requirement:{type:cycle,cycle:15},body:{text:"",extra:[{text:"Cranked ",color:red},{text:"\nPlayers start with a Cranked timer of 30s. Clocks collected adds 15s to the collector's timer and 5s to everyone else's timer. Failure to upkeep the time will result in death"}]},action:{label:[{text:"Cranked "}]},on_select:{functions:[{type:on.start,function:"plate_havoc:cards/cranked/start"},{type:loop,function:"plate_havoc:cards/cranked/loop"},{type:on.clock.collect,function:"plate_havoc:cards/cranked/extend"}],duration:-1,left:1}},\
 ]
 
 #{id:shadow_baby,type:negative,reward:999999999,body:{text:"",extra:[{text:"Shadow Baby",color:red},{text:"\nMuch quicker dash. Much deadlier. Present for 1 Cycle only"}]},action:{label:[{text:"Shadow Baby"}]},duration:1,left:1}}
@@ -101,6 +108,7 @@ data modify storage plate_havoc:cards data set value [\
 
 scoreboard objectives add plate_havoc.c.card.pitch_black dummy
 scoreboard objectives add plate_havoc.c.card.void_rift dummy
+scoreboard objectives add plate_havoc.c.card.cranked dummy
 
 #{id:pig_rider,type:negative,requirement:{type:cycle,cycle:15},body:{text:"",extra:[{text:"Pig Rider",color:red},{text:"\nRiding in my car right after a beer"}]},action:{label:[{text:"Pig Rider"}]},on_select:{functions:[{type:on.start,function:"plate_havoc:cards/pig_rider"}],duration:-1,left:1,type:loop}},\
 

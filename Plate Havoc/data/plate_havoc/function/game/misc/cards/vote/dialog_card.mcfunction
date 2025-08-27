@@ -1,6 +1,6 @@
 $dialog show @s {\
     type:"multi_action",\
-    title:"",\
+    title:"Card Select",\
     columns:1,\
     can_close_with_escape:false,\
     pause: false,\
@@ -11,9 +11,9 @@ $dialog show @s {\
         {text:" Cyclathrons: "},{text:"$(cyclathron)",color:aqua},\
         {text:" Cycle: "},{text:"$(round)",color:aqua},\
         {text:" Players: "},{text:"$(players)",color:green},\
-        ],width:512},\
+        ],width:448},\
         {type:"plain_message",contents:{text:"[Hover over for Card List...]",hover_event:{action:"show_text",value:$(card_list)},color:gray}},\
-        {type:"plain_message",contents:{text:"",extra:[$(game_select_cards)]},width:512}\
+        {type:"plain_message",contents:{text:"",extra:[$(game_select_cards)]},width:448}\
     ],\
     actions:$(game_select_actions)\
 }

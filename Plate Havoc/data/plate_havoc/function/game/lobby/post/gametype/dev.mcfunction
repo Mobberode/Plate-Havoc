@@ -1,4 +1,4 @@
-tellraw @a [{text:"Developers Ground",color:green},{text:"\nTEST ENVIRONMENT",color:"gray"}]
+tellraw @a [{text:"Developers Ground",color:green},{text:"\nTEST ENVIRONMENT\n",color:"gray"},{text:"To access the developer console. Use the command;\n/trigger plate_havoc.t.console",color:green}]
 
 data modify storage plate_havoc:ui bar_visuals_queue[{id:intensity}] set value {id:intensity,text:"",extra:[{storage:"plate_havoc:data",nbt:intensity,color:red}]}
 
