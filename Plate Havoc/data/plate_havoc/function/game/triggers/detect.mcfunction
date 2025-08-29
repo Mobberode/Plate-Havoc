@@ -1,10 +1,10 @@
-execute unless score @s plate_havoc.test.read matches 100.. if predicate plate_havoc:moving run function plate_havoc:test/prompt_roguelike_tutorial
-execute if score @s plate_havoc.test.read matches 100 run function plate_havoc:test/read_roguelike_test_tutorial
+execute unless score @s plate_havoc.test.read matches 101.. run function plate_havoc:test/tutorial
 
 scoreboard players enable @s plate_havoc.t.spectator
 scoreboard players enable @s plate_havoc.t.stats
 scoreboard players enable @s plate_havoc.t.credits
 scoreboard players enable @s plate_havoc.t.console
+scoreboard players enable @s plate_havoc.t.bedrock_compatibility
 
 execute if entity @s[tag=plate_havoc.spectator] run title @s actionbar {text:"You are spectating and will no longer be able to play the game",color:red}
 

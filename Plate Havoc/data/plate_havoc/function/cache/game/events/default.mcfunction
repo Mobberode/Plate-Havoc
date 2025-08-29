@@ -63,6 +63,8 @@ data modify storage plate_havoc:data events set value [\
 {id:buff_bow,intensity:2.8,function:"plate_havoc:events/buff_bow/start"},\
 {id:creaking,intensity:3.5,function:"plate_havoc:events/creaking/start"},\
 {id:lava_pillar,intensity:4.4,function:"plate_havoc:events/lava_pillar/start"},\
+{id:flame_guardian,intensity:6,function:"plate_havoc:events/flame_guardian/start"},\
+{id:obsidian_plate,intensity:5,function:"plate_havoc:events/obsidian_plate/start"},\
 \
 {id:obama_drone_strike,function:"plate_havoc:events/zzz_console/obama_drone_strike/start",console_only:true},\
 {id:boost_bot,function:"plate_havoc:events/zzz_console/boost_bot/start",console_only:true},\
@@ -81,3 +83,5 @@ data modify storage plate_havoc:custom shop set value [\
 {item:"elytra",cost:{price:90,type:percentage},visual:"elytra"},\
 ]
 #{item:"barrier",cost:{price:0,type:percentage},visual:"barrier"},
+
+#{id:minecart_road,intensity:5,function:"plate_havoc:events/flame_guardian/start"},

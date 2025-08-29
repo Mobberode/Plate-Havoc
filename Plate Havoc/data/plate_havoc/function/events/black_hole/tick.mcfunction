@@ -12,3 +12,4 @@ function plate_havoc:events/black_hole/entity/action with storage plate_havoc:ev
 function plate_havoc:events/black_hole/entity/grow
 
 playsound block.beacon.ambient ambient @a ~ ~ ~ 2.5 0.5
+function plate_havoc:events/black_hole/entity/visual with storage plate_havoc:events

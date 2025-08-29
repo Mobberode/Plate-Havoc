@@ -262,6 +262,22 @@ scoreboard players set #Template.Event.Lava_Pillar.Delay plate_havoc.num 2
 scoreboard players set #Template.Event.Lava_Pillar.Size plate_havoc.num 0
 scoreboard players set #Template.Event.Lava_Pillar.Height_Randomize_Max plate_havoc.num 40
 scoreboard players set #Template.Event.Lava_Pillar.Offset plate_havoc.num 50
+## flame_guardian (Max Run Count) (Duration (tick)) (Shoot Time (tick)) (Movement (x0.01)) (Cast Cover (Times the cast will go on for)) (Projectile Damage (x0.1))
+scoreboard players set #Template.Event.Flame_Guardian.MaxRunCount plate_havoc.num 1
+scoreboard players set #Template.Event.Flame_Guardian.Duration plate_havoc.num 1200
+scoreboard players set #Template.Event.Flame_Guardian.Shoot_Time plate_havoc.num 50
+scoreboard players set #Template.Event.Flame_Guardian.Movement plate_havoc.num 125
+scoreboard players set #Template.Event.Flame_Guardian.Cast_Cover plate_havoc.num 64
+scoreboard players set #Template.Event.Flame_Guardian.Projectile_Damage plate_havoc.num 50
+## obsidian_plate (Max Run Count) (From Pos (XYZ)) (To Pos (XYZ))
+scoreboard players set #Template.Event.Obsidian_Plate.MaxRunCount plate_havoc.num 1
+scoreboard players set #Template.Event.Obsidian_Plate.Pos.From.X plate_havoc.num -1
+scoreboard players set #Template.Event.Obsidian_Plate.Pos.From.Y plate_havoc.num 0
+scoreboard players set #Template.Event.Obsidian_Plate.Pos.From.Z plate_havoc.num -1
+scoreboard players set #Template.Event.Obsidian_Plate.Pos.To.X plate_havoc.num 1
+scoreboard players set #Template.Event.Obsidian_Plate.Pos.To.Y plate_havoc.num 0
+scoreboard players set #Template.Event.Obsidian_Plate.Pos.To.Z plate_havoc.num 1
+scoreboard players set #Template.Event.Obsidian_Plate.Offset plate_havoc.num 25
 
 ## obama_drone_strike (Max Run Count) (Summons) (Summon Extension)
 scoreboard players set #Template.Event.Obama_Drone_Strike.MaxRunCount plate_havoc.num 1

@@ -1,6 +1,6 @@
 scoreboard players add @s plate_havoc.num 1
 
-#particle small_flame ~ ~.1 ~ 0 0 0 0.025 1
+particle dust{color:16711680,scale:0.5} ~ ~.1 ~ 0 0 0 0.025 1
 
 execute as @e[dy=0.2,type=!#plate_havoc:noncollidable] positioned ~-1 ~-1 ~-1 if entity @s[dy=0.2] unless entity @s[type=player,gamemode=spectator] run function plate_havoc:events/spinning_laser/player/hurt
 tp ^ ^ ^.25

@@ -1,7 +1,7 @@
 {
     "type": "multi_action",
     "title": "Plate Havoc Roguelike Test Intro",
-    "can_close_with_escape": false,
+    "exit_action": {"label":"Back","action":{"type":"show_dialog","dialog":"plate_havoc:tutorial/rogue/cyclathrons"}},
     "body": [
         {"type":"plain_message","contents":[{"text":""},{"text":"-- Time and Cards --\n","color":"gold"},{"text":"Time which naturally ticks down and can be brought further down via Clocks, is the only way to advance to the next Cycle. Completion of the Cycle, players are prompted to vote on a Card that will be in the run. Cards can be Upgrades/Curses. Upgrades will make the game easier, costing Cyclathrons and being able to be skipped. Curses however are forced and will make the game slightly harder and may reward an specified amount of Cyclathrons upon selection"}],"width":448}
     ],

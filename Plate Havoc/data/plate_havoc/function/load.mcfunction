@@ -13,6 +13,7 @@ scoreboard objectives add plate_havoc.num dummy
 scoreboard objectives add plate_havoc.players dummy
 scoreboard objectives add plate_havoc.spawnpoint_energy dummy
 scoreboard objectives add plate_havoc.timer dummy
+scoreboard objectives add plate_havoc.revive_timer dummy
 scoreboard objectives add plate_havoc.intensity dummy
 scoreboard objectives add plate_havoc.rng dummy
 
@@ -34,6 +35,7 @@ scoreboard objectives add plate_havoc.plr.stats.taken_damage custom:damage_taken
 scoreboard objectives add plate_havoc.t.stats trigger
 scoreboard objectives add plate_havoc.t.spectator trigger
 scoreboard objectives add plate_havoc.t.credits trigger
+scoreboard objectives add plate_havoc.t.bedrock_compatibility trigger
 
 scoreboard objectives add plate_havoc.t.console trigger
 
@@ -43,6 +45,8 @@ scoreboard objectives add plate_havoc.z.select dummy
 scoreboard objectives add plate_havoc.event.jump_cooldown dummy
 scoreboard objectives add plate_havoc.event.jump_afterdown dummy
 scoreboard objectives add plate_havoc.event.shop_token dummy
+scoreboard objectives add plate_havoc.event.flame_guardian.time dummy
+scoreboard objectives add plate_havoc.event.flame_guardian.active dummy
 
 scoreboard objectives add plate_havoc.ui.player_health health
 scoreboard objectives add plate_havoc.ui.player_food food
