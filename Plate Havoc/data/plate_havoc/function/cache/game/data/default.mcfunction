@@ -112,8 +112,8 @@ scoreboard players set #Template.Event.End_Island.Wait_Time plate_havoc.num 15
 scoreboard players set #Template.Event.Snow_Golem.MaxRunCount plate_havoc.num 1
 ## fire_rain (Max Run Count) (Amount (0 = end rain)) (Delay (How fast each fireball is summoned))
 scoreboard players set #Template.Event.Fire_Rain.MaxRunCount plate_havoc.num 1
-scoreboard players set #Template.Event.Fire_Rain.Amount plate_havoc.num 20
-scoreboard players set #Template.Event.Fire_Rain.Delay plate_havoc.num 20
+scoreboard players set #Template.Event.Fire_Rain.Amount plate_havoc.num 10
+scoreboard players set #Template.Event.Fire_Rain.Delay plate_havoc.num 50
 ## fireballs (Max Run Count) (Distance in Blocks away from Target)
 scoreboard players set #Template.Event.Fireballs.MaxRunCount plate_havoc.num 1
 scoreboard players set #Template.Event.Fireballs.Distance plate_havoc.num 65

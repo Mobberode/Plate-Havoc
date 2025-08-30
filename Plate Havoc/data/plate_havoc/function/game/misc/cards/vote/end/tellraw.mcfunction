@@ -1,1 +1,1 @@
-tellraw @a [{storage:"plate_havoc:cards",nbt:template.body,interpret:true},{text:"\nCard Level: ",color:blue},{score:{name:"#CardCount",objective:plate_havoc.num},color:aqua}]
+tellraw @a [{storage:"plate_havoc:cards",nbt:template.body,interpret:true},{text:"\nCard Level: ",color:blue},{score:{name:"#CardCount",objective:plate_havoc.num},color:aqua},{text:"\nVoted by: ",color:gray},{selector:"@a[predicate=plate_havoc:specfic/card]",color:yellow}]
