@@ -1,0 +1,1 @@
+$data modify block ~ ~ ~ SpawnData.entity.id set from storage plate_havoc:events data.monster_spawner[$(rng)]

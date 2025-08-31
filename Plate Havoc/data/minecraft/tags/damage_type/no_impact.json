@@ -1,5 +1,6 @@
 {
     "values": [
-        "plate_havoc:ignore"
+        "plate_havoc:ignore",
+        "#plate_havoc:no_effect"
     ]
 }

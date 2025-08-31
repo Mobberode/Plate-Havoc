@@ -1,0 +1,1 @@
+execute positioned ^ ^ ^1 run fill ~ ~ ~ ~ ~1 ~ packed_ice strict

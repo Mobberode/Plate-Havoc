@@ -1,6 +1,6 @@
 execute if score #Motion_Sniper.Ammo plate_havoc.event matches 1.. run return run function plate_havoc:game/events/restart with storage plate_havoc:data
 
-data modify storage plate_havoc:ui event_message set value [{text:"Hold steady...",color:gray}]
+data modify storage plate_havoc:ui event_message set value [{text:"Hold steady...",color:red}]
 
 #
 scoreboard players operation #Motion_Sniper.Ammo plate_havoc.event = #Template.Event.Motion_Sniper.Ammo plate_havoc.num

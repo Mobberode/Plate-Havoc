@@ -1,3 +1,3 @@
-summon firework_rocket ~ ~ ~ {LifeTime:500,FireworksItem:{id:firework_rocket,count:1,components:{fireworks:{explosions:[{shape:"small_ball",colors:[I;1005000000],fade_colors:[I;0]}]}}},ShotAtAngle:true,Tags:["plate_havoc.firework.init","plate_havoc.dont_interact"]}
+summon firework_rocket ~ ~ ~ {LifeTime:500,FireworksItem:{id:firework_rocket,count:1,components:{fireworks:{explosions:[{shape:"small_ball",colors:[1005000000],fade_colors:[16777215]}]}}},ShotAtAngle:true,Tags:["plate_havoc.firework.init","plate_havoc.dont_interact"]}
 
 execute as @e[tag=plate_havoc.firework.init] run function plate_havoc:events/fireworks/set

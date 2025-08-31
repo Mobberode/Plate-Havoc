@@ -116,7 +116,7 @@ scoreboard players set #Template.Event.Fire_Rain.Amount plate_havoc.num 10
 scoreboard players set #Template.Event.Fire_Rain.Delay plate_havoc.num 50
 ## fireballs (Max Run Count) (Distance in Blocks away from Target)
 scoreboard players set #Template.Event.Fireballs.MaxRunCount plate_havoc.num 1
-scoreboard players set #Template.Event.Fireballs.Distance plate_havoc.num 65
+scoreboard players set #Template.Event.Fireballs.Distance plate_havoc.num 80
 ## dragonball (Max Run Count) (Distance in Blocks away from Target) (Speed (100 = 0.01))
 scoreboard players set #Template.Event.Dragonball.MaxRunCount plate_havoc.num 1
 scoreboard players set #Template.Event.Dragonball.Distance plate_havoc.num 100
@@ -246,7 +246,7 @@ scoreboard players set #Template.Event.Motion_Sniper.Damage_Multiplier plate_hav
 ## outer_space_gravity (Max Run Count) (Duration (seconds)) (Effect Strength (x0.01))
 scoreboard players set #Template.Event.Outer_Space_Gravity.MaxRunCount plate_havoc.num 1
 scoreboard players set #Template.Event.Outer_Space_Gravity.Duration plate_havoc.num 30
-scoreboard players set #Template.Event.Outer_Space_Gravity.Effect_Strength plate_havoc.num 75
+scoreboard players set #Template.Event.Outer_Space_Gravity.Effect_Strength plate_havoc.num 80
 ## sapling_drop (Max Run Count) (Amount (0 = end planting)) (Delay (How fast a tree is planted))
 scoreboard players set #Template.Event.Sapling_Drop.MaxRunCount plate_havoc.num 1
 scoreboard players set #Template.Event.Sapling_Drop.Amount plate_havoc.num 5
@@ -278,10 +278,32 @@ scoreboard players set #Template.Event.Obsidian_Plate.Pos.To.X plate_havoc.num 1
 scoreboard players set #Template.Event.Obsidian_Plate.Pos.To.Y plate_havoc.num 0
 scoreboard players set #Template.Event.Obsidian_Plate.Pos.To.Z plate_havoc.num 1
 scoreboard players set #Template.Event.Obsidian_Plate.Offset plate_havoc.num 25
+## ice_road (Max Run Count) (Distance Cover Min) (Distance Cover Max) (Horizontal Offset) (Vertical Offset)
+scoreboard players set #Template.Event.Ice_Road.MaxRunCount plate_havoc.num 1
+scoreboard players set #Template.Event.Ice_Road.Distance_Cover_Min plate_havoc.num 15
+scoreboard players set #Template.Event.Ice_Road.Distance_Cover_Max plate_havoc.num 50
+scoreboard players set #Template.Event.Ice_Road.Horizontal_Offset plate_havoc.num 50
+scoreboard players set #Template.Event.Ice_Road.Vertical_Offset plate_havoc.num 25
+## monster_spawner (Max Run Count)
+scoreboard players set #Template.Event.Monster_Spawner.MaxRunCount plate_havoc.num 1
+data modify storage plate_havoc:events data.monster_spawner set value ["minecraft:stray","minecraft:husk","minecraft:spider","minecraft:slime","minecraft:witch","minecraft:enderman","minecraft:pig","minecraft:villager","minecraft:goat"]
+## phantom (Max Run Count)
+scoreboard players set #Template.Event.Phantom.MaxRunCount plate_havoc.num 1
+
+###
 
 ## obama_drone_strike (Max Run Count) (Summons) (Summon Extension)
 scoreboard players set #Template.Event.Obama_Drone_Strike.MaxRunCount plate_havoc.num 1
 scoreboard players set #Template.Event.Obama_Drone_Strike.Summon plate_havoc.num 400
 scoreboard players set #Template.Event.Obama_Drone_Strike.Summon_Extension plate_havoc.num 100
-## shop (Max Run Count)
+## shop (Max Run Count) (Storage Data)
 scoreboard players set #Template.Event.Shop.MaxRunCount plate_havoc.num 1
+data modify storage plate_havoc:custom shop set value [\
+{item:"mace",cost:{price:40,type:percentage},visual:"mace"},\
+{item:"golden_apple",cost:{price:25,type:percentage},visual:"golden_apple"},\
+{item:"wind_charge",cost:{price:10,type:percentage},visual:"wind_charge"},\
+{item:"enchanted_golden_apple",cost:{price:50,type:percentage},visual:"enchanted_golden_apple"},\
+{item:"totem_of_undying",cost:{price:80,type:percentage},visual:"totem_of_undying"},\
+{item:"elytra",cost:{price:90,type:percentage},visual:"elytra"},\
+]
+#{item:"barrier",cost:{price:0,type:percentage},visual:"barrier"},

@@ -65,6 +65,8 @@ data modify storage plate_havoc:data events set value [\
 {id:lava_pillar,intensity:4.4,function:"plate_havoc:events/lava_pillar/start"},\
 {id:flame_guardian,intensity:6,function:"plate_havoc:events/flame_guardian/start"},\
 {id:obsidian_plate,intensity:5,function:"plate_havoc:events/obsidian_plate/start"},\
+{id:ice_road,intensity:5,function:"plate_havoc:events/ice_road/start"},\
+{id:monster_spawner,intensity:7.5,function:"plate_havoc:events/monster_spawner/start"},\
 \
 {id:obama_drone_strike,function:"plate_havoc:events/zzz_console/obama_drone_strike/start",console_only:true},\
 {id:boost_bot,function:"plate_havoc:events/zzz_console/boost_bot/start",console_only:true},\
@@ -73,15 +75,5 @@ data modify storage plate_havoc:data events set value [\
 {id:shuffle,intensity:4.5,function:"plate_havoc:events/zzz_console/shuffle/start",console_only:true},\
 ]
 
-##Event Specfic data
-data modify storage plate_havoc:custom shop set value [\
-{item:"mace",cost:{price:40,type:percentage},visual:"mace"},\
-{item:"golden_apple",cost:{price:25,type:percentage},visual:"golden_apple"},\
-{item:"wind_charge",cost:{price:10,type:percentage},visual:"wind_charge"},\
-{item:"enchanted_golden_apple",cost:{price:50,type:percentage},visual:"enchanted_golden_apple"},\
-{item:"totem_of_undying",cost:{price:80,type:percentage},visual:"totem_of_undying"},\
-{item:"elytra",cost:{price:90,type:percentage},visual:"elytra"},\
-]
-#{item:"barrier",cost:{price:0,type:percentage},visual:"barrier"},
-
-#{id:minecart_road,intensity:5,function:"plate_havoc:events/flame_guardian/start"},
+#{id:ghost_stand,intensity:6,function:"plate_havoc:events/ghost_stand/start"},
+#{id:target_practice,intensity:3,function:"plate_havoc:events/target_practice/start"},
