@@ -14,6 +14,7 @@ scoreboard objectives add plate_havoc.players dummy
 scoreboard objectives add plate_havoc.spawnpoint_energy dummy
 scoreboard objectives add plate_havoc.timer dummy
 scoreboard objectives add plate_havoc.revive_timer dummy
+scoreboard objectives add plate_havoc.relog_timer dummy
 scoreboard objectives add plate_havoc.intensity dummy
 scoreboard objectives add plate_havoc.rng dummy
 

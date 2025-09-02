@@ -1,6 +1,7 @@
 {
     "type": "multi_action",
     "title": "Plate Havoc Console",
+    "columns": 1,
     "exit_action": {"label":"Back","action":{"type":"show_dialog","dialog":"plate_havoc:console"}},
     "inputs": [{"key":"id","type":"text","label":"Card ID"}],
     

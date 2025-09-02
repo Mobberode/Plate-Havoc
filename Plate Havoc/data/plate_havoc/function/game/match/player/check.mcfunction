@@ -1,2 +1,1 @@
-execute if score @s plate_havoc.relogged matches 1.. run return run function plate_havoc:game/match/player/relog
 execute if score @s plate_havoc.died matches 1.. run return run function plate_havoc:game/match/player/death

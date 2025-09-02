@@ -1,4 +1,5 @@
 ##Remove
+say h
 $data remove storage plate_havoc:ui game_select_cards.extra[{slot:$(slot)}]
 $data remove storage plate_havoc:ui game_select_actions[{slot:$(slot)}]
 $data remove storage plate_havoc:cards active[{slot:$(slot)}]

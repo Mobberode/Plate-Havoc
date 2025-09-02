@@ -1,0 +1,1 @@
+execute as @a[tag=plate_havoc.marked_for_relog] run function plate_havoc:game/misc/loops/relog

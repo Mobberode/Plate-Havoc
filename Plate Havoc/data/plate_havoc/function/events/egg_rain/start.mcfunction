@@ -1,6 +1,6 @@
 scoreboard players operation #EventRunCount plate_havoc.num = #Template.Event.Egg_Rain.MaxRunCount plate_havoc.num
 
-execute if score #Egg_Rain.Summon_Amount plate_havoc.event matches 1.. run return run function plate_havoc:game/events/restart with storage plate_havoc:data
+execute if score #Egg_Rain.Summon_Amount plate_havoc.event matches 1.. run return run scoreboard players set #Restart plate_havoc.event 1
 
 data modify storage plate_havoc:ui event_message set value [{text:"Eggs will rain across the plate!",color:gray}]
 

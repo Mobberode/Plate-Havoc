@@ -1,4 +1,4 @@
-data modify storage plate_havoc:ui game_select_cards set value {text:"",extra:[{text:""}]}
+data modify storage plate_havoc:ui game_select_cards set value {text:"",extra:[]}
 
 data modify storage plate_havoc:ui game_select_cards_queue set value []
 data modify storage plate_havoc:ui game_select_actions set value []

@@ -1,4 +1,4 @@
-execute if score #Outer_Space_Gravity.Duration plate_havoc.event matches 1.. run return run function plate_havoc:game/events/restart with storage plate_havoc:data
+execute if score #Outer_Space_Gravity.Duration plate_havoc.event matches 1.. run return run scoreboard players set #Restart plate_havoc.event 1
 
 data modify storage plate_havoc:ui event_message set value [{text:"The Plate has been launched into outer space!",color:gray}]
 scoreboard players add #EventRunCount plate_havoc.num 1

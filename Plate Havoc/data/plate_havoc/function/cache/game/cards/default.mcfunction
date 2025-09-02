@@ -27,11 +27,13 @@ data modify storage plate_havoc:cards data set value [\
 \
 {id:box_of_meats,type:positive,cost:25,requirement:{type:cycle,cycle:5},body:{text:"",extra:[{text:"Box of Meats",color:green},{text:"\n3 Cooked Mutton for all players"}]},action:{label:[{text:"Box of Meats"}]},on_select:{functions:[{type:on.start,function:"plate_havoc:cards/box_of_meats/start"}],duration:-1,left:1}},\
 \
-{id:intense_investment,type:positive,cost:40,requirement:{type:cycle,cycle:5},body:{text:"",extra:[{text:"Intense Investment",color:green},{text:"\n10% of Intensity is turned into Cyclathrons at the end of a Cycle"}]},action:{label:[{text:"Intense Investment"}]},on_select:{functions:[{type:on.end,function:"plate_havoc:cards/intense_investment/end"}],duration:-1,left:1}},\
+{id:intense_investment,type:positive,cost:60,requirement:{type:cycle,cycle:5},body:{text:"",extra:[{text:"Intense Investment",color:green},{text:"\n10% of Intensity is turned into Cyclathrons at the end of a Cycle"}]},action:{label:[{text:"Intense Investment"}]},on_select:{functions:[{type:on.end,function:"plate_havoc:cards/intense_investment/end"}],duration:-1,left:1}},\
 \
 {id:diamond_clock,type:positive,cost:40,requirement:{type:multi_condition,conditions:[{type:card,needed:[{id:iron_clock,count:1}]},{type:cycle,cycle:5}]},body:{text:"",extra:[{text:"Diamond Clock",color:green},{text:"\n+50% Cyclathrons and Events happen +30% slower. +1 Time Reduction"}]},action:{label:[{text:"Diamond Clock"}]},on_select:{functions:[{type:on.start,function:"plate_havoc:cards/diamond_clock/start"}],duration:1,left:1}},\
 \
-{id:determination,type:positive,cost:30,requirement:{type:cycle,cycle:5},body:{text:"",extra:[{text:"Determination",color:green},{text:"\nVarious buffs are given to the last alive player. Extra buffs are given out on Solo"}]},action:{label:[{text:"Determination"}]},on_select:{functions:[{type:on.start,function:"plate_havoc:cards/determination/start"},{type:on.last_alive,function:"plate_havoc:cards/determination/last_alive"},{type:on.end,function:"plate_havoc:cards/determination/end"}],duration:-1,left:1}},\
+{id:determination,type:positive,cost:35,requirement:{type:cycle,cycle:5},body:{text:"",extra:[{text:"Determination",color:green},{text:"\nVarious buffs are given to the last alive player. Extra buffs are given out on Solo"}]},action:{label:[{text:"Determination"}]},on_select:{functions:[{type:on.start,function:"plate_havoc:cards/determination/start"},{type:on.last_alive,function:"plate_havoc:cards/determination/last_alive"},{type:on.end,function:"plate_havoc:cards/determination/end"}],duration:-1,left:1}},\
+\
+{id:fire_guardian,type:positive,cost:80,requirement:{type:cycle,cycle:5},body:{text:"",extra:[{text:"Fire Guardian for Hire",color:green},{text:"\nFlame Guardian will protect all players"}]},action:{label:[{text:"Fire Guardian for Hire"}]},on_select:{functions:[{type:on.start,function:"plate_havoc:cards/fire_guardian/start"}],duration:-1,left:1}},\
 \
 {id:boxless_desires,type:positive,cost:60,requirement:{type:multi_condition,conditions:[{type:card,needed:[{id:box_of_meats,count:1},{id:box_of_wind,count:1}]},{type:cycle,cycle:7}]},body:{text:"",extra:[{text:"Boxless Desires",color:green},{text:"\n15 Wind Charges, 7 Cooked Mutton\n+2 Wind Charge and +1 Cooked Mutton per 30s"}]},action:{label:[{text:"Boxless Desires"}]},on_select:{functions:[{type:on.start,function:"plate_havoc:cards/boxless_desires/start"},{type:loop,function:"plate_havoc:cards/boxless_desires/loop"}],duration:-1,left:1}},\
 \
@@ -115,9 +117,5 @@ scoreboard objectives add plate_havoc.c.card.cranked dummy
 #
 
 #{id:overtime,type:negative,body:{text:"",extra:[{text:"Overtime",color:red},{text:"\nIncreases the amount of time it takes for a cycle to end by 6s. Stackable"}]},action:{label:[{text:"Overtime"}]},on_select:{functions:[{type:on.start,function:"plate_havoc:cards/overtime"}],duration:1,left:-1}},\
-
-#data modify storage plate_havoc:ui game_select_cards_queue append value {text:"",extra:[{text:"Test Card3",color:yellow},{text:"\nSpectator Energy is boosted by 10% but alive players get damaged half a heart for every death"}]}
-
-#data modify storage plate_havoc:ui game_select_cards_queue append value {text:"",extra:[{text:"Test Card4",color:light_purple},{text:"\nStart the Obama Drone Strike event, completion grants a 20+ to max health for all players"}]}
 
 #{id:test100,type:positive,requirement:{type:custom,function:"test:test_function"},cost:420,body:{text:"",extra:[{text:"test100",color:green},{text:"\n+100% Movement Efficency alongside +30% Speed, +50% Water Mobility"}]},action:{label:[{text:"test100"}]},on_select:{functions:[{type:on.start,function:"plate_havoc:cards/octagonal_move_normalizer"}],duration:-1,left:1}}

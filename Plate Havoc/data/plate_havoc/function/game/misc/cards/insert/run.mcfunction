@@ -7,7 +7,7 @@ $data modify storage plate_havoc:ui game_select_cards.extra[{slot:$(slot)}] set 
 
 #Append spacing unless last card
 #tellraw @a [{score:{name:"#BaseCardLimit",objective:plate_havoc.num},color:red},{score:{name:"#Slot",objective:plate_havoc.z.select},color:blue}]
-$execute unless score #BaseCardLimit plate_havoc.num <= #Slot plate_havoc.z.select run data modify storage plate_havoc:ui game_select_cards.extra[{slot:$(slot)}].extra append value {text:"\n\n"}
+$execute unless score #BaseCardLimit plate_havoc.num <= #Slot plate_havoc.z.select run data modify storage plate_havoc:ui game_select_cards.extra[{slot:$(slot)}].extra append value {part:spacing,text:"\n\n"}
 
 $data modify storage plate_havoc:ui game_select_actions[{slot:$(slot)}] set from storage plate_havoc:cards card.action
 
