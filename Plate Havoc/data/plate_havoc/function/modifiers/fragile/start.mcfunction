@@ -1,0 +1,1 @@
+execute as @a run attribute @s max_health modifier add plate_havoc:modifier.fragile -1 add_multiplied_total

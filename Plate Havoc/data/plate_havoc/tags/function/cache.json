@@ -8,6 +8,7 @@
         "plate_havoc:cache/game/teams/default",
         "plate_havoc:cache/game/gamerules/default",
         "plate_havoc:cache/game/cards/default",
+        "plate_havoc:cache/game/modifiers/default",
         "zzz_embed_bound:plate_havoc"
     ]
 }

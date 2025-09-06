@@ -1,0 +1,11 @@
+{
+    "type": "multi_action",
+    "title": "Plate Havoc Console",
+    "columns": 1,
+    "exit_action": {"label":"Back","action":{"type":"show_dialog","dialog":"plate_havoc:console"}},
+    "inputs": [{"key":"id","type":"text","label":"Modifier ID"}],
+    
+    "actions": [
+    {"label":"Force Modifier","action":{"type":"dynamic/run_command","template":"function plate_havoc:console/force_modifier {id:$(id)}"}}
+    ]
+}

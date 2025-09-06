@@ -1,4 +1,4 @@
-execute if score #EventNotify plate_havoc.num matches ..0 run return fail
+execute unless score #EventNotify.Current plate_havoc.num matches 1.. run return fail
 
 data modify storage plate_havoc:ui edit_event_message set value []
 

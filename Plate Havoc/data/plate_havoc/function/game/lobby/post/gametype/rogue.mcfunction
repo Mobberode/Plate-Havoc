@@ -4,6 +4,8 @@ scoreboard players set #BaseEventTimePercentage plate_havoc.num 150
 
 scoreboard players set #BaseIntensityPercentage plate_havoc.num 50
 
+scoreboard players set #Modifiers.Enabled plate_havoc.num 0
+
 data modify storage plate_havoc:ui bar_visuals_queue[{id:time}].extra set value [{text:"Time: "},{score:{name:"#Left",objective:plate_havoc.timer},color:gold}]
 data modify storage plate_havoc:ui bar_visuals_queue[{id:players}].extra set value [{score:{name:"#Current_Total",objective:plate_havoc.players},color:green},{text:"/"},{score:{name:"#Match",objective:plate_havoc.players},color:green}]
 
@@ -26,7 +28,7 @@ data modify storage plate_havoc:data default_gamemode set value "survival"
 difficulty hard
 gamerule keepInventory true
 
-data modify storage plate_havoc:data on_game_start append value {function:"plate_havoc:game/time/tick_down"}
+data modify storage plate_havoc:data on_game_start append value "plate_havoc:game/time/tick_down"
 
 data modify storage plate_havoc:ui leaderboard_ui_queue prepend value {id:cycle,visual:{text:"",extra:[{text:"Cycle: ",color:gray},{id:cycle,text:"?",color:aqua}]}}
 data modify storage plate_havoc:ui leaderboard_ui_queue append value {id:card_list,visual:{text:"",extra:[{text:"\nCards: ",color:gray},{id:card_list,text:"",extra:[]}]}}

@@ -10,6 +10,8 @@ data modify storage plate_havoc:data spectator_tick_function set value ""
 
 scoreboard players set #BaseWorldBorderWidth plate_havoc.num 500
 
+scoreboard players set #Modifiers.Enabled plate_havoc.num 0
+
 data modify storage plate_havoc:data default_gamemode set value "survival"
 
 data modify storage plate_havoc:data set_plate_function set value "plate_havoc:game/lobby/arena/misc/gametype/lava_rush/fill"
@@ -21,7 +23,7 @@ gamerule randomTickSpeed 115
 gamerule doDaylightCycle true
 gamerule doWeatherCycle true
 
-data modify storage plate_havoc:data on_game_start append value {function:"plate_havoc:game/lobby/post/gametype/internal/lava_rush/run"}
+data modify storage plate_havoc:data on_game_start append value "plate_havoc:game/lobby/post/gametype/internal/lava_rush/run"
 
 team modify plate_havoc.player friendlyFire false
 

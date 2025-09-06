@@ -9,4 +9,7 @@ function #plate_havoc:cache
 function plate_havoc:game/lobby/post/arena
 $function $(function)
 
+#Modifiers
+function plate_havoc:game/misc/modifiers/init
+
 function plate_havoc:game/lobby/post/wait_loop

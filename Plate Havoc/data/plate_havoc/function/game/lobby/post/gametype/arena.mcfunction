@@ -14,4 +14,4 @@ function plate_havoc:game/lobby/post/gametype/internal/arena/random
 
 scoreboard players set #Left plate_havoc.timer 181
 
-data modify storage plate_havoc:data on_game_start append value {function:"plate_havoc:game/time/tick_down"}
+data modify storage plate_havoc:data on_game_start append value "plate_havoc:game/time/tick_down"

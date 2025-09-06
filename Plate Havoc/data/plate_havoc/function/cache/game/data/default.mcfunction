@@ -24,6 +24,11 @@ scoreboard players set #AllowBlockInteraction plate_havoc.num 0
 ##Timer
 scoreboard players set #Remove plate_havoc.timer 1
 
+##Modifiers
+scoreboard players set #Modifiers.Enabled plate_havoc.num 1
+#Put below to 20
+scoreboard players set #Modifiers.Chance plate_havoc.num 20
+scoreboard players set #Modifiers.Entries plate_havoc.num 3
 
 ##world
 data modify storage plate_havoc:data biome set value "plate_havoc:void"
