@@ -1,5 +1,7 @@
 scoreboard players set #Game plate_havoc.status 2
 
+function plate_havoc:game/match/misc/gametype/rogue/calc_clock
+
 scoreboard players set #Remove plate_havoc.timer 1
 function plate_havoc:game/match/misc/gametype/rogue/calc_time
 
@@ -8,10 +10,12 @@ function plate_havoc:game/misc/cards/running/types/start
 function plate_havoc:game/misc/cards/running/types/run {type:on.start}
 function plate_havoc:game/misc/cards/running/types/run {type:set.attribute}
 
+function plate_havoc:game/match/misc/gametype/rogue/store_clock
+
 data modify storage plate_havoc:data default_gamemode set value "survival"
 execute as @a[tag=!plate_havoc.spectator] in plate_havoc:arena run function plate_havoc:game/match/misc/gametype/rogue/player_start
 
-tellraw @a [{text:"Cycle Time: ",color:aqua},{score:{name:"#Time",objective:plate_havoc.card},color:gold},{text:"\nCyclathron Multiplier: ",color:aqua},{score:{name:"#CyclathronMultiplier",objective:plate_havoc.num},color:gold},{text:"\nClock Time Reduction: ",color:aqua},{score:{name:"#ClockCollectTimeReduction",objective:plate_havoc.num},color:gold}]
+tellraw @a [{text:"Cycle Time: ",color:aqua},{score:{name:"#Time",objective:plate_havoc.card},color:gold},{text:"\nCyclathron Yield Gain: ",color:aqua},{score:{name:"#CyclathronMultiplier",objective:plate_havoc.num},color:gold},{text:"\nClock Time Reduction: ",color:aqua},{score:{name:"#ClockCollectTimeReduction",objective:plate_havoc.num},color:gold},{text:"\nClock Pickup Range: ",color:aqua},{score:{name:"#ClockRange",objective:plate_havoc.num},color:gold}]
 
 function plate_havoc:game/time/tick_down
 function plate_havoc:game/match/loop

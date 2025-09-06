@@ -45,6 +45,7 @@ scoreboard players set #Cyclathron plate_havoc.num 0
 scoreboard players set #BaseCyclathronAmount plate_havoc.num 100
 scoreboard players set #CyclathronMultiplier plate_havoc.num 100
 scoreboard players set #ClockCollectTimeReduction plate_havoc.num 2
+scoreboard players set #BaseClockRange plate_havoc.num 0
 
 scoreboard players set #BaseCardLimit plate_havoc.num 3
 scoreboard players operation #MaxCardLimit plate_havoc.num = #BaseCardLimit plate_havoc.num
@@ -55,4 +56,6 @@ data modify storage plate_havoc:ui card_list set value [{text:""}]
 function plate_havoc:game/misc/cards/locked/init
 
 function plate_havoc:game/match/player_count
+function plate_havoc:game/match/misc/gametype/rogue/calc_clock
+function plate_havoc:game/match/misc/gametype/rogue/store_clock
 function plate_havoc:game/match/misc/gametype/rogue/calc_time

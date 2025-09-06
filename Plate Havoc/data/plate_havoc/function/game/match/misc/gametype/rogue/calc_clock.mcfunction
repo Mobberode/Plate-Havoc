@@ -1,0 +1,1 @@
+scoreboard players operation #ClockRange plate_havoc.num = #BaseClockRange plate_havoc.num
