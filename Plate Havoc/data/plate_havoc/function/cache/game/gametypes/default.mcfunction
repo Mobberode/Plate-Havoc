@@ -1,8 +1,8 @@
-#data modify storage plate_havoc:data gametypes set value [\
+data modify storage plate_havoc:data gametypes set value [\
 {id:rogue,function:"plate_havoc:game/lobby/post/gametype/rogue",leaderboard:{status:true},players:[{single:true},{multi:true}],console_only:false,metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 ]
 
-data modify storage plate_havoc:data gametypes set value [\
+#data modify storage plate_havoc:data gametypes set value [\
 {id:endurance,function:"plate_havoc:game/lobby/post/gametype/endurance",leaderboard:{status:true},players:[{single:true},{multi:true}],console_only:false,metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 {id:rogue,function:"plate_havoc:game/lobby/post/gametype/rogue",leaderboard:{status:true},players:[{single:true},{multi:true}],console_only:false,metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 {id:sotf,function:"plate_havoc:game/lobby/post/gametype/sotf",leaderboard:{status:false},players:[{multi:true}],console_only:false,metadata:{author:"Mobberode",pack:"Plate Havoc"}},\

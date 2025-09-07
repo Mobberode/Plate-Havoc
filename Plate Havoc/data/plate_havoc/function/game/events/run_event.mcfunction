@@ -10,4 +10,3 @@ execute if score #Restart plate_havoc.event matches 1.. run return run function 
 
 #Event MSG
 function plate_havoc:game/events/event_message
-scoreboard players operation #EventNotify.Current plate_havoc.num = #EventNotify plate_havoc.num

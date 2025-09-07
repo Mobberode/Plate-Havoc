@@ -51,7 +51,7 @@ data modify storage plate_havoc:cards data set value [\
 \
 {id:healing_clock,type:positive,cost:500,requirement:{type:cycle,cycle:15},body:{text:"",extra:[{text:"Healing Infused Clock",color:green},{text:"\nCollecting Clocks regenerate the health of the collector"}]},action:{label:[{text:"Healing Infused Clock"}]},on_select:{functions:[{type:on.clock.collect,function:"plate_havoc:cards/healing_clock/collect"}],duration:-1,left:1},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
-{id:mechanical_extender,type:positive,cost:750,requirement:{type:cycle,cycle:15},body:{text:"",extra:[{text:"Mechanical Extender",color:green},{text:"\nIncrease the range that players can interact with blocks and entities by (0.5 *Level) Also increases the range of Clocks by (0.25 *Level) (Max: 2)"}]},action:{label:[{text:"Mechanical Extender"}]},on_select:{functions:[{type:on.start,function:"plate_havoc:cards/mechanical_extender/start"},{type:set.attribute,function:"plate_havoc:cards/mechanical_extender/set_attribute"}],duration:-1,left:2},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
+{id:mechanical_extender,type:positive,cost:350,requirement:{type:cycle,cycle:15},body:{text:"",extra:[{text:"Mechanical Extender",color:green},{text:"\nIncrease the range that players can interact with blocks and entities by (0.5 *Level) Also increases the range of Clocks by (0.25 *Level) (Max: 2)"}]},action:{label:[{text:"Mechanical Extender"}]},on_select:{functions:[{type:on.start,function:"plate_havoc:cards/mechanical_extender/start"},{type:set.attribute,function:"plate_havoc:cards/mechanical_extender/set_attribute"}],duration:-1,left:2},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
 {id:gravity_coil,type:positive,cost:-1250,requirement:{type:cycle,cycle:20},body:{text:"",extra:[{text:"Gravity Coil",color:green},{text:"\n"}]},action:{label:[{text:"Gravity Coil"}]},on_select:{functions:[],duration:-1,left:1},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
@@ -110,8 +110,6 @@ data modify storage plate_havoc:cards data set value [\
 {id:impatience,type:negative,reward:500,requirement:{type:cycle,cycle:100},body:{text:"",extra:[{text:"Impatience",color:red},{text:"\nDont take too long or suffer... Finish the cycle before it awakens"}]},action:{label:[{text:"Impatience"}]},onselect:{duration:-1,left:1},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 ]
 
-#{id:shadow_baby,type:negative,reward:999999999,body:{text:"",extra:[{text:"Shadow Baby",color:red},{text:"\nMuch quicker dash. Much deadlier. Present for 1 Cycle only"}]},action:{label:[{text:"Shadow Baby"}]},duration:1,left:1}}
-
 scoreboard objectives add plate_havoc.c.card.pitch_black dummy
 scoreboard objectives add plate_havoc.c.card.void_rift dummy
 scoreboard objectives add plate_havoc.c.card.cranked dummy
@@ -119,7 +117,3 @@ scoreboard objectives add plate_havoc.c.card.cranked dummy
 #{id:pig_rider,type:negative,requirement:{type:cycle,cycle:15},body:{text:"",extra:[{text:"Pig Rider",color:red},{text:"\nRiding in my car right after a beer"}]},action:{label:[{text:"Pig Rider"}]},on_select:{functions:[{type:on.start,function:"plate_havoc:cards/pig_rider"}],duration:-1,left:1,type:loop},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 
 #
-
-#{id:overtime,type:negative,body:{text:"",extra:[{text:"Overtime",color:red},{text:"\nIncreases the amount of time it takes for a cycle to end by 6s. Stackable"}]},action:{label:[{text:"Overtime"}]},on_select:{functions:[{type:on.start,function:"plate_havoc:cards/overtime"}],duration:1,left:-1},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
-
-#{id:test100,type:positive,requirement:{type:custom,function:"test:test_function"},cost:420,body:{text:"",extra:[{text:"test100",color:green},{text:"\n+100% Movement Efficency alongside +30% Speed, +50% Water Mobility"}]},action:{label:[{text:"test100"}]},on_select:{functions:[{type:on.start,function:"plate_havoc:cards/octagonal_move_normalizer"}],duration:-1,left:1}}

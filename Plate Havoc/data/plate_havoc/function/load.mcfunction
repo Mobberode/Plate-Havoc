@@ -37,6 +37,7 @@ scoreboard objectives add plate_havoc.t.stats trigger
 scoreboard objectives add plate_havoc.t.spectator trigger
 scoreboard objectives add plate_havoc.t.credits trigger
 scoreboard objectives add plate_havoc.t.bedrock_compatibility trigger
+scoreboard objectives add plate_havoc.t.event_notifier_mode trigger
 
 scoreboard objectives add plate_havoc.t.console trigger
 
