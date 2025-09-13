@@ -1,0 +1,16 @@
+{
+  "display": {
+    "icon": {
+      "id": "wither_skeleton_skull"
+    },
+    "title": "Worst of the Worst",
+    "description": "Have the Cards: Faulty Spacebar, Pumpkin Vision, Pitch Black, Cranked and Run it back",
+    "frame": "challenge"
+  },
+  "parent": "plate_havoc:trophies/root",
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

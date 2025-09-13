@@ -1,4 +1,4 @@
-kill @a
+kill @a[tag=!plate_havoc.spectator]
 kill @e[type=!player,tag=!plate_havoc.never_kill]
 
 execute in plate_havoc:arena positioned 0 64 0 run function plate_havoc:game/lobby/post/pre_arena

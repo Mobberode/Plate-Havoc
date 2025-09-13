@@ -177,7 +177,7 @@ scoreboard players set #Template.Event.BlackHole.MaxRunCount plate_havoc.num 1
 scoreboard players set #Template.Event.BlackHole.Duration plate_havoc.num 900
 scoreboard players set #Template.Event.BlackHole.Duration_Extension plate_havoc.num 450
 scoreboard players set #Template.Event.BlackHole.Entity_Size plate_havoc.num 125
-scoreboard players set #Template.Event.BlackHole.Growth_Limit plate_havoc.num 2
+scoreboard players set #Template.Event.BlackHole.Growth_Limit plate_havoc.num 5
 ## breeze (Max Run Count)
 scoreboard players set #Template.Event.Breeze.MaxRunCount plate_havoc.num 1
 ## breeze (Max Run Count)

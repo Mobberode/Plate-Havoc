@@ -1,0 +1,15 @@
+{
+  "display": {
+    "icon": {
+      "id": "book"
+    },
+    "title": "Beaten the Tutorial!",
+    "description": "Reach Cycle 10. Has to be in the match for 10 Cycles to get this trophy."
+  },
+  "parent": "plate_havoc:trophies/root",
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

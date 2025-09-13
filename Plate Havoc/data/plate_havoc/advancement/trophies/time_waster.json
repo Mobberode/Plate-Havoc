@@ -1,0 +1,15 @@
+{
+  "display": {
+    "icon": {
+      "id": "clock"
+    },
+    "title": "Time Waster",
+    "description": "Above Cycle 10. Have no Clocks be picked up for the entire Cycle."
+  },
+  "parent": "plate_havoc:trophies/root",
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

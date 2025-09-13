@@ -1,6 +1,6 @@
 # negates the + One that dxyz has
 #Positioned is the current clock range
-#dxyz is the current clock range * -Two
+#dxyz is the current clock range * -2
 
 ##Debug
 #$execute positioned ~$(clock_range) ~$(clock_range) ~$(clock_range) run particle glow
