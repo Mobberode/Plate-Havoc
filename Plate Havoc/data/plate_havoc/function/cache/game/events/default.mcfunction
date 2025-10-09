@@ -61,7 +61,7 @@ data modify storage plate_havoc:data events set value [\
 \
 {id:bars,intensity:1.1,function:"plate_havoc:events/bars/start",metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
-{id:wither,intensity:10,function:"plate_havoc:events/wither/start",metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
+{id:wither,intensity:15,function:"plate_havoc:events/wither/start",metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
 {id:cobweb,intensity:2.3,function:"plate_havoc:events/cobweb/start",metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
@@ -153,4 +153,5 @@ data modify storage plate_havoc:data events set value [\
 \
 {id:target_practice,intensity:3,function:"plate_havoc:events/target_practice/start",console_only:true,metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
+{id:machine_gun_rampage,intensity:10,function:"plate_havoc:events/machine_gun_rampage/start",console_only:true,metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 ]

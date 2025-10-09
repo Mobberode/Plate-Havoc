@@ -59,6 +59,8 @@ data modify storage plate_havoc:cards data set value [\
 \
 {id:teleport_beamer,type:positive,cost:-1225,requirement:{type:cycle,cycle:20},body:{text:"",extra:[{text:"Teleport Beamer",color:green},{text:"\nTeleport Beamer is given and can be interacted with to start holding. Let go of holding to fire a teleportation beam that teleports the player upon block collision"}]},action:{label:[{text:"Teleport Beamer"}]},on_select:{functions:[{type:set.attribute,function:"plate_havoc:cards/teleport_beamer/give"}],duration:-1,left:1},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
+{id:material_kit,type:positive,cost:50,requirement:{type:multi_condition,conditions:[{type:card,needed:[{id:hands_of_creativity,count:1}]},{type:cycle,cycle:7}]},body:{text:"",extra:[{text:"Material Kit",color:green},{text:"\nSupplies player with some building blocks."}]},action:{label:[{text:"Material Kit"}]},on_select:{functions:[{type:on.start,function:"plate_havoc:cards/material_kit/start"}],duration:-1,left:1},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
+\
 \
 \
 {id:faulty_spacebar,type:negative,reward:75,requirement:{type:cycle,cycle:15},body:{text:"",extra:[{text:"Faulty Spacebar",color:red},{text:"\nJumping will be periodically locked and unlocked"}]},action:{label:[{text:"Faulty Spacebar"}]},on_select:{functions:[{type:on.start,function:"plate_havoc:cards/faulty_spacebar/start"},{type:loop,function:"plate_havoc:cards/faulty_spacebar/loop"}],duration:-1,left:1},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
@@ -109,7 +111,16 @@ data modify storage plate_havoc:cards data set value [\
 \
 {id:cranked,type:negative,reward:75,requirement:{type:cycle,cycle:15},body:{text:"",extra:[{text:"Cranked",color:red},{text:"\nPlayers start with a Cranked timer of (30 *Cycle = S). Clocks collected adds 15s to the collector's timer and 10s to everyone else's timer. Failure to upkeep the time will result in death"}]},action:{label:[{text:"Cranked"}]},on_select:{functions:[{type:set.attribute,function:"plate_havoc:cards/cranked/start"},{type:loop,function:"plate_havoc:cards/cranked/loop"},{type:on.clock.collect,function:"plate_havoc:cards/cranked/extend"}],duration:-1,left:1},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
-{id:impatience,type:negative,reward:500,requirement:{type:cycle,cycle:100},body:{text:"",extra:[{text:"Impatience",color:red},{text:"\nDont take too long or suffer... Finish the cycle before it awakens"}]},action:{label:[{text:"Impatience"}]},onselect:{duration:-1,left:1},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
+{id:unification,type:negative,reward:20,requirement:{type:cycle,cycle:5},body:{text:"",extra:[{text:"Unification",color:red},{text:"\nMobs get increasingly more powerful effects the longer they stay alive."}]},action:{label:[{text:"Unification"}]},onselect:{functions:[{type:loop,function:"plate_havoc:cards/unification/loop"}],duration:-1,left:1},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
+\
+{id:impatience,type:super_negative,reward:500,requirement:{type:cycle,cycle:20},body:{text:"",extra:[{text:"Impatience",color:red},{text:"\nDont take too long or suffer... Finish the cycle before it awakens"}]},action:{label:[{text:"Impatience"}]},onselect:{duration:-1,left:1},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
+\
+{id:fragile_void,type:super_negative,reward:125,requirement:{type:cycle,cycle:20},body:{text:"",extra:[{text:"Fragility of the Void",color:red},{text:"\nAreas of the Void will implode on itself. Avoid being caught inside one."}]},action:{label:[{text:"Fragility of the Void"}]},onselect:{duration:-1,left:1},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
+\
+{id:clockmine,type:super_negative,reward:250,requirement:{type:cycle,cycle:20},body:{text:"",extra:[{text:"Clockmine",color:red},{text:"\nClocks can spawn in armed with lethal explosives. Players caught in the radius will die."}]},action:{label:[{text:"Clockmine"}]},onselect:{duration:-1,left:1},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
+\
+{id:frozen_time,type:negative,reward:250,requirement:{type:cycle,cycle:20},body:{text:"",extra:[{text:"Frozen in Time",color:red},{text:"\nTime no longer ticks passively. Clocks and other means are now the only way to pass the time."}]},action:{label:[{text:"Frozen in Time"}]},onselect:{functions:[{type:on.start,function:"plate_havoc:cards/frozen_time/start"}],duration:-1,left:1},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
+\
 ]
 
 scoreboard objectives add plate_havoc.c.card.pitch_black dummy

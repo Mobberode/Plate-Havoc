@@ -2,7 +2,6 @@ scoreboard players set #Game plate_havoc.status 2
 
 function plate_havoc:game/match/misc/gametype/rogue/calc_clock
 
-scoreboard players set #Remove plate_havoc.timer 1
 function plate_havoc:game/match/misc/gametype/rogue/calc_time
 
 advancement revoke @a from plate_havoc:cards/root
