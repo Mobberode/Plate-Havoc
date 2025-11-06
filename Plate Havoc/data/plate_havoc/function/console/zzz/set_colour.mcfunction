@@ -1,0 +1,1 @@
+$data modify storage plate_havoc:cards active_type set from storage plate_havoc:cards types[{id:$(card_type)}]

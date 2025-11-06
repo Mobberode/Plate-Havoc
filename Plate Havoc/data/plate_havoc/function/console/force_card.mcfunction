@@ -1,5 +1,6 @@
 #Get template and id
 $data modify storage plate_havoc:cards template set from storage plate_havoc:cards data[{id:$(id)}]
+function plate_havoc:console/zzz/set_card
 function plate_havoc:game/misc/cards/vote/end/process_for_running
 
 advancement revoke @a from plate_havoc:cards/root

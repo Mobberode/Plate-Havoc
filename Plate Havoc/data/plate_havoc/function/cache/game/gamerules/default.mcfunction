@@ -16,6 +16,27 @@ gamerule fallDamage true
 gamerule fireDamage true
 gamerule freezeDamage true
 gamerule drowningDamage true
+gamerule keepInventory true
+
+#gamerule max_command_sequence_length 4294369
+#gamerule max_command_forks 4294369
+#gamerule max_block_modifications 2147184930
+#gamerule block_drops false
+#gamerule mob_drops false
+#gamerule spawn_mobs true
+#gamerule spawn_phantoms false
+#gamerule random_tick_speed 3
+#gamerule advance_time false
+#gamerule advance_weather false
+#gamerule projectiles_can_break_blocks true
+#gamerule immediate_respawn true
+#gamerule show_death_messages true
+
+#gamerule fall_damage true
+#gamerule fire_damage true
+#gamerule freeze_damage true
+#gamerule drowning_damage true
+#gamerule keep_inventory false
 
 defaultgamemode spectator
 difficulty normal

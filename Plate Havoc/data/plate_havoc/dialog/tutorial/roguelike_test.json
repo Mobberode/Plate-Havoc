@@ -3,12 +3,14 @@
     "title": "Plate Havoc Roguelike Test Intro",
     "can_close_with_escape": false,
     "body": [
-        {"type":"plain_message","contents":{"text":"Welcome to Plate Havoc | Roguelike Test! This is here to explain the basics of the game"},"width":448},
-        {"type":"plain_message","contents":{"text":"Plate Havoc is mostly a cooperative minigame, based on the Plate genre from Roblox with the goal of lasting the longest","color":"gold"},"width":448},
+        {"type":"plain_message","contents":{"text":"Welcome to Plate Havoc | Roguelike Test! This is here to explain the basics of the game","color":"blue"},"width":448},
+        {"type":"plain_message","contents":{"text":"Plate Havoc is a roguelike random-events game, with some modes that differ from the typical rogue experience."},"width":448},
 
-        {"type":"plain_message","contents":[{"text":""},{"text":"- Fundamental Gameplay -\n","color":"green"},{"text":"Survive events that will randomly happen. The bossbar at the top shows how long until an event. Intensity will rise when events happen, controlling the severity of the events"}],"width":448},
+        {"type":"plain_message","contents":[{"text":""},{"text":"- Fundamental Gameplay -\n","color":"green"},{"text":"Survive random events. The bossbar up top displays when events happen. Intensity will rise upon an event, controlling the severity of the events."}],"width":448},
 
-        {"type":"plain_message","contents":[{"text":""},{"text":"","color":"gold"},{"text":"Skipping this is not reccomended for first time players","color":"red"}],"width":448},
+        {"type":"plain_message","contents":[{"text":"Dying is to be expected. Trial and error is key to success.","color":"gold"}],"width":448},
+
+        {"type":"plain_message","contents":[{"text":""},{"text":"","color":"gold"},{"text":"Skipping this is not reccomended for first time players.","color":"red"}],"width":448},
         {"type":"plain_message","contents":[{"text":""},{"text":"","color":"gold"},{"text":"If you want to leave in this state. Press the warning symbol at the top of the screen and [Disconnect] / [Save and Quit to Title]","color":"yellow"}],"width":448}
     ],
     "actions": [

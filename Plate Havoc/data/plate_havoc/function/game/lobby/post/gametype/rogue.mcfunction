@@ -24,9 +24,12 @@ data modify storage plate_havoc:data game_end_condition_function set value "plat
 
 data modify storage plate_havoc:data tick_function set value "plate_havoc:game/match/misc/gametype/rogue/tick"
 
+data modify storage plate_havoc:data last_alive_function set value "plate_havoc:game/match/misc/gametype/rogue/last_one"
+
 data modify storage plate_havoc:data default_gamemode set value "survival"
 difficulty hard
 gamerule keepInventory true
+#gamerule keep_inventory true
 
 data modify storage plate_havoc:data on_game_start append value "plate_havoc:game/time/tick_down"
 
@@ -55,7 +58,16 @@ data modify storage plate_havoc:cards pool set value []
 data modify storage plate_havoc:ui card_list set value [{text:""}]
 function plate_havoc:game/misc/cards/locked/init
 
+data modify storage plate_havoc:cards types set value [\
+{id:upgrade,multiple_of:1,allow_multiple_selection:true,colour:"green",name:{text:"UPGRADES"}},\
+{id:curse,multiple_of:1,colour:"red",name:{text:"CURSES"}},\
+{id:deeper_curse,multiple_of:5,colour:"gold",name:{text:"DEEPER CURSES"}},\
+]
+
+function #plate_havoc:data/rogue/card_types
+
 function plate_havoc:game/match/player_count
 function plate_havoc:game/match/misc/gametype/rogue/calc_clock
 function plate_havoc:game/match/misc/gametype/rogue/store_clock
 function plate_havoc:game/match/misc/gametype/rogue/calc_time
+execute store result score #Starting plate_havoc.players if entity @a[tag=!plate_havoc.spectator]

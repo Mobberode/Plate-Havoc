@@ -1,2 +1,0 @@
-function plate_havoc:cards/glitched_timer/setup
-function plate_havoc:cards/glitched_timer/extend

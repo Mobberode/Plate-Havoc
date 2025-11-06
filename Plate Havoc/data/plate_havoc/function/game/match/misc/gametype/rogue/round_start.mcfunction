@@ -1,5 +1,7 @@
 scoreboard players set #Game plate_havoc.status 2
 
+execute store result score #Starting plate_havoc.players if entity @a[tag=!plate_havoc.spectator]
+
 function plate_havoc:game/match/misc/gametype/rogue/calc_clock
 
 function plate_havoc:game/match/misc/gametype/rogue/calc_time

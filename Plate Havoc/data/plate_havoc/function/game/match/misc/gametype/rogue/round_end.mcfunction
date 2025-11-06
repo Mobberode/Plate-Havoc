@@ -17,8 +17,8 @@ execute if score #Value plate_havoc.round matches 15 in plate_havoc:arena run fu
 execute in plate_havoc:arena run function plate_havoc:game/misc/world/apply_all
 
 function plate_havoc:game/misc/cards/locked/init
-data modify storage plate_havoc:cards type set value positive
+
+function plate_havoc:game/misc/cards/types/init
 function plate_havoc:game/match/misc/gametype/rogue/set_cards
 
-scoreboard players set #VotePhase plate_havoc.card 0
 function plate_havoc:game/match/misc/gametype/rogue/intermission

@@ -13,5 +13,5 @@ data remove storage plate_havoc:cards select_pool[0]
 #If more
 execute if data storage plate_havoc:cards select_pool[0] run return run function plate_havoc:game/misc/cards/loopback
 
-execute if data storage plate_havoc:cards {type:positive} run function plate_havoc:game/misc/cards/polish
+execute if data storage plate_havoc:cards {active_type:{allow_multiple_selection:true}} run function plate_havoc:game/misc/cards/polish
 #function plate_havoc:game/misc/cards/reroll

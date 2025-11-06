@@ -8,7 +8,8 @@ scoreboard players operation @s plate_havoc.temp /= #2 plate_havoc.num
 execute if score @s plate_havoc.temp matches ..100 run scoreboard players set @s plate_havoc.temp 100
 #maximum (50)
 execute if score @s plate_havoc.temp matches 5000.. run scoreboard players set @s plate_havoc.temp 5000
-execute store result storage plate_havoc:cards temp double 0.01 run scoreboard players get @s plate_havoc.temp
+execute store result storage plate_havoc:cards temp double -0.01 run scoreboard players get @s plate_havoc.temp
+execute store result storage plate_havoc:cards temp2 double 0.01 run scoreboard players get @s plate_havoc.temp
 
 ##Time in ticks
 execute store result score @s plate_havoc.timer run random value 25..65

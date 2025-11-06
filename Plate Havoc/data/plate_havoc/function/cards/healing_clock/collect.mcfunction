@@ -1,1 +1,1 @@
-effect give @a[tag=plate_havoc.rogue.time_cube.collector] instant_health
+effect give @a[tag=plate_havoc.rogue.time_cube.collector] instant_health 1 1

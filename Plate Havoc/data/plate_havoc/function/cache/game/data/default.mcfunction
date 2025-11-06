@@ -48,6 +48,7 @@ data modify storage plate_havoc:data set_plate_function set value "plate_havoc:g
 data modify storage plate_havoc:data on_event_function set value "plate_havoc:game/match/action"
 data modify storage plate_havoc:data spectator_tick_function set value "plate_havoc:game/match/player/spectator/energy"
 data modify storage plate_havoc:data game_end_condition_function set value "plate_havoc:game/match/player/endurance/lose_check"
+data modify storage plate_havoc:data last_alive_function set value ""
 
 #Leaderboard
 data modify storage plate_havoc:leaderboard sort_function set value "plate_havoc:game/leaderboard/check/intensity"

@@ -22,6 +22,11 @@ gamerule doMobLoot true
 gamerule randomTickSpeed 115
 gamerule doDaylightCycle true
 gamerule doWeatherCycle true
+#gamerule block_drops true
+#gamerule mob_drops true
+#gamerule random_tick_speed 115
+#gamerule advance_time true
+#gamerule advance_weather true
 
 data modify storage plate_havoc:data on_game_start append value "plate_havoc:game/lobby/post/gametype/internal/lava_rush/run"
 

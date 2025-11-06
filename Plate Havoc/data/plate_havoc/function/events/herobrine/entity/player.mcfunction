@@ -1,4 +1,3 @@
-effect give @s darkness 3 9
 effect give @s slowness 3 1
 
 playsound block.chain.place player @s ~ ~ ~ 2 0.65 0

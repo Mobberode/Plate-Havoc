@@ -1,0 +1,1 @@
+scoreboard players remove #BaseCardLimit plate_havoc.num 1

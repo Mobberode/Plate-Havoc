@@ -1,4 +1,4 @@
-say PH loaded
+say Plate Havoc loaded
 
 #
 scoreboard objectives add plate_havoc.test.read trigger

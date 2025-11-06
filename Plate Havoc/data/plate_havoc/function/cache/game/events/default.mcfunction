@@ -39,10 +39,6 @@ data modify storage plate_havoc:data events set value [\
 \
 {id:end_island,intensity:2.5,function:"plate_havoc:events/end_island/start",metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
-{id:snow_golem,intensity:2.4,function:"plate_havoc:events/snow_golem/start",metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
-\
-{id:fire_rain,intensity:1.9,function:"plate_havoc:events/fire_rain/start",metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
-\
 {id:fireballs,intensity:2,function:"plate_havoc:events/fireballs/start",metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
 {id:dragonball,intensity:3.4,function:"plate_havoc:events/dragonball/start",metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
@@ -61,8 +57,6 @@ data modify storage plate_havoc:data events set value [\
 \
 {id:bars,intensity:1.1,function:"plate_havoc:events/bars/start",metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
-{id:wither,intensity:15,function:"plate_havoc:events/wither/start",metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
-\
 {id:cobweb,intensity:2.3,function:"plate_havoc:events/cobweb/start",metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
 {id:effect_wind_charged,intensity:2.18,function:"plate_havoc:events/effect_wind_charged/start",metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
@@ -70,10 +64,6 @@ data modify storage plate_havoc:data events set value [\
 {id:eraserman,intensity:1.8,function:"plate_havoc:events/eraserman/start",metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
 {id:fireworks,intensity:3.2,function:"plate_havoc:events/fireworks/start",metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
-\
-{id:jump_cooldown,intensity:3.1,function:"plate_havoc:events/jump_cooldown/start",metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
-\
-{id:anvil,intensity:2.6,function:"plate_havoc:events/anvil/start",metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
 {id:blackhole,intensity:4.5,function:"plate_havoc:events/black_hole/start",metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
@@ -154,4 +144,7 @@ data modify storage plate_havoc:data events set value [\
 {id:target_practice,intensity:3,function:"plate_havoc:events/target_practice/start",console_only:true,metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
 {id:machine_gun_rampage,intensity:10,function:"plate_havoc:events/machine_gun_rampage/start",console_only:true,metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
+\
 ]
+
+scoreboard objectives add plate_havoc.event.acid_rain.exposure dummy

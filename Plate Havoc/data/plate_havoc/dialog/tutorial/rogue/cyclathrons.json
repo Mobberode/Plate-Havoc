@@ -3,7 +3,7 @@
     "title": "Plate Havoc Roguelike Test Intro",
     "exit_action": {"label":"Back","action":{"type":"show_dialog","dialog":"plate_havoc:tutorial/roguelike_test"}},
     "body": [
-        {"type":"plain_message","contents":[{"text":""},{"text":"-- Cyclathrons --\n","color":"aqua"},{"text":"Cyclathrons is money thats shared amongst everyone. Cyclathrons is mainly used to buy Upgrade Cards. How to get Cyclathrons is to collect Clocks that will periodcally spawn around the plate, collecting them will both reduce the time needed until the next Cycle and give Cyclathrons"}],"width":448}
+        {"type":"plain_message","contents":[{"text":""},{"text":"-- Cyclathrons --\n","color":"aqua"},{"text":"Cyclathrons is money thats shared amongst everyone which is earned by collecting clocks or by other means.\n\nCyclathrons are used mainly to buy Upgrade Cards."}],"width":448}
     ],
     "actions": [
         {"label":{"text":"Proceed to next section"},"width":256,"action":{"type":"show_dialog","dialog":"plate_havoc:tutorial/rogue/time_cards"}}

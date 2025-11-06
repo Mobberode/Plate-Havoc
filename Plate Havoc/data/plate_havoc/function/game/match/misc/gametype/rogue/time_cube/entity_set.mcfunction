@@ -1,9 +1,6 @@
+data modify entity @s data set from storage plate_havoc:custom clock_data
 data modify entity @s interpolation_duration set value 20
 tp @s @r[tag=plate_havoc.survivor]
 execute positioned as @s run spreadplayers ~ ~ 1 64 false @s
 
-tag @s remove plate_havoc.rogue.time_cube.init
-
-function plate_havoc:game/misc/cards/running/types/run {type:on.clock.spawn}
-
-execute positioned as @s run playsound block.chest.locked ambient @a ~ ~ ~ 2.5 2 0.5
+execute positioned as @s run function plate_havoc:game/match/misc/gametype/rogue/time_cube/entity_finalize
