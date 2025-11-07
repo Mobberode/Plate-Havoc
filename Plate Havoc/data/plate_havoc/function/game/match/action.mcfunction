@@ -1,2 +1,3 @@
-function plate_havoc:game/events/start
+function plate_havoc:game/events/time
+function plate_havoc:game/events/behaviour
 function plate_havoc:game/intensity/start

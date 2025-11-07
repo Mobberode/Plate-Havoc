@@ -1,5 +1,5 @@
 ##Loop
-data modify storage plate_havoc:ui bar_visuals.visible append from storage plate_havoc:ui temp_bar_visuals[0]
+data modify storage plate_havoc:ui bar.visual.visible append from storage plate_havoc:ui temp_bar_visuals[0]
 
 #Remove
 data remove storage plate_havoc:ui temp_bar_visuals[0]

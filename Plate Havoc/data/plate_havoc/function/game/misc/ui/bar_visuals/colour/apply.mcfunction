@@ -1,0 +1,1 @@
+$bossbar set plate_havoc:ui color $(temp)

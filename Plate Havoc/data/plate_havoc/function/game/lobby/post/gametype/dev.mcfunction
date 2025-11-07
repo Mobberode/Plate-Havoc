@@ -1,12 +1,12 @@
 tellraw @a [{text:"Developers Ground",color:green},{text:"\nTEST ENVIRONMENT\n",color:"gray"},{text:"To access the developer console. Use the command;\n/trigger plate_havoc.t.console",color:green}]
 
-data modify storage plate_havoc:ui bar_visuals_queue[{id:intensity}] set value {id:intensity,text:"",extra:[{storage:"plate_havoc:data",nbt:intensity,color:red}]}
+data modify storage plate_havoc:ui bar.queue[{id:intensity}] set value {id:intensity,text:"",extra:[{storage:"plate_havoc:data",nbt:intensity,color:red}]}
 
-data modify storage plate_havoc:ui bar_visuals_queue[{id:time}] set value {id:time,text:"",extra:[{score:{name:"#Duration",objective:plate_havoc.timer},color:gold}]}
+data modify storage plate_havoc:ui bar.queue[{id:time}] set value {id:time,text:"",extra:[{score:{name:"#Duration",objective:plate_havoc.timer},color:gold}]}
 
-data modify storage plate_havoc:ui bar_visuals_queue[{id:players}] set value {id:players,text:"",extra:[{score:{name:"#Current",objective:plate_havoc.players},color:green}]}
+data modify storage plate_havoc:ui bar.queue[{id:players}] set value {id:players,text:"",extra:[{score:{name:"#Current",objective:plate_havoc.players},color:green}]}
 
-data modify storage plate_havoc:ui element_spawnpoint_status set value [{text:"Respawning...",color:gold}]
+data modify storage plate_havoc:ui game.spawnpoint.status set value [{text:"Respawning...",color:gold}]
 
 scoreboard players set #BaseCapValue plate_havoc.spawnpoint_energy 1
 scoreboard players set #BaseGainValue plate_havoc.spawnpoint_energy 1

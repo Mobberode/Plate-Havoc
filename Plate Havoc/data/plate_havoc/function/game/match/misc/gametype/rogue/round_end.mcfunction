@@ -22,3 +22,5 @@ function plate_havoc:game/misc/cards/types/init
 function plate_havoc:game/match/misc/gametype/rogue/set_cards
 
 function plate_havoc:game/match/misc/gametype/rogue/intermission
+
+bossbar set plate_havoc:ui color blue
