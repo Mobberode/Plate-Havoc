@@ -1,1 +1,0 @@
-execute if score #Match plate_havoc.players matches ..1 run function plate_havoc:cards/determination/solo

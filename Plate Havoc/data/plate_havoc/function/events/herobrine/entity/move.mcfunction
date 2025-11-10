@@ -1,1 +1,0 @@
-$execute positioned ^ ^ ^$(distance) run return run function plate_havoc:events/herobrine/entity/activate

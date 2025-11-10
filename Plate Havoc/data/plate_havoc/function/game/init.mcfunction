@@ -5,5 +5,5 @@ scoreboard players reset * plate_havoc.num
 scoreboard players reset * plate_havoc.temp
 scoreboard players set #Game plate_havoc.status 0
 
-function #plate_havoc:cache
+function plate_havoc:extensions/run
 function plate_havoc:game/lobby/player_check

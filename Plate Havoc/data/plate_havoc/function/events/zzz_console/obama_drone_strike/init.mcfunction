@@ -1,2 +1,0 @@
-summon firework_rocket ~ ~ ~ {LifeTime:500,FireworksItem:{id:firework_rocket,count:1,components:{fireworks:{explosions:[{shape:"small_ball",colors:[1005000000],fade_colors:[16777215]}]}}},ShotAtAngle:true,Tags:["plate_havoc.firework.init","plate_havoc.dont_interact"]}
-execute as @e[tag=plate_havoc.firework.init] run function plate_havoc:events/zzz_console/obama_drone_strike/set

@@ -1,0 +1,1 @@
+function plate_havoc_content:cards/cube_of_decay/summon

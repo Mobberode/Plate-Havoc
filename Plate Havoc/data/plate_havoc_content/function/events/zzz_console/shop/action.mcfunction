@@ -1,0 +1,3 @@
+summon item_display ~ ~1 ~ {Tags:["plate_havoc.shop.init","plate_havoc.dont_interact"],transformation:{scale:[0.75,0.75,-0.75],translation:[0,0.625,0],left_rotation:[0,0,0,1],right_rotation:[0,0,0,1]},brightness:{block:15,sky:15},billboard:"center",glow_color_override:65531,Glowing:true,Passengers:[{id:interaction,width:1,height:1,Tags:["plate_havoc.dont_interact","plate_havoc.shop.hitbox"]},{id:text_display,text:[{text:""}],billboard:"center",brightness:{block:15,sky:15},background:2130706432,see_through:true,Tags:["plate_havoc.shop.text","plate_havoc.dont_interact"]}],item:{id:barrier}}
+
+execute if score #EventRunCount plate_havoc.num < #Template.Event.Shop.MaxRunCount plate_havoc.num run function plate_havoc_content:events/zzz_console/shop/run

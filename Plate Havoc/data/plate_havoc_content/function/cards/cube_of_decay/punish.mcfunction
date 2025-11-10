@@ -1,0 +1,4 @@
+function plate_havoc_content:cards/cube_of_decay/kill
+
+scoreboard players add #BaseIntensityPercentage plate_havoc.num 10
+playsound item.trident.thunder hostile @a

@@ -1,1 +1,0 @@
-execute as @a[tag=plate_havoc.survivor] run function plate_havoc:game/match/misc/gametype/border_says/drain_check

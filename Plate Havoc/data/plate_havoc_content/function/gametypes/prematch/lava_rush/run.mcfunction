@@ -1,0 +1,2 @@
+execute as @a[tag=!plate_havoc.spectator] run function plate_havoc_content:gametypes/prematch/lava_rush/give
+execute in plate_havoc:arena run summon marker 0 -64 0 {Tags:["plate_havoc.lava_rush.lava","plate_havoc.dont_interact"]}

@@ -1,1 +1,0 @@
-$execute as @n[type=interaction,tag=plate_havoc.spinning_laser.temp] positioned ^ ^ ^-$(distance) run function plate_havoc:events/spinning_laser/entity/hitbox_set

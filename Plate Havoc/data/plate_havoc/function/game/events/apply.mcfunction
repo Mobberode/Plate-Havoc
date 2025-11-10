@@ -1,2 +1,0 @@
-$data modify storage plate_havoc:data choosen_event set from storage plate_havoc:data match_events[$(selected)]
-data modify storage plate_havoc:data event_intensity set from storage plate_havoc:data choosen_event.intensity

@@ -1,1 +1,0 @@
-execute as @a[tag=plate_havoc.survivor,scores={plate_havoc.c.card.void_rift=1..}] run function plate_havoc:cards/void_rift/check with storage plate_havoc:data

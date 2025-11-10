@@ -1,15 +1,11 @@
 {
     "values": [
-        "plate_havoc:cache/game/signs/default",
-        "plate_havoc:cache/game/events/default",
-        "plate_havoc:cache/game/data/default",
-        "plate_havoc:cache/game/gametypes/default",
-        "plate_havoc:cache/ui/default",
-        "plate_havoc:cache/ui/bossbar",
-        "plate_havoc:cache/game/teams/default",
-        "plate_havoc:cache/game/gamerules/default",
-        "plate_havoc:cache/game/cards/default",
-        "plate_havoc:cache/game/modifiers/default",
+        "plate_havoc_content:events",
+        "plate_havoc_content:data",
+        "plate_havoc_content:gametypes",
+        "plate_havoc_content:cards",
+        "plate_havoc_content:card_types",
+        "plate_havoc_content:modifiers",
         "zzz_embed_bound:plate_havoc"
     ]
 }

@@ -1,1 +1,0 @@
-data modify storage plate_havoc:data signs set value [{messages:["We","Will","Be","Watching."]},{messages:["Look","up. its","falling","down"]},{messages:["You","read this","you are","GAY!!"]},{messages:["Behind you.","","",""]},{messages:["2","7","0","2"]},{messages:["I","AM","LAMB",""]},{messages:["Get","Silksong","",""]}]

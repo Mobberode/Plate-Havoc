@@ -1,1 +1,0 @@
-function plate_havoc:game/match/misc/gametype/lava_rush/activate

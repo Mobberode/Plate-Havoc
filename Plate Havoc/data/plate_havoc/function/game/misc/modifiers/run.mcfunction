@@ -1,4 +1,4 @@
-execute store result score #Modifiers.Pool.Entries plate_havoc.temp run data get storage plate_havoc:modifiers pool
+execute store result score #Modifiers.Pool.Entries plate_havoc.temp run data get storage plate_havoc_content:modifiers pool
 execute unless score #Modifiers.Pool.Entries plate_havoc.temp matches 1.. run return fail
 
 execute store result score #RNG plate_havoc.num run random value 0..100

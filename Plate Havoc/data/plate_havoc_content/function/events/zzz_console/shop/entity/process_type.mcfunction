@@ -1,0 +1,1 @@
+execute if data storage plate_havoc:custom {CostType:percentage} run function plate_havoc_content:events/zzz_console/shop/entity/type/percentage

@@ -7,6 +7,6 @@
     
     "actions": [
         {"label":"Force Event","action":{"type":"dynamic/run_command","template":"function plate_havoc:console/force_event {id:$(id)}"}},
-        {"label":"Force Random Event","action":{"type":"run_command","command":"function plate_havoc:game/events/behaviour"}}
+        {"label":"Force Random Event","action":{"type":"run_command","command":"function plate_havoc:game/events/init"}}
     ]
 }

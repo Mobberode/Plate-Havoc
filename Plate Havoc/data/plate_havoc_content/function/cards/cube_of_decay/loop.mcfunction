@@ -1,0 +1,1 @@
+execute as @e[tag=plate_havoc.card.decay_cube] at @s run function plate_havoc_content:cards/cube_of_decay/tick

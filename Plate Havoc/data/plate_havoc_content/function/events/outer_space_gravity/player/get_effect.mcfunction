@@ -1,0 +1,2 @@
+execute store result storage plate_havoc:events value double 0.01 run scoreboard players get #Template.Event.Outer_Space_Gravity.Effect_Strength plate_havoc.num
+function plate_havoc_content:events/outer_space_gravity/player/set_effect with storage plate_havoc:events

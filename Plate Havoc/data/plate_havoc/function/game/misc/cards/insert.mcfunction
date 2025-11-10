@@ -1,9 +1,7 @@
-##Start
-scoreboard players set #ProcessedCards plate_havoc.num 0
-scoreboard players set #CardLimit plate_havoc.num 0
-function plate_havoc:game/misc/cards/select_pool
+function plate_havoc:game/misc/cards/running/card_list
+data modify storage plate_havoc:cards select_pool set value []
 
-function plate_havoc:game/misc/cards/insert/init
+function plate_havoc:game/misc/cards/pool/insert/start with storage plate_havoc:cards
 
-##Refresh dialog
-function plate_havoc:game/match/misc/gametype/rogue/dialog_refresh
+scoreboard players reset @a plate_havoc.z.select
+scoreboard players enable @a plate_havoc.t.select

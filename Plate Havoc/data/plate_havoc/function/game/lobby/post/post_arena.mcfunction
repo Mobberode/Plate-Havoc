@@ -9,8 +9,7 @@ function plate_havoc:game/misc/world/void/set
 function plate_havoc:game/misc/world/apply_all
 worldborder center 0.0 0.0
 
-data modify storage plate_havoc:data events_pool set from storage plate_havoc:data events
-data remove storage plate_havoc:data events_pool[{console_only:true}]
+function plate_havoc:game/events/pool/init
 
 scoreboard players set #Game plate_havoc.status 2
 

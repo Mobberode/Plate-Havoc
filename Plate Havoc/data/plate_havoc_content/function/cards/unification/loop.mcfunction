@@ -1,0 +1,1 @@
+execute as @e[tag=plate_havoc.mob] run function plate_havoc_content:cards/unification/entity_tick

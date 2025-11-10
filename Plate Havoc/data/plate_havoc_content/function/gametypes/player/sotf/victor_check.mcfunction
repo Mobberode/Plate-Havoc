@@ -1,0 +1,2 @@
+execute if score #Current plate_havoc.players matches 1 as @p[tag=plate_havoc.survivor] run function plate_havoc_content:gametypes/player/sotf/win
+execute if score #Current plate_havoc.players matches ..0 run function plate_havoc_content:gametypes/player/sotf/lose

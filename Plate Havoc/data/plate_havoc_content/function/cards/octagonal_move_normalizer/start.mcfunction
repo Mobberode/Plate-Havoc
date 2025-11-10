@@ -1,0 +1,1 @@
+execute as @a run function plate_havoc_content:cards/octagonal_move_normalizer/apply

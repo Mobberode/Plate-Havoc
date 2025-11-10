@@ -1,4 +1,6 @@
 ##Misc UI
+data remove storage plate_havoc:ui intermission
+
 data modify storage plate_havoc:ui intermission.status set value [{text:"Intermission | "},{score:{name:"#Value",objective:plate_havoc.timer}}]
 
 data modify storage plate_havoc:ui intermission.awaiting_player set value {text:"Waiting for players to join."}
@@ -6,6 +8,8 @@ data modify storage plate_havoc:ui intermission.awaiting_player set value {text:
 data modify storage plate_havoc:ui game.spawnpoint.status set value [{text:""},{text:"You can respawn back! Spawnpoint Energy: ",color:aqua},{score:{name:"@s",objective:plate_havoc.spawnpoint_energy},color:green},{text:"/"},{score:{name:"#BaseCapValue",objective:plate_havoc.spawnpoint_energy},color:gold}]
 
 ##Bar UI
+data remove storage plate_havoc:ui bar
+
 data modify storage plate_havoc:ui bar.visual set value {active:[],inactive:[],visible:[]}
 
 data modify storage plate_havoc:ui bar.queue set value []
@@ -18,7 +22,10 @@ data modify storage plate_havoc:ui bar.queue append value {id:players,text:"",ex
 
 data modify storage plate_havoc:ui bar.colour set value red
 
-##Game End UI
+##Game
+data remove storage plate_havoc:ui game
+
+#End
 data modify storage plate_havoc:ui game.end.visual set value [{text:""}]
 
 data modify storage plate_havoc:ui game.end.queue set value []
@@ -30,6 +37,8 @@ data modify storage plate_havoc:ui game.end.queue append value {id:elasped,text:
 data modify storage plate_havoc:ui game.end.queue append value {id:intensity,text:"",extra:[{text:"Intensity: ",color:gray},{storage:"plate_havoc:data",nbt:intensity,color:gold}]}
 
 ##Leaderboard UI
+data remove storage plate_havoc:ui leaderboard
+
 data modify storage plate_havoc:ui leaderboard.visual set value []
 data modify storage plate_havoc:ui leaderboard.queue set value []
 

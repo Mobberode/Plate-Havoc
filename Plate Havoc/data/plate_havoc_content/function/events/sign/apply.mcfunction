@@ -1,0 +1,1 @@
+$data modify storage plate_havoc:data sign_message set from storage plate_havoc:events data.signs[$(signs_count)].messages

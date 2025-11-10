@@ -1,3 +1,0 @@
-summon item_display ~ ~ ~ {item:{id:red_stained_glass,components:{enchantment_glint_override:true}},Glowing:true,glow_color_override:11731455,brightness:{block:0,sky:5},Tags:["plate_havoc.card.decay_cube.init","plate_havoc.dont_interact"],transformation:{translation:[0.0,0.5,0.0],left_rotation:[0,0,0,1],right_rotation:[0,0,0,1],scale:[1,1,1]},interpolation_duration:1,Passengers:[{id:text_display,Tags:["plate_havoc.dont_interact"],billboard:"center",see_through:true,transformation:{translation:[0.0,0.25,0.0],left_rotation:[0,0,0,1],right_rotation:[0,0,0,1],scale:[1,1,1]}}]}
-
-execute as @e[tag=plate_havoc.card.decay_cube.init] run function plate_havoc:cards/cube_of_decay/setup

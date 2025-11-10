@@ -5,7 +5,7 @@ execute in plate_havoc:arena positioned 0 64 0 run function plate_havoc:game/lob
 
 scoreboard players set #Game plate_havoc.status 1
 
-function #plate_havoc:cache
+function plate_havoc:extensions/run
 function plate_havoc:game/lobby/post/arena
 $function $(function)
 

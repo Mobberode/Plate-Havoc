@@ -1,1 +1,0 @@
-execute if data entity @s interaction run function plate_havoc:events/zzz_console/shop/entity/process_action

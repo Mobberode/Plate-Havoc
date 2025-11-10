@@ -1,4 +1,8 @@
 #Get template and id
 $data modify storage plate_havoc:cards template set from storage plate_havoc:cards active[{slot:$(slot)}]
 
-execute unless data storage plate_havoc:cards template{non_card:true} run function plate_havoc:game/misc/cards/vote/end/process_for_running
+##Process
+execute unless data storage plate_havoc:cards template{non_card:true} run return run function plate_havoc:game/misc/cards/vote/end/process_for_running
+
+#If non card and has command
+function plate_havoc:game/misc/cards/vote/end/non_card

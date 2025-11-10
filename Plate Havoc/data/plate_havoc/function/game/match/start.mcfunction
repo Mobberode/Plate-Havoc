@@ -1,4 +1,4 @@
-function plate_havoc:misc/player/clear
+function plate_havoc:game/match/player/clear
 kill @e[type=item]
 execute as @a run function plate_havoc:game/lobby/post/player
 

@@ -1,1 +1,0 @@
-execute as @e[type=marker,tag=plate_havoc.card.glacier_player.sacrificing] run function plate_havoc:cards/glacier_player/tick

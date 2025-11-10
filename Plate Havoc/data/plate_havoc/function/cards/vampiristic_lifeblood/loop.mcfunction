@@ -1,1 +1,0 @@
-execute as @a[tag=plate_havoc.survivor,advancements={plate_havoc:cards/vampiristic_lifeblood=true}] run function plate_havoc:cards/vampiristic_lifeblood/activate

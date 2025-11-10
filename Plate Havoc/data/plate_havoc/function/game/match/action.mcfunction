@@ -1,3 +1,3 @@
-function plate_havoc:game/events/time
-function plate_havoc:game/events/behaviour
-function plate_havoc:game/intensity/start
+function plate_havoc:game/events/time/run
+function plate_havoc:game/events/init
+function plate_havoc:game/events/intensity/run

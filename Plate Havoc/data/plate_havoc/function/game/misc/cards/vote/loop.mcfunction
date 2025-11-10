@@ -3,4 +3,4 @@ execute as @a[scores={plate_havoc.t.select=1..}] run function plate_havoc:game/m
 scoreboard players enable @a plate_havoc.t.select
 
 ##Check for dialog refreshes
-function plate_havoc:game/match/misc/gametype/rogue/dialog_check
+function plate_havoc_content:gametypes/match/rogue/dialog_check

@@ -1,0 +1,1 @@
+$data remove storage plate_havoc:events pool[{exclude:["$(gamemode)"]}]

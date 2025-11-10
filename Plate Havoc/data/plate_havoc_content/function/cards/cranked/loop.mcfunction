@@ -1,0 +1,1 @@
+execute as @a[tag=plate_havoc.survivor] run function plate_havoc_content:cards/cranked/tick

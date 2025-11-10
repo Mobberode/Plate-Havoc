@@ -1,0 +1,1 @@
+scoreboard players remove @s plate_havoc.event.jump_afterdown 1
