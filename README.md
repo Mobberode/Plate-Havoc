@@ -1,15 +1,33 @@
 ### Notice
-Plate Havoc will completly override the vanilla gameplay. Do not play in worlds that you dont want being changed.
+Plate Havoc will completely override the vanilla gameplay. Do not play in worlds that you don't want to be changed.
 
 # Plate Havoc
-The game thats based on the Plate genre of Roblox. Cooperate with a team of players or go solo by yourself to survive endless amounts of random events which gets more harder as the intensity rises up with each event until everyone dies.
+The game that's based on the Plate genre of Roblox. Cooperate with a team of players or go solo by yourself to survive endless amounts of random events which gets more harder as the intensity rises up with each event until everyone dies.
 
 ## Fundamental Gameplay
-Survive events that will randomly happen. The bossbar at the top shows how long until an event. Intensity will rise when events happen, controlling the severity of the events.
+Survive random events. The bossbar up top displays when events happen. Intensity will rise upon an event, controlling the severity of the events.
 
 # Roguelike Test
-## Cyclathrons
-Cyclathrons is money thats shared amongst everyone. Cyclathrons is mainly used to buy Upgrade Cards. How to get Cyclathrons is to collect Clocks that will periodcally spawn around the plate, collecting them will both reduce the time needed until the next Cycle and give Cyclathrons.
+Dying is to be expected. Trial and error are key to success.
 
-## Time and Cards
-Time which naturally ticks down and can be brought further down via Clocks, is the only way to advance to the next Cycle. Completion of the Cycle, players are prompted to vote on a Card that will be in the run. Cards can be Upgrades/Curses. Upgrades will make the game easier, costing Cyclathrons and being able to be skipped. Curses however are forced and will make the game slightly harder and may reward an specified amount of Cyclathrons upon selection.
+## Cyclathrons
+Cyclathrons is a team-shared currency, earned by collecting clocks or other means.\
+Cyclathrons are mainly used to buy Upgrade Cards.
+
+## Time
+Time can be reduced by Clocks and are the only objective for progressing to the next Cycle.\
+Completion of the Cycle will prompt players to select Cards that will affect the run.
+
+## Cards
+Cards provide either a benefit, disadvantage or a mixture of both.\
+Upgrades will make the game easier, costing Cyclathrons and are able to be skipped.\
+Curses are forced and will make the game harder alongside rewarding a specified amount of Cyclathrons based on severity.
+
+# Extensions
+Resource for players wanting to create custom content for Plate Havoc.\
+[Plate Havoc | Extensions Wiki](https://github.com/Mobberode/Plate-Havoc/wiki)
+
+# Inspirations
+- [Nullscape](https://www.roblox.com/games/129279692364812)
+- average plate gaem
+- [Dandys World](https://www.roblox.com/games/16116270224)
