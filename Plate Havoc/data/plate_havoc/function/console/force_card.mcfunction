@@ -10,4 +10,4 @@ scoreboard players reset * plate_havoc.temp
 function plate_havoc:game/misc/cards/running/types/start
 
 function plate_havoc:game/misc/cards/running/types/run {type:on.start}
-function plate_havoc:game/misc/cards/running/types/run {type:set.attribute}
+execute as @a run function plate_havoc:game/misc/cards/running/types/run {type:set.attribute}

@@ -10,4 +10,4 @@ function plate_havoc:game/misc/cards/vote/player/slot_exist_check
 scoreboard players reset @s plate_havoc.t.select
 
 ##Refresh dialog
-function plate_havoc_content:gametypes/match/rogue/dialog_refresh
+function plate_havoc:game/misc/cards/vote/dialog_refresh

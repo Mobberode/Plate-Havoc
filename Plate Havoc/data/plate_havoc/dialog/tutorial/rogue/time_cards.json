@@ -3,8 +3,8 @@
     "title": "Plate Havoc Roguelike Test Intro",
     "exit_action": {"label":"Back","action":{"type":"show_dialog","dialog":"plate_havoc:tutorial/rogue/cyclathrons"}},
     "body": [
-        {"type":"plain_message","contents":[{"text":""},{"text":"-- Time --\n","color":"gold"},{"text":"Time can be reduced by Clocks and are the only objective for progressing to the next Cycle.\n\nCompletion of the Cycle will prompt players to select Cards that will be in the run."}],"width":448},
-        {"type":"plain_message","contents":[{"text":""},{"text":"-- Cards --\n","color":"gold"},{"text":"Cards provide either a benefit, disadvantage or a mixture of both.\n\nUpgrades will make the game easier, costing Cyclathrons and are able to be skipped.\n\nCurses are forced and will make the game slightly harder and may reward an specified amount of Cyclathrons upon selection."}],"width":448}
+        {"type":"plain_message","contents":[{"text":""},{"text":"-- Time --\n","color":"gold"},{"text":"Time can be reduced by Clocks and are the only objective for progressing to the next Cycle.\n\nCompletion of the Cycle will prompt players to select Cards that will affect the run."}],"width":448},
+        {"type":"plain_message","contents":[{"text":""},{"text":"-- Cards --\n","color":"gold"},{"text":"Cards provide either a benefit, disadvantage or a mixture of both.\n\nUpgrades will make the game easier, costing Cyclathrons and are able to be skipped.\n\nCurses are forced and will make the game harder alongside rewarding a specified amount of Cyclathrons based on severity."}],"width":448}
     ],
     "actions": [
         {"label":{"text":"Proceed to next section"},"width":256,"action":{"type":"show_dialog","dialog":"plate_havoc:tutorial/rogue/closing_notes"}}

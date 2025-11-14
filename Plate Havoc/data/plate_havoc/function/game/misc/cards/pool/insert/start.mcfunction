@@ -6,4 +6,4 @@ function plate_havoc:game/misc/cards/pool/select
 function plate_havoc:game/misc/cards/pool/insert/run
 
 ##Refresh dialog
-function plate_havoc_content:gametypes/match/rogue/dialog_refresh
+function plate_havoc:game/misc/cards/vote/dialog_refresh

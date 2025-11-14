@@ -24,3 +24,5 @@ function plate_havoc:game/misc/cards/vote/end/duplicate_check with storage plate
 
 ##Visual
 function plate_havoc:game/misc/cards/vote/end/tellraw
+##Card Type Sound
+function plate_havoc:game/misc/cards/vote/end/sound/start

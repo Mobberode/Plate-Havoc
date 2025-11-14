@@ -8,7 +8,7 @@
 
         {"type":"plain_message","contents":[{"text":""},{"text":"- Fundamental Gameplay -\n","color":"green"},{"text":"Survive random events. The bossbar up top displays when events happen. Intensity will rise upon an event, controlling the severity of the events."}],"width":448},
 
-        {"type":"plain_message","contents":[{"text":"Dying is to be expected. Trial and error is key to success.","color":"gold"}],"width":448},
+        {"type":"plain_message","contents":[{"text":"Dying is to be expected. Trial and error are key to success.","color":"gold"}],"width":448},
 
         {"type":"plain_message","contents":[{"text":""},{"text":"","color":"gold"},{"text":"Skipping this is not reccomended for first time players.","color":"red"}],"width":448},
         {"type":"plain_message","contents":[{"text":""},{"text":"","color":"gold"},{"text":"If you want to leave in this state. Press the warning symbol at the top of the screen and [Disconnect] / [Save and Quit to Title]","color":"yellow"}],"width":448}

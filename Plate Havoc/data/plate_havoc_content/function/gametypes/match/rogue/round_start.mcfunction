@@ -9,7 +9,6 @@ function plate_havoc_content:gametypes/match/rogue/calc_time
 advancement revoke @a from plate_havoc:cards/root
 function plate_havoc:game/misc/cards/running/types/start
 function plate_havoc:game/misc/cards/running/types/run {type:on.start}
-function plate_havoc:game/misc/cards/running/types/run {type:set.attribute}
 
 function plate_havoc_content:gametypes/match/rogue/store_clock
 
