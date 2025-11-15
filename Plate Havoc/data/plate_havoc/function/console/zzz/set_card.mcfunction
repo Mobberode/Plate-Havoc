@@ -1,11 +1,11 @@
 ##Modify card name
 #Name
-data modify storage plate_havoc:cards template.body.extra[{metadata:name}].text set from storage plate_havoc:cards template.name
-data modify storage plate_havoc:cards template.action.label[{metadata:name}].text set from storage plate_havoc:cards template.name
+data modify storage plate_havoc:cards template.text.body.extra[{metadata:name}].text set from storage plate_havoc:cards template.name
+data modify storage plate_havoc:cards template.text.action.label[{metadata:name}].text set from storage plate_havoc:cards template.name
 #Colour
 data modify storage plate_havoc:custom card_type set from storage plate_havoc:cards template.type
 function plate_havoc:console/zzz/set_colour with storage plate_havoc:custom
-data modify storage plate_havoc:cards template.body.extra[{metadata:name}].color set from storage plate_havoc:cards active_type.colour
+data modify storage plate_havoc:cards template.text.body.extra[{metadata:name}].color set from storage plate_havoc:cards active_type.colour
 
 ##Data
 #Cost

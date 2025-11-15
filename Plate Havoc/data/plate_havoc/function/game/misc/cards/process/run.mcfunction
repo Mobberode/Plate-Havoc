@@ -2,8 +2,8 @@
 function plate_havoc:game/misc/cards/process/card/data
 
 ##
-data modify storage plate_havoc:ui game_select_cards.extra append from storage plate_havoc:cards card.body
-data modify storage plate_havoc:ui game_select_actions append from storage plate_havoc:cards card.action
+data modify storage plate_havoc:ui game_select_cards.extra append from storage plate_havoc:cards card.text.body
+data modify storage plate_havoc:ui game_select_actions append from storage plate_havoc:cards card.text.action
 
 #Remove but append
 data modify storage plate_havoc:cards active append from storage plate_havoc:cards card

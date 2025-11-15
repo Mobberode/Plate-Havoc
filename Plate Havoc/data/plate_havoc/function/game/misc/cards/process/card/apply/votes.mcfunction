@@ -1,3 +1,4 @@
-data modify storage plate_havoc:cards card.action.label append value {partition:votes,text:" (",extra:[{text:"null",extra:[{text:"/"},{part:max,text:"1"},{text:")"}]}]}
-data modify storage plate_havoc:cards card.action.label[{partition:votes}].extra[].id set from storage plate_havoc:cards card.id
-data modify storage plate_havoc:cards card.action.label[{partition:votes}].extra[].text set value "0"
+data modify storage plate_havoc:temp temp set value {partition:votes,text:" "}
+data modify storage plate_havoc:temp temp.extra set from storage plate_havoc:cards voting.snbt
+
+data modify storage plate_havoc:cards card.text.action.label append from storage plate_havoc:temp temp

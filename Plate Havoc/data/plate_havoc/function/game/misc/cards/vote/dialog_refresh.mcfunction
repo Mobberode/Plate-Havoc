@@ -1,8 +1,8 @@
+##Refresh the dialog
 scoreboard players operation #Match plate_havoc.players = #Temp plate_havoc.players
 
 function plate_havoc:game/misc/cards/vote/internal
 
-function plate_havoc:game/misc/cards/vote/requirement/calculate
-data modify storage plate_havoc:ui game_select_actions[].label[{partition:votes}].extra[].extra[{part:max}].text set string storage plate_havoc:cards voting_requirement
+function plate_havoc:game/misc/cards/vote/requirement/check
 
 execute as @a[tag=!plate_havoc.spectator] run function plate_havoc:game/misc/cards/vote/dialog_card with storage plate_havoc:ui

@@ -1,6 +1,6 @@
 data modify storage plate_havoc:cards card.slot set from storage plate_havoc:cards slot
-data modify storage plate_havoc:cards card.action.slot set from storage plate_havoc:cards slot
-data modify storage plate_havoc:cards card.body.slot set from storage plate_havoc:cards slot
+data modify storage plate_havoc:cards card.text.action.slot set from storage plate_havoc:cards slot
+data modify storage plate_havoc:cards card.text.body.slot set from storage plate_havoc:cards slot
 data modify storage plate_havoc:cards id set from storage plate_havoc:cards card.id
 
 data remove storage plate_havoc:cards cost

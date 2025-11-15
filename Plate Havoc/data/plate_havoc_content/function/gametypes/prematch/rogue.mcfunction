@@ -50,8 +50,7 @@ scoreboard players set #CyclathronMultiplier plate_havoc.num 100
 scoreboard players set #ClockCollectTimeReduction plate_havoc.num 2
 scoreboard players set #BaseClockRange plate_havoc.num 0
 
-scoreboard players set #BaseCardLimit plate_havoc.num 3
-scoreboard players operation #MaxCardLimit plate_havoc.num = #BaseCardLimit plate_havoc.num
+scoreboard players set #CardCountModifier plate_havoc.num 0
 
 data modify storage plate_havoc:cards locked set from storage plate_havoc:cards data
 data modify storage plate_havoc:cards pool set value []

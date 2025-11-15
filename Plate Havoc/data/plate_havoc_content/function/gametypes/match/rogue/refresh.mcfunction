@@ -1,4 +1,4 @@
-function plate_havoc_content:gametypes/match/rogue/set_voting
+function plate_havoc:game/misc/cards/vote/set
 
 scoreboard players reset @a plate_havoc.z.select
 scoreboard players reset @a plate_havoc.t.select

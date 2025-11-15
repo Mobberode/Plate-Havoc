@@ -1,4 +1,4 @@
-function plate_havoc_content:gametypes/match/rogue/set_voting
+function plate_havoc:game/misc/cards/vote/set
 
 function plate_havoc:game/misc/cards/running/card_list
 function plate_havoc:game/misc/cards/reset

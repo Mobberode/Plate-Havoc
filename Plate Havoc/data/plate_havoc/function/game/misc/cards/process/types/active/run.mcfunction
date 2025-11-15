@@ -12,4 +12,9 @@ data modify storage plate_havoc:ui card_type set from storage plate_havoc:cards 
 data remove storage plate_havoc:cards attributes
 data modify storage plate_havoc:cards attributes set from storage plate_havoc:cards active_type.attributes
 
+##Attribute - Voting
+function plate_havoc:game/misc/cards/process/attributes/voting/start
+##Attribute - Slots
+function plate_havoc:game/misc/cards/process/attributes/slots/start
+
 data remove storage plate_havoc:cards active_types[0]
