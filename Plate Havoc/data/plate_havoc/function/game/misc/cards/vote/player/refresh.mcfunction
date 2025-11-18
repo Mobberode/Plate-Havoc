@@ -1,1 +1,1 @@
-$data modify storage plate_havoc:ui game_select_actions[{slot:$(slot)}].label[{partition:votes}].extra[{part:count}].text set string storage plate_havoc:cards slots[{slot:$(slot)}].votes
+$data modify storage plate_havoc:ui card_select_action[{slot:$(slot)}].label[{partition:votes}].extra[{part:count}].text set string storage plate_havoc:cards active[{slot:$(slot)}].values.votes

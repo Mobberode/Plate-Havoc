@@ -2,4 +2,5 @@ data modify storage plate_havoc:ui event_message set value [{text:"Seems like th
 scoreboard players set #EventNotify.Display_Count plate_havoc.num 0
 function plate_havoc:game/events/message/run
 
-execute in plate_havoc:arena positioned 0 0 0 run function plate_havoc:game/misc/world/biome with storage plate_havoc:data
+data remove storage plate_havoc:custom biomes[{id:"plate_havoc_content:acid_rain"}]
+function plate_havoc:game/misc/world/biome/run

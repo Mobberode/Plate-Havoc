@@ -31,7 +31,8 @@ scoreboard players set #Modifiers.Chance plate_havoc.num 20
 scoreboard players set #Modifiers.Entries plate_havoc.num 3
 
 ##world
-data modify storage plate_havoc:data biome set value "plate_havoc:void"
+function plate_havoc:game/misc/world/biome/init
+data modify storage plate_havoc:custom biomes append value {id:"plate_havoc:void",biome:"plate_havoc:void",priority:0}
 data modify storage plate_havoc:data weather set value "clear"
 #Time
 scoreboard players set #BaseWorldTime plate_havoc.num 0

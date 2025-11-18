@@ -8,10 +8,6 @@ data modify storage plate_havoc:cards card.text.action.label[{metadata:name}].te
 #Colour
 data modify storage plate_havoc:cards card.text.body.extra[{metadata:name}].color set from storage plate_havoc:cards active_type.colour
 
-##Default visuals to 0
-data modify storage plate_havoc:cards template.slots set value {slot:-1,votes:0,cost:0,reward:0}
-data modify storage plate_havoc:cards template.slots.slot set from storage plate_havoc:cards slot
-
 execute if data storage plate_havoc:cards cost run function plate_havoc:game/misc/cards/process/card/apply/cost
 execute if data storage plate_havoc:cards reward run function plate_havoc:game/misc/cards/process/card/apply/reward
 function plate_havoc:game/misc/cards/process/card/apply/votes

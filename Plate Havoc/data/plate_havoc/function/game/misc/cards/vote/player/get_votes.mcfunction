@@ -1,1 +1,1 @@
-$execute store result storage plate_havoc:cards slots[{slot:$(slot)}].votes int 1 run scoreboard players get #SavedVotes plate_havoc.num
+execute store result storage plate_havoc:temp temp.active.values.votes int 1 run scoreboard players get #SavedVotes plate_havoc.num

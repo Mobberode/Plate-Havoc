@@ -2,7 +2,6 @@
 execute unless data storage plate_havoc:cards attributes{player_scaling:false} run function plate_havoc:game/misc/cards/process/card/apply/cost_scale
 
 ##Data
-data modify storage plate_havoc:cards template.slots.cost set from storage plate_havoc:cards cost
 #tellraw @a {storage:"plate_havoc:cards",nbt:cost,color:aqua}
 
 ##Visual

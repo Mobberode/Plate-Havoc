@@ -1,9 +1,6 @@
-data modify storage plate_havoc:ui game_select_cards set value {text:"",extra:[]}
+data modify storage plate_havoc:ui card_select_body set value {text:"",extra:[]}
 
-data modify storage plate_havoc:ui game_select_cards_queue set value []
-data modify storage plate_havoc:ui game_select_actions set value []
+data modify storage plate_havoc:ui card_select_body_queue set value []
+data modify storage plate_havoc:ui card_select_action set value []
 
-data modify storage plate_havoc:cards active set value []
-data modify storage plate_havoc:cards temp set value []
-
-data modify storage plate_havoc:cards select_pool set value []
+function plate_havoc:game/misc/cards/reset_data

@@ -1,1 +1,1 @@
-$execute store result score #SlotExists plate_havoc.num if data storage plate_havoc:cards slots[{slot:$(slot)}]
+$execute store result score #SlotExists plate_havoc.num if data storage plate_havoc:cards active[{slot:$(slot)}]

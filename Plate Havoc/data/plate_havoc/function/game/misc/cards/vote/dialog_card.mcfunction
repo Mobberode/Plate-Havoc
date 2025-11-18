@@ -22,7 +22,7 @@ $dialog show @s {\
         \
         {text:"\n\n"},$(card_type),\
         ],width:448},\
-        {type:"plain_message",contents:{text:"",extra:[$(game_select_cards)]},width:448}\
+        {type:"plain_message",contents:{text:"",extra:[$(card_select_body)]},width:448}\
     ],\
-    actions:$(game_select_actions)\
+    actions:$(card_select_action)\
 }
