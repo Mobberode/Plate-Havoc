@@ -1,2 +1,4 @@
+execute if data storage plate_havoc:cards {info:["stop_processing_attributes"]} run return fail
+
 execute if data storage plate_havoc:cards {attributes:{multiple_selection:true}} run function plate_havoc:game/misc/cards/process/attributes/multiple_selection/run
 execute if data storage plate_havoc:cards {attributes:{rerollable:{}}} run function plate_havoc:game/misc/cards/process/attributes/rerollable/run

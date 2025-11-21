@@ -1,1 +1,1 @@
-$data modify storage plate_havoc:temp temp.active set from storage plate_havoc:cards active[{slot:$(slot)}]
+$data modify storage plate_havoc:cards active_entry set from storage plate_havoc:cards active[{slot:$(slot)}]

@@ -1,1 +1,1 @@
-$data remove storage plate_havoc:cards running.total[{id:$(id)}]
+$data remove storage plate_havoc:cards running.total[{id:"$(id)"}]

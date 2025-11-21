@@ -3,10 +3,10 @@
     "title": "Plate Havoc Console",
     "columns": 1,
     "exit_action": {"label":"Back","action":{"type":"show_dialog","dialog":"plate_havoc:console"}},
-    "inputs": [{"key":"id","type":"text","label":"Card ID"}],
+    "inputs": [{"key":"id","type":"text","label":"Card ID","max_length": 2048}],
     
     "actions": [
-    {"label":"Force Card","action":{"type":"dynamic/run_command","template":"function plate_havoc:console/force_card {id:$(id)}"}},
-    {"label":"Remove Card","action":{"type":"dynamic/run_command","template":"function plate_havoc:console/force_remove_card {id:$(id)}"}}
+    {"label":"Force Card","action":{"type":"dynamic/run_command","template":"function plate_havoc:console/force_card {id:'$(id)'}"}},
+    {"label":"Remove Card","action":{"type":"dynamic/run_command","template":"function plate_havoc:console/force_remove_card {id:'$(id)'}"}}
     ]
 }

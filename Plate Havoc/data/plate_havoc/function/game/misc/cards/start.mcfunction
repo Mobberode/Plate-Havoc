@@ -1,4 +1,5 @@
 ##Start
+data modify storage plate_havoc:cards info set value []
 function plate_havoc:game/misc/cards/pool/temp with storage plate_havoc:cards
 
 scoreboard players set #ProcessedCards plate_havoc.num 0

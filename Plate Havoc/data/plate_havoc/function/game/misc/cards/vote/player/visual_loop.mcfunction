@@ -10,8 +10,6 @@ function plate_havoc:game/misc/cards/vote/player/transfer with storage plate_hav
 
 #Update slot vote count
 function plate_havoc:game/misc/cards/vote/player/get_votes with storage plate_havoc:cards
-#Update visual slot vote count
-function plate_havoc:game/misc/cards/vote/player/refresh with storage plate_havoc:cards
 
 ##Update from temp
 function plate_havoc:game/misc/cards/vote/player/upload with storage plate_havoc:cards

@@ -1,1 +1,2 @@
-execute store result storage plate_havoc:temp temp.active.values.votes int 1 run scoreboard players get #SavedVotes plate_havoc.num
+execute store result storage plate_havoc:cards active_entry.values.votes int 1 run scoreboard players get #SavedVotes plate_havoc.num
+data modify storage plate_havoc:cards active_entry.visual.action.label[{partition:votes}].extra[{part:count}].text set string storage plate_havoc:cards active_entry.values.votes
