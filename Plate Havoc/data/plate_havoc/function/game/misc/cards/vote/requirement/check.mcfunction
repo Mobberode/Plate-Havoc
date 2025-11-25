@@ -1,3 +1,4 @@
+#tellraw @a ["[Debug]","vote/requirement/check: Calculated vote requirement."]
 ##If not hidden
 #Unless hidden
 execute unless score #Card.HideRequiredVotes plate_havoc.num matches ..0 run return fail

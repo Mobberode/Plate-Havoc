@@ -1,3 +1,4 @@
+#tellraw @a ["[Debug]","process/attributes/rerollable/run: Wiped current selection and appended new cards."]
 ##Rerollable data
 #Check if status = false, if false then stop
 execute if data storage plate_havoc:cards attributes.rerollable{status:false} run return fail

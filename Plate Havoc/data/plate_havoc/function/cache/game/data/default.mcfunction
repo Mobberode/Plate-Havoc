@@ -37,7 +37,7 @@ data modify storage plate_havoc:data weather set value "clear"
 #Time
 scoreboard players set #BaseWorldTime plate_havoc.num 0
 #World Border (1000 = 100.0)
-scoreboard players set #BaseWorldBorderWidth plate_havoc.num 4750
+scoreboard players set #BaseWorldBorderWidth plate_havoc.num 3200
 #Void (Height) (Damage)
 scoreboard players set #BaseVoidHeight plate_havoc.num -128
 scoreboard players set #BaseVoidDamage plate_havoc.num 0
@@ -60,3 +60,13 @@ data modify storage plate_havoc:data on_game_start set value []
 
 ##Events Global
 scoreboard players set #EventNotify plate_havoc.num 1
+
+##Presets
+data modify storage plate_havoc:cards preset.attributes.voting.behaviour.timed.functions set value {on_vote:"plate_havoc:game/misc/cards/attributes/voting/mode/global/blank",voting_start:"plate_havoc:game/misc/cards/attributes/voting/mode/timed/voting_start",loop:"plate_havoc:game/misc/cards/attributes/voting/mode/timed/loop"}
+
+data modify storage plate_havoc:cards preset.attributes.voting.behaviour.votes.functions set value {on_vote:"plate_havoc:game/misc/cards/attributes/voting/mode/votes/on_vote"}
+
+##Cyclathron
+scoreboard players set #BaseCyclathronCostScale plate_havoc.num 100
+scoreboard players set #BaseCyclathronRewardScale plate_havoc.num 100
+scoreboard players set #Cyclathron plate_havoc.num 0

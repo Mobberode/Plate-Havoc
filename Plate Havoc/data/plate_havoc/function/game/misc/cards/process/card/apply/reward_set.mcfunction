@@ -1,0 +1,1 @@
+$execute store result storage plate_havoc:cards reward double $(multiplier) run data get storage plate_havoc:cards reward

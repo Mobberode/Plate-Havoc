@@ -7,3 +7,5 @@ execute store result storage plate_havoc:ui cyclathron double 0.01 run scoreboar
 
 execute store result storage plate_havoc:ui round int 1 run scoreboard players get #Value plate_havoc.round
 data modify storage plate_havoc:ui round set string storage plate_havoc:ui round
+
+data modify storage plate_havoc:cards active[].values.votes set value 0

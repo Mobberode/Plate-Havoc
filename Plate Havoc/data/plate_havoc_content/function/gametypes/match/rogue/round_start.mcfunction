@@ -1,4 +1,5 @@
 scoreboard players set #Game plate_havoc.status 2
+scoreboard players set #TimeCubeTick plate_havoc.temp 0
 
 execute store result score #Starting plate_havoc.players if entity @a[tag=!plate_havoc.spectator]
 

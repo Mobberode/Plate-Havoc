@@ -1,0 +1,1 @@
+$data modify storage plate_havoc:temp pool.sorted append from storage plate_havoc:temp pool.total[{votes:$(votes)}]

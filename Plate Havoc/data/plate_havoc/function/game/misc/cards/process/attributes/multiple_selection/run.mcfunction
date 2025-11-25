@@ -1,3 +1,4 @@
+#tellraw @a ["[Debug]","process/attributes/multiple_selection/run: Appened new card"]
 ##Actions
 data modify storage plate_havoc:cards active_entry set value {id:"plate_havoc:continue",visual:{action:{label:[{text:"Continue"},{partition:votes,text:" "}],width:192}},non_card:true}
 

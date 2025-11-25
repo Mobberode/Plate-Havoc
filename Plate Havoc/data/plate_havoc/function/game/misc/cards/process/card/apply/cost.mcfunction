@@ -2,7 +2,7 @@
 execute unless data storage plate_havoc:cards attributes{player_scaling:false} run function plate_havoc:game/misc/cards/process/card/apply/cost_scale
 
 ##Data
-#tellraw @a {storage:"plate_havoc:cards",nbt:cost,color:aqua}
+#tellraw @a ["[Debug]","Cost",{storage:"plate_havoc:cards",nbt:cost,color:aqua}]
 
 ##Visual
 data modify storage plate_havoc:cards snbt.action.label append value {partition:cost,text:" ",extra:["(",{part:sign,text:""},{part:cost,text:"0"}," ","Cyclathrons",")"]}

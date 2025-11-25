@@ -1,3 +1,4 @@
-scoreboard players set #FinishVoting plate_havoc.num 1
+##Set the slot to upload as template based on votes
+function plate_havoc:game/misc/cards/attributes/voting/mode/timed/internal/sort/start
 
-function plate_havoc:game/misc/cards/attributes/voting/mode/timed/voting_start
+execute unless score #FinishVoting plate_havoc.num matches 1.. run function plate_havoc:game/misc/cards/attributes/voting/mode/timed/internal/continue

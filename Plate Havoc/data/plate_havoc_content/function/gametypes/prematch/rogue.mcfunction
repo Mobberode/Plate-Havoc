@@ -43,12 +43,13 @@ data modify storage plate_havoc:leaderboard include_stats append value {type:sto
 ### Game contents
 
 scoreboard players set #Value plate_havoc.round 0
-scoreboard players set #Cyclathron plate_havoc.num 0
+scoreboard players set #TimeCubeTick plate_havoc.temp 0
 
 scoreboard players set #BaseCyclathronAmount plate_havoc.num 100
 scoreboard players set #CyclathronMultiplier plate_havoc.num 100
 scoreboard players set #ClockCollectTimeReduction plate_havoc.num 2
 scoreboard players set #BaseClockRange plate_havoc.num 0
+scoreboard players set #BaseClockSpawnTick plate_havoc.num 100
 
 scoreboard players set #CardCountModifier plate_havoc.num 0
 
