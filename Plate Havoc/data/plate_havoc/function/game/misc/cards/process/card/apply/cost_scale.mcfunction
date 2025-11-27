@@ -6,5 +6,7 @@ scoreboard players remove #PlayerScale plate_havoc.temp 1
 scoreboard players operation #PlayerScale plate_havoc.temp *= #10 plate_havoc.num
 scoreboard players operation #CyclathronScale plate_havoc.temp += #PlayerScale plate_havoc.temp
 #Apply
-execute store result storage plate_havoc:temp multiplier double 0.01 run scoreboard players get #CyclathronScale plate_havoc.temp
-function plate_havoc:game/misc/cards/process/card/apply/cost_set with storage plate_havoc:temp
+execute store result score #CyclathronCost plate_havoc.temp run data get storage plate_havoc:cards cost 100
+scoreboard players operation #CyclathronCost plate_havoc.temp *= #CyclathronScale plate_havoc.temp
+scoreboard players operation #CyclathronCost plate_havoc.temp /= #100 plate_havoc.num
+execute store result storage plate_havoc:cards cost double 0.01 run scoreboard players get #CyclathronCost plate_havoc.temp

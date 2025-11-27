@@ -1,1 +1,2 @@
+execute store result score #ProcessedCards plate_havoc.num run data get storage plate_havoc:cards template.slot
 tellraw @a [{storage:"plate_havoc:cards",nbt:snbt,interpret:true},{text:"\nCard Level: ",color:blue},{score:{name:"#CardCount",objective:plate_havoc.num},color:aqua},{text:"\nVoted by: ",color:gray},{selector:"@a[tag=!plate_havoc.spectator,predicate=plate_havoc:specfic/card]",color:yellow}]

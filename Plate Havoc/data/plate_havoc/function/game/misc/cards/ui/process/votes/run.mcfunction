@@ -13,7 +13,3 @@ function plate_havoc:game/misc/cards/vote/player/get_votes with storage plate_ha
 
 ##Update from temp
 function plate_havoc:game/misc/cards/vote/player/upload with storage plate_havoc:temp
-
-#Remove processed and loop
-data remove storage plate_havoc:cards temp[-1]
-execute if data storage plate_havoc:cards temp[-1] run function plate_havoc:game/misc/cards/ui/process/loop

@@ -9,7 +9,7 @@ data modify storage plate_havoc:cards temp set from storage plate_havoc:cards at
 function plate_havoc:game/misc/cards/process/attributes/rerollable/cost
 
 ##Label for active
-data modify storage plate_havoc:temp temp set value {label:[{text:"Reroll Cards"},{partition:votes,text:" "}],width:256}
+data modify storage plate_havoc:temp temp set value {label:[{metadata:name,text:"Reroll Cards"},{partition:votes,text:" "}],width:256}
 data modify storage plate_havoc:temp temp.label[{partition:votes}].extra set from storage plate_havoc:cards voting.snbt
 #Cost
 data modify storage plate_havoc:temp temp.label insert 1 value {partition:cost,text:" ",extra:["(",{part:sign,text:""},{part:cost,text:"0"}," ","Cyclathrons",")"]}
