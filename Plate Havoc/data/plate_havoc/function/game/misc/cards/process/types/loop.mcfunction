@@ -1,8 +1,7 @@
 data modify storage plate_havoc:cards temp_type set from storage plate_havoc:cards temp_types[0]
 
-execute store result score #Multiple_of plate_havoc.num run data get storage plate_havoc:cards temp_type.multiple_of
-
-function plate_havoc:game/misc/cards/process/types/check
+scoreboard players set #Pass plate_havoc.temp 0
+function plate_havoc:game/misc/cards/process/types/multiple_loop
 
 data remove storage plate_havoc:cards temp_types[0]
 execute if data storage plate_havoc:cards temp_types[0] run function plate_havoc:game/misc/cards/process/types/loop

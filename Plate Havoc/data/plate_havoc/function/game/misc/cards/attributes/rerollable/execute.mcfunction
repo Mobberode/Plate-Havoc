@@ -3,7 +3,7 @@ execute unless data storage plate_havoc:cards attributes.rerollable.cost{scale:f
 
 ##Set
 execute store result score #Card.KeepInPool plate_havoc.num if data storage plate_havoc:cards attributes.rerollable{remove_cards:false}
-scoreboard players set #Continue plate_havoc.num 0
+scoreboard players set #Card.Continue plate_havoc.num 0
 
 ##Remove all cards
 #Copy non card actions to temp for restoring

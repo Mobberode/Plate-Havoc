@@ -1,3 +1,4 @@
+scoreboard players set #Card.SelectionsMade plate_havoc.temp 0
 scoreboard players set #Card.Can_Vote plate_havoc.num 1
 
 ##Active types

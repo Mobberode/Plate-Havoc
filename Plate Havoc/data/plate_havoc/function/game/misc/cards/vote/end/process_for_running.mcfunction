@@ -1,3 +1,7 @@
+scoreboard players add #Card.SelectionsMade plate_havoc.temp 1
+#
+function plate_havoc:game/misc/cards/attributes/selection/continue_condition
+
 #Finish processing of currency
 scoreboard players operation #Cyclathron plate_havoc.num -= #CyclathronCost plate_havoc.num
 scoreboard players operation #Cyclathron plate_havoc.num += #CyclathronGain plate_havoc.num
@@ -26,3 +30,7 @@ function plate_havoc:game/misc/cards/vote/end/duplicate_check with storage plate
 function plate_havoc:game/misc/cards/vote/end/tellraw
 ##Card Type Sound
 function plate_havoc:game/misc/cards/vote/end/sound/start
+
+## Attributes
+##Insert additional cards if selection allows
+execute unless data storage plate_havoc:cards {attributes:{selection:{replace_cards:false}}} run return run function plate_havoc:game/misc/cards/process/attributes/selection/insert

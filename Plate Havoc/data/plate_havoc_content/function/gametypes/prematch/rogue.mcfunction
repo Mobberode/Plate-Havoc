@@ -28,8 +28,7 @@ data modify storage plate_havoc:data last_alive_function set value "plate_havoc_
 
 data modify storage plate_havoc:data default_gamemode set value "survival"
 difficulty hard
-gamerule keepInventory true
-#gamerule keep_inventory true
+gamerule keep_inventory true
 
 data modify storage plate_havoc:data on_game_start append value "plate_havoc:game/time/tick_down"
 

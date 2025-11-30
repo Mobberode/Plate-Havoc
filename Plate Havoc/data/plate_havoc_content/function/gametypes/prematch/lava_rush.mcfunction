@@ -17,16 +17,11 @@ data modify storage plate_havoc:data default_gamemode set value "survival"
 data modify storage plate_havoc:data set_plate_function set value "plate_havoc_content:gametypes/prematch/lava_rush/fill"
 data modify storage plate_havoc:data on_event_function set value "plate_havoc_content:gametypes/match/lava_rush/action"
 
-gamerule doTileDrops true
-gamerule doMobLoot true
-gamerule randomTickSpeed 115
-gamerule doDaylightCycle true
-gamerule doWeatherCycle true
-#gamerule block_drops true
-#gamerule mob_drops true
-#gamerule random_tick_speed 115
-#gamerule advance_time true
-#gamerule advance_weather true
+gamerule block_drops true
+gamerule mob_drops true
+gamerule random_tick_speed 115
+gamerule advance_time true
+gamerule advance_weather true
 
 data modify storage plate_havoc:data on_game_start append value "plate_havoc_content:gametypes/prematch/lava_rush/run"
 

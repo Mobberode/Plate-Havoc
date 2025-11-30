@@ -1,32 +1,23 @@
 {
+  "attributes": {
+    "minecraft:visual/fog_color": "#000000",
+    "minecraft:visual/cloud_height": 1280,
+    "minecraft:audio/background_music": {
+      "default": {"min_delay": 0, "max_delay": 0, "sound": "music.end", "replace_current_music": true}
+    },
+    "minecraft:audio/music_volume": 1,
+    "minecraft:visual/ambient_particles": [{"particle":{"type":"minecraft:ash"},"probability":0.1}],
+    "minecraft:visual/sky_color": "#000000",
+    "visual/fog_start_distance": 32,
+    "visual/fog_end_distance": 94
+  },
   "has_precipitation": false,
   "carvers": [],
   "downfall": 0.5,
   "effects": {
-    "fog_color": 0,
     "water_color": 4159204,
-    "water_fog_color": 329011,
-    "dry_foliage_color": 0,
-    "music": [
-      {
-        "weight": 1,
-        "data": {
-          "sound": "minecraft:music.end",
-          "min_delay": 0,
-          "max_delay": 0,
-          "replace_current_music": true
-        }
-      }
-    ],
-    "music_volume": 2,
-    "sky_color": 0,
-    "particle": {
-      "options": {
-        "type": "minecraft:ash"
+    "dry_foliage_color": 0
       },
-      "probability": 0.33
-    }
-  },
   "features": [
     [],
     [],
