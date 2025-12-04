@@ -27,6 +27,7 @@ function plate_havoc:game/misc/cards/vote/end/left_check
 function plate_havoc:game/misc/cards/vote/end/duplicate_check with storage plate_havoc:cards
 
 ##Visual
+function plate_havoc:game/misc/cards/vote/end/visualize_cyclathron
 function plate_havoc:game/misc/cards/vote/end/tellraw
 ##Card Type Sound
 function plate_havoc:game/misc/cards/vote/end/sound/start

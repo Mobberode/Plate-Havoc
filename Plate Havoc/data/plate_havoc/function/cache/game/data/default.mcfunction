@@ -66,7 +66,13 @@ data modify storage plate_havoc:cards preset.attributes.voting.behaviour.timed.f
 
 data modify storage plate_havoc:cards preset.attributes.voting.behaviour.votes.functions set value {on_vote:"plate_havoc:game/misc/cards/attributes/voting/mode/votes/on_vote"}
 
+data modify storage plate_havoc:cards preset.attributes.voting.behaviour.mixed.functions set value {on_vote:"plate_havoc:game/misc/cards/attributes/voting/mode/mixed/on_vote",voting_start:"plate_havoc:game/misc/cards/attributes/voting/mode/mixed/voting_start",loop:"plate_havoc:game/misc/cards/attributes/voting/mode/timed/loop"}
+
+data modify storage plate_havoc:custom attributes set value []
+
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:card.cost.scale",base:1,modifiers:[]}
+
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:card.reward.scale",base:1,modifiers:[]}
+
 ##Cyclathron
-scoreboard players set #BaseCyclathronCostScale plate_havoc.num 100
-scoreboard players set #BaseCyclathronRewardScale plate_havoc.num 100
 scoreboard players set #Cyclathron plate_havoc.num 0

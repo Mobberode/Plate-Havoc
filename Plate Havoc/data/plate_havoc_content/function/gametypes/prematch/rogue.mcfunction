@@ -42,13 +42,16 @@ data modify storage plate_havoc:leaderboard include_stats append value {type:sto
 ### Game contents
 
 scoreboard players set #Value plate_havoc.round 0
-scoreboard players set #TimeCubeTick plate_havoc.temp 0
+scoreboard players set #ClockTick plate_havoc.temp 0
 
 scoreboard players set #BaseCyclathronAmount plate_havoc.num 100
 scoreboard players set #CyclathronMultiplier plate_havoc.num 100
 scoreboard players set #ClockCollectTimeReduction plate_havoc.num 2
 scoreboard players set #BaseClockRange plate_havoc.num 0
-scoreboard players set #BaseClockSpawnTick plate_havoc.num 100
+
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:clock.spawn_time",base:5,modifiers:[]}
+function plate_havoc:game/misc/attributes/custom/input {id:"plate_havoc_content:clock.spawn_time"}
+execute store result score #ClockSpawnTick plate_havoc.num run data get storage plate_havoc:custom attribute.output 20
 
 scoreboard players set #CardCountModifier plate_havoc.num 0
 

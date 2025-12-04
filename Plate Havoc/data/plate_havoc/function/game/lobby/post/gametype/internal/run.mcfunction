@@ -12,4 +12,6 @@ $function $(function)
 #Modifiers
 function plate_havoc:game/misc/modifiers/init
 
+stopwatch remove plate_havoc:load_time
+stopwatch create plate_havoc:load_time
 function plate_havoc:game/lobby/post/wait_loop

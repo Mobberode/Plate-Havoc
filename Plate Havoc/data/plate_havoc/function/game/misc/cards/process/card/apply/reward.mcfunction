@@ -1,7 +1,10 @@
 ##Scale
-scoreboard players operation #CyclathronScale plate_havoc.temp = #BaseCyclathronRewardScale plate_havoc.num
+function plate_havoc:game/misc/attributes/custom/input {id:"plate_havoc:card.reward.scale"}
+
+execute store result score #Scale plate_havoc.temp run data get storage plate_havoc:custom attribute.output 100
+
 #Apply
-execute store result storage plate_havoc:temp multiplier double 0.01 run scoreboard players get #CyclathronScale plate_havoc.temp
+execute store result storage plate_havoc:temp multiplier double 0.01 run scoreboard players get #Scale plate_havoc.temp
 function plate_havoc:game/misc/cards/process/card/apply/reward_set with storage plate_havoc:temp
 
 ##Data Debug
