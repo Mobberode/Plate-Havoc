@@ -1,5 +1,4 @@
 execute unless block ~ ~ ~ #plate_havoc:nonsolid run return run kill
-particle glow ~ ~ ~ 0 0 0 0 1 normal @a[scores={plate_havoc.t.bedrock_compatibility=1..}]
 
 function plate_havoc_content:gametypes/match/rogue/time_cube/transformation/init
 

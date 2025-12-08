@@ -35,7 +35,7 @@ data modify storage plate_havoc:data on_game_start append value "plate_havoc:gam
 data modify storage plate_havoc:ui leaderboard.queue prepend value {id:cycle,visual:{text:"",extra:[{text:"Cycle: ",color:gray},{id:cycle,text:"?",color:aqua}]}}
 data modify storage plate_havoc:ui leaderboard.queue append value {id:card_list,visual:{text:"",extra:[{text:"\nCards: ",color:gray},{id:card_list,text:"",extra:[]}]}}
 
-data modify storage plate_havoc:leaderboard sort_function set value "plate_havoc:game/leaderboard/check/cycle"
+data modify storage plate_havoc:leaderboard sort_function set value "plate_havoc:game/misc/leaderboard/check/cycle"
 data modify storage plate_havoc:leaderboard include_stats prepend value {type:score,location:"#Value plate_havoc.round",holder:cycle}
 data modify storage plate_havoc:leaderboard include_stats append value {type:storage,location:"plate_havoc:ui",holder:card_list}
 

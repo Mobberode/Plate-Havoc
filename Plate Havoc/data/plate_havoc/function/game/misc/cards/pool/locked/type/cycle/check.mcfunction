@@ -1,1 +1,0 @@
-execute if score #Value plate_havoc.round >= #LockedCycle plate_havoc.round run scoreboard players set #Success plate_havoc.num 1

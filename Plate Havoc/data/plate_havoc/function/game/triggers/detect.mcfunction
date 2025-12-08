@@ -4,7 +4,6 @@ scoreboard players enable @s plate_havoc.t.spectator
 scoreboard players enable @s plate_havoc.t.stats
 scoreboard players enable @s plate_havoc.t.credits
 scoreboard players enable @s plate_havoc.t.console
-scoreboard players enable @s plate_havoc.t.bedrock_compatibility
 scoreboard players enable @s plate_havoc.t.event_notifier_mode
 
 execute if entity @s[tag=plate_havoc.spectator] run title @s actionbar {text:"You are spectating and will no longer be able to play the game",color:red}

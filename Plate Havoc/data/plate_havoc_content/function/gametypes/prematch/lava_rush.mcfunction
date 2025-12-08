@@ -34,7 +34,7 @@ scoreboard players set #AllowBlockInteraction plate_havoc.num 1
 data modify storage plate_havoc:ui leaderboard.queue prepend value {id:lava_height,visual:{text:"",extra:[{text:"Lava Height: ",color:gray},{id:lava_height,text:"?",color:red}]}}
 data remove storage plate_havoc:ui leaderboard.queue[{id:intensity}]
 
-data modify storage plate_havoc:leaderboard sort_function set value "plate_havoc:game/leaderboard/check/lava_height"
+data modify storage plate_havoc:leaderboard sort_function set value "plate_havoc:game/misc/leaderboard/check/lava_height"
 
 data modify storage plate_havoc:leaderboard include_stats prepend value {type:score,location:"#LavaHeight plate_havoc.num",holder:lava_height}
 data remove storage plate_havoc:leaderboard include_stats[{holder:intensity}]

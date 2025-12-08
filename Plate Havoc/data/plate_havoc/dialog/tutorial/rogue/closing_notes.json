@@ -7,7 +7,6 @@
         {"type":"plain_message","contents":[{"text":""},{"text":"- Closing Notes -\n","color":"blue"},{"text":"You should now have the basic info on how to play Plate Havoc. However, reaching for the top is not for the faint of heart. Good luck"}],"width":448}
     ],
     "actions": [
-        {"label":{"text":"Play in Bedrock Compatibility mode"},"width":256,"action":{"type":"run_command","command":"/trigger plate_havoc.test.read set 100"},"tooltip":"/trigger plate_havoc.t.bedrock_compatibility set 0 to Disable.\n/trigger plate_havoc.t.bedrock_compatibility set 1 to Enable."},
         {"label":{"text":"Play"},"width":256,"action":{"type":"run_command","command":"/trigger plate_havoc.test.read set 99"}}
     ]
 }

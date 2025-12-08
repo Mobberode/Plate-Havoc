@@ -1,0 +1,1 @@
+$execute if data storage plate_havoc:leaderboard player_credit[{selector:$(out)}] run scoreboard players set #Keep plate_havoc.leaderboard.has_credit 1

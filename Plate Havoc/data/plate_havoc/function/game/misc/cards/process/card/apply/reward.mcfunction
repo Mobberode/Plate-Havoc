@@ -1,3 +1,8 @@
+##Check if over 1
+execute store result score #Temp plate_havoc.temp run data get storage plate_havoc:cards reward 100
+#Else
+execute if score #Temp plate_havoc.temp matches ..0 run return run data remove storage plate_havoc:cards reward
+
 ##Scale
 function plate_havoc:game/misc/attributes/custom/input {id:"plate_havoc:card.reward.scale"}
 

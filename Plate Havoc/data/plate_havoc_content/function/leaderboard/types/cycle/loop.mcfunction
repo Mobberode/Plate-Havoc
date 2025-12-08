@@ -1,0 +1,1 @@
+execute if score @s plate_havoc_content.leaderboard.cycle.current >= @s plate_havoc_content.leaderboard.cycle.saved run function plate_havoc:game/misc/leaderboard/credit/end

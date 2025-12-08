@@ -1,3 +1,8 @@
+##Check if over 1
+execute store result score #Temp plate_havoc.temp run data get storage plate_havoc:cards cost 100
+#Else
+execute if score #Temp plate_havoc.temp matches ..0 run return run data remove storage plate_havoc:cards cost
+
 ##Scale
 execute unless data storage plate_havoc:cards attributes{player_scaling:false} run function plate_havoc:game/misc/cards/process/card/apply/cost_scale
 

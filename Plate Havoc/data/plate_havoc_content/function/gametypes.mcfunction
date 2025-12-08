@@ -1,5 +1,5 @@
 data modify storage plate_havoc:temp data set value [\
-{id:rogue,function:"plate_havoc_content:gametypes/prematch/rogue",leaderboard:{status:true},players:{single:true,multi:true},console_only:false,metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
+{id:rogue,function:"plate_havoc_content:gametypes/prematch/rogue",leaderboard:{status:true,credit:{loop:"plate_havoc_content:leaderboard/types/cycle/loop",start:"plate_havoc_content:leaderboard/types/cycle/start"}},players:{single:true,multi:true},console_only:false,metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
 {id:dev,function:"plate_havoc_content:gametypes/prematch/dev",leaderboard:{status:false},players:{single:true,multi:true},console_only:true,metadata:{author:"Mobberode",pack:"Plate Havoc"}}\
 ]
@@ -26,3 +26,6 @@ data modify storage plate_havoc:temp data set value [\
 ]
 
 data modify storage plate_havoc:data gametypes append from storage plate_havoc:temp data[]
+
+scoreboard objectives add plate_havoc_content.leaderboard.cycle.current dummy
+scoreboard objectives add plate_havoc_content.leaderboard.cycle.saved dummy

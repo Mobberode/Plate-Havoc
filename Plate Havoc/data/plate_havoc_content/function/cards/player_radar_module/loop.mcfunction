@@ -1,0 +1,1 @@
+effect give @a[tag=plate_havoc.survivor] glowing 5 0 true

@@ -1,0 +1,2 @@
+execute store result score #Temp plate_havoc.temp run data get storage plate_havoc:events intensity 100
+execute unless score #Value plate_havoc.intensity >= #Temp plate_havoc.temp run scoreboard players set #Success plate_havoc.num 0

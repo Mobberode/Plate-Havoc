@@ -3,4 +3,4 @@ execute store result storage plate_havoc:leaderboard processed int 1 run scorebo
 $data modify storage plate_havoc:leaderboard collection set from storage plate_havoc:leaderboard root.$(directory)
 
 #Run with macro
-function plate_havoc:game/leaderboard/sort with storage plate_havoc:leaderboard
+function plate_havoc:game/misc/leaderboard/sort with storage plate_havoc:leaderboard

@@ -36,7 +36,6 @@ scoreboard objectives add plate_havoc.plr.stats.taken_damage custom:damage_taken
 scoreboard objectives add plate_havoc.t.stats trigger
 scoreboard objectives add plate_havoc.t.spectator trigger
 scoreboard objectives add plate_havoc.t.credits trigger
-scoreboard objectives add plate_havoc.t.bedrock_compatibility trigger
 scoreboard objectives add plate_havoc.t.event_notifier_mode trigger
 
 scoreboard objectives add plate_havoc.t.console trigger
@@ -53,11 +52,17 @@ scoreboard objectives add plate_havoc.event.flame_guardian.active dummy
 scoreboard objectives add plate_havoc.ui.player_health health
 scoreboard objectives add plate_havoc.ui.player_food food
 
+scoreboard objectives add plate_havoc.leaderboard.time_elasped.current dummy
+scoreboard objectives add plate_havoc.leaderboard.time_elasped.saved dummy
+
+scoreboard objectives add plate_havoc.leaderboard.has_credit dummy
+
 function plate_havoc:game/triggers/loop
 
 execute unless score #LBLimit plate_havoc.config matches 0.. run scoreboard players set #LBLimit plate_havoc.config 3
 
 function plate_havoc:game/init
+function gu:zzz/load
 
 #tag @a add plate_havoc.has_console_access
 

@@ -52,8 +52,11 @@ data modify storage plate_havoc:data game_end_condition_function set value "plat
 data modify storage plate_havoc:data last_alive_function set value ""
 
 #Leaderboard
-data modify storage plate_havoc:leaderboard sort_function set value "plate_havoc:game/leaderboard/check/intensity"
-data modify storage plate_havoc:leaderboard include_stats set value [{type:score,location:"#Duration plate_havoc.timer",holder:time},{type:storage,location:"plate_havoc:data",holder:intensity}]
+data modify storage plate_havoc:leaderboard sort_function set value "plate_havoc:game/misc/leaderboard/check/intensity"
+data modify storage plate_havoc:leaderboard include_stats set value [{type:storage,location:"plate_havoc:data",holder:time},{type:storage,location:"plate_havoc:data",holder:intensity},{type:storage,location:"plate_havoc:leaderboard",holder:player_credit}]
+data modify storage plate_havoc:data leaderboard_credit_loop set value "plate_havoc:game/misc/leaderboard/credit/type/time_elasped/loop"
+data modify storage plate_havoc:data leaderboard_credit_start set value "plate_havoc:game/misc/leaderboard/credit/type/time_elasped/start"
+data modify storage plate_havoc:leaderboard player_credit set value []
 
 ##Holds all functions that will be ran when game starts
 data modify storage plate_havoc:data on_game_start set value []

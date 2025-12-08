@@ -1,3 +1,7 @@
+##Stopwatch - Game
+stopwatch remove plate_havoc:game_time
+stopwatch create plate_havoc:game_time
+
 function plate_havoc:game/match/player/clear
 kill @e[type=item]
 execute as @a run function plate_havoc:game/lobby/post/player

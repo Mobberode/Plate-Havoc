@@ -32,9 +32,11 @@ data modify storage plate_havoc:ui game.end.queue set value []
 
 data modify storage plate_havoc:ui game.end.queue append value {id:message,text:"",extra:[{text:"Game Over...",color:red}]}
 
-data modify storage plate_havoc:ui game.end.queue append value {id:elasped,text:"",extra:[{text:"Elasped Time: ",color:gray},{score:{name:"#Duration",objective:plate_havoc.timer},color:gold}]}
+data modify storage plate_havoc:ui game.end.queue append value {id:elasped,text:"",extra:[{text:"Elasped Time: ",color:gray},{storage:"plate_havoc:data",nbt:time,color:gold},"s"]}
 
 data modify storage plate_havoc:ui game.end.queue append value {id:intensity,text:"",extra:[{text:"Intensity: ",color:gray},{storage:"plate_havoc:data",nbt:intensity,color:gold}]}
+
+data modify storage plate_havoc:ui game.end.queue append value {id:player_credit,text:"",extra:[{text:"Players: ",color:gray},{storage:"plate_havoc:leaderboard",nbt:player_credit,color:yellow,interpret:true}]}
 
 ##Leaderboard UI
 data remove storage plate_havoc:ui leaderboard
@@ -42,6 +44,8 @@ data remove storage plate_havoc:ui leaderboard
 data modify storage plate_havoc:ui leaderboard.visual set value []
 data modify storage plate_havoc:ui leaderboard.queue set value []
 
-data modify storage plate_havoc:ui leaderboard.queue append value {id:time,visual:{text:"",extra:[{text:"Elasped Time: ",color:gray},{id:time,text:"?",color:gold}]}}
+data modify storage plate_havoc:ui leaderboard.queue append value {id:time,visual:{text:"",extra:[{text:"Elasped Time: ",color:gray},{id:time,text:"?",color:gold},"s"]}}
 
 data modify storage plate_havoc:ui leaderboard.queue append value {id:intensity,visual:{text:"",extra:[{text:"Intensity: ",color:gray},{id:intensity,text:"?",color:red}]}}
+
+data modify storage plate_havoc:ui leaderboard.queue append value {id:player_credit,visual:{text:"",extra:[{text:"Players: ",color:gray},{id:player_credit,color:yellow,text:""}]}}
