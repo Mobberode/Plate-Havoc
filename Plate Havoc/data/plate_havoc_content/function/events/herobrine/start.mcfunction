@@ -2,8 +2,6 @@ scoreboard players operation #EventRunCount plate_havoc.num = #Template.Event.He
 
 execute if score #Herobrine.Duration plate_havoc.event matches 1.. run return run function plate_havoc_content:events/herobrine/extend
 
-data modify storage plate_havoc:ui event_message set value {text:"Herobrine has arrived",color:gray}
-
 #Data
 scoreboard players operation #Herobrine.Duration plate_havoc.event = #Template.Event.Herobrine.Duration plate_havoc.num
 scoreboard players operation #Herobrine.Activate_Time plate_havoc.event = #Template.Event.Herobrine.Activate_Time plate_havoc.num
@@ -11,3 +9,6 @@ execute store result storage plate_havoc:events distance double 0.01 run scorebo
 
 execute as @n[type=marker,tag=plate_havoc.event_place] at @s run function plate_havoc_content:events/herobrine/run
 function plate_havoc_content:events/herobrine/loop
+
+data modify storage plate_havoc:ui temp set value {message:{text:"Herobrine has arrived",color:gray}}
+function plate_havoc:game/events/message/create_entry

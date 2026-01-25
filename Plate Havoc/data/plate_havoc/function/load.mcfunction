@@ -10,6 +10,7 @@ scoreboard players set #Game plate_havoc.status 0
 scoreboard objectives add plate_havoc.round dummy
 
 scoreboard objectives add plate_havoc.num dummy
+scoreboard objectives add plate_havoc.id dummy
 scoreboard objectives add plate_havoc.players dummy
 scoreboard objectives add plate_havoc.spawnpoint_energy dummy
 scoreboard objectives add plate_havoc.timer dummy
@@ -36,18 +37,12 @@ scoreboard objectives add plate_havoc.plr.stats.taken_damage custom:damage_taken
 scoreboard objectives add plate_havoc.t.stats trigger
 scoreboard objectives add plate_havoc.t.spectator trigger
 scoreboard objectives add plate_havoc.t.credits trigger
-scoreboard objectives add plate_havoc.t.event_notifier_mode trigger
+scoreboard objectives add plate_havoc.t.view_leaderboard trigger
 
 scoreboard objectives add plate_havoc.t.console trigger
 
 scoreboard objectives add plate_havoc.t.select trigger
 scoreboard objectives add plate_havoc.z.select dummy
-
-scoreboard objectives add plate_havoc.event.jump_cooldown dummy
-scoreboard objectives add plate_havoc.event.jump_afterdown dummy
-scoreboard objectives add plate_havoc.event.shop_token dummy
-scoreboard objectives add plate_havoc.event.flame_guardian.time dummy
-scoreboard objectives add plate_havoc.event.flame_guardian.active dummy
 
 scoreboard objectives add plate_havoc.ui.player_health health
 scoreboard objectives add plate_havoc.ui.player_food food
@@ -56,6 +51,10 @@ scoreboard objectives add plate_havoc.leaderboard.time_elasped.current dummy
 scoreboard objectives add plate_havoc.leaderboard.time_elasped.saved dummy
 
 scoreboard objectives add plate_havoc.leaderboard.has_credit dummy
+
+scoreboard objectives add plate_havoc.jumps.count dummy
+scoreboard objectives add plate_havoc.sprint_charge.amount dummy
+scoreboard objectives add plate_havoc.sprint_charge.using dummy
 
 function plate_havoc:game/triggers/loop
 

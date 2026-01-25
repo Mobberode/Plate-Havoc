@@ -253,3 +253,6 @@ data modify storage plate_havoc:events data.shop set value [\
 {item:"elytra",cost:{price:90,type:percentage},visual:"elytra"},\
 ]
 #{item:"barrier",cost:{price:0,type:percentage},visual:"barrier"},
+
+## Cube of Decay
+data modify storage plate_havoc:cards data."plate_havoc_content:cube_of_decay" set value {positive:[],negative:[]}

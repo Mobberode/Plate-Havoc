@@ -1,5 +1,3 @@
-data modify storage plate_havoc:ui event_message set value {text:"Flame Guardian, once an banished protector. Now seeking for redemption",color:gold}
-
 execute as @a unless score @s plate_havoc.event.flame_guardian.active matches 0.. run scoreboard players set @s plate_havoc.event.flame_guardian.active 0
 
 #Data
@@ -12,3 +10,6 @@ scoreboard players operation #Flame_Guardian.Projectile_Damage plate_havoc.event
 function plate_havoc_content:events/flame_guardian/run
 
 function plate_havoc_content:events/flame_guardian/loop
+
+data modify storage plate_havoc:ui temp set value {message:{text:"Flame Guardian, once an banished protector. Now seeking for redemption",color:gold}}
+function plate_havoc:game/events/message/create_entry

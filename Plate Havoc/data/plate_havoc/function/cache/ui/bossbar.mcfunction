@@ -16,4 +16,4 @@ bossbar set plate_havoc:event style progress
 bossbar set plate_havoc:event visible true
 bossbar set plate_havoc:event max 1
 bossbar set plate_havoc:event value 1
-bossbar set plate_havoc:event players @a[scores={plate_havoc.t.event_notifier_mode=1}]
+bossbar set plate_havoc:event players @a

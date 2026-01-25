@@ -1,5 +1,7 @@
-tag @r[tag=plate_havoc.survivor] add plate_havoc.motion_sniper.target
-title @a actionbar [{text:"Unease sets as a sniper looms over you. Hold steady.",color:red}]
-execute at @r[tag=plate_havoc.motion_sniper.target] run function plate_havoc_content:events/motion_sniper/phase/warning_cue
+scoreboard players set #Motion_Sniper.CurrentDelay plate_havoc.event 0
 
-scoreboard players operation #Motion_Sniper.PhaseDelay plate_havoc.event = #Template.Event.Motion_Sniper.WarningTime plate_havoc.num
+scoreboard players operation #Temp plate_havoc.players = #Current plate_havoc.players
+scoreboard players operation #Temp plate_havoc.players /= #2 plate_havoc.num
+execute if score #Temp plate_havoc.players matches ..0 run scoreboard players set #Temp plate_havoc.players 1
+
+execute as @a[tag=plate_havoc.survivor] at @s run function plate_havoc_content:events/motion_sniper/phase/warning_run

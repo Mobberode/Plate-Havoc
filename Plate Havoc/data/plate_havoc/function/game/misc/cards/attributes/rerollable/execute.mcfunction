@@ -1,5 +1,5 @@
 ##Price
-execute unless data storage plate_havoc:cards attributes.rerollable.cost{scale:false} store result storage plate_havoc:cards attributes.rerollable.cost.current_price double 2 run data get storage plate_havoc:cards attributes.rerollable.cost.current_price
+execute unless data storage plate_havoc:cards attributes.rerollable.cost{scale:false} store result storage plate_havoc:cards attributes.rerollable.cost.current_price float 2 run data get storage plate_havoc:cards attributes.rerollable.cost.current_price
 
 ##Set
 execute store result score #Card.KeepInPool plate_havoc.num if data storage plate_havoc:cards attributes.rerollable{remove_cards:false}

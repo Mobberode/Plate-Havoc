@@ -1,5 +1,3 @@
-data modify storage plate_havoc:ui event_message set value {text:"A pillar of lava is rising up from within the void",color:gray}
-
 #Data
 scoreboard players operation #Lava_Pillar.Delay plate_havoc.event = #Template.Event.Lava_Pillar.Delay plate_havoc.num
 scoreboard players operation #Lava_Pillar.Size plate_havoc.event = #Template.Event.Lava_Pillar.Size plate_havoc.num
@@ -11,3 +9,6 @@ execute as @n[type=marker,tag=plate_havoc.event_place] at @s run function plate_
 
 scoreboard players set #Lava_Pillar.CurrentDelay plate_havoc.event 0
 function plate_havoc_content:events/lava_pillar/loop
+
+data modify storage plate_havoc:ui temp set value {message:{text:"A pillar of lava is rising up from within the void",color:gray}}
+function plate_havoc:game/events/message/create_entry

@@ -7,7 +7,3 @@ scoreboard players set @s zzz_embed_bound.motion.z 0
 execute store result score @s zzz_embed_bound.jump_strength run attribute @s minecraft:jump_strength get 10000
 scoreboard players operation @s zzz_embed_bound.motion.y *= @s zzz_embed_bound.jump_strength
 scoreboard players operation @s zzz_embed_bound.motion.y /= $10000 zzz_embed_bound.constant
-
-#trigger jump
-scoreboard players set $function_called zzz_embed_bound.motion.dummy 1
-tag @s add player_motion.launch

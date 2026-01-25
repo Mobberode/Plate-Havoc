@@ -1,6 +1,4 @@
-execute store result score #Add plate_havoc.intensity run random value 3..17
+execute store result score #Temp plate_havoc.num run data get storage plate_havoc:custom attributes[{id:"plate_havoc:intensity.gain"}].output 1000
+execute store result storage plate_havoc:data intensity float 0.001 run scoreboard players operation #Value plate_havoc.intensity += #Temp plate_havoc.num
 
-scoreboard players operation #Add plate_havoc.intensity *= #BaseIntensityPercentage plate_havoc.num
-scoreboard players operation #Add plate_havoc.intensity /= #100 plate_havoc.num
-
-execute store result storage plate_havoc:data intensity double 0.01 run scoreboard players operation #Value plate_havoc.intensity += #Add plate_havoc.intensity
+scoreboard players operation #AccumulatedIntensity plate_havoc.temp += #Temp plate_havoc.num

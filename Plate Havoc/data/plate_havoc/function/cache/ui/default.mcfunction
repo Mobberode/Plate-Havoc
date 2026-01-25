@@ -25,6 +25,9 @@ data modify storage plate_havoc:ui bar.colour set value red
 ##Game
 data remove storage plate_havoc:ui game
 
+##Event Messages
+data modify storage plate_havoc:ui event_messages set value []
+
 #End
 data modify storage plate_havoc:ui game.end.visual set value [{text:""}]
 
@@ -36,7 +39,7 @@ data modify storage plate_havoc:ui game.end.queue append value {id:elasped,text:
 
 data modify storage plate_havoc:ui game.end.queue append value {id:intensity,text:"",extra:[{text:"Intensity: ",color:gray},{storage:"plate_havoc:data",nbt:intensity,color:gold}]}
 
-data modify storage plate_havoc:ui game.end.queue append value {id:player_credit,text:"",extra:[{text:"Players: ",color:gray},{storage:"plate_havoc:leaderboard",nbt:player_credit,color:yellow,interpret:true}]}
+data modify storage plate_havoc:ui game.end.queue append value {id:player_credit,text:"",extra:[{text:"Players: ",color:gray},{storage:"plate_havoc:leaderboard",nbt:"player_credit[]",color:yellow,interpret:true}]}
 
 ##Leaderboard UI
 data remove storage plate_havoc:ui leaderboard

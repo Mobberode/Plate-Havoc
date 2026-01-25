@@ -1,6 +1,5 @@
 execute if score #Outer_Space_Gravity.Duration plate_havoc.event matches 1.. run return run scoreboard players set #Restart plate_havoc.event 1
 
-data modify storage plate_havoc:ui event_message set value [{text:"The Plate has been launched into outer space!",color:gray}]
 scoreboard players add #EventRunCount plate_havoc.num 1
 
 #
@@ -16,3 +15,6 @@ time set midnight
 
 execute as @a run function plate_havoc_content:events/outer_space_gravity/player/rid_effect
 function plate_havoc_content:events/outer_space_gravity/loop
+
+data modify storage plate_havoc:ui temp set value {message:{text:"The Plate has been launched into outer space!",color:gray}}
+function plate_havoc:game/events/message/create_entry

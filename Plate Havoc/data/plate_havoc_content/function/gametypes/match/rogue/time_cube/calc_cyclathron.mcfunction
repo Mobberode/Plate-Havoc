@@ -1,7 +1,2 @@
-scoreboard players operation #AddCyclathronAmount plate_havoc.num = #BaseCyclathronAmount plate_havoc.num
-
-scoreboard players operation #AddCyclathronAmount plate_havoc.num *= #CyclathronMultiplier plate_havoc.num
-
-scoreboard players operation #AddCyclathronAmount plate_havoc.num /= #100 plate_havoc.num
-
-scoreboard players operation #Cyclathron plate_havoc.num += #AddCyclathronAmount plate_havoc.num
+execute store result score #Temp plate_havoc.temp run data get storage plate_havoc:custom attributes[{id:"plate_havoc:cyclathron_yield"}].output 100
+scoreboard players operation #Cyclathron plate_havoc.num += #Temp plate_havoc.temp

@@ -157,4 +157,14 @@ data modify storage plate_havoc:temp data set value [\
 
 scoreboard objectives add plate_havoc.event.acid_rain.exposure dummy
 
+scoreboard objectives add plate_havoc.event.jump_cooldown dummy
+scoreboard objectives add plate_havoc.event.jump_afterdown dummy
+
+scoreboard objectives add plate_havoc.event.shop_token dummy
+
+scoreboard objectives add plate_havoc.event.flame_guardian.time dummy
+scoreboard objectives add plate_havoc.event.flame_guardian.active dummy
+
+scoreboard objectives add plate_havoc.event.motion_sniper.time dummy
+
 data modify storage plate_havoc:data events append from storage plate_havoc:temp data[]

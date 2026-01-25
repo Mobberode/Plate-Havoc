@@ -4,7 +4,7 @@ data modify storage plate_havoc:cards template set value {}
 $data modify storage plate_havoc:cards template.id set value "$(id)"
 $data modify storage plate_havoc:cards template.data set from storage plate_havoc:cards data[{id:"$(id)"}]
 function plate_havoc:console/zzz/set_card
-function plate_havoc:game/misc/cards/vote/end/process_for_running
+function plate_havoc:game/misc/cards/vote/end/process
 
 advancement revoke @a from plate_havoc:cards/root
 scoreboard players reset * plate_havoc.card

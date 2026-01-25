@@ -1,0 +1,1 @@
+$execute if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{location:{position:{y:{min:-128,max:$(temp)}}}}} run effect give @s wither 5 0 true

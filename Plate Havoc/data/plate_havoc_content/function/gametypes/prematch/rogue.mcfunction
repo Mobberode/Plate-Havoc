@@ -1,8 +1,4 @@
-tellraw @a [{text:"Endurance | Modern",color:gold},{text:"\nThe intended Endurance experience. Survive with or without others.",color:"gray"}]
-
-scoreboard players set #BaseEventTimePercentage plate_havoc.num 150
-
-scoreboard players set #BaseIntensityPercentage plate_havoc.num 50
+tellraw @a [{text:"Void Endurance",color:gold},{text:"\nThe intended Endurance experience. Survive with or without others.",color:"gray"}]
 
 scoreboard players set #Modifiers.Enabled plate_havoc.num 0
 
@@ -32,6 +28,8 @@ gamerule keep_inventory true
 
 data modify storage plate_havoc:data on_game_start append value "plate_havoc:game/time/tick_down"
 
+data modify storage plate_havoc:data on_game_start append value "plate_havoc_content:gametypes/match/rogue/round_start"
+
 data modify storage plate_havoc:ui leaderboard.queue prepend value {id:cycle,visual:{text:"",extra:[{text:"Cycle: ",color:gray},{id:cycle,text:"?",color:aqua}]}}
 data modify storage plate_havoc:ui leaderboard.queue append value {id:card_list,visual:{text:"",extra:[{text:"\nCards: ",color:gray},{id:card_list,text:"",extra:[]}]}}
 
@@ -42,16 +40,13 @@ data modify storage plate_havoc:leaderboard include_stats append value {type:sto
 ### Game contents
 
 scoreboard players set #Value plate_havoc.round 0
-scoreboard players set #ClockTick plate_havoc.temp 0
 
 scoreboard players set #BaseCyclathronAmount plate_havoc.num 100
-scoreboard players set #CyclathronMultiplier plate_havoc.num 100
 scoreboard players set #ClockCollectTimeReduction plate_havoc.num 2
 scoreboard players set #BaseClockRange plate_havoc.num 0
 
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:clock.spawn_time",base:5,modifiers:[]}
-function plate_havoc:game/misc/attributes/custom/input {id:"plate_havoc_content:clock.spawn_time"}
-execute store result score #ClockSpawnTick plate_havoc.num run data get storage plate_havoc:custom attribute.output 20
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:time.multiplier",base:1,modifiers:[]}
 
 scoreboard players set #CardCountModifier plate_havoc.num 0
 
@@ -60,9 +55,3 @@ data modify storage plate_havoc:cards pool set value []
 data modify storage plate_havoc:ui card_list set value [{text:""}]
 function plate_havoc:game/misc/cards/pool/locked/init
 function plate_havoc:game/misc/cards/process/types/match
-
-function plate_havoc:game/match/player_count
-function plate_havoc_content:gametypes/match/rogue/calc_clock
-function plate_havoc_content:gametypes/match/rogue/store_clock
-function plate_havoc_content:gametypes/match/rogue/calc_time
-execute store result score #Starting plate_havoc.players if entity @a[tag=!plate_havoc.spectator]

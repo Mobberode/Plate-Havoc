@@ -4,6 +4,9 @@ function plate_havoc:game/match/player/mode_check with storage plate_havoc:data
 ##Time
 execute store result bossbar plate_havoc:ui value run scoreboard players remove #Value plate_havoc.timer 1
 
+##Player
+execute as @a[tag=!plate_havoc.spectator] at @s run function plate_havoc:game/match/player_loop
+
 ##Data-Driven Functions
 #Action
 execute if score #Value plate_havoc.timer matches ..0 run function plate_havoc:game/match/macro with storage plate_havoc:data

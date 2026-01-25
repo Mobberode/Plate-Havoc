@@ -1,0 +1,1 @@
+scoreboard players operation @s plate_havoc.c.card.critical_rollback = #Count plate_havoc.c.card.critical_rollback

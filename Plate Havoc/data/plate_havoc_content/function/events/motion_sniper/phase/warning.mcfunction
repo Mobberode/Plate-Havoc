@@ -1,1 +1,0 @@
-execute as @a[tag=plate_havoc.motion_sniper.target] at @s anchored eyes rotated ~ 0 run tp @n[type=text_display,tag=plate_havoc.motion_sniper.target.indicator] ^ ^0.5 ^

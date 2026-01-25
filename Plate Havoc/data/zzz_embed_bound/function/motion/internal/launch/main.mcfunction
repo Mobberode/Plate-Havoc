@@ -17,14 +17,8 @@ gamemode creative
 data modify storage zzz_embed_bound:pos y set from entity @s Pos[1]
 function zzz_embed_bound:motion/internal/launch/macro with storage zzz_embed_bound:pos
 
-tp @s ~ ~10000 ~
+tp ~ ~10000 ~
 execute rotated as @s positioned ~ ~10000 ~ run function zzz_embed_bound:motion/internal/summon/main with storage zzz_embed_bound:math
-tp @s ~ ~ ~
+tp ~ ~ ~
 function zzz_embed_bound:motion/internal/launch/gamemode/restore
 attribute @s knockback_resistance modifier remove player_motion:disable_knockback_resistance
-
-scoreboard players set $function_called zzz_embed_bound.motion.dummy 0
-tag @s remove player_motion.launch
-
-#record success
-tag @s add bound_success

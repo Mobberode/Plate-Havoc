@@ -7,6 +7,3 @@ execute in plate_havoc:arena run function plate_havoc:game/events/run/execute wi
 execute as @e[tag=plate_havoc.mob.setup] at @s run function plate_havoc:game/events/run/mob_setup
 
 execute if score #Restart plate_havoc.event matches 1.. run return run function plate_havoc:game/events/process/restart with storage plate_havoc:data
-
-#Event MSG
-function plate_havoc:game/events/message/run

@@ -1,4 +1,4 @@
-execute store result score #Value plate_havoc.timer run random value 12..100
-function plate_havoc:game/events/time/calculate
+execute store result score #Value plate_havoc.timer run data get storage plate_havoc:custom attributes[{id:"plate_havoc:event.time"}].output 20
 
 execute store result bossbar plate_havoc:ui max run scoreboard players get #Value plate_havoc.timer
+scoreboard players operation #MaxEventTime plate_havoc.timer = #Value plate_havoc.timer

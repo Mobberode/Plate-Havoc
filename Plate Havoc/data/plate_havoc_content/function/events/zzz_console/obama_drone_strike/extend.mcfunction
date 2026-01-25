@@ -1,4 +1,4 @@
-data modify storage plate_havoc:ui event_message set value {text:"MORE OBAMA!!!",color:gray}
-scoreboard players set #EventNotify.Display_Count plate_havoc.num 0
+data modify storage plate_havoc:ui temp set value {message:{text:"MORE OBAMA!!!",color:gray},count:{display:false}}
+function plate_havoc:game/events/message/create_entry
 
 scoreboard players operation #ObamaDroneStrike.Summon plate_havoc.event += #Template.Event.ObamaDroneStrike.Summon_Extension plate_havoc.num

@@ -1,3 +1,4 @@
-data modify storage plate_havoc:ui event_message set value [{text:"Blackhole lasts longer!",color:gray}]
-scoreboard players set #EventNotify.Display_Count plate_havoc.num 0
+data modify storage plate_havoc:ui temp set value {message:{text:"Blackhole lasts longer!",color:gray},count:{display:false}}
+function plate_havoc:game/events/message/create_entry
+
 scoreboard players operation #BlackHole.Duration plate_havoc.event += #Template.Event.BlackHole.Duration_Extension plate_havoc.num

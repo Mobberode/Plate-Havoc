@@ -2,14 +2,21 @@ scoreboard players set #2 plate_havoc.num 2
 scoreboard players set #3 plate_havoc.num 3
 scoreboard players set #4 plate_havoc.num 4
 scoreboard players set #5 plate_havoc.num 5
+scoreboard players set #6 plate_havoc.num 6
 scoreboard players set #10 plate_havoc.num 10
 scoreboard players set #20 plate_havoc.num 20
 scoreboard players set #25 plate_havoc.num 25
+scoreboard players set #40 plate_havoc.num 40
+scoreboard players set #50 plate_havoc.num 50
+scoreboard players set #60 plate_havoc.num 60
+scoreboard players set #80 plate_havoc.num 80
 scoreboard players set #100 plate_havoc.num 100
 scoreboard players set #1000 plate_havoc.num 1000
-
-scoreboard players set #BaseEventTimePercentage plate_havoc.num 100
-scoreboard players set #BaseIntensityPercentage plate_havoc.num 100
+scoreboard players set #PRNG.Multiply plate_havoc.num 1562730894
+scoreboard players set #PRNG.Add plate_havoc.num 67
+scoreboard players set #EventTotalRunCount plate_havoc.num 0
+scoreboard players set #EventRepeats plate_havoc.num 1
+scoreboard players set #CardTotalSelects plate_havoc.num 0
 
 scoreboard players set #BaseEventRequirementPercentage plate_havoc.intensity 100
 
@@ -35,7 +42,7 @@ function plate_havoc:game/misc/world/biome/init
 data modify storage plate_havoc:custom biomes append value {id:"plate_havoc:void",biome:"plate_havoc:void",priority:0}
 data modify storage plate_havoc:data weather set value "clear"
 #Time
-scoreboard players set #BaseWorldTime plate_havoc.num 0
+scoreboard players set #BaseWorldTime plate_havoc.num 6000
 #World Border (1000 = 100.0)
 scoreboard players set #BaseWorldBorderWidth plate_havoc.num 3200
 #Void (Height) (Damage)
@@ -54,6 +61,8 @@ data modify storage plate_havoc:data last_alive_function set value ""
 #Leaderboard
 data modify storage plate_havoc:leaderboard sort_function set value "plate_havoc:game/misc/leaderboard/check/intensity"
 data modify storage plate_havoc:leaderboard include_stats set value [{type:storage,location:"plate_havoc:data",holder:time},{type:storage,location:"plate_havoc:data",holder:intensity},{type:storage,location:"plate_havoc:leaderboard",holder:player_credit}]
+
+
 data modify storage plate_havoc:data leaderboard_credit_loop set value "plate_havoc:game/misc/leaderboard/credit/type/time_elasped/loop"
 data modify storage plate_havoc:data leaderboard_credit_start set value "plate_havoc:game/misc/leaderboard/credit/type/time_elasped/start"
 data modify storage plate_havoc:leaderboard player_credit set value []
@@ -71,11 +80,19 @@ data modify storage plate_havoc:cards preset.attributes.voting.behaviour.votes.f
 
 data modify storage plate_havoc:cards preset.attributes.voting.behaviour.mixed.functions set value {on_vote:"plate_havoc:game/misc/cards/attributes/voting/mode/mixed/on_vote",voting_start:"plate_havoc:game/misc/cards/attributes/voting/mode/mixed/voting_start",loop:"plate_havoc:game/misc/cards/attributes/voting/mode/timed/loop"}
 
+##Custom Attributes
 data modify storage plate_havoc:custom attributes set value []
 
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:card.cost.scale",base:1,modifiers:[]}
-
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:card.reward.scale",base:1,modifiers:[]}
+
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:cyclathron_yield",base:1,modifiers:[]}
+
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:event.time",base:2.5,modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:intensity.gain",base:0.0175,modifiers:[]}
+
+##Extra Jumps
+data modify storage plate_havoc:data extra_jumps set value []
 
 ##Cyclathron
 scoreboard players set #Cyclathron plate_havoc.num 0

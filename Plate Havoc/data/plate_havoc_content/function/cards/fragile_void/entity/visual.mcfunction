@@ -9,7 +9,7 @@ scoreboard players operation #Temp plate_havoc.c.card.fragile_void /= @s plate_h
 
 ##Finish the scale
 execute store result storage plate_havoc:cards temp double -0.1 run scoreboard players get @s plate_havoc.c.card.fragile_void.starting_scale
-execute store result storage plate_havoc:cards temp2 double -0.1 run scoreboard players operation @s plate_havoc.temp = #Temp plate_havoc.c.card.fragile_void
+execute store result storage plate_havoc:cards temp2 double -0.1 run scoreboard players get #Temp plate_havoc.c.card.fragile_void
 execute store result storage plate_havoc:cards temp3 double 0.1 run scoreboard players get @s plate_havoc.c.card.fragile_void.starting_time
 
 function plate_havoc_content:cards/fragile_void/entity/set_scale

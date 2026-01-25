@@ -1,5 +1,5 @@
 #Get Modifier value
-execute store result score #Temp2 plate_havoc.num run data get storage plate_havoc:custom attribute.internal[-1].value 100
+execute store result score #Temp2 plate_havoc.num run data get storage plate_havoc:custom attribute.internal[-1].value 1000
 #Value + Modifier value
 scoreboard players operation #Temp plate_havoc.num += #Temp2 plate_havoc.num
 

@@ -1,7 +1,6 @@
 scoreboard players set @s plate_havoc.t.stats 0
 
 #Playtime
-scoreboard players set #60 plate_havoc.num 60
 scoreboard players operation #Display plate_havoc.plr.stats.playtime = @s plate_havoc.plr.stats.playtime
 scoreboard players operation #Display plate_havoc.plr.stats.playtime /= #60 plate_havoc.num
 scoreboard players operation #Display plate_havoc.plr.stats.playtime *= #10 plate_havoc.num

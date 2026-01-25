@@ -1,0 +1,1 @@
+data remove storage plate_havoc:custom attributes[].modifiers[{temporary:true}]

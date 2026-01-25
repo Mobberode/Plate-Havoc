@@ -14,10 +14,15 @@ execute store result storage plate_havoc:cards temp2 double 0.01 run scoreboard 
 ##Time in ticks
 execute store result score @s plate_havoc.timer run random value 25..65
 scoreboard players operation @s plate_havoc.timer *= #Value plate_havoc.round
-#minimum (100t = 5s)
-execute if score @s plate_havoc.timer matches ..100 run scoreboard players set @s plate_havoc.timer 100
+#minimum (100t = 10s)
+execute if score @s plate_havoc.timer matches ..200 run scoreboard players set @s plate_havoc.timer 200
 #maximum (1800t = 90s)
 execute if score @s plate_havoc.timer matches 1800.. run scoreboard players set @s plate_havoc.timer 1800
+#Threshold
+scoreboard players operation #Temp plate_havoc.temp = @s plate_havoc.timer
+scoreboard players operation #Temp plate_havoc.temp /= #100 plate_havoc.num
+scoreboard players operation #Temp plate_havoc.temp *= #80 plate_havoc.num
+scoreboard players operation @s plate_havoc.c.card.cube_of_decay.time_threshold = #Temp plate_havoc.temp
 
 #
 function plate_havoc_content:cards/cube_of_decay/update
@@ -25,12 +30,12 @@ function plate_havoc_content:cards/cube_of_decay/update
 
 ##Hitbox
 scoreboard players operation #Hitbox plate_havoc.temp = @s plate_havoc.temp
-scoreboard players operation #Hitbox plate_havoc.temp *= #2 plate_havoc.num
+scoreboard players operation #Hitbox plate_havoc.temp *= #3 plate_havoc.num
+scoreboard players operation #Hitbox plate_havoc.temp /= #2 plate_havoc.num
 #minimum (7.5)
 execute if score #Hitbox plate_havoc.temp matches ..750 run scoreboard players set #Hitbox plate_havoc.temp 750
 execute store result entity @s data.hitbox double 0.01 run scoreboard players get #Hitbox plate_havoc.temp
 
-#
 #
 
 tag @s add plate_havoc.card.decay_cube

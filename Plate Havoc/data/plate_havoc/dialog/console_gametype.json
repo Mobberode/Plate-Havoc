@@ -2,7 +2,9 @@
     "type": "multi_action",
     "title": "Plate Havoc Console",
     "exit_action": {"label":"Back","action":{"type":"show_dialog","dialog":"plate_havoc:console"}},
-    "inputs": [{"key":"id","type":"text","label":"Gametype ID"}],
+    "columns": 1,
+    "body": [{"type":"plain_message","contents":"Starting while a run is in progress will restart the game!","width":384}],
+    "inputs": [{"key":"id","type":"text","label":"Gametype ID","initial":"rogue"},{"key":"seed","type":"text","label":"Run Seed","max_length":10,"initial":"0"}],
     
-    "actions": [{"label":"Force Gametype","action":{"type":"dynamic/run_command","template":"function plate_havoc:console/force_gametype {id:$(id)}"}}]
+    "actions": [{"label":"Start Run","action":{"type":"dynamic/run_command","template":"function plate_havoc:console/force_gametype {id:$(id)}"}},{"label":"Start Seeded Run","action":{"type":"dynamic/run_command","template":"function plate_havoc:console/force_gametype_seeded {id:$(id),seed:$(seed)}"}}]
 }

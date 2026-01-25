@@ -6,6 +6,10 @@ title @a actionbar {text:"Game contents loaded!",color:green}
 bossbar set plate_havoc:ui name {text:"Starting Game"}
 tellraw @a ["Loading time: ",{storage:"plate_havoc:custom",nbt:stopwatch,color:gold},"s"]
 
+##Seed
+function plate_havoc:game/misc/seed/generate
+tellraw @a ["Seed: ",{score:{name:"#Seed",objective:plate_havoc.num},color:gold}]
+
 ##Process
 function plate_havoc:game/misc/ui/bar_visuals/active/process
 function plate_havoc:game/misc/ui/bar_visuals/start

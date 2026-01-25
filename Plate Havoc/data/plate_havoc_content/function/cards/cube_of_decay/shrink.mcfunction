@@ -1,3 +1,2 @@
-execute store result score #Remove plate_havoc.temp run random value 1..2
-
-scoreboard players operation @s plate_havoc.temp -= #Remove plate_havoc.temp
+scoreboard players remove @s plate_havoc.temp 1
+execute if score #Starting plate_havoc.players matches 1 run scoreboard players add @s plate_havoc.timer 1

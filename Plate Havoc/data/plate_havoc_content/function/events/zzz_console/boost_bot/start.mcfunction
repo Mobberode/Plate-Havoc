@@ -4,6 +4,7 @@ summon item_display ~ ~ ~ {item:{id:iron_block},transformation:{translation:[0.0
 {id:item_display,item:{id:iron_block},transformation:{translation:[0.05,0.175,0.05],left_rotation:[10.0,0.0,0.0,1.0],right_rotation:[0.0,0.0,0.0,1.0],scale:[0.075,0.2,0.05]},teleport_duration:1}]\
 ,Tags:[plate_havoc.boost_bot,plate_havoc.dont_interact]}
 
-data modify storage plate_havoc:ui event_message set value {text:"Boost Bot!",color:gold}
-
 function plate_havoc_content:events/zzz_console/boost_bot/loop
+
+data modify storage plate_havoc:ui temp set value {message:{text:"Boost Bot!",color:gold}}
+function plate_havoc:game/events/message/create_entry

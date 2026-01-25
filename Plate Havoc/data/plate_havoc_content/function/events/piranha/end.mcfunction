@@ -1,3 +1,2 @@
-data modify storage plate_havoc:ui event_message set value [{text:"Piranhas have stopped!",color:gray}]
-scoreboard players set #EventNotify.Display_Count plate_havoc.num 0
-function plate_havoc:game/events/message/run
+data modify storage plate_havoc:ui temp set value {message:{text:"Piranhas have stopped!",color:gray},count:{display:false}}
+function plate_havoc:game/events/message/create_entry
