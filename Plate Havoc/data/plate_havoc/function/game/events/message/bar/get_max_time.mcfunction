@@ -7,4 +7,4 @@ execute store result score #EventmessageEntries plate_havoc.temp if data storage
 execute if score #EventmessageEntries plate_havoc.temp > #EventMessage.Timer plate_havoc.timer run function plate_havoc:game/events/message/bar/catch_up
 
 ##Debug
-tellraw @a [{text:"Event Messages queued: ",color:gray},{score:{name:"#EventmessageEntries",objective:plate_havoc.temp},color:green}]
+#tellraw @a [{text:"Event Messages queued: ",color:gray},{score:{name:"#EventmessageEntries",objective:plate_havoc.temp},color:green}]

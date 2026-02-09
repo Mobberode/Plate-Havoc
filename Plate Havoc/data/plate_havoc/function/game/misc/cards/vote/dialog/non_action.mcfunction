@@ -18,7 +18,7 @@ $dialog show @s {\
         \
         {text:" "},\
         \
-        {text:"[Escape to Chat]",hover_event:{action:"show_text",value:"Escape the Card Selection menu. Move to reprompt the selection menu."},color:gray},\
+        {text:"[Escape to Chat]",hover_event:{action:"show_text",value:"Escape the Card Selection menu. Sprint to reprompt the selection menu."},color:gray},\
         \
         {text:"\n\n"},$(card_type),\
         ],width:448},\

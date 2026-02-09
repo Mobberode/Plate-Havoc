@@ -5,6 +5,8 @@ function plate_havoc:game/misc/cards/running/types/run {type:on.end}
 
 function plate_havoc:game/misc/attributes/custom/update_global
 
+function plate_havoc_content:gametypes/match/rogue/intensity_boost
+
 data modify storage plate_havoc:data default_gamemode set value "spectator"
 execute as @a run function plate_havoc:game/misc/apply_gamemode with storage plate_havoc:data
 

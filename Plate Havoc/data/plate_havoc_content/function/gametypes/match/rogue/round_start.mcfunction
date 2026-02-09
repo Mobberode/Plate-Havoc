@@ -7,6 +7,10 @@ execute store result score #Starting plate_havoc.players if entity @a[tag=!plate
 
 advancement revoke @a from plate_havoc:cards/root
 function plate_havoc:game/misc/cards/running/types/start
+
+function plate_havoc:game/misc/cards/running/types/run {type:one_time}
+data remove storage plate_havoc:cards running.total[].data.functions[{type:"one_time"}]
+
 function plate_havoc:game/misc/cards/running/types/run {type:on.start}
 
 function plate_havoc:game/misc/attributes/custom/update_global

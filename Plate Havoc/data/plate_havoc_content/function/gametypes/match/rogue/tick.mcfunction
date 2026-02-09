@@ -1,5 +1,5 @@
 ##Time Cube and Cyclathron
-execute store result storage plate_havoc:ui cyclathron float 0.01 run scoreboard players get #Cyclathron plate_havoc.num
+function plate_havoc:game/misc/cyclathron_visual
 function plate_havoc_content:gametypes/match/rogue/time_cube/tick
 
 ##loop

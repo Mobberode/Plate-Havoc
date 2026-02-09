@@ -1,11 +1,14 @@
-##Modify card name
-#Name
+##Modify card snbt
+#SNBT
+data modify storage plate_havoc:temp temp set from storage plate_havoc:cards template.data.type
+function plate_havoc:console/zzz/set_colour with storage plate_havoc:temp
+#
+data modify storage plate_havoc:cards snbt set from storage plate_havoc:cards template.data.text
+data modify storage plate_havoc:temp input.name set from storage plate_havoc:cards template.data.name
+function plate_havoc:game/misc/cards/process/card/apply/snbt
+
 data modify storage plate_havoc:cards template.visual.body.extra[{metadata:name}].text set from storage plate_havoc:cards template.data.name
 data modify storage plate_havoc:cards template.visual.body.text set value ""
-#Colour
-data modify storage plate_havoc:custom card_type set from storage plate_havoc:cards template.data.type
-function plate_havoc:console/zzz/set_colour with storage plate_havoc:custom
-data modify storage plate_havoc:cards template.visual.body.extra[{metadata:name}].color set from storage plate_havoc:cards active_type.colour
 
 ##Data
 #Cost

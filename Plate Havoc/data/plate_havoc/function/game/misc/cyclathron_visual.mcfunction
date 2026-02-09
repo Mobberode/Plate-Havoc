@@ -1,0 +1,2 @@
+execute store result storage plate_havoc:temp temp float 0.01 run scoreboard players get #Cyclathron plate_havoc.num
+data modify storage plate_havoc:ui cyclathron set string storage plate_havoc:temp temp

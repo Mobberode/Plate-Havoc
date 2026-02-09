@@ -14,7 +14,7 @@ data modify storage plate_havoc:ui bar.visual set value {active:[],inactive:[],v
 
 data modify storage plate_havoc:ui bar.queue set value []
 
-data modify storage plate_havoc:ui bar.queue append value {id:intensity,text:"",extra:[{text:"Intensity: "},{storage:"plate_havoc:data",nbt:intensity,color:red}]}
+data modify storage plate_havoc:ui bar.queue append value {id:intensity,text:"",extra:[{text:"Intensity: "},{storage:"plate_havoc:ui",nbt:intensity,color:red,interpret:true}]}
 
 data modify storage plate_havoc:ui bar.queue append value {id:time,text:"",extra:[{text:"Time: "},{score:{name:"#Duration",objective:plate_havoc.timer},color:gold}]}
 

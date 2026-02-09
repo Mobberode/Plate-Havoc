@@ -1,0 +1,2 @@
+execute if score #Cyclathron plate_havoc.temp matches 1.. run return run data modify storage plate_havoc:temp temp[{meta:prefix}] set value {meta:prefix,text:"+",color:green}
+execute if score #Cyclathron plate_havoc.temp matches ..-1 run return run data modify storage plate_havoc:temp temp[{meta:prefix}] set value {meta:prefix,text:"",color:red}

@@ -6,5 +6,6 @@ data modify storage plate_havoc:temp temp set value [{meta:prefix,text:"",color:
 execute store result storage plate_havoc:temp temp[{meta:difference}].text float 0.01 run scoreboard players get #Cyclathron plate_havoc.temp 
 data modify storage plate_havoc:temp temp[{meta:difference}].text set string storage plate_havoc:temp temp[{meta:difference}].text 0 -1
 
-execute if score #Cyclathron plate_havoc.temp matches 1.. run return run data modify storage plate_havoc:temp temp[{meta:prefix}] set value {meta:prefix,text:"+",color:green}
-execute if score #Cyclathron plate_havoc.temp matches ..-1 run return run data modify storage plate_havoc:temp temp[{meta:prefix}] set value {meta:prefix,text:"",color:red}
+function plate_havoc:game/misc/cards/vote/end/visualize_cyclathron_fixes
+
+tellraw @a [{text:"Cyclathron Difference:",color:gray}," ",{storage:"plate_havoc:temp",nbt:temp,interpret:true}]

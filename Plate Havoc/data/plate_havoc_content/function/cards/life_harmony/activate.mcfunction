@@ -3,7 +3,7 @@ advancement revoke @s only plate_havoc_content:cards/life_harmony
 #Event time
 scoreboard players add #Card.Life_Harmony.Effect_Duration plate_havoc.temp 150
 data modify storage plate_havoc:temp id_attribute set value "plate_havoc:event.time"
-data modify storage plate_havoc:custom attribute_modifier set value {id:"plate_havoc_content:card.life_harmony",value:-0.5,operation:"add_multiplied_total",temporary:true}
+data modify storage plate_havoc:custom attribute_modifier set value {id:"plate_havoc_content:card.life_harmony",value:-0.5,operation:"add_multiplied_total",temporary:true,tags:["plate_havoc_content:life_harmony"]}
 function plate_havoc:game/misc/attributes/custom/add_modifier
 function plate_havoc:game/misc/attributes/custom/input {id:"plate_havoc:event.time"}
 
