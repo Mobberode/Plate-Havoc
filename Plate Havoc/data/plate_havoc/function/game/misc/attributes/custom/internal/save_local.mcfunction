@@ -1,0 +1,1 @@
+$data modify storage plate_havoc:temp attribute set from storage plate_havoc:custom attributes[{id:"$(id_attribute)"}]

@@ -1,0 +1,12 @@
+{
+    "type": "multi_action",
+    "title": "Plate Havoc Roguelike Test Intro",
+    "exit_action": {"label":"Back","action":{"type":"show_dialog","dialog":"plate_havoc:tutorial/rogue/time_cards"}},
+    "body": [
+        {"type":"plain_message","contents":[{"text":""},{"text":"-- Vanilla Changes --\n","color":"gold"},{"text":"Vanilla gameplay has been changed with breaking and placing blocks being locked."}],"width":448},
+        {"type":"plain_message","contents":[{"text":""},{"text":"-- Custom Controls --\n","color":"gold"},"[",{"keybind":"key.sprint","color":"green"},"]"," Sprint Charge: Hold whilst not moving to charge up, letting go will stop the charge but moving will start use of the charge, increasing movement speed which is scaled by how long the charge has been held."],"width":448}
+    ],
+    "actions": [
+        {"label":{"text":"Proceed to next section"},"width":256,"action":{"type":"show_dialog","dialog":"plate_havoc:tutorial/rogue/closing_notes"}}
+    ]
+}

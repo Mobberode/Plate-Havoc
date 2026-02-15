@@ -5,7 +5,6 @@
         "plate_havoc_content:gametypes",
         "plate_havoc_content:cards",
         "plate_havoc_content:card_types",
-        "plate_havoc_content:modifiers",
-        "zzz_embed_bound:plate_havoc"
+        "plate_havoc_content:modifiers"
     ]
 }

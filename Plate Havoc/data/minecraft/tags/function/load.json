@@ -1,6 +1,6 @@
 {
     "values": [
         "plate_havoc:load",
-        "zzz_embed_bound:loaded"
+        "player_motion:internal/init"
     ]
 }

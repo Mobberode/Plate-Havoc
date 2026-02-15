@@ -1,6 +1,7 @@
 ##Fail if these checks pass
-#Clear if on ground (Ugly since tping makes the game think player is on ground.)
-execute align xz unless block ~ ~-.1 ~ #plate_havoc:nonsolid run return run function plate_havoc:game/misc/player/extra_jumps/clear
+#Clear if on ground (Beautiful)
+execute unless score @s plate_havoc.on_ground.predicate.delay matches 1.. if predicate plate_havoc:on_ground run return run function plate_havoc:game/misc/player/extra_jumps/clear
+
 #On climable block
 execute if block ~ ~ ~ #plate_havoc:climbable run return fail
 #On vechicle

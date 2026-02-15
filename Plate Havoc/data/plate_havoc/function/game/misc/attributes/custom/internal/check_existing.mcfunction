@@ -1,1 +1,1 @@
-$execute store result score #Temp plate_havoc.temp if data storage plate_havoc:custom attributes[{id:"$(id_attribute)"}].modifiers[{id:"$(id_modifier)"}]
+$execute store result score #Temp plate_havoc.temp if data storage plate_havoc:temp attribute.modifiers[{id:"$(id_modifier)"}]

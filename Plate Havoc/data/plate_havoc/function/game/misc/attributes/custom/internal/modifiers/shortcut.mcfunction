@@ -1,0 +1,1 @@
+data modify storage plate_havoc:custom attribute.output set from storage plate_havoc:custom attribute.base

@@ -12,6 +12,9 @@ scoreboard players set #60 plate_havoc.num 60
 scoreboard players set #80 plate_havoc.num 80
 scoreboard players set #100 plate_havoc.num 100
 scoreboard players set #1000 plate_havoc.num 1000
+scoreboard players set #10000 plate_havoc.num 10000
+scoreboard players set #100000 plate_havoc.num 100000
+scoreboard players set #1000000 plate_havoc.num 100000
 scoreboard players set #PRNG.Multiply plate_havoc.num 1562730894
 scoreboard players set #PRNG.Add plate_havoc.num 67
 scoreboard players set #EventTotalRunCount plate_havoc.num 0
@@ -90,6 +93,10 @@ data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:
 
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:event.time",base:2.5,modifiers:[]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:intensity.gain",base:0.0175,modifiers:[]}
+
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:player.charge.cap",base:2,modifiers:[],update:{score:"#Player.Charge.Cap plate_havoc.temp"}}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:player.charge.gain",base:0.03,modifiers:[],update:{score:"#Player.Charge.Gain plate_havoc.temp"}}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:player.charge.loss",base:0.01,modifiers:[],update:{score:"#Player.Charge.Loss plate_havoc.temp"}}
 
 ##Extra Jumps
 data modify storage plate_havoc:data extra_jumps set value []

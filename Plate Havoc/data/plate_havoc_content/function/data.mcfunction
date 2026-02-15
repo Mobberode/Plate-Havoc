@@ -17,8 +17,8 @@ scoreboard players set #Template.Event.Creeper.MaxRunCount plate_havoc.num 1
 scoreboard players set #Template.Event.Lava.MaxRunCount plate_havoc.num 1
 ## falling_sand (Max Run Count) (Start Height) (Finish Height)
 scoreboard players set #Template.Event.Falling_Sand.MaxRunCount plate_havoc.num 1
-scoreboard players set #Template.Event.Falling_Sand.StartHeight plate_havoc.num 20
-scoreboard players set #Template.Event.Falling_Sand.FinishHeight plate_havoc.num 25
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.falling_sand.y_start",base:20,modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.falling_sand.height",base:5,modifiers:[]}
 ## zeus (Max Run Count)
 scoreboard players set #Template.Event.Zeus.MaxRunCount plate_havoc.num 1
 ## moo (Max Run Count)
@@ -29,7 +29,7 @@ scoreboard players set #Template.Event.TNT.MaxRunCount plate_havoc.num 1
 scoreboard players set #Template.Event.Trap_Door.MaxRunCount plate_havoc.num 1
 ## netherrack (Max Run Count) (Amount of blocks to corrupt)
 scoreboard players set #Template.Event.Netherrack.MaxRunCount plate_havoc.num 1
-scoreboard players set #Template.Event.Netherrack.SpreadAmount plate_havoc.num 16
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.netherrack.spread",base:16,modifiers:[]}
 ## water (Max Run Count)
 scoreboard players set #Template.Event.Water.MaxRunCount plate_havoc.num 1
 ## iron_golem (Max Run Count)
@@ -40,16 +40,16 @@ scoreboard players set #Template.Event.Bridge.MaxRunCount plate_havoc.num 1
 scoreboard players set #Template.Event.Ghast.MaxRunCount plate_havoc.num 1
 ## acid_rain (Max Run Count) (Duration) (Damage Multiplier (100 = 0.01))
 scoreboard players set #Template.Event.AcidRain.MaxRunCount plate_havoc.num 1
-scoreboard players set #Template.Event.AcidRain.Duration plate_havoc.num 20
-scoreboard players set #Template.Event.AcidRain.Damage_Multiplier plate_havoc.num 100
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.acid_rain.duration",base:20,modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.acid_rain.damage_multiplier",base:0.065,modifiers:[]}
 ## null (Max Run Count)
 scoreboard players set #Template.Event.Null.MaxRunCount plate_havoc.num 1
 ## buff_wind (Max Run Count) (Amount)
 scoreboard players set #Template.Event.Buff_Wind.MaxRunCount plate_havoc.num 1
-scoreboard players set #Template.Event.Buff_Wind.Amount plate_havoc.num 5
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.buff_wind.give_value",base:5,modifiers:[]}
 ## buff_heal (Max Run Count) (Amount)
 scoreboard players set #Template.Event.Buff_Heal.MaxRunCount plate_havoc.num 1
-scoreboard players set #Template.Event.Buff_Heal.Amount plate_havoc.num 1
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.buff_heal.give_value",base:1,modifiers:[]}
 ## end_island (Max Run Count) (WaitTime)
 scoreboard players set #Template.Event.End_Island.MaxRunCount plate_havoc.num 1
 scoreboard players set #Template.Event.End_Island.Wait_Time plate_havoc.num 15
@@ -57,29 +57,29 @@ scoreboard players set #Template.Event.End_Island.Wait_Time plate_havoc.num 15
 scoreboard players set #Template.Event.Snow_Golem.MaxRunCount plate_havoc.num 1
 ## fire_rain (Max Run Count) (Amount (0 = end rain)) (Delay (How fast each fireball is summoned))
 scoreboard players set #Template.Event.Fire_Rain.MaxRunCount plate_havoc.num 1
-scoreboard players set #Template.Event.Fire_Rain.Amount plate_havoc.num 10
-scoreboard players set #Template.Event.Fire_Rain.Delay plate_havoc.num 50
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.fire_rain.amount",base:10,modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.fire_rain.delay",base:2.5,modifiers:[]}
 ## fireballs (Max Run Count) (Distance in Blocks away from Target)
 scoreboard players set #Template.Event.Fireballs.MaxRunCount plate_havoc.num 1
-scoreboard players set #Template.Event.Fireballs.Distance plate_havoc.num 80
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.fireballs.distance",base:80,modifiers:[]}
 ## dragonball (Max Run Count) (Distance in Blocks away from Target) (Speed (100 = 0.01))
 scoreboard players set #Template.Event.Dragonball.MaxRunCount plate_havoc.num 1
-scoreboard players set #Template.Event.Dragonball.Distance plate_havoc.num 100
-scoreboard players set #Template.Event.Dragonball.Speed plate_havoc.num 65
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.dragonball.distance",base:100,modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.dragonball.speed",base:0.65,modifiers:[]}
 ## honey (Max Run Count)
 scoreboard players set #Template.Event.Honey.MaxRunCount plate_havoc.num 1
-## buff_shield (Max Run Count) (Amount)
+## buff_shield (Max Run Count) (Max Durability)
 scoreboard players set #Template.Event.Buff_Shield.MaxRunCount plate_havoc.num 1
-scoreboard players set #Template.Event.Buff_Shield.Amount plate_havoc.num 1
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.buff_shield.max_durability",base:32,modifiers:[]}
 ## buff_pearl (Max Run Count) (Amount)
 scoreboard players set #Template.Event.Buff_Pearl.MaxRunCount plate_havoc.num 1
-scoreboard players set #Template.Event.Buff_Pearl.Amount plate_havoc.num 2
-## buff_mace (Max Run Count) (Amount)
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.buff_pearl.give_value",base:2,modifiers:[]}
+## buff_mace (Max Run Count) (Max Durability)
 scoreboard players set #Template.Event.Buff_Mace.MaxRunCount plate_havoc.num 1
-scoreboard players set #Template.Event.Buff_Mace.Amount plate_havoc.num 1
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.buff_mace.max_durability",base:1,modifiers:[]}
 ## nerf_slowness (Max Run Count) (Duration)
 scoreboard players set #Template.Event.Nerf_Slowness.MaxRunCount plate_havoc.num 1
-scoreboard players set #Template.Event.Nerf_Slowness.Duration plate_havoc.num 25
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.nerf_slowness.duration",base:25,modifiers:[]}
 ## sign (Max Run Count)
 scoreboard players set #Template.Event.Sign.MaxRunCount plate_havoc.num 1
 data modify storage plate_havoc:events data.signs set value [{messages:["We","Will","Be","Watching."]},{messages:["Look","up. its","falling","down"]},{messages:["You","read this","you are","GAY!!"]},{messages:["Behind you.","","",""]},{messages:["2","7","0","2"]},{messages:["I","AM","LAMB",""]},{messages:["Get","Silksong","",""]}]
@@ -97,10 +97,10 @@ scoreboard players set #Template.Event.Wither.MaxRunCount plate_havoc.num 1
 scoreboard players set #Template.Event.Cobweb.MaxRunCount plate_havoc.num 1
 ## effect_wind_charged (Max Run Count) (Duration)
 scoreboard players set #Template.Event.Effect_Wind_Charged.MaxRunCount plate_havoc.num 1
-scoreboard players set #Template.Event.Effect_Wind_Charged.Duration plate_havoc.num 90
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.effect_wind_charged.duration",base:90,modifiers:[]}
 ## eraserman (Max Run Count) (Distance in Blocks)
 scoreboard players set #Template.Event.Eraserman.MaxRunCount plate_havoc.num 1
-scoreboard players set #Template.Event.Eraserman.Distance plate_havoc.num 100
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.eraserman.distance",base:100,modifiers:[]}
 ## fireworks (Max Run Count) (Summons) (Summon Delay (in ticks)) (Summon Extension)
 scoreboard players set #Template.Event.Fireworks.MaxRunCount plate_havoc.num 1
 scoreboard players set #Template.Event.Fireworks.Summon plate_havoc.num 80

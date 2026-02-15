@@ -2,9 +2,9 @@
     "type": "multi_action",
     "title": "Plate Havoc Roguelike Test Intro",
     "columns": 1,
-    "exit_action": {"label":"Back","action":{"type":"show_dialog","dialog":"plate_havoc:tutorial/rogue/time_cards"}},
+    "exit_action": {"label":"Back","action":{"type":"show_dialog","dialog":"plate_havoc:tutorial/rogue/vanilla_changes"}},
     "body": [
-        {"type":"plain_message","contents":[{"text":""},{"text":"- Closing Notes -\n","color":"blue"},{"text":"You should now have the basic info on how to play Plate Havoc. However, reaching for the top is not for the faint of heart. Good luck"}],"width":448}
+        {"type":"plain_message","contents":["",{"text":"- Check Resources! -\n","color":"yellow"},"Plate Havoc uses a lot of particles and other displays may get tampered with due to your resource packs and/or mods!\n\n",{"text":"- Closing Notes -\n","color":"blue"},"You should now have the basic info on how to play Plate Havoc. However, reaching for the top is not for the faint of heart. Good luck"],"width":448}
     ],
     "actions": [
         {"label":{"text":"Play"},"width":256,"action":{"type":"run_command","command":"/trigger plate_havoc.test.read set 99"}}

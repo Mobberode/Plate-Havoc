@@ -1,8 +1,9 @@
-execute if score #FireRain.Amount plate_havoc.event matches 1.. run return run scoreboard players set #Restart plate_havoc.event 1
+execute if score #PHC.FireRain.Amount plate_havoc.event matches 1.. run return run scoreboard players set #Restart plate_havoc.event 1
 
 #
-scoreboard players operation #FireRain.Amount plate_havoc.event = #Template.Event.Fire_Rain.Amount plate_havoc.num
-scoreboard players operation #FireRain.Delay plate_havoc.event = #Template.Event.Fire_Rain.Delay plate_havoc.num
+execute store result score #PHC.FireRain.Amount plate_havoc.event run data get storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.fire_rain.amount"}].output
+
+execute store result score #PHC.FireRain.Delay plate_havoc.event run data get storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.fire_rain.delay"}].output 20
 
 function plate_havoc_content:events/fire_rain/run
 

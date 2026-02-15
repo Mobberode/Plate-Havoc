@@ -1,6 +1,6 @@
 #Data
-execute store result storage plate_havoc:events distance int 1 run scoreboard players get #Template.Event.Dragonball.Distance plate_havoc.num
-execute store result storage plate_havoc:events speed double 0.01 run scoreboard players get #Template.Event.Dragonball.Speed plate_havoc.num
+data modify storage plate_havoc:events distance set from storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.dragonball.distance"}].output
+data modify storage plate_havoc:events speed set from storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.dragonball.speed"}].output
 
 function plate_havoc_content:events/dragonball/run
 

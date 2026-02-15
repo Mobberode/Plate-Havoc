@@ -1,0 +1,1 @@
+data modify storage plate_havoc:data extra_jumps append value "plate_havoc_content:misc/jump_provider/success"

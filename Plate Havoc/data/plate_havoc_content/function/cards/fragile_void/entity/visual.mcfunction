@@ -15,5 +15,5 @@ execute store result storage plate_havoc:cards temp3 double 0.1 run scoreboard p
 function plate_havoc_content:cards/fragile_void/entity/set_scale
 
 ##Pos
-execute summon marker run function plate_havoc_content:cards/fragile_void/entity/get_pos
+execute summon marker run function plate_havoc:game/misc/get_position
 execute at @s run function plate_havoc_content:cards/fragile_void/entity/particles with storage plate_havoc:cards

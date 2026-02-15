@@ -1,1 +1,1 @@
-$execute store result storage plate_havoc:data damage double 0.05 run attribute @s max_health get $(damage_multiplier)
+$execute store result storage plate_havoc:temp damage double 1 run attribute @s max_health get $(temp)

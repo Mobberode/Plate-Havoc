@@ -16,6 +16,7 @@ execute if score @s[predicate=plate_havoc:falling] plate_havoc.jumps.count match
 execute if score @s plate_havoc.jumps.count matches 1 run return fail
 
 ##Start using extra jumps
+scoreboard players set @s plate_havoc.on_ground.predicate.delay 1
 scoreboard players operation #Temp plate_havoc.jumps.count = @s plate_havoc.jumps.count
 scoreboard players remove #Temp plate_havoc.jumps.count 1
 

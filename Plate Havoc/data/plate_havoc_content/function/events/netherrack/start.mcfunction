@@ -1,5 +1,5 @@
 #Data
-scoreboard players operation #Netherrack plate_havoc.event = #Template.Event.Netherrack.SpreadAmount plate_havoc.num
+execute store result score #Netherrack plate_havoc.event run data get storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.netherrack.spread"}].output
 
 execute as @n[type=marker,tag=plate_havoc.event_place] run function plate_havoc_content:events/netherrack/run
 
