@@ -2,8 +2,8 @@ scoreboard players operation #EventRunCount plate_havoc.num = #Template.Event.Fi
 
 execute if score #Fireworks.Summon plate_havoc.event matches 1.. run return run function plate_havoc_content:events/fireworks/extend
 
-scoreboard players operation #Fireworks.Summon plate_havoc.event = #Template.Event.Fireworks.Summon plate_havoc.num
-scoreboard players operation #Fireworks.Delay plate_havoc.event = #Template.Event.Fireworks.Summon_Delay plate_havoc.num
+execute store result score #Fireworks.Summon plate_havoc.event run data get storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.fireworks.summon.value"}].output
+execute store result score #Fireworks.Delay plate_havoc.event run data get storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.fireworks.summon.delay"}].output 20
 
 function plate_havoc_content:events/fireworks/run
 

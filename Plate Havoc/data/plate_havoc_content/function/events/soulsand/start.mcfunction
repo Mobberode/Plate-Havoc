@@ -1,5 +1,6 @@
 #Data
-scoreboard players operation #SoulSand.SpreadAmount plate_havoc.event = #Template.Event.SoulSand.SpreadAmount plate_havoc.num
+execute store result score #SoulSand.SpreadAmount plate_havoc.event run data get storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.soul_sand.spread"}].output
+
 
 execute as @n[type=marker,tag=plate_havoc.event_place] run function plate_havoc_content:events/soulsand/run
 

@@ -1,0 +1,1 @@
+execute as @e[tag=plate_havoc_content.event.zeus,type=marker] at @s run function plate_havoc_content:events/zeus/tick

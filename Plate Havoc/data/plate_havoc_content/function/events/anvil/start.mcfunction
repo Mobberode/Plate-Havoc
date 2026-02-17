@@ -1,5 +1,5 @@
 #Data
-execute store result storage plate_havoc:events distance int 1 run scoreboard players get #Template.Event.Anvil.Distance plate_havoc.num
+data modify storage plate_havoc:temp distance set from storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.anvil.distance"}]
 
 function plate_havoc_content:events/anvil/run
 

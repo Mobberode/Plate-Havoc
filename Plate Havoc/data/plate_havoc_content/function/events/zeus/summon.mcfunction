@@ -1,0 +1,2 @@
+tag @s add plate_havoc_content.event.zeus
+execute store result score @s plate_havoc.timer run data get storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.zeus.indicator_time"}].output 20

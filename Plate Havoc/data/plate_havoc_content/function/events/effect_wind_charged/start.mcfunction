@@ -1,5 +1,5 @@
 scoreboard players operation #EventRunCount plate_havoc.num = #Template.Event.Effect_Wind_Charged.MaxRunCount plate_havoc.num
-execute store result score #Effect_Wind_Charged.Duration plate_havoc.event run data get storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.effect_wind_charged.duration"}]
+execute store result score #Effect_Wind_Charged.Duration plate_havoc.event run data get storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.effect_wind_charged.duration"}].output
 
 #Data
 execute store result storage plate_havoc:temp duration int 1 run scoreboard players operation #Effect_Wind_Charged.Duration plate_havoc.event *= #Template.Event.Effect_Wind_Charged.MaxRunCount plate_havoc.num

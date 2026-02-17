@@ -101,5 +101,8 @@ data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:
 ##Extra Jumps
 data modify storage plate_havoc:data extra_jumps set value []
 
+##Run tags
+data modify storage plate_havoc:data run_tags set value []
+
 ##Cyclathron
 scoreboard players set #Cyclathron plate_havoc.num 0
