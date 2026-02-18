@@ -46,4 +46,4 @@ execute if predicate player_motion:internal/falling_creative_player \
 execute if score #falling player_motion.internal.gamemode matches 0 run gamemode spectator
 
 ## Restore gamemode, successful `gamemode` execution result is always `1`
-return run gamemode creative
+return run gamemode spectator

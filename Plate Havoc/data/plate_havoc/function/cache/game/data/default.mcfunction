@@ -1,3 +1,4 @@
+scoreboard players set #-1 plate_havoc.num -1
 scoreboard players set #2 plate_havoc.num 2
 scoreboard players set #3 plate_havoc.num 3
 scoreboard players set #4 plate_havoc.num 4
@@ -15,11 +16,14 @@ scoreboard players set #1000 plate_havoc.num 1000
 scoreboard players set #10000 plate_havoc.num 10000
 scoreboard players set #100000 plate_havoc.num 100000
 scoreboard players set #1000000 plate_havoc.num 100000
-scoreboard players set #PRNG.Multiply plate_havoc.num 1562730894
+scoreboard players set #PRNG.Multiply plate_havoc.num 1562730893
 scoreboard players set #PRNG.Add plate_havoc.num 67
 scoreboard players set #EventTotalRunCount plate_havoc.num 0
 scoreboard players set #EventRepeats plate_havoc.num 1
 scoreboard players set #CardTotalSelects plate_havoc.num 0
+
+scoreboard players set #Runtick plate_havoc.num 0
+scoreboard players set #PRNG.Runs plate_havoc.num 0
 
 scoreboard players set #BaseEventRequirementPercentage plate_havoc.intensity 100
 

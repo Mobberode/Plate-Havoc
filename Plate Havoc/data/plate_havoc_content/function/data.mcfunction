@@ -121,9 +121,8 @@ scoreboard players set #Template.Event.SoulSand.MaxRunCount plate_havoc.num 1
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.soul_sand.spread",base:12,modifiers:[]}
 ## blaze (Max Run Count)
 scoreboard players set #Template.Event.Blaze.MaxRunCount plate_havoc.num 1
-## bucket (Max Run Count) (Amount)
+## bucket (Max Run Count)
 scoreboard players set #Template.Event.Bucket.MaxRunCount plate_havoc.num 1
-scoreboard players set #Template.Event.Bucket.Amount plate_havoc.num 1
 ## herobrine (Max Run Count) (Duration) (Duration Extension) (Acitvate Time) (Movement Distance(x0.01))
 scoreboard players set #Template.Event.Herobrine.MaxRunCount plate_havoc.num 1
 scoreboard players set #Template.Event.Herobrine.Duration plate_havoc.num 900
@@ -188,9 +187,9 @@ scoreboard players set #Template.Event.Outer_Space_Gravity.Effect_Strength plate
 scoreboard players set #Template.Event.Sapling_Drop.MaxRunCount plate_havoc.num 1
 scoreboard players set #Template.Event.Sapling_Drop.Amount plate_havoc.num 5
 scoreboard players set #Template.Event.Sapling_Drop.Delay plate_havoc.num 100
-## buff_bow (Max Run Count) (Amount)
+## buff_bow (Max Run Count) (Arrows)
 scoreboard players set #Template.Event.Buff_Bow.MaxRunCount plate_havoc.num 1
-scoreboard players set #Template.Event.Buff_Bow.Amount plate_havoc.num 8
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.buff_bow.arrows",base:0.008,modifiers:[]}
 ## creaking (Max Run Count)
 scoreboard players set #Template.Event.Creaking.MaxRunCount plate_havoc.num 1
 ## lava_pillar (Max Run Count) (Delay) (Size) (Randomize Height) (Offset)
@@ -199,23 +198,22 @@ scoreboard players set #Template.Event.Lava_Pillar.Delay plate_havoc.num 2
 scoreboard players set #Template.Event.Lava_Pillar.Size plate_havoc.num 0
 scoreboard players set #Template.Event.Lava_Pillar.Height_Randomize_Max plate_havoc.num 40
 scoreboard players set #Template.Event.Lava_Pillar.Offset plate_havoc.num 50
-## flame_guardian (Max Run Count) (Duration (tick)) (Shoot Time (tick)) (Movement (x0.01)) (Cast Cover (Times the cast will go on for)) (Projectile Damage (x0.1))
+## flame_guardian (Max Run Count) (Duration) (Shoot Time) (Movement) (Cast Cover) (Projectile Damage)
 scoreboard players set #Template.Event.Flame_Guardian.MaxRunCount plate_havoc.num 1
-scoreboard players set #Template.Event.Flame_Guardian.Duration plate_havoc.num 1200
-scoreboard players set #Template.Event.Flame_Guardian.Shoot_Time plate_havoc.num 50
-scoreboard players set #Template.Event.Flame_Guardian.Movement plate_havoc.num 125
-scoreboard players set #Template.Event.Flame_Guardian.Cast_Cover plate_havoc.num 64
-scoreboard players set #Template.Event.Flame_Guardian.Projectile_Damage plate_havoc.num 50
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.flame_guardian.duration",base:0.6,modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.flame_guardian.shoot_time",base:0.025,modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.flame_guardian.movement",base:0.75,modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.flame_guardian.cast_cover",base:0.064,modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.flame_guardian.damage",base:1.5,modifiers:[]}
 ## obsidian_plate (Max Run Count) (Size)
 scoreboard players set #Template.Event.Obsidian_Plate.MaxRunCount plate_havoc.num 1
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.obsidian_plate.size",base:1,modifiers:[]}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.obsidian_plate.offset",base:0.25,modifiers:[]}
-## ice_road (Max Run Count) (Distance Cover Min) (Distance Cover Max) (Horizontal Offset) (Vertical Offset)
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.obsidian_plate.offset",base:0.025,modifiers:[]}
+## ice_road (Max Run Count) (Length) (XZ Offset) (Y Offset)
 scoreboard players set #Template.Event.Ice_Road.MaxRunCount plate_havoc.num 1
-scoreboard players set #Template.Event.Ice_Road.Distance_Cover_Min plate_havoc.num 15
-scoreboard players set #Template.Event.Ice_Road.Distance_Cover_Max plate_havoc.num 50
-scoreboard players set #Template.Event.Ice_Road.Horizontal_Offset plate_havoc.num 50
-scoreboard players set #Template.Event.Ice_Road.Vertical_Offset plate_havoc.num 25
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.ice_road.length",base:0.015,modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.ice_road.offset_xz",base:0.05,modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.ice_road.offset_y",base:0.025,modifiers:[]}
 ## monster_spawner (Max Run Count)
 scoreboard players set #Template.Event.Monster_Spawner.MaxRunCount plate_havoc.num 1
 data modify storage plate_havoc:events data.monster_spawner set value ["minecraft:stray","minecraft:husk","minecraft:spider","minecraft:slime","minecraft:witch","minecraft:enderman","minecraft:pig","minecraft:villager","minecraft:goat"]

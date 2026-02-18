@@ -1,8 +1,16 @@
-$execute store result score @s plate_havoc.event run random value $(min_offset)..$(max_offset)
+#X
+scoreboard players operation #Modulo plate_havoc.temp = #XZ plate_havoc.temp
+scoreboard players operation #Modulo2 plate_havoc.temp = #XZ plate_havoc.temp
+scoreboard players operation #Modulo2 plate_havoc.temp *= #-1 plate_havoc.num
+execute store result storage plate_havoc:events x int 1 run function plate_havoc:game/misc/prng_ranged
 
-$execute store result storage plate_havoc:events x int 1 run random value $(min_offset2)..$(max_offset2)
-$execute store result storage plate_havoc:events z int 1 run random value $(min_offset2)..$(max_offset2)
+#Z
+execute store result storage plate_havoc:events z int 1 run function plate_havoc:game/misc/prng_ranged
 
-$execute store result storage plate_havoc:events y int 1 run random value $(min_offset3)..$(max_offset3)
+#Y
+scoreboard players operation #Modulo plate_havoc.temp = #Y plate_havoc.temp
+scoreboard players operation #Modulo2 plate_havoc.temp = #Y plate_havoc.temp
+scoreboard players operation #Modulo2 plate_havoc.temp *= #-1 plate_havoc.num
+execute store result storage plate_havoc:events y int 1 run function plate_havoc:game/misc/prng_ranged
 
 function plate_havoc_content:events/ice_road/position with storage plate_havoc:events

@@ -1,3 +1,5 @@
+scoreboard players add #Runtick plate_havoc.num 1
+
 ##Game Check
 function plate_havoc:game/match/player/mode_check with storage plate_havoc:data
 

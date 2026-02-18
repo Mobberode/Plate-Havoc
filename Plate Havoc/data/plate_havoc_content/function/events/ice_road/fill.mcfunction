@@ -1,1 +1,0 @@
-setblock ~ ~ ~ packed_ice strict

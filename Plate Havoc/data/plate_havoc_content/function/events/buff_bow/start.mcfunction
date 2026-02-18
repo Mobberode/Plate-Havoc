@@ -1,5 +1,5 @@
 #Data
-execute store result storage plate_havoc:events count int 1 run scoreboard players get #Template.Event.Buff_Bow.Amount plate_havoc.num
+execute store result storage plate_havoc:events count int 1 run data get storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.buff_bow.arrows"}].output 1000
 
 function plate_havoc_content:events/buff_bow/run
 

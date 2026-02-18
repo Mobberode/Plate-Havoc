@@ -1,0 +1,1 @@
+$execute positioned ^ ^ ^-$(offset) run function plate_havoc_content:events/ice_road/place with storage plate_havoc:events
