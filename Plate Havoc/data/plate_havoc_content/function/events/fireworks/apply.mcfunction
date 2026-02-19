@@ -1,7 +1,6 @@
-function plate_havoc_content:events/fireworks/apply_life
+$data merge entity @s {LifeTime:$(life),FireworksItem:{id:firework_rocket,count:1,components:{fireworks:{explosions:[{shape:"small_ball",colors:[1005000000],fade_colors:[16777215]}]}}},ShotAtAngle:true,Tags:["plate_havoc_content.event.firework","plate_havoc.dont_interact"],Rotation:[$(rotation_horizontal),$(rotation_vertical)]}
 
-function plate_havoc_content:events/fireworks/apply_rot
+$execute rotated as @s run tp ^$(offset_x) ^$(offset_y) ^$(dist)
 
-execute at @s run function plate_havoc_content:events/fireworks/finish_position
-
-data modify entity @s Motion set from storage plate_havoc:motion motion
+execute rotated as @s positioned 0.0 0.0 0.0 summon marker run function plate_havoc_content:events/fireworks/get_motion with storage plate_havoc:events
+data modify entity @s Motion set from storage plate_havoc:events motion

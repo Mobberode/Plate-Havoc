@@ -1,1 +1,1 @@
-execute as @e[tag=plate_havoc.obama] at @s run function plate_havoc_content:events/zzz_console/obama_drone_strike/fallout
+execute in plate_havoc:arena as @n[x=0,tag=plate_havoc_content.event.obama_drone_strike,type=item_display] at @s run function plate_havoc_content:events/zzz_console/obama_drone_strike/fallout

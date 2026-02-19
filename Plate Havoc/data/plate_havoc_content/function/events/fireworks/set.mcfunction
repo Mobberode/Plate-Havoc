@@ -1,14 +1,32 @@
-tag @s remove plate_havoc.firework.init
-tag @s add plate_havoc.firework
+##Positioning
+#
+scoreboard players set #Modulo plate_havoc.temp 5
+scoreboard players set #Modulo2 plate_havoc.temp -5
+execute store result storage plate_havoc:events offset_x int 1 run function plate_havoc:game/misc/prng_ranged
+#
+execute store result storage plate_havoc:events offset_y int 1 run function plate_havoc:game/misc/prng_ranged
+#
+scoreboard players set #Modulo plate_havoc.temp -40
+scoreboard players set #Modulo2 plate_havoc.temp -90
+execute store result storage plate_havoc:events dist int 1 run function plate_havoc:game/misc/prng_ranged
+###
+#
+scoreboard players set #Modulo plate_havoc.temp 179
+scoreboard players set #Modulo2 plate_havoc.temp -180
+execute store result storage plate_havoc:events rotation_horizontal int 1 run function plate_havoc:game/misc/prng_ranged
+#
+scoreboard players set #Modulo plate_havoc.temp 90
+scoreboard players set #Modulo2 plate_havoc.temp -90
+execute store result storage plate_havoc:events rotation_vertical int 1 run function plate_havoc:game/misc/prng_ranged
 
-##Offset
-execute store result storage plate_havoc:events x int 1 run random value -5..5
-execute store result storage plate_havoc:events y int 1 run random value -5..5
-execute store result storage plate_havoc:events z int 1 run random value -5..5
+##Data
+#
+scoreboard players set #Modulo plate_havoc.temp 610
+scoreboard players set #Modulo2 plate_havoc.temp 210
+execute store result storage plate_havoc:events life int 1 run function plate_havoc:game/misc/prng_ranged
+#
+scoreboard players set #Modulo plate_havoc.temp 75
+scoreboard players set #Modulo2 plate_havoc.temp 20
+execute store result storage plate_havoc:events speed double 0.01 run function plate_havoc:game/misc/prng_ranged
 
-#Final
-execute store result storage plate_havoc:events life int 1 run random value 210..610
-execute store result storage plate_havoc:events dist int 1 run random value -90..-40
-execute store result storage plate_havoc:events speed int 1 run random value 30..200
-
-function plate_havoc_content:events/fireworks/apply
+function plate_havoc_content:events/fireworks/apply with storage plate_havoc:events

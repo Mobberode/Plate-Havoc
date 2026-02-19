@@ -1,2 +1,0 @@
-data modify storage plate_havoc:events movement set from storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.flame_guardian.movement"}].output
-data modify storage plate_havoc:events damage set from storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.flame_guardian.damage"}].output

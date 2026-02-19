@@ -106,8 +106,8 @@ scoreboard players set #Template.Event.Anvil.MaxRunCount plate_havoc.num 1
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.anvil.distance",base:75,modifiers:[]}
 ## black_hole (Max Run Count) (Duration) (Duration Extension) (Base Size) (Growth Limit)
 scoreboard players set #Template.Event.BlackHole.MaxRunCount plate_havoc.num 1
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.black_hole.duration",base:45,modifiers:[]}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.black_hole.duration.extend",base:22.5,modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.black_hole.duration",base:0.9,modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.black_hole.duration.extend",base:0.45,modifiers:[]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.black_hole.base_size",base:1.25,modifiers:[]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.black_hole.growth_limit",base:0.005,modifiers:[],update:{score:"#PHC.BlackHole.Growth_Limit plate_havoc.event"}}
 ## breeze (Max Run Count)
@@ -194,10 +194,10 @@ data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_
 scoreboard players set #Template.Event.Creaking.MaxRunCount plate_havoc.num 1
 ## lava_pillar (Max Run Count) (Delay) (Size) (Randomize Height) (Offset)
 scoreboard players set #Template.Event.Lava_Pillar.MaxRunCount plate_havoc.num 1
-scoreboard players set #Template.Event.Lava_Pillar.Delay plate_havoc.num 2
-scoreboard players set #Template.Event.Lava_Pillar.Size plate_havoc.num 0
-scoreboard players set #Template.Event.Lava_Pillar.Height_Randomize_Max plate_havoc.num 40
-scoreboard players set #Template.Event.Lava_Pillar.Offset plate_havoc.num 50
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.lava_pillar.tick_delay",base:0.002,modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.lava_pillar.size",base:0,modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.lava_pillar.offset.y",base:0.04,modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.lava_pillar.offset.xz",base:0.05,modifiers:[]}
 ## flame_guardian (Max Run Count) (Duration) (Shoot Time) (Movement) (Cast Cover) (Projectile Damage)
 scoreboard players set #Template.Event.Flame_Guardian.MaxRunCount plate_havoc.num 1
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.flame_guardian.duration",base:0.6,modifiers:[]}
@@ -224,8 +224,8 @@ scoreboard players set #Template.Event.Phantom.MaxRunCount plate_havoc.num 1
 
 ## obama_drone_strike (Max Run Count) (Summons) (Summon Extension)
 scoreboard players set #Template.Event.Obama_Drone_Strike.MaxRunCount plate_havoc.num 1
-scoreboard players set #Template.Event.Obama_Drone_Strike.Summon plate_havoc.num 400
-scoreboard players set #Template.Event.Obama_Drone_Strike.Summon_Extension plate_havoc.num 100
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.obama_drone_strike.summon.value",base:500,modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.obama_drone_strike.summon.extend_value",base:250,}
 ## shop (Max Run Count) (Storage Data)
 scoreboard players set #Template.Event.Shop.MaxRunCount plate_havoc.num 1
 data modify storage plate_havoc:events data.shop set value [\

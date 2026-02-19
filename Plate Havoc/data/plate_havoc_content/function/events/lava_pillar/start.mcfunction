@@ -1,14 +1,12 @@
 #Data
-scoreboard players operation #Lava_Pillar.Delay plate_havoc.event = #Template.Event.Lava_Pillar.Delay plate_havoc.num
-scoreboard players operation #Lava_Pillar.Size plate_havoc.event = #Template.Event.Lava_Pillar.Size plate_havoc.num
-execute store result storage plate_havoc:events height int 1 run scoreboard players get #Template.Event.Lava_Pillar.Height_Randomize_Max plate_havoc.num
-execute store result storage plate_havoc:events max_offset int 1 run scoreboard players get #Template.Event.Lava_Pillar.Offset plate_havoc.num
-execute store result storage plate_havoc:events min_offset int -1 run scoreboard players get #Template.Event.Lava_Pillar.Offset plate_havoc.num
+execute store result storage plate_havoc:events active_data."plate_havoc_content".lava_pillar.size int 1 run data get storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.lava_pillar.size"}].output 1000
+execute store result score #Lava_Pillar.Delay plate_havoc.event run data get storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.lava_pillar.tick_delay"}].output 1000
 
-execute as @n[type=marker,tag=plate_havoc.event_place] at @s run function plate_havoc_content:events/lava_pillar/run
+execute store result score #XZ plate_havoc.temp run data get storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.lava_pillar.offset.xz"}].output 1000
+execute store result score #Y plate_havoc.temp run data get storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.lava_pillar.offset.y"}].output 1000
 
-scoreboard players set #Lava_Pillar.CurrentDelay plate_havoc.event 0
+function plate_havoc_content:events/lava_pillar/run
 function plate_havoc_content:events/lava_pillar/loop
 
-data modify storage plate_havoc:ui temp set value {message:{text:"A pillar of lava is rising up from within the void",color:gray}}
+data modify storage plate_havoc:ui temp set value {message:{text:"Lava Pillar is rising from within.",color:gray}}
 function plate_havoc:game/events/message/create_entry

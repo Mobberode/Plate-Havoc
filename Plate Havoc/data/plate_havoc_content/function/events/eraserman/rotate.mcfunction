@@ -1,1 +1,0 @@
-$execute at @r[tag=plate_havoc.survivor] run tp @s ~ ~$(offset_y) ~ $(rotation_horizontal) 0

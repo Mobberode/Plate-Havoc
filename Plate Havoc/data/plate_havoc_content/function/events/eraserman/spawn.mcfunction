@@ -1,0 +1,1 @@
+$execute at @r[tag=plate_havoc.survivor,sort=random] rotated $(rotation_horizontal) 0 positioned ^ ^$(offset_y) ^-$(distance) summon enderman run function plate_havoc_content:events/eraserman/set

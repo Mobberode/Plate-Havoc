@@ -1,5 +1,1 @@
-scoreboard players add #Lava_Pillar.CurrentDelay plate_havoc.event 1
-
-execute if score #Lava_Pillar.CurrentDelay plate_havoc.event >= #Lava_Pillar.Delay plate_havoc.event run function plate_havoc_content:events/lava_pillar/delay_end
-
-execute if entity @n[type=marker,tag=plate_havoc.lava_pillar] run schedule function plate_havoc_content:events/lava_pillar/loop 1t
+execute in plate_havoc:arena as @e[x=0,tag=plate_havoc.lava_pillar,type=marker] run function plate_havoc_content:events/lava_pillar/entity/time

@@ -1,1 +1,1 @@
-execute as @e[tag=plate_havoc_content.event.end_island,type=bat] at @s run function plate_havoc_content:events/end_island/check
+execute in plate_havoc:arena as @e[x=0,tag=plate_havoc_content.event.end_island,type=bat] at @s run function plate_havoc_content:events/end_island/check
