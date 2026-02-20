@@ -1,7 +1,7 @@
 #Data
 execute store result storage plate_havoc:events height int 1 run scoreboard players get #Template.Event.Scaffolding.Height plate_havoc.num
 
-execute as @n[type=marker,tag=plate_havoc.event_place] at @s run function plate_havoc_content:events/scaffolding/run
+function plate_havoc_content:events/scaffolding/run
 
 data modify storage plate_havoc:ui temp set value {message:{text:"Scaffolding!",color:gray}}
 function plate_havoc:game/events/message/create_entry

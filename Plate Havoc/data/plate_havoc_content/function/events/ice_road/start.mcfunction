@@ -3,7 +3,7 @@ execute store result storage plate_havoc:events offset int 1 run data get storag
 execute store result score #XZ plate_havoc.temp run data get storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.ice_road.offset_xz"}].output 1000
 execute store result score #Y plate_havoc.temp run data get storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.ice_road.offset_y"}].output 1000
 
-execute as @n[type=marker,tag=plate_havoc.event_place] at @s run function plate_havoc_content:events/ice_road/run
+function plate_havoc_content:events/ice_road/run
 
 data modify storage plate_havoc:ui temp set value {message:{text:"Ice Road constructed",color:gray}}
 function plate_havoc:game/events/message/create_entry

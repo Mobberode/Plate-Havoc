@@ -1,2 +1,5 @@
-summon marker 0 64 0 {Tags:["plate_havoc.event_place","plate_havoc.dont_interact"]}
 $function $(function)
+
+execute as @e[x=0,tag=plate_havoc.mob.setup] at @s run function plate_havoc:game/events/run/mob_setup
+
+kill

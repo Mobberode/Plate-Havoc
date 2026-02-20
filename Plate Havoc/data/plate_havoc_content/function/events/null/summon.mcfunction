@@ -1,3 +1,3 @@
-spreadplayers ~ ~ 1 5 false @n[type=marker,tag=plate_havoc.event_place]
+spreadplayers ~ ~ 1 5 false @s
 
-execute at @n[type=marker,tag=plate_havoc.event_place] run summon zombie ~ ~ ~ {active_effects:[{id:glowing,duration:50}]}
+execute at @s run summon zombie ~ ~ ~ {active_effects:[{id:glowing,duration:50}]}

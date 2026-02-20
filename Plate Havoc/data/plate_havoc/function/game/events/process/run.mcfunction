@@ -1,5 +1,4 @@
-function plate_havoc:game/events/process/prng
-execute store result storage plate_havoc:events rng int 1 run scoreboard players get #Temp plate_havoc.num
+execute store result storage plate_havoc:events rng int 1 run function plate_havoc:game/events/process/prng
 scoreboard players add #EventTotalRunCount plate_havoc.num 1
 
 function plate_havoc:game/events/process/apply with storage plate_havoc:events
