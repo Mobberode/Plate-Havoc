@@ -1,4 +1,3 @@
-data modify storage plate_havoc:events pool set value []
 data modify storage plate_havoc:events temp set from storage plate_havoc:data events
 data remove storage plate_havoc:events temp[{console_only:true}]
 

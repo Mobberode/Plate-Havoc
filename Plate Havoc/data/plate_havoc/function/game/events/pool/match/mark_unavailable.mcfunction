@@ -1,0 +1,2 @@
+data modify storage plate_havoc:events pool.temp prepend from storage plate_havoc:events pool.unavailable[-1]
+execute unless score #Temp plate_havoc.intensity > #Event.Pool_Intensity_Update plate_havoc.intensity run scoreboard players operation #Event.Pool_Intensity_Update plate_havoc.intensity = #Temp plate_havoc.intensity

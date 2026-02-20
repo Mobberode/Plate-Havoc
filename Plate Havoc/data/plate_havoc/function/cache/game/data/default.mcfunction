@@ -24,8 +24,7 @@ scoreboard players set #CardTotalSelects plate_havoc.num 0
 
 scoreboard players set #Runtick plate_havoc.num 0
 scoreboard players set #PRNG.Runs plate_havoc.num 0
-
-scoreboard players set #BaseEventRequirementPercentage plate_havoc.intensity 100
+scoreboard players set #Event.Pool_Intensity_Update plate_havoc.intensity 0
 
 scoreboard players set #BaseCapValue plate_havoc.spawnpoint_energy 100000
 scoreboard players set #BaseCapPercentage plate_havoc.spawnpoint_energy 100
@@ -107,6 +106,9 @@ data modify storage plate_havoc:data extra_jumps set value []
 
 ##Run tags
 data modify storage plate_havoc:data run_tags set value []
+
+##Events
+data modify storage plate_havoc:events pool set value {total:[],available:[],unavailable:[],temp:[]}
 
 ##Cyclathron
 scoreboard players set #Cyclathron plate_havoc.num 0
