@@ -1,5 +1,5 @@
 ###Card level
-execute store result score #Level plate_havoc.card run data get storage plate_havoc:cards count
+execute store result score #Level plate_havoc.card run data get storage plate_havoc:cards executing.count
 
 ##Attack Damage
 scoreboard players set #Temp plate_havoc.card 2

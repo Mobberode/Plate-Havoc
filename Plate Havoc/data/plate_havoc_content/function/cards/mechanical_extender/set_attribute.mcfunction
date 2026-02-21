@@ -2,7 +2,7 @@
 ##Set to 50
 scoreboard players set #Temp plate_havoc.card 50
 ##Card level
-execute store result score #Level plate_havoc.card run data get storage plate_havoc:cards count
+execute store result score #Level plate_havoc.card run data get storage plate_havoc:cards executing.count
 scoreboard players operation #Temp plate_havoc.card *= #Level plate_havoc.card
 ##x0.1
 execute store result storage plate_havoc:cards temp double 0.1 run scoreboard players get #Temp plate_havoc.card

@@ -1,1 +1,1 @@
-spreadplayers ~ ~ 1 192 false @s
+spreadplayers ~ ~ 1 176 false @s

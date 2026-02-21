@@ -1,6 +1,9 @@
-execute store result score #Event plate_havoc.intensity run data get storage plate_havoc:events event.intensity 1000
-
-#Check intensity conditions
-execute if score #Value plate_havoc.intensity < #Event plate_havoc.intensity run return run function plate_havoc:game/events/pool/match/send_back with storage plate_havoc:events
+##Check intensity conditions
+#Current intensity doesnt psss minimum intensity
+execute store result score #EventMin plate_havoc.intensity run data get storage plate_havoc:events event.intensity 1000
+execute unless score #EventMin plate_havoc.intensity matches ..0 if score #Value plate_havoc.intensity < #EventMin plate_havoc.intensity run return run function plate_havoc:game/events/pool/match/send_back with storage plate_havoc:events
+#Current intensity passes max intensity
+execute store result score #EventMax plate_havoc.intensity run data get storage plate_havoc:events event.max_intensity 1000
+execute unless score #EventMax plate_havoc.intensity matches ..0 if score #Value plate_havoc.intensity > #EventMax plate_havoc.intensity run return run function plate_havoc:game/events/pool/match/send_back with storage plate_havoc:events
 #Else
 data modify storage plate_havoc:events running append from storage plate_havoc:events event.function

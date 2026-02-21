@@ -1,9 +1,9 @@
 data modify storage plate_havoc:temp data set value [\
-{id:cactus,data:{global:{intensity:0,function:"plate_havoc_content:events/cactus/start"}},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
+{id:cactus,data:{global:{function:"plate_havoc_content:events/cactus/start"}},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
-{id:powdered_snow,data:{global:{intensity:0,function:"plate_havoc_content:events/powdered_snow/start"}},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
+{id:powdered_snow,data:{global:{function:"plate_havoc_content:events/powdered_snow/start"}},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
-{id:tumor,data:{global:{intensity:0,function:"plate_havoc_content:events/tumor/start"}},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
+{id:tumor,data:{global:{function:"plate_havoc_content:events/tumor/start"}},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
 {id:creeper,data:{global:{intensity:1.1,function:"plate_havoc_content:events/creeper/start"}},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \

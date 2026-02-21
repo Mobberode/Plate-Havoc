@@ -1,6 +1,6 @@
 #Finish processing of currency
-scoreboard players operation #Cyclathron plate_havoc.num -= #CyclathronCost plate_havoc.num
-scoreboard players operation #Cyclathron plate_havoc.num += #CyclathronGain plate_havoc.num
+scoreboard players operation #Value plate_havoc.cyclathron -= #CyclathronCost plate_havoc.num
+scoreboard players operation #Value plate_havoc.cyclathron += #CyclathronGain plate_havoc.num
 
 data remove storage plate_havoc:cards command
 data modify storage plate_havoc:cards command set from storage plate_havoc:cards template.data.command

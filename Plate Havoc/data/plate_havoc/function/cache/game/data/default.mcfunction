@@ -111,4 +111,4 @@ data modify storage plate_havoc:data run_tags set value []
 data modify storage plate_havoc:events pool set value {total:[],available:[],unavailable:[],temp:[]}
 
 ##Cyclathron
-scoreboard players set #Cyclathron plate_havoc.num 0
+scoreboard players set #Value plate_havoc.cyclathron 0

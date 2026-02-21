@@ -1,6 +1,6 @@
 #Finish processing of currency
-scoreboard players operation #Cyclathron plate_havoc.num -= #CyclathronCost plate_havoc.num
-scoreboard players operation #Cyclathron plate_havoc.num += #CyclathronGain plate_havoc.num
+scoreboard players operation #Value plate_havoc.cyclathron -= #CyclathronCost plate_havoc.num
+scoreboard players operation #Value plate_havoc.cyclathron += #CyclathronGain plate_havoc.num
 
 ##Template
 function plate_havoc:game/misc/cards/vote/end/template_set

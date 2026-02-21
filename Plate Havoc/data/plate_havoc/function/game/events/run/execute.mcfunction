@@ -1,2 +1,2 @@
-tp ~ ~ ~
+tp @s ~ ~ ~ ~ ~
 $function $(function)

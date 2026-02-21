@@ -1,6 +1,3 @@
-##New tick
-function plate_havoc:game/match/new_tick_mark
-
 ##Players
 function plate_havoc:game/match/check
 

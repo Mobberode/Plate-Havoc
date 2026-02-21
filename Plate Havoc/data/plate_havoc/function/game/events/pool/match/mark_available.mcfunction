@@ -1,2 +1,2 @@
-data modify storage plate_havoc:events pool.available prepend from storage plate_havoc:events pool.unavailable[-1]
+data modify storage plate_havoc:events pool.available prepend from storage plate_havoc:events pool.sort[-1]
 scoreboard players operation #Event.Pool_Intensity_Update plate_havoc.intensity = #Temp plate_havoc.intensity

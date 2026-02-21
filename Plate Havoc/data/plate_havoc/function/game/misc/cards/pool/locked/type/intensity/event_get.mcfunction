@@ -1,2 +1,2 @@
-$data modify storage plate_havoc:events event set from storage plate_havoc:events pool.total[{id:'$(temp2)'}]
+$data modify storage plate_havoc:events event set from storage plate_havoc:events pool.unavailable[{id:'$(temp2)'}]
 data modify storage plate_havoc:events intensity set from storage plate_havoc:events event.intensity

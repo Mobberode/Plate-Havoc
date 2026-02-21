@@ -160,6 +160,9 @@ scoreboard players set #Template.Event.Spinning_Laser.Base_Width plate_havoc.num
 scoreboard players set #Template.Event.Spinning_Laser.Base_Speed plate_havoc.num 50
 ## wind_up (Max Run Count) (Summons) (Extension to Summons) (Entity Summons inside 1 Summon)
 scoreboard players set #Template.Event.Wind_Up.MaxRunCount plate_havoc.num 1
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.fireworks.summon.value",base:0.5,modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.fireworks.summon.pack",base:0.002,modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.fireworks.summon.extend_value",base:0.1,modifiers:[]}
 scoreboard players set #Template.Event.Wind_Up.Summon_Amount plate_havoc.num 500
 scoreboard players set #Template.Event.Wind_Up.Summon_Extension plate_havoc.num 100
 scoreboard players set #Template.Event.Wind_Up.Summon_Pack.Size plate_havoc.num 2

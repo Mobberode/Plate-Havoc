@@ -10,5 +10,5 @@ function plate_havoc:game/events/intensity/visual
 scoreboard players operation #Temp plate_havoc.temp = #AccumulatedIntensity plate_havoc.temp
 scoreboard players operation #Temp plate_havoc.temp /= #1000 plate_havoc.num
 scoreboard players operation #Temp plate_havoc.temp *= #40 plate_havoc.num
-scoreboard players operation #Cyclathron plate_havoc.num += #Temp plate_havoc.temp
+scoreboard players operation #Value plate_havoc.cyclathron += #Temp plate_havoc.temp
 function plate_havoc:game/misc/cyclathron_visual

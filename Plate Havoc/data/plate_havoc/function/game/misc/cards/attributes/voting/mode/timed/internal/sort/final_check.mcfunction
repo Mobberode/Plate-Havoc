@@ -4,6 +4,6 @@ execute if score #CyclathronCost plate_havoc.num matches ..0 run scoreboard play
 
 ##Check condition
 #Succeed
-execute unless score #Cyclathron plate_havoc.num < #CyclathronCost plate_havoc.num run return run function plate_havoc:game/misc/cards/attributes/voting/mode/timed/internal/finish
+execute unless score #Value plate_havoc.cyclathron < #CyclathronCost plate_havoc.num run return run function plate_havoc:game/misc/cards/attributes/voting/mode/timed/internal/finish
 #Else
 tellraw @a [{text:"[!] A choice was made but the Cyclathron cost is expensive! Retry voting.",color:red}]
