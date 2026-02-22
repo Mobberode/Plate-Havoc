@@ -1,5 +1,5 @@
 #Data
-execute store result storage plate_havoc:events height int 1 run scoreboard players get #Template.Event.Scaffolding.Height plate_havoc.num
+execute store result storage plate_havoc:events active_data.shared.y int 1 run data get storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.scaffolding.height"}].output 1000
 
 function plate_havoc_content:events/scaffolding/run
 

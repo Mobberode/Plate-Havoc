@@ -1,1 +1,0 @@
-execute if score #Modifiers.Enabled plate_havoc.num matches 1.. run function plate_havoc:game/misc/modifiers/start

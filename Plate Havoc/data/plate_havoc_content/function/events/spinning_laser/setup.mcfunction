@@ -1,21 +1,11 @@
-tag @s remove plate_havoc.spinning_laser.init
-tag @s add plate_havoc.spinning_laser
+data merge entity @s {Tags:["plate_havoc_content.event.spinning_laser","plate_havoc.dont_interact"],item:{id:iron_block},transformation:{translation:[0.0,0.25,0.0],left_rotation:[0.0,0.0,0.0,1.0],right_rotation:[0.0,0.0,0.0,1.0],scale:[0.25,0.5,0.25]}}
+execute summon item_display run function plate_havoc_content:events/spinning_laser/passenger
 
+data modify storage plate_havoc:events active_data."plate_havoc_content".spinning_laser set value {}
 ##Data
-scoreboard players operation #Spinning_Laser.Width plate_havoc.event = #Template.Event.Spinning_Laser.Base_Width plate_havoc.num
-scoreboard players operation #Spinning_Laser.Speed plate_havoc.event = #Template.Event.Spinning_Laser.Base_Speed plate_havoc.num
-
-#randomize
-execute store result score #RNG plate_havoc.num run random value -15..15
-scoreboard players operation #Spinning_Laser.Width plate_havoc.event += #RNG plate_havoc.num
-
-execute store result score #RNG plate_havoc.num run random value -15..15
-scoreboard players operation #Spinning_Laser.Speed plate_havoc.event += #RNG plate_havoc.num
-
-#Fallback
-execute if score #Spinning_Laser.Width plate_havoc.event matches ..9 run scoreboard players set #Spinning_Laser.Width plate_havoc.event 10
-execute if score #Spinning_Laser.Speed plate_havoc.event matches ..0 run scoreboard players set #Spinning_Laser.Speed plate_havoc.event 1
+data modify storage plate_havoc:events active_data."plate_havoc_content".spinning_laser.width set from storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.spinning_laser.width"}].output
+data modify storage plate_havoc:events active_data."plate_havoc_content".spinning_laser.speed set from storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.spinning_laser.speed"}].output
 
 ##Apply
-execute store result entity @s data.width double 0.1 on passengers store result entity @s transformation.scale[-1] float 0.1 run scoreboard players get #Spinning_Laser.Width plate_havoc.event
-execute store result entity @s data.speed double 0.1 run scoreboard players get #Spinning_Laser.Speed plate_havoc.event
+data modify entity @s data set from storage plate_havoc:events active_data."plate_havoc_content".spinning_laser
+data modify entity @s transformation.scale[-1] set from storage plate_havoc:events active_data."plate_havoc_content".spinning_laser.width

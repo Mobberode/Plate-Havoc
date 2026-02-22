@@ -1,0 +1,2 @@
+tag @s add plate_havoc_content.event.nuke.will_fail
+execute store result score @s plate_havoc.temp run data get storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.nuke.failure.time"}].output 2000

@@ -1,0 +1,1 @@
+$playsound entity.experience_orb.pickup block @a ~ ~ ~ 5 $(pitch) 0.1

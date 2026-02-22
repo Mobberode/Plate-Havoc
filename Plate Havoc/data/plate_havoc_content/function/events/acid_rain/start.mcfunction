@@ -1,6 +1,6 @@
 execute if score #PHC.AcidRain.Duration plate_havoc.event matches 1.. run return run scoreboard players set #Restart plate_havoc.event 1
 
-scoreboard players set @a plate_havoc.event.acid_rain.exposure 0
+scoreboard players set @a plate_havoc_content.event.acid_rain.exposure 0
 scoreboard players add #EventRunCount plate_havoc.num 1
 
 #

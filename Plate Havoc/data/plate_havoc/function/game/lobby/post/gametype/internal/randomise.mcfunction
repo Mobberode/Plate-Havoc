@@ -1,3 +1,3 @@
-$execute store result score #GameType plate_havoc.num run random value 0..$(num)
+$execute store result score #Temp plate_havoc.temp run random value 0..$(temp)
 
-execute store result storage plate_havoc:data num int 1 run scoreboard players remove #GameType plate_havoc.num 1
+execute store result storage plate_havoc:temp temp int 1 run scoreboard players remove #Temp plate_havoc.temp 1

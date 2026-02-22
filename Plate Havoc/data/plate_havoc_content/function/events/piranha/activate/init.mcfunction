@@ -1,2 +1,3 @@
-execute store result storage plate_havoc:custom damage float 0.1 run scoreboard players get #Template.Event.Piranha.Damage plate_havoc.num
-function plate_havoc_content:events/piranha/activate/damage with storage plate_havoc:custom
+execute if predicate plate_havoc_content:in_water run function plate_havoc_content:events/piranha/activate/tick
+
+execute unless predicate plate_havoc_content:in_water run function plate_havoc_content:events/piranha/activate/reset

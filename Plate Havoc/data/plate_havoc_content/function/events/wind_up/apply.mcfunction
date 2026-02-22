@@ -1,5 +1,2 @@
-function plate_havoc_content:events/wind_up/set_motion with storage plate_havoc:motion
-
-function plate_havoc_content:events/wind_up/apply_pos
-
-data modify entity @s Motion set from storage plate_havoc:motion motion
+$tp ~$(x) ~148 ~$(z)
+$data merge entity @s {Tags:["plate_havoc_content.event.windcharge","plate_havoc.dont_interact"],acceleration_power:0.01d,Motion:[0,$(motion),0]}

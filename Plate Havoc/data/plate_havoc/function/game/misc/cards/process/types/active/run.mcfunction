@@ -11,6 +11,8 @@ data modify storage plate_havoc:cards card_type set from storage plate_havoc:car
 
 data modify storage plate_havoc:ui card_type set value {text:"Placeholder"}
 data modify storage plate_havoc:ui card_type set from storage plate_havoc:cards active_type.name
+data modify storage plate_havoc:ui card_type_subtext set from storage plate_havoc:cards active_type.subtext
+data modify storage plate_havoc:ui card_type_subtext.color set value gray
 
 data remove storage plate_havoc:cards attributes
 data modify storage plate_havoc:cards attributes set from storage plate_havoc:cards active_type.attributes

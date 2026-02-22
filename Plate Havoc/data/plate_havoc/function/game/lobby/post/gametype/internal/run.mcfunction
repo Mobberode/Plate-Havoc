@@ -10,7 +10,7 @@ function plate_havoc:game/lobby/post/arena
 $function $(function)
 
 #Modifiers
-function plate_havoc:game/misc/modifiers/init
+execute if score #Modifiers.Enabled plate_havoc.num matches 1.. run function plate_havoc:game/misc/modifiers/start
 
 stopwatch remove plate_havoc:load_time
 stopwatch create plate_havoc:load_time

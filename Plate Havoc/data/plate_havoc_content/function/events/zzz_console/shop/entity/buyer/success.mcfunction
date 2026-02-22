@@ -1,4 +1,4 @@
-scoreboard players operation @s plate_havoc.event.shop_token -= #Cost plate_havoc.event.shop_token
+scoreboard players operation @s plate_havoc_content.event.shop_token -= #Cost plate_havoc_content.event.shop_token
 
 playsound entity.arrow.hit_player player @s ~ ~ ~ 1 1
 particle glow ~ ~1 ~ .1 .1 .1 0 1

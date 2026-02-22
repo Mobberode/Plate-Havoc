@@ -4,7 +4,7 @@ stopwatch create plate_havoc:game_time
 
 function plate_havoc:game/match/player/clear
 kill @e[type=item]
-execute as @a run function plate_havoc:game/lobby/post/player
+execute as @a[tag=!plate_havoc.spectator] run function plate_havoc:game/lobby/post/player
 
 scoreboard players set #Duration plate_havoc.timer -1
 function plate_havoc:game/time/match

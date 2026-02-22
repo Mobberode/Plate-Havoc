@@ -1,6 +1,6 @@
 scoreboard players remove #Herobrine.Duration plate_havoc.event 1
 
-execute as @e[tag=plate_havoc.herobrine] at @s run function plate_havoc_content:events/herobrine/entity/tick
+execute in plate_havoc:arena as @e[x=0,type=item_display,tag=plate_havoc_content.event.herobrine,limit=1] at @s run function plate_havoc_content:events/herobrine/entity/tick
 
 execute if score #Herobrine.Duration plate_havoc.event matches 1.. run return run schedule function plate_havoc_content:events/herobrine/loop 1t
 function plate_havoc_content:events/herobrine/end

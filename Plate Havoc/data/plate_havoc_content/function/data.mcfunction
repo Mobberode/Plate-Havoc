@@ -112,8 +112,6 @@ data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.black_hole.growth_limit",base:0.005,modifiers:[],update:{score:"#PHC.BlackHole.Growth_Limit plate_havoc.event"}}
 ## breeze (Max Run Count)
 scoreboard players set #Template.Event.Breeze.MaxRunCount plate_havoc.num 1
-## breeze (Max Run Count)
-scoreboard players set #Template.Event.Breeze.MaxRunCount plate_havoc.num 1
 ## wall (Max Run Count)
 scoreboard players set #Template.Event.Wall.MaxRunCount plate_havoc.num 1
 ## soulsand (Max Run Count) (Amount of blocks to corrupt)
@@ -125,47 +123,46 @@ scoreboard players set #Template.Event.Blaze.MaxRunCount plate_havoc.num 1
 scoreboard players set #Template.Event.Bucket.MaxRunCount plate_havoc.num 1
 ## herobrine (Max Run Count) (Duration) (Duration Extension) (Acitvate Time) (Movement Distance(x0.01))
 scoreboard players set #Template.Event.Herobrine.MaxRunCount plate_havoc.num 1
-scoreboard players set #Template.Event.Herobrine.Duration plate_havoc.num 900
-scoreboard players set #Template.Event.Herobrine.Duration_Extension plate_havoc.num 300
-scoreboard players set #Template.Event.Herobrine.Activate_Time plate_havoc.num 20
-scoreboard players set #Template.Event.Herobrine.Movement_Distance plate_havoc.num 375
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.herobrine.duration",base:0.045,modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.herobrine.duration.extend",base:0.015,modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.herobrine.delay",base:0.001,modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.herobrine.movement",base:3.75,modifiers:[]}
 ## frail_stairs (Max Run Count) (Blocks)
 scoreboard players set #Template.Event.Frail_Stairs.MaxRunCount plate_havoc.num 1
-scoreboard players set #Template.Event.Frail_Stairs.Blocks plate_havoc.num 25
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.frail_stairs.length",base:0.015,modifiers:[]}
 ## scaffolding (MaxRunCount) (Height)
 scoreboard players set #Template.Event.Scaffolding.MaxRunCount plate_havoc.num 1
-scoreboard players set #Template.Event.Scaffolding.Height plate_havoc.num 8
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.scaffolding.height",base:0.008,modifiers:[]}
 ## slime (Max Run Count)
 scoreboard players set #Template.Event.Slime.MaxRunCount plate_havoc.num 1
-## egg_rain (Max Run Count) (Eggs to summon) (Summon Delay (in ticks)) (Block Height)
+## egg_rain (Max Run Count) (Eggs to summon) (Summon Delay) (Block Height)
 scoreboard players set #Template.Event.Egg_Rain.MaxRunCount plate_havoc.num 1
-scoreboard players set #Template.Event.Egg_Rain.Summon_Amount plate_havoc.num 125
-scoreboard players set #Template.Event.Egg_Rain.Summon_Delay plate_havoc.num 5
-scoreboard players set #Template.Event.Egg_Rain.Height plate_havoc.num 35
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.egg_rain.summon.value",base:0.125,modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.egg_rain.summon.delay",base:0.025,modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.egg_rain.height",base:0.35,modifiers:[]}
 ## nuke (Max Run Count) (Height) (Movement Distance (x0.01)) (Failure Chance) (Explosion Power (x0.1))
 scoreboard players set #Template.Event.Nuke.MaxRunCount plate_havoc.num 1
-scoreboard players set #Template.Event.Nuke.Height plate_havoc.num 100
-scoreboard players set #Template.Event.Nuke.Movement_Distance plate_havoc.num 25
-scoreboard players set #Template.Event.Nuke.Failure_Chance plate_havoc.num 20
-scoreboard players set #Template.Event.Nuke.Explosion_Power plate_havoc.num 125
-## piranha (Max Run Count) (Duration (seconds)) (Damage (x0.1))
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.nuke.height",base:0.1,modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.nuke.speed",base:0.25,modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.nuke.failure.chance",base:0.2,modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.nuke.failure.time",base:0.05,modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.nuke.power",base:0.125,modifiers:[]}
+## piranha (Max Run Count) (Duration) (Damage)
 scoreboard players set #Template.Event.Piranha.MaxRunCount plate_havoc.num 1
-scoreboard players set #Template.Event.Piranha.Duration plate_havoc.num 60
-scoreboard players set #Template.Event.Piranha.Damage plate_havoc.num 20
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.piranha.duration",base:0.6,modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.piranha.damage",base:1,modifiers:[]}
 ## dripleaf (Max Run Count)
 scoreboard players set #Template.Event.Dripleaf.MaxRunCount plate_havoc.num 1
 ## spinning_laser (Max Run Count) (Base Width (x0.1)) (Base Speed (x0.1))
+### REWORK THIS ENTIRELY
 scoreboard players set #Template.Event.Spinning_Laser.MaxRunCount plate_havoc.num 1
-scoreboard players set #Template.Event.Spinning_Laser.Base_Width plate_havoc.num 50
-scoreboard players set #Template.Event.Spinning_Laser.Base_Speed plate_havoc.num 50
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.spinning_laser.width",base:0.5,modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.spinning_laser.speed",base:5,modifiers:[]}
 ## wind_up (Max Run Count) (Summons) (Extension to Summons) (Entity Summons inside 1 Summon)
 scoreboard players set #Template.Event.Wind_Up.MaxRunCount plate_havoc.num 1
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.fireworks.summon.value",base:0.5,modifiers:[]}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.fireworks.summon.pack",base:0.002,modifiers:[]}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.fireworks.summon.extend_value",base:0.1,modifiers:[]}
-scoreboard players set #Template.Event.Wind_Up.Summon_Amount plate_havoc.num 500
-scoreboard players set #Template.Event.Wind_Up.Summon_Extension plate_havoc.num 100
-scoreboard players set #Template.Event.Wind_Up.Summon_Pack.Size plate_havoc.num 2
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.wind_up.summon.value",base:0.5,modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.wind_up.summon.pack",base:0.002,modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.wind_up.summon.value.extend",base:0.1,modifiers:[]}
 ## laser_drill (Max Run Count) (Winding Time (ticks)) (Explosion Power (x0.1))
 scoreboard players set #Template.Event.Laser_Drill.MaxRunCount plate_havoc.num 1
 scoreboard players set #Template.Event.Laser_Drill.Winding_Time plate_havoc.num 140
@@ -188,6 +185,8 @@ scoreboard players set #Template.Event.Outer_Space_Gravity.Duration plate_havoc.
 scoreboard players set #Template.Event.Outer_Space_Gravity.Effect_Strength plate_havoc.num 80
 ## sapling_drop (Max Run Count) (Amount (0 = end planting)) (Delay (How fast a tree is planted))
 scoreboard players set #Template.Event.Sapling_Drop.MaxRunCount plate_havoc.num 1
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.sapling_drop.value",base:0.005,modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.sapling_drop.delay",base:0.005,modifiers:[]}
 scoreboard players set #Template.Event.Sapling_Drop.Amount plate_havoc.num 5
 scoreboard players set #Template.Event.Sapling_Drop.Delay plate_havoc.num 100
 ## buff_bow (Max Run Count) (Arrows)

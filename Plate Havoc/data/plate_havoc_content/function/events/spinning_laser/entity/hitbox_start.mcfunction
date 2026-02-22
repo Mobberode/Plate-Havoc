@@ -1,5 +1,5 @@
-summon interaction ~ ~.5 ~ {Tags:["plate_havoc.spinning_laser.temp","plate_havoc.dont_interact"],width:0.25,height:0.25}
-#summon interaction ~ ~.5 ~ {Tags:["plate_havoc.spinning_laser.tem","plate_havoc.dont_interact"],width:0.25,height:0.25}
+summon interaction ~ ~.5 ~ {Tags:["plate_havoc_content.event.spinning_laser.temp","plate_havoc.dont_interact"],width:0.25,height:0.25}
+#summon interaction ~ ~.5 ~ {Tags:["plate_havoc_content.event.spinning_laser.tem","plate_havoc.dont_interact"],width:0.25,height:0.25}
 
 #For positioning
 scoreboard players operation #Spinning_Laser.Temp.Width plate_havoc.event = #Spinning_Laser.Entity.Width plate_havoc.event

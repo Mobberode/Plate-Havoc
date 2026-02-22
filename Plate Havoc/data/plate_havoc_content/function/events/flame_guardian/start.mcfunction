@@ -1,4 +1,5 @@
-execute as @a unless score @s plate_havoc.event.flame_guardian.active matches 0.. run scoreboard players set @s plate_havoc.event.flame_guardian.active 0
+execute as @a unless score @s plate_havoc_content.event.flame_guardian.active matches 0.. run scoreboard players set @s plate_havoc_content.event.flame_guardian.active 0
+data modify storage plate_havoc:events active_data."plate_havoc_content".flame_guardian set value {}
 
 #Data
 data modify storage plate_havoc:events active_data."plate_havoc_content".flame_guardian.movement set from storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.flame_guardian.movement"}].output

@@ -1,6 +1,6 @@
 scoreboard players remove @s plate_havoc.num 1
-tp @s ~ ~ ~ ~ ~
-setblock ~ ~ ~ glass
+tp ~ ~ ~
+setblock ~ ~ ~ glass strict
+playsound block.glass.place block @a ~ ~ ~ 0.75 1 0
 
-execute at @s positioned ^ ^ ^1 if score @s plate_havoc.num matches 1.. run return run function plate_havoc_content:events/frail_stairs/loop
-execute if score #EventRunCount plate_havoc.num < #Template.Event.Frail_Stairs.MaxRunCount plate_havoc.num run function plate_havoc_content:events/frail_stairs/run
+execute if score @s plate_havoc.num matches 1.. positioned ^ ^ ^1 run function plate_havoc_content:events/frail_stairs/loop

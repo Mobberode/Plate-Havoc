@@ -1,1 +1,1 @@
-$execute if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{location:{position:{y:{max:$(void_height)}}}}} run damage @s $(void_damage) out_of_world
+$execute as @a[tag=plate_havoc.survivor] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{location:{position:{y:{max:$(height)}}}}} run damage @s $(damage) out_of_world
