@@ -1,0 +1,3 @@
+execute if score #PHC.Outer_Space_Gravity.Duration plate_havoc.event matches ..0 run return run function plate_havoc_content:events/outer_space_gravity/stage/set_inactive
+
+execute as @a[tag=plate_havoc.survivor,tag=!plate_havoc.outer_space_gravity_affected] run function plate_havoc_content:events/outer_space_gravity/player/set_effect with storage plate_havoc:events active_data.plate_havoc_content.outer_space_gravity

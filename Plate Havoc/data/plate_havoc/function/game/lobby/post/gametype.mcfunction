@@ -1,5 +1,8 @@
 data modify storage plate_havoc:data gametype_list set value []
-execute if score #Value plate_havoc.players matches 1 run data modify storage plate_havoc:data gametype_list append from storage plate_havoc:data gametypes[{players:{single:true},console_only:false}]
-execute if score #Value plate_havoc.players matches 2.. run data modify storage plate_havoc:data gametype_list append from storage plate_havoc:data gametypes[{players:{multi:true},console_only:false}]
+
+data modify storage plate_havoc:temp temp set value {current:{},process:[]}
+data modify storage plate_havoc:temp temp.process set from storage plate_havoc:data gametypes
+data remove storage plate_havoc:temp temp.process[{console_only:true}]
+function plate_havoc:game/lobby/post/gametype/internal/process_player_count
 
 function plate_havoc:game/lobby/post/gametype/internal/start

@@ -1,7 +1,7 @@
 ##Jump
 #Halt existing y motion
 execute summon marker run function plate_havoc:game/misc/get_position
-data modify storage plate_havoc:temp y set from storage plate_havoc:cards pos[1]
+data modify storage plate_havoc:temp y set from storage plate_havoc:data pos[1]
 function plate_havoc_content:misc/jump_provider/halt with storage plate_havoc:temp
 
 #Launch global

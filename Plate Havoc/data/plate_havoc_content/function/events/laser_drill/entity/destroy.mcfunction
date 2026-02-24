@@ -1,5 +1,6 @@
-execute store result storage plate_havoc:events explosion_power double 0.1 run scoreboard players get #Template.Event.Laser_Drill.Explosion_Power plate_havoc.num
+function plate_havoc_content:events/laser_drill/entity/cue/destroy
 
-function plate_havoc_content:events/laser_drill/entity/destroy_non_functional
+function plate_havoc_content:events/laser_drill/entity/apply_destruction with storage plate_havoc:events active_data.plate_havoc_content.laser_drill
 
-function plate_havoc_content:events/laser_drill/entity/apply_destruction with storage plate_havoc:events
+tp ~ ~-5 ~
+execute if predicate plate_havoc:in_void run kill

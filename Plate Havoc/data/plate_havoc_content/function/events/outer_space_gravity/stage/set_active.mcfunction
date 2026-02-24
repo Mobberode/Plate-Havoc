@@ -1,0 +1,2 @@
+execute store result score #PHC.Outer_Space_Gravity.Duration plate_havoc.event run data get storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.outer_space_gravity.duration"}].output 2000
+scoreboard players set #PHC.Outer_Space_Gravity.Stage plate_havoc.event 1

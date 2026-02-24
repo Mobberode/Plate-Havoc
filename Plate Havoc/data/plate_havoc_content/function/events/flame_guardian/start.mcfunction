@@ -1,9 +1,9 @@
 execute as @a unless score @s plate_havoc_content.event.flame_guardian.active matches 0.. run scoreboard players set @s plate_havoc_content.event.flame_guardian.active 0
-data modify storage plate_havoc:events active_data."plate_havoc_content".flame_guardian set value {}
+data modify storage plate_havoc:events active_data.plate_havoc_content.flame_guardian set value {}
 
 #Data
-data modify storage plate_havoc:events active_data."plate_havoc_content".flame_guardian.movement set from storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.flame_guardian.movement"}].output
-data modify storage plate_havoc:events active_data."plate_havoc_content".flame_guardian.damage set from storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.flame_guardian.damage"}].output
+data modify storage plate_havoc:events active_data.plate_havoc_content.flame_guardian.movement set from storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.flame_guardian.movement"}].output
+data modify storage plate_havoc:events active_data.plate_havoc_content.flame_guardian.damage set from storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.flame_guardian.damage"}].output
 execute store result score #Flame_Guardian.Duration plate_havoc.event run data get storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.flame_guardian.duration"}].output 2000
 execute store result score #Flame_Guardian.Shoot_Time plate_havoc.event run data get storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.flame_guardian.shoot_time"}].output 2000
 

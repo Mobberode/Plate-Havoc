@@ -14,15 +14,15 @@ $dialog show @s {\
         \
         {text:"\n"},\
         \
-        {text:"[Hover over for Card List...]",hover_event:{action:"show_text",value:$(card_list)},color:gray},\
+        {text:"[Card List]",hover_event:{action:"show_text",value:$(card_list)},color:gray},\
         \
         {text:" "},\
         \
-        {text:"[Escape to Chat]",hover_event:{action:"show_text",value:"Escape the Card Selection menu. Sprint to reprompt the selection menu."},color:gray},\
+        {text:"[Escape Selection]",hover_event:{action:"show_text",value:"Escape the Card Selection menu. Sprint to reprompt the selection menu."},color:gray},\
         \
         {text:"\n\n"},$(card_type),\
         {text:"\n"},$(card_type_subtext),\
+        {text:"\n\n",extra:[$(card_select_body)]}\
         ],width:448},\
-        {type:"plain_message",contents:{text:"",extra:[$(card_select_body)]},width:448}\
     ]\
 }

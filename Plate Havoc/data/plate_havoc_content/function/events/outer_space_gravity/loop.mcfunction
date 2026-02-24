@@ -1,6 +1,5 @@
-execute as @a[tag=plate_havoc.survivor,tag=!plate_havoc.outer_space_gravity_affected] run function plate_havoc_content:events/outer_space_gravity/player/get_effect
+function plate_havoc_content:events/outer_space_gravity/stages
 
-scoreboard players remove #Outer_Space_Gravity.Duration plate_havoc.event 1
-
-execute if score #Outer_Space_Gravity.Duration plate_havoc.event matches 1.. run return run schedule function plate_havoc_content:events/outer_space_gravity/loop 1s
+scoreboard players remove #PHC.Outer_Space_Gravity.Duration plate_havoc.event 1
+execute if score #PHC.Outer_Space_Gravity.Duration plate_havoc.event matches 0.. run return run schedule function plate_havoc_content:events/outer_space_gravity/loop 1t
 function plate_havoc_content:events/outer_space_gravity/end
