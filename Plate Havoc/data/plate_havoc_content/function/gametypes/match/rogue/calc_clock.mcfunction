@@ -1,5 +1,5 @@
 ##Clock spawn
-execute store result score #ClockSpawnTick plate_havoc.num run data get storage plate_havoc:custom attributes[{id:"plate_havoc_content:clock.spawn_time"}].output 20
+execute store result score #ClockSpawnTick plate_havoc.num run data get storage plate_havoc:custom attributes[{id:"plate_havoc_content:clock.spawn_time"}].output 1000
 
 ##Clock range and area
 scoreboard players operation #ClockRange plate_havoc.num = #BaseClockRange plate_havoc.num

@@ -18,7 +18,8 @@ scoreboard players set #Game plate_havoc.status 1
 scoreboard players add #Value plate_havoc.round 1
 scoreboard players add @a[tag=!plate_havoc.spectator] plate_havoc_content.leaderboard.cycle.current 1
 
-execute if score #Value plate_havoc.round matches 15 in plate_havoc:arena run function plate_havoc_content:gametypes/match/rogue/endgame_arena_visual
+execute if score #Value plate_havoc.round matches 15 in plate_havoc:arena run function plate_havoc_content:gametypes/match/rogue/late_game_arena_visual
+execute if score #Value plate_havoc.round matches 30 in plate_havoc:arena run function plate_havoc_content:gametypes/match/rogue/end_game_arena_visual
 
 execute in plate_havoc:arena run function plate_havoc:game/misc/world/apply_all
 

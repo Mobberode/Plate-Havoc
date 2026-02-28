@@ -1,6 +1,5 @@
 #Data
-execute store result score #SoulSand.SpreadAmount plate_havoc.event run data get storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.soul_sand.spread"}].output
-
+execute store result score #SoulSand.SpreadAmount plate_havoc.event run data get storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.soul_sand.spread"}].output 1000
 
 function plate_havoc_content:events/soulsand/run
 

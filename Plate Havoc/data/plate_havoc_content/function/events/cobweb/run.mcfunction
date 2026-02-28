@@ -1,5 +1,5 @@
 scoreboard players add #EventRunCount plate_havoc.num 1
 
-tp @s @r[tag=plate_havoc.survivor]
+execute at @r run setblock ~ ~ ~ cobweb strict
 
-execute at @s run function plate_havoc_content:events/cobweb/action
+execute if score #EventRunCount plate_havoc.num < #Template.Event.Cobweb.MaxRunCount plate_havoc.num run function plate_havoc_content:events/cobweb/run

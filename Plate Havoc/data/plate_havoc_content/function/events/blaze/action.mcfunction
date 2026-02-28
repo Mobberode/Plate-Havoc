@@ -1,3 +1,3 @@
-summon blaze ~ ~ ~ {Tags:["plate_havoc.mob.setup"]}
+execute summon blaze run function plate_havoc:game/events/run/mob_setup
 
 execute if score #EventRunCount plate_havoc.num < #Template.Event.Blaze.MaxRunCount plate_havoc.num run function plate_havoc_content:events/blaze/run

@@ -4,8 +4,8 @@ data modify storage plate_havoc:events active_data.plate_havoc_content.flame_gua
 #Data
 data modify storage plate_havoc:events active_data.plate_havoc_content.flame_guardian.movement set from storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.flame_guardian.movement"}].output
 data modify storage plate_havoc:events active_data.plate_havoc_content.flame_guardian.damage set from storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.flame_guardian.damage"}].output
-execute store result score #Flame_Guardian.Duration plate_havoc.event run data get storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.flame_guardian.duration"}].output 2000
-execute store result score #Flame_Guardian.Shoot_Time plate_havoc.event run data get storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.flame_guardian.shoot_time"}].output 2000
+execute store result score #Flame_Guardian.Duration plate_havoc.event run data get storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.flame_guardian.duration"}].output 1000
+execute store result score #Flame_Guardian.Shoot_Time plate_havoc.event run data get storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.flame_guardian.shoot_time"}].output 1000
 
 function plate_havoc_content:events/flame_guardian/run
 function plate_havoc_content:events/flame_guardian/loop

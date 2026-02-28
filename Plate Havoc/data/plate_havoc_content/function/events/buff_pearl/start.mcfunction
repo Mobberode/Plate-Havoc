@@ -1,5 +1,5 @@
 #Data
-execute store result storage plate_havoc:temp count int 1 run data get storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.buff_pearl.give_value"}].output
+execute store result storage plate_havoc:temp count int 1 run data get storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.buff_pearl.give_value"}].output 1000
 
 function plate_havoc_content:events/buff_pearl/run
 

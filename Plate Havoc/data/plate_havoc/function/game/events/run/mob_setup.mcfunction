@@ -1,5 +1,4 @@
 ##Set mob
-tag @s remove plate_havoc.mob.setup
 tag @s add plate_havoc.mob
 
 ##Global

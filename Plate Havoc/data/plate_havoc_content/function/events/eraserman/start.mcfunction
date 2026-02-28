@@ -1,5 +1,5 @@
 #Data
-data modify storage plate_havoc:temp distance set from storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.eraserman.distance"}]
+data modify storage plate_havoc:temp distance set from storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.eraserman.distance"}].output
 
 function plate_havoc_content:events/eraserman/run
 function plate_havoc_content:events/eraserman/loop

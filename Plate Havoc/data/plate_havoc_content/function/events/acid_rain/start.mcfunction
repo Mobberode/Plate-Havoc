@@ -4,7 +4,7 @@ scoreboard players set @a plate_havoc_content.event.acid_rain.exposure 0
 scoreboard players add #EventRunCount plate_havoc.num 1
 
 #
-execute store result score #PHC.AcidRain.Duration plate_havoc.event run data get storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.acid_rain.duration"}].output 20
+execute store result score #PHC.AcidRain.Duration plate_havoc.event run data get storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.acid_rain.duration"}].output 1000
 scoreboard players set #PHC.AcidRain.Tick plate_havoc.event 0
 
 scoreboard players operation #EventRunCount plate_havoc.num = #Template.Event.AcidRain.MaxRunCount plate_havoc.num

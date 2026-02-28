@@ -1,4 +1,4 @@
-execute store result storage plate_havoc:events size double 0.01 run scoreboard players get #BlackHole.Entity_Size plate_havoc.event
+execute store result storage plate_havoc:events active_data.shared.temp double 0.01 run scoreboard players get #BlackHole.Entity_Size plate_havoc.event
 
 function plate_havoc_content:events/black_hole/entity/update_size
 
@@ -7,8 +7,8 @@ execute facing entity @n[tag=!plate_havoc.dont_interact,tag=!plate_havoc.spectat
 data modify storage plate_havoc:events pos set from entity @s Pos
 
 #Size and Radius
-execute store result storage plate_havoc:events size double 0.005 run scoreboard players get #BlackHole.Entity_Size plate_havoc.event
-execute store result storage plate_havoc:events radius double 3.5 run data get storage plate_havoc:events size
+execute store result storage plate_havoc:events active_data.shared.temp double 0.005 run scoreboard players get #BlackHole.Entity_Size plate_havoc.event
+execute store result storage plate_havoc:events radius double 3.5 run data get storage plate_havoc:events active_data.shared.temp
 
 ##Actions
 function plate_havoc_content:events/black_hole/entity/action with storage plate_havoc:events

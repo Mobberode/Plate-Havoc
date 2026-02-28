@@ -10,4 +10,4 @@ function plate_havoc:game/misc/attributes/custom/internal/modifiers/check
 function plate_havoc:game/misc/attributes/custom/internal/update_sources/check
 
 #Debug
-tellraw @a ["",{storage:"plate_havoc:custom",nbt:attribute.id,color:gray},": ",{storage:"plate_havoc:custom",nbt:attribute.output,color:green},"|",{score:{name:"#Temp",objective:plate_havoc.num},color:dark_green}]
+tellraw @a[scores={plate_havoc.debug=1..}] ["",{storage:"plate_havoc:custom",nbt:attribute.id,color:gray},": ",{storage:"plate_havoc:custom",nbt:attribute.output,color:green},"|",{score:{name:"#Temp",objective:plate_havoc.num},color:dark_green}]

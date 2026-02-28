@@ -5,7 +5,7 @@ data modify storage plate_havoc:events active_data.plate_havoc_content.egg_rain 
 
 #Data
 execute store result score #Egg_Rain.Summon_Amount plate_havoc.event run data get storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.egg_rain.summon.value"}].output 1000
-execute store result score #Egg_Rain.Summon_Delay plate_havoc.event run data get storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.egg_rain.summon.delay"}].output 2000
+execute store result score #Egg_Rain.Summon_Delay plate_havoc.event run data get storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.egg_rain.summon.delay"}].output 1000
 execute store result storage plate_havoc:events active_data.plate_havoc_content.egg_rain.height double 1 run data get storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.egg_rain.height"}].output 100
 
 scoreboard players operation #Egg_Rain.Summon_Amount plate_havoc.event *= #Template.Event.Egg_Rain.MaxRunCount plate_havoc.num

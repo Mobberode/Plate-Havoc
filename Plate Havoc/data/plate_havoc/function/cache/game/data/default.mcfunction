@@ -45,7 +45,7 @@ scoreboard players set #Modifiers.Entries plate_havoc.num 3
 
 ##world
 function plate_havoc:game/misc/world/biome/init
-data modify storage plate_havoc:custom biomes append value {id:"plate_havoc:void",biome:"plate_havoc:void",priority:0}
+data modify storage plate_havoc:custom biomes append value {id:"plate_havoc:void",biome:"plate_havoc:void",priority:0,tags:["plate_havoc.default_biome"]}
 data modify storage plate_havoc:data weather set value "clear"
 #Time
 scoreboard players set #BaseWorldTime plate_havoc.num 6000
@@ -94,12 +94,12 @@ data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:
 
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:cyclathron_yield",base:1,modifiers:[]}
 
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:event.time",base:2.5,modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:event.time",base:0.05,modifiers:[]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:intensity.gain",base:0.0175,modifiers:[]}
 
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:player.charge.cap",base:2,modifiers:[],update:{score:"#Player.Charge.Cap plate_havoc.temp"}}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:player.charge.gain",base:0.03,modifiers:[],update:{score:"#Player.Charge.Gain plate_havoc.temp"}}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:player.charge.loss",base:0.01,modifiers:[],update:{score:"#Player.Charge.Loss plate_havoc.temp"}}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:player.charge.cap",base:2,modifiers:[],update:{score:"#Player.Charge.Cap plate_havoc.num"}}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:player.charge.gain",base:0.03,modifiers:[],update:{score:"#Player.Charge.Gain plate_havoc.num"}}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:player.charge.loss",base:0.01,modifiers:[],update:{score:"#Player.Charge.Loss plate_havoc.num"}}
 
 ##Extra Jumps
 data modify storage plate_havoc:data extra_jumps set value []

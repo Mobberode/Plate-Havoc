@@ -8,7 +8,7 @@ data modify storage plate_havoc:events active_data.plate_havoc_content.piranha s
 
 #Data
 data modify storage plate_havoc:events active_data.plate_havoc_content.piranha.damage set from storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.piranha.damage"}].output
-execute store result score #Piranha.Duration plate_havoc.event run data get storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.piranha.duration"}].output 2000
+execute store result score #Piranha.Duration plate_havoc.event run data get storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.piranha.duration"}].output 1000
 scoreboard players operation #Piranha.Duration plate_havoc.event *= #Template.Event.Piranha.MaxRunCount plate_havoc.num
 
 function plate_havoc_content:events/piranha/loop

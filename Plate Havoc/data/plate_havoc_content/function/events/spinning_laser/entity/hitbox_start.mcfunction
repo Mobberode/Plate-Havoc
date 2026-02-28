@@ -4,10 +4,10 @@ summon interaction ~ ~.5 ~ {Tags:["plate_havoc_content.event.spinning_laser.temp
 #For positioning
 scoreboard players operation #Spinning_Laser.Temp.Width plate_havoc.event = #Spinning_Laser.Entity.Width plate_havoc.event
 scoreboard players operation #Spinning_Laser.Temp.Width plate_havoc.event /= #2 plate_havoc.num
-execute store result storage plate_havoc:events distance double 0.01 run scoreboard players get #Spinning_Laser.Temp.Width plate_havoc.event
+execute store result storage plate_havoc:events active_data.shared.distance double 0.01 run scoreboard players get #Spinning_Laser.Temp.Width plate_havoc.event
 
 #For Cast
 scoreboard players operation #Spinning_Laser.Temp.Width.Cast plate_havoc.event = #Spinning_Laser.Entity.Width plate_havoc.event
 scoreboard players operation #Spinning_Laser.Temp.Width.Cast plate_havoc.event /= #25 plate_havoc.num
 
-function plate_havoc_content:events/spinning_laser/entity/position_hitbox with storage plate_havoc:events
+function plate_havoc_content:events/spinning_laser/entity/position_hitbox with storage plate_havoc:events active_data.shared

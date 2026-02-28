@@ -9,6 +9,7 @@ scoreboard players set #Game plate_havoc.status 0
 
 scoreboard objectives add plate_havoc.round dummy
 
+scoreboard objectives add plate_havoc.debug dummy
 scoreboard objectives add plate_havoc.num dummy
 scoreboard objectives add plate_havoc.id dummy
 scoreboard objectives add plate_havoc.players dummy

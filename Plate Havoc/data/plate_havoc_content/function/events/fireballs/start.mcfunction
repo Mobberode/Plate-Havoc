@@ -1,5 +1,5 @@
 #Data
-data modify storage plate_havoc:events distance set from storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.fireballs.distance"}].output
+data modify storage plate_havoc:events active_data.shared.distance set from storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.fireballs.distance"}].output
 
 function plate_havoc_content:events/fireballs/run
 

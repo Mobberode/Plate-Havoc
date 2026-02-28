@@ -1,0 +1,2 @@
+data modify storage plate_havoc:data run_tags append value "eclipsed"
+tellraw @a ["",{text:"Eclipsed difficulty active... Good luck.",color:gold},"\n - Most complex events and cards get new behaviour."]

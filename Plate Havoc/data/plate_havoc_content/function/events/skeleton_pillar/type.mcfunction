@@ -1,6 +1,7 @@
-execute store result score #RNG plate_havoc.num run random value 0..4
+scoreboard players set #Modulo plate_havoc.num 4
+execute store result score #RNG plate_havoc.num run function plate_havoc:game/misc/prng
 
-execute if score #RNG plate_havoc.num matches 0 run return run summon skeleton ~ ~ ~ {equipment:{mainhand:{id:bow}},Tags:["plate_havoc.mob.setup"],attributes:[{id:movement_speed,base:0}]}
-execute if score #RNG plate_havoc.num matches 1 run return run summon stray ~ ~ ~ {equipment:{mainhand:{id:bow}},Tags:["plate_havoc.mob.setup"],attributes:[{id:movement_speed,base:0}]}
-execute if score #RNG plate_havoc.num matches 2 run return run summon bogged ~ ~ ~ {equipment:{mainhand:{id:bow}},Tags:["plate_havoc.mob.setup"],attributes:[{id:movement_speed,base:0}]}
-summon wither_skeleton ~ ~ ~ {equipment:{mainhand:{id:bow}},Tags:["plate_havoc.mob.setup"],attributes:[{id:movement_speed,base:0}]}
+execute if score #RNG plate_havoc.num matches 0 summon skeleton run return run function plate_havoc_content:events/skeleton_pillar/set
+execute if score #RNG plate_havoc.num matches 1 summon stray run return run function plate_havoc_content:events/skeleton_pillar/set
+execute if score #RNG plate_havoc.num matches 2 summon bogged run return run function plate_havoc_content:events/skeleton_pillar/set
+execute summon wither_skeleton run return run function plate_havoc_content:events/skeleton_pillar/set

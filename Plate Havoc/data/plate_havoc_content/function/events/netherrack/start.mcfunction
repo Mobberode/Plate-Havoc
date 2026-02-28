@@ -1,5 +1,5 @@
 #Data
-execute store result score #Netherrack plate_havoc.event run data get storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.netherrack.spread"}].output
+execute store result score #Netherrack plate_havoc.event run data get storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.netherrack.spread"}].output 1000
 
 function plate_havoc_content:events/netherrack/run
 

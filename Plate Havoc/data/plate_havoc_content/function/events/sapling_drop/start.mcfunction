@@ -2,7 +2,7 @@ execute if score #Sapling_Drop.Amount plate_havoc.event matches 1.. run return r
 
 #
 execute store result score #Sapling_Drop.Amount plate_havoc.event run data get storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.sapling_drop.value"}].output 1000
-execute store result score #Sapling_Drop.Delay plate_havoc.event run data get storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.sapling_drop.delay"}].output 2000
+execute store result score #Sapling_Drop.Delay plate_havoc.event run data get storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.sapling_drop.delay"}].output 1000
 
 function plate_havoc_content:events/sapling_drop/run
 
