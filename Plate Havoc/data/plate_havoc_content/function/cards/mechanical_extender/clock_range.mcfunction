@@ -1,0 +1,1 @@
+$data modify storage plate_havoc:custom attribute_modifier set value {id:"plate_havoc_content:card.mechanical_extender",value:$(temp),operation:"add_value",tags:["plate_havoc_content:mechanical_extender"]}

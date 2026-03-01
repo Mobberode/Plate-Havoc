@@ -23,7 +23,7 @@ execute as @a[tag=!plate_havoc.spectator] in plate_havoc:arena run function plat
 
 function plate_havoc:game/events/time/run
 
-tellraw @a [{text:"Cycle Time: ",color:aqua},{score:{name:"#Time",objective:plate_havoc.temp},color:gold},{text:"\nCyclathron Yield: ",color:aqua},{storage:"plate_havoc:custom",nbt:"attributes.[{id:'plate_havoc:cyclathron_yield'}].output",color:gold},{text:"\nClock Time Reduction: ",color:aqua},{score:{name:"#ClockCollectTimeReduction",objective:plate_havoc.num},color:gold},{text:"\nClock Pickup Range: ",color:aqua},{score:{name:"#ClockRange",objective:plate_havoc.num},color:gold}]
+tellraw @a [{text:"Cycle Time: ",color:aqua},{score:{name:"#Time",objective:plate_havoc.temp},color:gold},{text:"\nCyclathron Yield: ",color:aqua},{storage:"plate_havoc:custom",nbt:"attributes.[{id:'plate_havoc:cyclathron_yield'}].output",color:gold},{text:"\nClock Time Reduction: ",color:aqua},{score:{name:"#ClockCollectTimeReduction",objective:plate_havoc.num},color:gold},{text:"\nClock Pickup Range: ",color:aqua},{storage:"plate_havoc:custom",nbt:"attributes.[{id:'plate_havoc_content:clock.range'}].output",color:gold}]
 
 function plate_havoc:game/time/tick_down
 function plate_havoc:game/match/loop

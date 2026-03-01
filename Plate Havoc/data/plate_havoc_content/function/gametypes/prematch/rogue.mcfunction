@@ -43,8 +43,7 @@ scoreboard players set #Value plate_havoc.round 0
 
 scoreboard players set #BaseCyclathronAmount plate_havoc.num 100
 scoreboard players set #ClockCollectTimeReduction plate_havoc.num 2
-scoreboard players set #BaseClockRange plate_havoc.num 0
-
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:clock.range",base:0,modifiers:[]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:clock.spawn_time",base:0.1,modifiers:[]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:time.multiplier",base:1,modifiers:[]}
 

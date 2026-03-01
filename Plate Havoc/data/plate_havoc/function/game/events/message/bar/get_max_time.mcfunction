@@ -1,5 +1,5 @@
 ##Get event time
-execute store result bossbar plate_havoc:event max run scoreboard players operation #EventMessage.Timer plate_havoc.timer = #MaxEventTime plate_havoc.timer
+execute store result bossbar plate_havoc:status max run scoreboard players operation #EventMessage.Timer plate_havoc.timer = #MaxEventTime plate_havoc.timer
 
 ##Get event message entries
 execute store result score #EventmessageEntries plate_havoc.temp if data storage plate_havoc:ui event_messages[]

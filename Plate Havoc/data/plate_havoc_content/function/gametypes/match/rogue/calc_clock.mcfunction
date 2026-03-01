@@ -2,7 +2,5 @@
 execute store result score #ClockSpawnTick plate_havoc.num run data get storage plate_havoc:custom attributes[{id:"plate_havoc_content:clock.spawn_time"}].output 1000
 
 ##Clock range and area
-scoreboard players operation #ClockRange plate_havoc.num = #BaseClockRange plate_havoc.num
-
-execute store result storage plate_havoc:custom clock_range double 0.01 run scoreboard players get #ClockRange plate_havoc.num
-execute store result storage plate_havoc:custom clock_area double 0.02 run scoreboard players get #ClockRange plate_havoc.num
+data modify storage plate_havoc:temp clock.range set from storage plate_havoc:custom attributes[{id:"plate_havoc_content:clock.range"}].output
+execute store result storage plate_havoc:temp clock.area double 2 run data get storage plate_havoc:custom attributes[{id:"plate_havoc_content:clock.range"}].output
