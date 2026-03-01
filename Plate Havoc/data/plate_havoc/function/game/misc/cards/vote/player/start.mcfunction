@@ -1,3 +1,4 @@
+tag @s remove plate_havoc_content.dont_force_card_selection
 ##Input
 scoreboard players operation @s plate_havoc.z.select = @s plate_havoc.t.select
 #Used in predicate
