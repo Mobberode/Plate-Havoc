@@ -137,6 +137,8 @@ data modify storage plate_havoc:temp data set value [\
 \
 {id:phantom,data:{global:{intensity:3.5,function:"plate_havoc_content:events/phantom/start"}},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
+{id:buff_food,data:{global:{intensity:3,function:"plate_havoc_content:events/buff_food/start"}},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
+\
 \
 \
 {id:obama_drone_strike,data:{global:{function:"plate_havoc_content:events/zzz_console/obama_drone_strike/start"}},console_only:true,metadata:{author:"Mobberode",pack:"Plate Havoc"}},\

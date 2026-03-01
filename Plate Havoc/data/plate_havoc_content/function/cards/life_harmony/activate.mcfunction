@@ -9,7 +9,7 @@ function plate_havoc:game/misc/attributes/custom/input {id:"plate_havoc:event.ti
 
 #Cyclathrons
 scoreboard players add #Card.Life_Harmony.Kills plate_havoc.temp 1
-scoreboard players set #Temp plate_havoc.temp 10
+scoreboard players set #Temp plate_havoc.temp 20
 execute store result storage plate_havoc:temp temp float 0.01 run scoreboard players operation #Temp plate_havoc.temp *= #Card.Life_Harmony.Kills plate_havoc.temp
 function plate_havoc_content:cards/life_harmony/cyclathron_boost with storage plate_havoc:temp
 

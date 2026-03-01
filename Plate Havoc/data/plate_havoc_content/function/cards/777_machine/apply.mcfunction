@@ -1,0 +1,1 @@
+$effect give @a $(id) 60 $(amplifier)

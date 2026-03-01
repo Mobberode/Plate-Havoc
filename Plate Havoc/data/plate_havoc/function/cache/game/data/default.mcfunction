@@ -4,14 +4,23 @@ scoreboard players set #3 plate_havoc.num 3
 scoreboard players set #4 plate_havoc.num 4
 scoreboard players set #5 plate_havoc.num 5
 scoreboard players set #6 plate_havoc.num 6
+scoreboard players set #7 plate_havoc.num 7
+scoreboard players set #8 plate_havoc.num 8
+scoreboard players set #9 plate_havoc.num 9
 scoreboard players set #10 plate_havoc.num 10
 scoreboard players set #20 plate_havoc.num 20
 scoreboard players set #25 plate_havoc.num 25
+scoreboard players set #30 plate_havoc.num 30
 scoreboard players set #40 plate_havoc.num 40
 scoreboard players set #50 plate_havoc.num 50
 scoreboard players set #60 plate_havoc.num 60
+scoreboard players set #70 plate_havoc.num 70
 scoreboard players set #80 plate_havoc.num 80
+scoreboard players set #90 plate_havoc.num 90
 scoreboard players set #100 plate_havoc.num 100
+scoreboard players set #250 plate_havoc.num 250
+scoreboard players set #500 plate_havoc.num 500
+scoreboard players set #750 plate_havoc.num 750
 scoreboard players set #1000 plate_havoc.num 1000
 scoreboard players set #10000 plate_havoc.num 10000
 scoreboard players set #100000 plate_havoc.num 100000
@@ -97,9 +106,9 @@ data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:event.time",base:0.05,modifiers:[]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:intensity.gain",base:0.0175,modifiers:[]}
 
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:player.charge.cap",base:2,modifiers:[],update:{score:"#Player.Charge.Cap plate_havoc.num"}}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:player.charge.gain",base:0.03,modifiers:[],update:{score:"#Player.Charge.Gain plate_havoc.num"}}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:player.charge.loss",base:0.01,modifiers:[],update:{score:"#Player.Charge.Loss plate_havoc.num"}}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:player.charge.cap",base:2,modifiers:[],update:[{type:score,value:"#Player.Charge.Cap plate_havoc.num"}]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:player.charge.gain",base:0.03,modifiers:[],update:[{type:score,value:"#Player.Charge.Gain plate_havoc.num"}]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:player.charge.loss",base:0.01,modifiers:[],update:[{type:score,value:"#Player.Charge.Loss plate_havoc.num"}]}
 
 ##Extra Jumps
 data modify storage plate_havoc:data extra_jumps set value []

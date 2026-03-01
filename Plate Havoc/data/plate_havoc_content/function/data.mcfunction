@@ -42,10 +42,10 @@ data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_
 scoreboard players set #Template.Event.Null.MaxRunCount plate_havoc.num 1
 ## buff_wind (Max Run Count) (Amount)
 scoreboard players set #Template.Event.Buff_Wind.MaxRunCount plate_havoc.num 1
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.buff_wind.give_value",base:0.005,modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.buff_wind.give_value",base:0.005,modifiers:[],tags:["plate_havoc_content:boxless_desires.applicable"]}
 ## buff_heal (Max Run Count) (Amount)
 scoreboard players set #Template.Event.Buff_Heal.MaxRunCount plate_havoc.num 1
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.buff_heal.give_value",base:0.001,modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.buff_heal.give_value",base:0.001,modifiers:[],tags:["plate_havoc_content:boxless_desires.applicable"]}
 ## end_island (Max Run Count) (WaitTime)
 scoreboard players set #Template.Event.End_Island.MaxRunCount plate_havoc.num 1
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.end_island.wait_time",base:0.3,modifiers:[]}
@@ -66,13 +66,13 @@ data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_
 scoreboard players set #Template.Event.Honey.MaxRunCount plate_havoc.num 1
 ## buff_shield (Max Run Count) (Max Durability)
 scoreboard players set #Template.Event.Buff_Shield.MaxRunCount plate_havoc.num 1
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.buff_shield.max_durability",base:0.032,modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.buff_shield.max_durability",base:0.032,modifiers:[],tags:["plate_havoc_content:boxless_desires.applicable"]}
 ## buff_pearl (Max Run Count) (Amount)
 scoreboard players set #Template.Event.Buff_Pearl.MaxRunCount plate_havoc.num 1
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.buff_pearl.give_value",base:0.002,modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.buff_pearl.give_value",base:0.002,modifiers:[],tags:["plate_havoc_content:boxless_desires.applicable"]}
 ## buff_mace (Max Run Count) (Max Durability)
 scoreboard players set #Template.Event.Buff_Mace.MaxRunCount plate_havoc.num 1
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.buff_mace.max_durability",base:0.001,modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.buff_mace.max_durability",base:0.001,modifiers:[],tags:["plate_havoc_content:boxless_desires.applicable"]}
 ## nerf_slowness (Max Run Count) (Duration)
 scoreboard players set #Template.Event.Nerf_Slowness.MaxRunCount plate_havoc.num 1
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.nerf_slowness.duration",base:0.025,modifiers:[]}
@@ -95,7 +95,7 @@ data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_
 ## fireworks (Max Run Count) (Summons) (Summon Delay (tick/20)) (Summon Extension)
 scoreboard players set #Template.Event.Fireworks.MaxRunCount plate_havoc.num 1
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.fireworks.summon.value",base:0.08,modifiers:[]}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.fireworks.summon.delay",base:0.006,modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.fireworks.summon.delay",base:0.006,modifiers:[],tags:["plate_havoc_content:cube_of_decay.outcome.less_agression"]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.fireworks.summon.extend_value",base:0.04,modifiers:[]}
 ## jump_cooldown (Max Run Count) (Cooldown Duration (tick/20)) (Event Duration (tick/20))
 scoreboard players set #Template.Event.JumpCooldown.MaxRunCount plate_havoc.num 1
@@ -109,7 +109,7 @@ scoreboard players set #Template.Event.BlackHole.MaxRunCount plate_havoc.num 1
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.black_hole.duration",base:0.9,modifiers:[]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.black_hole.duration.extend",base:0.45,modifiers:[]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.black_hole.base_size",base:0.125,modifiers:[]}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.black_hole.growth_limit",base:0.005,modifiers:[],update:{score:"#PHC.BlackHole.Growth_Limit plate_havoc.event"}}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.black_hole.growth_limit",base:0.005,modifiers:[],update:[{tpye:score,value:"#PHC.BlackHole.Growth_Limit plate_havoc.event"}]}
 ## breeze (Max Run Count)
 scoreboard players set #Template.Event.Breeze.MaxRunCount plate_havoc.num 1
 ## wall (Max Run Count)
@@ -125,7 +125,7 @@ scoreboard players set #Template.Event.Bucket.MaxRunCount plate_havoc.num 1
 scoreboard players set #Template.Event.Herobrine.MaxRunCount plate_havoc.num 1
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.herobrine.duration",base:0.9,modifiers:[]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.herobrine.duration.extend",base:0.3,modifiers:[]}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.herobrine.delay",base:0.001,modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.herobrine.delay",base:0.025,modifiers:[],tags:["plate_havoc_content:cube_of_decay.outcome.less_agression"]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.herobrine.movement",base:3.75,modifiers:[]}
 ## frail_stairs (Max Run Count) (Blocks)
 scoreboard players set #Template.Event.Frail_Stairs.MaxRunCount plate_havoc.num 1
@@ -138,7 +138,7 @@ scoreboard players set #Template.Event.Slime.MaxRunCount plate_havoc.num 1
 ## egg_rain (Max Run Count) (Eggs to summon) (Summon Delay) (Block Height)
 scoreboard players set #Template.Event.Egg_Rain.MaxRunCount plate_havoc.num 1
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.egg_rain.summon.value",base:0.125,modifiers:[]}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.egg_rain.summon.delay",base:0.05,modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.egg_rain.summon.delay",base:0.05,modifiers:[],tags:["plate_havoc_content:cube_of_decay.outcome.less_agression"]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.egg_rain.height",base:0.35,modifiers:[]}
 ## nuke (Max Run Count) (Height) (Movement Distance) (Failure Chance) (Explosion Power)
 scoreboard players set #Template.Event.Nuke.MaxRunCount plate_havoc.num 1
@@ -154,7 +154,6 @@ data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_
 ## dripleaf (Max Run Count)
 scoreboard players set #Template.Event.Dripleaf.MaxRunCount plate_havoc.num 1
 ## spinning_laser (Max Run Count) (Base Width) (Base Speed)
-### REWORK THIS ENTIRELY
 scoreboard players set #Template.Event.Spinning_Laser.MaxRunCount plate_havoc.num 1
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.spinning_laser.width",base:5,modifiers:[]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.spinning_laser.speed",base:5,modifiers:[]}
@@ -165,8 +164,8 @@ data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.wind_up.summon.value.extend",base:0.1,modifiers:[]}
 ## laser_drill (Max Run Count) (Warning Time) (Danger Time) (Explosion Power)
 scoreboard players set #Template.Event.Laser_Drill.MaxRunCount plate_havoc.num 1
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.laser_drill.warning_time",base:0.140,modifiers:[]}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.laser_drill.danger_time",base:0.06,modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.laser_drill.warning_time",base:0.140,modifiers:[],tags:["plate_havoc_content:cube_of_decay.outcome.less_agression"]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.laser_drill.danger_time",base:0.06,modifiers:[],tags:["plate_havoc_content:cube_of_decay.outcome.less_agression"]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.laser_drill.power",base:5,modifiers:[]}
 ## end_crystal (Max Run Count)
 scoreboard players set #Template.Event.End_Crystal.MaxRunCount plate_havoc.num 1
@@ -177,9 +176,9 @@ scoreboard players set #Template.Event.Skeleton_Pillar.MaxRunCount plate_havoc.n
 ## motion_sniper (Max Run Count) (Ammo) (Delay) (WarningTime) (Damage Multiplier)
 scoreboard players set #Template.Event.Motion_Sniper.MaxRunCount plate_havoc.num 1
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.motion_sniper.ammo",base:0.006,modifiers:[]}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.motion_sniper.delay",base:0.16,modifiers:[]}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.motion_sniper.delay_warning",base:0.05,modifiers:[]}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.motion_sniper.damage_multiplier",base:0.65,modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.motion_sniper.delay",base:0.16,modifiers:[],tags:["plate_havoc_content:cube_of_decay.outcome.less_agression"]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.motion_sniper.delay_warning",base:0.05,modifiers:[],tags:["plate_havoc_content:cube_of_decay.outcome.less_agression"]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.motion_sniper.damage_multiplier",base:0.45,modifiers:[]}
 ## outer_space_gravity (Max Run Count) (Duration) (Effect Strength)
 scoreboard players set #Template.Event.Outer_Space_Gravity.MaxRunCount plate_havoc.num 1
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.outer_space_gravity.duration",base:0.6,modifiers:[]}
@@ -190,12 +189,12 @@ data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.sapling_drop.delay",base:0.1,modifiers:[]}
 ## buff_bow (Max Run Count) (Arrows)
 scoreboard players set #Template.Event.Buff_Bow.MaxRunCount plate_havoc.num 1
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.buff_bow.arrows",base:0.008,modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.buff_bow.arrows",base:0.008,modifiers:[],tags:["plate_havoc_content:boxless_desires.applicable"]}
 ## creaking (Max Run Count)
 scoreboard players set #Template.Event.Creaking.MaxRunCount plate_havoc.num 1
 ## lava_pillar (Max Run Count) (Delay) (Size) (Randomize Height) (Offset)
 scoreboard players set #Template.Event.Lava_Pillar.MaxRunCount plate_havoc.num 1
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.lava_pillar.tick_delay",base:0.002,modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.lava_pillar.tick_delay",base:0.002,modifiers:[],tags:["plate_havoc_content:cube_of_decay.outcome.less_agression"]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.lava_pillar.size",base:0,modifiers:[]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.lava_pillar.offset.y",base:0.04,modifiers:[]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.lava_pillar.offset.xz",base:0.05,modifiers:[]}
@@ -217,9 +216,12 @@ data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.ice_road.offset_y",base:0.025,modifiers:[]}
 ## monster_spawner (Max Run Count)
 scoreboard players set #Template.Event.Monster_Spawner.MaxRunCount plate_havoc.num 1
-data modify storage plate_havoc:events data.monster_spawner set value ["minecraft:stray","minecraft:husk","minecraft:spider","minecraft:slime","minecraft:witch","minecraft:enderman","minecraft:pig","minecraft:villager","minecraft:goat"]
+data modify storage plate_havoc:events data.monster_spawner set value ["minecraft:stray","minecraft:husk","minecraft:spider","minecraft:slime","minecraft:witch","minecraft:enderman","minecraft:pig","minecraft:villager","minecraft:zombie","minecraft:zombie_villager"]
 ## phantom (Max Run Count)
 scoreboard players set #Template.Event.Phantom.MaxRunCount plate_havoc.num 1
+## buff_food (Max Run Count) (Amount)
+scoreboard players set #Template.Event.Buff_Food.MaxRunCount plate_havoc.num 1
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.buff_food.give_value",base:0.003,modifiers:[],tags:["plate_havoc_content:boxless_desires.applicable"]}
 
 ###
 
@@ -240,4 +242,8 @@ data modify storage plate_havoc:events data.shop set value [\
 #{item:"barrier",cost:{price:0,type:percentage},visual:"barrier"},
 
 ## Cube of Decay
-data modify storage plate_havoc:cards data."plate_havoc_content:cube_of_decay" set value {positive:[],negative:[]}
+data modify storage plate_havoc:cards data2.plate_havoc_content.cube_of_decay set value {positive:["plate_havoc_content:cards/cube_of_decay/outcomes/positive/less_agression","plate_havoc_content:cards/cube_of_decay/outcomes/positive/cyclathron_reward"],negative:["plate_havoc_content:cards/cube_of_decay/outcomes/negative/event_time","plate_havoc_content:cards/cube_of_decay/outcomes/negative/cyclathron"]}
+## 777 Machine
+data modify storage plate_havoc:cards data2.plate_havoc_content.777_machine set value [{id:regeneration,amplifier:0},{id:invisiblity,amplifier:0},{id:resistance,amplifier:1},{id:fire_resistance,amplifier:0},{id:saturation,amplifier:0},{id:breath_of_the_nautilus,amplifier:0}]
+## Mentally Parrotsane
+data modify storage plate_havoc:cards data2.plate_havoc_content.mentally_parrotsane set value ["plate_havoc:game/match/player/last_one_sfx","plate_havoc_content:cards/cursed_clocks/collect_sfx","plate_havoc_content:events/motion_sniper/sfx","plate_havoc_content:events/laser_drill/entity/cue/sound_default","plate_havoc_content:cards/mentally_parrotsane/sounds/creeper","plate_havoc_content:cards/mentally_parrotsane/sounds/wither"]

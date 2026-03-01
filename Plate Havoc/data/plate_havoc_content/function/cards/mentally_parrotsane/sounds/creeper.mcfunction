@@ -1,0 +1,1 @@
+playsound entity.creeper.primed hostile @a ~ ~ ~ 1 1 0

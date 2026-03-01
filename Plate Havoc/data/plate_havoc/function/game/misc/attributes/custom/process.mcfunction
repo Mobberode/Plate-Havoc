@@ -7,7 +7,7 @@ execute store result score #Temp plate_havoc.num run data get storage plate_havo
 function plate_havoc:game/misc/attributes/custom/internal/modifiers/check
 
 ##Update sources
-function plate_havoc:game/misc/attributes/custom/internal/update_sources/check
+function plate_havoc:game/misc/attributes/custom/internal/update_sources/init
 
 #Debug
 tellraw @a[scores={plate_havoc.debug=1..}] ["",{storage:"plate_havoc:custom",nbt:attribute.id,color:gray},": ",{storage:"plate_havoc:custom",nbt:attribute.output,color:green},"|",{score:{name:"#Temp",objective:plate_havoc.num},color:dark_green}]

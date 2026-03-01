@@ -5,4 +5,6 @@ execute if score @s plate_havoc.sprint_charge.amount > #Player.Charge.Cap plate_
 
 particle white_smoke ~ ~.1 ~ 0 0 0 0.05 2
 
-function plate_havoc:game/misc/player/sprint_charge/set
+
+function plate_havoc:game/misc/player/sprint_charge/set_jump_strength
+function plate_havoc:game/misc/player/sprint_charge/set_speed

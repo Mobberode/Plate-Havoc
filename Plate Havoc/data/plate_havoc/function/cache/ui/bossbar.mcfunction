@@ -7,13 +7,14 @@ bossbar set plate_havoc:ui style progress
 bossbar set plate_havoc:ui visible true
 bossbar set plate_havoc:ui players @a
 
-##Event message
+##Status
 bossbar remove plate_havoc:event
-bossbar add plate_havoc:event {text:""}
-bossbar set plate_havoc:event name [{text:"Waiting for Event Message"}]
-bossbar set plate_havoc:event color white
-bossbar set plate_havoc:event style progress
-bossbar set plate_havoc:event visible true
-bossbar set plate_havoc:event max 1
-bossbar set plate_havoc:event value 1
-bossbar set plate_havoc:event players @a
+bossbar remove plate_havoc:status
+bossbar add plate_havoc:status {text:""}
+bossbar set plate_havoc:status name [{text:"Waiting for Event Message"}]
+bossbar set plate_havoc:status color white
+bossbar set plate_havoc:status style progress
+bossbar set plate_havoc:status visible true
+bossbar set plate_havoc:status max 1
+bossbar set plate_havoc:status value 1
+bossbar set plate_havoc:status players @a

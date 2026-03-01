@@ -1,1 +1,1 @@
-function plate_havoc_content:cards/cube_of_decay/summon
+execute at @r[tag=plate_havoc.survivor] in plate_havoc:arena summon item_display run function plate_havoc_content:cards/cube_of_decay/setup

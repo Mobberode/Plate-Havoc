@@ -1,0 +1,2 @@
+data modify storage plate_havoc:temp grouped_attributes set value []
+$data modify storage plate_havoc:temp grouped_attributes append from storage plate_havoc:custom attributes[{tags:['$(group_attribute)']}].id

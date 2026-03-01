@@ -1,5 +1,4 @@
-execute as @a[scores={plate_havoc.relogged=1..},tag=!plate_havoc.marked_for_relog] run function plate_havoc:game/match/player/relog
-execute as @a[tag=!plate_havoc.survivor,tag=!plate_havoc.spectator,tag=!plate_havoc.marked_for_respawn] run function plate_havoc:game/match/player/spectator/revive
+execute as @a at @s run function plate_havoc_content:gametypes/match/rogue/intermission_player
 
 function plate_havoc:game/misc/cards/vote/loop
 

@@ -1,2 +1,2 @@
 tp ~ ~1 ~
-fill ~-25 ~ ~-25 ~25 ~ ~25 lava strict
+fill ~-25 ~ ~-25 ~25 ~ ~25 lava

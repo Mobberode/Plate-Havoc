@@ -1,1 +1,1 @@
-$scoreboard players operation $(update) = #Temp plate_havoc.num
+$scoreboard players operation $(value) = #Temp plate_havoc.num
