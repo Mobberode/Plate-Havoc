@@ -6,5 +6,5 @@ execute store result storage plate_havoc:temp duration int 1 run scoreboard play
 
 function plate_havoc_content:events/effect_wind_charged/action with storage plate_havoc:temp
 
-data modify storage plate_havoc:ui temp set value {message:{text:"All non-player mobs has been inflicted with Wind Charged for some time!",color:gray}}
+data modify storage plate_havoc:ui temp set value {message:{text:"Everyone seems to be Wind Charged.",color:gray}}
 function plate_havoc:game/events/message/create_entry

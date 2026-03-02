@@ -12,6 +12,7 @@ scoreboard players set @s plate_havoc.relogged 0
 
 function plate_havoc:game/misc/attributes/reset
 
+scoreboard players operation @s plate_havoc.run_id = #Run plate_havoc.run_id
 effect give @s instant_health 5 5
 effect give @s saturation 5 5
 effect give @s resistance 5 5

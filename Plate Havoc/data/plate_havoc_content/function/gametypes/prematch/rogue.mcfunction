@@ -13,7 +13,7 @@ data modify storage plate_havoc:ui game.end.queue append value {id:cycle,text:""
 
 scoreboard objectives setdisplay list plate_havoc.ui.player_health
 
-data modify storage plate_havoc:data spectator_tick_function set value ""
+data modify storage plate_havoc:data spectator_tick_function set value "plate_havoc:game/match/player/spectator/message"
 data modify storage plate_havoc:ui game.spawnpoint.status set value [{text:"You will respawn next Cycle! Time till next Cycle: ",color:gray},{score:{name:"#Left",objective:plate_havoc.timer},color:gold}]
 
 data modify storage plate_havoc:data game_end_condition_function set value "plate_havoc_content:gametypes/player/rogue/check"

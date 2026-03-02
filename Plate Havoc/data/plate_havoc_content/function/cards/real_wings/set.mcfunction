@@ -1,0 +1,1 @@
+attribute @s fall_damage_multiplier modifier add plate_havoc_content:card.real_wings -0.999 add_multiplied_total

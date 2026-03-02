@@ -1,0 +1,1 @@
+effect give @s levitation infinite 10

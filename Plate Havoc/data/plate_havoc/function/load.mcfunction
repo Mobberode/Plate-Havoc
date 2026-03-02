@@ -12,6 +12,7 @@ scoreboard objectives add plate_havoc.round dummy
 scoreboard objectives add plate_havoc.debug dummy
 scoreboard objectives add plate_havoc.num dummy
 scoreboard objectives add plate_havoc.id dummy
+scoreboard objectives add plate_havoc.run_id dummy
 scoreboard objectives add plate_havoc.players dummy
 scoreboard objectives add plate_havoc.spawnpoint_energy dummy
 scoreboard objectives add plate_havoc.timer dummy

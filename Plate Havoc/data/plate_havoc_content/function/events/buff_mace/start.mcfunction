@@ -3,5 +3,5 @@ execute store result storage plate_havoc:temp max_durability int 1 run data get 
 
 function plate_havoc_content:events/buff_mace/run
 
-data modify storage plate_havoc:ui temp set value {message:{text:"A Player has been given a mace!",color:gray}}
+data modify storage plate_havoc:ui temp set value {message:{text:"Someone was given a Mace.",color:gray}}
 function plate_havoc:game/events/message/create_entry

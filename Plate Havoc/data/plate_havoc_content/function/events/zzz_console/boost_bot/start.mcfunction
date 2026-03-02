@@ -6,5 +6,5 @@ summon item_display ~ ~ ~ {item:{id:iron_block},transformation:{translation:[0.0
 
 function plate_havoc_content:events/zzz_console/boost_bot/loop
 
-data modify storage plate_havoc:ui temp set value {message:{text:"Boost Bot!",color:gold}}
+data modify storage plate_havoc:ui temp set value {message:{text:"Someone sent it here.",color:gold}}
 function plate_havoc:game/events/message/create_entry

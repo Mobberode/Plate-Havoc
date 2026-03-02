@@ -4,5 +4,5 @@ execute as @e[tag=plate_havoc.shop.init] run function plate_havoc_content:events
 
 function plate_havoc_content:events/zzz_console/shop/loop
 
-data modify storage plate_havoc:ui temp set value {message:{text:"A Shop has opened up for sale!",color:aqua}}
+data modify storage plate_havoc:ui temp set value {message:{text:"A Shop... Strange.",color:aqua}}
 function plate_havoc:game/events/message/create_entry

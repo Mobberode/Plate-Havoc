@@ -7,5 +7,5 @@ execute store result score #Fireworks.Delay plate_havoc.event run data get stora
 
 function plate_havoc_content:events/fireworks/run
 
-data modify storage plate_havoc:ui temp set value {message:{text:"Fireworks will shroud the arena",color:gray}}
+data modify storage plate_havoc:ui temp set value {message:{text:"All will be shrouded in Fireworks.",color:gray}}
 function plate_havoc:game/events/message/create_entry

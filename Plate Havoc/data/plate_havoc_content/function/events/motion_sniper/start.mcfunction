@@ -9,5 +9,5 @@ execute store result score #Motion_Sniper.WarningTime plate_havoc.event run data
 
 function plate_havoc_content:events/motion_sniper/run
 
-data modify storage plate_havoc:ui temp set value {message:{text:"Hold steady...",color:red}}
+data modify storage plate_havoc:ui temp set value {message:{text:"Hold steady when it targets you.",color:red}}
 function plate_havoc:game/events/message/create_entry

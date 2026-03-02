@@ -15,5 +15,5 @@ scoreboard players set #Egg_Rain.CurrentDelay plate_havoc.event 0
 
 function plate_havoc_content:events/egg_rain/loop
 
-data modify storage plate_havoc:ui temp set value {message:{text:"Eggs will rain across the plate!",color:gray}}
+data modify storage plate_havoc:ui temp set value {message:{text:"Eggs have begun to rain.",color:gray}}
 function plate_havoc:game/events/message/create_entry

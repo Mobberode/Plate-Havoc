@@ -3,5 +3,5 @@ data modify storage plate_havoc:events active_data.shared.distance set from stor
 
 function plate_havoc_content:events/anvil/run
 
-data modify storage plate_havoc:ui temp set value {message:{text:"A player will get anviled.",color:gray}}
+data modify storage plate_havoc:ui temp set value {message:{text:"Someone will get anviled.",color:gray}}
 function plate_havoc:game/events/message/create_entry

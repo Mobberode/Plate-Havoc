@@ -13,5 +13,5 @@ scoreboard players operation #Piranha.Duration plate_havoc.event *= #Template.Ev
 
 function plate_havoc_content:events/piranha/loop
 
-data modify storage plate_havoc:ui temp set value {message:{text:"Piranhas have invaded the waters!",color:gray}}
+data modify storage plate_havoc:ui temp set value {message:{text:"Piranhas are in the water.",color:gray}}
 function plate_havoc:game/events/message/create_entry

@@ -11,5 +11,5 @@ data modify storage plate_havoc:events active_data.plate_havoc_content.herobrine
 function plate_havoc_content:events/herobrine/run
 function plate_havoc_content:events/herobrine/loop
 
-data modify storage plate_havoc:ui temp set value {message:{text:"Herobrine has arrived",color:gray}}
+data modify storage plate_havoc:ui temp set value {message:{text:"Herobrine has broken through.",color:gray}}
 function plate_havoc:game/events/message/create_entry

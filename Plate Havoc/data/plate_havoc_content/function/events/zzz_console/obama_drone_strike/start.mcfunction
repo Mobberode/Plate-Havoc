@@ -8,5 +8,5 @@ execute store result score #ObamaDroneStrike.Summon plate_havoc.event run data g
 
 function plate_havoc_content:events/zzz_console/obama_drone_strike/run
 
-data modify storage plate_havoc:ui temp set value {message:{text:"OBAMA DRONE STRIKE!!!",color:gold}}
+data modify storage plate_havoc:ui temp set value {message:{text:"Who are you?",color:gold}}
 function plate_havoc:game/events/message/create_entry

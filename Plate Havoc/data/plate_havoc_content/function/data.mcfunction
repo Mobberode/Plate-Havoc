@@ -244,6 +244,6 @@ data modify storage plate_havoc:events data.shop set value [\
 ## Cube of Decay
 data modify storage plate_havoc:cards data2.plate_havoc_content.cube_of_decay set value {positive:["plate_havoc_content:cards/cube_of_decay/outcomes/positive/less_agression","plate_havoc_content:cards/cube_of_decay/outcomes/positive/cyclathron_reward"],negative:["plate_havoc_content:cards/cube_of_decay/outcomes/negative/event_time","plate_havoc_content:cards/cube_of_decay/outcomes/negative/cyclathron"]}
 ## 777 Machine
-data modify storage plate_havoc:cards data2.plate_havoc_content.777_machine set value [{id:regeneration,amplifier:0},{id:invisiblity,amplifier:0},{id:resistance,amplifier:1},{id:fire_resistance,amplifier:0},{id:saturation,amplifier:0},{id:breath_of_the_nautilus,amplifier:0}]
+data modify storage plate_havoc:cards data2.plate_havoc_content.777_machine set value [{id:regeneration,amplifier:0},{id:invisibility,amplifier:0},{id:resistance,amplifier:1},{id:fire_resistance,amplifier:0},{id:saturation,amplifier:0},{id:breath_of_the_nautilus,amplifier:0}]
 ## Mentally Parrotsane
 data modify storage plate_havoc:cards data2.plate_havoc_content.mentally_parrotsane set value ["plate_havoc:game/match/player/last_one_sfx","plate_havoc_content:cards/cursed_clocks/collect_sfx","plate_havoc_content:events/motion_sniper/sfx","plate_havoc_content:events/laser_drill/entity/cue/sound_default","plate_havoc_content:cards/mentally_parrotsane/sounds/creeper","plate_havoc_content:cards/mentally_parrotsane/sounds/wither"]

@@ -9,5 +9,5 @@ execute store result score #Wind_Up.Summon_Pack plate_havoc.event run data get s
 
 function plate_havoc_content:events/wind_up/loop
 
-data modify storage plate_havoc:ui temp set value {message:{text:"Wind Charges are coming from above!",color:gray}}
+data modify storage plate_havoc:ui temp set value {message:{text:"Wind Charges come from above.",color:gray}}
 function plate_havoc:game/events/message/create_entry

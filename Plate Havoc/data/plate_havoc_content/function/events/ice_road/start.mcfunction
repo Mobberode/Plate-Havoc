@@ -5,5 +5,5 @@ execute store result score #Y plate_havoc.temp run data get storage plate_havoc:
 
 function plate_havoc_content:events/ice_road/run
 
-data modify storage plate_havoc:ui temp set value {message:{text:"Ice Road constructed",color:gray}}
+data modify storage plate_havoc:ui temp set value {message:{text:"The Ice Road.",color:gray}}
 function plate_havoc:game/events/message/create_entry

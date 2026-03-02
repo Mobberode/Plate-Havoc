@@ -6,5 +6,5 @@ execute store result score #Sapling_Drop.Delay plate_havoc.event run data get st
 
 function plate_havoc_content:events/sapling_drop/run
 
-data modify storage plate_havoc:ui temp set value {message:{text:"Trees all around will grow",color:gray}}
+data modify storage plate_havoc:ui temp set value {message:{text:"Trees all around will grow.",color:gray}}
 function plate_havoc:game/events/message/create_entry

@@ -8,7 +8,8 @@ tellraw @a ["Loading time: ",{storage:"plate_havoc:custom",nbt:stopwatch,color:g
 
 ##Seed
 function plate_havoc:game/misc/seed/generate
-tellraw @a ["Seed: ",{score:{name:"#Seed",objective:plate_havoc.num},color:gold}]
+function plate_havoc:game/misc/seed/run_id
+tellraw @a ["Seed: ",{score:{name:"#Seed",objective:plate_havoc.num},color:green},"\nRun ID: ",{score:{name:"#Run",objective:plate_havoc.run_id},color:aqua}]
 
 ##Process
 function plate_havoc:game/misc/ui/bar_visuals/active/process

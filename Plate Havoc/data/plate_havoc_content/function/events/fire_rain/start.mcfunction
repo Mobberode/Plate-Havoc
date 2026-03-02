@@ -7,5 +7,5 @@ execute store result score #PHC.FireRain.Delay plate_havoc.event run data get st
 
 function plate_havoc_content:events/fire_rain/run
 
-data modify storage plate_havoc:ui temp set value {message:{text:"Fire will rain on random players",color:gray}}
+data modify storage plate_havoc:ui temp set value {message:{text:"Fire rains upon all.",color:gray}}
 function plate_havoc:game/events/message/create_entry

@@ -8,8 +8,9 @@ scoreboard players set @s plate_havoc.relog_timer 2
 tag @s add plate_havoc.marked_for_relog
 
 gamemode spectator
-clear @s
 effect clear @s
-recipe take @s *
-
 function plate_havoc:game/misc/relog_process
+
+execute if score @s plate_havoc.run_id = #Run plate_havoc.run_id run return fail
+clear @s
+recipe take @s *

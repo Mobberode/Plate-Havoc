@@ -7,5 +7,5 @@ function plate_havoc_content:events/laser_drill/run
 
 function plate_havoc_content:events/laser_drill/loop
 
-data modify storage plate_havoc:ui temp set value {message:{text:"A laser will drill from the skies!",color:gray}}
+data modify storage plate_havoc:ui temp set value {message:{text:"Laser Drill, be cautious.",color:gray}}
 function plate_havoc:game/events/message/create_entry

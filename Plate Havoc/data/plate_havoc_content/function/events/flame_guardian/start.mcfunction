@@ -10,5 +10,5 @@ execute store result score #Flame_Guardian.Shoot_Time plate_havoc.event run data
 function plate_havoc_content:events/flame_guardian/run
 function plate_havoc_content:events/flame_guardian/loop
 
-data modify storage plate_havoc:ui temp set value {message:{text:"Flame Guardian, once banished protector, now seeking redemption",color:gold}}
+data modify storage plate_havoc:ui temp set value {message:{text:"Flame Guardian, banished protector, seeking redemption.",color:gold}}
 function plate_havoc:game/events/message/create_entry

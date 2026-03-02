@@ -17,5 +17,5 @@ function plate_havoc:game/misc/world/biome/run
 
 function plate_havoc_content:events/acid_rain/loop
 
-data modify storage plate_havoc:ui temp set value {message:{text:"Acid Rain! Those exposed, will slowly corrode away.",color:green}}
+data modify storage plate_havoc:ui temp set value {message:{text:"The rain corrodes at your skin.",color:green}}
 function plate_havoc:game/events/message/create_entry

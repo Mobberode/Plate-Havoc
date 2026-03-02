@@ -6,5 +6,5 @@ execute store result storage plate_havoc:temp duration int 1 run scoreboard play
 
 function plate_havoc_content:events/nerf_slowness/action with storage plate_havoc:temp
 
-data modify storage plate_havoc:ui temp set value {message:{text:"A Player is slowed down",color:gray}}
+data modify storage plate_havoc:ui temp set value {message:{text:"Someone has been slowed down",color:gray}}
 function plate_havoc:game/events/message/create_entry

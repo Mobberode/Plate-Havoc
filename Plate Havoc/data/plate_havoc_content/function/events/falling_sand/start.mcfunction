@@ -4,5 +4,5 @@ execute store result storage plate_havoc:events ty int 1 run data get storage pl
 
 function plate_havoc_content:events/falling_sand/run
 
-data modify storage plate_havoc:ui temp set value {message:{text:"Sand will fall on a player.",color:gray}}
+data modify storage plate_havoc:ui temp set value {message:{text:"Sand will fall.",color:gray}}
 function plate_havoc:game/events/message/create_entry

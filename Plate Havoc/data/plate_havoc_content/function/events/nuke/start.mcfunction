@@ -7,5 +7,5 @@ execute store result storage plate_havoc:events active_data.plate_havoc_content.
 function plate_havoc_content:events/nuke/action with storage plate_havoc:events active_data.plate_havoc_content.nuke
 function plate_havoc_content:events/nuke/loop
 
-data modify storage plate_havoc:ui temp set value {message:{text:"A Nuke will slowly fall to the plate!",color:gray}}
+data modify storage plate_havoc:ui temp set value {message:{text:"Nuke will slowly fall.",color:gray}}
 function plate_havoc:game/events/message/create_entry

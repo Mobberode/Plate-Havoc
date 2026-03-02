@@ -5,5 +5,5 @@ execute store result score #XYZ plate_havoc.temp run data get storage plate_havo
 
 function plate_havoc_content:events/obsidian_plate/run
 
-data modify storage plate_havoc:ui temp set value {message:{text:"Obsidian Plate has appeared",color:gray}}
+data modify storage plate_havoc:ui temp set value {message:{text:"Obsidian Plate has appeared.",color:gray}}
 function plate_havoc:game/events/message/create_entry

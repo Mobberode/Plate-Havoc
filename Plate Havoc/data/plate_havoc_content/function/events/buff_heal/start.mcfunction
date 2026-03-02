@@ -3,5 +3,5 @@ execute store result storage plate_havoc:temp count int 1 run data get storage p
 
 function plate_havoc_content:events/buff_heal/run
 
-data modify storage plate_havoc:ui temp set value {message:{text:"A Player has been given a heal!",color:gray}}
+data modify storage plate_havoc:ui temp set value {message:{text:"Someone got a Golden Apple.",color:gray}}
 function plate_havoc:game/events/message/create_entry

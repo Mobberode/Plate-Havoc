@@ -4,5 +4,5 @@ data modify storage plate_havoc:events active_data.shared.speed set from storage
 
 function plate_havoc_content:events/dragonball/run
 
-data modify storage plate_havoc:ui temp set value {message:{text:"A Player will be targetted with a Dragon Fireball",color:gray}}
+data modify storage plate_havoc:ui temp set value {message:{text:"A Dragon Fireball is landing.",color:gray}}
 function plate_havoc:game/events/message/create_entry

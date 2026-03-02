@@ -1,0 +1,1 @@
+$attribute @s gravity modifier add plate_havoc_content:card.real_wings -$(temp) add_multiplied_total

@@ -4,5 +4,5 @@ data modify storage plate_havoc:temp distance set from storage plate_havoc:custo
 function plate_havoc_content:events/eraserman/run
 function plate_havoc_content:events/eraserman/loop
 
-data modify storage plate_havoc:ui temp set value {message:{text:"A player is in the path of a Eraserman!",color:gray}}
+data modify storage plate_havoc:ui temp set value {message:{text:"Eraserman...",color:gray}}
 function plate_havoc:game/events/message/create_entry
