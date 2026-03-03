@@ -1,5 +1,4 @@
 execute store result score #Modulo plate_havoc.temp if data storage plate_havoc:cards data2.plate_havoc_content.777_machine[]
-scoreboard players remove #Modulo plate_havoc.temp 1
 execute store result storage plate_havoc:temp temp int 1 run function plate_havoc:game/misc/prng
 
 function plate_havoc_content:cards/777_machine/get with storage plate_havoc:temp

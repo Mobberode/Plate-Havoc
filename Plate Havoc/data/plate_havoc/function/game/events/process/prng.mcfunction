@@ -1,7 +1,7 @@
+scoreboard players add #EventTotalRunCount plate_havoc.num 1
 ##Set
 scoreboard players operation #Temp plate_havoc.num = #Seed plate_havoc.num
 execute store result score #Temp2 plate_havoc.num if data storage plate_havoc:events pool.available[]
-scoreboard players remove #Temp2 plate_havoc.num 1
 
 ##Operation
 scoreboard players operation #Temp plate_havoc.num += #EventTotalRunCount plate_havoc.num
