@@ -1,0 +1,19 @@
+{
+    "values": [
+        "block_display",
+        "item",
+        "item_frame",
+        "glow_item_frame",
+        "text_display",
+        "item_display",
+        "interaction",
+        "marker",
+        "fishing_bobber",
+        "experience_bottle",
+        "experience_orb",
+        "leash_knot",
+        "area_effect_cloud",
+        "ominous_item_spawner",
+        "painting"
+    ]
+}

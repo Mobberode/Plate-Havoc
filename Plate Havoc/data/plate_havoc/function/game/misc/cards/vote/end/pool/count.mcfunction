@@ -6,8 +6,8 @@ execute store result score #CardCount plate_havoc.num run data get storage plate
 execute store result storage plate_havoc:cards count int 1 run scoreboard players add #CardCount plate_havoc.num 1
 #Apply
 data modify storage plate_havoc:cards editing.data.count set from storage plate_havoc:cards count
-data modify storage plate_havoc:cards editing.visual.extra[{id:count}].extra[{part:count}].text set string storage plate_havoc:cards count
-
+#Visual
+execute if score #CardCount plate_havoc.num matches 2.. run function plate_havoc:game/misc/cards/card_processes/visual/count/check
 
 ##Duration
 execute store result score #ExistingCardDuration plate_havoc.num run data get storage plate_havoc:cards editing.data.duration

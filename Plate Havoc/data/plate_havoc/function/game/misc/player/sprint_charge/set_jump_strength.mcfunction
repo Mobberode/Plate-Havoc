@@ -1,2 +1,2 @@
-execute store result storage plate_havoc:temp temp float 0.00033 run scoreboard players get @s plate_havoc.sprint_charge.amount
+execute store result storage plate_havoc:temp temp float 0.000375 run scoreboard players get @s plate_havoc.sprint_charge.amount
 function plate_havoc:game/misc/player/sprint_charge/jump_affect with storage plate_havoc:temp

@@ -11,6 +11,4 @@ gamemode spectator
 effect clear @s
 function plate_havoc:game/misc/relog_process
 
-execute if score @s plate_havoc.run_id = #Run plate_havoc.run_id run return fail
-clear @s
-recipe take @s *
+execute unless score @s plate_havoc.run_id = #Run plate_havoc.run_id run function plate_havoc:game/match/player/relog_clear
