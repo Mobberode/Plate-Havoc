@@ -8,7 +8,7 @@ scoreboard players operation #VotingRequirement plate_havoc.players *= #VotingPe
 scoreboard players operation #VotingRequirement plate_havoc.players /= #100 plate_havoc.num
 
 ##Rounding unless solo.
-execute if score #Match plate_havoc.players matches ..1 run function plate_havoc:game/misc/cards/vote/requirement/rounding/check
+execute unless score #Current plate_havoc.players matches ..1 run function plate_havoc:game/misc/cards/vote/requirement/rounding/check
 
 ##If Voting Requirement = 0 or less
 execute if score #VotingRequirement plate_havoc.players matches ..0 run scoreboard players set #VotingRequirement plate_havoc.players 1
