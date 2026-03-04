@@ -1,5 +1,5 @@
-tag @s remove plate_havoc.shop.init
-tag @s add plate_havoc.shop
+tag @s remove plate_havoc_content.event.shop.init
+tag @s add plate_havoc_content.event.shop
 
 #2s x 20 = 40t
 ##Time

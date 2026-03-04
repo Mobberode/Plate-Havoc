@@ -1,4 +1,4 @@
-execute at @p[tag=plate_havoc.survivor] run function plate_havoc:game/match/player/last_one_sfx
+execute as @a at @s run function plate_havoc:game/match/player/last_one_sfx
 
 function plate_havoc:game/misc/cards/running/types/run {type:on.last_alive}
 

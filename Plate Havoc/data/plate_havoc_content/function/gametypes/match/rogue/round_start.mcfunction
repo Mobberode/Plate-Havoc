@@ -5,6 +5,8 @@ function plate_havoc:game/misc/attributes/custom/temporary
 
 execute store result score #Starting plate_havoc.players if entity @a[tag=!plate_havoc.spectator]
 
+execute as @a[tag=!plate_havoc.spectator] in plate_havoc:arena run function plate_havoc:game/match/player/spread/init
+
 advancement revoke @a from plate_havoc:cards/root
 function plate_havoc:game/misc/cards/running/types/start
 

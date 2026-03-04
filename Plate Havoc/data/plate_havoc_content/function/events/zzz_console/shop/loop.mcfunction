@@ -1,1 +1,1 @@
-execute as @e[tag=plate_havoc.shop] at @s run function plate_havoc_content:events/zzz_console/shop/entity/tick
+execute as @e[tag=plate_havoc_content.event.shop] at @s run function plate_havoc_content:events/zzz_console/shop/entity/tick

@@ -1,4 +1,4 @@
-data merge entity @s {item:{id:black_stained_glass},Glowing:true,glow_color_override:16749825,brightness:{block:0,sky:5},Tags:["plate_havoc.card.fragile_void","plate_havoc.dont_interact"],transformation:{translation:[0.0,0.5,0.0]}}
+data merge entity @s {item:{id:black_stained_glass},Glowing:true,glow_color_override:16749825,brightness:{block:0,sky:5},Tags:["plate_havoc_content.card.fragile_void","plate_havoc.dont_interact"],transformation:{translation:[0.0,0.5,0.0]}}
 
 execute summon item_display run function plate_havoc_content:cards/fragile_void/entity/set_passenger
 

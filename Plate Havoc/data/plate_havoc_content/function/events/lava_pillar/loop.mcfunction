@@ -1,1 +1,1 @@
-execute in plate_havoc:arena as @e[x=0,tag=plate_havoc.lava_pillar,type=marker] run function plate_havoc_content:events/lava_pillar/entity/time
+execute in plate_havoc:arena as @e[x=0,tag=plate_havoc_content.event.lava_pillar,type=marker] run function plate_havoc_content:events/lava_pillar/entity/time

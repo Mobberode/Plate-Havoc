@@ -1,5 +1,5 @@
 tag @s add plate_havoc.dont_interact
-tag @s add plate_havoc.lava_pillar
+tag @s add plate_havoc_content.event.lava_pillar
 
 #X
 scoreboard players operation #Modulo plate_havoc.temp = #XZ plate_havoc.temp

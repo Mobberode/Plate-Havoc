@@ -1,4 +1,5 @@
-##Set to 25
+##Set
+data remove storage plate_havoc:cards active_data.shared.temp
 scoreboard players set #Temp plate_havoc.card 250
 ##Card level
 execute store result score #Level plate_havoc.card run data get storage plate_havoc:cards executing.count

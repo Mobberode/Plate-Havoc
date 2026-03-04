@@ -109,7 +109,8 @@ scoreboard players set #Template.Event.BlackHole.MaxRunCount plate_havoc.num 1
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.black_hole.duration",base:0.9,modifiers:[]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.black_hole.duration.extend",base:0.45,modifiers:[]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.black_hole.base_size",base:0.125,modifiers:[]}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.black_hole.growth_limit",base:0.005,modifiers:[],update:[{tpye:score,value:"#PHC.BlackHole.Growth_Limit plate_havoc.event"}]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.black_hole.max_size",base:0.25,modifiers:[],update:[{type:score,value:"#PHC.BlackHole.Size_Limit plate_havoc.event"}]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.black_hole.growth_limit",base:0.005,modifiers:[],update:[{type:score,value:"#PHC.BlackHole.Growth_Limit plate_havoc.event"}]}
 ## breeze (Max Run Count)
 scoreboard players set #Template.Event.Breeze.MaxRunCount plate_havoc.num 1
 ## wall (Max Run Count)
@@ -222,7 +223,11 @@ scoreboard players set #Template.Event.Phantom.MaxRunCount plate_havoc.num 1
 ## buff_food (Max Run Count) (Amount)
 scoreboard players set #Template.Event.Buff_Food.MaxRunCount plate_havoc.num 1
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.buff_food.give_value",base:0.003,modifiers:[],tags:["plate_havoc_content:boxless_desires.applicable"]}
-
+## bounce_pad (Max Runs) (Size) (Range) (Boost)
+scoreboard players set #Template.Event.Bounce_Pad.MaxRunCount plate_havoc.num 1
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.bounce_pad.size",base:3,modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.bounce_pad.range",base:0.035,modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.bounce_pad.boost",base:12.5,modifiers:[]}
 ###
 
 ## obama_drone_strike (Max Run Count) (Summons) (Summon Extension)

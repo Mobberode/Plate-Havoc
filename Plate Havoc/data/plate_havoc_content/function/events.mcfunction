@@ -105,19 +105,19 @@ data modify storage plate_havoc:temp data set value [\
 \
 {id:spinning_laser,data:{global:{intensity:4.5,function:"plate_havoc_content:events/spinning_laser/start"}},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
-{id:wind_up,data:{global:{intensity:5.6,function:"plate_havoc_content:events/wind_up/start"}},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
+{id:wind_up,data:{global:{intensity:6,function:"plate_havoc_content:events/wind_up/start"}},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
-{id:laser_drill,data:{global:{intensity:3.46,function:"plate_havoc_content:events/laser_drill/start"}},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
+{id:laser_drill,data:{global:{intensity:3.5,function:"plate_havoc_content:events/laser_drill/start"}},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
 {id:end_crystal,data:{global:{intensity:4,function:"plate_havoc_content:events/end_crystal/start"}},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
 {id:shulker,data:{global:{intensity:4,function:"plate_havoc_content:events/shulker/start"}},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
-{id:skeleton_pillar,data:{global:{intensity:3.6,function:"plate_havoc_content:events/skeleton_pillar/start"}},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
+{id:skeleton_pillar,data:{global:{intensity:3.5,function:"plate_havoc_content:events/skeleton_pillar/start"}},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
-{id:motion_sniper,data:{global:{intensity:4,function:"plate_havoc_content:events/motion_sniper/start"}},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
+{id:motion_sniper,data:{global:{intensity:3.5,function:"plate_havoc_content:events/motion_sniper/start"}},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
-{id:outer_space_gravity,data:{global:{intensity:4,function:"plate_havoc_content:events/outer_space_gravity/start"}},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
+{id:outer_space_gravity,data:{global:{intensity:3.5,function:"plate_havoc_content:events/outer_space_gravity/start"}},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
 {id:sapling_drop,data:{global:{intensity:3.2,function:"plate_havoc_content:events/sapling_drop/start"}},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
@@ -127,17 +127,19 @@ data modify storage plate_havoc:temp data set value [\
 \
 {id:lava_pillar,data:{global:{intensity:4.4,function:"plate_havoc_content:events/lava_pillar/start"}},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
-{id:flame_guardian,data:{global:{intensity:6,function:"plate_havoc_content:events/flame_guardian/start"}},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
+{id:flame_guardian,data:{global:{intensity:5,function:"plate_havoc_content:events/flame_guardian/start"}},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
 {id:obsidian_plate,data:{global:{intensity:5,function:"plate_havoc_content:events/obsidian_plate/start"}},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
 {id:ice_road,data:{global:{intensity:5,function:"plate_havoc_content:events/ice_road/start"}},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
-{id:monster_spawner,data:{global:{intensity:7.5,function:"plate_havoc_content:events/monster_spawner/start"}},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
+{id:monster_spawner,data:{global:{intensity:5,function:"plate_havoc_content:events/monster_spawner/start"}},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
 {id:phantom,data:{global:{intensity:3.5,function:"plate_havoc_content:events/phantom/start"}},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
 {id:buff_food,data:{global:{intensity:3,function:"plate_havoc_content:events/buff_food/start"}},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
+\
+{id:bounce_pad,data:{global:{intensity:3,function:"plate_havoc_content:events/bounce_pad/start"}},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
 \
 \
@@ -171,6 +173,9 @@ scoreboard objectives add plate_havoc_content.event.motion_sniper.time dummy
 
 scoreboard objectives add plate_havoc_content.event.piranha.attack_delay dummy
 scoreboard objectives add plate_havoc_content.event.piranha.attacked_times dummy
+
+scoreboard objectives add plate_havoc_content.event.bounce_pad.delay dummy
+scoreboard objectives add plate_havoc_content.event.bounce_pad.boost dummy
 
 data modify storage plate_havoc:temp extension_data set value [plate_havoc_content.event.acid_rain.exposure,plate_havoc_content.event.jump_cooldown,plate_havoc_content.event.jump_afterdown,plate_havoc_content.event.shop_token,plate_havoc_content.event.flame_guardian.time,plate_havoc_content.event.flame_guardian.active,plate_havoc_content.event.motion_sniper.time,plate_havoc_content.event.piranha.attack_delay,plate_havoc_content.event.piranha.attacked_times]
 data modify storage plate_havoc:data score_reset append from storage plate_havoc:temp extension_data[]
