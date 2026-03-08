@@ -104,7 +104,7 @@ data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:cyclathron_yield",base:1,modifiers:[]}
 
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:event.time",base:0.05,modifiers:[]}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:intensity.gain",base:0.0175,modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:intensity.gain",base:0.017,modifiers:[]}
 
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:player.charge.cap",base:2,modifiers:[],update:[{type:score,value:"#Player.Charge.Cap plate_havoc.num"}]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:player.charge.gain",base:0.03,modifiers:[],update:[{type:score,value:"#Player.Charge.Gain plate_havoc.num"}]}

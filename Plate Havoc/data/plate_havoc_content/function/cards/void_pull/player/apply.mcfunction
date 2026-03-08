@@ -1,2 +1,2 @@
-attribute @s gravity modifier remove plate_havoc:card.void_pull
-$attribute @s gravity modifier add plate_havoc:card.void_pull $(temp) add_value
+attribute @s gravity modifier remove plate_havoc:card.void_pull.active
+$attribute @s gravity modifier add plate_havoc:card.void_pull.active $(temp) add_value

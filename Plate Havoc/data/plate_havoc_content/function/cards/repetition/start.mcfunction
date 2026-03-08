@@ -4,5 +4,6 @@ scoreboard players operation #EventRepeatsCurrent plate_havoc.temp += #EventRepe
 execute if score #EventRepeats plate_havoc.num matches ..0 run scoreboard players add #EventRepeatsCurrent plate_havoc.temp 1
 
 scoreboard players operation #EventRepeatsCurrent plate_havoc.temp -= #Value plate_havoc.round
+scoreboard players operation #EventRepeatsCurrent plate_havoc.temp *= #EventRepeats plate_havoc.num
 
 function plate_havoc:game/events/run

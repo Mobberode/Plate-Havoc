@@ -1,4 +1,4 @@
-scoreboard players set #Modulo plate_havoc.temp 1
+scoreboard players set #Modulo plate_havoc.temp 2
 execute store result score #RNG plate_havoc.num run function plate_havoc:game/misc/prng
 
 function plate_havoc_content:events/wall/determine

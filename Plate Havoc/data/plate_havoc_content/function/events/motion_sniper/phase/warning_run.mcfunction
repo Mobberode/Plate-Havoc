@@ -7,7 +7,7 @@ execute summon text_display run function plate_havoc_content:events/motion_snipe
 
 scoreboard players operation @s plate_havoc_content.event.motion_sniper.time = #Motion_Sniper.WarningTime plate_havoc.event
 
-title @s actionbar {text:"Unease sets as you fear moving with snipers looming.",color:red}
+title @s actionbar {text:"Hold steady, snipers are looming.",color:red}
 
 playsound block.iron_trapdoor.open hostile @a ~ ~ ~ 1.5 0.2 0
 playsound block.iron_trapdoor.close hostile @a ~ ~ ~ 1.8 1.5 0

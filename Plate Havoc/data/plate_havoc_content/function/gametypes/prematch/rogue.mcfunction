@@ -52,6 +52,6 @@ scoreboard players set #CardCountModifier plate_havoc.num 0
 data modify storage plate_havoc:cards locked set from storage plate_havoc:cards data
 data modify storage plate_havoc:cards pool set value []
 data modify storage plate_havoc:cards unavailable set value []
-data modify storage plate_havoc:ui card_list set value [{text:""}]
+data modify storage plate_havoc:ui card_list set value [""]
 function plate_havoc:game/misc/cards/pool/locked/init
 function plate_havoc:game/misc/cards/process/types/match

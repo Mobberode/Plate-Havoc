@@ -13,4 +13,4 @@ function plate_havoc_content:events/bounce_pad/entity/sound
 
 ##Players
 scoreboard players set @s plate_havoc.jumps.count 1
-scoreboard players set @s plate_havoc_content.event.bounce_pad.delay 2
+scoreboard players set @s plate_havoc_content.event.bounce_pad.delay 5

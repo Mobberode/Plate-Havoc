@@ -3,4 +3,4 @@ data modify storage plate_havoc:custom attribute_modifier set value {id:"plate_h
 function plate_havoc:game/misc/attributes/custom/add_modifier
 function plate_havoc:game/misc/attributes/custom/input {id:"plate_havoc:event.time"}
 
-tellraw @a ["",{text:"Cube of Decay",color:red}," has rolled on: ",{text:"+1 Event Repeat",color:red}]
+tellraw @a ["",{text:"Cube of Decay",color:red}," has rolled on: ",{text:"+1 Event per Action",color:red}]
