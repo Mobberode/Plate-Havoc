@@ -9,4 +9,4 @@ data modify storage plate_havoc:temp id_attribute set value "plate_havoc_content
 data modify storage plate_havoc:custom attribute_modifier set value {id:"plate_havoc_content:card.piranha_season",value:303,operation:"add_multiplied_total",tags:["plate_havoc_content:piranha_season"]}
 function plate_havoc:game/misc/attributes/custom/add_modifier
 
-function plate_havoc:console/force_event {id:piranha}
+function plate_havoc:console/force_event {id:"plate_havoc_content:piranha"}

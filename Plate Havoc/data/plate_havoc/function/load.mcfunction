@@ -60,6 +60,8 @@ scoreboard objectives add plate_havoc.on_ground.predicate.delay dummy
 scoreboard objectives add plate_havoc.sprint_charge.amount dummy
 scoreboard objectives add plate_havoc.sprint_charge.using dummy
 
+scoreboard objectives add plate_havoc.game_event.in_void dummy
+
 function plate_havoc:game/triggers/loop
 
 execute unless score #LBLimit plate_havoc.config matches 0.. run scoreboard players set #LBLimit plate_havoc.config 3

@@ -1,0 +1,1 @@
+playsound entity.ghast.shoot hostile @a ~ ~ ~ 1 1 0

@@ -3,7 +3,7 @@ tellraw @a [{text:"Protect the VIP!",color:gold},{text:"\nDo not let the VIP die
 data modify storage plate_havoc:ui bar.queue[{id:players}].extra set value [{text:"VIP:"}," ",{selector:"@a[tag=plate_havoc.vip]",color:green}," ",{atlas:"gui",sprite:"hud/heart/full"},{storage:"plate_havoc:custom",nbt:vip_health,color:red}]
 
 tag @a remove plate_havoc.vip
-tag @r[tag=!plate_havoc.spectator,sort=random] add plate_havoc.vip
+tag @r[tag=!plate_havoc.spectator] add plate_havoc.vip
 
 scoreboard players set #BaseGainValue plate_havoc.spawnpoint_energy 50
 

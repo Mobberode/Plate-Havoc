@@ -1,1 +1,1 @@
-title @s actionbar [{storage:"plate_havoc:ui",nbt:element_spawnpoint_status,interpret:true}]
+title @s actionbar [{storage:"plate_havoc:ui",nbt:game.spawnpoint.status,interpret:true}]

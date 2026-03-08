@@ -1,3 +1,5 @@
+function plate_havoc:game/misc/cards/vote/requirement/check
+
 ##Get votes for slot
 execute store result score #SavedVotes plate_havoc.num if entity @a[tag=!plate_havoc.spectator,predicate=plate_havoc:specfic/card]
 
