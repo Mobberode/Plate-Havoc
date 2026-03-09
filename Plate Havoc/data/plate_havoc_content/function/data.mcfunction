@@ -36,7 +36,7 @@ scoreboard players set #Template.Event.Bridge.MaxRunCount plate_havoc.num 1
 scoreboard players set #Template.Event.Ghast.MaxRunCount plate_havoc.num 1
 ## acid_rain (Max Run Count) (Duration) (Damage Multiplier)
 scoreboard players set #Template.Event.AcidRain.MaxRunCount plate_havoc.num 1
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.acid_rain.duration",base:0.4,modifiers:[],tags:["plate_havoc_content:slow_passing.applicable","plate_havoc_content:enraged.shorter"]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.acid_rain.duration",base:0.4,modifiers:[],tags:["plate_havoc_content:slow_passing.applicable","plate_havoc_content:enraged.shorter","plate_havoc_content:netherite_clock.applicable"]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.acid_rain.damage_multiplier",base:0.065,modifiers:[],tags:["plate_havoc_content:enraged.aggressive"]}
 ## null (Max Run Count)
 scoreboard players set #Template.Event.Null.MaxRunCount plate_havoc.num 1
@@ -94,20 +94,20 @@ scoreboard players set #Template.Event.Eraserman.MaxRunCount plate_havoc.num 1
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.eraserman.distance",base:100,modifiers:[],tags:["plate_havoc_content:slow_passing.applicable"]}
 ## fireworks (Max Run Count) (Summons) (Summon Delay (tick/20)) (Summon Extension)
 scoreboard players set #Template.Event.Fireworks.MaxRunCount plate_havoc.num 1
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.fireworks.summon.value",base:0.08,modifiers:[],tags:["plate_havoc_content:enraged.aggressive"]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.fireworks.summon.value",base:0.05,modifiers:[],tags:["plate_havoc_content:enraged.aggressive"]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.fireworks.summon.delay",base:0.006,modifiers:[],tags:["plate_havoc_content:cube_of_decay.outcome.less_agression","plate_havoc_content:enraged.shorter"]}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.fireworks.summon.extend_value",base:0.04,modifiers:[],tags:["plate_havoc_content:enraged.aggressive"]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.fireworks.summon.extend_value",base:0.025,modifiers:[],tags:["plate_havoc_content:enraged.aggressive"]}
 ## jump_cooldown (Max Run Count) (Cooldown Duration (tick/20)) (Event Duration (tick/20))
 scoreboard players set #Template.Event.JumpCooldown.MaxRunCount plate_havoc.num 1
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.jump_cooldown.cooldown",base:0.3,modifiers:[],tags:["plate_havoc_content:slow_passing.applicable"]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.jump_cooldown.cooldown",base:0.3,modifiers:[],tags:["plate_havoc_content:slow_passing.applicable","plate_havoc_content:netherite_clock.applicable"]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.jump_cooldown.duration",base:0.03,modifiers:[],tags:["plate_havoc_content:enraged.shorter"]}
 ## anvil (Max Run Count) (Distance (in blocks))
 scoreboard players set #Template.Event.Anvil.MaxRunCount plate_havoc.num 1
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.anvil.distance",base:75,modifiers:[]}
 ## black_hole (Max Run Count) (Duration) (Duration Extension) (Base Size) (Growth Limit)
 scoreboard players set #Template.Event.BlackHole.MaxRunCount plate_havoc.num 1
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.black_hole.duration",base:0.9,modifiers:[],tags:["plate_havoc_content:slow_passing.applicable","plate_havoc_content:enraged.shorter"]}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.black_hole.duration.extend",base:0.45,modifiers:[],tags:["plate_havoc_content:slow_passing.applicable"]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.black_hole.duration",base:0.9,modifiers:[],tags:["plate_havoc_content:slow_passing.applicable","plate_havoc_content:enraged.shorter","plate_havoc_content:netherite_clock.applicable"]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.black_hole.duration.extend",base:0.45,modifiers:[],tags:["plate_havoc_content:slow_passing.applicable","plate_havoc_content:netherite_clock.applicable"]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.black_hole.base_size",base:0.125,modifiers:[],tags:["plate_havoc_content:enraged.aggressive"]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.black_hole.max_size",base:0.25,modifiers:[],tags:["plate_havoc_content:enraged.aggressive"],update:[{type:score,value:"#PHC.BlackHole.Size_Limit plate_havoc.event"}]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.black_hole.growth_limit",base:0.005,modifiers:[],update:[{type:score,value:"#PHC.BlackHole.Growth_Limit plate_havoc.event"}]}
@@ -124,7 +124,7 @@ scoreboard players set #Template.Event.Blaze.MaxRunCount plate_havoc.num 1
 scoreboard players set #Template.Event.Bucket.MaxRunCount plate_havoc.num 1
 ## herobrine (Max Run Count) (Duration) (Duration Extension) (Acitvate Time) (Movement Distance)
 scoreboard players set #Template.Event.Herobrine.MaxRunCount plate_havoc.num 1
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.herobrine.duration",base:0.9,modifiers:[],tags:["plate_havoc_content:slow_passing.applicable","plate_havoc_content:enraged.shorter"]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.herobrine.duration",base:0.9,modifiers:[],tags:["plate_havoc_content:slow_passing.applicable","plate_havoc_content:enraged.shorter","plate_havoc_content:netherite_clock.applicable"]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.herobrine.duration.extend",base:0.3,modifiers:[],tags:["plate_havoc_content:slow_passing.applicable"]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.herobrine.delay",base:0.025,modifiers:[],tags:["plate_havoc_content:cube_of_decay.outcome.less_agression","plate_havoc_content:enraged.shorter"]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.herobrine.movement",base:3.75,modifiers:[],tags:["plate_havoc_content:enraged.aggressive"]}
@@ -150,7 +150,7 @@ data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.nuke.power",base:0.125,modifiers:[],tags:["plate_havoc_content:enraged.aggressive"]}
 ## piranha (Max Run Count) (Duration) (Damage)
 scoreboard players set #Template.Event.Piranha.MaxRunCount plate_havoc.num 1
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.piranha.duration",base:1.2,modifiers:[],tags:["plate_havoc_content:slow_passing.applicable","plate_havoc_content:enraged.shorter"]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.piranha.duration",base:1.2,modifiers:[],tags:["plate_havoc_content:slow_passing.applicable","plate_havoc_content:enraged.shorter","plate_havoc_content:netherite_clock.applicable"]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.piranha.damage",base:1,modifiers:[],tags:["plate_havoc_content:enraged.aggressive"]}
 ## dripleaf (Max Run Count)
 scoreboard players set #Template.Event.Dripleaf.MaxRunCount plate_havoc.num 1
@@ -232,8 +232,8 @@ data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_
 
 ## obama_drone_strike (Max Run Count) (Summons) (Summon Extension)
 scoreboard players set #Template.Event.Obama_Drone_Strike.MaxRunCount plate_havoc.num 1
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.obama_drone_strike.summon.value",base:0.5,modifiers:[],tags:["plate_havoc_content:enraged.aggressive"]}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.obama_drone_strike.summon.extend_value",base:0.25,tags:["plate_havoc_content:enraged.aggressive"]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.obama_drone_strike.summon.value",base:0.35,modifiers:[],tags:["plate_havoc_content:enraged.aggressive"]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.obama_drone_strike.summon.extend_value",base:0.125,tags:["plate_havoc_content:enraged.aggressive"]}
 ## shop (Max Run Count) (Storage Data)
 scoreboard players set #Template.Event.Shop.MaxRunCount plate_havoc.num 1
 data modify storage plate_havoc:events data.shop set value [\
@@ -252,3 +252,6 @@ data modify storage plate_havoc:cards data2.plate_havoc_content.cube_of_decay se
 data modify storage plate_havoc:cards data2.plate_havoc_content.777_machine set value [{id:regeneration,amplifier:0},{id:invisibility,amplifier:0},{id:resistance,amplifier:1},{id:fire_resistance,amplifier:0},{id:saturation,amplifier:0},{id:breath_of_the_nautilus,amplifier:0}]
 ## Mentally Parrotsane
 data modify storage plate_havoc:cards data2.plate_havoc_content.mentally_parrotsane set value ["plate_havoc:game/match/player/last_one_sfx","plate_havoc_content:cards/cursed_clocks/collect_sfx","plate_havoc_content:events/motion_sniper/sfx","plate_havoc_content:events/laser_drill/entity/cue/sound_default","plate_havoc_content:cards/mentally_parrotsane/sounds/creeper","plate_havoc_content:cards/mentally_parrotsane/sounds/wither","plate_havoc_content:cards/mentally_parrotsane/sounds/ghast","plate_havoc_content:events/eraserman/cue"]
+
+data modify storage plate_havoc:temp extension_data set value [plate_havoc_content.event.acid_rain.exposure,plate_havoc_content.event.jump_cooldown,plate_havoc_content.event.jump_afterdown,plate_havoc_content.event.shop_token,plate_havoc_content.event.flame_guardian.time,plate_havoc_content.event.flame_guardian.active,plate_havoc_content.event.motion_sniper.time,plate_havoc_content.event.piranha.attack_delay,plate_havoc_content.event.piranha.attacked_times,plate_havoc_content.card.multi_use_umbrella.splasher_using,plate_havoc_content.card.multi_use_umbrella.splasher_cooldown,plate_havoc_content.card.multi_use_umbrella.acid_immunity]
+data modify storage plate_havoc:data score_reset append from storage plate_havoc:temp extension_data[]

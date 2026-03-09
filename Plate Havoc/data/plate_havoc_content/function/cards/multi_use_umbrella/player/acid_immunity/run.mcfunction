@@ -1,0 +1,2 @@
+scoreboard players remove @s plate_havoc_content.card.multi_use_umbrella.acid_immunity 1
+execute if score @s plate_havoc_content.card.multi_use_umbrella.acid_immunity matches ..0 at @s run function plate_havoc_content:cards/multi_use_umbrella/player/acid_immunity/break_cue

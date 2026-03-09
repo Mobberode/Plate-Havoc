@@ -57,8 +57,8 @@ scoreboard objectives add plate_havoc.leaderboard.has_credit dummy
 scoreboard objectives add plate_havoc.jumps.count dummy
 scoreboard objectives add plate_havoc.jumps.strength dummy
 scoreboard objectives add plate_havoc.on_ground.predicate.delay dummy
-scoreboard objectives add plate_havoc.sprint_charge.amount dummy
-scoreboard objectives add plate_havoc.sprint_charge.using dummy
+scoreboard objectives add plate_havoc.charge.amount dummy
+scoreboard objectives add plate_havoc.charge.using dummy
 
 scoreboard objectives add plate_havoc.game_event.in_void dummy
 

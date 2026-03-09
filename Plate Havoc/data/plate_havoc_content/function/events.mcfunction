@@ -177,7 +177,4 @@ scoreboard objectives add plate_havoc_content.event.piranha.attacked_times dummy
 scoreboard objectives add plate_havoc_content.event.bounce_pad.delay dummy
 scoreboard objectives add plate_havoc_content.event.bounce_pad.boost dummy
 
-data modify storage plate_havoc:temp extension_data set value [plate_havoc_content.event.acid_rain.exposure,plate_havoc_content.event.jump_cooldown,plate_havoc_content.event.jump_afterdown,plate_havoc_content.event.shop_token,plate_havoc_content.event.flame_guardian.time,plate_havoc_content.event.flame_guardian.active,plate_havoc_content.event.motion_sniper.time,plate_havoc_content.event.piranha.attack_delay,plate_havoc_content.event.piranha.attacked_times]
-data modify storage plate_havoc:data score_reset append from storage plate_havoc:temp extension_data[]
-
 data modify storage plate_havoc:data events append from storage plate_havoc:temp data[]

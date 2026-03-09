@@ -108,6 +108,8 @@ data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:player.charge.cap",base:2,modifiers:[],update:[{type:score,value:"#Player.Charge.Cap plate_havoc.num"}]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:player.charge.gain",base:0.03,modifiers:[],update:[{type:score,value:"#Player.Charge.Gain plate_havoc.num"}]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:player.charge.loss",base:0.01,modifiers:[],update:[{type:score,value:"#Player.Charge.Loss plate_havoc.num"}]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:player.charge.jump_effectiveness",base:0.00045,modifiers:[],update:[{type:score,value:"#Player.Charge.Loss plate_havoc.num"}]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:player.charge.sprint_effectiveness",base:0.001,modifiers:[],update:[{type:score,value:"#Player.Charge.Loss plate_havoc.num"}]}
 
 ##Extra Jumps
 data modify storage plate_havoc:data extra_jumps set value []

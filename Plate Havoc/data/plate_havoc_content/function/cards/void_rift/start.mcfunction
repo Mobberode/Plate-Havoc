@@ -1,1 +1,1 @@
-scoreboard players set @a plate_havoc.c.card.void_rift 1
+scoreboard players set @a plate_havoc_content.card.void_rift 1

@@ -46,6 +46,7 @@ scoreboard players set #ClockCollectTimeReduction plate_havoc.num 2
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:clock.range",base:0,modifiers:[]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:clock.spawn_time",base:0.1,modifiers:[]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:time.multiplier",base:1,modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:cycle.intensity_scale",base:1.125,modifiers:[]}
 
 scoreboard players set #CardCountModifier plate_havoc.num 0
 

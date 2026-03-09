@@ -1,0 +1,1 @@
+scoreboard players set @s plate_havoc_content.card.multi_use_umbrella.acid_immunity 15

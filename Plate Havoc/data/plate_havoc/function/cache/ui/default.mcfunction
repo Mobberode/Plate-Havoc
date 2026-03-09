@@ -41,7 +41,7 @@ data modify storage plate_havoc:ui game.end.queue append value {id:intensity,tex
 
 data modify storage plate_havoc:ui game.end.queue append value {id:player_credit,text:"",extra:[{text:"Players: ",color:gray},{storage:"plate_havoc:leaderboard",nbt:"player_credit[]",color:yellow,interpret:true}]}
 
-data modify storage plate_havoc:ui game.end.queue append value {id:seed,text:"",extra:[{text:"Seed: ",color:gray},{storage:"plate_havoc:leaderboard",nbt:"seed",color:green,interpret:true}]}
+data modify storage plate_havoc:ui game.end.queue append value {id:seed,text:"",extra:[{text:"Seed: ",color:gray},{score:{name:"#Seed",objective:plate_havoc.num},color:green,interpret:true}]}
 
 ##Leaderboard UI
 data remove storage plate_havoc:ui leaderboard

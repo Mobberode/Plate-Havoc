@@ -1,0 +1,2 @@
+execute if score @s plate_havoc_content.card.multi_use_umbrella.splasher_cooldown matches ..-20 run return run function plate_havoc_content:cards/multi_use_umbrella/player/splasher/tick
+scoreboard players remove @s plate_havoc_content.card.multi_use_umbrella.splasher_cooldown 1

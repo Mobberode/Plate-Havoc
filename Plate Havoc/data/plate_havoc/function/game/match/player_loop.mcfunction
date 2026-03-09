@@ -5,4 +5,4 @@ scoreboard players remove @s[scores={plate_havoc.on_ground.predicate.delay=1..}]
 function plate_havoc:game/misc/player/extra_jumps/init
 
 ##Sprint Charge
-function plate_havoc:game/misc/player/sprint_charge/init
+function plate_havoc:game/misc/player/charge/init

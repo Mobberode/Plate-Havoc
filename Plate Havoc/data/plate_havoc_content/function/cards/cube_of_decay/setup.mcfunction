@@ -27,7 +27,7 @@ execute if score @s plate_havoc.timer matches 1201.. run scoreboard players set 
 scoreboard players operation #Temp plate_havoc.temp = @s plate_havoc.timer
 scoreboard players operation #Temp plate_havoc.temp /= #100 plate_havoc.num
 scoreboard players operation #Temp plate_havoc.temp *= #80 plate_havoc.num
-scoreboard players operation @s plate_havoc.c.card.cube_of_decay.time_threshold = #Temp plate_havoc.temp
+scoreboard players operation @s plate_havoc_content.card.cube_of_decay.time_threshold = #Temp plate_havoc.temp
 
 #
 function plate_havoc_content:cards/cube_of_decay/update

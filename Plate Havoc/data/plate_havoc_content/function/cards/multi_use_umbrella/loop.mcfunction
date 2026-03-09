@@ -1,0 +1,1 @@
+execute as @a[tag=plate_havoc.survivor] at @s run function plate_havoc_content:cards/multi_use_umbrella/player/run
