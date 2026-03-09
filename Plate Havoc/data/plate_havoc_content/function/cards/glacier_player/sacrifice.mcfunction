@@ -1,3 +1,4 @@
-execute as @r[tag=!plate_havoc.spectator,tag=plate_havoc.player] run function plate_havoc:game/match/player/spectator/revive
+function plate_havoc_content:cards/glacier_player/revive
+
 kill
 tellraw @a [{text:"? was sacrificed"}]
