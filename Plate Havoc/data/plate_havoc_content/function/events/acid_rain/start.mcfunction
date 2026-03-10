@@ -1,14 +1,13 @@
 execute if score #PHC.AcidRain.Duration plate_havoc.event matches 1.. run return run scoreboard players set #Restart plate_havoc.event 1
 
 scoreboard players set @a plate_havoc_content.event.acid_rain.exposure 0
-scoreboard players add #EventRunCount plate_havoc.num 1
 
 #
 execute store result score #PHC.AcidRain.Duration plate_havoc.event run data get storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.acid_rain.duration"}].output 1000
 scoreboard players set #PHC.AcidRain.Tick plate_havoc.event 0
 
-scoreboard players operation #EventRunCount plate_havoc.num = #Template.Event.AcidRain.MaxRunCount plate_havoc.num
-scoreboard players operation #PHC.AcidRain.Duration plate_havoc.event *= #Template.Event.AcidRain.MaxRunCount plate_havoc.num
+scoreboard players operation #EventRunCount plate_havoc.num = #MaxRunCount plate_havoc.num
+scoreboard players operation #PHC.AcidRain.Duration plate_havoc.event *= #MaxRunCount plate_havoc.num
 #
 
 weather rain

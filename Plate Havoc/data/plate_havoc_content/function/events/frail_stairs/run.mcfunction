@@ -18,4 +18,4 @@ data modify storage plate_havoc:events active_data.shared.rotation append from s
 data modify entity @s Rotation set from storage plate_havoc:events active_data.shared.rotation
 
 execute at @s run function plate_havoc_content:events/frail_stairs/loop
-execute if score #EventRunCount plate_havoc.num < #Template.Event.Frail_Stairs.MaxRunCount plate_havoc.num run function plate_havoc_content:events/frail_stairs/run
+execute if score #EventRunCount plate_havoc.num < #MaxRunCount plate_havoc.num run function plate_havoc_content:events/frail_stairs/run

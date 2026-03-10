@@ -1,4 +1,4 @@
-scoreboard players operation #EventRunCount plate_havoc.num = #Template.Event.BlackHole.MaxRunCount plate_havoc.num
+scoreboard players operation #EventRunCount plate_havoc.num = #MaxRunCount plate_havoc.num
 
 execute if score #BlackHole.Duration plate_havoc.event matches 1.. run return run function plate_havoc_content:events/black_hole/extend
 

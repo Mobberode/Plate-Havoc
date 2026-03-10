@@ -2,4 +2,4 @@ scoreboard players add #EventRunCount plate_havoc.num 1
 
 execute at @r[tag=plate_havoc.survivor] run function plate_havoc_content:events/ice_road/action
 
-execute if score #EventRunCount plate_havoc.num < #Template.Event.Ice_Road.MaxRunCount plate_havoc.num run function plate_havoc_content:events/ice_road/run
+execute if score #EventRunCount plate_havoc.num < #MaxRunCount plate_havoc.num run function plate_havoc_content:events/ice_road/run

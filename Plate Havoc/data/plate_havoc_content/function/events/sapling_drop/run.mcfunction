@@ -1,5 +1,5 @@
-scoreboard players operation #EventRunCount plate_havoc.num = #Template.Event.Sapling_Drop.MaxRunCount plate_havoc.num
-scoreboard players operation #Sapling_Drop.Amount plate_havoc.event *= #Template.Event.Sapling_Drop.MaxRunCount plate_havoc.num
+scoreboard players operation #EventRunCount plate_havoc.num = #MaxRunCount plate_havoc.num
+scoreboard players operation #Sapling_Drop.Amount plate_havoc.event *= #MaxRunCount plate_havoc.num
 
 scoreboard players reset #Sapling_Drop.CurrentDelay plate_havoc.event
 

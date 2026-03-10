@@ -4,4 +4,4 @@ execute at @r[tag=plate_havoc.survivor] run function plate_havoc_content:events/
 
 execute at @s run function plate_havoc_content:events/obsidian_plate/action with storage plate_havoc:events
 
-execute if score #EventRunCount plate_havoc.num < #Template.Event.Obsidian_Plate.MaxRunCount plate_havoc.num run function plate_havoc_content:events/obsidian_plate/run
+execute if score #EventRunCount plate_havoc.num < #MaxRunCount plate_havoc.num run function plate_havoc_content:events/obsidian_plate/run

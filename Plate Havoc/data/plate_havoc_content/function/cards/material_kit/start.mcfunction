@@ -1,2 +1,2 @@
-give @a oak_planks 32
-give @a cobblestone 16
+give @a oak_planks 16
+give @a cobblestone 8

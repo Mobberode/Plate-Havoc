@@ -1,0 +1,2 @@
+$execute store result score #MaxRunCount plate_havoc.num if data storage plate_havoc:events running.waiting[{function:"$(function)"}]
+$data remove storage plate_havoc:events running.waiting[{function:"$(function)"}]

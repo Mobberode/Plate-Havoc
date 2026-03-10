@@ -1,5 +1,5 @@
-scoreboard players operation #EventRunCount plate_havoc.num = #Template.Event.Motion_Sniper.MaxRunCount plate_havoc.num
-scoreboard players operation #Motion_Sniper.Ammo plate_havoc.event *= #Template.Event.Motion_Sniper.MaxRunCount plate_havoc.num
+scoreboard players operation #EventRunCount plate_havoc.num = #MaxRunCount plate_havoc.num
+scoreboard players operation #Motion_Sniper.Ammo plate_havoc.event *= #MaxRunCount plate_havoc.num
 
 scoreboard players set #Motion_Sniper.CurrentDelay plate_havoc.event 0
 

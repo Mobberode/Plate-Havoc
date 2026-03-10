@@ -4,4 +4,4 @@ function plate_havoc:game/events/placements/standard
 
 execute at @s run function plate_havoc_content:events/tumor/action with storage plate_havoc:events
 
-execute if score #EventRunCount plate_havoc.num < #Template.Event.Tumor.MaxRunCount plate_havoc.num run function plate_havoc_content:events/tumor/run
+execute if score #EventRunCount plate_havoc.num < #MaxRunCount plate_havoc.num run function plate_havoc_content:events/tumor/run
