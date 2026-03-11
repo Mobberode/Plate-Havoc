@@ -1,5 +1,5 @@
-gamerule max_command_sequence_length 4294369
-gamerule max_command_forks 4294369
+gamerule max_command_sequence_length 135565
+gamerule max_command_forks 135565
 gamerule max_block_modifications 2147184930
 gamerule block_drops false
 gamerule mob_drops false

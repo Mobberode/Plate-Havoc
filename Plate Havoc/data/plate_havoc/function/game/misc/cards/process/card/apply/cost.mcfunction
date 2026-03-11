@@ -12,4 +12,4 @@ execute unless data storage plate_havoc:cards attributes{player_scaling:false} r
 ##Visual
 data modify storage plate_havoc:cards snbt.action.label append value {partition:cost,text:" ",extra:["(",{part:sign,text:""},{part:cost,text:"0"}," ","Cyclathrons",")"]}
 
-data modify storage plate_havoc:cards snbt.action.label[{partition:cost}].extra[{part:cost}].text set string storage plate_havoc:cards cost
+data modify storage plate_havoc:cards snbt.action.label[{partition:cost}].extra[{part:cost}].text set string storage plate_havoc:cards cost 0 -1

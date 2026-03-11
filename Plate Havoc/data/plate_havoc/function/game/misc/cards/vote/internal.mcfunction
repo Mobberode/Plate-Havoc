@@ -1,7 +1,7 @@
 execute store result storage plate_havoc:ui players int 1 run scoreboard players get #Match plate_havoc.players
 data modify storage plate_havoc:ui players set string storage plate_havoc:ui players
 
-data modify storage plate_havoc:ui intensity set string storage plate_havoc:data intensity
+data modify storage plate_havoc:ui intensity set string storage plate_havoc:data intensity 0 -1
 
 function plate_havoc:game/misc/cyclathron_visual
 

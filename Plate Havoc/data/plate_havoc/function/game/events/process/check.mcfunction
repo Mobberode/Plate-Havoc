@@ -6,4 +6,4 @@ execute unless score #EventMin plate_havoc.intensity matches ..0 if score #Value
 execute store result score #EventMax plate_havoc.intensity run data get storage plate_havoc:events event.max_intensity 1000
 execute unless score #EventMax plate_havoc.intensity matches ..0 if score #Value plate_havoc.intensity > #EventMax plate_havoc.intensity run return run function plate_havoc:game/events/pool/match/send_back with storage plate_havoc:events
 #Else
-function plate_havoc:game/events/process/append_waiting
+function plate_havoc:game/events/process/to_running
