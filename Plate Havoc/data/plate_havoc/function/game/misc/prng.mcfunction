@@ -10,5 +10,4 @@ scoreboard players add #PRNG.Runs plate_havoc.num 1
 scoreboard players operation #Temp plate_havoc.num *= #PRNG.Multiply plate_havoc.num
 scoreboard players operation #Temp plate_havoc.num += #PRNG.Add plate_havoc.num
 
-#
 return run scoreboard players operation #Temp plate_havoc.num %= #Modulo plate_havoc.temp

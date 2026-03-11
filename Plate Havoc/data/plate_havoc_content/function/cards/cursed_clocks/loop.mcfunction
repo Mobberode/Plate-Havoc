@@ -1,1 +1,1 @@
-execute at @e[tag=plate_havoc_content.misc.time_cube.c.cursed] run function plate_havoc_content:cards/cursed_clocks/loop_vsfx
+execute in plate_havoc:arena as @e[x=0,type=item_display,tag=plate_havoc_content.misc.clock.cursed] at @s run function plate_havoc_content:cards/cursed_clocks/entity

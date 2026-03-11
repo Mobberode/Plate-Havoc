@@ -8,6 +8,6 @@ function plate_havoc:game/misc/cards/running/types/run {type:on.clock.collect}
 
 kill
 
-tag @a remove plate_havoc_content.misc.time_cube.collector
+tag @a remove plate_havoc_content.misc.clock.collector
 
 playsound block.beacon.power_select ambient @a ~ ~ ~ 2 1.5 0

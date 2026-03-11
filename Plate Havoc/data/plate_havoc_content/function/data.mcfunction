@@ -151,7 +151,40 @@ data modify storage plate_havoc:cards data2.plate_havoc_content.cube_of_decay se
 ## 777 Machine
 data modify storage plate_havoc:cards data2.plate_havoc_content.777_machine set value [{id:regeneration,amplifier:0},{id:invisibility,amplifier:0},{id:resistance,amplifier:1},{id:fire_resistance,amplifier:0},{id:saturation,amplifier:0},{id:breath_of_the_nautilus,amplifier:0}]
 ## Mentally Parrotsane
-data modify storage plate_havoc:cards data2.plate_havoc_content.mentally_parrotsane set value ["plate_havoc:game/match/player/last_one_sfx","plate_havoc_content:cards/cursed_clocks/collect_sfx","plate_havoc_content:events/motion_sniper/sfx","plate_havoc_content:events/laser_drill/entity/cue/sound_default","plate_havoc_content:cards/mentally_parrotsane/sounds/creeper","plate_havoc_content:cards/mentally_parrotsane/sounds/wither","plate_havoc_content:cards/mentally_parrotsane/sounds/ghast","plate_havoc_content:events/eraserman/cue"]
+data modify storage plate_havoc:cards data2.plate_havoc_content.mentally_parrotsane set value ["plate_havoc:game/match/player/last_one_sfx","plate_havoc_content:cards/cursed_clocks/collect_sfx","plate_havoc_content:events/motion_sniper/sfx","plate_havoc_content:events/laser_drill/entity/cue/sound_default","plate_havoc_content:cards/mentally_parrotsane/sounds/creeper","plate_havoc_content:cards/mentally_parrotsane/sounds/wither","plate_havoc_content:cards/mentally_parrotsane/sounds/ghast","plate_havoc_content:events/eraserman/cue","plate_havoc_content:cards/critical_rollback/visual_audio"]
+
+#
+scoreboard objectives add plate_havoc_content.event.acid_rain.exposure dummy
+scoreboard objectives add plate_havoc_content.event.jump_cooldown dummy
+scoreboard objectives add plate_havoc_content.event.jump_afterdown dummy
+scoreboard objectives add plate_havoc_content.event.shop_token dummy
+scoreboard objectives add plate_havoc_content.event.flame_guardian.time dummy
+scoreboard objectives add plate_havoc_content.event.flame_guardian.active dummy
+scoreboard objectives add plate_havoc_content.event.motion_sniper.time dummy
+scoreboard objectives add plate_havoc_content.event.piranha.attack_delay dummy
+scoreboard objectives add plate_havoc_content.event.piranha.attacked_times dummy
+scoreboard objectives add plate_havoc_content.event.bounce_pad.delay dummy
+scoreboard objectives add plate_havoc_content.event.bounce_pad.boost dummy
+
+#
+scoreboard objectives add plate_havoc_content.card.void_rift dummy
+scoreboard objectives add plate_havoc_content.card.cranked dummy
+scoreboard objectives add plate_havoc_content.card.void_pull dummy
+scoreboard objectives add plate_havoc_content.card.gravity_coil dummy
+scoreboard objectives add plate_havoc_content.card.fragile_void dummy
+scoreboard objectives add plate_havoc_content.card.fragile_void.starting_scale dummy
+scoreboard objectives add plate_havoc_content.card.fragile_void.starting_time dummy
+scoreboard objectives add plate_havoc_content.card.critical_rollback dummy
+scoreboard objectives add plate_havoc_content.card.cube_of_decay.time_threshold dummy
+scoreboard objectives add plate_havoc_content.card.cube_of_decay.shrink_player_requirement dummy
+scoreboard objectives add plate_havoc_content.card.cube_of_decay.shrink_player_current dummy
+
+scoreboard objectives add plate_havoc_content.card.putrid_stink.entities dummy
+scoreboard objectives add plate_havoc_content.card.real_wings dummy
+scoreboard objectives add plate_havoc_content.card.multi_use_umbrella.acid_immunity dummy
+scoreboard objectives add plate_havoc_content.card.multi_use_umbrella.splasher_cooldown dummy
+scoreboard objectives add plate_havoc_content.card.multi_use_umbrella.splasher_using dummy
+scoreboard objectives add plate_havoc_content.card.cursed_clocks.transmission_time dummy
 
 data modify storage plate_havoc:temp extension_data set value [plate_havoc_content.event.acid_rain.exposure,plate_havoc_content.event.jump_cooldown,plate_havoc_content.event.jump_afterdown,plate_havoc_content.event.shop_token,plate_havoc_content.event.flame_guardian.time,plate_havoc_content.event.flame_guardian.active,plate_havoc_content.event.motion_sniper.time,plate_havoc_content.event.piranha.attack_delay,plate_havoc_content.event.piranha.attacked_times,plate_havoc_content.card.multi_use_umbrella.splasher_using,plate_havoc_content.card.multi_use_umbrella.splasher_cooldown,plate_havoc_content.card.multi_use_umbrella.acid_immunity]
 data modify storage plate_havoc:data score_reset append from storage plate_havoc:temp extension_data[]

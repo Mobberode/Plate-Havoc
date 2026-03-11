@@ -19,3 +19,4 @@ scoreboard players operation #Time plate_havoc.temp /= #100 plate_havoc.num
 
 #Apply
 scoreboard players operation #Left plate_havoc.timer = #Time plate_havoc.temp
+scoreboard players operation #Max_Left plate_havoc.timer = #Time plate_havoc.temp

@@ -1,1 +1,1 @@
-give @a wind_charge 5
+give @a[tag=plate_havoc.survivor] wind_charge 5

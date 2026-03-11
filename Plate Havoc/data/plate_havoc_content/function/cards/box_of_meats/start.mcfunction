@@ -1,1 +1,1 @@
-give @a cooked_mutton 3
+give @a[tag=plate_havoc.survivor] cooked_mutton 3

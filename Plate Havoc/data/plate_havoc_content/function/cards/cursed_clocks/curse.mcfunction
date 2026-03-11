@@ -1,2 +1,2 @@
-tag @s add plate_havoc_content.misc.time_cube.c.cursed
-data modify storage plate_havoc:custom clock_data.card.cursed_clocks set value true
+tag @s add plate_havoc_content.misc.clock.cursed
+playsound block.chorus_flower.death neutral @a ~ ~ ~ 5 1 0

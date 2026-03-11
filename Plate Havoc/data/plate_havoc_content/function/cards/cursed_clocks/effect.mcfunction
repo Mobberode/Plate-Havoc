@@ -1,5 +1,5 @@
 ##Cyclathron
-execute store result score #Temp plate_havoc.temp run data get storage plate_havoc:custom attributes[{id:"plate_havoc:cyclathron_yield"}].output 200
+execute store result score #Temp plate_havoc.temp run data get storage plate_havoc:custom attributes[{id:"plate_havoc:cyclathron_yield"}].output 300
 scoreboard players operation #Value plate_havoc.cyclathron -= #Temp plate_havoc.temp
 
 ##Time, do it 2 times

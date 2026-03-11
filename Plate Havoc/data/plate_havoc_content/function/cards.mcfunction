@@ -81,9 +81,9 @@ data modify storage plate_havoc:temp data set value [\
 \
 {id:"plate_havoc_content:piranha_season",name:"Piranha Season",type:curse,text:{body:{text:"",extra:[{metadata:name},{text:"\nWater is no longer safe and piranhas deal 2.5x more damage to players."}]},action:{label:[{metadata:name}]}},on_select:{functions:[{type:on.start,function:"plate_havoc_content:cards/piranha_season/start"}],duration:-1,left:1,max:1},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
-{id:"plate_havoc_content:enraged",name:"Enraged",type:curse,exclusive:[{id:"plate_havoc_content:slow_passing"}],text:{body:{text:"",extra:[{metadata:name},{text:"\nCycles last 0.875x shorter, 1.65x Intensity Gain, Event Time reduced by 12.5%, events and cards become more aggressive but last slightly shorter in exchange for the Cyclathron Yield being increased by 1.25 + (0.235 *Cycle) and the Cyclathron Reward being multiplied by 1.5 Slow Passing will become unavailable if selected."}]},action:{label:[{metadata:name}]}},on_select:{functions:[{type:one_time,function:"plate_havoc_content:cards/enraged/one_time"},{type:on.start,function:"plate_havoc_content:cards/enraged/start"}],duration:-1,left:1,max:1},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
+{id:"plate_havoc_content:enraged",name:"Enraged",type:curse,exclusive:[{id:"plate_havoc_content:slow_passing"}],text:{body:{text:"",extra:[{metadata:name},{text:"\nCycles are 0.875x shorter, 1.65x Intensity Gain, Event Time reduced by 12.5%, events and cards are more aggressive but last shorter for (1.25 + (0.235 *Cycle)) Cyclathron Yield and 1.5x Cyclathron Reward. Slow Passing will become unavailable if selected."}]},action:{label:[{metadata:name}]}},on_select:{functions:[{type:one_time,function:"plate_havoc_content:cards/enraged/one_time"},{type:on.start,function:"plate_havoc_content:cards/enraged/start"}],duration:-1,left:1,max:1},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
-{id:"plate_havoc_content:cursed_clocks",name:"Cursed Clocks",type:curse,reward:40,requirement:[{type:cycle,cycle:5}],text:{body:{text:"",extra:[{metadata:name},{text:"\nClocks have a low chance to become cursed, identifiable by their particles. Collecting cursed Clocks deducts Cyclathrons and increases Time."}]},action:{label:[{metadata:name}]}},on_select:{functions:[{type:on.clock.spawn,function:"plate_havoc_content:cards/cursed_clocks/spawn"},{type:on.clock.collect,function:"plate_havoc_content:cards/cursed_clocks/collect"},{type:loop,function:"plate_havoc_content:cards/cursed_clocks/loop"}],duration:-1,left:1,max:1},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
+{id:"plate_havoc_content:cursed_clocks",name:"Cursed Clocks",type:curse,reward:40,requirement:[{type:cycle,cycle:5}],text:{body:{text:"",extra:[{metadata:name},{text:"\nClocks have a 1/4 chance of being cursed when spawning. Cursed clocks are easily identifiable but will deduct Cyclathrons and increases the time. The curse can be transmitted to any nearby non-cursed clocks, becoming quicker with additional cursed clocks."}]},action:{label:[{metadata:name}]}},on_select:{functions:[{type:on.clock.spawn,function:"plate_havoc_content:cards/cursed_clocks/spawn"},{type:on.clock.collect,function:"plate_havoc_content:cards/cursed_clocks/collect"},{type:loop,function:"plate_havoc_content:cards/cursed_clocks/loop"}],duration:-1,left:1,max:1},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
 {id:"plate_havoc_content:new_years",name:"New Years",type:curse,reward:40,requirement:[{type:cycle,cycle:3}],text:{body:{text:"",extra:[{metadata:name},{text:"\nFireworks are guaranteed at the start and spawn 25% more fireworks. Gets replaced by a deadlier variant if chosen for the second time."}]},action:{label:[{metadata:name}]}},on_select:{functions:[{type:on.start,function:"plate_havoc_content:cards/new_years/start"},{type:one_time,function:"plate_havoc_content:cards/new_years/one_time"}],duration:-1,left:2,max:1},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
@@ -97,7 +97,7 @@ data modify storage plate_havoc:temp data set value [\
 \
 {id:"plate_havoc_content:hatred",name:"Hatred",type:curse,requirement:[{type:card,needed:[{id:"plate_havoc_content:enraged",count:1}]}],text:{body:{text:"",extra:[{metadata:name},{text:"\n-12.5% Event Time and +15% Intensity gain"}]},action:{label:[{metadata:name}]}},on_select:{functions:[{type:on.start,function:"plate_havoc_content:cards/hatred/start"}],duration:1,left:1,max:1},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
-{id:"plate_havoc_content:slow_passing",name:"Slow Passing",type:curse,exclusive:[{id:"plate_havoc_content:enraged"}],text:{body:{text:"",extra:[{metadata:name},{text:"\nTime including most durations are multiplied by 1.5 and the current Cyclathrons balance is multiplied by 1.5 upon the end of the cycle, but Cyclathron Gain is dramatically reduced by 90% Enraged and a few cards will become unavailable if selected."}]},action:{label:[{metadata:name}]}},on_select:{functions:[{type:one_time,function:"plate_havoc_content:cards/slow_passing/start"},{type:on.end,function:"plate_havoc_content:cards/slow_passing/end"}],duration:-1,left:1,max:1},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
+{id:"plate_havoc_content:slow_passing",name:"Slow Passing",type:curse,exclusive:[{id:"plate_havoc_content:enraged"}],text:{body:{text:"",extra:[{metadata:name},{text:"\nTime including most durations are multiplied by 1.5 and current Cyclathrons are multiplied by 1.5 upon cycle end but 0.1x Cyclathron Yield. Enraged and a few cards will become unavailable if selected."}]},action:{label:[{metadata:name}]}},on_select:{functions:[{type:one_time,function:"plate_havoc_content:cards/slow_passing/start"},{type:on.end,function:"plate_havoc_content:cards/slow_passing/end"}],duration:-1,left:1,max:1},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
 {id:"plate_havoc_content:rf_strike_pack",name:"RF Strike Pack",type:curse,requirement:[{type:cycle,cycle:7}],text:{body:{text:"",extra:[{metadata:name},{text:"\nMotion Snipers now rapidly fire. Ammo is multiplied 2x and Damage is halved to compenstate for increased rate of fire."}]},action:{label:[{metadata:name}]}},on_select:{functions:[{type:on.start,function:"plate_havoc_content:cards/rf_strike_pack/start"}],duration:1,left:1,max:1},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
@@ -113,6 +113,8 @@ data modify storage plate_havoc:temp data set value [\
 {id:"plate_havoc_content:exit_sign",name:"Exit Sign",type:curse,requirement:[{type:cycle,cycle:200}],text:{body:{text:"",extra:[{metadata:name},{text:"\nThe exit will spawn when the time hits 0 that requires a single player for the cycle to end, giving other players 1 minute to escape. Clocks and intensity are still active during this phase."}]},action:{label:[{metadata:name}]}},on_select:{functions:[{type:loop,function:"plate_havoc_content:cards/rising_undead/loop"}],duration:-1,left:1,max:1},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
 {id:"plate_havoc_content:mentally_parrotsane",name:"Mentally Parrotsane",type:curse,requirement:[{type:cycle,cycle:3}],text:{body:{text:"",extra:[{metadata:name},{text:"\nSounds of mobs and indicators will randomly play from time to time, heard by everyone."}]},action:{label:[{metadata:name}]}},on_select:{functions:[{type:loop,function:"plate_havoc_content:cards/mentally_parrotsane/loop"},{type:on.start,function:"plate_havoc_content:cards/mentally_parrotsane/time_random"}],duration:-1,left:1,max:1},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
+\
+{id:"plate_havoc_content:time_panic",name:"Time Panic",type:curse,requirement:[{type:cycle,cycle:3}],text:{body:{text:"",extra:[{metadata:name},{text:"\nEvent Timer is decreased from 0% up to 25% depending on how close the time is to zero."}]},action:{label:[{metadata:name}]}},on_select:{functions:[{type:on.event,function:"plate_havoc_content:cards/time_panic/on_event"}],duration:-1,left:1,max:1},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
 \
 \
@@ -130,24 +132,6 @@ data modify storage plate_havoc:temp data set value [\
 \
 {id:"plate_havoc_content:cranked",name:"Cranked",type:deeper_curse,text:{body:{text:"",extra:[{metadata:name},{text:"\nPlayers start with a Cranked timer of (25 +(1.25 *Cycle) seconds. Clocks collected adds 10s to the collector's timer and 7.5s to everyone else's timer, up to a maximum time of 60 seconds. Failure to upkeep the time will result in death."}]},action:{label:[{metadata:name}]}},on_select:{functions:[{type:set.attribute,function:"plate_havoc_content:cards/cranked/start"},{type:loop,function:"plate_havoc_content:cards/cranked/loop"},{type:on.clock.collect,function:"plate_havoc_content:cards/cranked/extend"}],duration:-1,left:1,max:1},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 ]
-
-scoreboard objectives add plate_havoc_content.card.void_rift dummy
-scoreboard objectives add plate_havoc_content.card.cranked dummy
-scoreboard objectives add plate_havoc_content.card.void_pull dummy
-scoreboard objectives add plate_havoc_content.card.gravity_coil dummy
-scoreboard objectives add plate_havoc_content.card.fragile_void dummy
-scoreboard objectives add plate_havoc_content.card.fragile_void.starting_scale dummy
-scoreboard objectives add plate_havoc_content.card.fragile_void.starting_time dummy
-scoreboard objectives add plate_havoc_content.card.critical_rollback dummy
-scoreboard objectives add plate_havoc_content.card.cube_of_decay.time_threshold dummy
-scoreboard objectives add plate_havoc_content.card.cube_of_decay.shrink_player_requirement dummy
-scoreboard objectives add plate_havoc_content.card.cube_of_decay.shrink_player_current dummy
-
-scoreboard objectives add plate_havoc_content.card.putrid_stink.entities dummy
-scoreboard objectives add plate_havoc_content.card.real_wings dummy
-scoreboard objectives add plate_havoc_content.card.multi_use_umbrella.acid_immunity dummy
-scoreboard objectives add plate_havoc_content.card.multi_use_umbrella.splasher_cooldown dummy
-scoreboard objectives add plate_havoc_content.card.multi_use_umbrella.splasher_using dummy
 
 #{id:"plate_havoc_content:pig_rider,type:curse,requirement:[{type:cycle,cycle:15}],text:{body:{text:"",extra:[{text:"Pig Rider",metadata:name},{text:"\nRiding in my car right after a beer"}]},action:{label:[{text:"Pig Rider"}]},on_select:{functions:[{type:on.start,function:"plate_havoc_content:cards/pig_rider"}],duration:-1,left:1,type:loop},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 

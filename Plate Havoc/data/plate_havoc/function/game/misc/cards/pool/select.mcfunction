@@ -1,4 +1,4 @@
-execute store result score #MaxCards plate_havoc.num if data storage plate_havoc:cards temp_pool[]
+execute store result score #Modulo plate_havoc.temp if data storage plate_havoc:cards temp_pool[]
 data remove storage plate_havoc:cards select_card
 
 ##PRNG

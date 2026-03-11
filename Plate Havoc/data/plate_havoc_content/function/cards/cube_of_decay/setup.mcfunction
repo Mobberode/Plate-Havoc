@@ -2,8 +2,8 @@ data merge entity @s {item:{id:red_stained_glass,components:{enchantment_glint_o
 execute summon text_display run function plate_havoc_content:cards/cube_of_decay/text_setup
 
 ##Value
-scoreboard players set #Modulo plate_havoc.temp 250
-scoreboard players set #Modulo2 plate_havoc.temp 100
+scoreboard players set #Modulo plate_havoc.temp 251
+scoreboard players set #Modulo2 plate_havoc.temp 99
 execute store result score @s plate_havoc.temp run function plate_havoc:game/misc/prng_ranged
 scoreboard players operation @s plate_havoc.temp *= #Value plate_havoc.round
 scoreboard players operation @s plate_havoc.temp /= #2 plate_havoc.num
@@ -15,8 +15,8 @@ execute store result storage plate_havoc:cards active_data.plate_havoc_content.c
 execute store result storage plate_havoc:cards active_data.plate_havoc_content.cube_of_decay.visual2 float 0.01 run scoreboard players get @s plate_havoc.temp
 
 ##Time in ticks
-scoreboard players set #Modulo plate_havoc.temp 65
-scoreboard players set #Modulo2 plate_havoc.temp 25
+scoreboard players set #Modulo plate_havoc.temp 66
+scoreboard players set #Modulo2 plate_havoc.temp 24
 execute store result score @s plate_havoc.timer run function plate_havoc:game/misc/prng_ranged
 scoreboard players operation @s plate_havoc.timer *= #Value plate_havoc.round
 #minimum (200t = 10s)

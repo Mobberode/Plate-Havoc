@@ -1,1 +1,0 @@
-scoreboard players set #Remove plate_havoc.timer 0
