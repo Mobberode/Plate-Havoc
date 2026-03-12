@@ -1,6 +1,3 @@
-scoreboard players set #PiranhaSeason_activate plate_havoc.card 1
-execute unless score #PiranhaSeason_activate plate_havoc.card matches 1..
-
 data modify storage plate_havoc:temp id_attribute set value "plate_havoc_content:event.piranha.damage"
 data modify storage plate_havoc:custom attribute_modifier set value {id:"plate_havoc_content:card.piranha_season",value:1.5,operation:"add_multiplied_total",tags:["plate_havoc_content:piranha_season"]}
 function plate_havoc:game/misc/attributes/custom/add_modifier

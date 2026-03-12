@@ -1,1 +1,2 @@
-execute as @a[tag=plate_havoc.survivor] at @s run function plate_havoc_content:cards/putrid_stink/player/tick with storage plate_havoc:cards active_data.plate_havoc_content.putrid_stink
+execute if score #PHC.Putrid_Stink plate_havoc.temp matches 50.. run return run function plate_havoc_content:cards/putrid_stink/tick
+scoreboard players add #PHC.Putrid_Stink plate_havoc.temp 1

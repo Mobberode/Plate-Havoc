@@ -179,7 +179,7 @@ scoreboard objectives add plate_havoc_content.card.cube_of_decay.time_threshold 
 scoreboard objectives add plate_havoc_content.card.cube_of_decay.shrink_player_requirement dummy
 scoreboard objectives add plate_havoc_content.card.cube_of_decay.shrink_player_current dummy
 
-scoreboard objectives add plate_havoc_content.card.putrid_stink.entities dummy
+scoreboard objectives add plate_havoc_content.card.putrid_stink dummy
 scoreboard objectives add plate_havoc_content.card.real_wings dummy
 scoreboard objectives add plate_havoc_content.card.multi_use_umbrella.acid_immunity dummy
 scoreboard objectives add plate_havoc_content.card.multi_use_umbrella.splasher_cooldown dummy
