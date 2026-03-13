@@ -1,1 +1,1 @@
-$data remove storage plate_havoc:events temp[{exclude:["$(gamemode)"]}]
+$data remove storage plate_havoc:events temp[{exclude:["$(id)"]}]

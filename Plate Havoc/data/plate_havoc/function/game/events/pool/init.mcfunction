@@ -2,7 +2,7 @@ data modify storage plate_havoc:events temp set from storage plate_havoc:data ev
 data remove storage plate_havoc:events temp[{console_only:true}]
 
 ##Exclusion
-function plate_havoc:game/events/pool/exclude with storage plate_havoc:data
+function plate_havoc:game/events/pool/exclude with storage plate_havoc:data gametype
 
 ##Type
 function plate_havoc:game/events/pool/type
