@@ -1,4 +1,4 @@
-scoreboard players set #Modulo plate_havoc.temp 4
+scoreboard players set #Modulo plate_havoc.temp 5
 execute store result score #Temp plate_havoc.temp run function plate_havoc:game/misc/prng
 
 #15%

@@ -10,7 +10,7 @@ data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.netherrack.spread",base:0.016,modifiers:[]}
 ## acid_rain (Duration) (Damage Multiplier)
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.acid_rain.duration",base:0.4,modifiers:[],tags:["plate_havoc_content:slow_passing.applicable","plate_havoc_content:enraged.shorter","plate_havoc_content:netherite_clock.applicable"]}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.acid_rain.damage_multiplier",base:0.065,modifiers:[],tags:["plate_havoc_content:enraged.aggressive"]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.acid_rain.damage_multiplier",base:0.065,modifiers:[],tags:["plate_havoc_content:enraged.aggressive","plate_havoc_content:life_harmony.applicable"]}
 ## buff_wind (Amount)
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.buff_wind.give_value",base:0.005,modifiers:[],tags:["plate_havoc_content:boxless_desires.applicable"]}
 ## buff_heal (Amount)
@@ -18,13 +18,13 @@ data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_
 ## end_island (WaitTime)
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.end_island.wait_time",base:0.3,modifiers:[],tags:["plate_havoc_content:slow_passing.applicable"]}
 ## fire_rain (Amount (0 = end rain)) (Delay (How fast each fireball is summoned))
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.fire_rain.amount",base:0.01,modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.fire_rain.amount",base:0.01,modifiers:[],tags:["plate_havoc_content:life_harmony.applicable"]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.fire_rain.delay",base:0.05,modifiers:[],tags:["plate_havoc_content:slow_passing.applicable"]}
 ## fireballs (Distance in Blocks away from Target)
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.fireballs.distance",base:80,modifiers:[]}
 ## dragonball (Distance in Blocks away from Target) (Speed (100 = 0.01))
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.dragonball.distance",base:100,modifiers:[]}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.dragonball.speed",base:0.65,modifiers:[],tags:["plate_havoc_content:enraged.aggressive"]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.dragonball.speed",base:0.65,modifiers:[],tags:["plate_havoc_content:enraged.aggressive","plate_havoc_content:life_harmony.applicable"]}
 ## buff_shield (Max Durability)
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.buff_shield.max_durability",base:0.032,modifiers:[],tags:["plate_havoc_content:boxless_desires.applicable"]}
 ## buff_pearl (Amount)
@@ -42,18 +42,18 @@ data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_
 ## eraserman (Distance in Blocks)
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.eraserman.distance",base:100,modifiers:[],tags:["plate_havoc_content:slow_passing.applicable"]}
 ## fireworks (Summons) (Summon Delay (tick/20)) (Summon Extension)
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.fireworks.summon.value",base:0.05,modifiers:[],tags:["plate_havoc_content:enraged.aggressive"]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.fireworks.summon.value",base:0.05,modifiers:[],tags:["plate_havoc_content:enraged.aggressive","plate_havoc_content:life_harmony.applicable"]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.fireworks.summon.delay",base:0.006,modifiers:[],tags:["plate_havoc_content:cube_of_decay.outcome.less_agression","plate_havoc_content:enraged.shorter"]}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.fireworks.summon.extend_value",base:0.025,modifiers:[],tags:["plate_havoc_content:enraged.aggressive"]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.fireworks.summon.extend_value",base:0.025,modifiers:[],tags:["plate_havoc_content:enraged.aggressive","plate_havoc_content:life_harmony.applicable"]}
 ## jump_cooldown (Cooldown Duration (tick/20)) (Event Duration (tick/20))
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.jump_cooldown.cooldown",base:0.3,modifiers:[],tags:["plate_havoc_content:slow_passing.applicable","plate_havoc_content:netherite_clock.applicable"]}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.jump_cooldown.duration",base:0.03,modifiers:[],tags:["plate_havoc_content:enraged.shorter"]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.jump_cooldown.cooldown",base:0.03,modifiers:[],tags:["plate_havoc_content:slow_passing.applicable","plate_havoc_content:netherite_clock.applicable","plate_havoc_content:life_harmony.applicable"]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.jump_cooldown.duration",base:0.3,modifiers:[],tags:["plate_havoc_content:enraged.shorter"]}
 ## anvil (Distance (in blocks))
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.anvil.distance",base:75,modifiers:[]}
 ## black_hole (Duration) (Duration Extension) (Base Size) (Growth Limit)
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.black_hole.duration",base:0.9,modifiers:[],tags:["plate_havoc_content:slow_passing.applicable","plate_havoc_content:enraged.shorter","plate_havoc_content:netherite_clock.applicable"]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.black_hole.duration.extend",base:0.45,modifiers:[],tags:["plate_havoc_content:slow_passing.applicable","plate_havoc_content:netherite_clock.applicable"]}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.black_hole.base_size",base:0.125,modifiers:[],tags:["plate_havoc_content:enraged.aggressive"]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.black_hole.base_size",base:0.125,modifiers:[],tags:["plate_havoc_content:enraged.aggressive","plate_havoc_content:life_harmony.applicable"]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.black_hole.max_size",base:0.25,modifiers:[],tags:["plate_havoc_content:enraged.aggressive"],update:[{type:score,value:"#PHC.BlackHole.Size_Limit plate_havoc.event"}]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.black_hole.growth_limit",base:0.005,modifiers:[],update:[{type:score,value:"#PHC.BlackHole.Growth_Limit plate_havoc.event"}]}
 ## soulsand (Amount of blocks to corrupt)
@@ -62,7 +62,7 @@ data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.herobrine.duration",base:0.9,modifiers:[],tags:["plate_havoc_content:slow_passing.applicable","plate_havoc_content:enraged.shorter","plate_havoc_content:netherite_clock.applicable"]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.herobrine.duration.extend",base:0.3,modifiers:[],tags:["plate_havoc_content:slow_passing.applicable"]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.herobrine.delay",base:0.025,modifiers:[],tags:["plate_havoc_content:cube_of_decay.outcome.less_agression","plate_havoc_content:enraged.shorter"]}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.herobrine.movement",base:3.75,modifiers:[],tags:["plate_havoc_content:enraged.aggressive"]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.herobrine.movement",base:3.75,modifiers:[],tags:["plate_havoc_content:enraged.aggressive","plate_havoc_content:life_harmony.applicable"]}
 ## frail_stairs (Blocks)
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.frail_stairs.length",base:0.015,modifiers:[]}
 ## scaffolding (MaxRunCount) (Height)
@@ -76,26 +76,26 @@ data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.nuke.speed",base:0.25,modifiers:[],tags:["plate_havoc_content:enraged.agressive"]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.nuke.failure.chance",base:0.2,modifiers:[]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.nuke.failure.time",base:0.1,modifiers:[]}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.nuke.power",base:0.125,modifiers:[],tags:["plate_havoc_content:enraged.aggressive"]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.nuke.power",base:0.125,modifiers:[],tags:["plate_havoc_content:enraged.aggressive","plate_havoc_content:life_harmony.applicable"]}
 ## piranha (Duration) (Damage)
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.piranha.duration",base:1.2,modifiers:[],tags:["plate_havoc_content:slow_passing.applicable","plate_havoc_content:enraged.shorter","plate_havoc_content:netherite_clock.applicable"]}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.piranha.damage",base:1,modifiers:[],tags:["plate_havoc_content:enraged.aggressive"]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.piranha.damage",base:1,modifiers:[],tags:["plate_havoc_content:enraged.aggressive","plate_havoc_content:life_harmony.applicable"]}
 ## spinning_laser (Base Width) (Base Speed)
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.spinning_laser.width",base:5,modifiers:[]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.spinning_laser.speed",base:5,modifiers:[]}
 ## wind_up (Summons) (Extension to Summons) (Entity Summons inside 1 Summon)
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.wind_up.summon.value",base:0.5,modifiers:[],tags:["plate_havoc_content:enraged.shorter"]}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.wind_up.summon.pack",base:0.002,modifiers:[],tags:["plate_havoc_content:enraged.aggressive"]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.wind_up.summon.pack",base:0.002,modifiers:[],tags:["plate_havoc_content:enraged.aggressive","plate_havoc_content:life_harmony.applicable"]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.wind_up.summon.value.extend",base:0.1,modifiers:[]}
 ## laser_drill (Warning Time) (Danger Time) (Explosion Power)
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.laser_drill.warning_time",base:0.140,modifiers:[],tags:["plate_havoc_content:cube_of_decay.outcome.less_agression","plate_havoc_content:enraged.shorter"]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.laser_drill.danger_time",base:0.06,modifiers:[],tags:["plate_havoc_content:cube_of_decay.outcome.less_agression"]}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.laser_drill.power",base:5,modifiers:[],tags:["plate_havoc_content:enraged.aggressive"]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.laser_drill.power",base:5,modifiers:[],tags:["plate_havoc_content:enraged.aggressive","plate_havoc_content:life_harmony.applicable"]}
 ## motion_sniper (Ammo) (Delay) (WarningTime) (Damage Multiplier)
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.motion_sniper.ammo",base:0.006,modifiers:[],tags:["plate_havoc_content:enraged.shorter"]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.motion_sniper.delay",base:0.16,modifiers:[],tags:["plate_havoc_content:cube_of_decay.outcome.less_agression","plate_havoc_content:enraged.shorter"]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.motion_sniper.delay_warning",base:0.05,modifiers:[],tags:["plate_havoc_content:cube_of_decay.outcome.less_agression"]}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.motion_sniper.damage_multiplier",base:0.5,modifiers:[],tags:["plate_havoc_content:enraged.aggressive"]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.motion_sniper.damage_multiplier",base:0.5,modifiers:[],tags:["plate_havoc_content:enraged.aggressive","plate_havoc_content:life_harmony.applicable"]}
 ## outer_space_gravity (Duration) (Effect Strength)
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.outer_space_gravity.duration",base:0.6,modifiers:[]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.outer_space_gravity.strength_multiplier",base:0.8,modifiers:[]}
@@ -114,7 +114,7 @@ data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.flame_guardian.shoot_time",base:0.05,modifiers:[],tags:["plate_havoc_content:enraged.shorter"]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.flame_guardian.movement",base:0.75,modifiers:[]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.flame_guardian.cast_cover",base:0.064,modifiers:[]}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.flame_guardian.damage",base:1.5,modifiers:[],tags:["plate_havoc_content:enraged.aggressive"]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.flame_guardian.damage",base:1.5,modifiers:[],tags:["plate_havoc_content:enraged.aggressive","plate_havoc_content:life_harmony.applicable"]}
 ## obsidian_plate (Size)
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.obsidian_plate.size",base:1,modifiers:[]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.obsidian_plate.offset",base:0.025,modifiers:[]}
@@ -133,8 +133,8 @@ data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_
 ###
 
 ## obama_drone_strike (Summons) (Summon Extension)
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.obama_drone_strike.summon.value",base:0.35,modifiers:[],tags:["plate_havoc_content:enraged.aggressive"]}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.obama_drone_strike.summon.extend_value",base:0.125,tags:["plate_havoc_content:enraged.aggressive"]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.obama_drone_strike.summon.value",base:0.35,modifiers:[],tags:["plate_havoc_content:enraged.aggressive","plate_havoc_content:life_harmony.applicable"]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.obama_drone_strike.summon.extend_value",base:0.125,tags:["plate_havoc_content:enraged.aggressive","plate_havoc_content:life_harmony.applicable"]}
 ## shop (Storage Data)
 data modify storage plate_havoc:events data.shop set value [\
 {item:"mace",cost:{price:40,type:percentage},visual:"mace"},\
