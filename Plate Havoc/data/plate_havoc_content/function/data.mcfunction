@@ -163,6 +163,7 @@ scoreboard objectives add plate_havoc_content.event.flame_guardian.active dummy
 scoreboard objectives add plate_havoc_content.event.motion_sniper.time dummy
 scoreboard objectives add plate_havoc_content.event.piranha.attack_delay dummy
 scoreboard objectives add plate_havoc_content.event.piranha.attacked_times dummy
+scoreboard objectives add plate_havoc_content.event.piranha.active_time dummy
 scoreboard objectives add plate_havoc_content.event.bounce_pad.delay dummy
 scoreboard objectives add plate_havoc_content.event.bounce_pad.boost dummy
 
@@ -186,5 +187,5 @@ scoreboard objectives add plate_havoc_content.card.multi_use_umbrella.splasher_c
 scoreboard objectives add plate_havoc_content.card.multi_use_umbrella.splasher_using dummy
 scoreboard objectives add plate_havoc_content.card.cursed_clocks.transmission_time dummy
 
-data modify storage plate_havoc:temp extension_data set value [plate_havoc_content.event.acid_rain.exposure,plate_havoc_content.event.jump_cooldown,plate_havoc_content.event.jump_afterdown,plate_havoc_content.event.shop_token,plate_havoc_content.event.flame_guardian.time,plate_havoc_content.event.flame_guardian.active,plate_havoc_content.event.motion_sniper.time,plate_havoc_content.event.piranha.attack_delay,plate_havoc_content.event.piranha.attacked_times,plate_havoc_content.card.multi_use_umbrella.splasher_using,plate_havoc_content.card.multi_use_umbrella.splasher_cooldown,plate_havoc_content.card.multi_use_umbrella.acid_immunity]
+data modify storage plate_havoc:temp extension_data set value [plate_havoc_content.event.acid_rain.exposure,plate_havoc_content.event.jump_cooldown,plate_havoc_content.event.jump_afterdown,plate_havoc_content.event.shop_token,plate_havoc_content.event.flame_guardian.time,plate_havoc_content.event.flame_guardian.active,plate_havoc_content.event.motion_sniper.time,plate_havoc_content.event.piranha.attack_delay,plate_havoc_content.event.piranha.attacked_times,plate_havoc_content.card.multi_use_umbrella.splasher_using,plate_havoc_content.card.multi_use_umbrella.splasher_cooldown,plate_havoc_content.card.multi_use_umbrella.acid_immunity,plate_havoc_content.event.piranha.active_time]
 data modify storage plate_havoc:data score_reset append from storage plate_havoc:temp extension_data[]

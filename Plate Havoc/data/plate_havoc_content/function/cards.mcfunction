@@ -79,7 +79,7 @@ data modify storage plate_havoc:temp data set value [\
 \
 \
 \
-{id:"plate_havoc_content:piranha_season",name:"Piranha Season",type:curse,text:{body:{text:"",extra:[{metadata:name},{text:"\nWater is no longer safe and piranhas deal 2.5x more damage."}]},action:{label:[{metadata:name}]}},on_select:{functions:[{type:on.start,function:"plate_havoc_content:cards/piranha_season/start"}],duration:-1,left:1,max:1},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
+{id:"plate_havoc_content:piranha_season",name:"Piranha Season",type:curse,text:{body:{text:"",extra:[{metadata:name},{text:"\nPiranhas constantly infest water, dealing 2.5x damage. Piranhas remain twice as long out of water."}]},action:{label:[{metadata:name}]}},on_select:{functions:[{type:on.start,function:"plate_havoc_content:cards/piranha_season/start"}],duration:-1,left:1,max:1},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
 {id:"plate_havoc_content:enraged",name:"Enraged",type:curse,exclusive:[{id:"plate_havoc_content:slow_passing"}],text:{body:{text:"",extra:[{metadata:name},{text:"\n12.5% shorter cycles, +65% Intensity Gain, -12.5% Event Time, Events and Cards more aggressive but shorter for (1.25 + (0.235 *Cycle)) Cyclathron Yield and +50% Cyclathron Reward. Slow Passing will become unavailable if selected."}]},action:{label:[{metadata:name}]}},on_select:{functions:[{type:one_time,function:"plate_havoc_content:cards/enraged/one_time"},{type:on.start,function:"plate_havoc_content:cards/enraged/start"}],duration:-1,left:1,max:1},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
