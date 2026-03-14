@@ -25,5 +25,6 @@ function plate_havoc:game/events/pool/init
 
 scoreboard players set #Game plate_havoc.status 2
 
+data modify storage plate_havoc:custom attributes[].refresh set value true
 function plate_havoc:game/misc/attributes/custom/update_global
 schedule function plate_havoc:game/match/start 2.5s

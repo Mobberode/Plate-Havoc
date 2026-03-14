@@ -9,25 +9,27 @@ scoreboard players operation @s plate_havoc.temp *= #Value plate_havoc.round
 scoreboard players operation @s plate_havoc.temp /= #2 plate_havoc.num
 #minimum (1)
 execute if score @s plate_havoc.temp matches ..99 run scoreboard players set @s plate_havoc.temp 100
-#maximum (50)
-execute if score @s plate_havoc.temp matches 5001.. run scoreboard players set @s plate_havoc.temp 5000
+#maximum (5)
+execute if score @s plate_havoc.temp matches 501.. run scoreboard players set @s plate_havoc.temp 500
+#Multiplayer scale
+scoreboard players operation @s plate_havoc.temp *= #Current plate_havoc.players
 execute store result storage plate_havoc:cards active_data.plate_havoc_content.cube_of_decay.visual float -0.01 run scoreboard players get @s plate_havoc.temp
 execute store result storage plate_havoc:cards active_data.plate_havoc_content.cube_of_decay.visual2 float 0.01 run scoreboard players get @s plate_havoc.temp
 
 ##Time in ticks
-scoreboard players set #Modulo plate_havoc.temp 66
-scoreboard players set #Modulo2 plate_havoc.temp 24
-execute store result score @s plate_havoc.timer run function plate_havoc:game/misc/prng_ranged
+scoreboard players set @s plate_havoc.timer 100
 scoreboard players operation @s plate_havoc.timer *= #Value plate_havoc.round
-#minimum (200t = 10s)
-execute if score @s plate_havoc.timer matches ..199 run scoreboard players set @s plate_havoc.timer 200
-#maximum (1200t = 60s)
-execute if score @s plate_havoc.timer matches 1201.. run scoreboard players set @s plate_havoc.timer 1200
+#minimum (500t = 25s)
+execute if score @s plate_havoc.timer matches ..499 run scoreboard players set @s plate_havoc.timer 500
+#maximum (1800t = 90s)
+execute if score @s plate_havoc.timer matches 1801.. run scoreboard players set @s plate_havoc.timer 1800
 #Threshold
 scoreboard players operation #Temp plate_havoc.temp = @s plate_havoc.timer
 scoreboard players operation #Temp plate_havoc.temp /= #100 plate_havoc.num
-scoreboard players operation #Temp plate_havoc.temp *= #80 plate_havoc.num
+scoreboard players operation #Temp plate_havoc.temp *= #70 plate_havoc.num
 scoreboard players operation @s plate_havoc_content.card.cube_of_decay.time_threshold = #Temp plate_havoc.temp
+#Grace
+scoreboard players add @s plate_havoc.timer 200
 
 #
 function plate_havoc_content:cards/cube_of_decay/update

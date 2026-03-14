@@ -1,4 +1,4 @@
-scoreboard players set #Temp plate_havoc.temp 150
+scoreboard players set #Temp plate_havoc.temp 175
 scoreboard players operation #Temp plate_havoc.temp *= #Value plate_havoc.round
 
 execute if score #Temp plate_havoc.temp matches ..499 run scoreboard players set #Temp plate_havoc.temp 500

@@ -2,5 +2,5 @@ $data merge entity @s {LifeTime:$(life),FireworksItem:{id:firework_rocket,count:
 
 $execute rotated as @s run tp ^$(x) ^$(y) ^$(distance)
 
-execute rotated as @s positioned 0.0 0.0 0.0 summon marker run function plate_havoc_content:events/fireworks/get_motion with storage plate_havoc:events
+$execute positioned 0.0 0.0 0.0 rotated as @s positioned ^ ^ ^$(speed) summon marker run function plate_havoc_content:events/fireworks/get_motion with storage plate_havoc:events
 data modify entity @s Motion set from storage plate_havoc:events active_data.shared.motion

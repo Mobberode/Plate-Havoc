@@ -3,6 +3,7 @@
 ##Fail if these dont exist
 execute unless data storage plate_havoc:custom attribute run return fail
 #Else
+data modify storage plate_havoc:custom attribute.refresh set value false
 execute store result score #Temp plate_havoc.num run data get storage plate_havoc:custom attribute.base 1000
 function plate_havoc:game/misc/attributes/custom/internal/modifiers/check
 
