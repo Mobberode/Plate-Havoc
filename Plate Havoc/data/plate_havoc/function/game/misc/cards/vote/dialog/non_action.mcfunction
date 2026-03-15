@@ -7,21 +7,21 @@ $dialog show @s {\
     after_action:none,\
     body:[\
         {type:plain_message,contents:[\
-        {text:"Intensity: "},{text:"$(intensity)",color:red},\
-        {text:" Cyclathrons: "},{text:"$(cyclathron)",color:aqua},\
-        {text:" Cycle: "},{text:"$(round)",color:aqua},\
-        {text:" Players: "},{text:"$(players)",color:green},\
+        "Intensity: ",{text:"$(intensity)",color:red},\
+        " Cyclathrons: ",{text:"$(cyclathron)",color:aqua},\
+        " Cycle: ",{text:"$(round)",color:aqua},\
+        " Players: ",{text:"$(players)",color:green},\
         \
-        {text:"\n"},\
+        "\n",\
         \
-        {text:"[Card List]",hover_event:{action:"show_text",value:$(card_list)},color:gray},\
+        {text:"[",color:aqua},{text:"Card List",hover_event:{action:"show_text",value:$(card_list)},color:gray},{text:"]",color:aqua},\
         \
-        {text:" "},\
+        " ",\
         \
-        {text:"[Escape Selection]",hover_event:{action:"show_text",value:"Escape the Card Selection menu. Sprint to reprompt the selection menu."},color:gray},\
+        {text:"[",color:red},{text:"Escape Selection",click_event:{action:"run_command",command:"/trigger plate_havoc.t.exit_dialog"},hover_event:{action:"show_text",value:"[Escape] or [Click] to exit the Card Selection."},color:"gray"},{text:"]",color:red},\
         \
-        {text:"\n\n"},$(card_type),\
-        {text:"\n"},$(card_type_subtext),\
+        "\n\n",$(card_type),\
+        "\n",$(card_type_subtext),\
         {text:"\n\n",extra:[$(card_select_body)]}\
         ],width:448},\
     ]\

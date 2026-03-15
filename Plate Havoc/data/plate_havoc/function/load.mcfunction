@@ -40,6 +40,7 @@ scoreboard objectives add plate_havoc.t.stats trigger
 scoreboard objectives add plate_havoc.t.spectator trigger
 scoreboard objectives add plate_havoc.t.credits trigger
 scoreboard objectives add plate_havoc.t.view_leaderboard trigger
+scoreboard objectives add plate_havoc.t.exit_dialog trigger
 
 scoreboard objectives add plate_havoc.t.console trigger
 

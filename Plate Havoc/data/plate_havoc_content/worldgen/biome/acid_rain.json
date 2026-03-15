@@ -1,8 +1,9 @@
 {
   "attributes": {
     "visual/sky_color": 4826212,
-    "minecraft:visual/fog_color": 4826212,
-    "visual/water_fog_color": 48212
+    "visual/fog_color": 4826212,
+    "visual/water_fog_color": 48212,
+    "audio/music_volume": 0
   },
   "carvers": [],
   "downfall": 0.5,

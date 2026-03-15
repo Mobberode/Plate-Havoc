@@ -1,6 +1,9 @@
 effect give @s instant_health 1 99
 attribute @s oxygen_bonus modifier add plate_havoc_content:card.determination 0.5 add_multiplied_total
-attribute @s armor modifier add plate_havoc_content:card.determination 2 add_value
-attribute @s armor_toughness modifier add plate_havoc_content:card.determination 1 add_value
+attribute @s armor modifier add plate_havoc_content:card.determination 5 add_value
+attribute @s armor_toughness modifier add plate_havoc_content:card.determination 2.5 add_value
 
 execute if score #IsSolo plate_havoc.temp matches 1.. run function plate_havoc_content:cards/determination/buff_solo
+
+scoreboard players add @s plate_havoc_content.card.critical_rollback 1
+scoreboard players add @s plate_havoc_content.card.void_rift 1

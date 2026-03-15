@@ -1,15 +1,18 @@
 {
   "attributes": {
-    "minecraft:visual/fog_color": "#000000",
-    "minecraft:visual/cloud_height": 1280,
-    "minecraft:audio/background_music": {
+    "visual/fog_color": "#210b01",
+    "visual/cloud_height": 1280,
+    "audio/background_music": {
       "default": {"min_delay": 0, "max_delay": 0, "sound": "music.end", "replace_current_music": true}
     },
-    "minecraft:audio/music_volume": 1,
-    "minecraft:visual/ambient_particles": [{"particle":{"type":"minecraft:ash"},"probability":0.1}],
-    "minecraft:visual/sky_color": "#000000",
+    "audio/music_volume": 1,
+    "visual/ambient_particles": [{"particle":{"type":"ash"},"probability":0.05},{"particle":{"type":"falling_honey"},"probability":0.0002}],
+    "visual/sky_color": "#000000",
     "visual/fog_start_distance": 32,
-    "visual/fog_end_distance": 94
+    "visual/fog_end_distance": 94,
+    "visual/block_light_tint": 16750848,
+    "visual/ambient_light_color": 4990208,
+    "visual/sky_light_color": 3221504
   },
   "has_precipitation": false,
   "carvers": [],

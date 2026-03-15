@@ -1,7 +1,7 @@
 scoreboard players add #EventRunCount plate_havoc.num 1
 execute store result score @s plate_havoc.num run data get storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.frail_stairs.length"}].output 1000
 
-function plate_havoc:game/events/placements/edge/init
+function plate_havoc:game/events/placements/height_edge/init
 
 data modify storage plate_havoc:events active_data.shared.rotation set value []
 #Horizontal

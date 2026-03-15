@@ -42,9 +42,9 @@ data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_
 ## eraserman (Distance in Blocks)
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.eraserman.distance",base:100,modifiers:[],tags:["plate_havoc_content:slow_passing.applicable"]}
 ## fireworks (Summons) (Summon Delay (tick/20)) (Summon Extension)
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.fireworks.summon.value",base:0.05,modifiers:[],tags:["plate_havoc_content:enraged.aggressive","plate_havoc_content:life_harmony.applicable"]}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.fireworks.summon.delay",base:0.006,modifiers:[],tags:["plate_havoc_content:cube_of_decay.outcome.less_agression","plate_havoc_content:enraged.shorter"]}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.fireworks.summon.extend_value",base:0.025,modifiers:[],tags:["plate_havoc_content:enraged.aggressive","plate_havoc_content:life_harmony.applicable"]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.fireworks.summon.value",base:0.06,modifiers:[],tags:["plate_havoc_content:enraged.aggressive","plate_havoc_content:life_harmony.applicable"]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.fireworks.summon.delay",base:0.007,modifiers:[],tags:["plate_havoc_content:cube_of_decay.outcome.less_agression","plate_havoc_content:enraged.shorter"]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.fireworks.summon.extend_value",base:0.03,modifiers:[],tags:["plate_havoc_content:enraged.aggressive","plate_havoc_content:life_harmony.applicable"]}
 ## jump_cooldown (Cooldown Duration (tick/20)) (Event Duration (tick/20))
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.jump_cooldown.cooldown",base:0.03,modifiers:[],tags:["plate_havoc_content:slow_passing.applicable","plate_havoc_content:netherite_clock.applicable","plate_havoc_content:life_harmony.applicable"]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.jump_cooldown.duration",base:0.3,modifiers:[],tags:["plate_havoc_content:enraged.shorter"]}
@@ -53,8 +53,8 @@ data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_
 ## black_hole (Duration) (Duration Extension) (Base Size) (Growth Limit)
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.black_hole.duration",base:0.9,modifiers:[],tags:["plate_havoc_content:slow_passing.applicable","plate_havoc_content:enraged.shorter","plate_havoc_content:netherite_clock.applicable"]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.black_hole.duration.extend",base:0.45,modifiers:[],tags:["plate_havoc_content:slow_passing.applicable","plate_havoc_content:netherite_clock.applicable"]}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.black_hole.base_size",base:0.125,modifiers:[],tags:["plate_havoc_content:enraged.aggressive","plate_havoc_content:life_harmony.applicable"]}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.black_hole.max_size",base:0.25,modifiers:[],tags:["plate_havoc_content:enraged.aggressive"],update:[{type:score,value:"#PHC.BlackHole.Size_Limit plate_havoc.event"}]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.black_hole.base_size",base:0.115,modifiers:[],tags:["plate_havoc_content:enraged.aggressive","plate_havoc_content:life_harmony.applicable"]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.black_hole.max_size",base:0.2,modifiers:[],tags:["plate_havoc_content:enraged.aggressive"],update:[{type:score,value:"#PHC.BlackHole.Size_Limit plate_havoc.event"}]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.black_hole.growth_limit",base:0.005,modifiers:[],update:[{type:score,value:"#PHC.BlackHole.Growth_Limit plate_havoc.event"}]}
 ## soulsand (Amount of blocks to corrupt)
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.soul_sand.spread",base:0.012,modifiers:[]}
@@ -133,8 +133,8 @@ data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_
 ###
 
 ## obama_drone_strike (Summons) (Summon Extension)
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.obama_drone_strike.summon.value",base:0.35,modifiers:[],tags:["plate_havoc_content:enraged.aggressive","plate_havoc_content:life_harmony.applicable"]}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.obama_drone_strike.summon.extend_value",base:0.125,tags:["plate_havoc_content:enraged.aggressive","plate_havoc_content:life_harmony.applicable"]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.obama_drone_strike.summon.value",base:0.4,modifiers:[],tags:["plate_havoc_content:enraged.aggressive","plate_havoc_content:life_harmony.applicable"]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.obama_drone_strike.summon.extend_value",base:0.2,tags:["plate_havoc_content:enraged.aggressive","plate_havoc_content:life_harmony.applicable"]}
 ## shop (Storage Data)
 data modify storage plate_havoc:events data.shop set value [\
 {item:"mace",cost:{price:40,type:percentage},visual:"mace"},\

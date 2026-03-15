@@ -39,6 +39,7 @@
         "command_block_minecart",
         "ominous_item_spawner",
         "spectral_arrow",
-        "painting"
+        "painting",
+        "lightning_bolt"
     ]
 }

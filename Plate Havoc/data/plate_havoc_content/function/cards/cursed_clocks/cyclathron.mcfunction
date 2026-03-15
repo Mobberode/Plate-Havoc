@@ -1,0 +1,3 @@
+execute if data storage plate_havoc:cards running.total[{id:"plate_havoc_content:purified_hourglass"}] store result score #Temp plate_havoc.temp run return run data get storage plate_havoc:custom attributes[{id:"plate_havoc:cyclathron_yield"}].output 150
+
+execute store result score #Temp plate_havoc.temp run data get storage plate_havoc:custom attributes[{id:"plate_havoc:cyclathron_yield"}].output 300
