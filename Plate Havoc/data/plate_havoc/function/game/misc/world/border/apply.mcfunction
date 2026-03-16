@@ -1,1 +1,1 @@
-$worldborder set $(world_border) 1
+$worldborder set $(border) 1

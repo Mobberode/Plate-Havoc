@@ -1,1 +1,1 @@
-$time set $(world_time)
+$time set $(time)

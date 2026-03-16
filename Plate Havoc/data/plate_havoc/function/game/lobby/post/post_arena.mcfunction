@@ -16,7 +16,6 @@ function plate_havoc:game/misc/ui/bar_visuals/active/process
 function plate_havoc:game/misc/ui/bar_visuals/start
 execute store result bossbar plate_havoc:ui max store result bossbar plate_havoc:ui value run scoreboard players get #Value plate_havoc.timer
 
-data modify storage plate_havoc:data void set value {}
 function plate_havoc:game/misc/world/void/set
 function plate_havoc:game/misc/world/apply_all
 worldborder center 0.0 0.0

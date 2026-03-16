@@ -55,7 +55,7 @@ scoreboard players set #Modifiers.Entries plate_havoc.num 3
 ##world
 function plate_havoc:game/misc/world/biome/init
 data modify storage plate_havoc:custom biomes append value {id:"plate_havoc:void",biome:"plate_havoc:void",priority:0,tags:["plate_havoc.default_biome"]}
-data modify storage plate_havoc:data weather set value "clear"
+data modify storage plate_havoc:data world.weather set value "clear"
 #Time
 scoreboard players set #BaseWorldTime plate_havoc.num 6000
 #World Border (1000 = 100.0)
@@ -118,7 +118,7 @@ data modify storage plate_havoc:data extra_jumps set value []
 data modify storage plate_havoc:data run_tags set value []
 
 ##Events
-data modify storage plate_havoc:events pool set value {available:[],unavailable:[],temp:[]}
+data modify storage plate_havoc:events pool set value {available:[],unavailable:[],temp:[],sort:[]}
 data modify storage plate_havoc:events active_data set value {}
 data modify storage plate_havoc:cards active_data set value {}
 

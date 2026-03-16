@@ -1,4 +1,4 @@
-execute unless block ~ ~ ~ #plate_havoc:nonsolid run return run kill
+execute unless block ~ ~ ~ #plate_havoc:nonsolid run tp ~ ~1 ~
 
 function plate_havoc_content:gametypes/match/rogue/time_cube/transformation/init
 

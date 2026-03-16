@@ -3,10 +3,14 @@
     "title": "Plate Havoc Console",
     "columns": 1,
     "exit_action": {"label":"Back","action":{"type":"show_dialog","dialog":"plate_havoc:console"}},
-    "inputs": [{"key":"id","type":"text","label":"Event ID","max_length":128}],
+    "inputs": [
+        {"key":"id","type":"text","label":"Event ID","max_length":128},
+        {"key":"count","type":"text","label":"Count","max_length":10,"initial":"1"}
+    ],
     
     "actions": [
-        {"label":"Force Event","action":{"type":"dynamic/run_command","template":"function plate_havoc:console/force_event {id:'$(id)'}"}},
+        {"label":"Force Event","action":{"type":"dynamic/run_command","template":"function plate_havoc:console/force_event {id:'$(id)',count:$(count)}"}},
+        {"label":"Send Event to Running","action":{"type":"dynamic/run_command","template":"function plate_havoc:console/append_event {id:'$(id)',count:$(count)}"}},
         {"label":"Force Random Event","action":{"type":"run_command","command":"function plate_havoc:game/events/init"}}
     ]
 }

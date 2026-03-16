@@ -4,3 +4,4 @@ data modify storage plate_havoc:custom processor set from storage plate_havoc:cu
 scoreboard players set #BiomePriority plate_havoc.num 0
 
 function plate_havoc:game/misc/world/biome/process
+execute in plate_havoc:arena positioned 0.0 0.0 0.0 run function plate_havoc:game/misc/world/biome/apply with storage plate_havoc:data world
