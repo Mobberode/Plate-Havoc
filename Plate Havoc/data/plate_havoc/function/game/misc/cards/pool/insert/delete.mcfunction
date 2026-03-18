@@ -15,7 +15,7 @@ execute unless data storage plate_havoc:cards temp[{non_card:false}] run return 
 
 ##If most bottom slot is the same. Remove spacing
 #tellraw @a [{score:{name:"#Value",objective:plate_havoc.temp},color:red},{score:{name:"#Value2",objective:plate_havoc.temp},color:blue}]
-execute if score #Value plate_havoc.temp = #Value2 plate_havoc.temp run data remove storage plate_havoc:cards temp[-1].visual.body.extra[{part:spacing}] 
+execute if score #Value plate_havoc.temp = #Value2 plate_havoc.temp run data remove storage plate_havoc:cards temp[-1].data.snbt.body.extra[{meta:spacing}] 
 
 ##
 data remove storage plate_havoc:cards active[{non_card:false}]

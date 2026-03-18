@@ -7,6 +7,8 @@ data modify storage plate_havoc:events active_data.plate_havoc_content.herobrine
 execute store result score #Herobrine.Duration plate_havoc.event run data get storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.herobrine.duration"}].output 1000
 execute store result score #Herobrine.Activate_Time plate_havoc.event run data get storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.herobrine.delay"}].output 1000
 data modify storage plate_havoc:events active_data.plate_havoc_content.herobrine.movement set from storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.herobrine.movement"}].output
+execute store result score #Herobrine.Stun.Time plate_havoc.event run data get storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.herobrine.stun.time"}].output 1000
+execute store result score #Herobrine.Stun.Cooldown plate_havoc.event run data get storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.herobrine.stun.cooldown"}].output 1000
 
 function plate_havoc_content:events/herobrine/run
 function plate_havoc_content:events/herobrine/loop

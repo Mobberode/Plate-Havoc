@@ -120,6 +120,9 @@ data modify storage plate_havoc:data run_tags set value []
 ##Events
 data modify storage plate_havoc:events pool set value {available:[],unavailable:[],temp:[],sort:[]}
 data modify storage plate_havoc:events active_data set value {}
+data modify storage plate_havoc:events running set value []
+
+##Cards
 data modify storage plate_havoc:cards active_data set value {}
 
 ##Score Reseter

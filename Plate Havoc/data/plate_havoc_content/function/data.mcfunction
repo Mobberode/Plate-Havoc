@@ -58,11 +58,13 @@ data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.black_hole.growth_limit",base:0.005,modifiers:[],update:[{type:score,value:"#PHC.BlackHole.Growth_Limit plate_havoc.event"}]}
 ## soulsand (Amount of blocks to corrupt)
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.soul_sand.spread",base:0.012,modifiers:[]}
-## herobrine (Duration) (Duration Extension) (Acitvate Time) (Movement Distance)
+## herobrine (Duration) (Duration Extension) (Acitvate Time) (Movement Distance) (Stun Time) (Stun Cooldown)
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.herobrine.duration",base:0.9,modifiers:[],tags:["plate_havoc_content:slow_passing.applicable","plate_havoc_content:enraged.shorter","plate_havoc_content:netherite_clock.applicable"]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.herobrine.duration.extend",base:0.3,modifiers:[],tags:["plate_havoc_content:slow_passing.applicable"]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.herobrine.delay",base:0.025,modifiers:[],tags:["plate_havoc_content:cube_of_decay.outcome.less_agression","plate_havoc_content:enraged.shorter"]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.herobrine.movement",base:3.75,modifiers:[],tags:["plate_havoc_content:enraged.aggressive","plate_havoc_content:life_harmony.applicable"]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.herobrine.stun.time",base:0.1,modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.herobrine.stun.cooldown",base:0.5,modifiers:[]}
 ## frail_stairs (Blocks)
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.frail_stairs.length",base:0.015,modifiers:[]}
 ## scaffolding (MaxRunCount) (Height)
@@ -166,6 +168,7 @@ scoreboard objectives add plate_havoc_content.event.piranha.attacked_times dummy
 scoreboard objectives add plate_havoc_content.event.piranha.active_time dummy
 scoreboard objectives add plate_havoc_content.event.bounce_pad.delay dummy
 scoreboard objectives add plate_havoc_content.event.bounce_pad.boost dummy
+scoreboard objectives add plate_havoc_content.event.herobrine.consecutive_curses dummy
 
 #
 scoreboard objectives add plate_havoc_content.card.void_rift dummy

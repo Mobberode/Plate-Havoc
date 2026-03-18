@@ -73,3 +73,4 @@ function gu:zzz/load
 #tag @a add plate_havoc.has_console_access
 
 forceload add 0 0
+kill 00000000-0000-0005-0000-0001000007e9

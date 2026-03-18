@@ -11,4 +11,4 @@ $data remove storage plate_havoc:cards running.active[{id:"$(id)"}]
 $data remove storage plate_havoc:custom attributes[].modifiers[{tags:["$(id)"]}]
 function plate_havoc:game/misc/attributes/custom/update_global
 ##
-tellraw @a ["",{text:"Removed Card:",color:gray}," ",{storage:"plate_havoc:temp",nbt:"temp.visual.extra[0].extra[{metadata:name}]",interpret:true}]
+tellraw @a ["",{text:"Removed Card:",color:gray}," ",{storage:"plate_havoc:temp",nbt:"temp.visual.extra[0].extra[{meta:name}]",interpret:true}]
