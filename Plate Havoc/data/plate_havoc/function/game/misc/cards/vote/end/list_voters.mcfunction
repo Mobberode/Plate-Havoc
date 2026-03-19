@@ -1,1 +1,0 @@
-tellraw @a [{text:"Voted by:",color:gray}," ",{selector:"@a[tag=!plate_havoc.spectator,predicate=plate_havoc:specfic/card]",color:yellow}]

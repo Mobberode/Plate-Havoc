@@ -5,7 +5,7 @@ execute summon item_display run function plate_havoc_content:cards/fragile_void/
 scoreboard players operation #Current_Time plate_havoc_content.card.fragile_void = #Time plate_havoc_content.card.fragile_void
 
 #Time
-scoreboard players set @s plate_havoc_content.card.fragile_void 75
+scoreboard players set @s plate_havoc_content.card.fragile_void 50
 scoreboard players operation @s plate_havoc_content.card.fragile_void.starting_time = @s plate_havoc_content.card.fragile_void
 #Scale/Hitbox
 execute store result score @s plate_havoc.temp store result score @s plate_havoc_content.card.fragile_void.starting_scale run random value 45..55

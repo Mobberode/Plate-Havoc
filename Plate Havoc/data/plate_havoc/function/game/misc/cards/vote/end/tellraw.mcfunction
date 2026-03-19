@@ -1,2 +1,2 @@
 execute store result score #ProcessedCards plate_havoc.num run data get storage plate_havoc:cards template.slot
-tellraw @a ["",{storage:"plate_havoc:cards",nbt:snbt.name,interpret:true}," ",{text:"[",color:gray},{score:{name:"#CardCount",objective:plate_havoc.num}},{text:"]",color:gray},"\n",{storage:"plate_havoc:cards",nbt:snbt.description,interpret:true}]
+tellraw @a {storage:"plate_havoc:cards",nbt:snbt.temp,interpret:true}
