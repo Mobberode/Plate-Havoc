@@ -16,7 +16,7 @@ data modify storage plate_havoc:temp temp.label insert 1 value {partition:cost,t
 data modify storage plate_havoc:temp temp.label[{partition:cost}].extra[{part:cost}].text set string storage plate_havoc:cards cost
 
 ##Active
-data modify storage plate_havoc:cards active_entry set value {id:"plate_havoc:reroll",visual:{},non_card:true,data:{command:"function plate_havoc:game/misc/cards/attributes/rerollable/execute"}}
+data modify storage plate_havoc:cards active_entry set value {id:"plate_havoc:reroll",visual:{},non_card:true,data:{command:"function plate_havoc:game/misc/cards/attributes/rerollable/execute"},snbt:{name:{text:"Reroll Cards"}}}
 data modify storage plate_havoc:cards active_entry.values.cost set from storage plate_havoc:cards cost
 data modify storage plate_havoc:cards active_entry.data.snbt.action set from storage plate_havoc:temp temp
 

@@ -1,7 +1,12 @@
-data modify storage plate_havoc:temp temp set value ["",{text:">>>",color:yellow}," "," ",{text:"<<<",color:yellow}]
-data modify storage plate_havoc:temp temp insert 3 from storage plate_havoc:cards template.data.snbt.action.label[{meta:name}]
-#tellraw @a {storage:"plate_havoc:temp",nbt:temp,interpret:true}
-$data modify storage plate_havoc:cards active[{slot:$(slot)}].data.snbt.action.label set from storage plate_havoc:temp temp
+$data modify storage plate_havoc:cards snbt set from storage plate_havoc:cards active[{slot:$(slot)}].data.snbt
+
+#Body
+execute if data storage plate_havoc:cards snbt.body run data modify storage plate_havoc:cards snbt.body.extra[{meta:name}].color set value yellow
+
+#Action
+execute if data storage plate_havoc:cards snbt.action run function plate_havoc:game/misc/cards/attributes/after_pause/action_label
+
+$data modify storage plate_havoc:cards active[{slot:$(slot)}].data.snbt set from storage plate_havoc:cards snbt
 
 ##UI
 function plate_havoc:game/misc/cards/ui/start

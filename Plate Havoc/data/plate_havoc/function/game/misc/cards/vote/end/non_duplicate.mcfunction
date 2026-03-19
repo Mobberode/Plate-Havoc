@@ -5,7 +5,6 @@ scoreboard players set #CardCount plate_havoc.num 1
 ##Visual
 data modify storage plate_havoc:temp temp set value {text:"",extra:[]}
 data modify storage plate_havoc:temp temp.extra prepend from storage plate_havoc:cards template.data.snbt.name
-data modify storage plate_havoc:temp temp.extra append value {meta:seperator,text:", "}
 
 data modify storage plate_havoc:cards template_running.visual.shortened set from storage plate_havoc:temp temp
 
