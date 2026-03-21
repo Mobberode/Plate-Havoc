@@ -1,12 +1,13 @@
 ##Price
-execute unless data storage plate_havoc:cards attributes.rerollable.cost{scale:false} store result storage plate_havoc:cards attributes.rerollable.cost.current_price float 2 run data get storage plate_havoc:cards attributes.rerollable.cost.current_price
+execute store result storage plate_havoc:temp temp int 1 run data get storage plate_havoc:cards attributes.rerollable.cost.scale 100
+function plate_havoc:game/misc/cards/attributes/rerollable/scale with storage plate_havoc:temp
 
 ##Set
 execute store result score #Card.KeepInPool plate_havoc.num if data storage plate_havoc:cards attributes.rerollable{remove_cards:false}
 scoreboard players set #Card.Continue plate_havoc.num 0
 
 ##Remove all cards
-#Copy non card actions to temp for restoringZZ
+#Copy non card actions to temp for restoring
 data modify storage plate_havoc:cards temp set value []
 data modify storage plate_havoc:cards temp append from storage plate_havoc:cards active[{non_card:true}]
 data modify storage plate_havoc:cards active set value []

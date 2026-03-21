@@ -9,5 +9,4 @@ data modify storage plate_havoc:cards active_entry.data.snbt.action set from sto
 #Data
 function plate_havoc:game/misc/cards/process/slot/start
 #Cost / Reward
-data modify storage plate_havoc:cards active_entry.values.cost set from storage plate_havoc:cards cost
-data modify storage plate_havoc:cards active_entry.values.reward set from storage plate_havoc:cards reward
+data modify storage plate_havoc:cards active_entry.values.cyclathron set from storage plate_havoc:cards cyclathron

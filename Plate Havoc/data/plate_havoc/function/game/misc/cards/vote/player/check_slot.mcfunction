@@ -1,1 +1,1 @@
-$execute store result score #SlotExists plate_havoc.num if data storage plate_havoc:cards active[{slot:$(slot)}]
+$execute if data storage plate_havoc:cards active[{slot:$(slot)}] run function plate_havoc:game/misc/cards/vote/player/process

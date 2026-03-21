@@ -1,4 +1,4 @@
-scoreboard players set #Card.HideRequiredVotes plate_havoc.num 0
-data modify storage plate_havoc:cards voting.snbt set value ["(",{part:count,text:"0"},"/",{part:requirement,text:"-1"},")"]
+scoreboard players set #Card.Force_Vote_Indicator plate_havoc.temp 0
+data modify storage plate_havoc:cards voting.snbt set value ["(",{meta:count,text:"0"},"/",{meta:requirement,text:"-1"},")"]
 
 data modify storage plate_havoc:cards voting.functions set from storage plate_havoc:cards preset.attributes.voting.behaviour.votes.functions

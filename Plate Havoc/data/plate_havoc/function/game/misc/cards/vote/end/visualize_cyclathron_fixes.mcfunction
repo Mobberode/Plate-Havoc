@@ -1,2 +1,0 @@
-execute if score #Temp plate_havoc.temp matches 1.. run return run data modify storage plate_havoc:temp temp.extra[].[{meta:prefix}] set value {meta:prefix,text:"+",color:green}
-execute if score #Temp plate_havoc.temp matches ..-1 run return run data modify storage plate_havoc:temp temp.extra[].[{meta:prefix}] set value {meta:prefix,text:"",color:red}

@@ -39,7 +39,7 @@ data modify storage plate_havoc:temp data set value [\
 \
 {id:"plate_havoc_content:void_rift",name:"Void Rift",type:upgrade,cost:100,requirement:[{type:cycle,cycle:10}],description:"Falling into the Void will teleport the player back to the surface. One activation per player, restored each cycle.",on_select:{functions:[{type:on.start,function:"plate_havoc_content:cards/void_rift/start"},{type:loop,function:"plate_havoc_content:cards/void_rift/loop"}],duration:-1,left:1,max:1},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
-{id:"plate_havoc_content:netherite_clock",name:"Netherite Clock",type:upgrade,cost:75,requirement:[{type:card,needed:[{id:"plate_havoc_content:diamond_clock",count:1}]},{type:cycle,cycle:10}],description:"+1.25 Cyclathron Yield and +2 Time Reduction upon clock collect. Events last 10% shorter.",on_select:{functions:[{type:one_time,function:"plate_havoc_content:cards/netherite_clock/start"}],duration:1,left:1,max:1},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
+{id:"plate_havoc_content:netherite_clock",name:"Netherite Clock",type:upgrade,cost:75,requirement:[{type:card,needed:[{id:"plate_havoc_content:diamond_clock",count:1}]},{type:cycle,cycle:10}],description:"+1.25 Cyclathron Yield and +2 Time Reduction upon clock collect. Duration of events are 10% shorter.",on_select:{functions:[{type:one_time,function:"plate_havoc_content:cards/netherite_clock/start"}],duration:1,left:1,max:1},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
 {id:"plate_havoc_content:healing_clock",name:"Healing Infused Clock",type:upgrade,cost:250,requirement:[{type:cycle,cycle:15}],description:"Collecting Clocks regenerate the collector's health.",on_select:{functions:[{type:on.clock.collect,function:"plate_havoc_content:cards/healing_clock/collect"}],duration:-1,left:1,max:1},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
@@ -75,7 +75,7 @@ data modify storage plate_havoc:temp data set value [\
 \
 {id:"plate_havoc_content:ascended_glacier_player",name:"Ascended Glacier Player",type:upgrade,cost:2750,requirement:[{type:cycle,cycle:15},{type:card,needed:[{id:"plate_havoc_content:glacier_player",count:1}]}],description:"All players get revived instead of one. ",on_select:{duration:-1,left:1,max:1},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
-{id:"plate_havoc_content:purified_hourglass",name:"Purified Hourglass",type:upgrade,cost:115,requirement:[{type:card,needed:[{id:"plate_havoc_content:cursed_clocks",count:1}]}],description:"Collecting non-cursed Clocks slightly delay the Event Timer. Cursed Clocks delay even longer and adds to Cranked Time. Cyclathron penalty halved.",on_select:{functions:[{type:on.clock.collect,function:"plate_havoc_content:cards/purified_hourglass/collect"}],duration:-1,left:1,max:1},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
+{id:"plate_havoc_content:purified_hourglass",name:"Purified Hourglass",type:upgrade,cost:115,requirement:[{type:card,needed:[{id:"plate_havoc_content:cursed_clocks",count:1}]}],description:"Collecting non-cursed Clocks slightly delay the Event Timer and cursed Clocks delay even longer and adds to Cranked Time. Clocks reduce 1/5 of Clock Spawn Time. Cyclathron penalty halved.",on_select:{functions:[{type:on.clock.collect,function:"plate_havoc_content:cards/purified_hourglass/collect"}],duration:-1,left:1,max:1},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
 \
 \
@@ -121,6 +121,8 @@ data modify storage plate_havoc:temp data set value [\
 \
 {id:"plate_havoc_content:energised_creepers",name:"Energised Creepers",type:curse,reward:15,requirement:[{type:cycle,cycle:5}],description:"Creepers spawn already charged with increased stats.",on_select:{functions:[{type:on.mob_setup,function:"plate_havoc_content:cards/energised_creepers/mob_setup"}],duration:-1,left:1,max:1,value:0.5},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
+{id:"plate_havoc_content:lone_wanderer",name:"Lone Wanderer",type:curse,reward:40,requirement:[{type:cycle,cycle:100}],description:"Wanderer spawns every 1.5 minutes or on player death, pausing time. Reach while it hovers away to unpause time.",on_select:{functions:[],duration:-1,left:1,max:1,value:1.75},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
+\
 \
 \
 {id:"plate_havoc_content:impatience",name:"Impatience",type:deeper_curse,requirement:[{type:cycle,cycle:100}],description:"The inevietable cannot be stopped. Impatience will shoot homing projectiles whilst dashing towards the closest target with lethal damage.",on_select:{duration:-1,left:1,max:1},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
@@ -137,7 +139,11 @@ data modify storage plate_havoc:temp data set value [\
 \
 {id:"plate_havoc_content:cranked",name:"Cranked",type:deeper_curse,description:"Collect Clocks to maintain the Cranked timer which starts at 25 + (1.25 *Cycle)s. Everyone gains 7.5s but collectors gain 10s, up to 60s. Timing out kills you.",on_select:{functions:[{type:set.attribute,function:"plate_havoc_content:cards/cranked/start"},{type:loop,function:"plate_havoc_content:cards/cranked/loop"},{type:on.clock.collect,function:"plate_havoc_content:cards/cranked/extend"}],duration:-1,left:1,max:1,value:1.5},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
-{id:"plate_havoc_content:locked_in_herobrine",name:"Powerscaled Herobrine",type:deeper_curse,requirement:[{type:cycle,cycle:1}],description:"Herobrine teleports faster, stunned for less and has several minions. Herobrine now hurts.",on_select:{functions:[],duration:-1,left:1,max:1,value:3},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
+{id:"plate_havoc_content:white_eyes",name:"White Eyes",type:deeper_curse,requirement:[{type:cycle,cycle:1000},{type:card,needed:[{id:"plate_havoc_content:herobrine_shrine"}]}],description:"Herobrine teleports faster, stunned for less and has several minions. Herobrine now hurts.",on_select:{functions:[],duration:-1,left:1,max:1,value:3},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
+\
+{id:"plate_havoc_content:burning_world",name:"THIS WORLD WILL BURN",type:deeper_curse,requirement:[{type:cycle,cycle:1500}],description:"",on_select:{functions:[],duration:-1,left:1,max:1,value:3},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
+\
+{id:"plate_havoc_content:67",name:"Six Seven",type:curses_of_doom,reward:-6.7,requirement:[{type:cycle,cycle:676767}],description:"+6.7 to every attribute.",on_select:{functions:[{type:on.start,function:"plate_havoc_content:cards/67/start"}],duration:-67,value:67},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 ]
 
 data modify storage plate_havoc:cards data append from storage plate_havoc:temp data[]

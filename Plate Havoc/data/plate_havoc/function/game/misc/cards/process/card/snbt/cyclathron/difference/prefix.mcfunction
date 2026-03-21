@@ -1,0 +1,2 @@
+execute if score #Temp plate_havoc.temp matches 1.. run return run function plate_havoc:game/misc/cards/process/card/snbt/cyclathron/difference/add
+execute if score #Temp plate_havoc.temp matches ..-1 run return run function plate_havoc:game/misc/cards/process/card/snbt/cyclathron/difference/remove

@@ -4,8 +4,6 @@ scoreboard players operation @s plate_havoc.z.select = @s plate_havoc.t.select
 #Used in predicate
 scoreboard players operation #Slot plate_havoc.z.select = @s plate_havoc.z.select
 
-data modify storage plate_havoc:cards temp set from storage plate_havoc:cards active
-
 #Check if slot exists
 function plate_havoc:game/misc/cards/vote/player/slot_exist_check
 #Reset self vote to not repeat

@@ -6,10 +6,12 @@ data modify storage plate_havoc:temp input.description set from storage plate_ha
 data modify storage plate_havoc:temp input.name set from storage plate_havoc:cards card.name
 
 data modify storage plate_havoc:cards snbt set value {}
-function plate_havoc:game/misc/cards/process/card/apply/snbt
+function plate_havoc:game/misc/cards/process/card/snbt/all
 
-execute if data storage plate_havoc:cards cost run function plate_havoc:game/misc/cards/process/card/apply/cost
-execute if data storage plate_havoc:cards reward run function plate_havoc:game/misc/cards/process/card/apply/reward
-function plate_havoc:game/misc/cards/process/card/apply/votes
+function plate_havoc:game/misc/cards/process/card/snbt/cyclathron
+data modify storage plate_havoc:cards snbt.action.label append from storage plate_havoc:cards snbt.cyclathron
+
+function plate_havoc:game/misc/cards/process/card/snbt/votes
+data modify storage plate_havoc:cards snbt.action.label append from storage plate_havoc:temp temp
 
 data modify storage plate_havoc:cards card.snbt set from storage plate_havoc:cards snbt

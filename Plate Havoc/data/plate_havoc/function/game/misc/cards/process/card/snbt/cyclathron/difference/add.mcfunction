@@ -1,0 +1,1 @@
+data modify storage plate_havoc:temp temp.extra[].[{meta:prefix}] set value {meta:prefix,text:"+",color:green}

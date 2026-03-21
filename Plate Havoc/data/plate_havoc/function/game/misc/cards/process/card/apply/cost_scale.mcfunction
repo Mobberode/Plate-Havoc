@@ -1,13 +1,5 @@
-##Scale
-execute store result score #Scale plate_havoc.temp run data get storage plate_havoc:custom attributes[{id:"plate_havoc:card.cost.scale"}].output 100
+$execute store result score #Temp plate_havoc.temp run data get storage plate_havoc:cards card.cost $(cost_scale)
 
-#Player
-scoreboard players operation #PlayerScale plate_havoc.temp = #Starting plate_havoc.players
-scoreboard players remove #PlayerScale plate_havoc.temp 1
-scoreboard players operation #PlayerScale plate_havoc.temp *= #10 plate_havoc.num
-scoreboard players operation #Scale plate_havoc.temp += #PlayerScale plate_havoc.temp
-#Apply
-execute store result score #CyclathronCost plate_havoc.temp run data get storage plate_havoc:cards cost 100
-scoreboard players operation #CyclathronCost plate_havoc.temp *= #Scale plate_havoc.temp
-scoreboard players operation #CyclathronCost plate_havoc.temp /= #100 plate_havoc.num
-execute store result storage plate_havoc:cards cost float 0.01 run scoreboard players get #CyclathronCost plate_havoc.temp
+execute if data storage plate_havoc:cards attributes{player_scaling:true} run function plate_havoc:game/misc/cards/process/card/apply/cost_scale_player
+
+return run scoreboard players get #Temp plate_havoc.temp

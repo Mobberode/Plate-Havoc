@@ -11,7 +11,7 @@ data modify storage plate_havoc:cards snbt.temp append value " "
 data modify storage plate_havoc:cards snbt.temp append value {meta:count,text:"",extra:[{text:"[",color:gray},{score:{name:"#CardCount",objective:plate_havoc.num}},{text:"]",color:gray}]}
 #Cyclathron Difference
 data modify storage plate_havoc:cards snbt.temp append value " "
-function plate_havoc:game/misc/cards/vote/end/visualize_cyclathron
+function plate_havoc:game/misc/cards/process/card/snbt/cyclathron/difference/run
 #Description
 data modify storage plate_havoc:cards snbt.temp append value "\n"
 data modify storage plate_havoc:cards snbt.temp append from storage plate_havoc:cards snbt.description

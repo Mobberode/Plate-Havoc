@@ -9,7 +9,8 @@ execute store result score #SavedVotes plate_havoc.num if entity @a[tag=!plate_h
 function plate_havoc:game/misc/cards/vote/player/transfer with storage plate_havoc:temp
 
 #Update slot vote count
-function plate_havoc:game/misc/cards/vote/player/get_votes with storage plate_havoc:temp
-
+execute store result storage plate_havoc:cards active_entry.values.votes int 1 run scoreboard players get #SavedVotes plate_havoc.num
+#Visual
+function plate_havoc:game/misc/cards/ui/process/votes/build
 ##Update from temp
 function plate_havoc:game/misc/cards/vote/player/upload with storage plate_havoc:temp

@@ -1,0 +1,1 @@
+$return run data get storage plate_havoc:cards card.reward $(reward_scale)

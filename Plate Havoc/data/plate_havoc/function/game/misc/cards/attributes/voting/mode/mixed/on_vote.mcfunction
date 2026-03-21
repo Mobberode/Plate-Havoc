@@ -1,6 +1,4 @@
-#tellraw @a ["[Debug]","Check vote requirement then check Cyclathron requirement",{score:{name:"#ProcessedCards",objective:plate_havoc.num},color:green},{storage:"plate_havoc:cards",nbt:slot,color:gold},{text:" "},{score:{name:"#SavedVotes",objective:plate_havoc.num}},{text:" "},{score:{name:"#Value",objective:plate_havoc.cyclathron},color:aqua},{score:{name:"#CyclathronCost",objective:plate_havoc.num},color:red}]
-
-execute if score #SavedVotes plate_havoc.num >= #VotingRequirement plate_havoc.players unless score #Value plate_havoc.cyclathron < #CyclathronCost plate_havoc.num run return run scoreboard players set #FinishVoting plate_havoc.num 1
+function plate_havoc:game/misc/cards/attributes/voting/mode/mixed/condition
 
 execute if score #Card_Type.Attribute.Voting.Mixed.Vote_Made plate_havoc.temp matches ..0 run function plate_havoc:game/time/tick_down
 scoreboard players set #Card_Type.Attribute.Voting.Mixed.Vote_Made plate_havoc.temp 1

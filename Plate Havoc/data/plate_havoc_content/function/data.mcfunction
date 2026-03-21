@@ -34,7 +34,7 @@ data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_
 ## nerf_slowness (Duration)
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.nerf_slowness.duration",base:0.025,modifiers:[],tags:["plate_havoc_content:slow_passing.applicable"]}
 ## sign (Data)
-data modify storage plate_havoc:events data.signs set value [{messages:["We","Will","Be","Watching."]},{messages:["Look","up. its","falling","down"]},{messages:["You","read this","you are","GAY!!"]},{messages:["Behind you.","","",""]},{messages:["2","7","0","2"]},{messages:["I","AM","LAMB",""]},{messages:["Get","Silksong","",""]}]
+data modify storage plate_havoc:events data.signs set value [["We","Watch","From","Below"],["The","Void","Twisted","Us"],["You cant","Get out","Once","Youre here"],["Hello??","Gachafell","2/1/16",""],["how do we get","out of here?","",""],["stuff just keeps","appearing out of","nowhere",""],["In Copperfield","we got teleported.","Is this a sign?",""],["came across","living","armour stands","weird."],["leave standella","behind","everything is","falling","apart"],["protect the shrine","it is sacred","",""],["who are you?","","",""],["so sorry i done","this to you.","",""]]
 ## bars (Size)
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.bars.size",base:2,modifiers:[]}
 ## effect_wind_charged (Duration)
