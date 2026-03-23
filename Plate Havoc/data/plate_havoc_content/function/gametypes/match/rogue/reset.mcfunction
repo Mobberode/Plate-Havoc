@@ -1,6 +1,6 @@
 function plate_havoc:game/misc/cards/vote/set
 
-function plate_havoc:game/misc/cards/running/card_list
+function plate_havoc:game/misc/cards/running/card_list/process
 function plate_havoc:game/misc/cards/reset
 
 function plate_havoc:game/misc/cards/start

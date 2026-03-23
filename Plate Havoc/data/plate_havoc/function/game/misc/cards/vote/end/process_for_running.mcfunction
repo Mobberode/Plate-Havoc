@@ -5,7 +5,7 @@ function plate_havoc:game/misc/cards/attributes/selection/continue_condition
 ##Process
 function plate_havoc:game/misc/cards/vote/end/process
 #Card List update
-function plate_havoc:game/misc/cards/running/card_list
+function plate_havoc:game/misc/cards/running/card_list/process
 
 ## Attributes
 ##Insert additional cards if selection allows

@@ -61,7 +61,7 @@ data modify storage plate_havoc:temp data set value [\
 \
 {id:"plate_havoc_content:bars",data:{global:{intensity:{min:1.1},function:"plate_havoc_content:events/bars/start"}},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
-{id:"plate_havoc_content:wither",data:{global:{intensity:{min:25},function:"plate_havoc_content:events/wither/start"}},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
+{id:"plate_havoc_content:wither",data:{global:{intensity:{min:50},function:"plate_havoc_content:events/wither/start"}},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
 {id:"plate_havoc_content:cobweb",data:{global:{intensity:{min:2.3},function:"plate_havoc_content:events/cobweb/start"}},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \

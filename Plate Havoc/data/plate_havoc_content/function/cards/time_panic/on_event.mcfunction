@@ -11,4 +11,5 @@ execute if score #Temp plate_havoc.temp matches 251.. run scoreboard players set
 execute if score #Temp plate_havoc.temp = #PHC.Time_Panic plate_havoc.temp run return fail
 
 execute store result storage plate_havoc:cards active_data.shared.temp float -0.001 run scoreboard players get #Temp plate_havoc.temp
+execute store result storage plate_havoc:cards active_data.shared.temp2 float 0.001 run scoreboard players get #Temp plate_havoc.temp
 function plate_havoc_content:cards/time_panic/apply with storage plate_havoc:cards active_data.shared

@@ -8,3 +8,5 @@ data modify storage plate_havoc:temp input.name set from storage plate_havoc:car
 
 data modify storage plate_havoc:cards snbt set value {}
 function plate_havoc:game/misc/cards/process/card/snbt/all
+
+data modify storage plate_havoc:cards template.data.snbt set from storage plate_havoc:cards snbt

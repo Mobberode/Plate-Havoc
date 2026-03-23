@@ -2,7 +2,7 @@
 scoreboard players operation #Temp plate_havoc.temp = #AccumulatedIntensity plate_havoc.temp
 
 scoreboard players operation #Temp plate_havoc.temp /= #100 plate_havoc.num
-scoreboard players operation #Temp plate_havoc.temp *= #20 plate_havoc.num
+scoreboard players operation #Temp plate_havoc.temp *= #15 plate_havoc.num
 scoreboard players operation #Value plate_havoc.intensity -= #Temp plate_havoc.temp
 function plate_havoc:game/events/intensity/visual
 

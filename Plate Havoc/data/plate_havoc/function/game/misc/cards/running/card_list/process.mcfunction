@@ -2,12 +2,12 @@
 data modify storage plate_havoc:ui card_list set value [""]
 #Check if cards, if ..1 return
 execute store result score #Temp plate_havoc.temp if data storage plate_havoc:cards running.total[]
-execute if score #Temp plate_havoc.temp matches ..1 run return run data modify storage plate_havoc:ui card_list append from storage plate_havoc:cards running.total[].visual.shortened
+execute if score #Temp plate_havoc.temp matches ..1 run return run data modify storage plate_havoc:ui card_list append from storage plate_havoc:cards running.total[].visual.display
 
 ##Else, setup
 #Set
 data modify storage plate_havoc:temp temp set value {store:{},list:[]}
-data modify storage plate_havoc:temp temp.list append from storage plate_havoc:cards running.total[].visual.shortened
+data modify storage plate_havoc:temp temp.list append from storage plate_havoc:cards running.total[].visual.display
 #Edit and store last entry
 data remove storage plate_havoc:temp temp.list[].extra[{meta:seperator}]
 data modify storage plate_havoc:temp temp.store set from storage plate_havoc:temp temp.list[-1]
