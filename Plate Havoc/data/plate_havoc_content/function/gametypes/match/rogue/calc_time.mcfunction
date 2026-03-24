@@ -13,6 +13,7 @@ scoreboard players operation #Time_Player plate_havoc.temp *= #Temp plate_havoc.
 scoreboard players operation #Time plate_havoc.temp += #Time_Player plate_havoc.temp
 
 ##Modifiers
+scoreboard players operation #Time plate_havoc.temp *= #20 plate_havoc.num
 execute store result score #TimeMultiply plate_havoc.temp run data get storage plate_havoc:custom attributes[{id:"plate_havoc_content:time.multiplier"}].output 100
 scoreboard players operation #Time plate_havoc.temp *= #TimeMultiply plate_havoc.temp
 scoreboard players operation #Time plate_havoc.temp /= #100 plate_havoc.num

@@ -1,2 +1,3 @@
 data remove storage plate_havoc:custom attributes[].modifiers[{id:"plate_havoc_content:card.67"}]
 data modify storage plate_havoc:custom attributes[].modifiers append value {id:"plate_havoc_content:card.67",value:6.7,operation:"add_value",tags:["plate_havoc_content:67"]}
+data modify storage plate_havoc:custom attributes[].refresh set value true

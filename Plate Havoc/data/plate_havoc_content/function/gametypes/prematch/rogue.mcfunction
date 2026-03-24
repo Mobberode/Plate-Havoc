@@ -2,7 +2,7 @@ tellraw @a [{text:"Void Endurance",color:gold},{text:"\nThe intended Endurance e
 
 scoreboard players set #Modifiers.Enabled plate_havoc.num 0
 
-data modify storage plate_havoc:ui bar.queue[{id:time}].extra set value [{text:"Time: "},{score:{name:"#Left",objective:plate_havoc.timer},color:gold}]
+data modify storage plate_havoc:ui bar.queue[{id:time}].extra set value [{text:"Time: "},{score:{name:"#Visual.Left.Second",objective:plate_havoc.timer},color:gold},".",{score:{name:"#Visual.Left.Tick",objective:plate_havoc.timer},color:gold}]
 data modify storage plate_havoc:ui bar.queue[{id:players}].extra set value [{score:{name:"#Current_Total",objective:plate_havoc.players},color:green},{text:"/"},{score:{name:"#Match",objective:plate_havoc.players},color:green}]
 
 data modify storage plate_havoc:ui bar.queue insert 2 value {id:cyclathron,text:"",extra:[{text:"Cyclathrons: "},{storage:"plate_havoc:ui",nbt:cyclathron,color:aqua,interpret:true}]}
@@ -14,7 +14,7 @@ data modify storage plate_havoc:ui game.end.queue append value {id:cycle,text:""
 scoreboard objectives setdisplay list plate_havoc.ui.player_health
 
 data modify storage plate_havoc:data spectator_tick_function set value "plate_havoc:game/match/player/spectator/message"
-data modify storage plate_havoc:ui game.spawnpoint.status set value [{text:"You will respawn next Cycle! Time till next Cycle: ",color:gray},{score:{name:"#Left",objective:plate_havoc.timer},color:gold}]
+data modify storage plate_havoc:ui game.spawnpoint.status set value [{text:"You will respawn next Cycle! Time till next Cycle: ",color:gray},{score:{name:"#Visual.Left",objective:plate_havoc.timer},color:gold}]
 
 data modify storage plate_havoc:data game_end_condition_function set value "plate_havoc_content:gametypes/player/rogue/check"
 
@@ -40,15 +40,6 @@ data modify storage plate_havoc:leaderboard include_stats append value {type:sto
 ### Game contents
 
 scoreboard players set #Value plate_havoc.round 0
-
-scoreboard players set #BaseCyclathronAmount plate_havoc.num 100
-scoreboard players set #ClockCollectTimeReduction plate_havoc.num 2
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:clock.range",base:0,modifiers:[]}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:clock.spawn_time",base:0.1,modifiers:[]}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:time.multiplier",base:1,modifiers:[]}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:cycle.intensity_scale",base:0.125,modifiers:[]}
-
-scoreboard players set #CardCountModifier plate_havoc.num 0
 
 data modify storage plate_havoc:cards locked set from storage plate_havoc:cards data
 data modify storage plate_havoc:cards pool set value []

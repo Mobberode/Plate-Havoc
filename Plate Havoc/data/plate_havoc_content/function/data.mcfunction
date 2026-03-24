@@ -155,6 +155,13 @@ data modify storage plate_havoc:cards data2.plate_havoc_content.777_machine set 
 ## Mentally Parrotsane
 data modify storage plate_havoc:cards data2.plate_havoc_content.mentally_parrotsane set value ["plate_havoc:game/match/player/last_one_sfx","plate_havoc_content:cards/cursed_clocks/collect_sfx","plate_havoc_content:events/motion_sniper/sfx","plate_havoc_content:events/laser_drill/entity/cue/sound_default","plate_havoc_content:cards/mentally_parrotsane/sounds/creeper","plate_havoc_content:cards/mentally_parrotsane/sounds/wither","plate_havoc_content:cards/mentally_parrotsane/sounds/ghast","plate_havoc_content:events/eraserman/cue","plate_havoc_content:cards/critical_rollback/sfx","plate_havoc_content:cards/multi_use_umbrella/player/acid_immunity/break_cue"]
 
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:clock.time_reduction",base:0.04,modifiers:[],update:[{type:score,value:"#ClockCollectTimeReduction plate_havoc.num"}]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:clock.range",base:0,modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:clock.spawn_time",base:0.1,modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:time.multiplier",base:1,modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:cycle.intensity_scale",base:0.125,modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:card.count_modifier",base:0,modifiers:[],update:[{type:score,value:"#CardCountModifier plate_havoc.num"}]}
+
 #
 scoreboard objectives add plate_havoc_content.event.acid_rain.exposure dummy
 scoreboard objectives add plate_havoc_content.event.jump_cooldown dummy

@@ -4,3 +4,4 @@ execute if score #Temp plate_havoc.temp matches 1.. run return run tag @s add pl
 
 kill
 tellraw @a [{selector:"@s",color:dark_purple},{text:" was caught in a void implosion",color:"dark_purple"}]
+tag @s add plate_havoc_content.card.fragile_void.cant_damage

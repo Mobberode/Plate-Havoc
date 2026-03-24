@@ -1,0 +1,2 @@
+data modify storage plate_havoc:cards snbt.temp append value "\n"
+data modify storage plate_havoc:cards snbt.temp append value {meta:voters,text:"",extra:[{text:"Voted by:",color:gray}," ",{selector:"@a[tag=!plate_havoc.spectator,predicate=plate_havoc:specfic/card]",color:yellow}]}

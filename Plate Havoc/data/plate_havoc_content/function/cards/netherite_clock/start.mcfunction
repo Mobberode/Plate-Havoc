@@ -6,5 +6,6 @@ data modify storage plate_havoc:temp group_attribute set value "plate_havoc_cont
 data modify storage plate_havoc:custom attribute_modifier set value {id:"plate_havoc_content:card.netherite_clock",value:-0.1,operation:"add_multiplied_total",tags:["plate_havoc_content:netherite_clock"]}
 function plate_havoc:game/misc/attributes/custom/add_modifier
 
-
-scoreboard players add #ClockCollectTimeReduction plate_havoc.num 2
+data modify storage plate_havoc:temp id_attribute set value "plate_havoc_content:clock.time_reduction"
+data modify storage plate_havoc:custom attribute_modifier set value {id:"plate_havoc_content:card.diamond_clock",value:0.04,operation:"add_value",tags:["plate_havoc_content:diamond_clock"]}
+function plate_havoc:game/misc/attributes/custom/add_modifier

@@ -10,4 +10,4 @@ kill
 
 tag @a remove plate_havoc_content.misc.clock.collector
 
-playsound block.beacon.power_select ambient @a ~ ~ ~ 2 1.5 0
+function plate_havoc_content:gametypes/match/rogue/time_cube/sfx

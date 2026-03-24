@@ -16,8 +16,8 @@ function plate_havoc:game/misc/cards/process/card/snbt/cyclathron/difference/run
 data modify storage plate_havoc:cards snbt.temp append value "\n"
 data modify storage plate_havoc:cards snbt.temp append from storage plate_havoc:cards snbt.description
 #Voters
-data modify storage plate_havoc:cards snbt.temp append value "\n"
-data modify storage plate_havoc:cards snbt.temp append value {meta:voters,text:"",extra:[{text:"Voted by:",color:gray}," ",{selector:"@a[tag=!plate_havoc.spectator,predicate=plate_havoc:specfic/card]",color:yellow}]}
+execute store result score #Temp plate_havoc.temp if entity @a[tag=!plate_havoc.spectator]
+execute unless score #Temp plate_havoc.temp matches ..1 run function plate_havoc:game/misc/cards/vote/end/voters
 
 function plate_havoc:game/misc/cards/vote/end/tellraw
 
