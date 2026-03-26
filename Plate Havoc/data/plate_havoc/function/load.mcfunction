@@ -21,6 +21,7 @@ scoreboard objectives add plate_havoc.relog_timer dummy
 scoreboard objectives add plate_havoc.intensity dummy
 scoreboard objectives add plate_havoc.cyclathron dummy
 scoreboard objectives add plate_havoc.rng dummy
+scoreboard objectives add plate_havoc.attribute dummy
 
 scoreboard objectives add plate_havoc.temp dummy
 

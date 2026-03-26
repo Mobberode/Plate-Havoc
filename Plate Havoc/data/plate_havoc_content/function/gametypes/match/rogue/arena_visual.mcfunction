@@ -1,0 +1,2 @@
+execute if score #Value plate_havoc.round matches 15 in plate_havoc:arena run function plate_havoc_content:gametypes/match/rogue/late_game_arena_visual
+execute if score #Value plate_havoc.round matches 30 in plate_havoc:arena run function plate_havoc_content:gametypes/match/rogue/end_game_arena_visual
