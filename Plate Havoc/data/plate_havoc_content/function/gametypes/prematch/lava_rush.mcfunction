@@ -31,15 +31,12 @@ scoreboard players set #BaseWorldTime plate_havoc.num 6000
 
 scoreboard players set #AllowBlockInteraction plate_havoc.num 1
 
-data modify storage plate_havoc:ui leaderboard.queue prepend value {id:lava_height,visual:{text:"",extra:[{text:"Lava Height: ",color:gray},{id:lava_height,text:"?",color:red}]}}
-data remove storage plate_havoc:ui leaderboard.queue[{id:intensity}]
+data modify storage plate_havoc:leaderboard sort_function set value "plate_havoc_content:leaderboard/check/lava_height"
 
-data modify storage plate_havoc:leaderboard sort_function set value "plate_havoc:game/misc/leaderboard/check/lava_height"
-
-data modify storage plate_havoc:leaderboard include_stats prepend value {type:score,location:"#LavaHeight plate_havoc.num",holder:lava_height}
-data remove storage plate_havoc:leaderboard include_stats[{holder:intensity}]
+data modify storage plate_havoc:leaderboard data_functions prepend value {data:"plate_havoc_content:leaderboard/data/lava_height"}
+data remove storage plate_havoc:leaderboard data_functions[{data:"plate_havoc_content:leaderboard/data/intensity"}]
 
 #
-scoreboard players set #LavaHeight plate_havoc.num -65
+scoreboard players set #LavaHeight plate_havoc.temp -65
 
 scoreboard players set #Value plate_havoc.timer 600

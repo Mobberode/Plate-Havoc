@@ -1,1 +1,0 @@
-data modify storage plate_havoc:ui leaderboard.visual append from storage plate_havoc:ui leaderboard.visual_edit.visual

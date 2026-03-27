@@ -14,7 +14,7 @@ $dialog show @s {\
         \
         "\n",\
         \
-        {text:"[",color:aqua},{text:"Card List",hover_event:{action:"show_text",value:$(card_list)},color:gray},{text:"]",color:aqua},\
+        {text:"[",color:aqua},{text:"Card Deck",hover_event:{action:"show_text",value:$(card_list)},color:gray},{text:"]",color:aqua},\
         \
         " ",\
         \

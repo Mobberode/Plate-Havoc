@@ -1,10 +1,10 @@
 #Get
-function plate_havoc:game/misc/leaderboard/check/dynamic with storage plate_havoc:leaderboard
+function plate_havoc:game/misc/leaderboard/check with storage plate_havoc:leaderboard
 
-#Compare
+#Condition
+#tellraw @a[scores={plate_havoc.debug=1..}] [{score:{name:"#LB",objective:plate_havoc.num}}," ",{score:{name:"#LBC",objective:plate_havoc.num}}," a"]
 execute if score #LB plate_havoc.num >= #LBC plate_havoc.num run return run function plate_havoc:game/misc/leaderboard/set
 
-#Else compare fails
-execute store result storage plate_havoc:leaderboard processed int 1 run scoreboard players add #LBEntries plate_havoc.num 1
-
-execute if score #LBEntries plate_havoc.num < #LBLimit plate_havoc.config run function plate_havoc:game/misc/leaderboard/sort with storage plate_havoc:leaderboard
+#Else fails
+scoreboard players add #LBEntries plate_havoc.temp 1
+execute unless score #LBEntries plate_havoc.temp >= #LBStop plate_havoc.temp run function plate_havoc:game/misc/leaderboard/sort

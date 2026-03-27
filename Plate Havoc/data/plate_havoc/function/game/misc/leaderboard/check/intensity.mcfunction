@@ -1,2 +1,0 @@
-execute store result score #LB plate_havoc.num run data get storage plate_havoc:leaderboard temp.data.intensity 1000
-execute store result score #LBC plate_havoc.num run data get storage plate_havoc:leaderboard compare.data.intensity 1000

@@ -42,17 +42,3 @@ data modify storage plate_havoc:ui game.end.queue append value {id:intensity,tex
 data modify storage plate_havoc:ui game.end.queue append value {id:player_credit,text:"",extra:[{text:"Players: ",color:gray},{storage:"plate_havoc:leaderboard",nbt:"player_credit[]",color:yellow,interpret:true}]}
 
 data modify storage plate_havoc:ui game.end.queue append value {id:seed,text:"",extra:[{text:"Seed: ",color:gray},{score:{name:"#Seed",objective:plate_havoc.num},color:green,interpret:true}]}
-
-##Leaderboard UI
-data remove storage plate_havoc:ui leaderboard
-
-data modify storage plate_havoc:ui leaderboard.visual set value []
-data modify storage plate_havoc:ui leaderboard.queue set value []
-
-data modify storage plate_havoc:ui leaderboard.queue append value {id:time,visual:{text:"",extra:[{text:"Elasped Time: ",color:gray},{id:time,text:"?",color:gold},"s"]}}
-
-data modify storage plate_havoc:ui leaderboard.queue append value {id:intensity,visual:{text:"",extra:[{text:"Intensity: ",color:gray},{id:intensity,text:"?",color:red}]}}
-
-data modify storage plate_havoc:ui leaderboard.queue append value {id:player_credit,visual:{text:"",extra:[{text:"Players: ",color:gray},{id:player_credit,color:yellow,text:""}]}}
-
-data modify storage plate_havoc:ui leaderboard.queue append value {id:seed,visual:{text:"",extra:[{text:"Seed: ",color:gray},{id:seed,color:green,text:""}]}}

@@ -1,1 +1,0 @@
-$data modify storage plate_havoc:leaderboard temp.data.$(holder) set from storage $(location) $(holder)

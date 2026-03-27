@@ -1,16 +1,5 @@
-#Sets the temp
-data modify storage plate_havoc:leaderboard directory set from storage plate_havoc:data gametype.id
-data remove storage plate_havoc:leaderboard compare
-data modify storage plate_havoc:leaderboard temp set value {data:{},text:"",extra:[]}
-
-#Edit data
-function plate_havoc:game/misc/leaderboard/data/run
-
-#Prepare loop
-function plate_havoc:game/misc/leaderboard/prepare with storage plate_havoc:leaderboard
-
-##Remove loop
-function plate_havoc:game/misc/leaderboard/detect_overflow with storage plate_havoc:leaderboard
+#Prepare to check if good enough
+function plate_havoc:game/misc/leaderboard/prepare with storage plate_havoc:data gametype
 
 ##Tellraw
-function plate_havoc:game/misc/leaderboard/tellraw with storage plate_havoc:leaderboard
+function plate_havoc:game/misc/leaderboard/tellraw with storage plate_havoc:data gametype

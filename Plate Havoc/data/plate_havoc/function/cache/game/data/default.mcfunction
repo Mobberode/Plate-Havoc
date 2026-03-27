@@ -74,8 +74,8 @@ data modify storage plate_havoc:data game_end_condition_function set value "plat
 data modify storage plate_havoc:data last_alive_function set value ""
 
 #Leaderboard
-data modify storage plate_havoc:leaderboard sort_function set value "plate_havoc:game/misc/leaderboard/check/intensity"
-data modify storage plate_havoc:leaderboard include_stats set value [{type:storage,location:"plate_havoc:data",holder:time},{type:storage,location:"plate_havoc:data",holder:intensity},{type:storage,location:"plate_havoc:leaderboard",holder:player_credit},{type:score,location:"#Seed plate_havoc.num",holder:seed}]
+data modify storage plate_havoc:leaderboard sort_function set value "plate_havoc_content:leaderboard/check/intensity"
+data modify storage plate_havoc:leaderboard data_functions set value [{data:"plate_havoc_content:leaderboard/data/time"},{data:"plate_havoc_content:leaderboard/data/intensity"},{data:"plate_havoc_content:leaderboard/data/player_credit"},{data:"plate_havoc_content:leaderboard/data/seed"}]
 
 data modify storage plate_havoc:data leaderboard_credit_loop set value "plate_havoc:game/misc/leaderboard/credit/type/time_elasped/loop"
 data modify storage plate_havoc:data leaderboard_credit_start set value "plate_havoc:game/misc/leaderboard/credit/type/time_elasped/start"
