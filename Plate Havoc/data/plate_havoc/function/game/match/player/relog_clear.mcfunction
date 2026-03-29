@@ -1,3 +1,2 @@
-clear @s
+clear
 recipe take @s *
-kill

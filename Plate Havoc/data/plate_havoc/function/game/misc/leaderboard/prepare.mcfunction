@@ -3,7 +3,6 @@ $data modify storage plate_havoc:leaderboard editing.total set from storage plat
 execute unless data storage plate_havoc:leaderboard editing.total[] run data modify storage plate_havoc:leaderboard editing.total set value []
 
 function plate_havoc:game/misc/leaderboard/overflow/run
-scoreboard players operation #LBStop plate_havoc.temp = #Temp plate_havoc.temp
 data modify storage plate_havoc:leaderboard editing.collection set from storage plate_havoc:leaderboard editing.total
 scoreboard players set #LBEntries plate_havoc.temp 0
 

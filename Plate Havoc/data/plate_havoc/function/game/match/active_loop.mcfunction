@@ -17,3 +17,5 @@ function plate_havoc:game/match/tick with storage plate_havoc:data
 
 ##Cards
 function plate_havoc:game/misc/cards/running/types/run {type:loop}
+
+function plate_havoc:extensions/handler/run {type:"plate_havoc:game.loop"}

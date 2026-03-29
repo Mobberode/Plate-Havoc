@@ -1,7 +1,6 @@
 scoreboard players set @s plate_havoc.died 0
 scoreboard players set @s plate_havoc.spawnpoint_energy 0
 tag @s remove plate_havoc.survivor
-tag @s remove plate_havoc_content.winner
 gamemode spectator
 execute in plate_havoc:arena run tp @s 0 64 0
 

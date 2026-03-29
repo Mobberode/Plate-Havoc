@@ -7,4 +7,4 @@ execute if score #LB plate_havoc.num >= #LBC plate_havoc.num run return run func
 
 #Else fails
 scoreboard players add #LBEntries plate_havoc.temp 1
-execute unless score #LBEntries plate_havoc.temp >= #LBStop plate_havoc.temp run function plate_havoc:game/misc/leaderboard/sort
+execute unless score #LBEntries plate_havoc.temp >= #LBLimit plate_havoc.config run function plate_havoc:game/misc/leaderboard/sort

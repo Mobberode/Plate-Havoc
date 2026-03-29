@@ -18,7 +18,7 @@ scoreboard players set #Game plate_havoc.status 1
 scoreboard players add #Value plate_havoc.round 1
 scoreboard players add @a[tag=!plate_havoc.spectator] plate_havoc_content.leaderboard.cycle.current 1
 
-function plate_havoc_content:gametypes/match/rogue/arena_visual
+execute unless data storage plate_havoc:data {run_tags:["no_void_skies:dont_change_void"]} run function plate_havoc_content:gametypes/match/rogue/arena_visual
 
 execute in plate_havoc:arena run function plate_havoc:game/misc/world/apply_all
 

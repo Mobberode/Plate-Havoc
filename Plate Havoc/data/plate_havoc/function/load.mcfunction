@@ -42,6 +42,7 @@ scoreboard objectives add plate_havoc.t.spectator trigger
 scoreboard objectives add plate_havoc.t.credits trigger
 scoreboard objectives add plate_havoc.t.view_leaderboard trigger
 scoreboard objectives add plate_havoc.t.exit_dialog trigger
+scoreboard objectives add plate_havoc.t.extensions trigger
 
 scoreboard objectives add plate_havoc.t.console trigger
 
@@ -64,14 +65,14 @@ scoreboard objectives add plate_havoc.charge.using dummy
 
 scoreboard objectives add plate_havoc.game_event.in_void dummy
 
-function plate_havoc:game/triggers/loop
-
-execute unless score #LBLimit plate_havoc.config matches 0.. run scoreboard players set #LBLimit plate_havoc.config 3
-
-function plate_havoc:game/init
-function gu:zzz/load
-
-#tag @a add plate_havoc.has_console_access
+execute unless score #LBLimit plate_havoc.config matches 0.. run scoreboard players set #LBLimit plate_havoc.config 5
 
 forceload add 0 0
 kill 00000000-0000-0005-0000-0001000007e9
+
+function gu:zzz/load
+
+function plate_havoc:game/triggers/loop
+function plate_havoc:game/init
+
+#tag @a add plate_havoc.has_console_access

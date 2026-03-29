@@ -3,6 +3,8 @@ scoreboard players reset * plate_havoc.event
 scoreboard players reset * plate_havoc.card
 scoreboard players reset * plate_havoc.num
 scoreboard players reset * plate_havoc.temp
+
+scoreboard players set #Active plate_havoc.status 0
 scoreboard players set #Game plate_havoc.status 0
 
 function plate_havoc:extensions/run

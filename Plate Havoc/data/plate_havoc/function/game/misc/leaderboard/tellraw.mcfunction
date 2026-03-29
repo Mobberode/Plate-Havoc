@@ -1,1 +1,1 @@
-$tellraw @a [{text:"Server Leaderboard | "},{storage:"plate_havoc:data",nbt:gametype.id,color:gold},{storage:"plate_havoc:leaderboard",nbt:"root.$(id)",interpret:true}]
+$tellraw @s [{text:"Server Leaderboard | "},{storage:"plate_havoc:data",nbt:gametype.id,color:gold},{storage:"plate_havoc:leaderboard",nbt:"root.$(id)",interpret:true}]

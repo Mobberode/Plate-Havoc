@@ -1,0 +1,1 @@
+$data modify storage plate_havoc:temp temp.snbt.extra[{meta:name}].extra append value {meta:action,text:" ",extra:["[",{meta:action,text:"Toggle",click_event:{action:"run_command",command:"/trigger plate_havoc.t.extensions set $(numerical_id)"}},"]"],color:yellow}

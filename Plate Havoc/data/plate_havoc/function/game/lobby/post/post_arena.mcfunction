@@ -22,6 +22,7 @@ worldborder center 0.0 0.0
 
 function plate_havoc:game/events/pool/init
 
+scoreboard players set #Active plate_havoc.status 1
 scoreboard players set #Game plate_havoc.status 2
 
 data modify storage plate_havoc:custom attributes[].refresh set value true
