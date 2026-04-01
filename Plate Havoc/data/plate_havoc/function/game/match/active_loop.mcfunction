@@ -1,4 +1,5 @@
 scoreboard players add #Runtick plate_havoc.num 1
+effect give @e[type=#plate_havoc:herds] instant_health infinite 1
 
 ##Game Check
 function plate_havoc:game/match/player/mode_check with storage plate_havoc:data

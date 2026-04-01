@@ -1,1 +1,1 @@
-execute in plate_havoc:arena as @e[x=0,tag=plate_havoc_content.event.nuke,type=item_display] at @s run function plate_havoc_content:events/nuke/entity/loop
+execute in plate_havoc:arena as @e[x=0,tag=plate_havoc_content.event.nuke,type=hovering_item_display] at @s run function plate_havoc_content:events/nuke/entity/loop

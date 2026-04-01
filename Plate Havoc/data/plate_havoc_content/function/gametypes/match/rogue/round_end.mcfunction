@@ -10,7 +10,7 @@ function plate_havoc_content:gametypes/match/rogue/intensity_boost
 data modify storage plate_havoc:data default_gamemode set value "spectator"
 execute as @a run function plate_havoc:game/misc/apply_gamemode with storage plate_havoc:data
 
-kill @e[type=!player,tag=!plate_havoc.never_kill]
+kill @e[type=!player,tag=!plate_havoc.never_kill,type=!living_block,type=!living_block_command,type=!hovering_item]
 scoreboard players reset * plate_havoc.event
 scoreboard players reset * plate_havoc.temp
 

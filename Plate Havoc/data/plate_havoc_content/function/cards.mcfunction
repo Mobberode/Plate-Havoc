@@ -15,8 +15,6 @@ data modify storage plate_havoc:temp data set value [\
 \
 {id:"plate_havoc_content:multi_use_umbrella",name:"Multi-Use Umbrella",type:upgrade,cost:25,requirement:[{type:cycle,cycle:3}],description:"Shears Cobwebs and Acid Rain immunity for 15 seconds when exposed. Splashers activate for 5 seconds when on fire, extinguishing flames. 1 minute cooldown.",on_select:{functions:[{type:loop,function:"plate_havoc_content:cards/multi_use_umbrella/loop"},{type:set.attribute,function:"plate_havoc_content:cards/multi_use_umbrella/set_player"}],duration:-1,left:1,max:1},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
-{id:"plate_havoc_content:hands_of_creativity",name:"Hands of Creativity",type:upgrade,cost:25,requirement:[{type:cycle,cycle:5}],description:"Gain the ability to Break, Place and Interact with blocks.",on_select:{functions:[{type:set.attribute,function:"plate_havoc_content:cards/hands_of_creativity/start"}],duration:-1,left:1,max:1},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
-\
 {id:"plate_havoc_content:box_of_meats",name:"Box of Meats",type:upgrade,cost:25,requirement:[{type:cycle,cycle:5}],description:"Players are given 3 Cooked Mutton at the start of every Cycle.",on_select:{functions:[{type:on.start,function:"plate_havoc_content:cards/box_of_meats/start"}],duration:-1,left:1,max:1},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
 {id:"plate_havoc_content:intense_investment",name:"Intense Investment",type:upgrade,cost:62.5,requirement:[{type:cycle,cycle:5}],description:"15% of Intensity accumulated from the current cycle is removed and the amount of Cyclathrons gained is (Accumulated *5)",on_select:{functions:[{type:on.end,function:"plate_havoc_content:cards/intense_investment/end"}],duration:-1,left:1,max:1},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
@@ -33,7 +31,7 @@ data modify storage plate_havoc:temp data set value [\
 \
 {id:"plate_havoc_content:vampiristic_lifeblood",name:"Vampiristic Lifeblood",type:upgrade,cost:75,requirement:[{type:cycle,cycle:10}],description:"Killing Mobs restores the killer's health. Increases Max Health by +10",on_select:{functions:[{type:set.attribute,function:"plate_havoc_content:cards/vampiristic_lifeblood/start"},{type:loop,function:"plate_havoc_content:cards/vampiristic_lifeblood/loop"}],duration:-1,left:1,max:1},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
-{id:"plate_havoc_content:gods_hand",name:"God's Hand",type:upgrade,cost:75,requirement:[{type:cycle,cycle:10},{type:card,needed:[{id:"plate_havoc_content:hands_of_creativity",count:1}]}],description:"Unlock full potential. Block breaking speed is doubled, Block Range is increased by +1, Interaction range with mobs is increased by +1. Blocks now drop alongside Mob Loot, allowing the ability to craft.",on_select:{functions:[{type:set.attribute,function:"plate_havoc_content:cards/gods_hand/start"}],duration:-1,left:1,max:1},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
+{id:"plate_havoc_content:gods_hand",name:"God's Hand",type:upgrade,cost:25,requirement:[{type:cycle,cycle:5}],description:"Unlock full potential. Block breaking speed is doubled, Block Range is increased by +1, Interaction range with mobs is increased by +1. Blocks now drop alongside Mob Loot, allowing the ability to craft.",on_select:{functions:[{type:set.attribute,function:"plate_havoc_content:cards/gods_hand/start"}],duration:-1,left:1,max:1},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
 {id:"plate_havoc_content:glacier_player",name:"Glacier Player",type:upgrade,cost:200,requirement:[{type:cycle,cycle:12}],description:"Devoted to a deity. Serves as a sacrifice, reviving a random player if there are no alive players.",on_select:{functions:[{type:on.start,function:"plate_havoc_content:cards/glacier_player/start"},{type:on.death,function:"plate_havoc_content:cards/glacier_player/death"},{type:loop,function:"plate_havoc_content:cards/glacier_player/loop"}],duration:-1,left:1,max:1},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
@@ -105,8 +103,6 @@ data modify storage plate_havoc:temp data set value [\
 \
 {id:"plate_havoc_content:repetition",name:"Repetition",type:curse,description:"The number of events occurring when the cycle starts is based off the cycle count, multiplied by Events per Action. Capped to 100 maximum.",on_select:{functions:[{type:on.start,function:"plate_havoc_content:cards/repetition/start"}],duration:-1,left:1,max:1},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
-{id:"plate_havoc_content:meagre_clocks",name:"Meagre Clocks",type:curse,requirement:[{type:cycle,cycle:5}],description:"Clocks take twice as long to spawn but -27.5% Cyclathron Cost and +25% Cyclathron Reward.",on_select:{functions:[{type:on.start,function:"plate_havoc_content:cards/meagre_clocks/start"}],duration:1,left:1,max:1,value:1.5},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
-\
 {id:"plate_havoc_content:putrid_stink",name:"Putrid Stink",type:curse,reward:25,requirement:[{type:cycle,cycle:5}],description:"Being near Zombies will poison you.",on_select:{functions:[{type:loop,function:"plate_havoc_content:cards/putrid_stink/loop"}],duration:-1,left:1,max:1,value:0.6},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
 {id:"plate_havoc_content:rising_undead",name:"Rising Undead",type:curse,requirement:[{type:cycle,cycle:5}],description:"Undead mobs will spawn every 30 seconds.",on_select:{functions:[{type:loop,function:"plate_havoc_content:cards/rising_undead/loop"}],duration:-1,left:1,max:1,value:0.4},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
@@ -145,8 +141,6 @@ data modify storage plate_havoc:temp data set value [\
 \
 {id:"plate_havoc_content:unstability_zones",name:"Unstability Zones",type:deeper_curse,requirement:[{type:cycle,cycle:100}],description:"Static will play and missing textures will appear around unstable zones. Having too many will cause glitches to occur.",on_select:{duration:-1,left:1,max:1},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
-{id:"plate_havoc_content:cranked",name:"Cranked",type:deeper_curse,description:"Collect Clocks to maintain the Cranked timer (30) Collectors gain Clock Spawn Time *1.5 but *1.25 for everyone else, up to 60s. Timing out kills you.",on_select:{functions:[{type:set.attribute,function:"plate_havoc_content:cards/cranked/start"},{type:loop,function:"plate_havoc_content:cards/cranked/loop"},{type:on.clock.collect,function:"plate_havoc_content:cards/cranked/extend"}],duration:-1,left:1,max:1,value:0.5},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
-\
 {id:"plate_havoc_content:white_eyes",name:"White Eyes",type:deeper_curse,requirement:[{type:cycle,cycle:1000},{type:card,needed:[{id:"plate_havoc_content:herobrine_shrine"}]}],description:"Herobrine teleports faster, stunned for less and has several minions. Herobrine now hurts.",on_select:{functions:[],duration:-1,left:1,max:1,value:0.75},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
 {id:"plate_havoc_content:burning_world",name:"THIS WORLD WILL BURN",type:deeper_curse,requirement:[{type:cycle,cycle:1500}],description:"",on_select:{functions:[],duration:-1,left:1,max:1,value:0.75},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
@@ -156,6 +150,8 @@ data modify storage plate_havoc:temp data set value [\
 \
 \
 {id:"plate_havoc_content:67",name:"Six Seven",type:curses_of_doom,reward:-6.7,requirement:[{type:cycle,cycle:676767}],description:"+6.7 to every attribute.",on_select:{functions:[{type:on.start,function:"plate_havoc_content:cards/67/start"}],duration:-67,value:67},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
+\
+{id:"plate_havoc_content:herd_leader",name:"Herd Leader",type:upgrade,description:"The blocks and items are your servants.",on_select:{functions:[{type:on.start,function:"plate_havoc_content:cards/herd_leader"}],duration:-1,left:1,max:1},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 ]
 
 data modify storage plate_havoc:cards data append from storage plate_havoc:temp data[]

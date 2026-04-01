@@ -1,9 +1,10 @@
 gamerule max_command_sequence_length 135565
 gamerule max_command_forks 135565
 gamerule max_block_modifications 2147184930
-gamerule block_drops false
-gamerule mob_drops false
+gamerule block_drops true
+gamerule mob_drops true
 gamerule spawn_mobs true
+gamerule entity_drops true
 gamerule spawn_phantoms false
 gamerule random_tick_speed 3
 gamerule advance_time false

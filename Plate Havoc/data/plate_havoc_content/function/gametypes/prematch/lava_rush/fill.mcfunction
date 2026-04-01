@@ -10,4 +10,4 @@ summon marker ~ -51 ~ {Tags:["plate_havoc.plate_spawnpoint","plate_havoc.dont_in
 summon marker ~ -51 ~ {Tags:["plate_havoc_content.misc.lava_rush.generation","plate_havoc.dont_interact"]}
 
 execute as @n[type=marker,tag=plate_havoc_content.misc.lava_rush.generation] at @s run function plate_havoc_content:gametypes/prematch/lava_rush/generate
-kill @e[type=item]
+kill @e[type=hovering_item]

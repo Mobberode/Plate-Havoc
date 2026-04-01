@@ -4,7 +4,7 @@
         "armor_stand",
         "#boat",
         "block_display",
-        "item",
+        "hovering_item",
         "item_frame",
         "glow_item_frame",
         "text_display",

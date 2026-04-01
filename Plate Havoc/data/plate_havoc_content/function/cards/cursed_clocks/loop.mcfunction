@@ -1,1 +1,1 @@
-execute in plate_havoc:arena as @e[x=0,type=item_display,tag=plate_havoc_content.misc.clock.cursed] at @s run function plate_havoc_content:cards/cursed_clocks/entity
+execute in plate_havoc:arena as @e[x=0,type=hovering_item_display,tag=plate_havoc_content.misc.clock.cursed] at @s run function plate_havoc_content:cards/cursed_clocks/entity
