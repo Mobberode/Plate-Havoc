@@ -3,7 +3,7 @@ execute unless data storage plate_havoc:data extensions.statuses[] run data modi
 function plate_havoc:extensions/manager/status with storage plate_havoc:temp temp.temp
 
 #Visual
-data modify storage plate_havoc:temp temp.snbt set value {text:"",extra:[]}
+data modify storage plate_havoc:temp temp.snbt set value {text:"",extra:[""]}
 data modify storage plate_havoc:temp temp.snbt.id set from storage plate_havoc:temp temp.temp.id
 
 #

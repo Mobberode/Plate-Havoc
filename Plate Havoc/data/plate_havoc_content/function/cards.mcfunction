@@ -125,9 +125,11 @@ data modify storage plate_havoc:temp data set value [\
 \
 {id:"plate_havoc_content:risk_of_piranhas",name:"Risk of Piranhas",type:curse,reward:125,requirement:[{type:cycle,cycle:10}],description:"Piranhas if active, bite when exposed to rain. Damage halved to compenstate.",on_select:{functions:[{type:one_time,function:"plate_havoc_content:cards/risk_or_piranhas/one_time"}],duration:-1,left:1,max:1,value:5},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
-{id:"plate_havoc_content:task_assigner",name:"Task Assigner",type:curse,reward:30,requirement:[{type:cycle,cycle:100}],description:"Assigns a task to be met before the minute deadline. Assigns every 30s if theres no tasks.",on_select:{duration:-1,left:1,max:1,value:1.25},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
+{id:"plate_havoc_content:task_assigner",name:"Task Assigner",type:curse,reward:30,requirement:[{type:cycle,cycle:150}],description:"Assigns a global task to be met before the minute deadline. Assigns every 30s if there's no tasks.",on_select:{duration:-1,left:1,max:1,value:1.25},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
 {id:"plate_havoc_content:untitled_document",name:"Untitled Document",type:curse,requirement:[{type:cycle,cycle:100}],description:"Players only keep their hotbar. Armour and Hand slots are an exception.",on_select:{duration:-1,left:1,max:1,value:0.625},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
+\
+{id:"plate_havoc_content:extra_measures",name:"Extra Measures",type:curse,requirement:[{type:cycle,cycle:10}],description:"Laser Drills upon firing, calls upon an extra, faster but weaker drill.",on_select:{duration:-1,left:1,max:1,value:1},metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 \
 \
 \

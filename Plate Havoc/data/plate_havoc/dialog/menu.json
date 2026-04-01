@@ -5,6 +5,9 @@
     "body": [{"type":"plain_message","contents":[{"text":"Roguelike Test 2.5","color":"red"},{"text":"\n[Get Console Access (If operator)]","color":"gray","click_event":{"action":"run_command","command":"/tag @s add plate_havoc.has_console_access"}}]}],
     "actions": [
         {"label":"Console","action":{"type":"show_dialog","dialog":"plate_havoc:console"}},
-        {"label":"Extensions","action":{"type":"run_command","command":"/trigger plate_havoc.t.extensions set -1"}}
+        {"label":"Extensions","action":{"type":"run_command","command":"/trigger plate_havoc.t.extensions set -1"}},
+        {"label":"Spectator","action":{"type":"run_command","command":"/trigger plate_havoc.t.spectator"}},
+        {"label":"View Current Leaderboard","action":{"type":"run_command","command":"/trigger plate_havoc.t.view_leaderboard"}},
+        {"label":"Stats","action":{"type":"run_command","command":"/trigger plate_havoc.t.stats"}}
     ]
 }

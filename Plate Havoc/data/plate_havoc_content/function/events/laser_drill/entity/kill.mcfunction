@@ -1,0 +1,2 @@
+execute if data storage plate_havoc:cards running.total[{id:"plate_havoc_content:extra_measures"}] unless entity @s[tag=plate_havoc_content.cards.extra_measures] at @r[tag=plate_havoc.survivor] summon marker run function plate_havoc_content:events/laser_drill/set_extra
+kill
