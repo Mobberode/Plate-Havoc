@@ -2,6 +2,6 @@ tellraw @a [{text:"Haemorrhage",color:gold},{text:"\nSurvive while bleeding out.
 
 scoreboard players set #BaseEventTimePercentage plate_havoc.num 90
 
-data modify storage plate_havoc:data spectator_tick_function set value ""
+data modify storage plate_havoc:data functions.tick_spectator set value ""
 
-data modify storage plate_havoc:data tick_function set value "plate_havoc_content:gametypes/match/haemorrhage/tick"
+data modify storage plate_havoc:data functions.tick set value "plate_havoc_content:gametypes/match/haemorrhage/tick"

@@ -12,7 +12,7 @@ data modify storage plate_havoc:data events set value []
 data modify storage plate_havoc:data gametypes set value []
 
 ##Modifiers
-data modify storage plate_havoc_content:modifiers data set value []
+data modify storage plate_havoc:modifiers data set value []
 
 ##Extensions
 data modify storage plate_havoc:temp temp set from storage plate_havoc:data extensions.statuses

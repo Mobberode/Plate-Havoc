@@ -6,9 +6,9 @@ scoreboard players set #BaseIntensityPercentage plate_havoc.num 25
 
 data modify storage plate_havoc:ui bar.queue[{id:time}].extra set value [{text:"Time Left: "},{score:{name:"#Left",objective:plate_havoc.timer},color:gold}]
 
-data modify storage plate_havoc:data spectator_tick_function set value "plate_havoc_content:gametypes/match/arena/tick"
+data modify storage plate_havoc:data functions.tick_spectator set value "plate_havoc_content:gametypes/match/arena/tick"
 
-data modify storage plate_havoc:data game_end_condition_function set value "plate_havoc_content:gametypes/player/arena/check"
+data modify storage plate_havoc:data functions.end_condition set value "plate_havoc_content:gametypes/player/arena/check"
 
 function plate_havoc_content:gametypes/prematch/arena/random
 

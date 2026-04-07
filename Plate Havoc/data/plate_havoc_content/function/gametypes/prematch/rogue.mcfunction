@@ -13,14 +13,16 @@ data modify storage plate_havoc:ui game.end.queue append value {id:cycle,text:""
 
 scoreboard objectives setdisplay list plate_havoc.ui.player_health
 
-data modify storage plate_havoc:data spectator_tick_function set value "plate_havoc:game/match/player/spectator/message"
+data modify storage plate_havoc:data functions.tick_spectator set value "plate_havoc:game/match/player/spectator/message"
 data modify storage plate_havoc:ui game.spawnpoint.status set value [{text:"You will respawn next Cycle. Time till next Cycle: ",color:gray},{score:{name:"#Visual.Left.Second",objective:plate_havoc.timer},color:gold},".",{score:{name:"#Visual.Left.Tick",objective:plate_havoc.timer},color:gold}]
 
-data modify storage plate_havoc:data game_end_condition_function set value "plate_havoc_content:gametypes/player/rogue/check"
+data modify storage plate_havoc:data functions.end_condition set value "plate_havoc_content:gametypes/player/rogue/check"
 
-data modify storage plate_havoc:data tick_function set value "plate_havoc_content:gametypes/match/rogue/tick"
+data modify storage plate_havoc:data functions.tick set value "plate_havoc_content:gametypes/match/rogue/tick"
 
-data modify storage plate_havoc:data last_alive_function set value "plate_havoc_content:gametypes/match/rogue/last_one"
+data modify storage plate_havoc:data functions.last_stand set value "plate_havoc_content:gametypes/match/rogue/last_one"
+
+data modify storage plate_havoc:data functions.leaderboard.sort_type set value "plate_havoc_content:leaderboard/check/cycle"
 
 data modify storage plate_havoc:data default_gamemode set value "survival"
 difficulty hard
@@ -30,7 +32,6 @@ data modify storage plate_havoc:data on_game_start append value "plate_havoc:gam
 
 data modify storage plate_havoc:data on_game_start append value "plate_havoc_content:gametypes/match/rogue/round_start"
 
-data modify storage plate_havoc:leaderboard sort_function set value "plate_havoc_content:leaderboard/check/cycle"
 data modify storage plate_havoc:leaderboard data_functions prepend value {data:"plate_havoc_content:leaderboard/data/cycle"}
 data modify storage plate_havoc:leaderboard data_functions append value {data:"plate_havoc_content:leaderboard/data/cards"}
 

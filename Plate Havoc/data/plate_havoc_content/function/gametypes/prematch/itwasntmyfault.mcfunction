@@ -6,4 +6,4 @@ data modify storage plate_havoc:ui bar.queue[{id:players}] set value {id:players
 scoreboard players set #BaseEventTimePercentage plate_havoc.num 100
 scoreboard players set #BaseIntensityPercentage plate_havoc.num 100
 
-data modify storage plate_havoc:data spectator_tick_function set value ""
+data modify storage plate_havoc:data functions.tick_spectator set value ""

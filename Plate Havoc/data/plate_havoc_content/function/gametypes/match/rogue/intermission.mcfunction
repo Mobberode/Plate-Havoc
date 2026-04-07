@@ -1,3 +1,5 @@
+function plate_havoc_content:gametypes/match/rogue/ambience/chance
+
 execute as @a at @s run function plate_havoc_content:gametypes/match/rogue/intermission_player
 
 function plate_havoc:game/misc/cards/vote/loop

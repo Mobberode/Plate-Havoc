@@ -1,1 +1,1 @@
-function plate_havoc:game/lobby/arena/macro with storage plate_havoc:data
+function plate_havoc:game/lobby/arena/macro with storage plate_havoc:data functions

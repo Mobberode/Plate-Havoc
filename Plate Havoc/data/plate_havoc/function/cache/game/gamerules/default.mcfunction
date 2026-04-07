@@ -3,6 +3,7 @@ gamerule max_command_forks 135565
 gamerule max_block_modifications 2147184930
 gamerule block_drops false
 gamerule mob_drops false
+gamerule entity_drops false
 gamerule spawn_mobs true
 gamerule spawn_phantoms false
 gamerule random_tick_speed 3

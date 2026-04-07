@@ -8,11 +8,7 @@ data modify storage plate_havoc:ui intermission.awaiting_player set value {text:
 data modify storage plate_havoc:ui game.spawnpoint.status set value [{text:""},{text:"You can respawn back! Spawnpoint Energy: ",color:aqua},{score:{name:"@s",objective:plate_havoc.spawnpoint_energy},color:green},{text:"/"},{score:{name:"#BaseCapValue",objective:plate_havoc.spawnpoint_energy},color:gold}]
 
 ##Bar UI
-data remove storage plate_havoc:ui bar
-
-data modify storage plate_havoc:ui bar.visual set value {active:[],inactive:[],visible:[]}
-
-data modify storage plate_havoc:ui bar.queue set value []
+data modify storage plate_havoc:ui bar set value {visual:{active:[],inactive:[],visible:[]},queue:[]}
 
 data modify storage plate_havoc:ui bar.queue append value {id:intensity,text:"",extra:[{text:"Intensity: "},{storage:"plate_havoc:ui",nbt:intensity,color:red,interpret:true}]}
 
@@ -29,7 +25,7 @@ data remove storage plate_havoc:ui game
 data modify storage plate_havoc:ui event_messages set value []
 
 #End
-data modify storage plate_havoc:ui game.end.visual set value [{text:""}]
+data modify storage plate_havoc:ui game.end.visual set value [""]
 
 data modify storage plate_havoc:ui game.end.queue set value []
 

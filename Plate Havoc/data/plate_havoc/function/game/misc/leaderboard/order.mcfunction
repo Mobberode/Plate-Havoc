@@ -1,5 +1,5 @@
 #Get
-function plate_havoc:game/misc/leaderboard/check with storage plate_havoc:leaderboard
+function plate_havoc:game/misc/leaderboard/check with storage plate_havoc:data functions.leaderboard
 
 #Condition
 #tellraw @a[scores={plate_havoc.debug=1..}] [{score:{name:"#LB",objective:plate_havoc.num}}," ",{score:{name:"#LBC",objective:plate_havoc.num}}," a"]

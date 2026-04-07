@@ -2,7 +2,9 @@
   "attributes": {
     "visual/sky_color": 3026478,
     "visual/fog_color": 0,
-    "visual/cloud_height": 768
+    "visual/cloud_height": 768,
+    "audio/background_music": {},
+    "audio/music_volume": 0
   },
   "carvers": [],
   "downfall": 0.5,

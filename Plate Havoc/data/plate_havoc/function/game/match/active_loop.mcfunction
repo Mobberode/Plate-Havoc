@@ -1,7 +1,7 @@
 scoreboard players add #Runtick plate_havoc.num 1
 
 ##Game Check
-function plate_havoc:game/match/player/mode_check with storage plate_havoc:data
+function plate_havoc:game/match/end_check with storage plate_havoc:data functions
 
 ##Time
 execute store result bossbar plate_havoc:ui value run scoreboard players remove #Value plate_havoc.timer 1
@@ -11,9 +11,9 @@ execute as @a[tag=!plate_havoc.spectator] at @s run function plate_havoc:game/ma
 
 ##Data-Driven Functions
 #Action
-execute if score #Value plate_havoc.timer matches ..0 run function plate_havoc:game/match/macro with storage plate_havoc:data
+execute if score #Value plate_havoc.timer matches ..0 run function plate_havoc:game/match/macro with storage plate_havoc:data functions
 #Tick
-function plate_havoc:game/match/tick with storage plate_havoc:data
+function plate_havoc:game/match/tick with storage plate_havoc:data functions
 
 ##Cards
 function plate_havoc:game/misc/cards/running/types/run {type:loop}

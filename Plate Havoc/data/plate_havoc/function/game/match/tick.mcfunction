@@ -1,1 +1,1 @@
-$function $(tick_function)
+$function $(tick)

@@ -16,4 +16,4 @@ data modify storage plate_havoc_content:temp data set value [\
 {id:relentless,description:["",{text:"RELENTLESS",color:red},"\nThe Void doesnt like those who stick around longer than they should've."],function:"plate_havoc_content:modifiers/relentless/start",metadata:{author:"Mobberode",pack:"Plate Havoc"}},\
 ]
 
-data modify storage plate_havoc_content:modifiers data append from storage plate_havoc_content:temp data[]
+data modify storage plate_havoc:modifiers data append from storage plate_havoc_content:temp data[]

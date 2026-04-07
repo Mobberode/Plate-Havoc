@@ -1,1 +1,1 @@
-$function $(sort_function)
+$function $(sort_type)

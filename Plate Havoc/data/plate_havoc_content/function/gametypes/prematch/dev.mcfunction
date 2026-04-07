@@ -15,5 +15,5 @@ scoreboard players set #BaseWorldTime plate_havoc.num 12625
 
 scoreboard players set #Modifiers.Enabled plate_havoc.num 0
 
-data modify storage plate_havoc:data on_event_function set value ""
-data modify storage plate_havoc:data game_end_condition_function set value ""
+data modify storage plate_havoc:data functions.on_action set value ""
+data modify storage plate_havoc:data functions.end_condition set value ""

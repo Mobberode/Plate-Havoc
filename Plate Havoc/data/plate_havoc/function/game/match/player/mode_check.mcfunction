@@ -1,1 +1,0 @@
-$function $(game_end_condition_function)

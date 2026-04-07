@@ -1,4 +1,4 @@
-scoreboard players operation #Left plate_havoc.timer -= #Remove plate_havoc.timer
+scoreboard players remove #Left plate_havoc.timer 1
 
 scoreboard players operation #Visual.Left.Second plate_havoc.timer = #Left plate_havoc.timer
 scoreboard players operation #Visual.Left.Second plate_havoc.timer /= #20 plate_havoc.num

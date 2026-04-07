@@ -43,9 +43,6 @@ scoreboard players set #BaseGainPercentage plate_havoc.spawnpoint_energy 100
 ##AllowBlockInteraction
 scoreboard players set #AllowBlockInteraction plate_havoc.num 0
 
-##Timer
-scoreboard players set #Remove plate_havoc.timer 1
-
 ##Modifiers
 scoreboard players set #Modifiers.Enabled plate_havoc.num 1
 #Put below to 20
@@ -66,19 +63,21 @@ scoreboard players set #BaseVoidDamage plate_havoc.num 0
 
 data modify storage plate_havoc:data default_gamemode set value "adventure"
 
-data modify storage plate_havoc:data tick_function set value ""
-data modify storage plate_havoc:data set_plate_function set value "plate_havoc:game/lobby/arena/fill"
-data modify storage plate_havoc:data on_event_function set value "plate_havoc:game/match/action"
-data modify storage plate_havoc:data spectator_tick_function set value "plate_havoc:game/match/player/spectator/energy"
-data modify storage plate_havoc:data game_end_condition_function set value "plate_havoc_content:gametypes/player/endurance/lose_check"
-data modify storage plate_havoc:data last_alive_function set value ""
+data modify storage plate_havoc:data functions set value {}
+
+data modify storage plate_havoc:data functions.tick set value ""
+data modify storage plate_havoc:data functions.set_plate set value "plate_havoc:game/lobby/arena/fill"
+data modify storage plate_havoc:data functions.on_action set value "plate_havoc:game/match/action"
+data modify storage plate_havoc:data functions.tick_spectator set value "plate_havoc:game/match/player/spectator/energy"
+data modify storage plate_havoc:data functions.end_condition set value "plate_havoc_content:gametypes/player/endurance/lose_check"
+data modify storage plate_havoc:data functions.last_stand set value ""
 
 #Leaderboard
-data modify storage plate_havoc:leaderboard sort_function set value "plate_havoc_content:leaderboard/check/intensity"
+data modify storage plate_havoc:data functions.leaderboard.sort_type set value "plate_havoc_content:leaderboard/check/intensity"
 data modify storage plate_havoc:leaderboard data_functions set value [{data:"plate_havoc_content:leaderboard/data/time"},{data:"plate_havoc_content:leaderboard/data/intensity"},{data:"plate_havoc_content:leaderboard/data/player_credit"},{data:"plate_havoc_content:leaderboard/data/seed"},{data:"plate_havoc_content:leaderboard/data/extensions"}]
 
-data modify storage plate_havoc:data leaderboard_credit_loop set value "plate_havoc:game/misc/leaderboard/credit/type/time_elasped/loop"
-data modify storage plate_havoc:data leaderboard_credit_start set value "plate_havoc:game/misc/leaderboard/credit/type/time_elasped/start"
+data modify storage plate_havoc:data functions.leaderboard.credit_loop set value "plate_havoc:game/misc/leaderboard/credit/type/time_elasped/loop"
+data modify storage plate_havoc:data functions.leaderboard.credit_start set value "plate_havoc:game/misc/leaderboard/credit/type/time_elasped/start"
 data modify storage plate_havoc:leaderboard player_credit set value []
 
 ##Holds all functions that will be ran when game starts

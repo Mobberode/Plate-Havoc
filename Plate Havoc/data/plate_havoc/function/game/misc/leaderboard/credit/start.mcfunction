@@ -5,4 +5,4 @@ function plate_havoc:game/misc/leaderboard/credit/check with storage plate_havoc
 execute if score #Keep plate_havoc.leaderboard.has_credit matches 1 run return fail
 #Else
 scoreboard players set @s plate_havoc.leaderboard.has_credit 0
-$function $(leaderboard_credit_start)
+$function $(credit_start)

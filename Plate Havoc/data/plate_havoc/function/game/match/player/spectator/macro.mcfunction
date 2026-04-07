@@ -1,1 +1,1 @@
-$function $(spectator_tick_function)
+$function $(tick_spectator)

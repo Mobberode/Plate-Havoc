@@ -14,6 +14,9 @@ attribute @s armor base reset
 attribute @s armor_toughness base reset
 attribute @s fall_damage_multiplier base reset
 attribute @s gravity base reset
+attribute @s air_drag_modifier base set 0.6
+attribute @s friction_modifier base reset
+attribute @s bounciness base reset
 
 execute if score #AllowBlockInteraction plate_havoc.num matches 1.. run function plate_havoc:game/misc/attributes/allow_block_interaction
 

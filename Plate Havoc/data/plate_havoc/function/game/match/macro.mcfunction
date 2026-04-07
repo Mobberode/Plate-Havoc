@@ -1,1 +1,1 @@
-$function $(on_event_function)
+$function $(on_action)

@@ -13,6 +13,6 @@ scoreboard players set #BaseIntensityPercentage plate_havoc.num 125
 
 data modify storage plate_havoc:data on_game_start append value "plate_havoc_content:gametypes/prematch/teams/run"
 
-data modify storage plate_havoc:data spectator_tick_function set value ""
+data modify storage plate_havoc:data functions.tick_spectator set value ""
 
-data modify storage plate_havoc:data game_end_condition_function set value "plate_havoc_content:gametypes/player/teams/check"
+data modify storage plate_havoc:data functions.end_condition set value "plate_havoc_content:gametypes/player/teams/check"

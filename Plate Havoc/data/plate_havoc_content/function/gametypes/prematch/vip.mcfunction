@@ -7,4 +7,4 @@ tag @r[tag=!plate_havoc.spectator] add plate_havoc.vip
 
 scoreboard players set #BaseGainValue plate_havoc.spawnpoint_energy 50
 
-data modify storage plate_havoc:data game_end_condition_function set value "plate_havoc_content:gametypes/player/vip/check"
+data modify storage plate_havoc:data functions.end_condition set value "plate_havoc_content:gametypes/player/vip/check"

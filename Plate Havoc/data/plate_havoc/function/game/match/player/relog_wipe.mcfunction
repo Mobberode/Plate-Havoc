@@ -4,4 +4,4 @@ scoreboard players reset @s plate_havoc.id
 ##Remove attribute modifiers
 kill
 
-function plate_havoc:game/misc/leaderboard/credit/start with storage plate_havoc:data
+function plate_havoc:game/misc/leaderboard/credit/start with storage plate_havoc:data functions.leaderboard

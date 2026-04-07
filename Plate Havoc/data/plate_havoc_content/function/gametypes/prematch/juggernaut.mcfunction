@@ -4,6 +4,6 @@ data modify storage plate_havoc:ui bar.queue[{id:players}].extra set value [{tex
 
 data modify storage plate_havoc:data on_game_start append value "plate_havoc_content:gametypes/prematch/juggernaut/run"
 
-data modify storage plate_havoc:data spectator_tick_function set value ""
+data modify storage plate_havoc:data functions.tick_spectator set value ""
 
-data modify storage plate_havoc:data game_end_condition_function set value "plate_havoc_content:gametypes/player/juggernaut/check"
+data modify storage plate_havoc:data functions.end_condition set value "plate_havoc_content:gametypes/player/juggernaut/check"

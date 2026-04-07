@@ -1,1 +1,1 @@
-$function $(leaderboard_credit_loop)
+$function $(credit_loop)

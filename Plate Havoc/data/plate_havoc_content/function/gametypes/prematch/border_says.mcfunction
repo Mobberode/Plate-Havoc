@@ -13,6 +13,6 @@ scoreboard players set #FailedBorder plate_havoc.num 1
 scoreboard players set #BorderDuration plate_havoc.num 0
 scoreboard players set #BorderType plate_havoc.num -1
 
-data modify storage plate_havoc:data tick_function set value "plate_havoc_content:gametypes/match/border_says/tick"
-data modify storage plate_havoc:data on_event_function set value "plate_havoc_content:gametypes/match/border_says/action"
-data modify storage plate_havoc:data game_end_condition_function set value "plate_havoc_content:gametypes/player/border_says/check"
+data modify storage plate_havoc:data functions.tick set value "plate_havoc_content:gametypes/match/border_says/tick"
+data modify storage plate_havoc:data functions.on_action set value "plate_havoc_content:gametypes/match/border_says/action"
+data modify storage plate_havoc:data functions.end_condition set value "plate_havoc_content:gametypes/player/border_says/check"
