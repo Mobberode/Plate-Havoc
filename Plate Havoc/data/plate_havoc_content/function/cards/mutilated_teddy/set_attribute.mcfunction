@@ -1,0 +1,1 @@
+attribute @s max_health modifier remove plate_havoc_content:card.mutilated_teddy

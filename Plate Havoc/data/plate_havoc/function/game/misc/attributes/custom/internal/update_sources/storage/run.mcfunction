@@ -1,0 +1,1 @@
+$data modify storage $(value) set from storage plate_havoc:custom attribute.output

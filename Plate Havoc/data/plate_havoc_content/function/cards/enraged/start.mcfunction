@@ -4,7 +4,7 @@ data remove storage plate_havoc:custom attributes[{id:"plate_havoc:cyclathron_yi
 data remove storage plate_havoc:cards active_data.shared.temp
 scoreboard players set #Temp plate_havoc.temp 0
 scoreboard players operation #Temp2 plate_havoc.temp = #Value plate_havoc.round
-scoreboard players operation #Temp2 plate_havoc.temp /= #5 plate_havoc.num
+scoreboard players operation #Temp2 plate_havoc.temp /= #10 plate_havoc.num
 execute if score #Temp2 plate_havoc.temp matches ..0 run scoreboard players set #Temp2 plate_havoc.temp 1
 
 data modify storage plate_havoc:temp temp set value []

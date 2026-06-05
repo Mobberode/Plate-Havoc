@@ -1,0 +1,1 @@
+execute in plate_havoc:arena as @e[x=0,tag=plate_havoc_content.event.lava_pillar.eclipsed,type=item] run function plate_havoc_content:events/lava_pillar/eclipsed/tick

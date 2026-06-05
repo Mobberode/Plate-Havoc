@@ -1,0 +1,1 @@
+$execute store result score #Temp4 plate_havoc.temp run data get storage plate_havoc:temp temp.reward $(reward_attribute_scale)

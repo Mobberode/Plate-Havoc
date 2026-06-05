@@ -1,0 +1,1 @@
+execute if data storage plate_havoc:ui temp.process{type:remove} run function plate_havoc:game/misc/ui/bar_visuals/player/process/snbt/type/remove with storage plate_havoc:ui temp.process

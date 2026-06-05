@@ -1,5 +1,5 @@
 #Get base value of attribute
-execute store result score #Temp4 plate_havoc.num run data get storage plate_havoc:custom attribute.base 1000
+execute store result score #Temp4 plate_havoc.num run data get storage plate_havoc:custom attribute.values.base 1000
 
 #Base scale = 0
 scoreboard players set #Temp2 plate_havoc.num 0

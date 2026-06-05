@@ -1,3 +1,0 @@
-function plate_havoc_content:events/motion_sniper/player/set_damage with storage plate_havoc:events active_data.plate_havoc_content.motion_sniper
-
-function plate_havoc_content:events/motion_sniper/player/damage with storage plate_havoc:data

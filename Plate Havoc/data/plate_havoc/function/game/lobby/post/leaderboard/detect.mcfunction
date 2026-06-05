@@ -1,2 +1,2 @@
-execute if data storage plate_havoc:leaderboard {status:true} run return run tellraw @a {text:"Post-Game Results will be saved to the Leaderboard!",color:aqua}
-tellraw @a {text:"Post-Game Results wont be saved to the Leaderboard!",color:red}
+execute if data storage plate_havoc:leaderboard {status:true} run return run tellraw @a {text:"Results can be saved to Leaderboard!",color:aqua}
+tellraw @a {text:"Results cant be saved to Leaderboard!",color:red}

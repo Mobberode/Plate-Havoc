@@ -1,0 +1,1 @@
+$attribute @s max_health modifier add plate_havoc_content:card.mutilated_teddy $(temp) add_value

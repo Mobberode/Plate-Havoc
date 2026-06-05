@@ -1,1 +1,0 @@
-$execute store result storage plate_havoc:temp damage double $(temp) run attribute @s max_health get

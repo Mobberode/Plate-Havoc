@@ -1,1 +1,0 @@
-$damage @s $(damage) plate_havoc:ignore

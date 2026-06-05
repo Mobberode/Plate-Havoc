@@ -1,1 +1,0 @@
-$data modify storage plate_havoc:ui bar.visual.visible[{id:$(id)}].extra set from storage plate_havoc:ui bar.visual.active[{id:$(id)}].extra

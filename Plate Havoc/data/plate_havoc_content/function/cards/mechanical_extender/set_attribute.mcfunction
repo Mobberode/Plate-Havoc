@@ -1,4 +1,4 @@
-#Increase the range that players can interact with blocks and entities by (0.5 *Level)
+#Increase the range that players can interact with blocks and entities by (0.5 *Stack)
 ##Set to 50
 scoreboard players set #Temp plate_havoc.card 50
 ##Card level

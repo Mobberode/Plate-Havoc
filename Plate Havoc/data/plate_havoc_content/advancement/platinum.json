@@ -1,0 +1,15 @@
+{
+  "parent": "plate_havoc:trophies/root",
+  "display": {
+    "frame": "goal",
+    "title":"Platinum Trophy",
+    "description":"100% Base Game.",
+    "icon": "diamond_block"
+  },
+  "criteria": {
+    "req":{
+        "trigger": "tick",
+        "conditions": {"player":{"type_specific/player":{"advancements":{"plate_havoc_content:wasnt_enough":true,"plate_havoc_content:charged_charred":true}}}}
+    }
+  }
+}

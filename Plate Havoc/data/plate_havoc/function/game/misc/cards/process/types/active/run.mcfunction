@@ -5,7 +5,7 @@ scoreboard players set #Card.Can_Vote plate_havoc.num 1
 #If no active types, skip to prevent softlock
 execute unless data storage plate_havoc:cards active_types[-1] run return run function plate_havoc:game/misc/cards/process/types/active/fallback
 #Else
-data modify storage plate_havoc:cards active_type set from storage plate_havoc:cards active_types[0]
+data modify storage plate_havoc:cards active_type set from storage plate_havoc:cards active_types[-1]
 
 data modify storage plate_havoc:cards card_type set from storage plate_havoc:cards active_type.id
 
@@ -24,4 +24,4 @@ function plate_havoc:game/misc/cards/process/attributes/slots/start
 ##Attribute - After Pause (If not ran by a custom function)
 function plate_havoc:game/misc/cards/process/attributes/after_pause/start
 
-data remove storage plate_havoc:cards active_types[0]
+data remove storage plate_havoc:cards active_types[-1]

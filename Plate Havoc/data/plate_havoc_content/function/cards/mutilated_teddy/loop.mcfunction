@@ -1,0 +1,1 @@
+execute as @a[tag=plate_havoc.survivor,advancements={plate_havoc_content:cards/mutilated_teddy=true}] run function plate_havoc_content:cards/mutilated_teddy/run

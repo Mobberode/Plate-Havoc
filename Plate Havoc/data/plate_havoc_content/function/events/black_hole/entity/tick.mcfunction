@@ -8,7 +8,6 @@ data modify entity @s transformation.scale[] set from storage plate_havoc:events
 
 #Move
 execute facing entity @n[x=0,tag=!plate_havoc.dont_interact,tag=!plate_havoc.spectator,gamemode=!spectator] feet run tp ^ ^ ^.0675
-execute summon marker run function plate_havoc:game/misc/get_position
 
 #Size and Radius
 execute store result storage plate_havoc:events active_data.plate_havoc_content.black_hole.size double 0.005 run scoreboard players get #BlackHole.Entity_Size plate_havoc.event
@@ -19,4 +18,4 @@ function plate_havoc_content:events/black_hole/entity/action with storage plate_
 execute if score #BlackHole.Destroyed plate_havoc.event matches 1.. run function plate_havoc_content:events/black_hole/entity/grow
 
 playsound block.beacon.ambient ambient @a ~ ~ ~ 2.5 0.5
-function plate_havoc_content:events/black_hole/entity/visual with storage plate_havoc:data
+function plate_havoc_content:events/black_hole/entity/visual with entity @s

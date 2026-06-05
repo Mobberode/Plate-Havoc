@@ -1,5 +1,3 @@
-execute on passengers if data entity @s attack run return run function plate_havoc_content:events/nuke/entity/failure/defuse
-
 scoreboard players add @s plate_havoc.timer 1
 #Current time < Saved time
 execute if score @s plate_havoc.timer > @s plate_havoc.temp run return run function plate_havoc_content:events/nuke/entity/explode with entity @s data

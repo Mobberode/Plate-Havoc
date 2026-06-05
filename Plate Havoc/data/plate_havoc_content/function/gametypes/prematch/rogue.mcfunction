@@ -2,14 +2,14 @@ tellraw @a [{text:"Void Endurance",color:gold},{text:"\nThe intended Endurance e
 
 scoreboard players set #Modifiers.Enabled plate_havoc.num 0
 
-data modify storage plate_havoc:ui bar.queue[{id:time}].extra set value [{text:"Time: "},{score:{name:"#Visual.Left.Second",objective:plate_havoc.timer},color:gold},".",{score:{name:"#Visual.Left.Tick",objective:plate_havoc.timer},color:gold}]
-data modify storage plate_havoc:ui bar.queue[{id:players}].extra set value [{score:{name:"#Current_Total",objective:plate_havoc.players},color:green},{text:"/"},{score:{name:"#Match",objective:plate_havoc.players},color:green}]
+data modify storage plate_havoc:ui bar.global.snbt[{id:time}].extra set value [{meta:text,text:"Time: "},{score:{name:"#Visual.Left.Second",objective:plate_havoc.timer},color:gold},".",{score:{name:"#Visual.Left.Tick",objective:plate_havoc.timer},color:gold}]
+data modify storage plate_havoc:ui bar.global.snbt[{id:players}].extra set value [{score:{name:"#Current",objective:plate_havoc.players},color:green},"/",{score:{name:"#Match",objective:plate_havoc.players},color:green}]
 
-data modify storage plate_havoc:ui bar.queue insert 2 value {id:cyclathron,text:"",extra:[{text:"Cyclathrons: "},{storage:"plate_havoc:ui",nbt:cyclathron,color:aqua,interpret:true}]}
-data modify storage plate_havoc:ui bar.queue insert 3 value {id:cycle,text:"",extra:[{text:"Cycle: "},{score:{name:"#Value",objective:plate_havoc.round},color:aqua}]}
+data modify storage plate_havoc:ui bar.global.snbt insert 2 value {id:cyclathron,text:"",extra:[{meta:text,text:"Cyclathrons: "},{storage:"plate_havoc:ui",nbt:cyclathron,color:aqua,interpret:true}]}
+data modify storage plate_havoc:ui bar.global.snbt insert 3 value {id:cycle,text:"",extra:[{meta:text,text:"Cycle: "},{score:{name:"#Value",objective:plate_havoc.round},color:aqua}]}
 
-data modify storage plate_havoc:ui game.end.queue insert 1 value {id:cycle,text:"",extra:[{text:"Cycle: ",color:gray},{score:{name:"#Value",objective:plate_havoc.round},color:aqua}]}
-data modify storage plate_havoc:ui game.end.queue append value {id:cycle,text:"",extra:[{text:"Cards: ",color:gray},{storage:"plate_havoc:ui",nbt:card_list,interpret:true}]}
+data modify storage plate_havoc:ui game.end.input insert 1 value {id:cycle,text:"",extra:[{text:"Cycle: ",color:gray},{score:{name:"#Value",objective:plate_havoc.round},color:aqua}]}
+data modify storage plate_havoc:ui game.end.input append value {id:cycle,text:"",extra:[{text:"Cards: ",color:gray},{storage:"plate_havoc:ui",nbt:card_list,interpret:true}]}
 
 scoreboard objectives setdisplay list plate_havoc.ui.player_health
 
@@ -38,6 +38,7 @@ data modify storage plate_havoc:leaderboard data_functions append value {data:"p
 ### Game contents
 
 scoreboard players set #Value plate_havoc.round 0
+scoreboard players reset * plate_havoc_content.stat.clocks
 
 data modify storage plate_havoc:cards locked set from storage plate_havoc:cards data
 data modify storage plate_havoc:cards pool set value []

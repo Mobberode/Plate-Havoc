@@ -4,8 +4,17 @@
 execute unless data storage plate_havoc:custom attribute run return fail
 #Else
 data modify storage plate_havoc:custom attribute.refresh set value false
-execute store result score #Temp plate_havoc.num run data get storage plate_havoc:custom attribute.base 1000
-function plate_havoc:game/misc/attributes/custom/internal/modifiers/check
+execute store result score #Temp plate_havoc.num run data get storage plate_havoc:custom attribute.values.base 1000
+
+##Modifiers
+execute if data storage plate_havoc:custom attribute.modifiers[-1] run function plate_havoc:game/misc/attributes/custom/internal/modifiers/process
+
+##Min and Max
+execute if data storage plate_havoc:custom attribute.values.min run function plate_havoc:game/misc/attributes/custom/min
+execute if data storage plate_havoc:custom attribute.values.max run function plate_havoc:game/misc/attributes/custom/max
+
+##Output
+execute store result storage plate_havoc:custom attribute.output float 0.001 run scoreboard players get #Temp plate_havoc.num
 
 ##Update sources
 function plate_havoc:game/misc/attributes/custom/internal/update_sources/init

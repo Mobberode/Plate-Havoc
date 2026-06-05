@@ -1,0 +1,2 @@
+scoreboard players add @s plate_havoc.timer 1
+execute unless score @s plate_havoc.timer < #PHC.Proximity_Mine.Time.Arm plate_havoc.temp run function plate_havoc_content:events/proximity_mine/entity/to_waiting

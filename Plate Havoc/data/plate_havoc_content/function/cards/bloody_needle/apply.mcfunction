@@ -1,0 +1,2 @@
+$attribute @s max_health modifier add plate_havoc_content:card.bloody_needle $(health_boost) add_multiplied_total
+$attribute @s attack_damage modifier add plate_havoc_content:card.bloody_needle $(damage_boost) add_multiplied_total

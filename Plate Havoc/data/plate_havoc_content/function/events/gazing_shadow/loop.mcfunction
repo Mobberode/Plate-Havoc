@@ -1,0 +1,1 @@
+execute in plate_havoc:arena as @e[limit=1,tag=plate_havoc_content.event.gazing_shadow,type=item_display] at @s run function plate_havoc_content:events/gazing_shadow/entity/tick

@@ -37,6 +37,8 @@ scoreboard objectives add plate_havoc.plr.stats.playtime dummy
 scoreboard objectives add plate_havoc.plr.stats.wins dummy
 scoreboard objectives add plate_havoc.plr.stats.taken_damage custom:damage_taken
 
+scoreboard objectives add plate_havoc.stat dummy
+
 scoreboard objectives add plate_havoc.t.stats trigger
 scoreboard objectives add plate_havoc.t.spectator trigger
 scoreboard objectives add plate_havoc.t.credits trigger
@@ -71,6 +73,7 @@ forceload add 0 0
 kill 00000000-0000-0005-0000-0001000007e9
 
 function gu:zzz/load
+function data_manager:load
 
 function plate_havoc:game/triggers/loop
 function plate_havoc:game/init

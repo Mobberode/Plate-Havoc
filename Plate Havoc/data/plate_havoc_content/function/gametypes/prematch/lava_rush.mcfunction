@@ -1,10 +1,10 @@
 tellraw @a [{text:"Lava Rush",color:red},{text:"\nGather, Build, Kill, Survive. ",color:"gray"}]
 
-data remove storage plate_havoc:ui bar.queue[{id:intensity}]
-data modify storage plate_havoc:ui bar.queue prepend value {id:lava_height,text:"",extra:[{text:"Lava Height: "},{score:{name:"#LavaHeight",objective:plate_havoc.num},color:red}]}
+data remove storage plate_havoc:ui bar.global.snbt[{id:intensity}]
+data modify storage plate_havoc:ui bar.global.snbt prepend value {id:lava_height,text:"",extra:[{meta:text,text:"Lava Height: "},{meta:value,score:{name:"#LavaHeight",objective:plate_havoc.num},color:red}]}
 
-data modify storage plate_havoc:ui game.end.queue insert 1 value {id:lava_height,text:"",extra:[{text:"Lava Height: ",color:gray},{score:{name:"#LavaHeight",objective:plate_havoc.num},color:red}]}
-data remove storage plate_havoc:ui game.end.queue[{id:intensity}]
+data modify storage plate_havoc:ui game.end.input insert 1 value {id:lava_height,text:"",extra:[{text:"Lava Height: ",color:gray},{score:{name:"#LavaHeight",objective:plate_havoc.num},color:red}]}
+data remove storage plate_havoc:ui game.end.input[{id:intensity}]
 
 data modify storage plate_havoc:data functions.tick_spectator set value ""
 

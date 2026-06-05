@@ -1,0 +1,1 @@
+attribute @s jump_strength modifier add plate_havoc_content:card.locked_spacebar -0.999 add_multiplied_total

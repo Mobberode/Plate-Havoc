@@ -1,0 +1,1 @@
+execute in plate_havoc:arena as @e[x=0,tag=plate_havoc_content.event.proximity_mine,type=item_display] positioned as @s run function plate_havoc_content:events/proximity_mine/entity/tick

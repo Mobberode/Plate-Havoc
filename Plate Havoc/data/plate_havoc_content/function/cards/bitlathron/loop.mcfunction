@@ -1,0 +1,1 @@
+function plate_havoc_content:gametypes/match/rogue/time_cube/calc_cyclathron

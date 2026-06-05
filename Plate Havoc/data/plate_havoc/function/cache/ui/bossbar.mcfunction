@@ -1,7 +1,7 @@
 ##UI
 bossbar remove plate_havoc:ui
-bossbar add plate_havoc:ui {text:""}
-bossbar set plate_havoc:ui name [{text:"Awaiting Update"}]
+#bossbar add plate_havoc:ui {text:""}
+bossbar set plate_havoc:ui name {storage:"plate_havoc:ui",nbt:bar.output,interpret:true}
 bossbar set plate_havoc:ui color red
 bossbar set plate_havoc:ui style progress
 bossbar set plate_havoc:ui visible true

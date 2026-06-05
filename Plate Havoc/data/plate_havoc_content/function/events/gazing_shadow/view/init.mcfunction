@@ -1,0 +1,2 @@
+function plate_havoc_content:events/gazing_shadow/view/loop
+kill

@@ -1,0 +1,2 @@
+execute in plate_havoc:arena as @e[x=0,tag=!plate_havoc_content.card.short_fuses,type=tnt] run function plate_havoc_content:cards/short_fuses/tnt with storage plate_havoc:cards active_data.plate_havoc_content.short_fuses
+execute in plate_havoc:arena as @e[x=0,tag=!plate_havoc_content.card.short_fuses,type=creeper] run function plate_havoc_content:cards/short_fuses/creeper with storage plate_havoc:cards active_data.plate_havoc_content.short_fuses

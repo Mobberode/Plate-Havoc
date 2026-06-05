@@ -1,3 +1,6 @@
+scoreboard players reset * plate_havoc.num
+scoreboard players reset * plate_havoc.players
+
 scoreboard players set #-1 plate_havoc.num -1
 scoreboard players set #2 plate_havoc.num 2
 scoreboard players set #3 plate_havoc.num 3
@@ -28,7 +31,6 @@ scoreboard players set #1000000 plate_havoc.num 100000
 scoreboard players set #PRNG.Multiply plate_havoc.num 1562730893
 scoreboard players set #PRNG.Add plate_havoc.num 67
 scoreboard players set #EventTotalRunCount plate_havoc.num 0
-scoreboard players set #EventRepeats plate_havoc.num 1
 scoreboard players set #CardTotalSelects plate_havoc.num 0
 
 scoreboard players set #Runtick plate_havoc.num 0
@@ -74,7 +76,7 @@ data modify storage plate_havoc:data functions.last_stand set value ""
 
 #Leaderboard
 data modify storage plate_havoc:data functions.leaderboard.sort_type set value "plate_havoc_content:leaderboard/check/intensity"
-data modify storage plate_havoc:leaderboard data_functions set value [{data:"plate_havoc_content:leaderboard/data/time"},{data:"plate_havoc_content:leaderboard/data/intensity"},{data:"plate_havoc_content:leaderboard/data/player_credit"},{data:"plate_havoc_content:leaderboard/data/seed"},{data:"plate_havoc_content:leaderboard/data/extensions"}]
+data modify storage plate_havoc:leaderboard data_functions set value [{data:"plate_havoc_content:leaderboard/data/status"},{data:"plate_havoc_content:leaderboard/data/time"},{data:"plate_havoc_content:leaderboard/data/intensity"},{data:"plate_havoc_content:leaderboard/data/player_credit"},{data:"plate_havoc_content:leaderboard/data/seed"},{data:"plate_havoc_content:leaderboard/data/extensions"}]
 
 data modify storage plate_havoc:data functions.leaderboard.credit_loop set value "plate_havoc:game/misc/leaderboard/credit/type/time_elasped/loop"
 data modify storage plate_havoc:data functions.leaderboard.credit_start set value "plate_havoc:game/misc/leaderboard/credit/type/time_elasped/start"
@@ -96,19 +98,20 @@ data modify storage plate_havoc:cards preset.attributes.voting.behaviour.mixed.f
 ##Custom Attributes
 data modify storage plate_havoc:custom attributes set value []
 
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:card.cost.scale",base:1,modifiers:[]}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:card.reward.scale",base:1,modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:card.cost.scale",values:{base:1},modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:card.reward.scale",values:{base:1},modifiers:[]}
 
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:cyclathron_yield",base:1,modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:cyclathron_yield",values:{base:1},modifiers:[]}
 
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:event.time",base:0.05,modifiers:[]}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:intensity.gain",base:0.017,modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:event.time",values:{base:0.05},modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:event.repeats",values:{base:0.001},modifiers:[],update:[{type:score,value:"#EventRepeats plate_havoc.num"}]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:intensity.gain",values:{base:0.017},modifiers:[]}
 
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:player.charge.cap",base:2,modifiers:[],update:[{type:score,value:"#Player.Charge.Cap plate_havoc.num"}]}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:player.charge.gain",base:0.03,modifiers:[],update:[{type:score,value:"#Player.Charge.Gain plate_havoc.num"}]}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:player.charge.loss",base:0.01,modifiers:[],update:[{type:score,value:"#Player.Charge.Loss plate_havoc.num"}]}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:player.charge.jump_effectiveness",base:0.00045,modifiers:[],update:[{type:score,value:"#Player.Charge.Loss plate_havoc.num"}]}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:player.charge.sprint_effectiveness",base:0.001,modifiers:[],update:[{type:score,value:"#Player.Charge.Loss plate_havoc.num"}]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:player.charge.cap",values:{base:2},modifiers:[],update:[{type:score,value:"#Player.Charge.Cap plate_havoc.num"}]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:player.charge.gain",values:{base:0.03},modifiers:[],update:[{type:score,value:"#Player.Charge.Gain plate_havoc.num"}]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:player.charge.loss",values:{base:0.01},modifiers:[],update:[{type:score,value:"#Player.Charge.Loss plate_havoc.num"}]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:player.charge.jump_effectiveness",values:{base:0.00045},modifiers:[],update:[{type:score,value:"#Player.Charge.Loss plate_havoc.num"}]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:player.charge.sprint_effectiveness",values:{base:0.001},modifiers:[],update:[{type:score,value:"#Player.Charge.Loss plate_havoc.num"}]}
 
 ##Extra Jumps
 data modify storage plate_havoc:data extra_jumps set value []

@@ -4,7 +4,7 @@ scoreboard players add #Runtick plate_havoc.num 1
 function plate_havoc:game/match/end_check with storage plate_havoc:data functions
 
 ##Time
-execute store result bossbar plate_havoc:ui value run scoreboard players remove #Value plate_havoc.timer 1
+scoreboard players remove #Value plate_havoc.timer 1
 
 ##Player
 execute as @a[tag=!plate_havoc.spectator] at @s run function plate_havoc:game/match/player_loop

@@ -1,0 +1,2 @@
+data modify storage plate_havoc:cards match_types[{id:"plate_havoc_content:chaos"}].multiple_of set value [3]
+tellraw @a ["",{text:"Chaos active...",color:dark_purple},"\n - Chaos shops appear on multiples of 3."]

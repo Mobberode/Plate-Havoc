@@ -28,4 +28,5 @@ function plate_havoc_content:gametypes/match/rogue/set_cards
 
 function plate_havoc_content:gametypes/match/rogue/intermission
 
-bossbar set plate_havoc:ui color blue
+data modify storage plate_havoc:ui bar.global.data.colour set value blue
+execute as @a run function plate_havoc:game/misc/ui/bar_visuals/player/apply/init_data

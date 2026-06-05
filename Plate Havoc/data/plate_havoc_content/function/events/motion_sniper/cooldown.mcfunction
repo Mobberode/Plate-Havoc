@@ -1,0 +1,2 @@
+scoreboard players remove #PHC.Motion_Sniper.Event_Cooldown plate_havoc.event 1
+execute unless score #PHC.Motion_Sniper.Event_Cooldown plate_havoc.event matches ..0 run schedule function plate_havoc_content:events/motion_sniper/cooldown 1t

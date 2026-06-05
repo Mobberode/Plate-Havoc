@@ -1,6 +1,7 @@
 scoreboard players set #Game plate_havoc.status 2
 scoreboard players reset * plate_havoc.event
 scoreboard players reset * plate_havoc.temp
+scoreboard players set #Spawned plate_havoc_content.stat.clocks 0
 function plate_havoc:game/misc/attributes/custom/temporary
 
 execute store result score #Starting plate_havoc.players if entity @a[tag=!plate_havoc.spectator]
@@ -15,6 +16,7 @@ data remove storage plate_havoc:cards running.total[].data.functions[{type:"one_
 
 function plate_havoc:game/misc/cards/running/types/run {type:on.start}
 
+data modify storage plate_havoc:custom attributes[].refresh set value true
 function plate_havoc:game/misc/attributes/custom/update_global
 
 function plate_havoc_content:gametypes/match/rogue/calc_clock
@@ -30,4 +32,5 @@ tellraw @a [{text:"Cycle Time: ",color:aqua},{score:{name:"#Time",objective:plat
 function plate_havoc:game/time/tick_down
 function plate_havoc:game/match/loop
 
-function plate_havoc:game/misc/ui/bar_visuals/colour/run
+data modify storage plate_havoc:ui bar.global.data.colour set value red
+execute as @a run function plate_havoc:game/misc/ui/bar_visuals/player/apply/init_data

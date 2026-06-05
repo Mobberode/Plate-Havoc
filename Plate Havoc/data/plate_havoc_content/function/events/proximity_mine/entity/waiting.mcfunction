@@ -1,0 +1,1 @@
+execute if entity @e[distance=1..5,type=!#plate_havoc:non_living] run function plate_havoc_content:events/proximity_mine/entity/to_active

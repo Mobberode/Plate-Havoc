@@ -1,0 +1,14 @@
+{
+  "parent": "plate_havoc_content:platinum",
+  "display": {
+    "frame": "challenge",
+    "title":"Tainted Platinum",
+    "description":"Reach for Salvation.",
+    "icon": "gilded_blackstone"
+  },
+  "criteria": {
+    "req":{
+        "trigger": "tick"
+    }
+  }
+}

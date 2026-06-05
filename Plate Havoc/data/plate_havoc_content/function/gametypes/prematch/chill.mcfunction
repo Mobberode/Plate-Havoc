@@ -1,8 +1,8 @@
 tellraw @a [{text:"Chill Jog",color:gold},{text:"\nChill and survive with or without others with longer breaks.",color:"gray"}]
 
-data modify storage plate_havoc:ui bar.queue[{id:intensity}].extra set value [{text:"Intensity: "},{storage:"plate_havoc:data",nbt:intensity,color:aqua}]
-data modify storage plate_havoc:ui bar.queue[{id:time}].extra set value [{text:"Time: "},{score:{name:"#Duration",objective:plate_havoc.timer},color:aqua}]
-data modify storage plate_havoc:ui bar.queue[{id:players}].extra set value [{text:"Players: "},{score:{name:"#Current",objective:plate_havoc.players},color:aqua},{text:"/"},{score:{name:"#Match",objective:plate_havoc.players},color:aqua}]
+data modify storage plate_havoc:ui bar.global.snbt[{id:intensity}].extra[{meta:value}].color set value aqua
+data modify storage plate_havoc:ui bar.global.snbt[{id:time}].extra[{meta:value}].color set value aqua
+data modify storage plate_havoc:ui bar.global.snbt[{id:players}].extra set value [{meta:text,text:"Players: "},{meta:value,score:{name:"#Current",objective:plate_havoc.players},color:aqua},"/",{meta:total,score:{name:"#Match",objective:plate_havoc.players},color:aqua}]
 
 scoreboard players set #BaseEventTimePercentage plate_havoc.num 300
 scoreboard players set #BaseIntensityPercentage plate_havoc.num 75

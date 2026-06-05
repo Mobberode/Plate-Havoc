@@ -3,7 +3,14 @@
     "visual/sky_color": 4826212,
     "visual/fog_color": 4826212,
     "visual/water_fog_color": 48212,
-    "audio/music_volume": 0
+    "audio/music_volume": 0,
+    "visual/cloud_height": 2048,
+    "visual/fog_start_distance": 96,
+    "visual/fog_end_distance": 128,
+    "visual/block_light_tint": "#181400",
+    "visual/ambient_light_color": "#0d1700",
+    "visual/sky_light_color": "#161c00"
+
   },
   "carvers": [],
   "downfall": 0.5,

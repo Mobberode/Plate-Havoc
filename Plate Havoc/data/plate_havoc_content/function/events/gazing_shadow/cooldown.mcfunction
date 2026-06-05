@@ -1,0 +1,2 @@
+scoreboard players remove #PHC.Gazing_Shadow.Cooldown plate_havoc.event 1
+execute unless score #PHC.Gazing_Shadow.Cooldown plate_havoc.event matches ..0 run schedule function plate_havoc_content:events/gazing_shadow/cooldown 1t

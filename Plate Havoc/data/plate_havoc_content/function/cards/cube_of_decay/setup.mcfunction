@@ -7,12 +7,14 @@ scoreboard players set #Modulo2 plate_havoc.temp 99
 execute store result score @s plate_havoc.temp run function plate_havoc:game/misc/prng_ranged
 scoreboard players operation @s plate_havoc.temp *= #Value plate_havoc.round
 scoreboard players operation @s plate_havoc.temp /= #2 plate_havoc.num
+#Solo
+execute if score #Max plate_havoc.players matches 1 run scoreboard players operation @s plate_havoc.temp /= #2 plate_havoc.num
 #minimum (1)
 execute if score @s plate_havoc.temp matches ..99 run scoreboard players set @s plate_havoc.temp 100
 scoreboard players operation @s plate_havoc.temp *= #Current plate_havoc.players
 #maximum (10)
 execute if score @s plate_havoc.temp matches 1001.. run scoreboard players set @s plate_havoc.temp 1000
-#Multiplayer scale
+#Scale
 execute store result storage plate_havoc:cards active_data.plate_havoc_content.cube_of_decay.visual float -0.01 run scoreboard players get @s plate_havoc.temp
 execute store result storage plate_havoc:cards active_data.plate_havoc_content.cube_of_decay.visual2 float 0.01 run scoreboard players get @s plate_havoc.temp
 

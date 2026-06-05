@@ -1,7 +1,5 @@
-scoreboard players operation #Temp plate_havoc.temp = #Current_Total plate_havoc.players
-scoreboard players operation #Temp2 plate_havoc.temp = #Current plate_havoc.players
+scoreboard players operation #Temp plate_havoc.temp = #Current plate_havoc.players
 scoreboard players remove #Temp plate_havoc.temp 1
-scoreboard players remove #Temp2 plate_havoc.temp 1
 
 function plate_havoc:game/misc/cards/running/types/run {type:on.death}
 

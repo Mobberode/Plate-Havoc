@@ -4,8 +4,8 @@ data modify storage plate_havoc:cards temp set from storage plate_havoc:cards re
 ##Check
 function plate_havoc:game/misc/cards/pool/locked/check
 
-##Success Check
-execute if score #Success plate_havoc.num matches ..0 run return fail
-
 ##Transfer if success
-function plate_havoc:game/misc/cards/pool/locked/transfer_to_pool with storage plate_havoc:cards
+execute if score #Success plate_havoc.num matches 1.. run return run data modify storage plate_havoc:cards pool append from storage plate_havoc:cards temp_locked[-1]
+
+#Else
+data modify storage plate_havoc:cards locked prepend from storage plate_havoc:cards temp_locked[-1]

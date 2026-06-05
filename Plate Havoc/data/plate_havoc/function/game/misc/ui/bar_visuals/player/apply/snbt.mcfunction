@@ -1,0 +1,1 @@
+$data modify storage plate_havoc:ui bar.players[{id:$(id)}] set from storage plate_havoc:temp temp

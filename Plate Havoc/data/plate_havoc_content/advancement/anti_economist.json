@@ -1,0 +1,13 @@
+{
+  "parent": "plate_havoc:trophies/root",
+  "display": {
+    "title":"Anti-Economist",
+    "description":"Have 0 Cyclathrons at the start of a cycle with Slow Passing.",
+    "icon": "copper_nugget"
+  },
+  "criteria": {
+    "req":{
+        "trigger": "tick"
+    }
+  }
+}

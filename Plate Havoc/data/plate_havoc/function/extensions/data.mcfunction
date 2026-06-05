@@ -1,5 +1,6 @@
 ##Cards
 data modify storage plate_havoc:cards running set value {total:[]}
+data modify storage plate_havoc:cards active_types set value []
 function plate_havoc:game/misc/cards/reset
 #
 data modify storage plate_havoc:cards data set value []
