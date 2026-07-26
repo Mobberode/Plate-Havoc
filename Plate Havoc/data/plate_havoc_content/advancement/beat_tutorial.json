@@ -1,0 +1,13 @@
+{
+  "parent": "plate_havoc:trophies/root",
+  "display": {
+    "title":"Congratulations, you beat the Tutorial",
+    "description":"Reach Cycle 10.",
+    "icon": "cake"
+  },
+  "criteria": {
+    "req":{
+        "trigger": "tick"
+    }
+  }
+}

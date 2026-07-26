@@ -1,0 +1,14 @@
+{
+  "parent": "plate_havoc_content:platinum",
+  "display": {
+    "frame": "challenge",
+    "title":"Forget",
+    "description":"Return to an unknown.",
+    "icon": "gilded_blackstone"
+  },
+  "criteria": {
+    "req":{
+        "trigger": "tick"
+    }
+  }
+}

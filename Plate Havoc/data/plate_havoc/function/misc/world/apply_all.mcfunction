@@ -1,0 +1,5 @@
+##Applies everything except for Void. To be used to refresh the arena but not touch the blocks
+function plate_havoc:misc/world/biome/run
+function plate_havoc:misc/world/time/set
+function plate_havoc:misc/world/weather with storage plate_havoc:data world
+function plate_havoc:misc/world/border/set

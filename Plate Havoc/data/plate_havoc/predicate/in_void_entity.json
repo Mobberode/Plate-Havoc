@@ -1,4 +1,5 @@
 {
+    "type": "location_check",
     "condition": "location_check",
     "predicate": {
         "position": {"y":{"max":-64}}

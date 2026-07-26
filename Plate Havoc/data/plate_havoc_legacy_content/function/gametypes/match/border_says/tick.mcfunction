@@ -1,0 +1,1 @@
+execute as @a[tag=plate_havoc.survivor] run function plate_havoc_legacy_content:gametypes/match/border_says/drain_check

@@ -1,0 +1,1 @@
+$return run data get storage plate_havoc:cards running.total[{id:'$(id)'}].count

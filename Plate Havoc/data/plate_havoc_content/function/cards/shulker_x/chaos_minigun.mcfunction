@@ -1,0 +1,1 @@
+execute as @r[tag=plate_havoc.survivor] at @s run function plate_havoc_content:cards/shulker_x/target

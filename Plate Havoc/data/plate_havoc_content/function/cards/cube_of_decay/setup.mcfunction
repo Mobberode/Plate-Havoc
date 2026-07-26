@@ -4,7 +4,7 @@ execute summon text_display run function plate_havoc_content:cards/cube_of_decay
 ##Value
 scoreboard players set #Modulo plate_havoc.temp 251
 scoreboard players set #Modulo2 plate_havoc.temp 99
-execute store result score @s plate_havoc.temp run function plate_havoc:game/misc/prng_ranged
+execute store result score @s plate_havoc.temp run function plate_havoc:misc/prng_ranged
 scoreboard players operation @s plate_havoc.temp *= #Value plate_havoc.round
 scoreboard players operation @s plate_havoc.temp /= #2 plate_havoc.num
 #Solo
@@ -19,12 +19,12 @@ execute store result storage plate_havoc:cards active_data.plate_havoc_content.c
 execute store result storage plate_havoc:cards active_data.plate_havoc_content.cube_of_decay.visual2 float 0.01 run scoreboard players get @s plate_havoc.temp
 
 ##Time in ticks
-scoreboard players set @s plate_havoc.timer 100
+scoreboard players set @s plate_havoc.timer 75
 scoreboard players operation @s plate_havoc.timer *= #Value plate_havoc.round
-#minimum (500t = 25s)
-execute if score @s plate_havoc.timer matches ..499 run scoreboard players set @s plate_havoc.timer 500
-#maximum (1800t = 90s)
-execute if score @s plate_havoc.timer matches 1801.. run scoreboard players set @s plate_havoc.timer 1800
+#minimum (600t = 30s)
+execute if score @s plate_havoc.timer matches ..599 run scoreboard players set @s plate_havoc.timer 600
+#maximum (1000t = 75s)
+execute if score @s plate_havoc.timer matches 1501.. run scoreboard players set @s plate_havoc.timer 1500
 #Threshold
 scoreboard players operation #Temp plate_havoc.temp = @s plate_havoc.timer
 scoreboard players operation #Temp plate_havoc.temp /= #100 plate_havoc.num

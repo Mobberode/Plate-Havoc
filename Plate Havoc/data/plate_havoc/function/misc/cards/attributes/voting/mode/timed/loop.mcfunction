@@ -1,0 +1,1 @@
+execute if score #Value plate_havoc.timer matches ..-1 run function plate_havoc:misc/cards/attributes/voting/mode/timed/internal/end_voting

@@ -1,0 +1,2 @@
+execute store result storage plate_havoc:temp temp float 0.001 run scoreboard players get @s plate_havoc_content.survivor.charger.amount
+function plate_havoc_content:survivors/charger/speed_affect with storage plate_havoc:temp

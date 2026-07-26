@@ -1,0 +1,5 @@
+execute if data storage plate_havoc:cards temp[-1] run function plate_havoc:misc/cards/ui/process/votes/run
+
+#Remove processed and loop
+data remove storage plate_havoc:cards temp[-1]
+execute if data storage plate_havoc:cards temp[-1] run function plate_havoc:misc/cards/ui/process/votes/loop

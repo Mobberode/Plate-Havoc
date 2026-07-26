@@ -1,1 +1,3 @@
-summon marker 0 1024 0 {Tags:["plate_havoc_content.card.glacier_player","plate_havoc.survivor","plate_havoc.dont_interact"]}
+data remove storage plate_havoc:ui bar.global.snbt[{id:players}].extra[{meta:"plate_havoc_content:glacier_player"}]
+data modify storage plate_havoc:ui bar.global.snbt[{id:players}].extra append value {meta:"plate_havoc_content:glacier_player",text:"",extra:[{text:"❤",color:"#e9c673"}],shadow_color:-12772096,tags:["plate_havoc_content:rogue.intermission_start"]}
+execute as @a run function plate_havoc:misc/ui/bar_visuals/player/apply/init_snbt

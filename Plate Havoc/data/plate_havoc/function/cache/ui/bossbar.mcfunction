@@ -1,14 +1,9 @@
-##UI
+##UI (Legacy)
 bossbar remove plate_havoc:ui
-#bossbar add plate_havoc:ui {text:""}
-bossbar set plate_havoc:ui name {storage:"plate_havoc:ui",nbt:bar.output,interpret:true}
-bossbar set plate_havoc:ui color red
-bossbar set plate_havoc:ui style progress
-bossbar set plate_havoc:ui visible true
-bossbar set plate_havoc:ui players @a
 
 ##Status
 bossbar remove plate_havoc:event
+
 bossbar remove plate_havoc:status
 bossbar add plate_havoc:status {text:""}
 bossbar set plate_havoc:status name [{text:"Awaiting Event Message"}]

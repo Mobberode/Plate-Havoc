@@ -1,1 +1,0 @@
-$data modify storage plate_havoc:temp input.colour set from storage plate_havoc:cards types[{id:$(temp)}].colour

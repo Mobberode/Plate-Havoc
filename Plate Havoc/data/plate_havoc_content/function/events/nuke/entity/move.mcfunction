@@ -1,1 +1,1 @@
-$execute positioned ~ ~-$(speed) ~ run function plate_havoc:game/misc/tp
+$execute positioned ~ ~-$(speed) ~ run function plate_havoc:misc/tp

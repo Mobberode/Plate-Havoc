@@ -1,0 +1,10 @@
+scoreboard players set #Card.Hide_Vote_Indicator plate_havoc.temp 0
+
+#Timed
+execute if data storage plate_havoc:cards attributes.voting{mode:timed} run return run function plate_havoc:misc/cards/process/attributes/voting/modes/timed
+
+#Mixed
+execute if data storage plate_havoc:cards attributes.voting{mode:mixed} run return run function plate_havoc:misc/cards/process/attributes/voting/modes/mixed
+
+#Votes
+function plate_havoc:misc/cards/process/attributes/voting/modes/votes

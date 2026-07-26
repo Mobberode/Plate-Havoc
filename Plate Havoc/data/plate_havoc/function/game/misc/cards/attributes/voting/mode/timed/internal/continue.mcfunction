@@ -1,1 +1,0 @@
-function plate_havoc:game/misc/cards/attributes/voting/mode/timed/voting_start

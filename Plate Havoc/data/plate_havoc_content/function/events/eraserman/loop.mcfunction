@@ -1,1 +1,1 @@
-execute in plate_havoc:arena as @e[x=0,tag=plate_havoc_content.event.eraserman,type=enderman] at @s run function plate_havoc_content:events/eraserman/tick
+execute in plate_havoc:arena as @e[x=0,tag=plate_havoc_content.event.eraserman,type=enderman] at @s positioned ^ ^ ^0.65 run function plate_havoc_content:events/eraserman/tick

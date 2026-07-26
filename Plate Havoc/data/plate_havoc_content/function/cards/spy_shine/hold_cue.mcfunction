@@ -1,0 +1,1 @@
+$playsound block.sniffer_egg.hatch player @a ~ ~ ~ .33 $(pitch)

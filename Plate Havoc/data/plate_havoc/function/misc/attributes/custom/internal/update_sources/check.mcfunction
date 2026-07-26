@@ -1,0 +1,3 @@
+execute if data storage plate_havoc:custom update_attribute.current{type:score} run function plate_havoc:misc/attributes/custom/internal/update_sources/score/run with storage plate_havoc:custom update_attribute.current
+
+execute if data storage plate_havoc:custom update_attribute.current{type:storage} run function plate_havoc:misc/attributes/custom/internal/update_sources/storage/run with storage plate_havoc:custom update_attribute.current

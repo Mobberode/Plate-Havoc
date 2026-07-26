@@ -1,1 +1,0 @@
-$data remove storage plate_havoc:ui temp.input[{id:'$(id)'}]

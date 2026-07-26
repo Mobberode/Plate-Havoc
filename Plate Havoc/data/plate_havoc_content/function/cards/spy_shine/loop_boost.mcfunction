@@ -1,0 +1,2 @@
+execute if entity @s[advancements={plate_havoc_content:cards/spy_shine=true}] run return run function plate_havoc_content:cards/spy_shine/hold
+execute if score @s plate_havoc_content.card.spyshine.holding matches 1.. run function plate_havoc_content:cards/spy_shine/boost

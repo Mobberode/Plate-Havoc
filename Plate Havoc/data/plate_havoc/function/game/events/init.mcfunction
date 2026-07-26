@@ -4,4 +4,4 @@ execute unless data storage plate_havoc:events running[] run data modify storage
 execute unless score #Value plate_havoc.intensity < #Event.Pool_Intensity_Update plate_havoc.intensity run function plate_havoc:game/events/pool/match/init
 
 function plate_havoc:game/events/start
-function plate_havoc:game/misc/cards/running/types/run {type:on.action}
+function plate_havoc:misc/cards/running/types/run {type:on.action}

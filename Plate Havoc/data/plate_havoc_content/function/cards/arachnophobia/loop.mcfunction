@@ -1,0 +1,1 @@
+execute in plate_havoc:arena as @e[x=0,tag=plate_havoc_content.card.arachnophobia,predicate=plate_havoc:has_player_target,type=spider] positioned as @s run function plate_havoc_content:cards/arachnophobia/tick

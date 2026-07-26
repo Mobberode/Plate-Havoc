@@ -1,1 +1,0 @@
-$execute store result score #CurrentCount plate_havoc.card run data get storage plate_havoc:cards running.total[{id:"$(id2)"}].data.count

@@ -3,7 +3,7 @@
     "title": "Plate Havoc Console",
     "columns": 1,
     "exit_action": {"label":"Back","action":{"type":"show_dialog","dialog":"plate_havoc:console"}},
-    "inputs": [{"key":"id","type":"text","label":"Card ID","max_length":128},{"key":"count","type":"text","label":"Count","initial":"1"},{"key":"add_count","type":"boolean","label":"Add to count?","initial":true},{"key":"temporary","type":"boolean","label":"Temporary?","initial":false}],
+    "inputs": [{"key":"id","type":"text","label":"Card ID","max_length":128,"initial":"plate_havoc_content:"},{"key":"add_stack","type":"text","label":"Add Stack","initial":"1"},{"key":"claim_reward","type":"boolean","label":"Claim Reward?","initial":false},{"key":"affect_availability","type":"boolean","label":"Affect Availability?","initial":false},{"key":"bypass_max_stack","type":"boolean","label":"Bypass Max Stack?","initial":true},{"key":"temporary","type":"boolean","label":"Temporary?","initial":false}],
     
     "actions": [
     {"label":"Force Card","action":{"type":"dynamic/run_command","template":"function plate_havoc:console/force_card {id:'$(id)'}"}},

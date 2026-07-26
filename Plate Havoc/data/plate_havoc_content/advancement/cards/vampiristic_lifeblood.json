@@ -2,7 +2,7 @@
   "parent": "plate_havoc:cards/root",
   "criteria": {
     "killed_entity": {
-      "trigger": "minecraft:player_killed_entity"
+      "trigger": "player_killed_entity"
     }
   }
 }

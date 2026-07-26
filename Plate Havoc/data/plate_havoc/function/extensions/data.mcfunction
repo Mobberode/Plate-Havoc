@@ -1,13 +1,16 @@
 ##Cards
 data modify storage plate_havoc:cards running set value {total:[]}
 data modify storage plate_havoc:cards active_types set value []
-function plate_havoc:game/misc/cards/reset
+function plate_havoc:misc/cards/reset
 #
 data modify storage plate_havoc:cards data set value []
 data modify storage plate_havoc:cards types set value []
 
 ##Events
 data modify storage plate_havoc:data events set value []
+
+##Survivors
+data modify storage plate_havoc:survivors data set value []
 
 ##Gametypes
 data modify storage plate_havoc:data gametypes set value []

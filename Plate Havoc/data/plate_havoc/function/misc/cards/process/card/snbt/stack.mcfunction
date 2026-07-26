@@ -1,0 +1,2 @@
+data modify storage plate_havoc:cards snbt.temp append value " "
+data modify storage plate_havoc:cards snbt.temp append value {meta:count,text:"",extra:[{text:"[",color:gray},{score:{name:"#CardStack",objective:plate_havoc.temp}},{text:"]",color:gray}]}

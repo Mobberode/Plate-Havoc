@@ -9,4 +9,4 @@ execute store result storage plate_havoc:cards active_data.shared.temp float 0.0
 data remove storage plate_havoc:custom attributes[{id:"plate_havoc_content:clock.range"}].modifiers[{id:"plate_havoc_content:card.mechanical_extender"}]
 data modify storage plate_havoc:temp id_attribute set value "plate_havoc_content:clock.range"
 function plate_havoc_content:cards/mechanical_extender/clock_range with storage plate_havoc:cards active_data.shared
-function plate_havoc:game/misc/attributes/custom/add_modifier
+function plate_havoc:misc/attributes/custom/add_modifier

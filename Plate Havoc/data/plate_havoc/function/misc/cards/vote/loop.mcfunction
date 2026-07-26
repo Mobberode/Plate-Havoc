@@ -1,0 +1,9 @@
+execute unless score #Card.Can_Vote plate_havoc.num matches ..0 as @a[scores={plate_havoc.t.select=1..}] run function plate_havoc:misc/cards/vote/player/start
+
+scoreboard players enable @a plate_havoc.t.select
+
+##Check for dialog refreshes
+function plate_havoc:misc/cards/vote/dialog_prompt_check
+
+##Attribute - Voting loop
+function plate_havoc:misc/cards/vote/player/attributes/voting/run {input:loop}

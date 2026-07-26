@@ -8,4 +8,4 @@ fill ~160 -64 ~ ~ 319 ~-160 air strict
 fill ~-160 -64 ~ ~ 319 ~160 air strict
 fill ~-160 -64 ~ ~ 319 ~-160 air strict
 
-function plate_havoc:game/misc/world/biome/run
+function plate_havoc:misc/world/biome/run

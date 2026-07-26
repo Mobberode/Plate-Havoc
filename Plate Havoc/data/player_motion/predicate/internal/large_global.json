@@ -1,9 +1,12 @@
 {
+  "type": "any_of",
   "condition": "minecraft:any_of",
   "terms": [
     {
+      "type": "inverted",
       "condition": "minecraft:inverted",
       "term": {
+        "type": "value_check",
         "condition": "minecraft:value_check",
         "value": {
           "type": "minecraft:score",
@@ -20,8 +23,10 @@
       }
     },
     {
+      "type": "inverted",
       "condition": "minecraft:inverted",
       "term": {
+        "type": "value_check",
         "condition": "minecraft:value_check",
         "value": {
           "type": "minecraft:score",
@@ -38,8 +43,10 @@
       }
     },
     {
+      "type": "inverted",
       "condition": "minecraft:inverted",
       "term": {
+        "type": "value_check",
         "condition": "minecraft:value_check",
         "value": {
           "type": "minecraft:score",

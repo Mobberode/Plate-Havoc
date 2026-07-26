@@ -1,5 +1,5 @@
 #Placeholder tnt!
-summon tnt ~ ~ ~ {Tags:[plate_havoc_content.card.short_fuses]}
+summon tnt ~ ~ ~ {Tags:[plate_havoc_content.card.short_fuses],explosion_power:2}
 
 execute if data storage plate_havoc:custom clock_entity_data.card{cursed_clocks:true} as @a[tag=plate_havoc_content.misc.clock.collector] run return run function plate_havoc_content:cards/cranked/cursed_check
 

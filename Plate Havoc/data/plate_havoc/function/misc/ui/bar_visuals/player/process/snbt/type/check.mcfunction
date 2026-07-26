@@ -1,0 +1,3 @@
+execute if data storage plate_havoc:ui temp.process{type:remove} run return run function plate_havoc:misc/ui/bar_visuals/player/process/snbt/type/remove with storage plate_havoc:ui temp.process
+execute if data storage plate_havoc:ui temp.process{type:add} run return run function plate_havoc:misc/ui/bar_visuals/player/process/snbt/type/add with storage plate_havoc:ui temp.process
+execute if data storage plate_havoc:ui temp.process{type:override} run return run function plate_havoc:misc/ui/bar_visuals/player/process/snbt/type/override with storage plate_havoc:ui temp.process

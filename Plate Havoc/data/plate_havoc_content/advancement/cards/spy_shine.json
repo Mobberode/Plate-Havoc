@@ -1,0 +1,9 @@
+{
+  "parent": "plate_havoc:cards/root",
+  "criteria": {
+    "using":{
+        "trigger": "using_item",
+        "conditions": {"item":{"predicates":{"minecraft:custom_data":{"plate_havoc_content":"spy_shine"}}}}
+    }
+  }
+}

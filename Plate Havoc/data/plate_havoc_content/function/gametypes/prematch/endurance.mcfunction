@@ -1,1 +1,0 @@
-tellraw @a [{text:"Endurance | Arcade",color:gold},{text:"\nSurvive as long as possible with or without others in the classic style.",color:"gray"}]

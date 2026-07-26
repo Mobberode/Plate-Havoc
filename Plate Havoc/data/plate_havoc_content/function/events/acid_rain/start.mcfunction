@@ -12,7 +12,7 @@ scoreboard players operation #PHC.AcidRain.Duration plate_havoc.event *= #MaxRun
 
 weather rain
 data modify storage plate_havoc:custom biomes append value {id:"plate_havoc_content:acid_rain",biome:"plate_havoc_content:acid_rain",priority:1}
-function plate_havoc:game/misc/world/biome/run
+function plate_havoc:misc/world/biome/run
 
 function plate_havoc_content:events/acid_rain/grace_loop
 

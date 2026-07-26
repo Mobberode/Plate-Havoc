@@ -1,4 +1,4 @@
-execute unless score @s plate_havoc.id matches 1.. run function plate_havoc:game/misc/id/start
+execute unless score @s plate_havoc.id matches 1.. run function plate_havoc:misc/id/start
 
 execute unless score @s plate_havoc.test.read matches 101.. run function plate_havoc:test/tutorial
 
@@ -12,7 +12,7 @@ scoreboard players enable @s plate_havoc.t.extensions
 
 execute if entity @s[tag=plate_havoc.spectator] run title @s actionbar {text:"You are spectating and wont be able to play the game",color:red}
 
-execute if score @s plate_havoc.t.exit_dialog matches 1.. run return run function plate_havoc:game/misc/dialog_close
+execute if score @s plate_havoc.t.exit_dialog matches 1.. run return run function plate_havoc:misc/dialog_close
 execute if score @s plate_havoc.t.spectator matches 1.. run return run function plate_havoc:game/triggers/actions/spectator
 execute if score @s plate_havoc.t.stats matches 1.. run return run function plate_havoc:game/triggers/actions/stats
 execute if score @s plate_havoc.t.credits matches 1.. run return run function plate_havoc:game/triggers/actions/credits

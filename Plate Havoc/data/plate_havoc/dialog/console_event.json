@@ -4,7 +4,7 @@
     "columns": 1,
     "exit_action": {"label":"Back","action":{"type":"show_dialog","dialog":"plate_havoc:console"}},
     "inputs": [
-        {"key":"id","type":"text","label":"Event ID","max_length":128},
+        {"key":"id","type":"text","label":"Event ID","max_length":128,"initial":"plate_havoc_content:"},
         {"key":"count","type":"text","label":"Count","max_length":10,"initial":"1"}
     ],
     

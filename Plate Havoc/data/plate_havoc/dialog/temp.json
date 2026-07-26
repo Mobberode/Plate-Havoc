@@ -1,12 +1,12 @@
 {
-    "type": "multi_action",
-    "title": "",
-    "can_close_with_escape": true,
+    "type": "notice",
+    "title": "Game Over!",
     "body": [
-        {"type":"plain_message","contents":{"text":"Game Over","color":"red"}},
-                {"type":"plain_message","contents":{"text":"- Everyone Died -","color":"gray"}},
-                {"type":"plain_message","contents":{"text":"\nIntensity: 6.4d","color":"gold"}},
-            {"type":"plain_message","contents":{"text":"Time Elasped: 141","color":"gold"}},
-        {"type": "minecraft:plain_message","contents":[{"atlas": "minecraft:gui", "sprite": "plate_havoc_content:cards/task_assigner","fallback":{"text":"Task Assigner"}}]}],
-            "actions": [{"label":"Close screen"}]
+        {"type":"plain_message","contents":{"text":"- Results -\nGame Over!","color":"red"}},
+        {"type":"plain_message","contents":["",{"font":"plate_havoc_content:survivors","text":"0"}," ","Icement"]},
+        {"type":"plain_message","contents":{"text":"- Cards -"}},
+        {"type":"plain_message","contents":["",{"font":"plate_havoc_content:cards","text":"0"},{"font":"plate_havoc_content:cards","text":"1"}]},
+        {"type":"plain_message","contents":{"text":"- Statistics -"}},
+        {"type":"plain_message","contents":{"text":"Press [ESC] / [Ok] to continue.","color":"gray"}}
+    ]
 }

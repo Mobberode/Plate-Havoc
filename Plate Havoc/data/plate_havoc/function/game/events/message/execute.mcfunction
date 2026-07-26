@@ -7,7 +7,7 @@ execute unless data storage plate_havoc:ui event_message.count{display:false} ru
 
 function plate_havoc:extensions/handler/run {type:"plate_havoc:on.action"}
 ##If ran by any cards. can cause message duplication
-function plate_havoc:game/misc/cards/running/types/run {type:on.event.message}
+function plate_havoc:misc/cards/running/types/run {type:on.event.message}
 
 data modify storage plate_havoc:ui event_message_output set from storage plate_havoc:ui edit_event_message
 

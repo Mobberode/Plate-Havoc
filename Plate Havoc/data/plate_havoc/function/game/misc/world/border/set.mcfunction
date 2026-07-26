@@ -1,2 +1,0 @@
-execute store result storage plate_havoc:data world.border double 0.1 run scoreboard players get #BaseWorldBorderWidth plate_havoc.num
-execute in plate_havoc:arena run function plate_havoc:game/misc/world/border/apply with storage plate_havoc:data world

@@ -1,1 +1,1 @@
-$execute positioned ~$(x) ~$(y) ~$(z) run function plate_havoc:game/misc/tp
+$execute positioned ~$(x) ~$(y) ~$(z) run function plate_havoc:misc/tp

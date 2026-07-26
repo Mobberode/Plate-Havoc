@@ -1,0 +1,1 @@
+$tellraw @s ["",{text:"Task Manager",color:aqua},{text:" \\\\\\ ",color:blue},{text:"[",color:dark_blue},{text:"30s",color:blue},{text:"]",color:dark_blue},"\n     ",{storage:"plate_havoc:cards",nbt:"data2.plate_havoc_content.task_manager[$(temp)].snbt",interpret:true}]

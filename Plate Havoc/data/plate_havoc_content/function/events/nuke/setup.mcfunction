@@ -7,8 +7,11 @@ data modify entity @s data set from storage plate_havoc:events active_data.plate
 
 ##Failure chance
 execute store result score #Temp plate_havoc.temp run data get storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.nuke.failure.chance"}].output 100
+execute if score #PHC.Nuke.Pity plate_havoc.temp matches 1.. run function plate_havoc_content:events/nuke/pity/init
+scoreboard players add #PHC.Nuke.Pity plate_havoc.temp 1
+
 scoreboard players set #Modulo plate_havoc.temp 101
 scoreboard players set #Modulo2 plate_havoc.temp -1
-execute store result score #Temp2 plate_havoc.temp run function plate_havoc:game/misc/prng_ranged
+execute store result score #Temp2 plate_havoc.temp run function plate_havoc:misc/prng_ranged
 
 execute if score #Temp2 plate_havoc.temp <= #Temp plate_havoc.temp run function plate_havoc_content:events/nuke/mark_fail

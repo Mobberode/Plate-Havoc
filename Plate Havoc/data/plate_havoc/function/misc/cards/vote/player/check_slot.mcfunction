@@ -1,0 +1,1 @@
+$execute if data storage plate_havoc:cards active[{slot:$(slot)}] run function plate_havoc:misc/cards/vote/player/process

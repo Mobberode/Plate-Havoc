@@ -7,15 +7,16 @@ function plate_havoc:game/match/end_check with storage plate_havoc:data function
 scoreboard players remove #Value plate_havoc.timer 1
 
 ##Player
-execute as @a[tag=!plate_havoc.spectator] at @s run function plate_havoc:game/match/player_loop
+execute as @a[tag=!plate_havoc.spectator,tag=plate_havoc.survivor] at @s run function plate_havoc:game/match/player_loop
 
 ##Data-Driven Functions
-#Action
-execute if score #Value plate_havoc.timer matches ..0 run function plate_havoc:game/match/macro with storage plate_havoc:data functions
 #Tick
 function plate_havoc:game/match/tick with storage plate_havoc:data functions
+execute if score #Game plate_havoc.status matches ..1 run return fail
+#Action
+execute if score #Value plate_havoc.timer matches ..0 run function plate_havoc:game/match/macro with storage plate_havoc:data functions
 
 ##Cards
-function plate_havoc:game/misc/cards/running/types/run {type:loop}
+function plate_havoc:misc/cards/running/types/run {type:loop}
 
 function plate_havoc:extensions/handler/run {type:"plate_havoc:game.loop"}

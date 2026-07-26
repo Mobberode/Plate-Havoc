@@ -1,0 +1,1 @@
+execute unless score #Game.Stop_Condition_Tick plate_havoc.temp matches 1.. unless entity @a[tag=plate_havoc.survivor] unless entity @a[tag=plate_havoc.marked_for_respawn] run function plate_havoc:game/match/game_over

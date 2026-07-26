@@ -29,7 +29,7 @@ data modify storage plate_havoc:temp data set value [\
 \
 {id:"plate_havoc_content:ghast",data:{global:{intensity:{min:5},function:"plate_havoc_content:events/ghast/start"}}},\
 \
-{id:"plate_havoc_content:acid_rain",data:{global:{intensity:{min:10},function:"plate_havoc_content:events/acid_rain/start"}}},\
+{id:"plate_havoc_content:acid_rain",data:{global:{intensity:{min:7.5},function:"plate_havoc_content:events/acid_rain/start"}}},\
 \
 {id:"plate_havoc_content:null",data:{global:{intensity:{min:6.5},function:"plate_havoc_content:events/null/start"}}},\
 \
@@ -63,7 +63,7 @@ data modify storage plate_havoc:temp data set value [\
 \
 {id:"plate_havoc_content:wither",data:{global:{intensity:{min:50},function:"plate_havoc_content:events/wither/start"}}},\
 \
-{id:"plate_havoc_content:cobweb",data:{global:{intensity:{min:3.25},function:"plate_havoc_content:events/cobweb/start"}}},\
+{id:"plate_havoc_content:cobweb",data:{global:{intensity:{min:1.5},function:"plate_havoc_content:events/cobweb/start"}}},\
 \
 {id:"plate_havoc_content:effect_wind_charged",data:{global:{intensity:{min:2},function:"plate_havoc_content:events/effect_wind_charged/start"}}},\
 \
@@ -115,7 +115,7 @@ data modify storage plate_havoc:temp data set value [\
 \
 {id:"plate_havoc_content:skeleton_pillar",data:{global:{intensity:{min:3.5},function:"plate_havoc_content:events/skeleton_pillar/start"}}},\
 \
-{id:"plate_havoc_content:motion_sniper",data:{global:{intensity:{min:7.5},function:"plate_havoc_content:events/motion_sniper/start"}}},\
+{id:"plate_havoc_content:motion_sniper",data:{global:{intensity:{min:6.5},function:"plate_havoc_content:events/motion_sniper/start"}}},\
 \
 {id:"plate_havoc_content:outer_space_gravity",data:{global:{intensity:{min:3},function:"plate_havoc_content:events/outer_space_gravity/start"}}},\
 \
@@ -143,7 +143,7 @@ data modify storage plate_havoc:temp data set value [\
 \
 {id:"plate_havoc_content:proximity_mine",data:{global:{intensity:{min:5},function:"plate_havoc_content:events/proximity_mine/start"}}},\
 \
-{id:"plate_havoc_content:gazing_shadow",data:{global:{intensity:{min:7.5},function:"plate_havoc_content:events/gazing_shadow/start"}}},\
+{id:"plate_havoc_content:gazing_shadow",data:{global:{intensity:{min:7},function:"plate_havoc_content:events/gazing_shadow/start"}}},\
 \
 \
 \

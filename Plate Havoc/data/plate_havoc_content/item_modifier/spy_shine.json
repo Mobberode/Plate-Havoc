@@ -1,0 +1,32 @@
+{
+  "type": "set_name",
+  "function": "minecraft:set_name",
+  "entity": "this",
+  "name": [
+    "",
+    "(",
+    {
+      "score": {
+        "objective": "plate_havoc_content.card.spyshine.cooldown",
+        "name": "@s"
+      },
+      "color": "gray"
+    },
+    ") ",
+    {
+      "text": "Spyshiner",
+      "color": "yellow"
+    },
+    " (",
+    {
+      "score": {
+        "objective": "plate_havoc_content.card.spyshine.boosts",
+        "name": "@s"
+      },
+      "color": "yellow"
+    },
+    ")"
+  ],
+  "target": "item_name",
+  "conditions": []
+}

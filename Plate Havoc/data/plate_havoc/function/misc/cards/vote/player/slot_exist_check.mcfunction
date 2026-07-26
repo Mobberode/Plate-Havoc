@@ -1,0 +1,5 @@
+#Slot
+execute store result storage plate_havoc:cards slot int 1 run scoreboard players operation #ProcessedCards plate_havoc.num = #Slot plate_havoc.z.select
+
+#Check
+function plate_havoc:misc/cards/vote/player/check_slot with storage plate_havoc:cards

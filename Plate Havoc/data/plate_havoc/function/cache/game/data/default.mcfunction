@@ -37,22 +37,11 @@ scoreboard players set #Runtick plate_havoc.num 0
 scoreboard players set #PRNG.Runs plate_havoc.num 0
 scoreboard players set #Event.Pool_Intensity_Update plate_havoc.intensity 0
 
-scoreboard players set #BaseCapValue plate_havoc.spawnpoint_energy 100000
-scoreboard players set #BaseCapPercentage plate_havoc.spawnpoint_energy 100
-scoreboard players set #BaseGainValue plate_havoc.spawnpoint_energy 100
-scoreboard players set #BaseGainPercentage plate_havoc.spawnpoint_energy 100
-
 ##AllowBlockInteraction
 scoreboard players set #AllowBlockInteraction plate_havoc.num 0
 
-##Modifiers
-scoreboard players set #Modifiers.Enabled plate_havoc.num 1
-#Put below to 20
-scoreboard players set #Modifiers.Chance plate_havoc.num 20
-scoreboard players set #Modifiers.Entries plate_havoc.num 3
-
 ##world
-function plate_havoc:game/misc/world/biome/init
+function plate_havoc:misc/world/biome/init
 data modify storage plate_havoc:custom biomes append value {id:"plate_havoc:void",biome:"plate_havoc:void",priority:0,tags:["plate_havoc.default_biome"]}
 data modify storage plate_havoc:data world.weather set value "clear"
 #Time
@@ -70,16 +59,16 @@ data modify storage plate_havoc:data functions set value {}
 data modify storage plate_havoc:data functions.tick set value ""
 data modify storage plate_havoc:data functions.set_plate set value "plate_havoc:game/lobby/arena/fill"
 data modify storage plate_havoc:data functions.on_action set value "plate_havoc:game/match/action"
-data modify storage plate_havoc:data functions.tick_spectator set value "plate_havoc:game/match/player/spectator/energy"
-data modify storage plate_havoc:data functions.end_condition set value "plate_havoc_content:gametypes/player/endurance/lose_check"
+data modify storage plate_havoc:data functions.tick_spectator set value "plate_havoc:game/match/player/spectator/message"
+data modify storage plate_havoc:data functions.end_condition set value "plate_havoc:game/match/end_condition"
 data modify storage plate_havoc:data functions.last_stand set value ""
 
 #Leaderboard
 data modify storage plate_havoc:data functions.leaderboard.sort_type set value "plate_havoc_content:leaderboard/check/intensity"
 data modify storage plate_havoc:leaderboard data_functions set value [{data:"plate_havoc_content:leaderboard/data/status"},{data:"plate_havoc_content:leaderboard/data/time"},{data:"plate_havoc_content:leaderboard/data/intensity"},{data:"plate_havoc_content:leaderboard/data/player_credit"},{data:"plate_havoc_content:leaderboard/data/seed"},{data:"plate_havoc_content:leaderboard/data/extensions"}]
 
-data modify storage plate_havoc:data functions.leaderboard.credit_loop set value "plate_havoc:game/misc/leaderboard/credit/type/time_elasped/loop"
-data modify storage plate_havoc:data functions.leaderboard.credit_start set value "plate_havoc:game/misc/leaderboard/credit/type/time_elasped/start"
+data modify storage plate_havoc:data functions.leaderboard.credit_loop set value "plate_havoc:misc/leaderboard/credit/type/time_elasped/loop"
+data modify storage plate_havoc:data functions.leaderboard.credit_start set value "plate_havoc:misc/leaderboard/credit/type/time_elasped/start"
 data modify storage plate_havoc:leaderboard player_credit set value []
 
 ##Holds all functions that will be ran when game starts
@@ -89,11 +78,11 @@ data modify storage plate_havoc:data on_game_start set value []
 scoreboard players set #EventNotify plate_havoc.num 1
 
 ##Presets
-data modify storage plate_havoc:cards preset.attributes.voting.behaviour.timed.functions set value {on_vote:"plate_havoc:game/misc/cards/attributes/voting/mode/global/blank",voting_start:"plate_havoc:game/misc/cards/attributes/voting/mode/timed/voting_start",loop:"plate_havoc:game/misc/cards/attributes/voting/mode/timed/loop"}
+data modify storage plate_havoc:cards preset.attributes.voting.behaviour.timed.functions set value {on_vote:"plate_havoc:misc/cards/attributes/voting/mode/global/blank",voting_start:"plate_havoc:misc/cards/attributes/voting/mode/timed/voting_start",loop:"plate_havoc:misc/cards/attributes/voting/mode/timed/loop"}
 
-data modify storage plate_havoc:cards preset.attributes.voting.behaviour.votes.functions set value {on_vote:"plate_havoc:game/misc/cards/attributes/voting/mode/votes/on_vote"}
+data modify storage plate_havoc:cards preset.attributes.voting.behaviour.votes.functions set value {on_vote:"plate_havoc:misc/cards/attributes/voting/mode/votes/on_vote"}
 
-data modify storage plate_havoc:cards preset.attributes.voting.behaviour.mixed.functions set value {on_vote:"plate_havoc:game/misc/cards/attributes/voting/mode/mixed/on_vote",voting_start:"plate_havoc:game/misc/cards/attributes/voting/mode/mixed/voting_start",loop:"plate_havoc:game/misc/cards/attributes/voting/mode/timed/loop"}
+data modify storage plate_havoc:cards preset.attributes.voting.behaviour.mixed.functions set value {on_vote:"plate_havoc:misc/cards/attributes/voting/mode/mixed/on_vote",voting_start:"plate_havoc:misc/cards/attributes/voting/mode/mixed/voting_start",loop:"plate_havoc:misc/cards/attributes/voting/mode/timed/loop"}
 
 ##Custom Attributes
 data modify storage plate_havoc:custom attributes set value []
@@ -103,15 +92,9 @@ data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:
 
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:cyclathron_yield",values:{base:1},modifiers:[]}
 
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:event.time",values:{base:0.05},modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:event.time",values:{base:0.05},modifiers:[],update:[{type:score,value:"#Event plate_havoc.timer"}]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:event.repeats",values:{base:0.001},modifiers:[],update:[{type:score,value:"#EventRepeats plate_havoc.num"}]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:intensity.gain",values:{base:0.017},modifiers:[]}
-
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:player.charge.cap",values:{base:2},modifiers:[],update:[{type:score,value:"#Player.Charge.Cap plate_havoc.num"}]}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:player.charge.gain",values:{base:0.03},modifiers:[],update:[{type:score,value:"#Player.Charge.Gain plate_havoc.num"}]}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:player.charge.loss",values:{base:0.01},modifiers:[],update:[{type:score,value:"#Player.Charge.Loss plate_havoc.num"}]}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:player.charge.jump_effectiveness",values:{base:0.00045},modifiers:[],update:[{type:score,value:"#Player.Charge.Loss plate_havoc.num"}]}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:player.charge.sprint_effectiveness",values:{base:0.001},modifiers:[],update:[{type:score,value:"#Player.Charge.Loss plate_havoc.num"}]}
 
 ##Extra Jumps
 data modify storage plate_havoc:data extra_jumps set value []

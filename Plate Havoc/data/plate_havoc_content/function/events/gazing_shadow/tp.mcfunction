@@ -1,4 +1,4 @@
-$execute positioned ~$(x) ~$(y) ~$(z) run function plate_havoc:game/misc/tp
+$execute positioned ~$(x) ~$(y) ~$(z) run function plate_havoc:misc/tp
 
 execute positioned as @s unless block ~ ~ ~ #plate_havoc:nonsolid run return run function plate_havoc_content:events/gazing_shadow/setup
 

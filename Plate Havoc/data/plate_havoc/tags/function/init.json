@@ -1,5 +1,6 @@
 {
     "values": [
-        "plate_havoc_content:init"
+        "plate_havoc_content:init",
+        "plate_havoc_legacy_content:init"
     ]
 }

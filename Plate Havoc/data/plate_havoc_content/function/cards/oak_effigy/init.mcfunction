@@ -1,0 +1,3 @@
+data remove storage plate_havoc:ui bar.global.snbt[{id:players}].extra[{meta:"plate_havoc_content:oak_effigy"}]
+data modify storage plate_havoc:ui bar.global.snbt[{id:players}].extra append value {meta:"plate_havoc_content:oak_effigy",text:"",extra:[{text:"❤",color:yellow}],tags:["plate_havoc_content:rogue.intermission_start"]}
+execute as @a run function plate_havoc:misc/ui/bar_visuals/player/apply/init_snbt

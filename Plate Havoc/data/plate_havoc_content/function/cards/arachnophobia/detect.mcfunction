@@ -1,0 +1,1 @@
+return run scoreboard players get @a[limit=1,dx=0,tag=plate_havoc.survivor] plate_havoc.id

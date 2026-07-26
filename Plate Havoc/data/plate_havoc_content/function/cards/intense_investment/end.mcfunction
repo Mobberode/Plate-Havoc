@@ -13,4 +13,4 @@ scoreboard players operation #Value plate_havoc.cyclathron += #Temp plate_havoc.
 
 #Visual
 tellraw @a ["",{text:"Intense Investment",color:green}," has given: ",{storage:"plate_havoc:ui",nbt:temp,color:aqua}," Cyclathrons."]
-function plate_havoc:game/misc/cyclathron_visual
+function plate_havoc:misc/cyclathron_visual

@@ -14,7 +14,6 @@ scoreboard objectives add plate_havoc.num dummy
 scoreboard objectives add plate_havoc.id dummy
 scoreboard objectives add plate_havoc.run_id dummy
 scoreboard objectives add plate_havoc.players dummy
-scoreboard objectives add plate_havoc.spawnpoint_energy dummy
 scoreboard objectives add plate_havoc.timer dummy
 scoreboard objectives add plate_havoc.revive_timer dummy
 scoreboard objectives add plate_havoc.relog_timer dummy
@@ -62,8 +61,8 @@ scoreboard objectives add plate_havoc.leaderboard.has_credit dummy
 scoreboard objectives add plate_havoc.jumps.count dummy
 scoreboard objectives add plate_havoc.jumps.strength dummy
 scoreboard objectives add plate_havoc.on_ground.predicate.delay dummy
-scoreboard objectives add plate_havoc.charge.amount dummy
-scoreboard objectives add plate_havoc.charge.using dummy
+scoreboard objectives add plate_havoc.survivor.id dummy
+scoreboard objectives add plate_havoc.survivor.tick_ability dummy
 
 scoreboard objectives add plate_havoc.game_event.in_void dummy
 
@@ -73,7 +72,6 @@ forceload add 0 0
 kill 00000000-0000-0005-0000-0001000007e9
 
 function gu:zzz/load
-function data_manager:load
 
 function plate_havoc:game/triggers/loop
 function plate_havoc:game/init

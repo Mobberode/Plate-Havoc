@@ -7,12 +7,12 @@ data modify storage plate_havoc:events active_data.shared.rotation set value []
 #Horizontal
 scoreboard players set #Modulo plate_havoc.temp 180
 scoreboard players set #Modulo2 plate_havoc.temp -181
-execute store result storage plate_havoc:events temp int 1 run function plate_havoc:game/misc/prng_ranged
+execute store result storage plate_havoc:events temp int 1 run function plate_havoc:misc/prng_ranged
 data modify storage plate_havoc:events active_data.shared.rotation append from storage plate_havoc:events temp
 #Vertical
 scoreboard players set #Modulo plate_havoc.temp 46
 scoreboard players set #Modulo2 plate_havoc.temp -46
-execute store result storage plate_havoc:events temp int 1 run function plate_havoc:game/misc/prng_ranged
+execute store result storage plate_havoc:events temp int 1 run function plate_havoc:misc/prng_ranged
 data modify storage plate_havoc:events active_data.shared.rotation append from storage plate_havoc:events temp
 
 data modify entity @s Rotation set from storage plate_havoc:events active_data.shared.rotation

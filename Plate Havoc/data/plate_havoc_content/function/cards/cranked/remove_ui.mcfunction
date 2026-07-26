@@ -1,0 +1,1 @@
+$data remove storage plate_havoc:ui bar.players[{id:$(id)}].data.modifiers[{meta:"plate_havoc_content:cranked"}]

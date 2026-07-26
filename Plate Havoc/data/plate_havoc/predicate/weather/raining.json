@@ -1,4 +1,5 @@
 {
+    "type": "weather_check",
     "condition": "weather_check",
     "raining": true
 }

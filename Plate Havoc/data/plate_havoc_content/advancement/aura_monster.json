@@ -1,0 +1,13 @@
+{
+  "parent": "plate_havoc_content:beat_tutorial",
+  "display": {
+    "title":"Aura Monster...",
+    "description":"Reach Cycle 25.",
+    "icon": "stone_stairs"
+  },
+  "criteria": {
+    "req":{
+        "trigger": "tick"
+    }
+  }
+}
