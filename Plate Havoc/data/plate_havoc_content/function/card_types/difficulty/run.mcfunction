@@ -10,6 +10,6 @@ data modify storage plate_havoc:cards active_entry set value {id:"plate_havoc_co
 function plate_havoc:misc/cards/process/slot/start
 data modify storage plate_havoc:cards active append from storage plate_havoc:cards active_entry
 #
-data modify storage plate_havoc:cards active_entry set value {id:"plate_havoc_content:difficulty.eclipsed",data:{snbt:{name:{text:"Eclipsed"},body:{text:"",extra:["",{meta:name,text:"Eclipsed",color:gold},"\n",{text:"To be forever forgotten",color:gray,italic:true},"\nEvents and Cards have changed mechanics, Deeper Curses by Cycle 5. Upgrades cost 10% less and Curses rewards 20% more."]},action:{label:[{meta:name,text:"Eclipsed"}],width:320}},command:"function plate_havoc_content:misc/eclipsed_difficulty"},non_card:true}
+data modify storage plate_havoc:cards active_entry set value {id:"plate_havoc_content:difficulty.eclipsed",data:{snbt:{name:{text:"Eclipsed"},body:{text:"",extra:["",{meta:name,text:"Eclipsed",color:gold},"\n",{text:"To be forever forgotten",color:gray,italic:true},"\nEvents and Cards have changed mechanics, Deeper Curses by Cycle 5. Upgrades cost 15% less and Curses rewards 20% more."]},action:{label:[{meta:name,text:"Eclipsed"}],width:320}},command:"function plate_havoc_content:misc/eclipsed_difficulty"},non_card:true}
 function plate_havoc:misc/cards/process/slot/start
 data modify storage plate_havoc:cards active append from storage plate_havoc:cards active_entry

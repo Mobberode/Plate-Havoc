@@ -1,0 +1,1 @@
+$data modify storage plate_havoc:leaderboard players[{player:'$(raw)'}] merge from storage plate_havoc:leaderboard temp

@@ -1,0 +1,1 @@
+attribute @s air_drag_modifier modifier add plate_havoc_content:survivor.phoon -0.999 add_multiplied_total

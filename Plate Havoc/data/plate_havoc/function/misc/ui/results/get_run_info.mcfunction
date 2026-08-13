@@ -1,0 +1,1 @@
+$data modify storage plate_havoc:leaderboard viewing set from storage plate_havoc:leaderboard results[{entry:$(entry)}]

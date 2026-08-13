@@ -2,9 +2,7 @@ data merge entity @s {item:{id:red_stained_glass,components:{enchantment_glint_o
 execute summon text_display run function plate_havoc_content:cards/cube_of_decay/text_setup
 
 ##Value
-scoreboard players set #Modulo plate_havoc.temp 251
-scoreboard players set #Modulo2 plate_havoc.temp 99
-execute store result score @s plate_havoc.temp run function plate_havoc:misc/prng_ranged
+scoreboard players set @s plate_havoc.temp 125
 scoreboard players operation @s plate_havoc.temp *= #Value plate_havoc.round
 scoreboard players operation @s plate_havoc.temp /= #2 plate_havoc.num
 #Solo

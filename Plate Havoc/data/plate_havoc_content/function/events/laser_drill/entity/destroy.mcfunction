@@ -5,4 +5,4 @@ function plate_havoc_content:events/laser_drill/entity/apply_destruction with en
 tp ~ ~-5 ~
 execute if predicate plate_havoc:in_void run kill
 
-execute if data storage plate_havoc:data {run_tags:["eclipsed"]} at @s run function plate_havoc_content:events/laser_drill/entity/destroy_eclipsed
+execute if data storage plate_havoc:data {run_tags:[{id:"plate_havoc:difficulty",value:"eclipsed"}]} at @s run function plate_havoc_content:events/laser_drill/entity/destroy_eclipsed

@@ -1,0 +1,11 @@
+{
+  "parent":"plate_havoc:temp",
+  "criteria": {
+    "req":{
+        "trigger": "lightning_strike",
+        "conditions": {
+          "player": {"type":"entity_scores","entity":"this","scores":{"plate_havoc_content.survivor.charger.using":2}}}
+    }
+  },
+  "rewards":{"function":"plate_havoc_content:trophies/charged_charred"}
+}

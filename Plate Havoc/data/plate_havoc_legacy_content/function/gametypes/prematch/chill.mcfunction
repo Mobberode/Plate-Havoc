@@ -1,9 +1,5 @@
 tellraw @a [{text:"Chill Jog",color:gold},{text:"\nChill and survive with or without others with longer breaks.",color:"gray"}]
 
-data modify storage plate_havoc:ui bar.global.snbt[{id:intensity}].extra[{meta:value}].color set value aqua
-data modify storage plate_havoc:ui bar.global.snbt[{id:time}].extra[{score:{}}].color set value aqua
-data modify storage plate_havoc:ui bar.global.snbt[{id:players}].extra[{score:{}}].color set value aqua
-
 data modify storage plate_havoc:ui game.spawnpoint.status set value ["",{text:"You can respawn back! Spawnpoint Energy: ",color:aqua},{score:{name:"@s",objective:plate_havoc_content.spawnpoint_energy},color:green},"/",{score:{name:"#Cap",objective:plate_havoc_content.spawnpoint_energy},color:gold}]
 
 data modify storage plate_havoc:temp id_attribute set value "plate_havoc:intensity.gain"

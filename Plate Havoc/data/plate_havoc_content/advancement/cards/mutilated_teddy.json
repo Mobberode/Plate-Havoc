@@ -1,7 +1,7 @@
 {
-  "parent": "plate_havoc:cards/root",
+  "parent": "plate_havoc:temp",
   "criteria": {
-    "took_mob_hit":{
+    "req":{
         "trigger": "entity_hurt_player",
         "conditions": {"damage":{"blocked":false,"type":{"direct_entity":{"entity_type":"#plate_havoc:hostile"}}}}
     }

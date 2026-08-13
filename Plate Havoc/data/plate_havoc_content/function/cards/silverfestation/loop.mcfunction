@@ -1,0 +1,1 @@
+execute in plate_havoc:arena run effect give @e[x=0,predicate=plate_havoc_content:card/silverfestation,tag=!plate_havoc.dont_interact,type=!#plate_havoc:non_living_and_players] infested infinite 10

@@ -27,6 +27,5 @@
     },
     ")"
   ],
-  "target": "item_name",
-  "conditions": []
+  "target": "item_name"
 }

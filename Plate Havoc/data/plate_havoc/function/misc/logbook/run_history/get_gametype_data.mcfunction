@@ -1,0 +1,1 @@
+$data modify storage plate_havoc:temp gametype.visual append from storage plate_havoc:leaderboard results[{gametype:'$(id)'}].interactable

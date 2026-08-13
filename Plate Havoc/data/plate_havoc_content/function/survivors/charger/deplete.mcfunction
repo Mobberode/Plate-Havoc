@@ -6,3 +6,6 @@ playsound block.glass.place player @s ~ ~ ~ 5 0.25 0
 
 function plate_havoc_content:survivors/charger/set_jump_strength
 function plate_havoc_content:survivors/charger/set_speed
+
+attribute @s knockback_resistance modifier remove plate_havoc_content:survivor.charger
+attribute @s explosion_knockback_resistance modifier remove plate_havoc_content:survivor.charger

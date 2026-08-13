@@ -2,6 +2,7 @@ kill @e[tag=!plate_havoc.never_kill,type=!player]
 
 gamerule random_tick_speed 3
 
+scoreboard players set #Playing plate_havoc.status 1
 scoreboard players set #Game plate_havoc.status 2
 scoreboard players reset * plate_havoc.event
 scoreboard players reset * plate_havoc.temp
@@ -10,7 +11,7 @@ function plate_havoc:misc/attributes/custom/temporary
 
 execute store result score #Starting plate_havoc.players if entity @a[tag=!plate_havoc.spectator]
 
-advancement revoke @a from plate_havoc:cards/root
+advancement revoke @a from plate_havoc:temp
 function plate_havoc:misc/cards/running/types/start
 
 data modify storage plate_havoc:data default_gamemode set value "survival"

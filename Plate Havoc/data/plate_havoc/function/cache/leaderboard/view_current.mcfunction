@@ -1,1 +1,0 @@
-$tellraw @s [{text:"Server Leaderboard | "},{storage:"plate_havoc:leaderboard",nbt:directory,color:gold},{storage:"plate_havoc:leaderboard",nbt:"root.$(directory)",interpret:true}]

@@ -6,6 +6,7 @@ scoreboard objectives add plate_havoc.test.read trigger
 
 scoreboard objectives add plate_havoc.status dummy
 scoreboard players set #Game plate_havoc.status 0
+scoreboard players set #Playing plate_havoc.status 0
 
 scoreboard objectives add plate_havoc.round dummy
 
@@ -41,14 +42,23 @@ scoreboard objectives add plate_havoc.stat dummy
 scoreboard objectives add plate_havoc.t.stats trigger
 scoreboard objectives add plate_havoc.t.spectator trigger
 scoreboard objectives add plate_havoc.t.credits trigger
-scoreboard objectives add plate_havoc.t.view_leaderboard trigger
+scoreboard objectives add plate_havoc.t.logbook trigger
+scoreboard objectives add plate_havoc.z.run_history.gametype_index trigger
+
+scoreboard objectives add plate_havoc.t.view_run.entry trigger
+scoreboard objectives add plate_havoc.z.view_run.entry dummy
+scoreboard objectives add plate_havoc.t.view_run.player trigger
+scoreboard objectives add plate_havoc.z.view_run.player dummy
+scoreboard objectives add plate_havoc.z.view_run.player_highest dummy
+
 scoreboard objectives add plate_havoc.t.exit_dialog trigger
 scoreboard objectives add plate_havoc.t.extensions trigger
 
 scoreboard objectives add plate_havoc.t.console trigger
-
 scoreboard objectives add plate_havoc.t.select trigger
 scoreboard objectives add plate_havoc.z.select dummy
+scoreboard objectives add plate_havoc.t.survivor_select trigger
+scoreboard objectives add plate_havoc.z.survivor_select trigger
 
 scoreboard objectives add plate_havoc.ui.player_health health
 scoreboard objectives add plate_havoc.ui.player_food food
@@ -66,7 +76,7 @@ scoreboard objectives add plate_havoc.survivor.tick_ability dummy
 
 scoreboard objectives add plate_havoc.game_event.in_void dummy
 
-execute unless score #LBLimit plate_havoc.config matches 0.. run scoreboard players set #LBLimit plate_havoc.config 5
+execute unless score #LBLimit plate_havoc.config matches 0.. run scoreboard players set #LBLimit plate_havoc.config 25
 
 forceload add 0 0
 kill 00000000-0000-0005-0000-0001000007e9

@@ -1,6 +1,6 @@
 tellraw @a [{text:"Team vs Team!",color:gold},{text:"\nOutlast the other Team!",color:"gray"}]
 
-data modify storage plate_havoc:ui bar.global.snbt[{id:players}].extra set value ["",{score:{name:"#GreenTeam",objective:plate_havoc.players},color:green}," v ",{score:{name:"#YellowTeam",objective:plate_havoc.players},color:yellow}]
+data modify storage plate_havoc:ui bar.global.snbt[{id:players}].extra set value [{meta:default,text:"",extra:["",{score:{name:"#GreenTeam",objective:plate_havoc.players},color:green}," v ",{score:{name:"#YellowTeam",objective:plate_havoc.players},color:yellow}]}]
 
 data modify storage plate_havoc:temp id_attribute set value "plate_havoc:intensity.gain"
 data modify storage plate_havoc:custom attribute_modifier set value {id:"plate_havoc_content:gametype_specific",value:3,operation:"add_multiplied_total"}

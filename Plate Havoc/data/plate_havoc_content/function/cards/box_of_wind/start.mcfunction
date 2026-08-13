@@ -1,1 +1,1 @@
-give @a[tag=plate_havoc.survivor] wind_charge 5
+give @a[tag=plate_havoc.survivor] wind_charge[max_stack_size=99] 5

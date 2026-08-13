@@ -8,6 +8,6 @@ function plate_havoc:misc/cards/running/types/run {type:on.clock.collect}
 
 kill
 
-tag @a remove plate_havoc_content.misc.clock.collector
+tag @a[tag=plate_havoc_content.misc.clock.collector] remove plate_havoc_content.misc.clock.collector
 
 function plate_havoc_content:gametypes/rogue/time_cube/sfx

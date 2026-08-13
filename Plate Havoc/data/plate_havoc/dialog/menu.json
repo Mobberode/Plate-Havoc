@@ -6,8 +6,9 @@
     "actions": [
         {"label":"Console","action":{"type":"show_dialog","dialog":"plate_havoc:console"}},
         {"label":"Extensions","action":{"type":"run_command","command":"/trigger plate_havoc.t.extensions set -1"}},
+        {"label":"Survivors","action":{"type":"run_command","command":"/trigger plate_havoc.t.survivor_select"}},
         {"label":"Spectator","action":{"type":"run_command","command":"/trigger plate_havoc.t.spectator"}},
-        {"label":"View Current Leaderboard","action":{"type":"run_command","command":"/trigger plate_havoc.t.view_leaderboard"}},
+        {"label":"Logbook","action":{"type":"run_command","command":"/trigger plate_havoc.t.logbook"}},
         {"label":"Stats","action":{"type":"run_command","command":"/trigger plate_havoc.t.stats"}}
     ]
 }

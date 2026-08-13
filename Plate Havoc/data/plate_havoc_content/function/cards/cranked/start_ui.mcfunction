@@ -1,1 +1,2 @@
+$data remove storage plate_havoc:ui bar.players[{id:$(id)}].data.modifiers[{meta:"plate_havoc_content:cranked"}]
 $data modify storage plate_havoc:ui bar.players[{id:$(id)}].data.modifiers append value {meta:"plate_havoc_content:cranked",id:time,type:add,tags:["plate_havoc_content:rogue.intermission_start","plate_havoc:die"],snbt:[{score:{name:"@s",objective:plate_havoc_content.card.cranked.s},color:gold},".",{score:{name:"@s",objective:plate_havoc_content.card.cranked.t},color:gold}]}

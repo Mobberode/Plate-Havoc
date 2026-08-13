@@ -1,12 +1,9 @@
 {
-    "type": "notice",
-    "title": "Game Over!",
+    "type": "server_links",
+    "title": "Plate Havoc",
+    "can_close_with_escape": true,
+    "pause": true,
     "body": [
-        {"type":"plain_message","contents":{"text":"- Results -\nGame Over!","color":"red"}},
-        {"type":"plain_message","contents":["",{"font":"plate_havoc_content:survivors","text":"0"}," ","Icement"]},
-        {"type":"plain_message","contents":{"text":"- Cards -"}},
-        {"type":"plain_message","contents":["",{"font":"plate_havoc_content:cards","text":"0"},{"font":"plate_havoc_content:cards","text":"1"}]},
-        {"type":"plain_message","contents":{"text":"- Statistics -"}},
-        {"type":"plain_message","contents":{"text":"Press [ESC] / [Ok] to continue.","color":"gray"}}
+        {"type":"plain_message","width":448,"contents":["",{"text":"[Statistics]","extra":[" "]},{"text":"[Survivors]","color":"yellow","extra":[" "]},{"text":"[Logbook]","extra":[" "]},{"text":"[Extensions]","extra":[" "]},"\n\n",{"text":"[ < ]","color":"gray","bold":true,"click_event":{"action":"run_command","command":"/trigger plate_havoc.t.survivor_select set 2"}}," ",{"text":"[ Select ]","color":"gold","click_event":{"action":"run_command","command":"/trigger plate_havoc.t.survivor_select set 3"}}," ",{"text":"[ > ]","color":"gray","bold":true,"click_event":{"action":"run_command","command":"/trigger plate_havoc.t.survivor_select set 4"}},"\n\nPhoon",{"text":"\ntoo much for zblock","color":"gray"},"\n\nNo Air Drag. Gain more and more speed on consecutive jumps."]}
     ]
 }

@@ -1,9 +1,5 @@
 tellraw @a [{text:"Endurance Chaos",color:gold},{text:"\nStruggle to survive the harsh pacing with or without others!",color:"gray"}]
 
-data modify storage plate_havoc:ui bar.global.snbt[{id:intensity}].extra[{meta:value}].color set value red
-data modify storage plate_havoc:ui bar.global.snbt[{id:time}].extra[{score:{}}].color set value red
-data modify storage plate_havoc:ui bar.global.snbt[{id:players}].extra[{score:{}}].color set value red
-
 data modify storage plate_havoc:ui game.spawnpoint.status set value ["",{text:"You can respawn back! Spawnpoint Energy: ",color:aqua},{score:{name:"@s",objective:plate_havoc_content.spawnpoint_energy},color:green},"/",{score:{name:"#Cap",objective:plate_havoc_content.spawnpoint_energy},color:gold}]
 
 data modify storage plate_havoc:data functions.tick_spectator set value "plate_havoc_content:misc/spectator/energy"

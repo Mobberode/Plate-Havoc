@@ -1,6 +1,6 @@
 ##Set
 data remove storage plate_havoc:cards active_data.shared.temp
-scoreboard players set #Temp plate_havoc.card 250
+scoreboard players set #Temp plate_havoc.card 375
 ##Card level
 execute store result score #Level plate_havoc.card run data get storage plate_havoc:cards executing.count
 execute store result storage plate_havoc:cards active_data.shared.temp float 0.001 run scoreboard players operation #Temp plate_havoc.card *= #Level plate_havoc.card

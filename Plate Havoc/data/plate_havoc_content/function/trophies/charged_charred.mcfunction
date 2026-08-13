@@ -1,0 +1,1 @@
+execute at @s if entity @e[distance=..4,limit=1,type=lightning_bolt] run advancement grant @s only plate_havoc_content:charged_charred

@@ -1,0 +1,1 @@
+attribute @s attack_damage modifier remove plate_havoc_content:card.shock_absorber

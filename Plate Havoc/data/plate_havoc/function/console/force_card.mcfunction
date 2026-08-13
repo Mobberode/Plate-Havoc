@@ -30,7 +30,7 @@ function plate_havoc:misc/cards/vote/end/tellraw
 ##Audio
 function plate_havoc:misc/cards/vote/end/sound with storage plate_havoc:cards
 
-advancement revoke @a from plate_havoc:cards/root
+advancement revoke @a from plate_havoc:temp
 scoreboard players reset * plate_havoc.card
 scoreboard players reset * plate_havoc.temp
 

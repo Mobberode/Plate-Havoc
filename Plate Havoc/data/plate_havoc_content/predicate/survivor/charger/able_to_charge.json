@@ -1,0 +1,20 @@
+{
+    "type": "entity_properties",
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "type_specific/player": {
+        "input": {
+          "forward": false,
+          "left": false,
+          "backward": false,
+          "right": false,
+          "jump": false,
+          "sprint": true
+        }
+    },
+    "flags": {
+        "is_on_ground": true
+    }
+  }
+}

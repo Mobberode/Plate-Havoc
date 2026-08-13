@@ -1,4 +1,5 @@
 function plate_havoc:misc/cards/running/types/run {type:on.death}
+scoreboard players add #Stat.Total_Deaths plate_havoc.num 1
 
 ##LMS
 execute if score #Temp plate_havoc.temp matches ..1 if entity @a[tag=plate_havoc.survivor,limit=1] run return run function plate_havoc:game/match/player/last_one with storage plate_havoc:data functions

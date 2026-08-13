@@ -1,18 +1,10 @@
-function plate_havoc:misc/apply_gamemode with storage plate_havoc:data
-team join plate_havoc.player
-tag @s add plate_havoc.survivor
-tag @s add plate_havoc.player
-tag @s remove plate_havoc.marked_for_respawn
-tag @s remove plate_havoc.marked_for_relog
-function plate_havoc:misc/score_reset/run
-execute in plate_havoc:arena positioned 0 64 0 run function plate_havoc:misc/spawn
+function plate_havoc:game/match/player/initalize
 
-scoreboard players set @s plate_havoc.died 0
-scoreboard players set @s plate_havoc.relogged 0
-
-function plate_havoc:misc/attributes/reset
+function plate_havoc:misc/player/store_name/run
+data modify storage plate_havoc:leaderboard temp set value {credit:true}
+data modify storage plate_havoc:leaderboard temp.player set from storage plate_havoc:temp stored_name.raw
+execute store result storage plate_havoc:leaderboard temp.id int 1 run scoreboard players get @s plate_havoc.id
+data modify storage plate_havoc:leaderboard players append from storage plate_havoc:leaderboard temp
 
 scoreboard players operation @s plate_havoc.run_id = #Run plate_havoc.run_id
-effect give @s instant_health 5 5
-effect give @s saturation 5 5
-effect give @s resistance 5 5
+function plate_havoc:game/match/player/spawn

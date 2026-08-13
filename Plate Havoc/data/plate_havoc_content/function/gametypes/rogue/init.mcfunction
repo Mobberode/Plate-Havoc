@@ -5,12 +5,9 @@ data modify storage plate_havoc:ui bar.global.snbt[{id:time}].extra set value [{
 data modify storage plate_havoc:ui bar.global.snbt insert 2 value {id:cyclathron,text:"",extra:[{meta:default,seperator:"",text:"€",extra:[{storage:"plate_havoc:ui",nbt:cyclathron,color:aqua,interpret:true}]}]}
 data modify storage plate_havoc:ui bar.global.snbt insert 3 value {id:cycle,text:"",extra:[{meta:default,text:"♻",extra:[{score:{name:"#Value",objective:plate_havoc.round},color:aqua}]}]}
 
-data modify storage plate_havoc:ui game.end.input insert 1 value {id:cycle,text:"",extra:[{text:"Cycle: ",color:gray},{score:{name:"#Value",objective:plate_havoc.round},color:aqua}]}
-data modify storage plate_havoc:ui game.end.input append value {id:cycle,text:"",extra:[{text:"Cards: ",color:gray},{storage:"plate_havoc:ui",nbt:card_list,interpret:true}]}
-
 scoreboard objectives setdisplay list plate_havoc.ui.player_health
 
-data modify storage plate_havoc:ui game.spawnpoint.status set value [{text:"You will respawn next Cycle. Time till next Cycle: ",color:gray},{score:{name:"#Visual.Left.Second",objective:plate_havoc.timer},color:gold},".",{score:{name:"#Visual.Left.Tick",objective:plate_havoc.timer},color:gold}]
+data modify storage plate_havoc:ui game.spawnpoint.status set value [{text:"You will respawn next Cycle in: ",color:gray},{score:{name:"#Visual.Left.Second",objective:plate_havoc.timer},color:gold},".",{score:{name:"#Visual.Left.Tick",objective:plate_havoc.timer},color:gold}]
 
 data modify storage plate_havoc:data functions.end_condition set value "plate_havoc_content:gametypes/rogue/end_condition"
 
@@ -18,7 +15,9 @@ data modify storage plate_havoc:data functions.tick set value "plate_havoc_conte
 
 data modify storage plate_havoc:data functions.last_stand set value "plate_havoc_content:gametypes/rogue/last_one"
 
-data modify storage plate_havoc:data functions.leaderboard.sort_type set value "plate_havoc_content:leaderboard/check/cycle"
+data modify storage plate_havoc:data functions.leaderboard.sort_type set value "cycle"
+data modify storage plate_havoc:data functions.leaderboard.credit_loop set value "plate_havoc_content:leaderboard/types/cycle/loop"
+data modify storage plate_havoc:data functions.leaderboard.credit_start set value "plate_havoc_content:leaderboard/types/cycle/start"
 
 data modify storage plate_havoc:data default_gamemode set value "survival"
 difficulty hard
@@ -28,9 +27,12 @@ data modify storage plate_havoc:data on_game_start append value "plate_havoc:gam
 
 data modify storage plate_havoc:data on_game_start append value "plate_havoc_content:gametypes/rogue/round_start"
 
-data modify storage plate_havoc:leaderboard data_functions prepend value {data:"plate_havoc_content:leaderboard/data/cycle"}
-data modify storage plate_havoc:leaderboard data_functions append value {data:"plate_havoc_content:leaderboard/data/cards"}
-
+data modify storage plate_havoc:leaderboard data_functions insert 1 value {function:"plate_havoc_content:leaderboard/data/cycle"}
+data modify storage plate_havoc:leaderboard data_functions insert -2 value {function:"plate_havoc_content:leaderboard/data/cards"}
+data modify storage plate_havoc:leaderboard data_functions insert -3 value {function:"plate_havoc_content:leaderboard/data/cyclathrons_yielded"}
+data modify storage plate_havoc:leaderboard data_functions insert -3 value {function:"plate_havoc_content:leaderboard/data/clocks_collected"}
+data modify storage plate_havoc:leaderboard data_functions insert -3 value {function:"plate_havoc_content:leaderboard/data/artefacts_activated"}
+data modify storage plate_havoc:leaderboard data_functions insert -3 value {function:"plate_havoc_content:leaderboard/data/defeated_the_forgotten"}
 ### Game contents
 
 scoreboard players set #Value plate_havoc.round 0

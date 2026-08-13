@@ -1,10 +1,7 @@
 tellraw @a [{text:"Lava Rush",color:red},{text:"\nGather, Build, Kill, Survive. ",color:"gray"}]
 
 data remove storage plate_havoc:ui bar.global.snbt[{id:intensity}]
-data modify storage plate_havoc:ui bar.global.snbt prepend value {id:lava_height,text:"",extra:[{meta:default,text:"Lava Height: "},{meta:value,score:{name:"#LavaHeight",objective:plate_havoc.temp},color:red}]}
-
-data modify storage plate_havoc:ui game.end.input insert 1 value {id:lava_height,text:"",extra:[{text:"Lava Height: ",color:gray},{score:{name:"#LavaHeight",objective:plate_havoc.temp},color:red}]}
-data remove storage plate_havoc:ui game.end.input[{id:intensity}]
+data modify storage plate_havoc:ui bar.global.snbt prepend value {id:lava_height,text:"",extra:[{meta:default,text:"↑",extra:[{meta:value,score:{name:"#LavaHeight",objective:plate_havoc.temp},color:red}]}]}
 
 data modify storage plate_havoc:data functions.tick_spectator set value ""
 
@@ -14,7 +11,7 @@ data modify storage plate_havoc:data default_gamemode set value "survival"
 
 data modify storage plate_havoc:data functions.set_plate set value "plate_havoc_legacy_content:gametypes/prematch/lava_rush/fill"
 data modify storage plate_havoc:data functions.on_action set value "plate_havoc_legacy_content:gametypes/match/lava_rush/action"
-data modify storage plate_havoc:data functions.leaderboard.sort_type set value "plate_havoc_content:leaderboard/check/lava_height"
+data modify storage plate_havoc:data functions.leaderboard.sort_type set value "lava_height"
 
 gamerule block_drops true
 gamerule mob_drops true
@@ -30,8 +27,8 @@ scoreboard players set #BaseWorldTime plate_havoc.num 6000
 
 scoreboard players set #AllowBlockInteraction plate_havoc.num 1
 
-data modify storage plate_havoc:leaderboard data_functions prepend value {data:"plate_havoc_content:leaderboard/data/lava_height"}
-data remove storage plate_havoc:leaderboard data_functions[{data:"plate_havoc_content:leaderboard/data/intensity"}]
+data modify storage plate_havoc:leaderboard data_functions prepend value {function:"plate_havoc_content:leaderboard/data/lava_height"}
+data remove storage plate_havoc:leaderboard data_functions[{function:"plate_havoc_content:leaderboard/data/intensity"}]
 
 #
 scoreboard players set #LavaHeight plate_havoc.temp -65

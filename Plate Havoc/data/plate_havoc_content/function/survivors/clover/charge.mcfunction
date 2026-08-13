@@ -1,0 +1,2 @@
+scoreboard players set @s plate_havoc_content.survivor.clover.charge.time 0
+execute if predicate plate_havoc:moving_input_all if entity @e[distance=..10,limit=1,tag=plate_havoc_content.misc.clock,type=item_display] run scoreboard players add @s[scores={plate_havoc_content.survivor.clover.battery=..99}] plate_havoc_content.survivor.clover.battery 10

@@ -1,7 +1,6 @@
 scoreboard players set @s plate_havoc.relogged 0
 scoreboard players set @s plate_havoc_content.spawnpoint_energy 0
 tag @s remove plate_havoc.survivor
-tag @s remove plate_havoc.player
 
 scoreboard players set @s plate_havoc.relog_timer 2
 tag @s add plate_havoc.marked_for_relog
@@ -11,3 +10,4 @@ effect clear
 function plate_havoc:misc/relog_process
 
 execute unless score @s plate_havoc.run_id = #Run plate_havoc.run_id run function plate_havoc:game/match/player/relog_clear
+function plate_havoc:misc/logbook/leaderboard/credit/start with storage plate_havoc:data functions.leaderboard

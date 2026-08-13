@@ -1,1 +1,1 @@
-function plate_havoc:game/lobby/arena/macro with storage plate_havoc:data functions
+execute in plate_havoc:arena positioned 0.0 64 0.0 run function plate_havoc:game/lobby/arena/macro with storage plate_havoc:data functions

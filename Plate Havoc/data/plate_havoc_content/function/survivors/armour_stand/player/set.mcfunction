@@ -1,0 +1,2 @@
+attribute @s max_health modifier add plate_havoc_content:survivor.armour_stand -0.5 add_multiplied_total
+attribute @s burning_time modifier add plate_havoc_content:survivor.armour_stand 0.33 add_multiplied_total

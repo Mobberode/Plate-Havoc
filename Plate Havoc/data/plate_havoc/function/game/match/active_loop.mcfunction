@@ -7,12 +7,15 @@ function plate_havoc:game/match/end_check with storage plate_havoc:data function
 scoreboard players remove #Value plate_havoc.timer 1
 
 ##Player
+execute store result score #Extra plate_havoc.jumps.count if data storage plate_havoc:data extra_jumps[]
+
 execute as @a[tag=!plate_havoc.spectator,tag=plate_havoc.survivor] at @s run function plate_havoc:game/match/player_loop
 
 ##Data-Driven Functions
 #Tick
 function plate_havoc:game/match/tick with storage plate_havoc:data functions
-execute if score #Game plate_havoc.status matches ..1 run return fail
+execute unless score #Playing plate_havoc.status matches 1.. run return fail
+
 #Action
 execute if score #Value plate_havoc.timer matches ..0 run function plate_havoc:game/match/macro with storage plate_havoc:data functions
 

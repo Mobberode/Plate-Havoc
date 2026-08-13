@@ -9,7 +9,7 @@ data modify storage plate_havoc:temp data set value [\
 \
 {id:"plate_havoc_content:lava",data:{global:{intensity:{min:1},function:"plate_havoc_content:events/lava/start"}}},\
 \
-{id:"plate_havoc_content:falling_sand",data:{global:{intensity:{min:0.75},function:"plate_havoc_content:events/falling_sand/start"}}},\
+{id:"plate_havoc_content:falling_sand",exclude:["rogue"],data:{global:{intensity:{min:0.75},function:"plate_havoc_content:events/falling_sand/start"}}},\
 \
 {id:"plate_havoc_content:zeus",data:{global:{intensity:{min:1.25},function:"plate_havoc_content:events/zeus/start"}}},\
 \

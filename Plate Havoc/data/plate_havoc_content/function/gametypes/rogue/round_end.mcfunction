@@ -3,6 +3,7 @@ effect clear @a
 
 gamerule random_tick_speed 0
 
+scoreboard players set #Playing plate_havoc.status 0
 scoreboard players set #Game plate_havoc.status 1
 scoreboard players add #Value plate_havoc.round 1
 scoreboard players add @a[tag=!plate_havoc.spectator] plate_havoc_content.leaderboard.cycle.current 1

@@ -27,3 +27,5 @@ function #plate_havoc:init
 function plate_havoc:extensions/manager/run
 
 function plate_havoc:extensions/handler/run {type:"plate_havoc:cache"}
+
+execute store result score #Total plate_havoc.survivor.id if data storage plate_havoc:survivors data[]

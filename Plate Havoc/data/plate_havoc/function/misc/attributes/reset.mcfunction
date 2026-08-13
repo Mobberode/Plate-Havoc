@@ -21,4 +21,7 @@ attribute @s camera_distance base reset
 
 execute if score #AllowBlockInteraction plate_havoc.num matches 1.. run function plate_havoc:misc/attributes/allow_block_interaction
 
+execute store result storage plate_havoc:temp temp int 1 run scoreboard players get @s plate_havoc.survivor.id
+function plate_havoc:misc/survivor/set with storage plate_havoc:temp
+
 function plate_havoc:misc/cards/running/types/run {type:set.attribute}

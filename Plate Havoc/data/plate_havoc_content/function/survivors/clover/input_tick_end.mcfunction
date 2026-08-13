@@ -1,0 +1,2 @@
+execute if entity @s[predicate=!plate_havoc:sneak_input,scores={plate_havoc_content.survivor.clover.battery=20..}] run function plate_havoc_content:survivors/clover/give
+scoreboard players set @s plate_havoc_content.survivor.global.sprint_inputs 0

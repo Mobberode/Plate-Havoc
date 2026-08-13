@@ -11,6 +11,7 @@ scoreboard players set #7 plate_havoc.num 7
 scoreboard players set #8 plate_havoc.num 8
 scoreboard players set #9 plate_havoc.num 9
 scoreboard players set #10 plate_havoc.num 10
+scoreboard players set #15 plate_havoc.num 15
 scoreboard players set #20 plate_havoc.num 20
 scoreboard players set #25 plate_havoc.num 25
 scoreboard players set #30 plate_havoc.num 30
@@ -63,13 +64,17 @@ data modify storage plate_havoc:data functions.tick_spectator set value "plate_h
 data modify storage plate_havoc:data functions.end_condition set value "plate_havoc:game/match/end_condition"
 data modify storage plate_havoc:data functions.last_stand set value ""
 
-#Leaderboard
-data modify storage plate_havoc:data functions.leaderboard.sort_type set value "plate_havoc_content:leaderboard/check/intensity"
-data modify storage plate_havoc:leaderboard data_functions set value [{data:"plate_havoc_content:leaderboard/data/status"},{data:"plate_havoc_content:leaderboard/data/time"},{data:"plate_havoc_content:leaderboard/data/intensity"},{data:"plate_havoc_content:leaderboard/data/player_credit"},{data:"plate_havoc_content:leaderboard/data/seed"},{data:"plate_havoc_content:leaderboard/data/extensions"}]
+#Tabs
+data modify storage plate_havoc:ui tabs set value [{title:"Survivors",function:""}]
 
-data modify storage plate_havoc:data functions.leaderboard.credit_loop set value "plate_havoc:misc/leaderboard/credit/type/time_elasped/loop"
-data modify storage plate_havoc:data functions.leaderboard.credit_start set value "plate_havoc:misc/leaderboard/credit/type/time_elasped/start"
-data modify storage plate_havoc:leaderboard player_credit set value []
+#Leaderboard
+data modify storage plate_havoc:data functions.leaderboard.sort_type set value "intensity"
+data modify storage plate_havoc:leaderboard data_functions set value [{function:"plate_havoc_content:leaderboard/data/seed"},{function:"plate_havoc_content:leaderboard/data/status"},{function:"plate_havoc_content:leaderboard/data/difficulty"},{function:"plate_havoc_content:leaderboard/data/gametype"},{function:"plate_havoc_content:leaderboard/data/time"},{function:"plate_havoc_content:leaderboard/data/intensity"},{function:"plate_havoc_content:leaderboard/data/events_occured"},{function:"plate_havoc_content:leaderboard/data/total_deaths"},{function:"plate_havoc_content:leaderboard/data/extensions"}]
+data modify storage plate_havoc:leaderboard player_data_functions set value ["plate_havoc_content:leaderboard/data/player/survivor"]
+
+data modify storage plate_havoc:data functions.leaderboard.credit_loop set value "plate_havoc:misc/logbook/leaderboard/credit/type/time_elasped/loop"
+data modify storage plate_havoc:data functions.leaderboard.credit_start set value "plate_havoc:misc/logbook/leaderboard/credit/type/time_elasped/start"
+data modify storage plate_havoc:leaderboard players set value []
 
 ##Holds all functions that will be ran when game starts
 data modify storage plate_havoc:data on_game_start set value []
@@ -92,15 +97,15 @@ data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:
 
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:cyclathron_yield",values:{base:1},modifiers:[]}
 
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:event.time",values:{base:0.05},modifiers:[],update:[{type:score,value:"#Event plate_havoc.timer"}]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:event.time",values:{base:0.06},modifiers:[],update:[{type:score,value:"#Event plate_havoc.timer"}]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:event.repeats",values:{base:0.001},modifiers:[],update:[{type:score,value:"#EventRepeats plate_havoc.num"}]}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:intensity.gain",values:{base:0.017},modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:intensity.gain",values:{base:0.015},modifiers:[]}
 
 ##Extra Jumps
 data modify storage plate_havoc:data extra_jumps set value []
 
 ##Run tags
-data modify storage plate_havoc:data run_tags set value []
+data modify storage plate_havoc:data run_tags set value [{id:"plate_havoc:difficulty",value:"moonlight",snbt:{text:"Moonlight",color:aqua}}]
 
 ##Events
 data modify storage plate_havoc:events pool set value {available:[],unavailable:[],temp:[],sort:[]}

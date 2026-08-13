@@ -1,7 +1,7 @@
 data remove storage plate_havoc:cards card.metadata
 
 ##Card SNBT
-data modify storage plate_havoc:temp input.colour set from storage plate_havoc:cards active_type.colour
+data modify storage plate_havoc:temp input.colours set from storage plate_havoc:cards active_type.colours
 data modify storage plate_havoc:temp input.description set from storage plate_havoc:cards card.description
 data modify storage plate_havoc:temp input.name set from storage plate_havoc:cards card.name
 

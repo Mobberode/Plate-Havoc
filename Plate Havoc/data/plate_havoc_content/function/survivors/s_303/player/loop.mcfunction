@@ -1,0 +1,2 @@
+execute unless score @s plate_havoc_content.survivor.s_303.status matches 1.. unless predicate plate_havoc:sprint_input run return run function plate_havoc_content:survivors/s_303/statuses/idle
+execute if score @s plate_havoc_content.survivor.s_303.status matches 1 run function plate_havoc_content:survivors/s_303/statuses/input

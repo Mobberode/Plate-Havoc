@@ -1,0 +1,1 @@
+execute as @e[x=0,tag=plate_havoc.artefact,type=marker] run function plate_havoc:misc/function with entity @s data

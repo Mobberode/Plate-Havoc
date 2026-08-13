@@ -1,2 +1,2 @@
-scoreboard players reset @s plate_havoc.jumps.count
+scoreboard players set @s plate_havoc.jumps.count 0
 tag @s remove plate_havoc.jumps.used

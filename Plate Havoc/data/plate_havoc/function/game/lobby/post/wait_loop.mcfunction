@@ -3,4 +3,6 @@ bossbar set plate_havoc:status name {text:"Loading Game Contents"}
 
 execute if score #Loaded plate_havoc.status matches 1.. run return run function plate_havoc:game/lobby/post/post_arena
 
+execute if stopwatch plate_havoc:load_time 45.. run return run function plate_havoc:game/lobby/post/fail
+
 execute if score #Game plate_havoc.status matches 1 run schedule function plate_havoc:game/lobby/post/wait_loop 1t

@@ -1,6 +1,6 @@
 tellraw @a [{text:"Protect the VIP!",color:gold},{text:"\nDo not let the VIP die!",color:"gray"}]
 
-data modify storage plate_havoc:ui bar.global.snbt[{id:players}].extra set value [{text:"VIP: "},{selector:"@a[tag=plate_havoc.vip]",color:green}," ",{atlas:"gui",sprite:"hud/heart/full"},{meta:value,storage:"plate_havoc:custom",nbt:vip_health,color:red,interpret:true}]
+data modify storage plate_havoc:ui bar.global.snbt[{id:players}].extra set value [{meta:deafult,text:"🛡",extra:[{selector:"@a[tag=plate_havoc.vip]",color:green}," ",{atlas:"gui",sprite:"hud/heart/full"},{meta:value,storage:"plate_havoc:custom",nbt:vip_health,color:red,interpret:true}]}]
 
 data modify storage plate_havoc:ui game.spawnpoint.status set value ["",{text:"You can respawn back! Spawnpoint Energy: ",color:aqua},{score:{name:"@s",objective:plate_havoc_content.spawnpoint_energy},color:green},"/",{score:{name:"#Cap",objective:plate_havoc_content.spawnpoint_energy},color:gold}]
 

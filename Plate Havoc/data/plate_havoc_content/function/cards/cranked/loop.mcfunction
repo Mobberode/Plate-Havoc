@@ -1,3 +1,10 @@
-scoreboard players add #CrankedWarn plate_havoc.temp 1
-execute as @a[tag=plate_havoc.survivor] run function plate_havoc_content:cards/cranked/tick
-execute if score #CrankedWarn plate_havoc.temp matches 20.. run scoreboard players set #CrankedWarn plate_havoc.temp 0
+scoreboard players operation #Temp plate_havoc.timer = @s plate_havoc_content.card.cranked
+function plate_havoc:game/time/convert
+scoreboard players operation @s plate_havoc_content.card.cranked.s = #Visual.Second plate_havoc.timer
+scoreboard players operation @s plate_havoc_content.card.cranked.t = #Visual.Tick plate_havoc.timer
+#
+scoreboard players operation #Temp plate_havoc.timer %= #20 plate_havoc.num
+execute if score #Temp plate_havoc.timer matches 0 at @s run function plate_havoc_content:cards/cranked/sound
+
+scoreboard players remove @s plate_havoc_content.card.cranked 1
+execute if score @s plate_havoc_content.card.cranked matches ..-1 run return run function plate_havoc_content:cards/cranked/kill

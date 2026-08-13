@@ -1,0 +1,2 @@
+function plate_havoc:misc/logbook/leaderboard/order/remove with storage plate_havoc:leaderboard temp.process2[-1]
+execute if data storage plate_havoc:leaderboard temp.process2[-1] run function plate_havoc:misc/logbook/leaderboard/order/remove_duplicates

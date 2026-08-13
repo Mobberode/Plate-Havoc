@@ -1,0 +1,1 @@
+scoreboard players set @s plate_havoc_content.survivor.s_303.status 0

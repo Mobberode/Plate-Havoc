@@ -10,9 +10,10 @@ function plate_havoc:misc/cards/process/attributes/rerollable/cost
 
 ##Label for active
 data modify storage plate_havoc:temp temp set value {label:[{meta:name,text:"Reroll Cards"}],width:256}
+
 #Cost
-data modify storage plate_havoc:temp temp.label insert 1 value {meta:cyclathron,text:" ",extra:["(",{meta:prefix,text:""},{meta:cyclathron,text:"0"},"€",")"]}
-data modify storage plate_havoc:temp temp.label[{meta:cyclathron}].extra[{meta:cyclathron}].text set string storage plate_havoc:cards cyclathron 0 -1
+execute store result score #Temp plate_havoc.cyclathron run data get storage plate_havoc:cards cyclathron 100
+execute if score #Temp plate_havoc.cyclathron matches 1.. run function plate_havoc:misc/cards/process/attributes/rerollable/snbt
 
 ##Active
 data modify storage plate_havoc:cards active_entry set value {id:"plate_havoc:reroll",visual:{},non_card:true,data:{command:"function plate_havoc:misc/cards/attributes/rerollable/execute"},snbt:{name:{text:"Reroll Cards"}}}

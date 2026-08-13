@@ -1,0 +1,2 @@
+execute store result storage plate_havoc:custom update_attribute.current.temp int 1 run scoreboard players get #Temp plate_havoc.num
+$execute store result score $(value) run data get storage plate_havoc:custom update_attribute.current.temp $(scale)

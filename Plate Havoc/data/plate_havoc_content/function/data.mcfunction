@@ -79,7 +79,7 @@ data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.nuke.failure.chance",values:{base:0.2},modifiers:[]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.nuke.failure.time",values:{base:0.1},modifiers:[]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.nuke.power",values:{base:0.125},modifiers:[],tags:["plate_havoc_content:enraged.aggressive","plate_havoc_content:life_harmony.applicable"]}
-## piranha (Duration) (Damage) (Bite Time)
+## piranha (Duration) (Damage) (Bite Time + Factor)
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.piranha.duration",values:{base:1.2},modifiers:[],tags:["plate_havoc_content:slow_passing.applicable","plate_havoc_content:enraged.shorter","plate_havoc_content:netherite_clock.applicable"]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.piranha.damage",values:{base:1},modifiers:[],tags:["plate_havoc_content:enraged.aggressive","plate_havoc_content:life_harmony.applicable"]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.piranha.bite_time_factor",values:{base:0.003},modifiers:[],update:[{type:score,value:"#PHC.Piranha.Bite_Time_Factor plate_havoc.event"}]}
@@ -180,8 +180,8 @@ data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_
 
 ## Charger
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:survivor.charger.cap",values:{base:2},modifiers:[],update:[{type:score,value:"#Cap plate_havoc_content.survivor.charger.amount"}]}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:survivor.charger.gain",values:{base:0.03},modifiers:[],update:[{type:score,value:"#Gain plate_havoc_content.survivor.charger.amount"}]}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:survivor.charger.loss",values:{base:0.01},modifiers:[],update:[{type:score,value:"#Loss plate_havoc_content.survivor.charger.amount"}]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:survivor.charger.gain",values:{base:0.04},modifiers:[],update:[{type:score,value:"#Gain plate_havoc_content.survivor.charger.amount"}]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:survivor.charger.loss",values:{base:0.008},modifiers:[],update:[{type:score,value:"#Loss plate_havoc_content.survivor.charger.amount"},{type:score,value:"#SneakLoss plate_havoc_content.survivor.charger.amount",scale:2}]}
 
 ## Spectator - Energy
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:spectator.energy.cap",values:{base:100},modifiers:[],update:[{type:score,value:"#Cap plate_havoc_content.spawnpoint_energy"}]}
@@ -235,6 +235,7 @@ scoreboard objectives add plate_havoc_content.card.spyshine.cooldown dummy
 scoreboard objectives add plate_havoc_content.card.spyshine.boosts dummy
 scoreboard objectives add plate_havoc_content.card.spyshine.strength dummy
 scoreboard objectives add plate_havoc_content.card.spyshine.holding dummy
+scoreboard objectives add plate_havoc_content.card.shock_absorber dummy
 
 scoreboard objectives add plate_havoc_content.stat.clocks dummy
 
@@ -244,6 +245,23 @@ scoreboard objectives add plate_havoc_content.survivor.charger.using dummy
 scoreboard objectives add plate_havoc_content.survivor.armour_stand.stand.status dummy
 scoreboard objectives add plate_havoc_content.survivor.armour_stand.stand.time dummy
 scoreboard objectives add plate_havoc_content.survivor.armour_stand.power dummy
+
+scoreboard objectives add plate_havoc_content.survivor.hex.time dummy
+
+scoreboard objectives add plate_havoc_content.survivor.s_303.status dummy
+scoreboard objectives add plate_havoc_content.survivor.s_303.time dummy
+
+scoreboard objectives add plate_havoc_content.survivor.global.sneak_inputs dummy
+scoreboard objectives add plate_havoc_content.survivor.global.sneak_held dummy
+scoreboard objectives add plate_havoc_content.survivor.global.sprint_inputs dummy
+scoreboard objectives add plate_havoc_content.survivor.global.sprint_held dummy
+scoreboard objectives add plate_havoc_content.survivor.global.input_window dummy
+
+scoreboard objectives add plate_havoc_content.survivor.clover.battery dummy
+scoreboard objectives add plate_havoc_content.survivor.clover.boost.status dummy
+scoreboard objectives add plate_havoc_content.survivor.clover.boost.time dummy
+scoreboard objectives add plate_havoc_content.survivor.clover.idle.time dummy
+scoreboard objectives add plate_havoc_content.survivor.clover.charge.time dummy
 
 scoreboard objectives add plate_havoc_content.spawnpoint_energy dummy
 

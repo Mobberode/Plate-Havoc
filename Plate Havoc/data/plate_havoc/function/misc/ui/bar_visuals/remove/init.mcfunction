@@ -1,0 +1,2 @@
+data modify storage plate_havoc:ui temp set from storage plate_havoc:ui bar.players
+function plate_havoc:misc/ui/bar_visuals/remove/loop

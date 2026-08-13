@@ -20,6 +20,7 @@ worldborder center 0.0 0.0
 
 scoreboard players reset * plate_havoc.stat
 scoreboard players set #Active plate_havoc.status 1
+scoreboard players set #Playing plate_havoc.status 1
 scoreboard players set #Game plate_havoc.status 2
 
 data modify storage plate_havoc:custom attributes[].refresh set value true

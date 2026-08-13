@@ -5,5 +5,6 @@
 ##Debug
 #$execute positioned ~$(range) ~$(range) ~$(range) run particle glow
 #$execute positioned ~-$(range) ~-$(range) ~-$(range) run particle angry_villager
+#$execute positioned ~-$(range) ~-$(range) ~-$(range) positioned ~$(area) ~$(area) ~$(area) run particle bubble_pop
 
-$execute align xyz positioned ~-$(range) ~-$(range) ~-$(range) as @p[dx=$(area),dy=$(area),dz=$(area),tag=plate_havoc.survivor] run function plate_havoc_content:gametypes/rogue/time_cube/collect
+$execute positioned ~-$(range) ~-$(range) ~-$(range) as @p[dx=$(area),dy=$(area),dz=$(area),tag=plate_havoc.survivor] run function plate_havoc_content:gametypes/rogue/time_cube/collect

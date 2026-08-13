@@ -1,4 +1,4 @@
-execute unless score #Game plate_havoc.status matches 2.. run return fail
+execute unless score #Playing plate_havoc.status matches 1.. run return fail
 
 scoreboard players operation #Temp plate_havoc.timer = #PHC.Mechanical_Heart plate_havoc.temp
 function plate_havoc:game/time/convert

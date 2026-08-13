@@ -1,0 +1,2 @@
+data modify storage plate_havoc:leaderboard temp.interactable.extra[{meta:entry}].text set string storage plate_havoc:leaderboard temp.entry
+$data modify storage plate_havoc:leaderboard temp.interactable.click_event set value {action:"run_command",command:"/trigger plate_havoc.t.view_run.entry set $(entry)"}

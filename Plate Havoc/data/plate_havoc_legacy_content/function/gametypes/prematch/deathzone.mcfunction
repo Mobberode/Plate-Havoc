@@ -6,7 +6,6 @@ data remove storage plate_havoc:ui bar.global.snbt[{id:intensity}]
 
 data remove storage plate_havoc:events pool.unavailable[].intensity.min
 
-data remove storage plate_havoc:ui game.end.input[{id:intensity}]
-data remove storage plate_havoc:leaderboard data_functions[{data:"plate_havoc_content:leaderboard/data/intensity"}]
+data remove storage plate_havoc:leaderboard data_functions[{function:"plate_havoc_content:leaderboard/data/intensity"}]
 
 data modify storage plate_havoc:data functions.tick_spectator set value "plate_havoc_content:misc/spectator/energy"

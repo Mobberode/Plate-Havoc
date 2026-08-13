@@ -1,5 +1,5 @@
 tellraw @a ["",{text:"Sunlight difficulty active...",color:yellow}]
-data modify storage plate_havoc:data run_tags append value "sunlight"
+data modify storage plate_havoc:data run_tags[{id:"plate_havoc:difficulty"}] merge value {value:"sunlight",snbt:{text:"Sunlight",color:yellow}}
 data modify storage plate_havoc:cards match_types[{id:"plate_havoc_content:curse"}].requirements[{type:cycle}].value set value [2]
 
 data modify storage plate_havoc:temp id_attribute set value "plate_havoc:intensity.gain"

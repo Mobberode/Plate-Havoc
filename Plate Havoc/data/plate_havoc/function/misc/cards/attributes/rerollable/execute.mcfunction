@@ -20,6 +20,9 @@ execute if score #Card.KeepInPool plate_havoc.num matches 1.. run function plate
 function plate_havoc:misc/cards/pool/select
 function plate_havoc:misc/cards/process/loop
 
-##Update
 execute if data storage plate_havoc:cards {info:["stop_processing_attributes"]} run return fail
-function plate_havoc:misc/cards/attributes/rerollable/update
+
+##Update
+execute if score #Temp plate_havoc.cyclathron matches 1.. run function plate_havoc:misc/cards/attributes/rerollable/update
+##Restore non card actions
+data modify storage plate_havoc:cards active append from storage plate_havoc:cards temp[]
