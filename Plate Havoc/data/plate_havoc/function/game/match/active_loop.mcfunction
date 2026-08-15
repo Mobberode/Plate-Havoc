@@ -1,4 +1,7 @@
 scoreboard players add #Runtick plate_havoc.num 1
+scoreboard players operation #Game.Condition.Even_Tick plate_havoc.temp = #Runtick plate_havoc.num
+scoreboard players operation #Game.Condition.Even_Tick plate_havoc.temp %= #2 plate_havoc.num
+
 
 ##Game Check
 function plate_havoc:game/match/end_check with storage plate_havoc:data functions

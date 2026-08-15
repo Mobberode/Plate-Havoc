@@ -1,1 +1,0 @@
-execute as @a run function plate_havoc_content:cards/vampiristic_lifeblood/attributes

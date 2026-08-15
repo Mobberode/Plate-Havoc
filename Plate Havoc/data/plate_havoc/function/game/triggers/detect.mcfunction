@@ -1,4 +1,4 @@
-execute unless score @s plate_havoc.test.read matches 101.. run function plate_havoc:test/tutorial
+execute unless score @s plate_havoc.test.read matches 2.. run function plate_havoc:test/tutorial
 
 scoreboard players enable @s plate_havoc.t.spectator
 scoreboard players enable @s plate_havoc.t.stats

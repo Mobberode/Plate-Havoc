@@ -1,3 +1,4 @@
 tag @s remove plate_havoc.spectator
 
-scoreboard players set @s plate_havoc.test.read 101
+scoreboard players set @s plate_havoc.test.read 2
+trigger plate_havoc.t.survivor_select

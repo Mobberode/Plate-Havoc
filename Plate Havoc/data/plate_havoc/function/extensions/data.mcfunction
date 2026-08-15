@@ -28,4 +28,10 @@ function plate_havoc:extensions/manager/run
 
 function plate_havoc:extensions/handler/run {type:"plate_havoc:cache"}
 
+data modify storage plate_havoc:leaderboard eligble_gametypes set from storage plate_havoc:data gametypes
+data remove storage plate_havoc:leaderboard eligble_gametypes[{leaderboard:{status:false}}]
+execute store result score #HighestGametypeIndex plate_havoc.num if data storage plate_havoc:leaderboard eligble_gametypes[]
+scoreboard players remove #HighestGametypeIndex plate_havoc.num 1
+
+
 execute store result score #Total plate_havoc.survivor.id if data storage plate_havoc:survivors data[]

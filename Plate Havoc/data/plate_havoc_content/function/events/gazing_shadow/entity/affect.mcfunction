@@ -1,0 +1,2 @@
+scoreboard players operation #Left plate_havoc.timer += #PHC.Gazing_Shadow.Time_Penalty plate_havoc.temp
+execute if data storage plate_havoc:data {run_tags:[{id:"plate_havoc:difficulty",value:"eclipsed"}]} run function plate_havoc_content:events/gazing_shadow/view/eclipsed

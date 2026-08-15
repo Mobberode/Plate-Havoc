@@ -6,7 +6,6 @@ scoreboard players set #Playing plate_havoc.status 1
 scoreboard players set #Game plate_havoc.status 2
 scoreboard players reset * plate_havoc.event
 scoreboard players reset * plate_havoc.temp
-scoreboard players set #Spawned plate_havoc_content.stat.clocks 0
 function plate_havoc:misc/attributes/custom/temporary
 
 execute store result score #Starting plate_havoc.players if entity @a[tag=!plate_havoc.spectator]

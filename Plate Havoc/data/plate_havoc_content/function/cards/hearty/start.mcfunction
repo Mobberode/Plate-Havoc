@@ -1,5 +1,5 @@
-##Set to 3
-scoreboard players set #Temp plate_havoc.card 50
+##Set
+scoreboard players set #Temp plate_havoc.card 25
 ##Card level
 execute store result score #Level plate_havoc.card run data get storage plate_havoc:cards executing.count
 scoreboard players operation #Temp plate_havoc.card *= #Level plate_havoc.card

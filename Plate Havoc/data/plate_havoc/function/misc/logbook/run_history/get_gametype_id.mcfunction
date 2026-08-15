@@ -1,1 +1,1 @@
-$data modify storage plate_havoc:temp gametype.id set from storage plate_havoc:data gametypes[$(index)].id
+$data modify storage plate_havoc:temp gametype.id set from storage plate_havoc:leaderboard eligble_gametypes[$(index)].id

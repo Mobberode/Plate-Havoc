@@ -1,7 +1,7 @@
 {
     "values": [
         "plate_havoc:load",
-        "player_motion:internal/init",
+        "plate_player_motion:internal/init",
         "hblib:load"
     ]
 }

@@ -13,6 +13,7 @@ scoreboard objectives add plate_havoc.round dummy
 scoreboard objectives add plate_havoc.debug dummy
 scoreboard objectives add plate_havoc.num dummy
 scoreboard objectives add plate_havoc.id dummy
+scoreboard objectives add plate_havoc.visual_id dummy
 scoreboard objectives add plate_havoc.run_id dummy
 scoreboard objectives add plate_havoc.players dummy
 scoreboard objectives add plate_havoc.timer dummy
@@ -43,7 +44,8 @@ scoreboard objectives add plate_havoc.t.stats trigger
 scoreboard objectives add plate_havoc.t.spectator trigger
 scoreboard objectives add plate_havoc.t.credits trigger
 scoreboard objectives add plate_havoc.t.logbook trigger
-scoreboard objectives add plate_havoc.z.run_history.gametype_index trigger
+scoreboard objectives add plate_havoc.z.run_history.gametype_index dummy
+scoreboard objectives add plate_havoc.z.run_history.tab dummy
 
 scoreboard objectives add plate_havoc.t.view_run.entry trigger
 scoreboard objectives add plate_havoc.z.view_run.entry dummy
@@ -58,10 +60,11 @@ scoreboard objectives add plate_havoc.t.console trigger
 scoreboard objectives add plate_havoc.t.select trigger
 scoreboard objectives add plate_havoc.z.select dummy
 scoreboard objectives add plate_havoc.t.survivor_select trigger
-scoreboard objectives add plate_havoc.z.survivor_select trigger
+scoreboard objectives add plate_havoc.z.survivor_select dummy
 
-scoreboard objectives add plate_havoc.ui.player_health health
-scoreboard objectives add plate_havoc.ui.player_food food
+scoreboard objectives add plate_havoc.player.health.max dummy
+scoreboard objectives add plate_havoc.player.health.value health
+scoreboard objectives add plate_havoc.player.food.value food
 
 scoreboard objectives add plate_havoc.leaderboard.time_elasped.current dummy
 scoreboard objectives add plate_havoc.leaderboard.time_elasped.saved dummy

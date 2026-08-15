@@ -3,4 +3,4 @@
 data modify storage plate_havoc:cards active_type.attributes set from storage plate_havoc:cards attributes
 
 ##Save to match types
-function plate_havoc:misc/cards/process/types/active/save with storage plate_havoc:cards
+function plate_havoc:misc/cards/process/types/active/save with storage plate_havoc:cards active_type

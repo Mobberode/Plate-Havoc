@@ -1,5 +1,7 @@
 scoreboard players operation @s plate_havoc.z.view_run.entry = #ResultEntries plate_havoc.num
 scoreboard players operation @s plate_havoc.z.view_run.player_highest = #PlayerIndex plate_havoc.temp
+scoreboard players set @s plate_havoc.z.run_history.tab 0
+scoreboard players set @s plate_havoc.z.run_history.gametype_index -1
 
 data modify storage plate_havoc:temp temp set value {}
 execute store result storage plate_havoc:temp temp.entry int 1 run scoreboard players get @s plate_havoc.z.view_run.entry

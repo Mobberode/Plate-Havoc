@@ -5,4 +5,4 @@ data modify storage plate_havoc:temp y set from storage plate_havoc:data pos[1]
 function plate_havoc_content:misc/jump_provider/halt with storage plate_havoc:temp
 
 #Launch global
-function player_motion:api/launch_global_xyz
+function plate_player_motion:api/launch_global_xyz

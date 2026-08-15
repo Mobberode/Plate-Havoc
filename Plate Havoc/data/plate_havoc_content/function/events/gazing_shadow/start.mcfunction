@@ -1,6 +1,5 @@
 execute if score #PHC.Gazing_Shadow.Cooldown plate_havoc.event matches 1.. run return run function plate_havoc_content:events/gazing_shadow/restart
 
-scoreboard players set #PHC.Gazing_Shadow.Seen plate_havoc.event 0
 function plate_havoc_content:events/gazing_shadow/setup
 function plate_havoc_content:events/gazing_shadow/loop
 

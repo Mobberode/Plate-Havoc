@@ -11,7 +11,7 @@ data modify storage plate_havoc:data default_gamemode set value "survival"
 
 data modify storage plate_havoc:data functions.set_plate set value "plate_havoc_legacy_content:gametypes/prematch/lava_rush/fill"
 data modify storage plate_havoc:data functions.on_action set value "plate_havoc_legacy_content:gametypes/match/lava_rush/action"
-data modify storage plate_havoc:data functions.leaderboard.sort_type set value "lava_height"
+data modify storage plate_havoc:data functions.leaderboard.sort_type set value {type:"lava_height"}
 
 gamerule block_drops true
 gamerule mob_drops true

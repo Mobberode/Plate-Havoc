@@ -68,7 +68,7 @@ data modify storage plate_havoc:data functions.last_stand set value ""
 data modify storage plate_havoc:ui tabs set value [{title:"Survivors",function:""}]
 
 #Leaderboard
-data modify storage plate_havoc:data functions.leaderboard.sort_type set value "intensity"
+data modify storage plate_havoc:data functions.leaderboard.sort_type set value {type:"intensity",scale:1000}
 data modify storage plate_havoc:leaderboard data_functions set value [{function:"plate_havoc_content:leaderboard/data/seed"},{function:"plate_havoc_content:leaderboard/data/status"},{function:"plate_havoc_content:leaderboard/data/difficulty"},{function:"plate_havoc_content:leaderboard/data/gametype"},{function:"plate_havoc_content:leaderboard/data/time"},{function:"plate_havoc_content:leaderboard/data/intensity"},{function:"plate_havoc_content:leaderboard/data/events_occured"},{function:"plate_havoc_content:leaderboard/data/total_deaths"},{function:"plate_havoc_content:leaderboard/data/extensions"}]
 data modify storage plate_havoc:leaderboard player_data_functions set value ["plate_havoc_content:leaderboard/data/player/survivor"]
 

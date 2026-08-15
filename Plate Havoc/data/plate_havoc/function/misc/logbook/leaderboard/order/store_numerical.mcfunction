@@ -1,1 +1,1 @@
-$data modify storage plate_havoc:leaderboard temp.temp append from storage plate_havoc:leaderboard temp.input[].$(sort_type)
+$data modify storage plate_havoc:leaderboard temp.temp append from storage plate_havoc:leaderboard temp.input[].data.$(type)

@@ -7,7 +7,7 @@ function plate_havoc_content:misc/jump_provider/halt with storage plate_havoc:ev
 scoreboard players set $x player_motion.api.launch 0
 scoreboard players operation $y player_motion.api.launch = #Temp plate_havoc_content.event.bounce_pad.boost
 scoreboard players set $z player_motion.api.launch 0
-function player_motion:api/launch_global_xyz
+function plate_player_motion:api/launch_global_xyz
 
 function plate_havoc_content:events/bounce_pad/entity/sound
 

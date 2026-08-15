@@ -1,0 +1,1 @@
+execute if score #Game.Condition.Even_Tick plate_havoc.temp matches 0 as @a[tag=plate_havoc.survivor] run function plate_havoc_content:cards/mechanical_heart/tick

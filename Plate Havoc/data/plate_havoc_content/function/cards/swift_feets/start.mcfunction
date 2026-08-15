@@ -8,7 +8,7 @@ scoreboard players operation #Temp plate_havoc.card *= #Level plate_havoc.card
 execute store result storage plate_havoc:cards temp double 0.01 run scoreboard players get #Temp plate_havoc.card
 
 ##Water Movement Efficiency
-scoreboard players set #Temp plate_havoc.card 8
+scoreboard players set #Temp plate_havoc.card 12
 scoreboard players operation #Temp plate_havoc.card *= #Level plate_havoc.card
 #x0.01
 execute store result storage plate_havoc:cards temp2 double 0.01 run scoreboard players get #Temp plate_havoc.card

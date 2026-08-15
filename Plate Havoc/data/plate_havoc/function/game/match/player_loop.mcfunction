@@ -1,4 +1,7 @@
-##on_ground predicate delay (for teleports)
+##Scores
+#Max Health
+execute store result score @s plate_havoc.player.health.max run attribute @s max_health get
+#on_ground predicate delay (for teleports)
 scoreboard players remove @s[scores={plate_havoc.on_ground.predicate.delay=1..}] plate_havoc.on_ground.predicate.delay 1
 
 ##Extra Jumps

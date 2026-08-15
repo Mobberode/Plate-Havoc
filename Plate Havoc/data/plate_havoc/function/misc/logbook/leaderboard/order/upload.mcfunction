@@ -1,0 +1,1 @@
+$data modify storage plate_havoc:leaderboard data.'$(id)' set from storage plate_havoc:leaderboard temp.temp
