@@ -5,3 +5,5 @@ function plate_havoc:misc/cards/vote/end/store_to_running with storage plate_hav
 
 ##Attributes
 function plate_havoc:misc/cards/attributes/selection/skippable_condition
+
+execute unless score #Match plate_havoc.players matches ..1 run scoreboard players set @a plate_havoc.z.select_delay 10

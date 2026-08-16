@@ -1,7 +1,7 @@
 ##Start
 data modify storage plate_havoc:cards info set value []
 function plate_havoc:misc/cards/pool/type with storage plate_havoc:cards
-function plate_havoc:misc/cards/pool/temp
+data modify storage plate_havoc:cards temp_pool set from storage plate_havoc:cards type_pool
 
 scoreboard players set #ProcessedCards plate_havoc.num 0
 scoreboard players set #CardLimit plate_havoc.num 0

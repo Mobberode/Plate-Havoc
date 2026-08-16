@@ -16,7 +16,7 @@ data modify storage plate_havoc:cards active set value []
 scoreboard players set #ProcessedCards plate_havoc.num 0
 scoreboard players set #CardLimit plate_havoc.num 0
 #
-execute if score #Card.KeepInPool plate_havoc.num matches 1.. run function plate_havoc:misc/cards/pool/temp
+execute if score #Card.KeepInPool plate_havoc.num matches 1.. run data modify storage plate_havoc:cards temp_pool set from storage plate_havoc:cards type_pool
 function plate_havoc:misc/cards/pool/select
 function plate_havoc:misc/cards/process/loop
 

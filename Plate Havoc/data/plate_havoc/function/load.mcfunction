@@ -59,6 +59,7 @@ scoreboard objectives add plate_havoc.t.extensions trigger
 scoreboard objectives add plate_havoc.t.console trigger
 scoreboard objectives add plate_havoc.t.select trigger
 scoreboard objectives add plate_havoc.z.select dummy
+scoreboard objectives add plate_havoc.z.select_delay dummy
 scoreboard objectives add plate_havoc.t.survivor_select trigger
 scoreboard objectives add plate_havoc.z.survivor_select dummy
 

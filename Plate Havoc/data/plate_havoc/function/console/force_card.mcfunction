@@ -13,7 +13,7 @@ function plate_havoc:misc/cards/vote/end/template_data
 data modify storage plate_havoc:cards snbt set from storage plate_havoc:cards template.data.snbt
 data modify storage plate_havoc:cards snbt.temp set value [""]
 #Forced indicator
-data modify storage plate_havoc:cards snbt.temp append value {text:"*",color:yellow,hover_event:{action:"show_text",value:"Forcefully added by console!"}}
+data modify storage plate_havoc:cards snbt.temp append value {text:"[/]",color:green,hover_event:{action:"show_text",value:"Forcefully added by console!"}}
 #Name
 data modify storage plate_havoc:cards snbt.temp append from storage plate_havoc:cards snbt.name
 #Stack

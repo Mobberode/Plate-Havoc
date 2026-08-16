@@ -9,7 +9,7 @@ data modify storage plate_havoc:temp data set value [\
 \
 {id:"plate_havoc_content:armoured_up",name:"Armoured Up",type:"plate_havoc_content:upgrade",cost:{base:5,solo:4,scale:1.5},description:"+1 Armour and +0.5 Armour toughness. (Max: 5)",on_select:{functions:[{type:set.attribute,function:"plate_havoc_content:cards/armoured_up/start"}],duration:-1,left:5,max:6}},\
 \
-{id:"plate_havoc_content:strength_training",name:"Strength Training",type:"plate_havoc_content:upgrade",cost:{base:6,scale:1.5},requirement:[{type:cycle,value:5}],description:"+2.5 Attack damage and +0.15 Knockback resistance. (Max: 3)",on_select:{functions:[{type:set.attribute,function:"plate_havoc_content:cards/strength_training/start"}],duration:1,left:3,max:4}},\
+{id:"plate_havoc_content:strength_training",name:"Strength Training",type:"plate_havoc_content:upgrade",cost:{base:6,scale:1.5},requirement:[{type:cycle,value:5}],description:"+1.5 Attack damage and +0.2 Knockback resistance. (Max: 3)",on_select:{functions:[{type:set.attribute,function:"plate_havoc_content:cards/strength_training/start"}],duration:1,left:3,max:4}},\
 \
 {id:"plate_havoc_content:box_of_wind",name:"Box of Wind Charges",type:"plate_havoc_content:upgrade",cost:{base:7.5},requirement:[{type:cycle,value:3}],description:"Gain 5 Wind Charges upon the start of a Cycle.",on_select:{functions:[{type:on.start,function:"plate_havoc_content:cards/box_of_wind/start"}],duration:-1,left:1,max:1}},\
 \
@@ -19,7 +19,7 @@ data modify storage plate_havoc:temp data set value [\
 \
 {id:"plate_havoc_content:box_of_meats",name:"Box of Meats",type:"plate_havoc_content:upgrade",cost:{base:20},requirement:[{type:cycle,value:5}],description:"Gain 3 Cooked Mutton upon the start of a Cycle.",on_select:{functions:[{type:on.start,function:"plate_havoc_content:cards/box_of_meats/start"}],duration:-1,left:1,max:1}},\
 \
-{id:"plate_havoc_content:intense_investment",name:"Intense Investment",type:"plate_havoc_content:upgrade",cost:{base:30},requirement:[{type:cycle,value:5}],description:"Converts 15% of Intensity gained from the current cycle and doubles it into Cyclathrons.",on_select:{functions:[{type:on.end,function:"plate_havoc_content:cards/intense_investment/end"}],duration:-1,left:1,max:1}},\
+{id:"plate_havoc_content:intense_investment",name:"Intense Investment",type:"plate_havoc_content:upgrade",cost:{base:25},requirement:[{type:cycle,value:5}],exclusive:[{id:"plate_havoc_content:blood_money"},{id:"plate_havoc_content:paycheck"}],description:"Converts 15% of Intensity gained from the current cycle and doubles it into Cyclathrons.",on_select:{functions:[{type:on.end,function:"plate_havoc_content:cards/intense_investment/end"}],duration:-1,left:1,max:1}},\
 \
 {id:"plate_havoc_content:diamond_clock",name:"Diamond Clock",type:"plate_havoc_content:upgrade",cost:{base:15},requirement:[{type:card,needed:[{id:"plate_havoc_content:iron_clock"}]},{type:cycle,value:5}],description:"+1 Cyclathron yield and +1 Time Reduction from Clocks.",on_select:{functions:[{type:one_time,function:"plate_havoc_content:cards/diamond_clock/start"}],duration:1,left:1,max:1}},\
 \
@@ -91,7 +91,9 @@ data modify storage plate_havoc:temp data set value [\
 \
 {id:"plate_havoc_content:chromatic_flick",name:"Chromatic Flick",type:"plate_havoc_content:upgrade",cost:{base:10000},requirement:[{type:cycle,value:150}],description:"3 seconds of flight. Slowly recharges on-ground. -66% Fall Damage.",on_select:{duration:-1,left:1,max:1}},\
 \
-{id:"plate_havoc_content:brass_knuckles",name:"Brass Knuckles",type:"plate_havoc_content:upgrade",cost:{base:25},requirement:[{type:cycle,value:150}],description:"Hits give 0.5",on_select:{duration:-1,left:1,max:1}},\
+{id:"plate_havoc_content:blood_money",name:"Blood Money",type:"plate_havoc_content:upgrade",cost:{base:25},requirement:[{type:cycle,value:5}],exclusive:[{id:"plate_havoc_content:intense_investment"},{id:"plate_havoc_content:paycheck"}],description:"Kills yield Cyclathrons based on the amount of damage dealt. Accumulated blood money permanently increases Attack damage up to +2.5 max.",on_select:{duration:-1,left:1,max:1}},\
+\
+{id:"plate_havoc_content:paycheck",name:"Paycheck",type:"plate_havoc_content:upgrade",cost:{base:25},requirement:[{type:cycle,value:5}],exclusive:[{id:"plate_havoc_content:intense_investment"},{id:"plate_havoc_content:blood_money"}],description:"Task Manager rewards Cyclathrons upon completion of a task.",on_select:{duration:-1,left:1,max:1}},\
 \
 \
 \
