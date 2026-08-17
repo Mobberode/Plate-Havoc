@@ -18,9 +18,12 @@ scoreboard players set #CardLimit plate_havoc.num 0
 #
 execute if score #Card.KeepInPool plate_havoc.num matches 1.. run data modify storage plate_havoc:cards temp_pool set from storage plate_havoc:cards type_pool
 function plate_havoc:misc/cards/pool/select
+
+scoreboard players set #Card.RetainSlot plate_havoc.num 0
 function plate_havoc:misc/cards/process/loop
 
-execute if data storage plate_havoc:cards {info:["stop_processing_attributes"]} run return fail
+##If no cards left
+execute unless data storage plate_havoc:cards active[{non_card:false}] unless data storage plate_havoc:cards attributes{prevent_fallback:true} run return run function plate_havoc:misc/cards/process/fallback
 
 ##Update
 execute if score #Temp plate_havoc.cyclathron matches 1.. run function plate_havoc:misc/cards/attributes/rerollable/update

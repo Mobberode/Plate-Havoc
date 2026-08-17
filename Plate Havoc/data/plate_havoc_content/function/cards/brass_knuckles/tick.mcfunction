@@ -1,0 +1,2 @@
+execute unless items entity @s weapon.mainhand * run return run attribute @s attack_damage modifier add plate_havoc_content:card.brass_knuckles 0.2 add_multiplied_total
+attribute @s attack_damage modifier remove plate_havoc_content:card.brass_knuckles

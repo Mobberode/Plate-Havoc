@@ -1,5 +1,3 @@
-data modify storage plate_havoc:cards id set from storage plate_havoc:cards card.id
-
 ##Data
 data modify storage plate_havoc:temp temp set value {}
 #Get Stack

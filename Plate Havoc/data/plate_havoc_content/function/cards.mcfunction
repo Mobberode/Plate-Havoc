@@ -9,7 +9,7 @@ data modify storage plate_havoc:temp data set value [\
 \
 {id:"plate_havoc_content:armoured_up",name:"Armoured Up",type:"plate_havoc_content:upgrade",cost:{base:5,solo:4,scale:1.5},description:"+1 Armour and +0.5 Armour toughness. (Max: 5)",on_select:{functions:[{type:set.attribute,function:"plate_havoc_content:cards/armoured_up/start"}],duration:-1,left:5,max:6}},\
 \
-{id:"plate_havoc_content:strength_training",name:"Strength Training",type:"plate_havoc_content:upgrade",cost:{base:6,scale:1.5},requirement:[{type:cycle,value:5}],description:"+1.5 Attack damage and +0.2 Knockback resistance. (Max: 3)",on_select:{functions:[{type:set.attribute,function:"plate_havoc_content:cards/strength_training/start"}],duration:1,left:3,max:4}},\
+{id:"plate_havoc_content:strength_training",name:"Strength Training",type:"plate_havoc_content:upgrade",cost:{base:6,scale:1.5},requirement:[{type:cycle,value:3}],description:"+1.5 Attack damage and +0.2 Knockback resistance. (Max: 3)",on_select:{functions:[{type:set.attribute,function:"plate_havoc_content:cards/strength_training/start"}],duration:1,left:3,max:4}},\
 \
 {id:"plate_havoc_content:box_of_wind",name:"Box of Wind Charges",type:"plate_havoc_content:upgrade",cost:{base:7.5},requirement:[{type:cycle,value:3}],description:"Gain 5 Wind Charges upon the start of a Cycle.",on_select:{functions:[{type:on.start,function:"plate_havoc_content:cards/box_of_wind/start"}],duration:-1,left:1,max:1}},\
 \
@@ -41,7 +41,7 @@ data modify storage plate_havoc:temp data set value [\
 \
 {id:"plate_havoc_content:netherite_clock",name:"Netherite Clock",type:"plate_havoc_content:upgrade",cost:{base:75},requirement:[{type:card,needed:[{id:"plate_havoc_content:diamond_clock"}]},{type:cycle,value:10}],description:"+1.25 Cyclathron yield, +2 Time Reduction from Clocks. Events last 10% shorter.",on_select:{functions:[{type:one_time,function:"plate_havoc_content:cards/netherite_clock/start"}],duration:1,left:1,max:1}},\
 \
-{id:"plate_havoc_content:healing_clock",name:"Healing Infused Clock",type:"plate_havoc_content:upgrade",cost:{base:150,scale:3.5,solo:100},requirement:[{type:cycle,value:15}],description:"Collecting Clocks restores a portion of health.",on_select:{functions:[{type:on.clock.collect,function:"plate_havoc_content:cards/healing_clock/collect"}],duration:-1,left:2,max:2}},\
+{id:"plate_havoc_content:healing_clock",name:"Healing Infused Clock",type:"plate_havoc_content:upgrade",cost:{base:400,scale:3.5,solo:250},requirement:[{type:cycle,value:15}],description:"Collecting Clocks restores a portion of health.",on_select:{functions:[{type:on.clock.collect,function:"plate_havoc_content:cards/healing_clock/collect"}],duration:-1,left:1,max:1}},\
 \
 {id:"plate_havoc_content:mechanical_extender",name:"Mechanical Extender",type:"plate_havoc_content:upgrade",cost:{base:25,scale:1.5},requirement:[{type:cycle,value:12}],description:"+0.5 Interaction range. +0.375 Clock collection range. (Max: 3)",on_select:{functions:[{type:on.start,function:"plate_havoc_content:cards/mechanical_extender/start"},{type:set.attribute,function:"plate_havoc_content:cards/mechanical_extender/set_attribute"}],duration:-1,left:3,max:3}},\
 \
@@ -69,8 +69,6 @@ data modify storage plate_havoc:temp data set value [\
 \
 {id:"plate_havoc_content:real_wings",name:"Real Wings",type:"plate_havoc_content:upgrade",cost:{base:10000},requirement:[{type:cycle,value:30}],description:["Dont fly too close to the sun. Infinite flight and complete fall damage immunity. Hold [",{keybind:"key.jump"},"] to fly."],on_select:{functions:[{type:set.attribute,function:"plate_havoc_content:cards/real_wings/set"},{type:loop,function:"plate_havoc_content:cards/real_wings/loop"}],duration:-1,left:1,max:1}},\
 \
-{id:"plate_havoc_content:void_energised_charge",name:"Void Energised Chardallion",type:"plate_havoc_content:upgrade",cost:{base:150},requirement:[{type:cycle,value:200}],description:["*2.5 Charge Jump Power. Perform Charge Stomp by looking down and pressing [",{keybind:"key.sprint"},"] ","to rapidly descend with reduced fall damage that cannot be cancelled. Deals massive damage to entities depending on distance."],on_select:{functions:[{type:on.player.charge.active,function:"plate_havoc_content:cards/void_energised_charge/active"}],duration:-1,left:1,max:1}},\
-\
 {id:"plate_havoc_content:bouncier_pads",name:"Bouncier Pads",type:"plate_havoc_content:upgrade",cost:{base:30},requirement:[{type:cycle,value:10}],description:"Bounce Pads get larger with slightly increased vertical boost. Some Bounce Pads spawn at the start of the cycle.",on_select:{functions:[{type:one_time,function:"plate_havoc_content:cards/bouncier_pads/one_time"},{type:on.start,function:"plate_havoc_content:cards/bouncier_pads/start"}],duration:-1,left:1,max:1}},\
 \
 {id:"plate_havoc_content:purified_hourglass",name:"Purified Hourglass",type:"plate_havoc_content:upgrade",cost:{base:150},requirement:[{type:card,needed:[{id:"plate_havoc_content:cursed_clocks"}]}],description:"Collecting Clocks slightly delay the Event Timer and removes 1/5 of Clock Spawn Time. Cursed Clocks delay even longer and adds to Cranked Time.",on_select:{functions:[{type:on.clock.collect,function:"plate_havoc_content:cards/purified_hourglass/collect"}],duration:-1,left:1,max:1}},\
@@ -81,19 +79,27 @@ data modify storage plate_havoc:temp data set value [\
 \
 {id:"plate_havoc_content:mechanical_heart",name:"Mechanical Heart",type:"plate_havoc_content:upgrade",cost:{base:50,solo:20},requirement:[{type:cycle,value:7},{type:advancement,value:"plate_havoc_content:wasnt_enough"}],description:"Being under 20% health removes an additional tick from the Cycle time every odd tick (Stackable).",on_select:{functions:[{type:loop,function:"plate_havoc_content:cards/mechanical_heart/loop"}],duration:-1,left:1,max:1}},\
 \
-{id:"plate_havoc_content:nanomachines",name:"Nanomachines",type:"plate_havoc_content:upgrade",cost:{base:500,solo:350},requirement:[{type:cycle,value:200}],description:"Receiving 10 or more hearts of damage over 1.5 seconds gives Resistance IV for 3 seconds.",on_select:{functions:[{type:player_loop,function:"plate_havoc_content:cards/nanomachines/run"}],duration:-1,left:1,max:1}},\
-\
 {id:"plate_havoc_content:udte_field",name:"U.D.T.E Field",note:"Universal Device Threat Erasure",type:"plate_havoc_content:upgrade",cost:{base:400,solo:200},requirement:[{type:cycle,value:200}],description:"Disrupt devices within a range of 25 blocks.",on_select:{functions:[{type:player_loop,function:"plate_havoc_content:cards/udte_field/run"}],duration:-1,left:1,max:1}},\
-\
-{id:"plate_havoc_content:weight_scaler",name:"Weight Scaler",type:"plate_havoc_content:upgrade",cost:{base:100},requirement:[{type:cycle,value:150}],description:"Attack speed is increased the lower the hunger bar.",on_select:{functions:[{type:player_loop,function:"plate_havoc_content:cards/weight_scaler/run"}],duration:-1,left:1,max:1}},\
-\
-{id:"plate_havoc_content:tpe",name:"Teleportation Protective Equipment",type:"plate_havoc_content:upgrade",cost:{base:100},requirement:[{type:cycle,value:150}],description:"Removes usage penalty of teleportation rifts.",on_select:{duration:-1,left:1,max:1}},\
 \
 {id:"plate_havoc_content:chromatic_flick",name:"Chromatic Flick",type:"plate_havoc_content:upgrade",cost:{base:10000},requirement:[{type:cycle,value:150}],description:"3 seconds of flight. Slowly recharges on-ground. -66% Fall Damage.",on_select:{duration:-1,left:1,max:1}},\
 \
-{id:"plate_havoc_content:blood_money",name:"Blood Money",type:"plate_havoc_content:upgrade",cost:{base:25},requirement:[{type:cycle,value:5}],exclusive:[{id:"plate_havoc_content:intense_investment"},{id:"plate_havoc_content:paycheck"}],description:"Kills yield Cyclathrons based on the amount of damage dealt. Accumulated blood money permanently increases Attack damage up to +2.5 max.",on_select:{duration:-1,left:1,max:1}},\
+{id:"plate_havoc_content:blood_money",name:"Blood Money",type:"plate_havoc_content:upgrade",cost:{base:30},requirement:[{type:cycle,value:5}],exclusive:[{id:"plate_havoc_content:intense_investment"},{id:"plate_havoc_content:paycheck"}],description:"Kills yield Cyclathrons based on the amount of damage dealt on the fatal blow. Accumulated damage permanently increases Attack damage up to +2.5 max.",on_select:{functions:[{type:player_loop,function:"plate_havoc_content:cards/blood_money/tick"}],duration:-1,left:1,max:1}},\
 \
-{id:"plate_havoc_content:paycheck",name:"Paycheck",type:"plate_havoc_content:upgrade",cost:{base:25},requirement:[{type:cycle,value:5}],exclusive:[{id:"plate_havoc_content:intense_investment"},{id:"plate_havoc_content:blood_money"}],description:"Task Manager rewards Cyclathrons upon completion of a task.",on_select:{duration:-1,left:1,max:1}},\
+{id:"plate_havoc_content:paycheck",name:"Paycheck",type:"plate_havoc_content:upgrade",cost:{base:15},requirement:[{type:cycle,value:5}],exclusive:[{id:"plate_havoc_content:intense_investment"},{id:"plate_havoc_content:blood_money"}],description:"Task Manager rewards Cyclathrons upon completion of a task.",on_select:{duration:-1,left:1,max:1}},\
+\
+{id:"plate_havoc_content:nanomachines",name:"Nanomachines",type:"plate_havoc_content:upgrade",cost:{base:35,solo:15},requirement:[{type:cycle,value:7}],exclusive:[{id:"plate_havoc_content:deflecting_barrier"}],description:"Receiving 8 or more hearts of damage over 1.5 seconds doubles Armour for 8 seconds.",on_select:{functions:[{type:player_loop,function:"plate_havoc_content:cards/nanomachines/tick"},{type:set.attribute,function:"plate_havoc_content:cards/nanomachines/wipe"}],duration:-1,left:1,max:1}},\
+\
+{id:"plate_havoc_content:deflecting_barrier",name:"Deflecting Barrier",type:"plate_havoc_content:upgrade",cost:{base:15},requirement:[{type:cycle,value:70}],exclusive:[{id:"plate_havoc_content:nanomachines"}],description:"Deflect nearby projectiles up to 5 times before breaking, regenerates after 30 seconds.",on_select:{duration:-1,left:1,max:1}},\
+\
+{id:"plate_havoc_content:weight_scaler",name:"Weight Scaler",type:"plate_havoc_content:upgrade",cost:{base:15},requirement:[{type:cycle,value:5}],description:"Attack speed is increased the lower the hunger bar.",on_select:{functions:[{type:player_loop,function:"plate_havoc_content:cards/weight_scaler/tick"}],duration:-1,left:1,max:1}},\
+\
+{id:"plate_havoc_content:artetractor",name:"Arte-tractor",type:"plate_havoc_content:upgrade",cost:{base:30},requirement:[{type:cycle,value:50}],description:"+1 Artefect slot.",on_select:{duration:-1,left:1,max:1}},\
+\
+{id:"plate_havoc_content:brass_knuckles",name:"Brass Knuckles",type:"plate_havoc_content:upgrade",cost:{base:25},requirement:[{type:cycle,value:5}],description:"Attacking with the fist deals 1.2x more damage.",on_select:{functions:[{type:"player_loop",function:"plate_havoc_content:cards/brass_knuckles/tick"}],duration:-1,left:1,max:1}},\
+\
+{id:"plate_havoc_content:scrap_bin",name:"Scrap Bin",type:"plate_havoc_content:upgrade",cost:{base:15},requirement:[{type:cycle,value:5}],description:"Half of uncollected Clocks are gathered upon the end of the Cycle at 0.75x their value.",on_select:{functions:[{type:"on.end",function:"plate_havoc_content:cards/scrap_bin/end"}],duration:-1,left:1,max:1}},\
+\
+{id:"plate_havoc_content:static_shreds",name:"Static Shreds",type:"plate_havoc_content:upgrade",cost:{base:3.33},requirement:[{type:cycle,value:70}],description:"A piece of a bigger whole? Become more disadvantaged the higher the stack.",on_select:{duration:-1,left:1,max:8}},\
 \
 \
 \

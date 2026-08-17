@@ -15,4 +15,3 @@ scoreboard players operation #Stat.Cyclathrons_Yielded plate_havoc.num += #Temp 
 
 #Visual
 tellraw @a ["",{text:"Intense Investment",color:green}," has given: ",{storage:"plate_havoc:ui",nbt:temp,color:aqua}," Cyclathrons."]
-function plate_havoc:misc/cyclathron_visual

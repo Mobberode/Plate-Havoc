@@ -1,0 +1,1 @@
+attribute @s attack_damage modifier add plate_havoc_content:card.blood_money 1 add_value

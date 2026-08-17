@@ -1,7 +1,7 @@
-#Remove and append
+##Build
 data modify storage plate_havoc:cards active_entry set value {data:{},visual:{},values:{votes:0},id:"",non_card:false}
 #ID and Data
-data modify storage plate_havoc:cards active_entry.id set from storage plate_havoc:cards id
+data modify storage plate_havoc:cards active_entry.id set from storage plate_havoc:cards card.id
 data modify storage plate_havoc:cards active_entry.data set from storage plate_havoc:cards card
 #Visual
 data modify storage plate_havoc:cards active_entry.data.snbt.body set from storage plate_havoc:cards snbt.body

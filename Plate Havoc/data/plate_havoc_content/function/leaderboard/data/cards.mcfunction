@@ -1,3 +1,5 @@
+function plate_havoc:misc/cards/running/card_list/process
+
 execute unless data storage plate_havoc:ui card_list[-2] run return fail
 
 data modify storage plate_havoc:leaderboard temp.data.cards set from storage plate_havoc:ui card_list

@@ -9,6 +9,7 @@ scoreboard players add #Value plate_havoc.round 1
 scoreboard players add @a[tag=!plate_havoc.spectator] plate_havoc_content.leaderboard.cycle.current 1
 
 function plate_havoc:misc/cards/running/types/run {type:on.end}
+function plate_havoc:misc/cyclathron_visual
 
 function plate_havoc:misc/attributes/custom/update_global
 

@@ -1,1 +1,0 @@
-$data remove storage plate_havoc:cards active[{slot:$(slot)}]

@@ -1,8 +1,4 @@
-data remove storage plate_havoc:cards card
-data modify storage plate_havoc:cards card set from storage plate_havoc:cards select_pool[0]
-data remove storage plate_havoc:cards select_pool
-
-##If card(s) left
-execute if data storage plate_havoc:cards card run return run function plate_havoc:misc/cards/pool/insert/replace
-#Unless
-function plate_havoc:misc/cards/pool/insert/delete with storage plate_havoc:cards
+##If no cards
+execute unless data storage plate_havoc:cards select_pool[-1] run return run function plate_havoc:misc/cards/pool/insert/delete with storage plate_havoc:cards
+#Else
+function plate_havoc:misc/cards/pool/insert/execute

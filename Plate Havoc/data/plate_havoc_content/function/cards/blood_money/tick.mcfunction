@@ -1,0 +1,1 @@
+execute if entity @s[advancements={plate_havoc_content:cards/blood_money=true}] run function plate_havoc_content:cards/blood_money/calculate

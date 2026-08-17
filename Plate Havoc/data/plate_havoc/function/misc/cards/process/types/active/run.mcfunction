@@ -27,4 +27,5 @@ function plate_havoc:misc/cards/process/attributes/slots/start
 ##Attribute - After Pause (If not ran by a custom function)
 function plate_havoc:misc/cards/process/attributes/after_pause/start
 
+scoreboard players set #Card.Slots_Removed plate_havoc.num 0
 data remove storage plate_havoc:cards active_types[-1]

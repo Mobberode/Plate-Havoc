@@ -1,1 +1,2 @@
 $data modify storage plate_havoc:cards active[{slot:$(slot)}] set from storage plate_havoc:cards active_entry
+#$say override $(slot)

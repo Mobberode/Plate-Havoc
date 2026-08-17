@@ -66,6 +66,10 @@ scoreboard objectives add plate_havoc.z.survivor_select dummy
 scoreboard objectives add plate_havoc.player.health.max dummy
 scoreboard objectives add plate_havoc.player.health.value health
 scoreboard objectives add plate_havoc.player.food.value food
+scoreboard objectives add plate_havoc.player.damage.taken custom:damage_taken
+scoreboard objectives add plate_havoc.player.damage.dealt custom:damage_dealt
+
+scoreboard objectives add plate_havoc.player.single_tick.damage.dealt custom:damage_dealt
 
 scoreboard objectives add plate_havoc.leaderboard.time_elasped.current dummy
 scoreboard objectives add plate_havoc.leaderboard.time_elasped.saved dummy

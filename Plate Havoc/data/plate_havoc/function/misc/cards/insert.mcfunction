@@ -1,6 +1,8 @@
 data modify storage plate_havoc:cards select_pool set value []
 
-function plate_havoc:misc/cards/pool/insert/start with storage plate_havoc:cards
+##Start
+scoreboard players set #ProcessedCards plate_havoc.num 0
+scoreboard players set #CardLimit plate_havoc.num 0
+function plate_havoc:misc/cards/pool/select
 
-scoreboard players reset @a plate_havoc.z.select
-scoreboard players enable @a plate_havoc.t.select
+function plate_havoc:misc/cards/pool/insert/run

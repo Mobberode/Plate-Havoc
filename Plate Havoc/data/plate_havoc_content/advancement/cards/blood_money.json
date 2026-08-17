@@ -1,0 +1,8 @@
+{
+  "parent": "plate_havoc:temp",
+  "criteria": {
+    "req": {
+      "trigger": "player_killed_entity"
+    }
+  }
+}

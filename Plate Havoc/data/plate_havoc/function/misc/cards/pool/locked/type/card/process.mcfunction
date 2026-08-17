@@ -8,4 +8,4 @@ function plate_havoc:misc/cards/pool/locked/type/card/count_check with storage p
 data remove storage plate_havoc:cards temp.needed[-1]
 
 ##Loop
-execute unless score #Success plate_havoc.num matches ..0 if data storage plate_havoc:cards temp.needed[-1] run function plate_havoc:misc/cards/pool/locked/type/card
+execute unless score #Success plate_havoc.num matches ..0 if data storage plate_havoc:cards temp.needed[-1] run function plate_havoc:misc/cards/pool/locked/type/card/process

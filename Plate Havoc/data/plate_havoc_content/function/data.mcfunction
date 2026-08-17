@@ -236,6 +236,9 @@ scoreboard objectives add plate_havoc_content.card.spyshine.boosts dummy
 scoreboard objectives add plate_havoc_content.card.spyshine.strength dummy
 scoreboard objectives add plate_havoc_content.card.spyshine.holding dummy
 scoreboard objectives add plate_havoc_content.card.shock_absorber dummy
+scoreboard objectives add plate_havoc_content.card.nanomachines.duration dummy
+scoreboard objectives add plate_havoc_content.card.nanomachines.damage custom:damage_taken
+scoreboard objectives add plate_havoc_content.card.blood_money dummy
 
 scoreboard objectives add plate_havoc_content.survivor.charger.amount dummy
 scoreboard objectives add plate_havoc_content.survivor.charger.using dummy
@@ -266,5 +269,11 @@ scoreboard objectives add plate_havoc_content.spawnpoint_energy dummy
 scoreboard objectives add plate_havoc_content.leaderboard.cycle.current dummy
 scoreboard objectives add plate_havoc_content.leaderboard.cycle.saved dummy
 
-data modify storage plate_havoc:temp extension_data set value [plate_havoc_content.event.acid_rain.exposure,plate_havoc_content.event.jump_cooldown,plate_havoc_content.event.jump_afterdown,plate_havoc_content.event.shop_token,plate_havoc_content.event.flame_guardian.time,plate_havoc_content.event.flame_guardian.active,plate_havoc_content.event.motion_sniper.time,plate_havoc_content.event.piranha.attack_delay,plate_havoc_content.event.piranha.attacked_times,plate_havoc_content.card.multi_use_umbrella.splasher_using,plate_havoc_content.card.multi_use_umbrella.splasher_cooldown,plate_havoc_content.card.multi_use_umbrella.acid_immunity,plate_havoc_content.event.piranha.active_time,"plate_havoc_content.card.mutilated_teddy","plate_havoc_content.card.lasting_acid","plate_havoc_content.card.multi_use_umbrella.cobwebbed"]
+data modify storage plate_havoc:temp extension_data set value [plate_havoc_content.event.acid_rain.exposure,plate_havoc_content.event.jump_cooldown,plate_havoc_content.event.jump_afterdown,plate_havoc_content.event.shop_token,plate_havoc_content.event.flame_guardian.time,plate_havoc_content.event.flame_guardian.active,plate_havoc_content.event.motion_sniper.time,plate_havoc_content.event.piranha.attack_delay,plate_havoc_content.event.piranha.attacked_times,plate_havoc_content.card.multi_use_umbrella.splasher_using,plate_havoc_content.card.multi_use_umbrella.splasher_cooldown,plate_havoc_content.card.multi_use_umbrella.acid_immunity,plate_havoc_content.event.piranha.active_time,"plate_havoc_content.card.mutilated_teddy","plate_havoc_content.card.lasting_acid","plate_havoc_content.card.multi_use_umbrella.cobwebbed","plate_havoc_content.card.nanomachines.damage","plate_havoc_content.card.nanomachines.duration"]
 data modify storage plate_havoc:data score_reset append from storage plate_havoc:temp extension_data[]
+
+data modify storage plate_havoc:temp extension_data set value ["plate_havoc_content.card.blood_money"]
+data modify storage plate_havoc:data init_score_reset append from storage plate_havoc:temp extension_data[]
+
+##Edits
+data modify storage plate_havoc:custom attributes[{id:"plate_havoc:cyclathron_yield"}].update append value {type:score,value:"#PHC.Scrap_Bin plate_havoc.temp",scale:0.075}
