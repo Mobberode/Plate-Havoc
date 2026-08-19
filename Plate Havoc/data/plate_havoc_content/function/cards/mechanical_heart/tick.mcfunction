@@ -3,4 +3,4 @@ scoreboard players operation #Temp plate_havoc.temp = @s plate_havoc.player.heal
 scoreboard players operation #Temp plate_havoc.temp /= #10 plate_havoc.num
 scoreboard players operation #Temp plate_havoc.temp *= #2 plate_havoc.num
 
-execute if score @s plate_havoc.player.health.value <= #Temp plate_havoc.temp run scoreboard players remove #Left plate_havoc.timer 1 
+execute if score @s plate_havoc.player.health.value <= #Temp plate_havoc.temp run function plate_havoc_content:cards/mechanical_heart/remove

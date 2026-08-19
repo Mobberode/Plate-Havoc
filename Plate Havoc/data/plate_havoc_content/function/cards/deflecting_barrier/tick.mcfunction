@@ -1,0 +1,2 @@
+execute if score @s[scores={plate_havoc_content.card.deflecting_barrier.cooldown=..0}] plate_havoc_content.card.deflecting_barrier.value matches 1.. run return run function plate_havoc_content:cards/deflecting_barrier/active
+function plate_havoc_content:cards/deflecting_barrier/recharging

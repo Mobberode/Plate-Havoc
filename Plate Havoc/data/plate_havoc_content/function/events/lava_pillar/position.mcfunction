@@ -1,1 +1,1 @@
-$tp $(x) -64 $(z)
+$execute positioned $(x) -64 $(z) run function plate_havoc:misc/tp

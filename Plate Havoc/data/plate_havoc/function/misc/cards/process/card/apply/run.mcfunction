@@ -5,7 +5,7 @@ data modify storage plate_havoc:temp input set value {}
 data modify storage plate_havoc:temp input.colours set from storage plate_havoc:cards active_type.colours
 data modify storage plate_havoc:temp input.description set from storage plate_havoc:cards card.description
 data modify storage plate_havoc:temp input.name set from storage plate_havoc:cards card.name
-data modify storage plate_havoc:temp input.exclusive set from storage plate_havoc:cards card.exclusive
+data modify storage plate_havoc:temp input.exclusive set from storage plate_havoc:cards card.exclusive.values
 
 data modify storage plate_havoc:cards snbt set value {}
 function plate_havoc:misc/cards/process/card/snbt/all

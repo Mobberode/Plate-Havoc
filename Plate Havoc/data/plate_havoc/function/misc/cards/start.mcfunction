@@ -11,7 +11,7 @@ scoreboard players set #Card.RetainSlot plate_havoc.num 0
 function plate_havoc:misc/cards/process/loop
 
 ##If no cards left
-execute unless data storage plate_havoc:cards active[{non_card:false}] unless data storage plate_havoc:cards attributes{prevent_fallback:true} run function plate_havoc:misc/cards/process/fallback
+execute unless data storage plate_havoc:cards active[{non_card:false}] unless data storage plate_havoc:cards attributes{prevent_fallback:true} run return run function plate_havoc:misc/cards/process/types/active/run
 
 function plate_havoc:misc/function with storage plate_havoc:cards active_type
 function plate_havoc:misc/cards/process/attributes

@@ -1,1 +1,1 @@
-execute in plate_havoc:arena as @e[x=0,limit=1,tag=plate_havoc_content.event.gazing_shadow,type=item_display] at @s run function plate_havoc_content:events/gazing_shadow/entity/tick
+execute as 000009f6-0000-01b9-0000-036100000012 at @s run function plate_havoc_content:events/gazing_shadow/entity/tick

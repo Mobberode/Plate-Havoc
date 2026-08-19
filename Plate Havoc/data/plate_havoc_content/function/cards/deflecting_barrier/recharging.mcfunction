@@ -1,0 +1,2 @@
+scoreboard players remove @s plate_havoc_content.card.deflecting_barrier.cooldown 1
+execute if score @s plate_havoc_content.card.deflecting_barrier.cooldown matches ..0 run function plate_havoc_content:cards/deflecting_barrier/ready

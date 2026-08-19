@@ -15,5 +15,5 @@ execute store result storage plate_havoc:cards temp3 double 0.1 run scoreboard p
 function plate_havoc_content:cards/void_implosions/entity/set_scale
 
 ##Pos
-execute summon marker run function plate_havoc:misc/get_position
+execute as 00000000-0000-0005-0000-0001000007e9 run function plate_havoc:misc/get_position
 execute at @s run function plate_havoc_content:cards/void_implosions/entity/particles with storage plate_havoc:cards

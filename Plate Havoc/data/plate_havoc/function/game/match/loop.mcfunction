@@ -1,5 +1,5 @@
 ##UUID entity for use
-execute unless entity 00000000-0000-0005-0000-0001000007e9 run summon marker 0 0 0 {Tags:[plate_havoc.dont_interact,plate_havoc.never_kill],UUID:[I;0,5,1,2025]}
+execute unless entity 00000000-0000-0005-0000-0001000007e9 in plate_havoc:arena run summon marker 0.0 0.0 0.0 {Tags:[plate_havoc.dont_interact,plate_havoc.never_kill],UUID:[I;0,5,1,2025]}
 
 ##Players
 function plate_havoc:game/match/check

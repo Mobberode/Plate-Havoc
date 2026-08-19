@@ -1,6 +1,6 @@
 ##Global
 #Halt Y
-execute summon marker run function plate_havoc:misc/get_position
+execute as 00000000-0000-0005-0000-0001000007e9 run function plate_havoc:misc/get_position
 data modify storage plate_havoc:events active_data.shared.y set from storage plate_havoc:data pos[1]
 function plate_havoc_content:misc/jump_provider/halt with storage plate_havoc:events active_data.shared
 #Launch

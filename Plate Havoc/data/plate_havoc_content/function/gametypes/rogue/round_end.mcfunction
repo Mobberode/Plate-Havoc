@@ -40,4 +40,4 @@ function plate_havoc:misc/cards/pool/locked/init
 function plate_havoc:misc/cards/process/types/init
 
 tag @a remove plate_havoc.dont_force_dialog
-function plate_havoc_content:gametypes/rogue/set_cards
+function plate_havoc_content:gametypes/rogue/card_start

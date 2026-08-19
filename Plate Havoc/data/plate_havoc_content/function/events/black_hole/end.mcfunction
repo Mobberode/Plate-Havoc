@@ -1,4 +1,4 @@
-kill @e[tag=plate_havoc_content.event.blackhole,type=item_display]
+kill 00000012-0000-077c-0000-079e000007b6
 
 execute as @a at @s run playsound block.beacon.deactivate ambient @s ~ ~ ~ 1 0.75
 
