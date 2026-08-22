@@ -1,0 +1,2 @@
+particle cloud ~ ~1 ~ 0 0 0 0.1 1
+execute if predicate plate_havoc:periodic_tick/20 if score @s plate_havoc_content.value >= @s plate_havoc_content.card.enraged.limit run scoreboard players remove @s plate_havoc_content.value 1

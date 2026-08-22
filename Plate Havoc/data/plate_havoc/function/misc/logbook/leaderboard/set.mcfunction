@@ -21,7 +21,8 @@ function plate_havoc:misc/logbook/leaderboard/types/top_bar
 function plate_havoc:misc/logbook/leaderboard/types/info
 #Players
 function plate_havoc:misc/logbook/leaderboard/types/player/init
-
+data modify storage plate_havoc:leaderboard temp.data.players[].snbt[].extra append value "\n"
+data remove storage plate_havoc:leaderboard temp.data.players[].snbt[-1].extra[-1]
 ##Add to results
 execute unless data storage plate_havoc:leaderboard results[] run data modify storage plate_havoc:leaderboard results set value []
 data modify storage plate_havoc:leaderboard results prepend from storage plate_havoc:leaderboard temp

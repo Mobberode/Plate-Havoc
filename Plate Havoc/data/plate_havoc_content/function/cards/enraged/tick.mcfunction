@@ -1,0 +1,2 @@
+execute if score @s plate_havoc_content.card.enraged.time matches 200.. run return run function plate_havoc_content:cards/enraged/drain
+scoreboard players add @s plate_havoc_content.card.enraged.time 1

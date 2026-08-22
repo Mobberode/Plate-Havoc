@@ -29,13 +29,8 @@ scoreboard players set #1000 plate_havoc.num 1000
 scoreboard players set #10000 plate_havoc.num 10000
 scoreboard players set #100000 plate_havoc.num 100000
 scoreboard players set #1000000 plate_havoc.num 100000
-scoreboard players set #PRNG.Multiply plate_havoc.num 1562730893
-scoreboard players set #PRNG.Add plate_havoc.num 67
-scoreboard players set #EventTotalRunCount plate_havoc.num 0
-scoreboard players set #CardTotalSelects plate_havoc.num 0
 
 scoreboard players set #Runtick plate_havoc.num 0
-scoreboard players set #PRNG.Runs plate_havoc.num 0
 scoreboard players set #Event.Pool_Intensity_Update plate_havoc.intensity 0
 
 ##AllowBlockInteraction
@@ -70,7 +65,7 @@ data modify storage plate_havoc:ui tabs set value [{title:"Survivors",function:"
 #Leaderboard
 data modify storage plate_havoc:data functions.leaderboard.sort_type set value {type:"intensity",scale:1000}
 data modify storage plate_havoc:leaderboard data_functions set value [{function:"plate_havoc_content:leaderboard/data/seed"},{function:"plate_havoc_content:leaderboard/data/status"},{function:"plate_havoc_content:leaderboard/data/difficulty"},{function:"plate_havoc_content:leaderboard/data/gametype"},{function:"plate_havoc_content:leaderboard/data/time"},{function:"plate_havoc_content:leaderboard/data/intensity"},{function:"plate_havoc_content:leaderboard/data/events_occured"},{function:"plate_havoc_content:leaderboard/data/total_deaths"},{function:"plate_havoc_content:leaderboard/data/extensions"}]
-data modify storage plate_havoc:leaderboard player_data_functions set value ["plate_havoc_content:leaderboard/data/player/survivor"]
+data modify storage plate_havoc:leaderboard player_data_functions set value ["plate_havoc_content:leaderboard/data/player/survivor","plate_havoc_content:leaderboard/data/player/damage_dealt","plate_havoc_content:leaderboard/data/player/damage_taken"]
 
 data modify storage plate_havoc:data functions.leaderboard.credit_loop set value "plate_havoc:misc/logbook/leaderboard/credit/type/time_elasped/loop"
 data modify storage plate_havoc:data functions.leaderboard.credit_start set value "plate_havoc:misc/logbook/leaderboard/credit/type/time_elasped/start"
@@ -92,14 +87,14 @@ data modify storage plate_havoc:cards preset.attributes.voting.behaviour.mixed.f
 ##Custom Attributes
 data modify storage plate_havoc:custom attributes set value []
 
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:card.cost.scale",values:{base:1},modifiers:[]}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:card.reward.scale",values:{base:1},modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:card.cost.scale",values:{base:1}}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:card.reward.scale",values:{base:1}}
 
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:cyclathron_yield",values:{base:1},modifiers:[],update:[{type:score,value:"#Yield plate_havoc.cyclathron",scale:0.1}]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:cyclathron_yield",values:{base:1},update:[{type:score,value:"#Yield plate_havoc.cyclathron",scale:0.1}]}
 
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:event.time",values:{base:0.06},modifiers:[],update:[{type:score,value:"#Event plate_havoc.timer"}]}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:event.repeats",values:{base:0.001},modifiers:[],update:[{type:score,value:"#EventRepeats plate_havoc.num"}]}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:intensity.gain",values:{base:0.015},modifiers:[]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:event.time",values:{base:0.06},update:[{type:score,value:"#Event plate_havoc.timer"}]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:event.repeats",values:{base:0.001},update:[{type:score,value:"#EventRepeats plate_havoc.num"}]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:intensity.gain",values:{base:0.015}}
 
 ##Extra Jumps
 data modify storage plate_havoc:data extra_jumps set value []

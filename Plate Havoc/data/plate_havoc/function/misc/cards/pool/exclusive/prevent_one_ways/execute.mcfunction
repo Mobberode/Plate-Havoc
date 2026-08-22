@@ -1,0 +1,1 @@
+$execute unless data storage plate_havoc:cards data[{id:'$(exclusive_id)'}].exclusive.values[{id:'$(id)'}] run data modify storage plate_havoc:cards data[{id:'$(exclusive_id)'}].exclusive.values append value {id:'$(id)'}

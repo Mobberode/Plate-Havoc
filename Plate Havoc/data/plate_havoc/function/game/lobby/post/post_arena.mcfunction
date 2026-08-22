@@ -7,7 +7,11 @@ bossbar set plate_havoc:status name [{text:"Starting... Loadtime: "},{storage:"p
 tellraw @a ["Loading time: ",{storage:"plate_havoc:custom",nbt:stopwatch,color:gold},"s"]
 
 ##Seed
+data modify storage plate_havoc:data seed set value {value:0,ranges:{"0..1":{min:0,max:1}}}
 function plate_havoc:misc/seed/generate
+execute store result storage plate_havoc:data seed.value int 1 run scoreboard players get #Seed plate_havoc.num
+function plate_havoc:misc/seed/set with storage plate_havoc:data seed
+
 function plate_havoc:misc/seed/run_id
 tellraw @a ["Seed: ",{score:{name:"#Seed",objective:plate_havoc.num},color:green},"\nRun ID: ",{score:{name:"#Run",objective:plate_havoc.run_id},color:aqua}]
 

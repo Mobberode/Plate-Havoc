@@ -6,5 +6,5 @@ execute as @a at @s run function plate_havoc_content:events/eraserman/cue
 function plate_havoc_content:events/eraserman/run
 function plate_havoc_content:events/eraserman/loop
 
-data modify storage plate_havoc:ui temp set value {message:{text:"Eraserman...",color:gray}}
+data modify storage plate_havoc:ui temp set value {message:{text:"Eraserman...",color:red}}
 function plate_havoc:game/events/message/create_entry

@@ -13,5 +13,5 @@ execute store result score #Herobrine.Stun.Cooldown plate_havoc.event run data g
 function plate_havoc_content:events/herobrine/run
 function plate_havoc_content:events/herobrine/loop
 
-data modify storage plate_havoc:ui temp set value {message:{text:"Herobrine has broken through.",color:gray}}
+data modify storage plate_havoc:ui temp set value {message:{text:"Herobrine has broken through.",color:red}}
 function plate_havoc:game/events/message/create_entry

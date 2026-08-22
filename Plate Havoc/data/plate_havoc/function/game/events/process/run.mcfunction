@@ -1,4 +1,6 @@
-execute store result storage plate_havoc:events rng int 1 run function plate_havoc:game/events/process/prng
+execute store result score #Num-1 plate_havoc.num if data storage plate_havoc:events pool.available[]
+execute store result storage plate_havoc:data seed.ranges."plate_havoc:events".max int 1 run scoreboard players remove #Num-1 plate_havoc.num 1
+execute store result storage plate_havoc:events rng int 1 run function plate_havoc:misc/prng with storage plate_havoc:data seed.ranges."plate_havoc:events"
 
 function plate_havoc:game/events/process/apply with storage plate_havoc:events
 

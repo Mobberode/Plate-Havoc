@@ -1,3 +1,3 @@
-scoreboard players set #Time plate_havoc.temp 45
+scoreboard players set #Time plate_havoc.temp 60
 scoreboard players set #Time_Cycle plate_havoc.temp 5
-scoreboard players set #Time_Player plate_havoc.temp 4
+scoreboard players set #Time_Player plate_havoc.temp 5

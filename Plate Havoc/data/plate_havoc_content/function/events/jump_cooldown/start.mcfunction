@@ -3,5 +3,5 @@ execute store result score #JumpCooldown.Duration plate_havoc.event run data get
 
 function plate_havoc_content:events/jump_cooldown/run
 
-data modify storage plate_havoc:ui temp set value {message:{text:"Cooldown has been placed on jumps.",color:gray}}
+data modify storage plate_havoc:ui temp set value {message:{text:"Cooldown has been placed on jumps.",color:red}}
 function plate_havoc:game/events/message/create_entry

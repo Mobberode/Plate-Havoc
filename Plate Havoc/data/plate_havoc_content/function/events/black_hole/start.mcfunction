@@ -7,5 +7,5 @@ execute store result score #BlackHole.Entity_Size plate_havoc.event run data get
 
 function plate_havoc_content:events/black_hole/run
 
-data modify storage plate_havoc:ui temp set value {message:{text:"The black hole will consume us.",color:gray}}
+data modify storage plate_havoc:ui temp set value {message:{text:"The black hole will consume us.",color:red}}
 function plate_havoc:game/events/message/create_entry

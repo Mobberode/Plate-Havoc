@@ -8,5 +8,5 @@ execute if score #Max plate_havoc.players matches ..1 store result storage plate
 function plate_havoc_content:events/nuke/action with storage plate_havoc:events active_data.plate_havoc_content.nuke
 function plate_havoc_content:events/nuke/loop
 
-data modify storage plate_havoc:ui temp set value {message:{text:"Nuke will slowly fall.",color:gray}}
+data modify storage plate_havoc:ui temp set value {message:{text:"Nuke will slowly fall.",color:red}}
 function plate_havoc:game/events/message/create_entry

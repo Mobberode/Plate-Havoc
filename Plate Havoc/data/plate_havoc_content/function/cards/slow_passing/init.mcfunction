@@ -1,0 +1,1 @@
+scoreboard players operation @s plate_havoc_content.value /= #2 plate_havoc.num

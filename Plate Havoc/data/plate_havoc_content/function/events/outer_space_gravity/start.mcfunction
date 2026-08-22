@@ -18,5 +18,5 @@ time set midnight
 execute as @a run function plate_havoc_content:events/outer_space_gravity/player/rid_effect
 function plate_havoc_content:events/outer_space_gravity/loop
 
-data modify storage plate_havoc:ui temp set value {message:{text:"Gravity has shifted.",color:gray}}
+data modify storage plate_havoc:ui temp set value {message:{text:"Gravity has shifted.",color:gold}}
 function plate_havoc:game/events/message/create_entry

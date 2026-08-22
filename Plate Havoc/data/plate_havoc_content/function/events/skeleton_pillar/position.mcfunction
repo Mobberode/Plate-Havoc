@@ -1,13 +1,6 @@
 ##Offset
-#XZ
-scoreboard players set #Modulo plate_havoc.temp 26
-scoreboard players set #Modulo2 plate_havoc.temp -26
-execute store result storage plate_havoc:events active_data.shared.x int 1 run function plate_havoc:misc/prng
-execute store result storage plate_havoc:events active_data.shared.z int 1 run function plate_havoc:misc/prng
-
-#Y
-scoreboard players set #Modulo plate_havoc.temp 11
-scoreboard players set #Modulo2 plate_havoc.temp -11
-execute store result storage plate_havoc:events active_data.shared.y int 1 run function plate_havoc:misc/prng
+execute store result storage plate_havoc:events active_data.shared.x int 1 run function plate_havoc:misc/prng_ranged {min:-25,max:25}
+execute store result storage plate_havoc:events active_data.shared.z int 1 run function plate_havoc:misc/prng_ranged {min:-25,max:25}
+execute store result storage plate_havoc:events active_data.shared.y int 1 run function plate_havoc:misc/prng_ranged {min:-10,max:10}
 
 function plate_havoc_content:events/skeleton_pillar/tp with storage plate_havoc:events active_data.shared

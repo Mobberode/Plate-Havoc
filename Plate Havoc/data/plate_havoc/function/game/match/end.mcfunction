@@ -10,5 +10,6 @@ stopwatch remove plate_havoc:game_time
 execute as @a run function plate_havoc:misc/ui/bar_visuals/player/apply/init_snbt
 
 tellraw @a {text:"☠ ...and so saw nothingness. ☠",color:red}
+title @a actionbar {text:"Game Over...",color:red}
 
 schedule function plate_havoc:game/match/restart 3s

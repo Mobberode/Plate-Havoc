@@ -1,2 +1,2 @@
-$tp ~$(x) ~$(y) ~$(z)
 function plate_havoc_content:events/ice_road/rotate
+$execute rotated as @s positioned ~$(x) ~$(y) ~$(z) positioned ^ ^ ^-$(length) run function plate_havoc_content:events/ice_road/place with storage plate_havoc:events active_data.plate_havoc_content.ice_road

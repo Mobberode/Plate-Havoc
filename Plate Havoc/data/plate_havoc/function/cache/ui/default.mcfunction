@@ -29,4 +29,4 @@ data remove storage plate_havoc:ui game
 data modify storage plate_havoc:ui event_messages set value []
 
 #End
-data modify storage plate_havoc:ui game.end_status set value {id:status,text:"",extra:[{text:"Game Over!",color:red}]}
+data modify storage plate_havoc:ui game.end_status set value {id:status,text:"",extra:[{text:"Game Over",color:red}]}

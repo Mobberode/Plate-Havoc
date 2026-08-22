@@ -13,7 +13,7 @@ data modify storage plate_havoc:temp temp.hover_event.value append from storage 
 data modify storage plate_havoc:cards template_running.display set from storage plate_havoc:temp temp
 
 ##Exclusive
-function plate_havoc:misc/cards/pool/exclusive
+function plate_havoc:misc/cards/pool/exclusive/execute
 
 ##Apply
 data modify storage plate_havoc:cards running.total append from storage plate_havoc:cards template_running

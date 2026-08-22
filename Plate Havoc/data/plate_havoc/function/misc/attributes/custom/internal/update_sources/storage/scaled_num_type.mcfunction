@@ -1,0 +1,1 @@
+$execute store result storage $(value) $(numeric_type) $(scale) run scoreboard players get #Temp plate_havoc.num

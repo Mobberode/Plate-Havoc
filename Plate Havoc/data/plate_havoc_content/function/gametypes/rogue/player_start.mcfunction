@@ -1,5 +1,4 @@
 dialog clear @s
-function #plate_havoc:player_reset
 function plate_havoc:misc/score_reset/run
 
 function plate_havoc:game/match/player/spread/init

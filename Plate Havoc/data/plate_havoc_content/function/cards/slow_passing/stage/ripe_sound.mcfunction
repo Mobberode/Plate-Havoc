@@ -1,0 +1,1 @@
+$playsound entity.sniffer.sniffing block @a ~ ~ ~ 0.25 $(pitch)

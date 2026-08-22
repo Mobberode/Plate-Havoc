@@ -1,0 +1,1 @@
+$random reset plate_havoc:seed $(value) false false

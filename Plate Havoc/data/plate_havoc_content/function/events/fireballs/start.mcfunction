@@ -3,5 +3,5 @@ data modify storage plate_havoc:events active_data.shared.distance set from stor
 
 function plate_havoc_content:events/fireballs/run
 
-data modify storage plate_havoc:ui temp set value {message:{text:"Fireballs are closing in.",color:gray}}
+data modify storage plate_havoc:ui temp set value {message:{text:"Fireballs are closing in.",color:red}}
 function plate_havoc:game/events/message/create_entry

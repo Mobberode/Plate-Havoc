@@ -1,0 +1,2 @@
+execute if score @s[predicate=plate_havoc:periodic_tick/5] plate_havoc_content.value matches 100.. run return run scoreboard players add @s plate_havoc_content.value 10
+scoreboard players add @s[predicate=plate_havoc:periodic_tick/10] plate_havoc_content.value 1

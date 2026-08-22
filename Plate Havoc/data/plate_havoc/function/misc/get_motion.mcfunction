@@ -1,2 +1,2 @@
-data modify storage plate_havoc:events active_data.shared.motion set from entity @s Pos
-kill
+execute in plate_havoc:arena run tp ~ ~ ~
+data modify storage plate_havoc:data motion set from entity @s Pos

@@ -1,1 +1,1 @@
-$fill ~-$(temp) ~ ~-$(temp) ~$(temp) ~ ~$(temp) obsidian
+$execute positioned ~$(x) ~$(y) ~$(z) run fill ~-$(size) ~ ~-$(size) ~$(size) ~ ~$(size) obsidian strict
