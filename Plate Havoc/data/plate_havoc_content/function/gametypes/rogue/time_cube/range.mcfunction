@@ -1,10 +1,8 @@
 # negates the + One that dxyz has
-#Positioned is the current clock range
-#dxyz is the current clock range * -2
+#(Range/2) and Range
 
 ##Debug
-#$execute positioned ~$(range) ~$(range) ~$(range) run particle glow
-#$execute positioned ~-$(range) ~-$(range) ~-$(range) run particle angry_villager
-#$execute positioned ~-$(range) ~-$(range) ~-$(range) positioned ~$(area) ~$(area) ~$(area) run particle bubble_pop
+#$execute positioned ~-$(range_halved) ~-$(range_halved) ~-$(range_halved) run particle flame
+#$execute positioned ~-$(range_halved) ~-$(range_halved) ~-$(range_halved) positioned ~$(range) ~$(range) ~$(range) run particle soul_fire_flame
 
-$execute positioned ~-$(range) ~-$(range) ~-$(range) as @p[dx=$(area),dy=$(area),dz=$(area),tag=plate_havoc.survivor] run function plate_havoc_content:gametypes/rogue/time_cube/collect
+$execute positioned ~-$(range_halved) ~-$(range_halved) ~-$(range_halved) as @p[dx=$(range),dy=$(range),dz=$(range),tag=plate_havoc.survivor] run function plate_havoc_content:gametypes/rogue/time_cube/collect

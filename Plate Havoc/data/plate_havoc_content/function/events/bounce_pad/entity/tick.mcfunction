@@ -1,5 +1,7 @@
-scoreboard players operation #Temp plate_havoc_content.event.bounce_pad.boost = @s plate_havoc_content.event.bounce_pad.boost
+execute if entity @s[gamemode=spectator] run return fail
+execute if score @s plate_havoc_content.event.bounce_pad.delay matches 1.. run return run scoreboard players remove @s plate_havoc_content.event.bounce_pad.delay 1
 
-$execute positioned ~-$(size) ~-.125 ~-$(size) as @e[dx=$(size),dy=0.125,dz=$(size),tag=!plate_havoc.dont_interact] unless score @s[gamemode=!spectator] plate_havoc_content.event.bounce_pad.delay matches 1.. at @s run function plate_havoc_content:events/bounce_pad/entity/bounce
+$execute positioned as @n[distance=..25,limit=1,tag=plate_havoc_content.event.bounce_pad,type=item_display] positioned ~-$(size_halved) ~ ~-$(size_halved) run particle flame
+$execute positioned as @n[distance=..25,limit=1,tag=plate_havoc_content.event.bounce_pad,type=item_display] positioned ~-$(size_halved) ~ ~-$(size_halved) positioned ~$(size) ~.5 ~$(size) run particle soul_fire_flame
 
-schedule function plate_havoc_content:events/bounce_pad/loop 1t replace
+$execute positioned as @n[distance=..25,limit=1,tag=plate_havoc_content.event.bounce_pad,type=item_display] positioned ~-$(size_halved) ~ ~-$(size_halved) positioned as @s[dx=$(size),dy=.5,dz=$(size)] run function plate_havoc_content:events/bounce_pad/entity/bounce

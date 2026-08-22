@@ -29,7 +29,10 @@ data modify storage plate_havoc:custom attributes[].refresh set value true
 function plate_havoc:misc/attributes/custom/update_global
 #
 
-function plate_havoc_content:gametypes/rogue/calc_clock
+#To negate the +1 from dx dy dz checks
+execute if score #PHC.Clock.Range plate_havoc.temp matches 1000.. run scoreboard players remove #PHC.Clock.Range plate_havoc.temp 1000
+execute store result storage plate_havoc:data active_data.plate_havoc_content.clock.range float 0.001 run scoreboard players get #PHC.Clock.Range plate_havoc.temp
+
 function plate_havoc_content:gametypes/rogue/calc_time
 
 function plate_havoc:game/events/time/run

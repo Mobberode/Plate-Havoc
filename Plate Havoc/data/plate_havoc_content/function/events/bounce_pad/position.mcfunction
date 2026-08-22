@@ -1,1 +1,2 @@
-$execute positioned ~$(x) ~$(y) ~$(z) run function plate_havoc:misc/tp
+execute unless block ~ ~ ~ #plate_havoc:nonsolid run function plate_havoc_content:events/bounce_pad/go_up
+tp ~ ~ ~

@@ -132,9 +132,9 @@ data modify storage plate_havoc:events data.monster_spawner set value ["minecraf
 ## buff_food (Amount)
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.buff_food.give_value",values:{base:0.003},tags:["plate_havoc_content:boxless_desires.applicable"]}
 ## bounce_pad (Size) (Range) (Boost)
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.bounce_pad.size",values:{base:3},update:[{type:storage,value:'active_data.plate_havoc_content.bounce_pad.size',scale:0.5}]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.bounce_pad.size",values:{base:3},update:[{type:storage,value:'plate_havoc:events active_data.plate_havoc_content.bounce_pad.size'},{type:storage,value:'plate_havoc:events active_data.plate_havoc_content.bounce_pad.size_halved',scale:0.0005}]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.bounce_pad.range",values:{base:0.035},update:[{type:storage,value:'plate_havoc:data seed.ranges."plate_havoc_content:bounce_pad".min',scale:-1,numeric_type:int},{type:storage,value:'plate_havoc:data seed.ranges."plate_havoc_content:bounce_pad".max',scale:1,numeric_type:int}]}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.bounce_pad.boost",values:{base:12.5}}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.bounce_pad.boost",values:{base:12.5},update:[{type:score,value:"#PHC.Bounce_Pad.Boost plate_havoc.temp"}]}
 ## proximity_mine (Amount) (Arm Time) (Explosion Time) (Power)
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.proximity_mine.amount",values:{base:0.002},update:[{type:score,value:"#PHC.Proximity_Mine.Amount plate_havoc.temp"}]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.proximity_mine.time.arm",values:{base:0.1},update:[{type:score,value:"#PHC.Proximity_Mine.Time.Arm plate_havoc.temp"}]}
@@ -173,7 +173,7 @@ data modify storage plate_havoc:cards data2.plate_havoc_content.task_manager set
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:card.task_manager.task.cooldown",values:{base:0.6},update:[{type:score,value:"#PHC.Task_Manager.Task.Cooldown plate_havoc.temp"}]}
 
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:clock.time_reduction",values:{base:0.04},update:[{type:score,value:"#ClockCollectTimeReduction plate_havoc.num"}]}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:clock.range",values:{base:0}}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:clock.range",values:{base:1},update:[{type:score,value:'#PHC.Clock.Range plate_havoc.temp'},{type:storage,value:'plate_havoc:data active_data.plate_havoc_content.clock.range'},{type:storage,value:'plate_havoc:data active_data.plate_havoc_content.clock.range_halved',scale:0.0005}]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:clock.spawn_time",values:{base:0.1},update:[{type:score,value:"#ClockSpawnTick plate_havoc.num"},{type:score,value:"#PHC.Cranked.Collector_Gain plate_havoc.temp",scale:1.66},{type:score,value:"#PHC.Cranked.Rest_Gain plate_havoc.temp",scale:1.33},{type:score,value:"#PHC.Cranked.Cursed.Loss plate_havoc.temp",scale:0.75}]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:clock.spawn_amount",values:{base:0.001},update:[{type:score,value:"#ClockSpawnAmount plate_havoc.num"}]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:time.multiplier",values:{base:1}}
@@ -201,7 +201,6 @@ scoreboard objectives add plate_havoc_content.event.piranha.attack_delay dummy
 scoreboard objectives add plate_havoc_content.event.piranha.attacked_times dummy
 scoreboard objectives add plate_havoc_content.event.piranha.active_time dummy
 scoreboard objectives add plate_havoc_content.event.bounce_pad.delay dummy
-scoreboard objectives add plate_havoc_content.event.bounce_pad.boost dummy
 scoreboard objectives add plate_havoc_content.event.herobrine.consecutive_curses dummy
 
 #

@@ -33,6 +33,8 @@ scoreboard players set #1000000 plate_havoc.num 100000
 scoreboard players set #Runtick plate_havoc.num 0
 scoreboard players set #Event.Pool_Intensity_Update plate_havoc.intensity 0
 
+data modify storage plate_havoc:data active_data set value {}
+
 ##AllowBlockInteraction
 scoreboard players set #AllowBlockInteraction plate_havoc.num 0
 
@@ -110,6 +112,7 @@ data modify storage plate_havoc:events running set value []
 ##Cards
 data modify storage plate_havoc:cards active_data set value {}
 
+##Global
 ##Score Reseter
 data modify storage plate_havoc:data score_reset set value [plate_havoc.player.single_tick.damage.dealt]
 data modify storage plate_havoc:data init_score_reset set value ["plate_havoc.player.damage.dealt","plate_havoc.player.damage.taken"]
