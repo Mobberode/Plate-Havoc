@@ -1,1 +1,1 @@
-$function plate_havoc:misc/function with storage plate_havoc:survivors data[$(temp)].behaviour[{type:set}]
+$function plate_havoc:misc/function with storage plate_havoc:data content.survivors[$(temp)].behaviour[{type:set}]

@@ -145,6 +145,8 @@ data modify storage plate_havoc:temp data set value [\
 \
 {id:"plate_havoc_content:gazing_shadow",data:{global:{intensity:{min:7},function:"plate_havoc_content:events/gazing_shadow/start"}}},\
 \
+{id:"plate_havoc_content:emergency_pad",data:{global:{intensity:{min:8},function:"plate_havoc_content:events/emergency_pad/start"}}},\
+\
 \
 \
 {id:"plate_havoc_content:obama_drone_strike",data:{global:{function:"plate_havoc_content:events/zzz_console/obama_drone_strike/start"}},console_only:true},\
@@ -163,4 +165,4 @@ data modify storage plate_havoc:temp data set value [\
 \
 ]
 
-data modify storage plate_havoc:data events append from storage plate_havoc:temp data[]
+data modify storage plate_havoc:data content.events append from storage plate_havoc:temp data[]

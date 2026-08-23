@@ -38,5 +38,5 @@ execute \
         scoreboard players operation #y player_motion.internal.dummy *= #constant.-1 player_motion.internal.const
 ###
 
-## Launch locally with modified #x/#y scores and the original $z score, pass the return value of `1` to indicate motion was applied
+## Launch locally with modified #x/#y scores and the original #z score, pass the return value of `1` to indicate motion was applied
 return run function plate_player_motion:internal/launch/main

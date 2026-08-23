@@ -1,1 +1,1 @@
-$fill ~-$(size) ~ ~-$(size) ~$(size) ~ ~$(size) lava
+$fill ~-$(size) ~ ~-$(size) ~$(size) ~ ~$(size) lava strict

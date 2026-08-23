@@ -17,4 +17,4 @@ data modify storage plate_havoc:temp data set value [\
 {id:arena,function:"plate_havoc_legacy_content:gametypes/prematch/arena",leaderboard:{status:false}},\
 ]
 
-data modify storage plate_havoc:data gametypes append from storage plate_havoc:temp data[]
+data modify storage plate_havoc:data content.gametypes append from storage plate_havoc:temp data[]

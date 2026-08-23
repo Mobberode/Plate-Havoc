@@ -12,4 +12,4 @@ data modify storage plate_havoc:temp data set value [\
 {id:"plate_havoc_content:chaos",requirements:[{type:function,value:"plate_havoc_content:card_types/requirement/chaos"}],attributes:{voting:{mode:votes,behaviour:{timed:{time:25}}},slots:{base:5,modifiable:true}},colours:{color:"dark_purple"},name:{translate:"plate_havoc_content:card_type.chaos",fallback:"CHAOS"},subtext:{translate:"plate_havoc_content:card_type.chaos.subtext",fallback:"Fall into chaos..."},sound_function:"plate_havoc_content:card_types/sfx_deeper_curse"},\
 ]
 
-data modify storage plate_havoc:cards types append from storage plate_havoc:temp data[]
+data modify storage plate_havoc:data content.card_types append from storage plate_havoc:temp data[]

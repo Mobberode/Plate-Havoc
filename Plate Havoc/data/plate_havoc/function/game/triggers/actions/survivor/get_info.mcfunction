@@ -1,5 +1,5 @@
 data modify storage plate_havoc:ui temp set value {visual:["","\n\n"],subtext:{color:gray}}
-$data modify storage plate_havoc:ui temp.active set from storage plate_havoc:survivors data[$(temp)]
+$data modify storage plate_havoc:ui temp.active set from storage plate_havoc:data content.survivors[$(temp)]
 
 data modify storage plate_havoc:ui temp.visual insert 1 from storage plate_havoc:ui temp.active.name
 execute unless data storage plate_havoc:ui temp.active.name run data modify storage plate_havoc:ui temp.visual insert 1 from storage plate_havoc:ui temp.active.id

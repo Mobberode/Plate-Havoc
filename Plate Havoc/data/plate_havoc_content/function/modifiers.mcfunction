@@ -16,4 +16,4 @@ data modify storage plate_havoc_content:temp data set value [\
 {id:"plate_havoc_content:relentless",description:["",{text:"RELENTLESS",color:red},"\nThe Void wants you forgotten."],function:"plate_havoc_content:modifiers/relentless/start"},\
 ]
 
-data modify storage plate_havoc:modifiers data append from storage plate_havoc_content:temp data[]
+data modify storage plate_havoc:data content.modifiers append from storage plate_havoc_content:temp data[]

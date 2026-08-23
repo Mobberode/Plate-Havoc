@@ -1,10 +1,10 @@
-$execute unless data storage plate_havoc:cards data[{id:'$(id)'}] run return fail
+$execute unless data storage plate_havoc:data content.cards[{id:'$(id)'}] run return fail
 
 #Get template and id
 data modify storage plate_havoc:cards template set value {}
 
 $data modify storage plate_havoc:cards template.id set value "$(id)"
-$data modify storage plate_havoc:cards template.data set from storage plate_havoc:cards data[{id:"$(id)"}]
+$data modify storage plate_havoc:cards template.data set from storage plate_havoc:data content.cards[{id:"$(id)"}]
 function plate_havoc:console/zzz/set_card
 
 function plate_havoc:misc/cards/vote/end/template_data
@@ -38,3 +38,6 @@ function plate_havoc:misc/cards/running/types/start
 
 function plate_havoc:misc/cards/running/types/run {type:on.start}
 execute as @a run function plate_havoc:misc/cards/running/types/run {type:set.attribute}
+
+function plate_havoc:misc/cards/running/types/run {type:one_time}
+data remove storage plate_havoc:cards running.total[].functions[{type:"one_time"}]

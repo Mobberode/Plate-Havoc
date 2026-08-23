@@ -8,9 +8,9 @@
 #
 # Does not support players in spectator mode
 #
-# @score $x player_motion.api.launch (-64000..64000) - Approximate global X velocity to launch with
-# @score $y player_motion.api.launch (-64000..64000) - Approximate global Y velocity to launch with
-# @score $z player_motion.api.launch (-64000..64000) - Approximate global Z velocity to launch with
+# @score #x player_motion.api.launch (-64000..64000) - Approximate global X velocity to launch with
+# @score #y player_motion.api.launch (-64000..64000) - Approximate global Y velocity to launch with
+# @score #z player_motion.api.launch (-64000..64000) - Approximate global Z velocity to launch with
 ##
 
 ### Initialize
@@ -19,9 +19,9 @@
 
     ## If all input components are zero, return early
     execute \
-        if score $x player_motion.api.launch matches 0 \
-        if score $y player_motion.api.launch matches 0 \
-        if score $z player_motion.api.launch matches 0 \
+        if score #x player_motion.api.launch matches 0 \
+        if score #y player_motion.api.launch matches 0 \
+        if score #z player_motion.api.launch matches 0 \
         run return 0
 
     ## Internal launch vector storage & scores
@@ -33,11 +33,11 @@
 
 ### Convert
     ## Run approximate conversion of input vector (crystal-tuned) to approximately equivalent `apply_impulse` method vector, store in #x/#y/#z scores & `matrix` storage
-    execute unless score $x player_motion.api.launch matches 0 run \
+    execute unless score #x player_motion.api.launch matches 0 run \
         function plate_player_motion:internal/convert_from_legacy/entry/x
-    execute unless score $y player_motion.api.launch matches 0 run \
+    execute unless score #y player_motion.api.launch matches 0 run \
         function plate_player_motion:internal/convert_from_legacy/entry/y
-    execute unless score $z player_motion.api.launch matches 0 run \
+    execute unless score #z player_motion.api.launch matches 0 run \
         function plate_player_motion:internal/convert_from_legacy/entry/z
 ###
 
@@ -62,9 +62,9 @@
     ## If the previous launch method was also legacy xyz and the same vec_k was used, reuse the previous local launch vector to save computation
     execute if score @s player_motion.internal.previous_method matches 3 \
         if score @s player_motion.internal.previous_vec_k = #vec_k_combined player_motion.internal.dummy \
-        if score @s player_motion.internal.previous_x.in = $x player_motion.api.launch \
-        if score @s player_motion.internal.previous_y.in = $y player_motion.api.launch \
-        if score @s player_motion.internal.previous_z.in = $z player_motion.api.launch \
+        if score @s player_motion.internal.previous_x.in = #x player_motion.api.launch \
+        if score @s player_motion.internal.previous_y.in = #y player_motion.api.launch \
+        if score @s player_motion.internal.previous_z.in = #z player_motion.api.launch \
         run return run function plate_player_motion:internal/launch/use_previous
 
     ## Store current vec_k combined value and launch method into player scores for potential reuse on next launch
@@ -85,9 +85,9 @@
         function plate_player_motion:internal/math/global/convert_to_local
 
     ## Store input launch vector into `previous_x.in`/`previous_y.in`/`previous_z.in` for potential reuse on next launch
-    scoreboard players operation @s player_motion.internal.previous_x.in = $x player_motion.api.launch
-    scoreboard players operation @s player_motion.internal.previous_y.in = $y player_motion.api.launch
-    scoreboard players operation @s player_motion.internal.previous_z.in = $z player_motion.api.launch
+    scoreboard players operation @s player_motion.internal.previous_x.in = #x player_motion.api.launch
+    scoreboard players operation @s player_motion.internal.previous_y.in = #y player_motion.api.launch
+    scoreboard players operation @s player_motion.internal.previous_z.in = #z player_motion.api.launch
     
     ## Store the local launch vector into `previous_x`/`previous_y`/`previous_z` for potential reuse on next launch
     scoreboard players operation @s player_motion.internal.previous_x = #x player_motion.internal.dummy

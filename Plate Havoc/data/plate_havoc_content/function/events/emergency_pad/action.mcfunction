@@ -1,0 +1,2 @@
+$execute positioned ~$(x) ~$(y) ~$(z) run function plate_havoc_content:events/bounce_pad/position
+execute positioned as @s run summon item_display ~ ~ ~ {item:{id:red_concrete,components:{enchantment_glint_override:true}},transformation:{scale:[0.9,0.9,0.9],translation:[0,0,0],left_rotation:[0,0,0,1],right_rotation:[0,0,0,1]},Tags:["plate_havoc_content.event.bounce_pad","plate_havoc_content.event.bounce_pad.red","plate_havoc.dont_interact"]}

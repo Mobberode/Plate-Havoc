@@ -4,6 +4,9 @@ execute store result score @s plate_havoc.player.health.max run attribute @s max
 #on_ground predicate delay (for teleports)
 scoreboard players remove @s[scores={plate_havoc.on_ground.predicate.delay=1..}] plate_havoc.on_ground.predicate.delay 1
 
+##Speed
+function plate_havoc:misc/player/get_speed
+
 ##Extra Jumps
 execute if score #Extra plate_havoc.jumps.count matches 1.. run function plate_havoc:misc/player/extra_jumps/init
 

@@ -1,3 +1,4 @@
+data modify storage plate_havoc:data content set value {}
 scoreboard players reset * plate_havoc.num
 scoreboard players reset * plate_havoc.players
 
@@ -22,6 +23,7 @@ scoreboard players set #70 plate_havoc.num 70
 scoreboard players set #80 plate_havoc.num 80
 scoreboard players set #90 plate_havoc.num 90
 scoreboard players set #100 plate_havoc.num 100
+scoreboard players set #200 plate_havoc.num 200
 scoreboard players set #250 plate_havoc.num 250
 scoreboard players set #500 plate_havoc.num 500
 scoreboard players set #750 plate_havoc.num 750
@@ -67,7 +69,7 @@ data modify storage plate_havoc:ui tabs set value [{title:"Survivors",function:"
 #Leaderboard
 data modify storage plate_havoc:data functions.leaderboard.sort_type set value {type:"intensity",scale:1000}
 data modify storage plate_havoc:leaderboard data_functions set value [{function:"plate_havoc_content:leaderboard/data/seed"},{function:"plate_havoc_content:leaderboard/data/status"},{function:"plate_havoc_content:leaderboard/data/difficulty"},{function:"plate_havoc_content:leaderboard/data/gametype"},{function:"plate_havoc_content:leaderboard/data/time"},{function:"plate_havoc_content:leaderboard/data/intensity"},{function:"plate_havoc_content:leaderboard/data/events_occured"},{function:"plate_havoc_content:leaderboard/data/total_deaths"},{function:"plate_havoc_content:leaderboard/data/extensions"}]
-data modify storage plate_havoc:leaderboard player_data_functions set value ["plate_havoc_content:leaderboard/data/player/survivor","plate_havoc_content:leaderboard/data/player/damage_dealt","plate_havoc_content:leaderboard/data/player/damage_taken"]
+data modify storage plate_havoc:leaderboard player_data_functions set value ["plate_havoc_content:leaderboard/data/player/survivor","plate_havoc_content:leaderboard/data/player/damage_dealt","plate_havoc_content:leaderboard/data/player/damage_taken","plate_havoc_content:leaderboard/data/player/deaths"]
 
 data modify storage plate_havoc:data functions.leaderboard.credit_loop set value "plate_havoc:misc/logbook/leaderboard/credit/type/time_elasped/loop"
 data modify storage plate_havoc:data functions.leaderboard.credit_start set value "plate_havoc:misc/logbook/leaderboard/credit/type/time_elasped/start"
@@ -114,8 +116,8 @@ data modify storage plate_havoc:cards active_data set value {}
 
 ##Global
 ##Score Reseter
-data modify storage plate_havoc:data score_reset set value [plate_havoc.player.single_tick.damage.dealt]
-data modify storage plate_havoc:data init_score_reset set value ["plate_havoc.player.damage.dealt","plate_havoc.player.damage.taken"]
+data modify storage plate_havoc:data score_reset set value ["plate_havoc.player.single_tick.damage.dealt"]
+data modify storage plate_havoc:data init_score_reset set value ["plate_havoc.player.damage.dealt","plate_havoc.player.damage.taken","plate_havoc.player.deaths"]
 
 ##Cyclathron
 scoreboard players set #Value plate_havoc.cyclathron 0

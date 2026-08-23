@@ -1,3 +1,5 @@
+execute if score @s plate_havoc.temp = #PHC.Cube_of_Decay.Half plate_havoc.temp run function plate_havoc_content:cards/cube_of_decay/teleport
+
 scoreboard players operation #Temp plate_havoc.temp = @s plate_havoc_content.card.cube_of_decay.shrink_player_current
 scoreboard players operation #Temp plate_havoc.temp -= @s plate_havoc_content.card.cube_of_decay.shrink_player_requirement
 scoreboard players add #Temp plate_havoc.temp 1

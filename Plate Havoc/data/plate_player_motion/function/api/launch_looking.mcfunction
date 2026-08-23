@@ -84,7 +84,7 @@
     ## If the previous launch method was also legacy looking and the same vec_k was used, reuse the previous local launch vector to save computation
     execute if score @s player_motion.internal.previous_method matches 2 \
         if score @s player_motion.internal.previous_vec_k = #vec_k_combined player_motion.internal.dummy \
-        if score @s player_motion.internal.previous_z.in = $z player_motion.api.launch \
+        if score @s player_motion.internal.previous_z.in = #z player_motion.api.launch \
         run return run function plate_player_motion:internal/launch/use_previous
 
     ## Store current vec_k combined value and launch method into player scores for potential reuse on next launch
@@ -105,7 +105,7 @@
         function plate_player_motion:internal/math/global/convert_to_local
 
     ## Store input launch vector into `previous_z.in` for potential reuse on next launch
-    scoreboard players operation @s player_motion.internal.previous_z.in = $z player_motion.api.launch
+    scoreboard players operation @s player_motion.internal.previous_z.in = #z player_motion.api.launch
     
     ## Store the local launch vector into `previous_x`/`previous_y`/`previous_z` for potential reuse on next launch
     scoreboard players operation @s player_motion.internal.previous_x = #x player_motion.internal.dummy

@@ -1,6 +1,6 @@
-## Backup the sign of $y and store the absolute value of $y into the conversion & conversion index scores
+## Backup the sign of #y and store the absolute value of #y into the conversion & conversion index scores
 execute store result score #bucket_index player_motion.internal.dummy run \
-    scoreboard players operation #crystal player_motion.internal.dummy = $y player_motion.api.launch
+    scoreboard players operation #crystal player_motion.internal.dummy = #y player_motion.api.launch
 scoreboard players set #sign player_motion.internal.dummy 1
 execute if score #crystal player_motion.internal.dummy matches ..-1 run scoreboard players set #sign player_motion.internal.dummy -1
 execute if score #crystal player_motion.internal.dummy matches ..-1 \

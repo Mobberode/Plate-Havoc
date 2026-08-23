@@ -1,2 +1,2 @@
-execute on passengers run kill
+kill 0000000c-0000-03f2-0000-091000001523
 kill

@@ -1,0 +1,2 @@
+attribute @s fall_damage_multiplier modifier add plate_havoc_content:card.jet_boots -0.33 add_multiplied_total
+attribute @s safe_fall_distance modifier add plate_havoc_content:card.jet_boots 0.66 add_multiplied_total

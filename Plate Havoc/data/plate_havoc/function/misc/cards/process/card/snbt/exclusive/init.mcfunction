@@ -1,5 +1,5 @@
 ##exclusive
-data modify storage plate_havoc:temp temp set value {meta:exclusive,text:"*",color:yellow,hover_event:{action:"show_text",value:["Locks following Cards:\n"]}}
+data modify storage plate_havoc:temp temp set value {meta:exclusive,text:"*",color:yellow,hover_event:{action:"show_text",value:["• Exclusive Cards\n"]}}
 
 data modify storage plate_havoc:temp temp2 set value {}
 data modify storage plate_havoc:temp temp2.input set from storage plate_havoc:temp input.exclusive

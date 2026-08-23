@@ -1,2 +1,2 @@
-execute if score @s plate_havoc_content.card.nanomachines.duration matches 1.. run return run function plate_havoc_content:cards/nanomachines/duration
+execute if score @s plate_havoc_content.card.nanomachines.duration matches 1.. run function plate_havoc_content:cards/nanomachines/duration
 function plate_havoc_content:cards/nanomachines/check

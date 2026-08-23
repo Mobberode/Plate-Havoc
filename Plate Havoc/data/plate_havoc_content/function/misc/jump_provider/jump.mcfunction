@@ -1,7 +1,6 @@
 ##Jump
 #Halt existing y motion
-execute as 00000000-0000-0005-0000-0001000007e9 run function plate_havoc:misc/get_position
-data modify storage plate_havoc:temp y set from storage plate_havoc:data pos[1]
+execute store result storage plate_havoc:temp y float 0.01 run scoreboard players get @s plate_havoc.y
 function plate_havoc_content:misc/jump_provider/halt with storage plate_havoc:temp
 
 #Launch global

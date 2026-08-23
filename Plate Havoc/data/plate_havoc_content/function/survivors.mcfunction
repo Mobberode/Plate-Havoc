@@ -18,6 +18,6 @@ data modify storage plate_havoc:temp data set value [\
 \
 ]
 
-data modify storage plate_havoc:survivors data append from storage plate_havoc:temp data[]
+data modify storage plate_havoc:data content.survivors append from storage plate_havoc:temp data[]
 
 #summon mannequin ~ ~ ~ {profile:{properties:[{name:"textures",value:"e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOThiM2I2ZjAyODEyODU2YmI2NmUxNjU5Mzc3ODYzZDgyZmY4ZjdjMjM0MjYyYTFjNTg2ODMwMGRjZTQwZDFkNyJ9fX0="}]}}

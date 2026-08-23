@@ -1,4 +1,4 @@
-data modify storage plate_havoc:events temp set from storage plate_havoc:data events
+data modify storage plate_havoc:events temp set from storage plate_havoc:data content.events
 data remove storage plate_havoc:events temp[{console_only:true}]
 
 ##Exclusion

@@ -1,0 +1,1 @@
+$function plate_havoc:misc/function with storage plate_havoc:cards active_data.plate_havoc_content.tailsman_of_hope[$(temp)]

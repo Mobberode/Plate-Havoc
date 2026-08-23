@@ -1,1 +1,1 @@
-$data modify storage plate_havoc:cards active_data.shared.function set from storage plate_havoc:cards data2.plate_havoc_content.mentally_parrotsane[$(temp)]
+$data modify storage plate_havoc:cards active_data.shared.function set from storage plate_havoc:cards active_data.plate_havoc_content.mentally_parrotsane[$(temp)]

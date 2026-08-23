@@ -1,8 +1,7 @@
-# Left/Right
-scoreboard players set $x player_motion.api.launch 500
-# Above/Below
-scoreboard players set $y player_motion.api.launch 12000
-# Forward/Backward
-scoreboard players set $z player_motion.api.launch -3125
+scoreboard players set #dx distance 1
+scoreboard players set #dy distance 5
+scoreboard players set #dz distance 1
 
-function plate_player_motion:api/launch_local_xyz
+function fdist:start
+#scoreboard players get #out distance
+schedule function plate_havoc:test 1t

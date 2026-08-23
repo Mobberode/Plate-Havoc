@@ -1,4 +1,2 @@
-scoreboard players set @s plate_havoc_content.card.nanomachines.damage 0
-
 scoreboard players remove @s plate_havoc_content.card.nanomachines.duration 1
-execute if score @s plate_havoc_content.card.nanomachines.duration matches ..0 run function plate_havoc_content:cards/nanomachines/wipe
+execute if score @s plate_havoc_content.card.nanomachines.duration matches ..0 run function plate_havoc_content:cards/nanomachines/stack

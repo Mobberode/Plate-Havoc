@@ -18,6 +18,25 @@ attribute @s air_drag_modifier base set 0.5
 attribute @s friction_modifier base reset
 attribute @s bounciness base reset
 attribute @s camera_distance base reset
+attribute @s step_height base reset
+attribute @s below_name_distance base reset
+attribute @s explosion_knockback_resistance base reset
+attribute @s flying_speed base reset
+attribute @s follow_range base reset
+attribute @s luck base reset
+attribute @s max_absorption base reset
+attribute @s mining_efficiency base reset
+attribute @s movement_efficiency base reset
+attribute @s oxygen_bonus base reset
+attribute @s name_tag_distance base reset
+attribute @s safe_fall_distance base reset
+attribute @s scale base reset
+attribute @s sneaking_speed base reset
+attribute @s submerged_mining_speed base reset
+attribute @s sweeping_damage_ratio base reset
+attribute @s water_movement_efficiency base reset
+attribute @s waypoint_receive_range base reset
+attribute @s waypoint_transmit_range base reset
 
 execute if score #AllowBlockInteraction plate_havoc.num matches 1.. run function plate_havoc:misc/attributes/allow_block_interaction
 

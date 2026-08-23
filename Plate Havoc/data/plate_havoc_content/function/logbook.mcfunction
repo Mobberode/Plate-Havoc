@@ -6,4 +6,4 @@ data modify storage plate_havoc:temp data set value [\
 {id:"plate_havoc_content:swift_feets",name:"Swift Feets",type:{value:card,additional:{value:upgrade}},log:''},\
 ]
 
-data modify storage plate_havoc:logbook data append from storage plate_havoc:temp data[]
+data modify storage plate_havoc:data content.logbook append from storage plate_havoc:temp data[]

@@ -1,3 +1,6 @@
+execute store result score #Temp plate_havoc.temp run function plate_havoc:misc/prng {max:100}
+execute if score #PHC.Sapper plate_havoc.temp >= #Temp plate_havoc.temp run return run function plate_havoc_content:events/nuke/sap
+
 #Data
 data modify storage plate_havoc:events active_data.plate_havoc_content.nuke set value {}
 execute store result storage plate_havoc:events active_data.plate_havoc_content.nuke.height int 1 run data get storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.nuke.height"}].output 1000

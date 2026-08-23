@@ -151,7 +151,7 @@ data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.obama_drone_strike.summon.value",values:{base:0.4},tags:["plate_havoc_content:enraged.aggressive","plate_havoc_content:life_harmony.applicable"]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.obama_drone_strike.summon.extend_value",values:{base:0.2},tags:["plate_havoc_content:enraged.aggressive","plate_havoc_content:life_harmony.applicable"]}
 ## shop (Storage Data)
-data modify storage plate_havoc:events data.shop set value [\
+data modify storage plate_havoc:events active_data.plate_havoc_content.shop set value [\
 {item:"mace",cost:{price:40,type:percentage},visual:"mace"},\
 {item:"golden_apple",cost:{price:25,type:percentage},visual:"golden_apple"},\
 {item:"wind_charge",cost:{price:10,type:percentage},visual:"wind_charge"},\
@@ -162,13 +162,15 @@ data modify storage plate_havoc:events data.shop set value [\
 #{item:"barrier",cost:{price:0,type:percentage},visual:"barrier"},
 
 ## Cube of Decay
-data modify storage plate_havoc:cards data2.plate_havoc_content.cube_of_decay set value {positive:["plate_havoc_content:cards/cube_of_decay/outcomes/positive/less_agression","plate_havoc_content:cards/cube_of_decay/outcomes/positive/cyclathron_reward","plate_havoc_content:cards/cube_of_decay/outcomes/positive/health_boost"],negative:["plate_havoc_content:cards/cube_of_decay/outcomes/negative/event_time","plate_havoc_content:cards/cube_of_decay/outcomes/negative/increase_event_count","plate_havoc_content:cards/cube_of_decay/outcomes/negative/add_time","plate_havoc_content:cards/cube_of_decay/outcomes/negative/wither","plate_havoc_content:cards/cube_of_decay/outcomes/negative/steal_cyclathron"]}
+data modify storage plate_havoc:cards active_data.plate_havoc_content.cube_of_decay set value {positive:["plate_havoc_content:cards/cube_of_decay/outcomes/positive/less_agression","plate_havoc_content:cards/cube_of_decay/outcomes/positive/cyclathron_reward","plate_havoc_content:cards/cube_of_decay/outcomes/positive/health_boost"],negative:["plate_havoc_content:cards/cube_of_decay/outcomes/negative/event_time","plate_havoc_content:cards/cube_of_decay/outcomes/negative/increase_event_count","plate_havoc_content:cards/cube_of_decay/outcomes/negative/add_time","plate_havoc_content:cards/cube_of_decay/outcomes/negative/wither","plate_havoc_content:cards/cube_of_decay/outcomes/negative/steal_cyclathron"]}
 ## 777 Machine
-data modify storage plate_havoc:cards data2.plate_havoc_content.777_machine set value [{id:regeneration,amplifier:0},{id:invisibility,amplifier:0},{id:resistance,amplifier:1},{id:fire_resistance,amplifier:0},{id:saturation,amplifier:0}]
+data modify storage plate_havoc:cards active_data.plate_havoc_content.777_machine set value [{id:regeneration,amplifier:0},{id:invisibility,amplifier:0},{id:resistance,amplifier:1},{id:fire_resistance,amplifier:0},{id:saturation,amplifier:0}]
 ## Mentally Parrotsane
-data modify storage plate_havoc:cards data2.plate_havoc_content.mentally_parrotsane set value ["plate_havoc:game/match/player/last_one_sfx","plate_havoc_content:cards/cursed_clocks/collect_sfx","plate_havoc_content:events/motion_sniper/sfx","plate_havoc_content:events/laser_drill/entity/cue/sound_default","plate_havoc_content:cards/mentally_parrotsane/sounds/creeper","plate_havoc_content:cards/mentally_parrotsane/sounds/wither","plate_havoc_content:cards/mentally_parrotsane/sounds/ghast","plate_havoc_content:events/eraserman/cue","plate_havoc_content:cards/critical_rollback/sfx","plate_havoc_content:cards/multi_use_umbrella/player/acid_immunity/break_cue","plate_havoc_content:events/motion_sniper/phase/warning_sound","plate_havoc_content:events/gazing_shadow/summon_sound"]
+data modify storage plate_havoc:cards active_data.plate_havoc_content.mentally_parrotsane set value ["plate_havoc:game/match/player/last_one_sfx","plate_havoc_content:cards/cursed_clocks/collect_sfx","plate_havoc_content:events/motion_sniper/sfx","plate_havoc_content:events/laser_drill/entity/cue/sound_default","plate_havoc_content:cards/mentally_parrotsane/sounds/creeper","plate_havoc_content:cards/mentally_parrotsane/sounds/wither","plate_havoc_content:cards/mentally_parrotsane/sounds/ghast","plate_havoc_content:events/eraserman/cue","plate_havoc_content:cards/critical_rollback/sfx","plate_havoc_content:cards/multi_use_umbrella/player/acid_immunity/break_cue","plate_havoc_content:events/motion_sniper/phase/warning_sound","plate_havoc_content:events/gazing_shadow/summon_sound"]
 ## Task Manager
-data modify storage plate_havoc:cards data2.plate_havoc_content.task_manager set value [{function:"",snbt:"Get under 33% Health."},{function:"",snbt:"Kill 5 Mobs."}]
+data modify storage plate_havoc:cards active_data.plate_havoc_content.task_manager set value [{function:"",snbt:"Get under 33% Health."},{function:"",snbt:"Kill 5 Mobs."}]
+## Tailsman of Hope
+data modify storage plate_havoc:cards active_data.plate_havoc_content.tailsman_of_hope set value [{function:"plate_havoc_content:events/iron_golem/start"},{function:"plate_havoc_content:events/buff_wind/start"},{function:"plate_havoc_content:events/buff_heal/start"},{function:"plate_havoc_content:events/buff_pearl/start"},{function:"plate_havoc_content:events/flame_guardian/start"},{function:"plate_havoc_content:events/buff_food/start"},{function:"plate_havoc_content:events/bounce_pad/start"}]
 
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:card.task_manager.task.cooldown",values:{base:0.6},update:[{type:score,value:"#PHC.Task_Manager.Task.Cooldown plate_havoc.temp"}]}
 
@@ -239,6 +241,7 @@ scoreboard objectives add plate_havoc_content.card.spyshine.holding dummy
 scoreboard objectives add plate_havoc_content.card.shock_absorber dummy
 scoreboard objectives add plate_havoc_content.card.nanomachines.duration dummy
 scoreboard objectives add plate_havoc_content.card.nanomachines.damage custom:damage_taken
+scoreboard objectives add plate_havoc_content.card.nanomachines.stack dummy
 scoreboard objectives add plate_havoc_content.card.blood_money dummy
 scoreboard objectives add plate_havoc_content.card.deflecting_barrier.value dummy
 scoreboard objectives add plate_havoc_content.card.deflecting_barrier.cooldown dummy
@@ -281,7 +284,7 @@ scoreboard objectives add plate_havoc_content.max_value dummy
 scoreboard objectives add plate_havoc_content.leaderboard.cycle.current dummy
 scoreboard objectives add plate_havoc_content.leaderboard.cycle.saved dummy
 
-data modify storage plate_havoc:temp extension_data set value [plate_havoc_content.event.acid_rain.exposure,plate_havoc_content.event.jump_cooldown,plate_havoc_content.event.jump_afterdown,plate_havoc_content.event.shop_token,plate_havoc_content.event.flame_guardian.time,plate_havoc_content.event.flame_guardian.active,plate_havoc_content.event.motion_sniper.time,plate_havoc_content.event.piranha.attack_delay,plate_havoc_content.event.piranha.attacked_times,plate_havoc_content.card.multi_use_umbrella.splasher_using,plate_havoc_content.card.multi_use_umbrella.splasher_cooldown,plate_havoc_content.card.multi_use_umbrella.acid_immunity,plate_havoc_content.event.piranha.active_time,"plate_havoc_content.card.mutilated_teddy","plate_havoc_content.card.lasting_acid","plate_havoc_content.card.multi_use_umbrella.cobwebbed","plate_havoc_content.card.nanomachines.damage","plate_havoc_content.card.nanomachines.duration"]
+data modify storage plate_havoc:temp extension_data set value [plate_havoc_content.event.acid_rain.exposure,plate_havoc_content.event.jump_cooldown,plate_havoc_content.event.jump_afterdown,plate_havoc_content.event.shop_token,plate_havoc_content.event.flame_guardian.time,plate_havoc_content.event.flame_guardian.active,plate_havoc_content.event.motion_sniper.time,plate_havoc_content.event.piranha.attack_delay,plate_havoc_content.event.piranha.attacked_times,plate_havoc_content.card.multi_use_umbrella.splasher_using,plate_havoc_content.card.multi_use_umbrella.splasher_cooldown,plate_havoc_content.card.multi_use_umbrella.acid_immunity,plate_havoc_content.event.piranha.active_time,"plate_havoc_content.card.mutilated_teddy","plate_havoc_content.card.lasting_acid","plate_havoc_content.card.multi_use_umbrella.cobwebbed","plate_havoc_content.card.nanomachines.damage","plate_havoc_content.card.nanomachines.duration","plate_havoc_content.card.nanomachines.stack"]
 data modify storage plate_havoc:data score_reset append from storage plate_havoc:temp extension_data[]
 
 data modify storage plate_havoc:temp extension_data set value ["plate_havoc_content.card.blood_money"]

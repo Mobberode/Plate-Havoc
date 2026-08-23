@@ -5,5 +5,5 @@ data modify storage plate_havoc:temp data set value [\
 ]
 
 #function plate_havoc_content:artefacts/prosperity/requirement
-data modify storage plate_havoc:artefacts data append from storage plate_havoc:temp data[]
+data modify storage plate_havoc:data content.artefacts append from storage plate_havoc:temp data[]
 #summon text_display ~ ~ ~ {billboard:"center",text:["Prosperity\n25.0 (0/1)"]}

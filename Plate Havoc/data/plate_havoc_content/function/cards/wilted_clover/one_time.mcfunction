@@ -1,1 +1,1 @@
-data modify storage plate_havoc:cards data2.plate_havoc_content.777_machine append value {id:poison,amplifier:0}
+data modify storage plate_havoc:cards active_data.plate_havoc_content.777_machine append value {id:poison,amplifier:0}

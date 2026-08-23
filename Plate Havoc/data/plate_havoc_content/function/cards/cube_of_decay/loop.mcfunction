@@ -1,1 +1,1 @@
-execute in plate_havoc:arena as @e[x=0,tag=plate_havoc_content.card.decay_cube,type=item_display] at @s run function plate_havoc_content:cards/cube_of_decay/tick
+execute as 0000000c-0000-03f2-0000-091000001522 at @s run function plate_havoc_content:cards/cube_of_decay/tick

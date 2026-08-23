@@ -12,7 +12,7 @@
           "type": "minecraft:score",
           "target": {
             "type": "minecraft:fixed",
-            "name": "$x"
+            "name": "#x"
           },
           "score": "player_motion.api.launch"
         },
@@ -32,7 +32,7 @@
           "type": "minecraft:score",
           "target": {
             "type": "minecraft:fixed",
-            "name": "$y"
+            "name": "#y"
           },
           "score": "player_motion.api.launch"
         },
@@ -52,7 +52,7 @@
           "type": "minecraft:score",
           "target": {
             "type": "minecraft:fixed",
-            "name": "$z"
+            "name": "#z"
           },
           "score": "player_motion.api.launch"
         },

@@ -1,0 +1,1 @@
+execute in plate_havoc:arena run function plate_havoc_content:events/emergency_pad/tick

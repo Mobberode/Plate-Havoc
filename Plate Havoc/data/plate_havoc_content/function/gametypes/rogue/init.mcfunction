@@ -37,7 +37,7 @@ data modify storage plate_havoc:leaderboard data_functions insert -3 value {func
 
 scoreboard players set #Value plate_havoc.round 0
 
-data modify storage plate_havoc:cards locked set from storage plate_havoc:cards data
+data modify storage plate_havoc:cards locked set from storage plate_havoc:data content.cards
 data modify storage plate_havoc:cards pool set value []
 data modify storage plate_havoc:cards unavailable set value []
 data modify storage plate_havoc:ui card_list set value [""]

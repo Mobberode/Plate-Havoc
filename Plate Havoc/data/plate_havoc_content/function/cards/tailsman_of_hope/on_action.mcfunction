@@ -1,0 +1,2 @@
+scoreboard players operation #PHC.Tailsman_of_Hope plate_havoc.num += #MaxRunCount plate_havoc.num
+execute if score #PHC.Tailsman_of_Hope plate_havoc.num matches 30.. run function plate_havoc_content:cards/tailsman_of_hope/roll

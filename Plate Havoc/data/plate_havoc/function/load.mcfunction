@@ -66,8 +66,17 @@ scoreboard objectives add plate_havoc.z.survivor_select dummy
 scoreboard objectives add plate_havoc.player.health.max dummy
 scoreboard objectives add plate_havoc.player.health.value health
 scoreboard objectives add plate_havoc.player.food.value food
+scoreboard objectives add plate_havoc.player.air air
+scoreboard objectives add plate_havoc.player.armour armor
+
+scoreboard objectives add plate_havoc.speed dummy
+scoreboard objectives add plate_havoc.x dummy
+scoreboard objectives add plate_havoc.y dummy
+scoreboard objectives add plate_havoc.z dummy
+
 scoreboard objectives add plate_havoc.player.damage.taken custom:damage_taken
 scoreboard objectives add plate_havoc.player.damage.dealt custom:damage_dealt
+scoreboard objectives add plate_havoc.player.deaths deathCount
 
 scoreboard objectives add plate_havoc.player.single_tick.damage.dealt custom:damage_dealt
 
@@ -90,6 +99,7 @@ forceload add 0 0
 kill 00000000-0000-0005-0000-0001000007e9
 
 function gu:zzz/load
+function fdistance:load
 
 function plate_havoc:game/triggers/loop
 function plate_havoc:game/init
