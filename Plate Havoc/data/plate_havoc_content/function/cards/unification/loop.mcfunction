@@ -1,1 +1,1 @@
-execute as @e[tag=plate_havoc.mob] run function plate_havoc_content:cards/unification/entity_tick
+execute in plate_havoc:arena as @e[x=0,tag=plate_havoc.mob,type=!#plate_havoc:non_living_and_players] run function plate_havoc_content:cards/unification/entity_tick

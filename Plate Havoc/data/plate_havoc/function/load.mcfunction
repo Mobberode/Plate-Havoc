@@ -99,7 +99,7 @@ forceload add 0 0
 kill 00000000-0000-0005-0000-0001000007e9
 
 function gu:zzz/load
-function fdistance:load
+function fdist:load
 
 function plate_havoc:game/triggers/loop
 function plate_havoc:game/init

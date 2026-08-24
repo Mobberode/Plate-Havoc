@@ -252,6 +252,7 @@ scoreboard objectives add plate_havoc_content.card.slow_passing.upper_limit dumm
 scoreboard objectives add plate_havoc_content.card.slow_passing.threshold dummy
 scoreboard objectives add plate_havoc_content.card.slow_passing.lower_limit dummy
 scoreboard objectives add plate_havoc_content.card.slow_passing.stage dummy
+scoreboard objectives add plate_havoc_content.card.suction_cups.used dummy
 
 scoreboard objectives add plate_havoc_content.survivor.charger.amount dummy
 scoreboard objectives add plate_havoc_content.survivor.charger.using dummy

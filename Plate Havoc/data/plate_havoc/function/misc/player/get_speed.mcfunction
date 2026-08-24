@@ -31,5 +31,5 @@ scoreboard players operation @s plate_havoc.z = #Z plate_havoc.num
 scoreboard players operation @s plate_havoc.speed = #out distance
 
 #Debug Visual
-execute store result storage plate_havoc:temp temp float .00001 run scoreboard players get @s plate_havoc.speed
-title @s actionbar ["Speed: ",{storage:"plate_havoc:temp",nbt:"temp"}]
+#execute store result storage plate_havoc:temp temp float .00001 run scoreboard players get @s plate_havoc.speed
+#title @s actionbar ["Speed: ",{storage:"plate_havoc:temp",nbt:"temp"}]

@@ -1,4 +1,4 @@
-scoreboard players set @s plate_havoc_content.card.spyshine.boosts 0
+scoreboard players set @s plate_havoc_content.card.spyshine.boosts 2
 scoreboard players set @s plate_havoc_content.card.spyshine.cooldown 0
 scoreboard players set @s plate_havoc_content.card.spyshine.strength 0
 scoreboard players set @s plate_havoc_content.card.spyshine.holding 0
