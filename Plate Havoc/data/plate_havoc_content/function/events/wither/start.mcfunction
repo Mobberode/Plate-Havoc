@@ -1,4 +1,4 @@
 function plate_havoc_content:events/wither/run
 
-data modify storage plate_havoc:ui temp set value {message:{text:"The man-made weapon of destruction.",color:red}}
+data modify storage plate_havoc:ui temp set value {message:{text:"The man-made weapon of destruction.",color:dark_purple}}
 function plate_havoc:game/events/message/create_entry

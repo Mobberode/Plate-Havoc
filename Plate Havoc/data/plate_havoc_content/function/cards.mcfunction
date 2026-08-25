@@ -219,11 +219,13 @@ data modify storage plate_havoc:temp data set value [\
 \
 {id:"plate_havoc_content:shulker_minigun",name:"Shulker Tactics: Minigun",type:"plate_havoc_content:chaos",requirement:[{type:card,needed:[{id:"plate_havoc_content:shulker_rf"}]}],description:"Oh shiddings.",on_select:{functions:[{type:loop,function:"plate_havoc_content:cards/shulker_x/chaos_minigun"}],duration:-1,left:1,max:1,value:10}},\
 \
-{id:"plate_havoc_content:risk_of_piranhas",name:"Risk of Piranhas",type:"plate_havoc_content:chaos",reward:{base:50},requirement:[{type:cycle,value:10}],description:"Piranhas if active, bite when exposed to rain but halved damage and longer bite times.",on_select:{functions:[{type:one_time,function:"plate_havoc_content:cards/risk_or_piranhas/one_time"}],duration:-1,left:1,max:1,value:2.5}},\
+{id:"plate_havoc_content:risk_of_piranhas",name:"Risk of Piranhas",type:"plate_havoc_content:chaos",reward:{base:50},description:"Piranhas if active, bite when exposed to rain but halved damage and longer bite times.",on_select:{functions:[{type:one_time,function:"plate_havoc_content:cards/risk_or_piranhas/one_time"}],duration:-1,left:1,max:1,value:2.5}},\
 \
 {id:"plate_havoc_content:one_less_choice",name:"One Less Choice",type:"plate_havoc_content:chaos",description:"Number of cards to select is reduced by one.",on_select:{functions:[{type:on.start,function:"plate_havoc_content:cards/one_less_choice/start"}],duration:1,left:1,max:1,value:0.4}},\
 \
-{id:"plate_havoc_content:mentally_parrotsane",name:"Mentally Parrotsane",type:"plate_havoc_content:chaos",requirement:[{type:cycle,value:3}],description:"Sounds of mobs and indicators will randomly play from time to time, heard by everyone. Can be activated on Action or by other Events and Cards.",on_select:{functions:[{type:loop,function:"plate_havoc_content:cards/mentally_parrotsane/loop"},{type:on.start,function:"plate_havoc_content:cards/mentally_parrotsane/time_random"},{type:on.action,function:"plate_havoc_content:cards/mentally_parrotsane/chance"}],duration:-1,left:1,max:1}},\
+{id:"plate_havoc_content:mentally_parrotsane",name:"Mentally Parrotsane",type:"plate_havoc_content:chaos",description:"Sounds of mobs and indicators will randomly play from time to time, heard by everyone. Can be activated on Action or by other Events and Cards.",on_select:{functions:[{type:loop,function:"plate_havoc_content:cards/mentally_parrotsane/loop"},{type:on.start,function:"plate_havoc_content:cards/mentally_parrotsane/time_random"},{type:on.action,function:"plate_havoc_content:cards/mentally_parrotsane/chance"}],duration:-1,left:1,max:1}},\
+\
+{id:"plate_havoc_content:alpha_eater",name:"Alpha Eater",type:"plate_havoc_content:chaos",description:"Foods are consumed instantly.",on_select:{functions:[{type:player_loop,function:"plate_havoc_content:cards/alpha_eater/tick"}],duration:-1,left:1,max:1}},\
 ]
 
 data modify storage plate_havoc:data content.cards append from storage plate_havoc:temp data[]

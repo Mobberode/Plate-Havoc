@@ -1,1 +1,0 @@
-$effect give @a[tag=plate_havoc_content.misc.clock.collector] instant_health 1 $(count)

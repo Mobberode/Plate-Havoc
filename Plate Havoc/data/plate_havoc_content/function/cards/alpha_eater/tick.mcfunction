@@ -1,0 +1,1 @@
+execute if items entity @s weapon.mainhand *[consumable] run item modify entity @s weapon.mainhand {type:"set_components",function:"set_components",components:{consumable:{consume_seconds:0}}}

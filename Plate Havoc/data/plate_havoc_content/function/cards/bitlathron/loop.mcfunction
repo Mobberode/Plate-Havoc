@@ -1,5 +1,5 @@
 data modify storage plate_havoc:temp temp set value {}
-data modify storage plate_havoc:temp temp.value set value 1
+data modify storage plate_havoc:temp temp.value set value 0.05
 execute store result storage plate_havoc:temp temp.yield int 1 run scoreboard players get #Yield plate_havoc.cyclathron
 function plate_havoc_content:gametypes/rogue/time_cube/cyc_val with storage plate_havoc:temp temp
 

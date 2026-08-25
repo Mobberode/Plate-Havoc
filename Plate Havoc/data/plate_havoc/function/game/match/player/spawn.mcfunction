@@ -17,3 +17,5 @@ effect give @s resistance 5 5
 
 execute unless score @s plate_havoc.run_id = #Run plate_havoc.run_id run function plate_havoc:game/match/player/relog_clear
 scoreboard players operation @s plate_havoc.visual_id = @s plate_havoc.id
+
+function plate_havoc:misc/ui/bar_visuals/player/apply/all
