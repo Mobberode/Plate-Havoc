@@ -1,0 +1,2 @@
+data modify storage plate_havoc:temp temp set value {text:"Black Hole",color:gray}
+execute if data storage plate_havoc:cards running.total[{id:"plate_havoc_content:critical_rollback"}] unless function plate_havoc_content:cards/critical_rollback/damage run kill

@@ -9,11 +9,16 @@ $dialog show @s {\
         ["",{text:"[ < ]",color:gray,bold:true,click_event:{action:"run_command",command:"/trigger plate_havoc.t.view_run.player"}}," ",{text:"[ ^ ]",color:gray,bold:true,click_event:{action:"run_command",command:"/trigger plate_havoc.t.logbook set 6"}}," ",{text:"[ > ]",color:gray,bold:true,click_event:{action:"run_command",command:"/trigger plate_havoc.t.view_run.player set 2"}}],\
         {text:"\n",extra:[{text:"$(profile)",color:yellow}]},\
         {text:"\n",extra:$(top_bar)},\
-        {text:"\n\n- Run Information -\n",color:yellow},\
+        "\n\n- ",\
+        {translate:"plate_havoc:leaderboard.run_information",fallback:"Run Information",color:yellow},\
+        " -\n",\
         $(info),\
-        {text:"\n\n- Player Information -\n",color:yellow},\
+        "\n\n- ",\
+        {translate:"plate_havoc:leaderboard.player_information",fallback:"Player Information",color:yellow},\
+        " -\n",\
         $(profile_info),\
-        {text:"\n\nPress [ ESC ] to continue..."},\
+        "\n\n",\
+        {translate:"plate_havoc:leaderboard.continue",fallback:"Press [ ESC ] to continue..."},\
         ],width:448},\
     ]\
 }

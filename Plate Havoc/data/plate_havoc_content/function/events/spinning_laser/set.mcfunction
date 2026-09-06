@@ -1,0 +1,3 @@
+scoreboard players operation @s plate_havoc_content.event.spinning_laser.width = #Spinning_Laser.Entity.Width plate_havoc.event
+scoreboard players operation @s plate_havoc_content.event.spinning_laser.id = #Temp plate_havoc_content.event.spinning_laser.id
+execute if data storage plate_havoc:cards running.total[{id:"plate_havoc_content:connected_lasers"}] if score #Temp plate_havoc_content.event.spinning_laser.id matches 1.. run function plate_havoc_content:cards/connected_lasers/init

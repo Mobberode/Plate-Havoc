@@ -3,6 +3,9 @@ advancement revoke @s only plate_havoc_content:cards/blood_money
 #Damage = x10
 ##Cyclathrons
 scoreboard players operation #Temp plate_havoc.temp = @s plate_havoc.player.single_tick.damage.dealt
+scoreboard players operation #Temp plate_havoc.temp /= #2 plate_havoc.num
+$execute store result storage plate_havoc:temp temp float $(output) run scoreboard players get #Temp plate_havoc.temp
+execute store result score #Temp plate_havoc.temp run data get storage plate_havoc:temp temp
 scoreboard players operation #Value plate_havoc.cyclathron += #Temp plate_havoc.temp
 scoreboard players operation #Stat.Cyclathrons_Yielded plate_havoc.num += #Temp plate_havoc.temp
 

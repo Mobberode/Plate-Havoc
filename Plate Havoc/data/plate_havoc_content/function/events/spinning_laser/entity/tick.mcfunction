@@ -1,9 +1,5 @@
-schedule function plate_havoc_content:events/spinning_laser/loop 1t replace
-
-##Data get
-data modify storage plate_havoc:events temp set from entity @s data
-execute store result storage plate_havoc:events temp.halved_width double 0.5 run data get storage plate_havoc:events temp.width
-execute store result score #Spinning_Laser.Entity.Width plate_havoc.event run data get storage plate_havoc:events temp.width 1000
-
+execute store result storage plate_havoc:events active_data.plate_havoc_content.spinning_laser.width_halved float 0.0005 run scoreboard players operation #Temp plate_havoc.temp = @s plate_havoc_content.event.spinning_laser.width
+scoreboard players operation #Temp plate_havoc.temp /= #666 plate_havoc.num
 ##Laser Part
-execute on passengers at @s run function plate_havoc_content:events/spinning_laser/entity/move with storage plate_havoc:events temp
+execute if entity @s[tag=plate_havoc_content.event.spinning_laser.freeze] at @s run return run function plate_havoc_content:events/spinning_laser/entity/freezed with storage plate_havoc:events active_data.plate_havoc_content.spinning_laser
+execute at @s run function plate_havoc_content:events/spinning_laser/entity/move with storage plate_havoc:events active_data.plate_havoc_content.spinning_laser

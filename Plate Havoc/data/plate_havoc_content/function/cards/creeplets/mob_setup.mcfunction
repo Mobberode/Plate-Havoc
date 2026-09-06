@@ -1,0 +1,1 @@
+execute if entity @s[type=creeper,tag=!plate_havoc_content.card.creeplets] run function plate_havoc_content:cards/creeplets/run

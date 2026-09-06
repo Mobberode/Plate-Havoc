@@ -1,0 +1,2 @@
+execute store result storage plate_havoc:cards active_data.shared.temp float 0.2 run scoreboard players add @s plate_havoc_content.card.bloodlust.value 1
+execute anchored eyes positioned ^ ^ ^ run function plate_havoc_content:cards/bloodlust/apply with storage plate_havoc:cards active_data.shared

@@ -1,6 +1,7 @@
 scoreboard players add #Card.SelectionsMade plate_havoc.temp 1
 #
 function plate_havoc:misc/cards/attributes/selection/continue_condition
+function plate_havoc:misc/cards/attributes/rerollable/check_pool
 
 ##Process
 function plate_havoc:misc/cards/vote/end/process

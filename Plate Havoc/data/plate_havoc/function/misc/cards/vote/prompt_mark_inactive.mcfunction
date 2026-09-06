@@ -1,2 +1,2 @@
-title @s actionbar ["",{keybind:"key.sprint",color:green,extra:[" "]},"whilst looking down to reprompt Menu."]
+title @s actionbar ["",{keybind:"key.sprint",color:green,extra:[" "]},{translate:"plate_havoc_content:menu_open_action_prompt",fallback:"whilst looking down to open selection."}]
 tag @s[tag=!plate_havoc.dont_force_dialog] add plate_havoc.dont_force_dialog

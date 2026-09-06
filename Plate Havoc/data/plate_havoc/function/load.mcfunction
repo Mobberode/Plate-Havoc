@@ -47,6 +47,9 @@ scoreboard objectives add plate_havoc.t.logbook trigger
 scoreboard objectives add plate_havoc.z.run_history.gametype_index dummy
 scoreboard objectives add plate_havoc.z.run_history.tab dummy
 
+scoreboard objectives add plate_havoc.t.tab trigger
+scoreboard objectives add plate_havoc.t.subtab trigger
+
 scoreboard objectives add plate_havoc.t.view_run.entry trigger
 scoreboard objectives add plate_havoc.z.view_run.entry dummy
 scoreboard objectives add plate_havoc.t.view_run.player trigger
@@ -75,10 +78,13 @@ scoreboard objectives add plate_havoc.y dummy
 scoreboard objectives add plate_havoc.z dummy
 
 scoreboard objectives add plate_havoc.player.damage.taken custom:damage_taken
+scoreboard objectives add plate_havoc.player.damage.absorbed custom:damage_absorbed
 scoreboard objectives add plate_havoc.player.damage.dealt custom:damage_dealt
 scoreboard objectives add plate_havoc.player.deaths deathCount
 
 scoreboard objectives add plate_havoc.player.single_tick.damage.dealt custom:damage_dealt
+scoreboard objectives add plate_havoc.player.single_tick.damage.taken custom:damage_taken
+scoreboard objectives add plate_havoc.player.single_tick.damage.absorbed custom:damage_absorbed
 
 scoreboard objectives add plate_havoc.leaderboard.time_elasped.current dummy
 scoreboard objectives add plate_havoc.leaderboard.time_elasped.saved dummy

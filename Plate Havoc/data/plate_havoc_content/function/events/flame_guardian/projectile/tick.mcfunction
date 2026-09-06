@@ -1,3 +1,4 @@
+tp ~ ~ ~
 particle flame ~ ~ ~ 0.1 0.1 0.1 0 1
 
 execute unless data storage plate_havoc:cards running.total[{id:"plate_havoc_content:fire_guardian"}] unless block ~ ~ ~ #plate_havoc:nonsolid run return run function plate_havoc_content:events/flame_guardian/projectile/block_hit

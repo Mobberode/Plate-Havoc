@@ -1,0 +1,530 @@
+{
+    "plate_havoc:shared.and": "and",
+    "plate_havoc:shared.an": "an",
+    "plate_havoc:shared.Survivor": "Survivor",
+    "plate_havoc:shared.Survivors": "Survivors",
+    "plate_havoc:shared.Deaths": "Deaths",
+    "plate_havoc:shared.Profile": "Profile",
+    "plate_havoc:shared.Cyclathrons": "Cyclathrons",
+    "plate_havoc:shared.Cycle": "Cycle",
+    "plate_havoc:shared.Intensity": "Intensity",
+    "plate_havoc:shared.Time": "Time",
+    "plate_havoc:shared.Players": "Players",
+    "plate_havoc:shared.Run_History": "Run History",
+    "plate_havoc:shared.Leaderboard": "Leaderboard",
+    "plate_havoc:shared.Attributes": "Attributes",
+
+
+    "plate_havoc:description.cyclathrons": "Main currency exchanged for advantages.",
+    "plate_havoc:description.intensity": "Severity of Events.\nMore severe the higher the value.",
+    "plate_havoc:description.players": "Number of people currently in the run.",
+
+
+    "plate_havoc:bar.intermission.active": "Intermission",
+    "plate_havoc:bar.intermission.waiting": "Waiting for players to join.",
+    "plate_havoc:intermission.accelerate.multiplayer": "to quicken intermission.",
+    "plate_havoc:intermission.accelerate.solo": "to start the game.",
+    "plate_havoc:awaiting_load": "Waiting for game contents...",
+    
+    "plate_havoc:end_status": "Game Over",
+    "plate_havoc:end_message": "...and so saw nothingness.",
+
+    
+    "plate_havoc:card.info.exclusive": "Exclusive Cards",
+    "plate_havoc:card.reroll": "Reroll Selections",
+    "plate_havoc:card.continue": "Continue",
+    "plate_havoc:card.nothing": "There is nothing. The only way is deeper.",
+    "plate_havoc:card.deck": "Card Deck",
+    "plate_havoc:card.escape_selection": "Escape",
+    "plate_havoc:extensions": "Extensions",
+
+
+    "plate_havoc:difficulty.sunlight.name": "Sunlight",
+    "plate_havoc:difficulty.sunlight.subtext": "Discovering a strange world",
+    "plate_havoc:difficulty.sunlight.description": "Curses every 2 cycles, 1.5x Cyclathrons, Easier, chiller events, Get an exclusive upgrade.",
+    "plate_havoc:difficulty.moonlight.name": "Moonlight",
+    "plate_havoc:difficulty.moonlight.subtext": "With no way out",
+    "plate_havoc:difficulty.moonlight.description": "The base difficulty.",
+    "plate_havoc:difficulty.eclipsed.name": "Eclipsed",
+    "plate_havoc:difficulty.eclipsed.subtext": "To be forever forgotten.",
+    "plate_havoc:difficulty.eclipsed.description": "Events and Cards have changed mechanics, Deeper Curses by Cycle 5. Upgrades cost 15%% less and Curses rewards 20%% more.",
+
+    "plate_havoc:modifier.chaos_infuser.name": "Chaos Infuser",
+    "plate_havoc:modifier.chaos_infuser.description": "Chaos shops every 3rd Cycle with 5 selections that can be drastic.",
+
+    "plate_havoc:leaderboard.run_information": "Run Information",
+    "plate_havoc:leaderboard.player_information": "Player Information",
+    "plate_havoc:leaderboard.continue": "Press [ ESC ] to Continue...",
+    "plate_havoc_content:leaderboard.player.damage_dealt": "Damage Dealt",
+    "plate_havoc_content:leaderboard.player.damage_taken": "Damage Taken",
+
+    "plate_havoc_content:leaderboard.artefacts_activated": "Artefacts Activated",
+    "plate_havoc_content:leaderboard.clocks_collected": "Clocks Collected",
+    "plate_havoc_content:leaderboard.cyclathrons_yielded": "Cyclathrons Yielded",
+    "plate_havoc_content:leaderboard.cycle_reached": "Cycle Reached",
+    "plate_havoc_content:leaderboard.defeated_the_forgotten": "Defeated The Forgotten",
+    "plate_havoc_content:leaderboard.events_occured": "Events Occured",
+    "plate_havoc_content:leaderboard.elapsed_time": "Elapsed Time",
+    "plate_havoc_content:leaderboard.intensity_reached": "Intensity Reached",
+    "plate_havoc_content:leaderboard.total_deaths": "Total Deaths",
+    "plate_havoc_content:leaderboard.rerolls_used": "Rerolls Used",
+
+    "plate_havoc_legacy_content:leaderboard.border_size": "Border Size",
+    "plate_havoc_legacy_content:leaderboard.lava_height": "Lava Height",
+
+
+    "plate_havoc_content:action_key.charge.sprint": "Charge Sprint",
+    "plate_havoc_content:action_key.charge.jump": "Charge Jump",
+    "plate_havoc_content:action_key.charge.cancel": "Charge Cancel",
+    
+
+    "plate_havoc_content:survivor.charger.name": "Charger",
+    "plate_havoc_content:survivor.charger.subtext": "Slower than most, but makes up for it alongside defensive potential through multiple sub-abilities from charging to escape sticky situations or as an aid to general mobility.",
+
+    "plate_havoc_content:survivor.standee.name": "Standee",
+    "plate_havoc_content:survivor.standee.subtext": "Focused on collection and strategic thinking, relies on sawdust which has to be collected in order to cast a variety of sub-abilities, effective when used right.",
+
+    "plate_havoc_content:survivor.voidternity.name": "Voidternity",
+    "plate_havoc_content:survivor.voidternity.subtext": "Deadly yet fragile adversary who's statistically above average at the cost of rapid hunger, dependent on outputting massive damage to dangerous or tanky targets.",
+
+    "plate_havoc_content:survivor.serial_303.name": "Serial 303",
+    "plate_havoc_content:survivor.serial_303.subtext": "Repurposed for support. Neutralize devices, patch nearby players up and Overclock to create bitlathrons at the cost of draining health passively.",
+
+    "plate_havoc_content:survivor.jack.name": "Jack",
+    "plate_havoc_content:survivor.jack.subtext": "A non-specialized all rounder, suitable and reliable for all kinds of situations.",
+
+    "plate_havoc_content:survivor.hex.name": "Hex",
+    "plate_havoc_content:survivor.hex.subtext": "Deep in my solitude, I feel myself slowly slipping away from me.",
+   
+    "plate_havoc_content:survivor.phoon.name": "Phoon",
+    "plate_havoc_content:survivor.phoon.subtext": "too much for zblock",
+
+    "plate_havoc_content:survivor.clover.name": "Clover",
+    "plate_havoc_content:survivor.clover.subtext": "Old storage droid operating on batteries, restored by Clocks.",
+
+
+
+    "plate_havoc_content:card.iron_clock.name": "Iron Clock",
+    "plate_havoc_content:card.iron_clock.description": "+0.15 Cyclathron yield.",
+
+    "plate_havoc_content:card.diamond_clock.name": "Diamond Clock",
+    "plate_havoc_content:card.diamond_clock.description": "+0.15 Cyclathron yield and +0.5 Time reduction.",
+
+    "plate_havoc_content:card.netherite_clock.name": "Netherite Clock",
+    "plate_havoc_content:card.netherite_clock.description": "+0.2 Cyclathron yield, +1 Time reduction. Events last 10%% shorter.",
+
+    "plate_havoc_content:card.copper_clock.name": "Copper Clock",
+    "plate_havoc_content:card.copper_clock.description": "-0.2 Cyclathron yield but other sources of Cyclathrons are stronger. -1 Time reduction.",
+
+    "plate_havoc_content:card.healing_clock.name": "Healing Infused Clock",
+    "plate_havoc_content:card.healing_clock.description": "Collecting Clocks restores a portion of health.",
+
+    "plate_havoc_content:card.splitting_clocks.name": "Splitting Clocks",
+    "plate_havoc_content:card.splitting_clocks.description": "+1 Clock Spawn Count. *1.33 (*1.5 on 2nd stack) Clock Spawn Time (Max: 2).",
+
+    "plate_havoc_content:card.purified_hourglass.name": "Purified Hourglass",
+    "plate_havoc_content:card.purified_hourglass.description": "Collecting a cursed Clock delays the Event timer by 50%% of its max value and grants a stackable +0.2 value multiplier used upon collection of a regular Clock.",
+
+    "plate_havoc_content:card.chilled_temper.name": "Chilled Temper",
+    "plate_havoc_content:card.chilled_temper.description": "-15%% Intensity Gain and -20%% Intensity Scaling.",
+
+    "plate_havoc_content:card.swift_feets.name": "Swift Feets",
+    "plate_havoc_content:card.swift_feets.description": "+10%% Movement speed and +0.12 Water movement efficiency (Max: 3).",
+
+    "plate_havoc_content:card.hearty.name": "Hearty",
+    "plate_havoc_content:card.hearty.description": "+1.25 Max hearts. (Max: 4)",
+
+    "plate_havoc_content:card.armoured_up.name": "Armoured Up",
+    "plate_havoc_content:card.armoured_up.description": "+1 Armour and +0.5 Armour toughness (Max: 5).",
+
+    "plate_havoc_content:card.strength_training.name": "Strength Training",
+    "plate_havoc_content:card.strength_training.description": "+1.5 Attack damage and +0.2 Knockback resistance (Max: 3).",
+
+    "plate_havoc_content:card.box_of_wind.name": "Box of Wind Charges",
+    "plate_havoc_content:card.box_of_wind.description": "Gain 5 Wind Charges upon the start of a Cycle.",
+
+    "plate_havoc_content:card.multi_use_umbrella.name": "Multi-Use Umbrella",
+    "plate_havoc_content:card.multi_use_umbrella.description": "Shear when cobwebbed for 1s. 15s immunity to Acid Rain. Splashers activate for 5s with a 1m cooldown when on fire, extinguishing flames.",
+
+    "plate_havoc_content:card.hands_of_creativity.name": "Hands of Creativity",
+    "plate_havoc_content:card.hands_of_creativity.description": "Gain the ability to Break, Place and Interact with blocks.",
+
+    "plate_havoc_content:card.box_of_meats.name": "Box of Meats",
+    "plate_havoc_content:card.box_of_meats.description": "Gain 3 Cooked Mutton upon the start of a Cycle.",
+
+    "plate_havoc_content:card.intense_investment.name": "Intense Investment",
+    "plate_havoc_content:card.intense_investment.description": "Converts 15%% of Intensity gained from the current cycle and doubles it into Cyclathrons.",
+
+    "plate_havoc_content:card.determination.name": "Determination",
+    "plate_havoc_content:card.determination.description": "Upon Last Stand, receive minor stat improvements and any additional benefits. Becomes more powerful on solo.",
+
+    "plate_havoc_content:card.fire_guardian.name": "Fire Guardian for Hire",
+    "plate_havoc_content:card.fire_guardian.description": "Flame Guardian protects all players, shooting flame projectiles towards hostiles that no longer ignite blocks.",
+
+    "plate_havoc_content:card.boxless_desires.name": "Boxless Desires",
+    "plate_havoc_content:card.boxless_desires.description": "Gain 3 Wind Charges and 2 Cooked Muttons upon the start of a cycle. Gain 2 Wind Charges and 1 Cooked Mutton every 30s during the cycle. Item events 50%% more valuable.",
+
+    "plate_havoc_content:card.vampiristic_lifeblood.name": "Vampiristic Lifeblood",
+    "plate_havoc_content:card.vampiristic_lifeblood.description": "+5 Max hearts. Killing mobs restores a portion of health.",
+
+    "plate_havoc_content:card.gods_hand.name": "God's Hand",
+    "plate_havoc_content:card.gods_hand.description": "Double Mining speed, +1 Interaction range. Blocks and mob loot now drops.",
+
+    "plate_havoc_content:card.glacier_player.name": "Glacier Player",
+    "plate_havoc_content:card.glacier_player.description": "Revives a random player if there are none alive and gets consumed for the cycle.",
+
+    "plate_havoc_content:card.void_rift.name": "Void Rift",
+    "plate_havoc_content:card.void_rift.description": "Falling to the Void teleports you back to the surface.",
+
+    "plate_havoc_content:card.mechanical_extender.name": "Mechanical Extender",
+    "plate_havoc_content:card.mechanical_extender.description": "+0.5 Interaction range. +0.375 Clock collection range (Max: 3).",
+
+    "plate_havoc_content:card.gravity_coil.name": "Gravity Coil",
+    "plate_havoc_content:card.gravity_coil.description1": "+10%% Jump Strength, slightly lowered gravity. Hold",
+    "plate_havoc_content:card.gravity_coil.description2": "to decrease gravity further.",
+
+    "plate_havoc_content:card.material_kit.name": "Material Kit",
+    "plate_havoc_content:card.material_kit.description": "Supply some building blocks upon the start of a Cycle.",
+
+    "plate_havoc_content:card.player_radar_module.name": "Player Radar",
+    "plate_havoc_content:card.player_radar_module.description": "Players are constantly highlighted.",
+
+    "plate_havoc_content:card.hostile_radar_module.name": "Hostile Radar",
+    "plate_havoc_content:card.hostile_radar_module.description": "Every 10 seconds, highlight all non-marked hostile mobs.",
+
+    "plate_havoc_content:card.critical_rollback.name": "Critical Rollback",
+    "plate_havoc_content:card.critical_rollback.description": "Blocks damage that would've killed regardless of health (Max: 2).",
+
+    "plate_havoc_content:card.double_jump.name": "Double Jump",
+    "plate_havoc_content:card.double_jump.description1": "Gain an additional jump. Press",
+    "plate_havoc_content:card.double_jump.description2": "while mid-air to Use.",
+
+    "plate_havoc_content:card.triple_jump.name": "Triple Jump",
+    "plate_havoc_content:card.triple_jump.description1": "Gain an additional jump. Press",
+    "plate_havoc_content:card.triple_jump.description2": "while mid-air to Use.",
+
+    "plate_havoc_content:card.777_machine.name": "Triple 7 Machine",
+    "plate_havoc_content:card.777_machine.description": "A random positive status effect is given to all players for a minute upon the start of a cycle.",
+
+    "plate_havoc_content:card.temporal_manipulation.name": "Temporal Manipulation",
+    "plate_havoc_content:card.temporal_manipulation.description": "For the first 25 seconds of the cycle, Clocks spawn twice as fast and +80%% Event Time with some time stats being affected.",
+
+    "plate_havoc_content:card.bouncier_pads.name": "Bouncier Pads",
+    "plate_havoc_content:card.bouncier_pads.description": "More larger and stronger Bounce Pads that spawn from the start.",
+
+    "plate_havoc_content:card.spy_shine.name": "Spy Shine",
+    "plate_havoc_content:card.spy_shine.description1": "to Shoot (Long cooldown on miss. +1 Boost (Uncapped) on hit.",
+    "plate_havoc_content:card.spy_shine.description2": "to Boost (Goes backwards. Hold to increase power (+4%% per tick, capped to 300%%)). Shooting affects only hostiles.",
+
+    "plate_havoc_content:card.shock_absorber.name": "Shock Absorber",
+    "plate_havoc_content:card.shock_absorber.description": "When struck by lightning, collect nearby Clocks and increase Attack damage by 1.33x for 10 seconds.",
+
+    "plate_havoc_content:card.mechanical_heart.name": "Mechanical Heart",
+    "plate_havoc_content:card.mechanical_heart.description": "Being under 20%% health removes an additional tick from the Cycle time and Clock spawn time on odd ticks (Stackable).",
+
+    "plate_havoc_content:card.blood_money.name": "Blood Money",
+    "plate_havoc_content:card.blood_money.description": "Melee hits yield Cyclathrons from damage dealt to an entity. Accumulated damage permanently increases Attack damage up to +2.5 max.",
+
+    "plate_havoc_content:card.midas_touch.name": "Midas Touch",
+    "plate_havoc_content:card.midas_touch.description": "Usage of an Artefact increases Cyclathron yield by 0.1 for the cycle.",
+
+    "plate_havoc_content:card.gashed_tissue.name": "Gashed Tissue",
+    "plate_havoc_content:card.gashed_tissue.description": "Taking damage yields Cyclathrons. Increases the lower the Max health.",
+
+    "plate_havoc_content:card.nanomachines.name": "Nanomachines",
+    "plate_havoc_content:card.nanomachines.description": "Receiving 8 or more hearts of damage over 1.5 seconds doubles Armour for 8 seconds. Can be stacked for a longer duration.",
+
+    "plate_havoc_content:card.deflecting_barrier.name": "Deflecting Barrier",
+    "plate_havoc_content:card.deflecting_barrier.description": "Deflect some projectiles that are nearby, expending energy with some being more costly. Regenerates 30 seconds after breakage.",
+
+    "plate_havoc_content:card.weight_scaler.name": "Weight Scaler",
+    "plate_havoc_content:card.weight_scaler.description": "Attack speed is increased the lower the hunger bar.",
+
+    "plate_havoc_content:card.artetractor.name": "Arte-tractor",
+    "plate_havoc_content:card.artetractor.description": "An additional Artefact now spawns.",
+
+    "plate_havoc_content:card.brass_knuckles.name": "Brass Knuckles",
+    "plate_havoc_content:card.brass_knuckles.description": "Attacking with the fist deals 1.2x more damage.",
+
+    "plate_havoc_content:card.scrap_bin.name": "Scrap Bin",
+    "plate_havoc_content:card.scrap_bin.description": "Half of uncollected Clocks are gathered upon the end of the Cycle at 0.75x their value.",
+
+    "plate_havoc_content:card.roller_skates.name": "Roller Skates",
+    "plate_havoc_content:card.roller_skates.description": "Build speed with no friction and enhanced sprint jumps. Sneak to stop. +0.75 Movement efficiency and 2x Step height.",
+
+    "plate_havoc_content:card.jet_boots.name": "Jet Boots",
+    "plate_havoc_content:card.jet_boots.description": "Gain an additional, more powerful jump that goes in the direction you're facing, reach dependent on speed. -33%% Fall damage.",
+
+    "plate_havoc_content:card.emergency_pads.name": "Emergency Pads",
+    "plate_havoc_content:card.emergency_pads.description": "More sparse, lesser, more powerful Bounce Pads that spawn just above Void height.",
+
+    "plate_havoc_content:card.tailsman_of_hope.name": "Tailsman of Hope",
+    "plate_havoc_content:card.tailsman_of_hope.description": "Guarantee a positive Event every 30th Events.",
+
+    "plate_havoc_content:card.sapper.name": "Sapper",
+    "plate_havoc_content:card.sapper.description": "10%% chance to entirely disable several hazards (Proximity Mines) or lessen more dangerous threats (Max: 20%%).",
+
+    "plate_havoc_content:card.suction_cups.name": "Suction Cups",
+    "plate_havoc_content:card.suction_cups.description1": "Bumping into a wall whilst holding",
+    "plate_havoc_content:card.suction_cups.description2": "sends you back slightly and converts momentum into height.",
+    "plate_havoc_content:card.static_shreds.name": "Static Shreds",
+    "plate_havoc_content:card.static_shreds.description": "A piece of a bigger whole? Become more disadvantaged the higher the stack.",
+    "plate_havoc_content:card.iridescent_shards.name": "Iridescent Shards",
+    "plate_havoc_content:card.iridescent_shards.description": "3 seconds of flight that recharges when grounded. Gain an additional, more powerful jump that shoots a volley of shards towards enemies.",
+    "plate_havoc_content:card.divine_intervention.name": "Divine Intervention",
+    "plate_havoc_content:card.divine_intervention.description": "Artefact of Prosperity becomes guaranteed and slightly stronger.",
+  
+    
+    "plate_havoc_content:card.piranha_season.name": "Piranha Season",
+    "plate_havoc_content:card.piranha_season.description": "Piranhas infest water, dealing 1.5x damage",
+
+    "plate_havoc_content:card.enraged.name": "Enraged",
+    "plate_havoc_content:card.enraged.description": "Clocks have increased value but decreases overtime, down to half their max value. *0.9 Time, *1.33 Intensity Gain. Events more aggressive but 20%% shorter.",
+
+    "plate_havoc_content:card.cursed_clocks.name": "Cursed Clocks",
+    "plate_havoc_content:card.cursed_clocks.description": "Every fourth Clock is cursed, dealing damage instead. Increases both Cycle and Event time. Transmittable.",
+
+    "plate_havoc_content:card.new_years.name": "New Years",
+    "plate_havoc_content:card.new_years.description": "Fireworks are guaranteed at the start and spawn 25%% (Max: 50%%) more fireworks. Faster on second stack.",
+
+    "plate_havoc_content:card.silverfestation.name": "Silverfestation",
+    "plate_havoc_content:card.silverfestation.description": "Mobs get Infestation. Collecting Clocks have 15%% chance of spawning a Silverfish.",
+
+    "plate_havoc_content:card.cube_of_decay.name": "Cube of Decay",
+    "plate_havoc_content:card.cube_of_decay.description": "Spawns a timed purple cube, requires nearby player(s) to shrink. Shrinking with >70%% time results in a positive outcome. Timing out results in a negative outcome, else, nothing happens.",
+
+    "plate_havoc_content:card.always_hungry.name": "Always Hungry",
+    "plate_havoc_content:card.always_hungry.description": "Players get incredibly hungry within a short period of time. Hunger management required.",
+
+    "plate_havoc_content:card.life_harmony.name": "Life Harmony",
+    "plate_havoc_content:card.life_harmony.description": "The more living mobs there are, the greater the effect on Event Aggressiveness.",
+
+    "plate_havoc_content:card.slow_passing.name": "Slow Passing",
+    "plate_havoc_content:card.slow_passing.description": "Clocks have decreased value but ripen overtime, up to triple their max value. Waiting too long quickly rots their value down to 20%% More time, longer durations.",
+
+    "plate_havoc_content:card.rf_strike_pack.name": "RF Strike Pack",
+    "plate_havoc_content:card.rf_strike_pack.description": "Motion Snipers rapidly fire with doubled ammo but halved damage.",
+
+    "plate_havoc_content:card.unification.name": "Unification",
+    "plate_havoc_content:card.unification.description": "Mobs get increasingly more powerful effects the longer they stay alive.",
+
+    "plate_havoc_content:card.repetition.name": "Repetition",
+    "plate_havoc_content:card.repetition.description": "The number of events occurring when the cycle starts is (Cycle Count *Events per Action), capped at 50.",
+
+    "plate_havoc_content:card.meagre_clocks.name": "Meagre Clocks",
+    "plate_havoc_content:card.meagre_clocks.description": "Clocks take twice as long to spawn but -15%% Cyclathron Cost and +25%% Cyclathron Reward.",
+
+    "plate_havoc_content:card.putrid_stink.name": "Putrid Stink",
+    "plate_havoc_content:card.putrid_stink.description": "Being near Zombies inflicts Poison.",
+
+    "plate_havoc_content:card.rising_undead.name": "Rising Undead",
+    "plate_havoc_content:card.rising_undead.description": "Undead mobs spawn every 30 seconds.",
+
+    "plate_havoc_content:card.time_panic.name": "Time Panic",
+    "plate_havoc_content:card.time_panic.description": "Event Timer is decreased from 0%% up to 25%% depending on how close the time is to zero. Intensity Gain is affected oppositely.",
+
+    "plate_havoc_content:card.herobrine_shrine.name": "Shrine of Herobrine",
+    "plate_havoc_content:card.herobrine_shrine.description": "Herobrine now constantly haunts players. Slowness III instead of II when accursed",
+
+    "plate_havoc_content:card.electrified_rod.name": "Electrified Rod",
+    "plate_havoc_content:card.electrified_rod.description": "Lightning Bolts chain to nearby mobs and Creepers spawn charged with increased stats.",
+
+    "plate_havoc_content:card.task_manager.name": "Task Manager",
+    "plate_havoc_content:card.task_manager.description": "Assigns tasks during the cycle that must be completed.",
+
+    "plate_havoc_content:card.extra_measures.name": "Extra Measures",
+    "plate_havoc_content:card.extra_measures.description": "Laser Drills upon firing, calls upon an extra, faster but weaker drill.",
+
+    "plate_havoc_content:card.short_fuses.name": "Short Fuses",
+    "plate_havoc_content:card.short_fuses.description": "Creepers, Failing Nukes and TNT explode (25%% *Stack) quicker. (Max: 50%%)",
+
+    "plate_havoc_content:card.mutilated_teddy.name": "Mutilated Teddy",
+    "plate_havoc_content:card.mutilated_teddy.description": "Attacks from hostile mobs removes half a heart for the cycle.",
+
+    "plate_havoc_content:card.proximity_field.name": "Proximity Field",
+    "plate_havoc_content:card.proximity_field.description": "Tripe the Proximity Mines spawn, scattered across the plate.",
+
+    "plate_havoc_content:card.bloody_needle.name": "Bloody Needle",
+    "plate_havoc_content:card.bloody_needle.description": "Health and Damage of mobs scale with Intensity.",
+
+    "plate_havoc_content:card.pausing_gaze.name": "Pausing Gaze",
+    "plate_havoc_content:card.pausing_gaze.description": "Gazing Shadow pauses the time during it's presence but lasts 40%% shorter.",
+
+    "plate_havoc_content:card.lasting_acid.name": "Lasting Acid",
+    "plate_havoc_content:card.lasting_acid.description": "Acid sticks for 10 seconds upon contact. Wash it away with water.",
+
+    "plate_havoc_content:card.wilted_clover.name": "Wilted Clover",
+    "plate_havoc_content:card.wilted_clover.description": "Cube of Decay gets more severe negative outcomes. Triple 7 Machine can roll negative effects.",
+
+    "plate_havoc_content:card.incendiary_rounds.name": "Incendiary Rounds",
+    "plate_havoc_content:card.incendiary_rounds.description": "Motion Sniper's bullets inflict fire.",
+
+    "plate_havoc_content:card.arachnophobia.name": "Arachnophobia",
+    "plate_havoc_content:card.arachnophobia.description": "Cobwebs spawn spiderlings that latch on nearby players.",
+
+    "plate_havoc_content:card.shulker_x.name": "Shulker Tactics: X-Formation",
+    "plate_havoc_content:card.shulker_x.description": "Shulker Bullets in a X formation will be occasionally shot towards a player.",
+
+    "plate_havoc_content:card.radioactive_cloud.name": "Radioactive Cloud",
+    "plate_havoc_content:card.radioactive_cloud.description": "Nuke explosions spawn a lasting cloud of radiation that inflicts poison.",
+
+    "plate_havoc_content:card.dashermen.name": "Dashermen",
+    "plate_havoc_content:card.dashermen.description": "Eraserman screeches, redirecting and dashing towards another player when in close proximity.",
+
+    "plate_havoc_content:card.void_implosions.name": "Void Implosions",
+    "plate_havoc_content:card.void_implosions.description": "Implosions spawn and deal 5 hearts.",
+
+    "plate_havoc_content:card.deathroll.name": "Deathroll",
+    "plate_havoc_content:card.deathroll.description": "2 Selections instead of 3 on Curse shops. +20%% Card reward.",
+
+    "plate_havoc_content:card.quick_time_stopping.name": "Quick Time Stopping",
+    "plate_havoc_content:card.quick_time_stopping.description": "The Target block now appears directly in front of you with drastically reduced reaction time.",
+
+    "plate_havoc_content:card.screeching_null.name": "Screeching Null",
+    "plate_havoc_content:card.screeching_null.description": "Evade and avoid collision as it screeches, hastily homing in.",
+
+    "plate_havoc_content:card.gazing_surprise.name": "Gazing Surprise",
+    "plate_havoc_content:card.gazing_surprise.description": "Gazing Shadow will teleport directly to a player upon reaching half of its duration.",
+
+    "plate_havoc_content:card.kamikaze.name": "Kamikaze",
+    "plate_havoc_content:card.kamikaze.description": "Creepers after 10 seconds launch themselves towards their target, exploding when close enough or upon touching the ground.",
+
+    "plate_havoc_content:card.impactful_landing.name": "Impactful Landing",
+    "plate_havoc_content:card.impactful_landing.description": "Breezes release a Wind Charge upon landing from a jump.",
+
+    "plate_havoc_content:card.connected_lasers.name": "Connected Lasers",
+    "plate_havoc_content:card.connected_lasers.description": "Laser Constructs no longer spin, but can connect to another construct.",
+
+    "plate_havoc_content:card.event_horizon.name": "Event Horizon",
+    "plate_havoc_content:card.event_horizon.description": "Being closer to the Black Hole decreases Movement speed. +15%% Max size and Speed.",
+
+    "plate_havoc_content:card.guided_charges.name": "Guided Charges",
+    "plate_havoc_content:card.guided_charges.description": "1/20 out of Wind Charges that come from above will home in on players.",
+
+    "plate_havoc_content:card.shock_resistant.name": "Shock Resistant",
+    "plate_havoc_content:card.shock_resistant.description": "The Spirit requires an extra shock to become docile.",
+
+    "plate_havoc_content:card.bloodlust.name": "Bloodlust",
+    "plate_havoc_content:card.bloodlust.description": "Getting damaged by a mob permanently increases that mob's Attack damage by 0.2",
+
+    "plate_havoc_content:card.creeplets.name": "Creeplets",
+    "plate_havoc_content:card.creeplets.description": "2 additional smaller and weaker Creepers spawn right besides the main Creeper.",
+
+    "plate_havoc_content:card.laser_construct_mk2.name": "Laser Construct MKII",
+    "plate_havoc_content:card.laser_construct_mk2.description": "For every 1 out of 5 Laser Constructs that spawn. Long horizontal stretches of lasers will quickly go through the entire plate in the span of 5 seconds.",
+
+
+    "plate_havoc_content:card.fragile_void.name": "Fragility of the Void",
+    "plate_havoc_content:card.fragile_void.description": "Implosions become fatal.",
+
+    "plate_havoc_content:card.void_pull.name": "Void Pull",
+    "plate_havoc_content:card.void_pull.description": "The Void pulls down those who stay airborne. 1.5x Fall Damage and increased Void damage.",
+
+    "plate_havoc_content:card.run_it_back.name": "Run it Back",
+    "plate_havoc_content:card.run_it_back.description": "The number of events that happen in one action is increased by 1. Cannot be triggered again and will not add to the Intensity.",
+
+    "plate_havoc_content:card.cranked.name": "Cranked",
+    "plate_havoc_content:card.cranked.description": "Upkeep your Cranked timer (30(90 max)) by collecting Clocks for +((Spawn Time *1.66(*1.33 elsewise)) /Spawn Number) Timing out kills. Clocks explode briefly on Eclipsed.",
+
+    "plate_havoc_content:card.white_eyes.name": "White Eyes",
+    "plate_havoc_content:card.white_eyes.description": "Herobrine every 50th teleport summons multiple fake versions of itself directly above Clocks, making them uncollectable. Find the real one to reverse this.",
+
+    "plate_havoc_content:card.trigger_happy.name": "Trigger Happy",
+    "plate_havoc_content:card.trigger_happy.description": "Motion Sniper now has a random sequence ranging from 3 to 8 and gives an indicator briefly firing afterwards. Still on Odds, Move on Evens and Jump on the last bullet.",
+
+    "plate_havoc_content:card.auric_cannon.name": "Auric Cannon",
+    "plate_havoc_content:card.auric_cannon.description": "Stop it from firing by breaking apart its parts before it wipes out the entire plate.",
+
+    "plate_havoc_content:card.bombardement.name": "Bombardement",
+    "plate_havoc_content:card.bombardement.description": "Tons of piercing lasers slowly come from above every minute, fatal to anyone that touches them.",
+
+
+    "plate_havoc_content:card.the_forgotten.name": "Snowy Photograph",
+    "plate_havoc_content:card.the_forgotten.description": "",
+
+
+    "plate_havoc_content:card.historically_accurate_nuke.name": "Historically Accurate Nuke",
+    "plate_havoc_content:card.historically_accurate_nuke.description": "Nukes become 1000 times powerful.",
+
+    "plate_havoc_content:card.due_taxes.name": "Due Taxes",
+    "plate_havoc_content:card.due_taxes.description": "The total Cyclathrons balance is taxed by 20%% upon the end of the cycle.",
+
+    "plate_havoc_content:card.pvp_slop.name": "PVPslop",
+    "plate_havoc_content:card.pvp_slop.description": "What is this slop doing in my game bruh!!!",
+
+    "plate_havoc_content:card.67.name": "Six Seven",
+    "plate_havoc_content:card.67.description": "+0.067 to every attribute.",
+
+    "plate_havoc_content:card.untitled_document.name": "Untitled Document",
+    "plate_havoc_content:card.untitled_document.description": "Player inventory gets wiped on spawn.",
+
+    "plate_havoc_content:card.close_up.name": "Close Up",
+    "plate_havoc_content:card.close_up.description": "The Third Person camera is now 2.75 blocks closer to the player.",
+
+    "plate_havoc_content:card.overtime.name": "Overtime",
+    "plate_havoc_content:card.overtime.description": "The cycle lasts (9 *Cycle) seconds more.",
+
+    "plate_havoc_content:card.locked_spacebar.name": "Locked Spacebar",
+    "plate_havoc_content:card.locked_spacebar.description": "The anti christ is back to life?!",
+
+    "plate_havoc_content:card.bitlathron.name": "Bitlathron",
+    "plate_havoc_content:card.bitlathron.description": "Clocks dont spawn anymore. Cyclathrons now gained passively.",
+
+    "plate_havoc_content:card.shulker_rf.name": "Shulker Tactics: Rapid Fire",
+    "plate_havoc_content:card.shulker_rf.description": "X formation of Shulker Bullets are shot every second. GG!",
+
+    "plate_havoc_content:card.shulker_minigun.name": "Shulker Tactics: Minigun",
+    "plate_havoc_content:card.shulker_minigun.description": "Oh shiddings.",
+
+    "plate_havoc_content:card.risk_of_piranhas.name": "Risk of Piranhas",
+    "plate_havoc_content:card.risk_of_piranhas.description": "Piranhas if active, bite when exposed to rain but halved damage and longer bite times.",
+
+    "plate_havoc_content:card.one_less_choice.name": "One Less Choice",
+    "plate_havoc_content:card.one_less_choice.description": "Number of cards to select is reduced by one.",
+
+    "plate_havoc_content:card.mentally_parrotsane.name": "Mentally Parrotsane",
+    "plate_havoc_content:card.mentally_parrotsane.description": "Sounds of mobs and indicators will randomly play from time to time, heard by everyone. Can be activated on Action or by other Events and Cards.",
+
+    "plate_havoc_content:card.alpha_eater.name": "Alpha Eater",
+    "plate_havoc_content:card.alpha_eater.description": "Foods are consumed instantly.",
+    
+
+    "plate_havoc_content:card_type.difficulty": "ILLUMINATE",
+    "plate_havoc_content:card_type.difficulty.description": "Select a difficulty.",
+    "plate_havoc_content:card_type.difficulty.subtext": "Shall you see the light?",
+
+    "plate_havoc_content:card_type.upgrade": "UPGRADES",
+    "plate_havoc_content:card_type.upgrade.description": "Provides benefits that make the game easier.",
+    "plate_havoc_content:card_type.upgrade.subtext": "Become Stronger.",
+
+    "plate_havoc_content:card_type.curse": "CURSES",
+    "plate_havoc_content:card_type.curse.description": "Provides changes and disadvantages to make the game harder. May reward Cyclathrons based on the severity.",
+    "plate_havoc_content:card_type.curse.subtext": "Become accursed.",
+
+    "plate_havoc_content:card_type.deeper_curse": "DEEPER CURSES",
+    "plate_havoc_content:card_type.deeper_curse.description": "Provides radically different changes to gameplay and more significant disadvantages compared to regular curses.",
+    "plate_havoc_content:card_type.deeper_curse.subtext": "Become further hexed.",
+
+    "plate_havoc_content:card_type.chaos": "CHAOS",
+    "plate_havoc_content:card_type.chaos.subtext": "Fall into chaos...",
+    
+    "plate_havoc_content:card_type.descend": "DESCEND",
+    "plate_havoc_content:card_type.descend.subtext": "What will fate hold?",
+
+    
+    "plate_havoc_content:objective.indicator": "Objective Cycle",
+    "plate_havoc_content:objective.single": "This Cycle requires a secondary condition to be passed!",
+    "plate_havoc_content:objective.multiple.1": "This Cycle requires",
+    "plate_havoc_content:objective.multiple.2": "additional conditions to be passed!",
+    
+
+    "plate_havoc_content:music.excuse": "Excuse",
+
+    
+    "plate_havoc_content:selection_open_action_prompt": "whilst looking down to open selection.",
+
+
+    "plate_havoc:tutorial.introductory": "A roguelite plate game based around surviving random events.",
+    "plate_havoc:tutorial.main": "Survive events that raise the Intensity (🔥), becoming increasingly severe.\n\nCollect Clocks to deduct Time (⏳), the primary goal for the next Cycle.\n\nCyclathrons (€) is a shared currency from Clocks or means for purchasing Cards.\n\nCards can be beneficial, harmful or both (Upgrades & Curses).\n\nSurvivors have unique abilities, different style and stats.\n\nThere are several vanilla changes (0.5x Air Drag, locked Breaking & Building).",
+    "plate_havoc:tutorial.end": "For Modrinth people, this is a more polished version of the classic game with modern changes and additions from phase 1 of Splintered Worlds. The Discord link is found on the page."
+}

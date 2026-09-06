@@ -1,6 +1,6 @@
 execute store result storage plate_havoc:leaderboard temp.data.lava_height int 1 run scoreboard players get #LavaHeight plate_havoc.temp
 
-data modify storage plate_havoc:temp temp set value {id:lava_height,text:"Lava Height",extra:[": ",{meta:value,color:red}]}
+data modify storage plate_havoc:temp temp set value {id:lava_height,translate:"plate_havoc_legacy_content:leaderboard.artefacts_activated",fallback:"Lava Height",extra:[": ",{meta:value,color:red}]}
 
 data modify storage plate_havoc:temp temp.extra[{meta:value}].text set string storage plate_havoc:leaderboard temp.data.lava_height
 

@@ -1,5 +1,4 @@
 scoreboard players remove @s plate_havoc.num 1
-tp ~ ~ ~
 setblock ~ ~ ~ glass strict
 playsound block.glass.place block @a ~ ~ ~ 0.75 1 0
 

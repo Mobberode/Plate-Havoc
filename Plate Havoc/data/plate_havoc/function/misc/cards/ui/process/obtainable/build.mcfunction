@@ -1,0 +1,3 @@
+execute store result score #Saved plate_havoc.cyclathron run data get storage plate_havoc:cards active_entry.values.cyclathron 100
+execute if score #Saved plate_havoc.cyclathron matches 1.. if score #Saved plate_havoc.cyclathron > #Value plate_havoc.cyclathron run return run data modify storage plate_havoc:cards active_entry.data.snbt.action.label[].color set value "#cccccc"
+data remove storage plate_havoc:cards active_entry.data.snbt.action.label[].color

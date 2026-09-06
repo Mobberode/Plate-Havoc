@@ -1,1 +1,0 @@
-data modify storage plate_havoc:temp temp.extra[{meta:cyclathron}].text set string storage plate_havoc:cards cyclathron 0 -1

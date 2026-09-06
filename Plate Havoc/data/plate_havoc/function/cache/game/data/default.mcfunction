@@ -26,6 +26,7 @@ scoreboard players set #100 plate_havoc.num 100
 scoreboard players set #200 plate_havoc.num 200
 scoreboard players set #250 plate_havoc.num 250
 scoreboard players set #500 plate_havoc.num 500
+scoreboard players set #666 plate_havoc.num 666
 scoreboard players set #750 plate_havoc.num 750
 scoreboard players set #1000 plate_havoc.num 1000
 scoreboard players set #10000 plate_havoc.num 10000
@@ -96,7 +97,7 @@ data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:
 
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:cyclathron_yield",values:{base:1},update:[{type:score,value:"#Yield plate_havoc.cyclathron",scale:0.1}]}
 
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:event.time",values:{base:0.06},update:[{type:score,value:"#Event plate_havoc.timer"}]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:event.time",values:{base:0.075},update:[{type:score,value:"#Event plate_havoc.timer"}]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:event.repeats",values:{base:0.001},update:[{type:score,value:"#EventRepeats plate_havoc.num"}]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:intensity.gain",values:{base:0.015}}
 
@@ -104,7 +105,7 @@ data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:
 data modify storage plate_havoc:data extra_jumps set value []
 
 ##Run tags
-data modify storage plate_havoc:data run_tags set value [{id:"plate_havoc:difficulty",value:"moonlight",snbt:{text:"Moonlight",color:aqua}}]
+data modify storage plate_havoc:data run_tags set value [{id:"plate_havoc:difficulty",value:"moonlight",snbt:{translate:"plate_havoc:difficulty.moonlight.name",fallback:"Moonlight",color:aqua}}]
 
 ##Events
 data modify storage plate_havoc:events pool set value {available:[],unavailable:[],temp:[],sort:[]}
@@ -117,7 +118,8 @@ data modify storage plate_havoc:cards active_data set value {}
 ##Global
 ##Score Reseter
 data modify storage plate_havoc:data score_reset set value ["plate_havoc.player.single_tick.damage.dealt"]
-data modify storage plate_havoc:data init_score_reset set value ["plate_havoc.player.damage.dealt","plate_havoc.player.damage.taken","plate_havoc.player.deaths"]
+data modify storage plate_havoc:data init_score_reset set value ["plate_havoc.player.damage.dealt","plate_havoc.player.damage.taken","plate_havoc.player.deaths","plate_havoc.player.damage.absorbed"]
 
 ##Cyclathron
+scoreboard players set #Saved plate_havoc.cyclathron -1
 scoreboard players set #Value plate_havoc.cyclathron 0

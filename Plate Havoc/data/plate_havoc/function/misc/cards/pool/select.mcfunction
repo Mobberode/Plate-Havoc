@@ -5,4 +5,4 @@ execute store result storage plate_havoc:cards rng int 1 run function plate_havo
 function plate_havoc:misc/cards/pool/append with storage plate_havoc:cards
 
 scoreboard players add #CardLimit plate_havoc.num 1
-execute unless score #CardLimit plate_havoc.num >= #MaxCardLimit plate_havoc.num run function plate_havoc:misc/cards/pool/select
+execute if score #CardLimit plate_havoc.num < #MaxCardLimit plate_havoc.num run function plate_havoc:misc/cards/pool/select

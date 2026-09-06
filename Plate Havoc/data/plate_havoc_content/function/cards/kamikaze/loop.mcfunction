@@ -1,0 +1,1 @@
+execute in plate_havoc:arena as @e[x=0,predicate=plate_havoc:has_player_target,predicate=plate_havoc:on_ground,type=creeper] at @s run function plate_havoc_content:cards/kamikaze/entity_tick

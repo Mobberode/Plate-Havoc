@@ -1,1 +1,1 @@
-execute if entity @s[advancements={plate_havoc_content:cards/blood_money=true}] run function plate_havoc_content:cards/blood_money/calculate
+execute if entity @s[advancements={plate_havoc_content:cards/blood_money=true}] run function plate_havoc_content:cards/blood_money/calculate with storage plate_havoc:custom attributes[{id:"plate_havoc_content:card.blood_money.scale"}]

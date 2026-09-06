@@ -1,0 +1,1 @@
+execute if entity @s[advancements={plate_havoc_content:cards/gashed_tissue=true}] run function plate_havoc_content:cards/gashed_tissue/calculate with storage plate_havoc:custom attributes[{id:"plate_havoc_content:card.gashed_tissue.scale"}]

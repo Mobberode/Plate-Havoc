@@ -1,0 +1,14 @@
+{
+  "sources": [
+    {
+      "type": "directory",
+      "prefix": "cards/",
+      "source": "cards"
+    },
+    {
+      "type": "directory",
+      "prefix": "misc/",
+      "source": "misc"
+    }
+  ]
+}

@@ -5,8 +5,8 @@
     "body": [{"type":"plain_message","contents":[{"text":"Release 8","color":"red"},{"text":"\n[Get Console Access (If operator)]","color":"gray","click_event":{"action":"run_command","command":"/tag @s add plate_havoc.has_console_access"}}]}],
     "actions": [
         {"label":"Console","action":{"type":"show_dialog","dialog":"plate_havoc:console"}},
-        {"label":"Extensions","action":{"type":"run_command","command":"/trigger plate_havoc.t.extensions set -1"}},
-        {"label":"Survivors","action":{"type":"run_command","command":"/trigger plate_havoc.t.survivor_select"}},
+        {"label":{"translate":"plate_havoc:extensions","fallback":"Extensions"},"action":{"type":"run_command","command":"/trigger plate_havoc.t.extensions set -1"}},
+        {"label":{"translate":"plate_havoc:shared.Survivors","fallback":"Survivors"},"action":{"type":"run_command","command":"/trigger plate_havoc.t.survivor_select"}},
         {"label":"Spectator","action":{"type":"run_command","command":"/trigger plate_havoc.t.spectator"}},
         {"label":"Logbook","action":{"type":"run_command","command":"/trigger plate_havoc.t.logbook"}},
         {"label":"Stats","action":{"type":"run_command","command":"/trigger plate_havoc.t.stats"}}

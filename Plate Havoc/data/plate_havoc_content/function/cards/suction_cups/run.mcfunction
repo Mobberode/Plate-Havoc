@@ -4,7 +4,7 @@ scoreboard players set #x player_motion.api.launch 0
 scoreboard players operation #y player_motion.api.launch = @s plate_havoc.speed
 scoreboard players operation #y player_motion.api.launch /= #50 plate_havoc.num
 scoreboard players operation #Temp plate_havoc.temp = #y player_motion.api.launch
-scoreboard players operation #Temp plate_havoc.temp /= #5 plate_havoc.num
+scoreboard players operation #Temp plate_havoc.temp /= #6 plate_havoc.num
 scoreboard players operation #y player_motion.api.launch -= #Temp plate_havoc.temp
 
 scoreboard players set #z player_motion.api.launch -3300

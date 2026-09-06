@@ -11,7 +11,6 @@ scoreboard players set #Card.Continue plate_havoc.num 0
 data modify storage plate_havoc:cards temp set value []
 data modify storage plate_havoc:cards temp append from storage plate_havoc:cards active[{non_card:true}]
 data modify storage plate_havoc:cards active set value []
-
 ##Pool
 scoreboard players set #ProcessedCards plate_havoc.num 0
 scoreboard players set #CardLimit plate_havoc.num 0
@@ -29,3 +28,5 @@ execute unless data storage plate_havoc:cards active[{non_card:false}] unless da
 execute if score #Temp plate_havoc.cyclathron matches 1.. run function plate_havoc:misc/cards/attributes/rerollable/update
 ##Restore non card actions
 data modify storage plate_havoc:cards active append from storage plate_havoc:cards temp[]
+##None in pool
+function plate_havoc:misc/cards/attributes/rerollable/check_pool

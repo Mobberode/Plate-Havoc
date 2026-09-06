@@ -1,1 +1,2 @@
-execute in plate_havoc:arena as @e[x=0,type=item_display,tag=plate_havoc_content.event.spinning_laser] run function plate_havoc_content:events/spinning_laser/entity/tick
+execute if score #Playing plate_havoc.status matches 1.. run schedule function plate_havoc_content:events/spinning_laser/loop 1t replace
+execute in plate_havoc:arena at @a[x=0,tag=plate_havoc.survivor] as @e[distance=..50,tag=plate_havoc_content.event.spinning_laser.laser,type=item_display] run function plate_havoc_content:events/spinning_laser/entity/tick

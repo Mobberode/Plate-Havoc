@@ -1,21 +1,18 @@
-#Max Limit
-execute if score #BlackHole.Entity_Size plate_havoc.event > #PHC.BlackHole.Size_Limit plate_havoc.event run scoreboard players operation #BlackHole.Entity_Size plate_havoc.event = #PHC.BlackHole.Size_Limit plate_havoc.event
+execute as 00000000-0000-0005-0000-0001000007e9 run function plate_havoc:misc/get_position
+execute store result score #PHC.BlackHole.X plate_havoc.temp run data get storage plate_havoc:data pos[-3]
+execute store result score #PHC.BlackHole.Y plate_havoc.temp run data get storage plate_havoc:data pos[-2]
+execute store result score #PHC.BlackHole.Z plate_havoc.temp run data get storage plate_havoc:data pos[-1]
 
-data modify storage plate_havoc:events active_data.plate_havoc_content.black_hole set value {}
-execute store result storage plate_havoc:events active_data.plate_havoc_content.black_hole.size double 0.01 run scoreboard players get #BlackHole.Entity_Size plate_havoc.event
-
-data modify entity @s transformation.scale[] set from storage plate_havoc:events active_data.plate_havoc_content.black_hole.size
+data modify entity @s transformation.scale[] set from storage plate_havoc:events active_data.plate_havoc_content.black_hole.visual
 
 #Move
-execute facing entity @n[x=0,tag=!plate_havoc.dont_interact,tag=!plate_havoc.spectator,gamemode=!spectator] feet run tp ^ ^ ^.0675
-
-#Size and Radius
-execute store result storage plate_havoc:events active_data.plate_havoc_content.black_hole.size double 0.005 run scoreboard players get #BlackHole.Entity_Size plate_havoc.event
-execute store result storage plate_havoc:events active_data.plate_havoc_content.black_hole.radius double 4 run data get storage plate_havoc:events active_data.plate_havoc_content.black_hole.size
+$execute facing entity @p[tag=plate_havoc.survivor] feet positioned ^ ^ ^$(speed) run function plate_havoc:misc/tp
 
 ##Actions
-function plate_havoc_content:events/black_hole/entity/action with storage plate_havoc:events active_data.plate_havoc_content.black_hole
-execute if score #BlackHole.Destroyed plate_havoc.event matches 1.. run function plate_havoc_content:events/black_hole/entity/grow
+$execute store result score #PHC.BlackHole.Destroyed plate_havoc.event run fill ~-$(size) ~-$(size) ~-$(size) ~$(size) ~$(size) ~$(size) air destroy
+
+execute as @a[tag=plate_havoc.survivor] run function plate_havoc_content:events/black_hole/entity/player with storage plate_havoc:events active_data.plate_havoc_content.black_hole
+execute if score #PHC.BlackHole.Destroyed plate_havoc.event matches 1.. run function plate_havoc_content:events/black_hole/entity/grow
 
 playsound block.beacon.ambient ambient @a ~ ~ ~ 2.5 0.5
 function plate_havoc_content:events/black_hole/entity/visual with entity @s

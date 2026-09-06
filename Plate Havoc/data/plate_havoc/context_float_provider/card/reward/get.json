@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:mul",
+  "inputs": [
+    {
+      "type": "minecraft:storage",
+      "storage": "plate_havoc:cards",
+      "path": "card.reward.base"
+    },
+    {
+      "type": "minecraft:pow",
+      "base": {
+        "type": "minecraft:storage",
+        "storage": "plate_havoc:cards",
+        "path": "card.reward.scale",
+        "fallback": 1
+      },
+      "exponent": {
+        "type": "minecraft:from_int",
+        "input": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "#OwnedCardStack"
+          },
+          "score": "plate_havoc.temp"
+        }
+      }
+    },
+    {
+      "type": "minecraft:storage",
+      "storage": "plate_havoc:custom",
+      "path": "attributes[{id:'plate_havoc:card.reward.scale'}].output"
+    }
+  ]
+}

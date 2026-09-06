@@ -6,12 +6,11 @@ data modify storage plate_havoc:cards temp_pool set from storage plate_havoc:car
 scoreboard players set #ProcessedCards plate_havoc.num 0
 scoreboard players set #CardLimit plate_havoc.num 0
 function plate_havoc:misc/cards/pool/select
-
 scoreboard players set #Card.RetainSlot plate_havoc.num 0
 function plate_havoc:misc/cards/process/loop
 
 ##If no cards left
-execute unless data storage plate_havoc:cards active[{non_card:false}] unless data storage plate_havoc:cards attributes{prevent_fallback:true} run return run function plate_havoc:misc/cards/process/types/active/run
+execute unless data storage plate_havoc:cards active[-1] unless data storage plate_havoc:cards attributes{prevent_fallback:true} run return run function plate_havoc:misc/cards/fallback
 
 function plate_havoc:misc/function with storage plate_havoc:cards active_type
 function plate_havoc:misc/cards/process/attributes

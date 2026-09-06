@@ -52,12 +52,13 @@ data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.jump_cooldown.duration",values:{base:0.3},tags:["plate_havoc_content:enraged.shorter"]}
 ## anvil (Distance (in blocks))
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.anvil.distance",values:{base:75}}
-## black_hole (Duration) (Duration Extension) (Base Size) (Growth Limit)
+## blackhole (Duration) (Duration Extension) (Base Size) (Growth Limit) (Speed)
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.black_hole.duration",values:{base:0.75},tags:["plate_havoc_content:slow_passing.applicable","plate_havoc_content:enraged.shorter","plate_havoc_content:netherite_clock.applicable","plate_havoc_content:sunlight.applicable"]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.black_hole.duration.extend",values:{base:0.25},tags:["plate_havoc_content:slow_passing.applicable","plate_havoc_content:netherite_clock.applicable"]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.black_hole.base_size",values:{base:0.115},tags:["plate_havoc_content:enraged.aggressive","plate_havoc_content:life_harmony.applicable"]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.black_hole.max_size",values:{base:0.2},tags:["plate_havoc_content:enraged.aggressive"],update:[{type:score,value:"#PHC.BlackHole.Size_Limit plate_havoc.event"}]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.black_hole.growth_limit",values:{base:0.005},update:[{type:score,value:"#PHC.BlackHole.Growth_Limit plate_havoc.event"}]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.black_hole.speed",values:{base:0.0675},update:[{type:storage,value:"plate_havoc:events active_data.plate_havoc_content.black_hole.speed"}]}
 ## soulsand (Amount of blocks to corrupt)
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.soul_sand.spread",values:{base:0.012}}
 ## herobrine (Duration) (Duration Extension) (Acitvate Time) (Movement Distance) (Stun Time) (Stun Cooldown)
@@ -86,8 +87,8 @@ data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.piranha.damage",values:{base:0.75},tags:["plate_havoc_content:enraged.aggressive","plate_havoc_content:life_harmony.applicable"]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.piranha.bite_time_factor",values:{base:0.004},update:[{type:score,value:"#PHC.Piranha.Bite_Time_Factor plate_havoc.event"}]}
 ## spinning_laser (Base Width) (Base Speed)
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.spinning_laser.width",values:{base:5}}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.spinning_laser.speed",values:{base:5}}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.spinning_laser.width",values:{base:5},update:[{type:storage,value:"plate_havoc:events active_data.plate_havoc_content.spinning_laser.width"},{type:score,value:"#Spinning_Laser.Entity.Width plate_havoc.event"}]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.spinning_laser.speed",values:{base:5},update:[{type:storage,value:"plate_havoc:events active_data.plate_havoc_content.spinning_laser.speed"}]}
 ## wind_up (Summons) (Extension to Summons)
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.wind_up.summon.value",values:{base:0.4},tags:["plate_havoc_content:enraged.shorter"],update:[{type:score,value:"#PHC.Wind_Up.Summon.Value plate_havoc.event"}]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.wind_up.summon.value.extend",values:{base:0.1},update:[{type:score,value:"#PHC.Wind_Up.Summon.Extend plate_havoc.event"}]}
@@ -141,7 +142,7 @@ data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.proximity_mine.time.explode",values:{base:0.05},update:[{type:score,value:"#PHC.Proximity_Mine.Time.Explode plate_havoc.temp"}]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.proximity_mine.power",values:{base:2.25},update:[{type:storage,value:"plate_havoc:cards active_data.plate_havoc_content.proximity_mine.power"}]}
 ## gazing_shadow (Presence ticks) (Time Penalty)
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.gazing_shadow.presence_ticks",values:{base:0.5},update:[{type:score,value:"#PHC.Gazing_Shadow.Presence_Ticks plate_havoc.temp"}],tags:["plate_havoc_content:sunlight.applicable"]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.gazing_shadow.presence_ticks",values:{base:0.5},update:[{type:score,value:"#PHC.Gazing_Shadow.Presence_Ticks plate_havoc.temp"},{type:score,value:"#PHC.Gazing_Surprise plate_havoc.temp",scale:0.5}],tags:["plate_havoc_content:sunlight.applicable"]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.gazing_shadow.time_penalty",values:{base:0.002},update:[{type:score,value:"#PHC.Gazing_Shadow.Time_Penalty plate_havoc.temp"}]}
 ## cobweb (Amount)
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.cobweb.amount",values:{base:0.001},update:[{type:score,value:"#PHC.Cobweb.Amount plate_havoc.temp"}]}
@@ -169,10 +170,17 @@ data modify storage plate_havoc:cards active_data.plate_havoc_content.777_machin
 data modify storage plate_havoc:cards active_data.plate_havoc_content.mentally_parrotsane set value ["plate_havoc:game/match/player/last_one_sfx","plate_havoc_content:cards/cursed_clocks/collect_sfx","plate_havoc_content:events/motion_sniper/sfx","plate_havoc_content:events/laser_drill/entity/cue/sound_default","plate_havoc_content:cards/mentally_parrotsane/sounds/creeper","plate_havoc_content:cards/mentally_parrotsane/sounds/wither","plate_havoc_content:cards/mentally_parrotsane/sounds/ghast","plate_havoc_content:events/eraserman/cue","plate_havoc_content:cards/critical_rollback/sfx","plate_havoc_content:cards/multi_use_umbrella/player/acid_immunity/break_cue","plate_havoc_content:events/motion_sniper/phase/warning_sound","plate_havoc_content:events/gazing_shadow/summon_sound"]
 ## Task Manager
 data modify storage plate_havoc:cards active_data.plate_havoc_content.task_manager set value [{function:"",snbt:"Get under 33% Health."},{function:"",snbt:"Kill 5 Mobs."}]
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:card.task_manager.task.cooldown",values:{base:0.6},update:[{type:score,value:"#PHC.Task_Manager.Task.Cooldown plate_havoc.temp"}]}
 ## Tailsman of Hope
 data modify storage plate_havoc:cards active_data.plate_havoc_content.tailsman_of_hope set value [{function:"plate_havoc_content:events/iron_golem/start"},{function:"plate_havoc_content:events/buff_wind/start"},{function:"plate_havoc_content:events/buff_heal/start"},{function:"plate_havoc_content:events/buff_pearl/start"},{function:"plate_havoc_content:events/flame_guardian/start"},{function:"plate_havoc_content:events/buff_food/start"},{function:"plate_havoc_content:events/bounce_pad/start"}]
-
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:card.task_manager.task.cooldown",values:{base:0.6},update:[{type:score,value:"#PHC.Task_Manager.Task.Cooldown plate_havoc.temp"}]}
+## Intense Investment
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:card.intense_investment.scale",values:{base:1},tags:["plate_havoc_content:copper_clock"]}
+## Blood Money
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:card.blood_money.scale",values:{base:1},tags:["plate_havoc_content:copper_clock"]}
+## Midas Touch
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:card.midas_touch.value",values:{base:0.01}}
+## Gashed Tissue
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:card.gashed_tissue.scale",values:{base:1},tags:["plate_havoc_content:copper_clock"]}
 
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:clock.time_reduction",values:{base:0.04},update:[{type:score,value:"#ClockCollectTimeReduction plate_havoc.num"}]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:clock.range",values:{base:1},update:[{type:score,value:'#PHC.Clock.Range plate_havoc.temp'},{type:storage,value:'plate_havoc:data active_data.plate_havoc_content.clock.range'},{type:storage,value:'plate_havoc:data active_data.plate_havoc_content.clock.range_halved',scale:0.0005}]}
@@ -204,6 +212,8 @@ scoreboard objectives add plate_havoc_content.event.piranha.attacked_times dummy
 scoreboard objectives add plate_havoc_content.event.piranha.active_time dummy
 scoreboard objectives add plate_havoc_content.event.bounce_pad.delay dummy
 scoreboard objectives add plate_havoc_content.event.herobrine.consecutive_curses dummy
+scoreboard objectives add plate_havoc_content.event.spinning_laser.width dummy
+scoreboard objectives add plate_havoc_content.event.spinning_laser.id dummy
 
 #
 scoreboard objectives add plate_havoc_content.card.void_rift dummy
@@ -215,7 +225,8 @@ scoreboard objectives add plate_havoc_content.card.gravity_coil dummy
 scoreboard objectives add plate_havoc_content.card.fragile_void dummy
 scoreboard objectives add plate_havoc_content.card.fragile_void.starting_scale dummy
 scoreboard objectives add plate_havoc_content.card.fragile_void.starting_time dummy
-scoreboard objectives add plate_havoc_content.card.critical_rollback dummy
+scoreboard objectives add plate_havoc_content.card.critical_rollback.value dummy
+scoreboard objectives add plate_havoc_content.card.critical_rollback.immunity_ticks dummy
 scoreboard objectives add plate_havoc_content.card.cube_of_decay.time_threshold dummy
 scoreboard objectives add plate_havoc_content.card.cube_of_decay.shrink_player_requirement dummy
 scoreboard objectives add plate_havoc_content.card.cube_of_decay.shrink_player_current dummy
@@ -253,6 +264,10 @@ scoreboard objectives add plate_havoc_content.card.slow_passing.threshold dummy
 scoreboard objectives add plate_havoc_content.card.slow_passing.lower_limit dummy
 scoreboard objectives add plate_havoc_content.card.slow_passing.stage dummy
 scoreboard objectives add plate_havoc_content.card.suction_cups.used dummy
+scoreboard objectives add plate_havoc_content.card.purified_hourglass.value dummy
+scoreboard objectives add plate_havoc_content.card.kamikaze.time dummy
+scoreboard objectives add plate_havoc_content.card.impactful_landing.time dummy
+scoreboard objectives add plate_havoc_content.card.bloodlust.value dummy
 
 scoreboard objectives add plate_havoc_content.survivor.charger.amount dummy
 scoreboard objectives add plate_havoc_content.survivor.charger.using dummy
@@ -285,7 +300,7 @@ scoreboard objectives add plate_havoc_content.max_value dummy
 scoreboard objectives add plate_havoc_content.leaderboard.cycle.current dummy
 scoreboard objectives add plate_havoc_content.leaderboard.cycle.saved dummy
 
-data modify storage plate_havoc:temp extension_data set value [plate_havoc_content.event.acid_rain.exposure,plate_havoc_content.event.jump_cooldown,plate_havoc_content.event.jump_afterdown,plate_havoc_content.event.shop_token,plate_havoc_content.event.flame_guardian.time,plate_havoc_content.event.flame_guardian.active,plate_havoc_content.event.motion_sniper.time,plate_havoc_content.event.piranha.attack_delay,plate_havoc_content.event.piranha.attacked_times,plate_havoc_content.card.multi_use_umbrella.splasher_using,plate_havoc_content.card.multi_use_umbrella.splasher_cooldown,plate_havoc_content.card.multi_use_umbrella.acid_immunity,plate_havoc_content.event.piranha.active_time,"plate_havoc_content.card.mutilated_teddy","plate_havoc_content.card.lasting_acid","plate_havoc_content.card.multi_use_umbrella.cobwebbed","plate_havoc_content.card.nanomachines.damage","plate_havoc_content.card.nanomachines.duration","plate_havoc_content.card.nanomachines.stack"]
+data modify storage plate_havoc:temp extension_data set value [plate_havoc_content.event.acid_rain.exposure,plate_havoc_content.event.jump_cooldown,plate_havoc_content.event.jump_afterdown,plate_havoc_content.event.shop_token,plate_havoc_content.event.flame_guardian.time,plate_havoc_content.event.flame_guardian.active,plate_havoc_content.event.motion_sniper.time,plate_havoc_content.event.piranha.attack_delay,plate_havoc_content.event.piranha.attacked_times,plate_havoc_content.card.multi_use_umbrella.splasher_using,plate_havoc_content.card.multi_use_umbrella.splasher_cooldown,plate_havoc_content.card.multi_use_umbrella.acid_immunity,plate_havoc_content.event.piranha.active_time,"plate_havoc_content.card.mutilated_teddy","plate_havoc_content.card.lasting_acid","plate_havoc_content.card.multi_use_umbrella.cobwebbed","plate_havoc_content.card.nanomachines.damage","plate_havoc_content.card.nanomachines.duration","plate_havoc_content.card.nanomachines.stack","plate_havoc_content.card.purified_hourglass.value"]
 data modify storage plate_havoc:data score_reset append from storage plate_havoc:temp extension_data[]
 
 data modify storage plate_havoc:temp extension_data set value ["plate_havoc_content.card.blood_money"]
@@ -293,3 +308,4 @@ data modify storage plate_havoc:data init_score_reset append from storage plate_
 
 ##Edits
 data modify storage plate_havoc:custom attributes[{id:"plate_havoc:cyclathron_yield"}].update append value {type:score,value:"#PHC.Scrap_Bin plate_havoc.temp",scale:0.075}
+data modify storage plate_havoc:custom attributes[{id:"plate_havoc:event.time"}].update append value {type:score,value:"#PHC.Purified_Hourglass plate_havoc.temp",scale:0.5}

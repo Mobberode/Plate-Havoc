@@ -9,7 +9,7 @@ playsound entity.illusioner.cast_spell player @a ~ ~ ~ .75 1.8
 scoreboard players operation #Match plate_havoc.id = @s plate_havoc.id
 
 scoreboard players set #PHC.Spyshine plate_havoc.temp 0
-execute anchored eyes positioned ^ ^ ^ summon marker run function plate_havoc_content:cards/spy_shine/beam/init
+execute anchored eyes positioned ^ ^ ^ as 00000000-0000-0005-0000-0001000007e9 run function plate_havoc_content:cards/spy_shine/beam/loop
 
 execute if score #PHC.Spyshine plate_havoc.temp matches 1 run function plate_havoc_content:cards/spy_shine/hit
 execute if score #PHC.Spyshine plate_havoc.temp matches 0 run function plate_havoc_content:cards/spy_shine/miss

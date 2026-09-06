@@ -7,6 +7,9 @@ execute unless data storage plate_havoc:ui temp.active.name run data modify stor
 data modify storage plate_havoc:ui temp.visual append from storage plate_havoc:ui temp.active.description
 
 execute unless data storage plate_havoc:ui temp.active.subtext run return fail
-data modify storage plate_havoc:ui temp.subtext.text set from storage plate_havoc:ui temp.active.subtext
+
+data modify storage plate_havoc:ui temp.subtext merge from storage plate_havoc:ui temp.active.subtext
+execute unless data storage plate_havoc:ui temp.subtext run data modify storage plate_havoc:ui temp.subtext.text set from storage plate_havoc:ui temp.active.subtext
+
 data modify storage plate_havoc:ui temp.visual insert 2 value "\n"
 data modify storage plate_havoc:ui temp.visual insert 3 from storage plate_havoc:ui temp.subtext

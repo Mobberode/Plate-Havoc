@@ -10,7 +10,6 @@ execute store result storage plate_havoc:events active_data.plate_havoc_content.
 
 scoreboard players operation #Egg_Rain.Summon_Amount plate_havoc.event *= #MaxRunCount plate_havoc.num
 
-summon marker ~ ~ ~ {Tags:["plate_havoc_content.event.egg_rain","plate_havoc.dont_interact"]}
 scoreboard players set #Egg_Rain.CurrentDelay plate_havoc.event 0
 
 function plate_havoc_content:events/egg_rain/loop

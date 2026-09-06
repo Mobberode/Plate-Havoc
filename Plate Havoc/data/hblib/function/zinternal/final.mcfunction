@@ -1,2 +1,2 @@
-execute store result storage hblib:hitbox out double 0.01 run scoreboard players get #Total hblib.number
-kill
+execute positioned ~ ~-.01 ~ unless entity @s[dx=0] run return run scoreboard players remove #Total hblib.number 1
+return run scoreboard players get #Total hblib.number

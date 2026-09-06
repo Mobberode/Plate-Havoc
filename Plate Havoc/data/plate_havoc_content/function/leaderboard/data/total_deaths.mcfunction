@@ -1,6 +1,6 @@
 execute store result storage plate_havoc:leaderboard temp.data.total_deaths int 1 run scoreboard players get #Stat.Total_Deaths plate_havoc.num
 
-data modify storage plate_havoc:temp temp set value {id:total_deaths,text:"Total Deaths",extra:[": ",{meta:value,color:red}]}
+data modify storage plate_havoc:temp temp set value {id:total_deaths,translate:"plate_havoc_content:leaderboard.total_deaths",fallback:"Total Deaths",extra:[": ",{meta:value,color:red}]}
 
 data modify storage plate_havoc:temp temp.extra[{meta:value}].text set string storage plate_havoc:leaderboard temp.data.total_deaths
 

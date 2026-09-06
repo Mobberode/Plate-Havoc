@@ -1,6 +1,5 @@
 ##Negate Cyclathron yield
-execute store result score #Temp plate_havoc.temp run data get storage plate_havoc:custom attributes[{id:"plate_havoc:cyclathron_yield"}].output 100
-scoreboard players operation #Value plate_havoc.cyclathron -= #Temp plate_havoc.temp
+scoreboard players set #Clock plate_havoc_content.value 0
 
 ##Time, do it 2 times
 function plate_havoc_content:cards/cursed_clocks/time

@@ -1,1 +1,1 @@
-$tp ~ ~$(torso) ~
+$execute positioned ~ ~$(torso) ~ run function plate_havoc:misc/tp

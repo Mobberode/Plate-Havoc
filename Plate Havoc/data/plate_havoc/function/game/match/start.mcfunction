@@ -1,3 +1,4 @@
+bossbar set plate_havoc:status color white
 ##Stopwatch - Game
 stopwatch remove plate_havoc:game_time
 stopwatch create plate_havoc:game_time

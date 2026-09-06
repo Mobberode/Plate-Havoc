@@ -2,7 +2,7 @@ tellraw @a [{text:"Void Endurance",color:gold},{text:"\nThe intended Endurance e
 
 data modify storage plate_havoc:ui bar.global.snbt[{id:time}].extra set value [{meta:default,text:"⏳",extra:[{score:{name:"#Visual.Left.Second",objective:plate_havoc.timer},color:yellow},".",{score:{name:"#Visual.Left.Tick",objective:plate_havoc.timer},color:yellow}]}]
 
-data modify storage plate_havoc:ui bar.global.snbt insert 2 value {id:cyclathron,text:"",extra:[{meta:default,seperator:"",text:"€",extra:[{storage:"plate_havoc:ui",nbt:cyclathron,color:aqua,interpret:true}]}]}
+data modify storage plate_havoc:ui bar.global.snbt insert 2 value {id:cyclathron,text:"",extra:[{meta:default,seperator:"",text:"€",extra:[{storage:"plate_havoc:ui",nbt:cyclathron,color:aqua,interpret:true}],hover_event:{action:show_text,value:["",{translate:"plate_havoc:shared.Cyclathrons",fallback:"Cyclathrons",color:aqua},"\n",{translate:"plate_havoc:description.cyclathrons",fallback:"Main currency exchanged for  advantages."}]}}]}
 data modify storage plate_havoc:ui bar.global.snbt insert 3 value {id:cycle,text:"",extra:[{meta:default,text:"♻",extra:[{score:{name:"#Value",objective:plate_havoc.round},color:aqua}]}]}
 
 scoreboard objectives setdisplay list plate_havoc.player.health.value

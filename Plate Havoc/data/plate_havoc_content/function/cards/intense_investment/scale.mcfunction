@@ -1,0 +1,1 @@
+$execute store result storage plate_havoc:temp temp float $(output) run scoreboard players get #Temp plate_havoc.temp

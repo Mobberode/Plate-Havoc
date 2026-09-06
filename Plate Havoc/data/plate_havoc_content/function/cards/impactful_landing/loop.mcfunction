@@ -1,0 +1,1 @@
+execute in plate_havoc:arena as @e[x=0,type=breeze] at @s run function plate_havoc_content:cards/impactful_landing/tick

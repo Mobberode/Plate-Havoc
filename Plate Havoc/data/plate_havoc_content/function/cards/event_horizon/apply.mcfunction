@@ -1,0 +1,1 @@
+$attribute @s movement_speed modifier add plate_havoc_content:card.event_horizon -$(temp) add_multiplied_total

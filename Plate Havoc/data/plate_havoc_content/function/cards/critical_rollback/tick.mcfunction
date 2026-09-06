@@ -1,0 +1,1 @@
+scoreboard players remove @s[scores={plate_havoc_content.card.critical_rollback.immunity_ticks=1..}] plate_havoc_content.card.critical_rollback.immunity_ticks 1
