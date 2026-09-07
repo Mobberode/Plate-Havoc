@@ -7,12 +7,12 @@ function plate_havoc:misc/ui/bar_visuals/process_only_global
 data modify storage plate_havoc:ui temp set value {input:[],output:[]}
 data modify storage plate_havoc:ui temp.input set from storage plate_havoc:ui bar.output
 function plate_havoc:misc/ui/text_resolver/init
-data modify storage plate_havoc:ui dialogs.plate_havoc_content.card_selection.body.contents prepend from storage plate_havoc:ui temp.output[]
+data modify storage plate_havoc:ui dialogs.plate_havoc_content.card_selection.body.contents prepend from storage plate_havoc:ui temp.output
 
 function plate_havoc:misc/cards/ui/process/start
 
 data modify storage plate_havoc:ui dialogs.plate_havoc_content.card_selection.body.contents[{meta:card_deck}].hover_event.value set from storage plate_havoc:ui card_list
-data modify storage plate_havoc:ui dialogs.plate_havoc_content.card_selection.body.contents insert 10 from storage plate_havoc:ui card_type
+data modify storage plate_havoc:ui dialogs.plate_havoc_content.card_selection.body.contents insert 8 from storage plate_havoc:ui card_type
 data modify storage plate_havoc:ui dialogs.plate_havoc_content.card_selection.body.contents append from storage plate_havoc:cards active[].data.snbt.body
 data modify storage plate_havoc:ui dialogs.plate_havoc_content.card_selection.actions append from storage plate_havoc:cards active[].data.snbt.action
 data modify storage plate_havoc:ui dialogs.plate_havoc_content.card_selection.body.contents prepend value ""

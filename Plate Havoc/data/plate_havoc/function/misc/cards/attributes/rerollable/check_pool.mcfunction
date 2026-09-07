@@ -1,1 +1,1 @@
-execute if data storage plate_havoc:cards active[{id:"plate_havoc:reroll"}] unless data storage plate_havoc:cards temp_pool[-2] run data remove storage plate_havoc:cards active[{id:"plate_havoc:reroll"}]
+execute if data storage plate_havoc:cards active[{id:"plate_havoc:reroll"}] unless data storage plate_havoc:cards temp_pool[-1] run data remove storage plate_havoc:cards active[{id:"plate_havoc:reroll"}]

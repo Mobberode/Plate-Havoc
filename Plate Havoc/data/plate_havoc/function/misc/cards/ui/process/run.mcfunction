@@ -15,7 +15,7 @@ execute store result storage plate_havoc:cards active_entry.values.votes int 1 r
 #Votes
 function plate_havoc:misc/cards/ui/process/votes/build
 #Obtainable
-function plate_havoc:misc/cards/ui/process/obtainable/build
+execute if score #Card.Colour_Override plate_havoc.num matches 0 run function plate_havoc:misc/cards/ui/process/obtainable/build
 
 ##Update from temp
 function plate_havoc:misc/cards/vote/player/upload with storage plate_havoc:temp

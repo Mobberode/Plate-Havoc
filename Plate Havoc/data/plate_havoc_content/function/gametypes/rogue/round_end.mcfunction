@@ -34,7 +34,7 @@ execute in plate_havoc:arena run function plate_havoc:misc/world/apply_all
 
 function plate_havoc:misc/ui/bar_visuals/remove_tagged {tag:"plate_havoc_content:rogue.intermission_start"}
 data modify storage plate_havoc:ui bar.global.modifiers append value {meta:"plate_havoc:hide",id:time,type:remove,affect_meta:"default",tags:["plate_havoc_content:rogue.intermission_end"]}
-data modify storage plate_havoc:ui bar.global.modifiers append value {meta:"plate_havoc:display_only_current",id:players,type:override,tags:["plate_havoc_content:rogue.intermission_end"],affect_meta:"default",snbt:{score:{name:"#Current",objective:plate_havoc.players},color:green}}
+#data modify storage plate_havoc:ui bar.global.modifiers append value {meta:"plate_havoc:display_only_current",id:players,type:override,tags:["plate_havoc_content:rogue.intermission_end"],affect_meta:"default",snbt:{score:{name:"#Current",objective:plate_havoc.players},color:green}}
 
 data modify storage plate_havoc:ui bar.global.data.colour set value blue
 execute as @a run function plate_havoc:misc/ui/bar_visuals/player/apply/all
