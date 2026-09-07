@@ -18,7 +18,7 @@ data modify storage plate_havoc:ui bar.global.snbt append value {id:intensity,te
 
 data modify storage plate_havoc:ui bar.global.snbt append value {id:time,text:"",extra:[{meta:default,text:"⏳",extra:[{score:{name:"#Visual.Duration.Second",objective:plate_havoc.timer},color:yellow},".",{score:{name:"#Visual.Duration.Tick",objective:plate_havoc.timer},color:yellow}]}]}
 
-data modify storage plate_havoc:ui bar.global.snbt append value {id:players,text:"",extra:[{meta:default,seperator:"+",text:"",extra:[{score:{name:"#Current",objective:plate_havoc.players},color:green},"/",{meta:total,score:{name:"#Match",objective:plate_havoc.players},color:green}],hover_event:{action:show_text,value:["",{translate:"plate_havoc:shared.Players",fallback:"Players",color:green},"\n",{translate:"plate_havoc:description.players",fallback:"Number of people currently in the run."}]}}]}
+data modify storage plate_havoc:ui bar.global.snbt append value {id:players,text:"",extra:[{meta:default,seperator:"+",text:"",extra:[{score:{name:"#Current",objective:plate_havoc.players},color:green},"/",{meta:total,score:{name:"#Match",objective:plate_havoc.players},color:green,extra:[{meta:max,score:{name:"#Max",objective:plate_havoc.players},color:yellow}]}],hover_event:{action:show_text,value:["",{translate:"plate_havoc:shared.Players",fallback:"Players",color:green},"\n",{translate:"plate_havoc:description.players",fallback:"Number of people currently in the run."}]}}]}
 
 data modify storage plate_havoc:ui bar.global.snbt append value {id:misc,text:"",extra:[]}
 
