@@ -1,3 +1,5 @@
+data remove storage plate_havoc:cards running.total[].display.extra[{meta:recently_obtained}]
+
 kill @e[tag=!plate_havoc.never_kill,type=!player]
 
 gamerule random_tick_speed 3

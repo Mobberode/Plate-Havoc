@@ -1,0 +1,14 @@
+{
+  "parent": "plate_havoc:trophies/root",
+  "display": {
+    "frame": "challenge",
+    "title":"Shattered",
+    "description":"Realize the hard truth and shatter yourself to be anew.\n\nUnlocks Iridescent Shards for purchase in Upgrade shops (Obtainable for free upon this path's completion).\n\nUnlocked for testing.",
+    "icon": "gilded_blackstone"
+  },
+  "criteria": {
+    "req":{
+        "trigger": "tick"
+    }
+  }
+}

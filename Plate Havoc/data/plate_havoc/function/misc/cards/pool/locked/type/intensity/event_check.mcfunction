@@ -1,1 +1,1 @@
-$execute unless data storage plate_havoc:events pool.available[{id:'$(event)'}] run scoreboard players set #Success plate_havoc.num 0
+$execute if data storage plate_havoc:events pool.available[{id:'$(event)'}] run scoreboard players add #RequirementsPassed plate_havoc.temp 1

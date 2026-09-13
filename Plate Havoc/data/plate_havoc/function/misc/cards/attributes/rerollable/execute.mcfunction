@@ -1,6 +1,11 @@
-##Price
-execute store result storage plate_havoc:temp temp int 1 run data get storage plate_havoc:cards attributes.rerollable.cost.scale 100
-function plate_havoc:misc/cards/attributes/rerollable/scale with storage plate_havoc:temp
+##Usage and Price
+data modify storage plate_havoc:cards attributes.rerollable.usages set compute default integer plate_havoc:card/reroll/add_one_usage
+scoreboard players add #Stat.Card_Rerolls_Used plate_havoc.num 1
+#
+data remove storage plate_havoc:cards attributes.rerollable.cost.temp
+function plate_havoc:misc/cards/running/types/run {type:reroll.use}
+execute unless data storage plate_havoc:cards attributes.rerollable.cost.temp run function plate_havoc:misc/cards/process/attributes/rerollable/init_cost
+execute store result score #Temp plate_havoc.cyclathron run data get storage plate_havoc:cards attributes.rerollable.cost.temp 100
 
 ##Set
 execute store result score #Card.KeepInPool plate_havoc.num if data storage plate_havoc:cards attributes.rerollable{remove_cards:false}
@@ -25,7 +30,7 @@ function plate_havoc:misc/cards/process/loop
 execute unless data storage plate_havoc:cards active[{non_card:false}] unless data storage plate_havoc:cards attributes{prevent_fallback:true} run return run function plate_havoc:misc/cards/process/fallback
 
 ##Update
-execute if score #Temp plate_havoc.cyclathron matches 1.. run function plate_havoc:misc/cards/attributes/rerollable/update
+function plate_havoc:misc/cards/attributes/rerollable/update
 ##Restore non card actions
 data modify storage plate_havoc:cards active append from storage plate_havoc:cards temp[]
 ##None in pool

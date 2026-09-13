@@ -1,2 +1,3 @@
-data modify storage plate_havoc:temp temp.extra[].[{meta:prefix}] set value {meta:prefix,text:"",color:red}
-data modify storage plate_havoc:temp temp.extra[].[{meta:cyclathron}].text set string storage plate_havoc:temp temp.extra[].[{meta:cyclathron}].text 1 0
+data modify storage plate_havoc:temp temp.extra[].[{meta:prefix}] set value {meta:prefix,text:"-",color:red}
+
+data modify storage plate_havoc:temp temp.extra[].[{meta:cyclathron}].text set string storage plate_havoc:ui truncator.output 1

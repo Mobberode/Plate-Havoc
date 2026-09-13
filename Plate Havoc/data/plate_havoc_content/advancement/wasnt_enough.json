@@ -2,7 +2,7 @@
   "parent": "plate_havoc:trophies/root",
   "display": {
     "title":"It Wasn't Enough",
-    "description":"Game Over with less than a second remaining.\n\nUnlocks Mechanical Heart for future runs.\n\nAutomatically unlocked for testing purposes.",
+    "description":"Game Over with less than a second remaining.\n\nUnlocks Mechanical Heart for purchase in Upgrade shops.\n\nUnlocked for testing.",
     "icon": "clock"
   },
   "criteria": {

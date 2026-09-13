@@ -2,7 +2,7 @@
   "parent": "plate_havoc:trophies/root",
   "display": {
     "title":"Charged and Charred",
-    "description":"Get struck by lightning whilst actively charging.\n\nUnlocks Shock Absorber for future runs.",
+    "description":"Get struck by lightning whilst actively charging.\n\nUnlocks Shock Absorber for purchase in Upgrade shops.",
     "icon": "lightning_rod"
   },
   "criteria": {

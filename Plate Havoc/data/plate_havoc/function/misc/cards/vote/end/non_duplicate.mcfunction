@@ -4,7 +4,7 @@ scoreboard players set #CardStack plate_havoc.temp 1
 
 ##Visual
 #Name
-data modify storage plate_havoc:temp temp set value {text:"",extra:[],hover_event:{action:"show_text",value:["","\n"]}}
+data modify storage plate_havoc:temp temp set value {text:"",extra:[{meta:recently_obtained,text:" ",color:dark_gray,extra:["[",{text:"+",color:yellow},"]"]}],hover_event:{action:"show_text",value:["","\n"]}}
 data modify storage plate_havoc:temp temp.extra prepend from storage plate_havoc:cards template.data.snbt.name
 #Desc for hover
 data modify storage plate_havoc:temp temp.hover_event.value insert 1 from storage plate_havoc:cards template.data.snbt.name

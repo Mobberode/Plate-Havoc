@@ -30,11 +30,12 @@ data modify storage plate_havoc:data on_game_start append value "plate_havoc_con
 data modify storage plate_havoc:leaderboard data_functions insert 1 value {function:"plate_havoc_content:leaderboard/data/cycle"}
 data modify storage plate_havoc:leaderboard data_functions insert -2 value {function:"plate_havoc_content:leaderboard/data/cards"}
 data modify storage plate_havoc:leaderboard data_functions insert -3 value {function:"plate_havoc_content:leaderboard/data/cyclathrons_yielded"}
+data modify storage plate_havoc:leaderboard data_functions insert -3 value {function:"plate_havoc_content:leaderboard/data/card_rerolls"}
 data modify storage plate_havoc:leaderboard data_functions insert -3 value {function:"plate_havoc_content:leaderboard/data/clocks_collected"}
 data modify storage plate_havoc:leaderboard data_functions insert -3 value {function:"plate_havoc_content:leaderboard/data/artefacts_activated"}
 data modify storage plate_havoc:leaderboard data_functions insert -3 value {function:"plate_havoc_content:leaderboard/data/defeated_the_forgotten"}
-### Game contents
 
+### Game contents
 scoreboard players set #Value plate_havoc.round 0
 
 data modify storage plate_havoc:cards locked set from storage plate_havoc:data content.cards

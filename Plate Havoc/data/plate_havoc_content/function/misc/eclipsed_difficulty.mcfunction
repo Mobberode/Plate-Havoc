@@ -12,3 +12,11 @@ function plate_havoc:misc/attributes/custom/add_modifier
 data modify storage plate_havoc:temp id_attribute set value "plate_havoc:event.time"
 data modify storage plate_havoc:custom attribute_modifier set value {id:"plate_havoc_content:difficulty.sunlight",value:-0.025,operation:"add_value"}
 function plate_havoc:misc/attributes/custom/add_modifier
+
+data modify storage plate_havoc:cards running.total prepend value {id:"plate_havoc_content:wrath_injection",count:1,max:1,duration:-1,functions:[{function:"plate_havoc_content:cards/wrath_injection/player",type:"set.attribute"},{function:"plate_havoc_content:cards/wrath_injection/mob",type:"on.mob_setup"}],display:{text:"",extra:[{meta:name,translate:"plate_havoc_content:card.wrath_injection.name",fallback:"Wrath Injection",color:gold,shadow_color:-9698048}],hover_event:{action:show_text,value:["",{meta:name,translate:"plate_havoc_content:card.wrath_injection.name",fallback:"Wrath Injection",color:gold,shadow_color:-9698048},"\n",{meta:description,text:"",extra:[{translate:"plate_havoc_content:card.wrath_injection.description",fallback:"Players get +1.5 Attack damage but mobs get 1.25x Attack damage."}]}]}}}
+
+##Visual
+data modify storage plate_havoc:cards snbt set from storage plate_havoc:cards template.data.snbt
+data modify storage plate_havoc:cards snbt.temp set value ["",{translate:"plate_havoc_content:card.wrath_injection.name",fallback:"Wrath Injection",color:gold,shadow_color:-9698048},"\n",{translate:"plate_havoc_content:card.wrath_injection.description",fallback:"Players get +1.5 Attack damage but mobs get 1.25x Attack damage."}]
+
+function plate_havoc:misc/cards/vote/end/tellraw

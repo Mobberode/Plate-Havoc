@@ -47,7 +47,7 @@
     "plate_havoc:difficulty.moonlight.description": "The base difficulty.",
     "plate_havoc:difficulty.eclipsed.name": "Eclipsed",
     "plate_havoc:difficulty.eclipsed.subtext": "To be forever forgotten.",
-    "plate_havoc:difficulty.eclipsed.description": "Events and Cards have changed mechanics, Deeper Curses by Cycle 5. Upgrades cost 15%% less and Curses rewards 20%% more.",
+    "plate_havoc:difficulty.eclipsed.description": "Everything gets stronger but so do you. Heavily changed mechanics, Deeper Curses by Cycle 5. -0.15x Cost and +0.2x Reward.",
 
     "plate_havoc:modifier.chaos_infuser.name": "Chaos Infuser",
     "plate_havoc:modifier.chaos_infuser.description": "Chaos shops every 3rd Cycle with 5 selections that can be drastic.",
@@ -67,7 +67,7 @@
     "plate_havoc_content:leaderboard.elapsed_time": "Elapsed Time",
     "plate_havoc_content:leaderboard.intensity_reached": "Intensity Reached",
     "plate_havoc_content:leaderboard.total_deaths": "Total Deaths",
-    "plate_havoc_content:leaderboard.rerolls_used": "Rerolls Used",
+    "plate_havoc_content:leaderboard.card_rerolls": "Card Rerolls",
 
     "plate_havoc_legacy_content:leaderboard.border_size": "Border Size",
     "plate_havoc_legacy_content:leaderboard.lava_height": "Lava Height",
@@ -267,13 +267,25 @@
     "plate_havoc_content:card.suction_cups.name": "Suction Cups",
     "plate_havoc_content:card.suction_cups.description1": "Bumping into a wall whilst holding",
     "plate_havoc_content:card.suction_cups.description2": "sends you back slightly and converts momentum into height.",
+    
     "plate_havoc_content:card.static_shreds.name": "Static Shreds",
     "plate_havoc_content:card.static_shreds.description": "A piece of a bigger whole? Become more disadvantaged the higher the stack.",
+
     "plate_havoc_content:card.iridescent_shards.name": "Iridescent Shards",
-    "plate_havoc_content:card.iridescent_shards.description": "3 seconds of flight that recharges when grounded. Gain an additional, more powerful jump that shoots a volley of shards towards enemies.",
+    "plate_havoc_content:card.iridescent_shards.description": "3 seconds of flight that recharges when grounded.",
+    
     "plate_havoc_content:card.divine_intervention.name": "Divine Intervention",
     "plate_havoc_content:card.divine_intervention.description": "Artefact of Prosperity becomes guaranteed and slightly stronger.",
-  
+
+    "plate_havoc_content:card.gilded_vial.name": "Gilded Vial",
+    "plate_havoc_content:card.gilded_vial.description": "Clocks remove +0.5 additional seconds (Max: 1.5).",
+
+    "plate_havoc_content:card.turtle_shell.name": "Turtle Shell",
+    "plate_havoc_content:card.turtle_shell.description": "Gain +1 Armour and double the current Armour toughness but both Movement speed and Attack damage are halved.",
+
+    "plate_havoc_content:card.d20.name": "D20",
+    "plate_havoc_content:card.d20.description": "For every 3 rerolls with a cost that are used, make the next reroll free.",
+
     
     "plate_havoc_content:card.piranha_season.name": "Piranha Season",
     "plate_havoc_content:card.piranha_season.description": "Piranhas infest water, dealing 1.5x damage",
@@ -312,7 +324,7 @@
     "plate_havoc_content:card.repetition.description": "The number of events occurring when the cycle starts is (Cycle Count *Events per Action), capped at 50.",
 
     "plate_havoc_content:card.meagre_clocks.name": "Meagre Clocks",
-    "plate_havoc_content:card.meagre_clocks.description": "Clocks take twice as long to spawn but -15%% Cyclathron Cost and +25%% Cyclathron Reward.",
+    "plate_havoc_content:card.meagre_clocks.description": "Clocks take twice as long to spawn but -15%% Card Cost and +25%% Card Reward.",
 
     "plate_havoc_content:card.putrid_stink.name": "Putrid Stink",
     "plate_havoc_content:card.putrid_stink.description": "Being near Zombies inflicts Poison.",
@@ -487,7 +499,14 @@
 
     "plate_havoc_content:card.alpha_eater.name": "Alpha Eater",
     "plate_havoc_content:card.alpha_eater.description": "Foods are consumed instantly.",
+
+
+    "plate_havoc_content:card.oak_effigy.name": "Oak Effigy",
+    "plate_havoc_content:card.oak_effigy.description": "When all players are dead, end the current cycle and become consumed, usable once per run.",
     
+    "plate_havoc_content:card.wrath_injection.name": "Wrath Injection",
+    "plate_havoc_content:card.wrath_injection.description": "Players get +1.5 Attack damage but mobs get 1.25x Attack damage.",
+
 
     "plate_havoc_content:card_type.difficulty": "ILLUMINATE",
     "plate_havoc_content:card_type.difficulty.description": "Select a difficulty.",
@@ -513,10 +532,8 @@
 
     
     "plate_havoc_content:objective.indicator": "Objective Cycle",
-    "plate_havoc_content:objective.single": "This Cycle requires a secondary condition to be passed!",
-    "plate_havoc_content:objective.multiple.1": "This Cycle requires",
-    "plate_havoc_content:objective.multiple.2": "additional conditions to be passed!",
-    
+    "plate_havoc_content:objective.description": "Conditions needed to pass this Cycle!",
+        
 
     "plate_havoc_content:music.excuse": "Excuse",
 

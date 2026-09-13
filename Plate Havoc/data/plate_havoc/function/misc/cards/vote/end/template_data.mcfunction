@@ -1,5 +1,5 @@
 #Finish processing of currency
-scoreboard players operation #Value plate_havoc.cyclathron -= #Temp plate_havoc.cyclathron
+scoreboard players operation #Value plate_havoc.cyclathron -= #Cost plate_havoc.cyclathron
 
 ##Template
 data remove storage plate_havoc:cards template_running

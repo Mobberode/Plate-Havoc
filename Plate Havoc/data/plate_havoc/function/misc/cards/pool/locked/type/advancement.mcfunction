@@ -1,3 +1,5 @@
-$execute if entity @p[tag=!plate_havoc.spectator,advancements={'$(value)'=true}] run return run data remove storage plate_havoc:cards temp_locked[-1].requirement[{type:advancement}]
+$execute store result score #Temp plate_havoc.temp if entity @p[tag=!plate_havoc.spectator,advancements={'$(value)'=true}]
 
-scoreboard players set #Success plate_havoc.num 0
+execute if score #Temp plate_havoc.temp matches ..0 run return fail
+scoreboard players add #RequirementsPassed plate_havoc.temp 1
+data remove storage plate_havoc:cards temp_locked[-1].requirement[{type:advancement}]

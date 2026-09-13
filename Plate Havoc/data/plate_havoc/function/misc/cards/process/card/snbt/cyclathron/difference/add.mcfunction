@@ -1,1 +1,3 @@
 data modify storage plate_havoc:temp temp.extra[].[{meta:prefix}] set value {meta:prefix,text:"+",color:green}
+
+data modify storage plate_havoc:temp temp.extra[].[{meta:cyclathron}].text set string storage plate_havoc:ui truncator.output

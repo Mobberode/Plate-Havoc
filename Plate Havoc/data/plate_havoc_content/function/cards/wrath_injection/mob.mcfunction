@@ -1,0 +1,1 @@
+attribute @s attack_damage modifier add plate_havoc_content:card.wrath_injector 0.25 add_multiplied_total

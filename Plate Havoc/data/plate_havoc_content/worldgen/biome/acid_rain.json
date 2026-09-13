@@ -3,6 +3,7 @@
     "visual/sky_color": 4826212,
     "visual/fog_color": 4826212,
     "visual/water_fog_color": 48212,
+    "audio/background_music": {},
     "audio/music_volume": 0,
     "visual/cloud_height": 2048,
     "visual/fog_start_distance": 96,

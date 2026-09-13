@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:add",
+  "inputs": [
+    {
+      "type": "minecraft:storage",
+      "storage": "plate_havoc:cards",
+      "path": "attributes.rerollable.cost.base",
+      "fallback": 0
+    },
+    {
+      "type": "minecraft:mul",
+      "inputs": [
+        0.5,
+        {"type": "storage","storage":"plate_havoc:cards","path":"attributes.rerollable.usages","fallback":0},
+        {"type": "minecraft:storage",
+        "storage": "plate_havoc:custom",
+        "path": "attributes[{id:'plate_havoc:reroll.scale'}].output",
+        "fallback":1}
+      ]
+    }
+  ]
+}

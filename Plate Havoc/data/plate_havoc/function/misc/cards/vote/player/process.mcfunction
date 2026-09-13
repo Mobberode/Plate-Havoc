@@ -7,7 +7,7 @@ function plate_havoc:misc/cards/vote/player/transfer with storage plate_havoc:ca
 
 ##Votes and Cost
 execute store result storage plate_havoc:cards active_entry.values.votes int 1 run scoreboard players get #SavedVotes plate_havoc.num
-execute store result score #Temp plate_havoc.cyclathron run data get storage plate_havoc:cards active_entry.values.cyclathron 100
+execute store result score #Cost plate_havoc.cyclathron run data get storage plate_havoc:cards active_entry.values.cyclathron 100
 ##Attribute - Voting
 function plate_havoc:misc/cards/vote/player/attributes/voting/run {input:on_vote}
 

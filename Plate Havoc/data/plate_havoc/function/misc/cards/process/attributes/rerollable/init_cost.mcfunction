@@ -1,0 +1,2 @@
+execute unless data storage plate_havoc:cards attributes.rerollable.cost.operation run data modify storage plate_havoc:cards attributes.rerollable.cost.temp set compute default float plate_havoc:card/reroll/default
+function plate_havoc:misc/cards/process/attributes/rerollable/cost with storage plate_havoc:cards attributes.rerollable.cost

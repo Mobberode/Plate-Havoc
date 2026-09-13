@@ -29,7 +29,8 @@
     {
       "type": "minecraft:storage",
       "storage": "plate_havoc:custom",
-      "path": "attributes[{id:'plate_havoc:card.reward.scale'}].output"
+      "path": "attributes[{id:'plate_havoc:card.reward.scale'}].output",
+      "fallback": 1
     }
   ]
 }

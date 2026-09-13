@@ -1,0 +1,14 @@
+{
+  "parent": "plate_havoc_content:paths/shattered",
+  "display": {
+    "frame": "challenge",
+    "title":"Rememberance",
+    "description":"Become the catalyst and come back to everything you know.\n\nUnlocks Forgotten Gallery for purchase in Upgrade shops (Obtainable for free upon this path's completion).\n\nUnlocked for testing.",
+    "icon": "beacon"
+  },
+  "criteria": {
+    "req":{
+        "trigger": "impossible"
+    }
+  }
+}
