@@ -1,11 +1,7 @@
-##Set to 10
-scoreboard players set #Temp plate_havoc.card 20
-##Card level
-execute store result score #Level plate_havoc.card run data get storage plate_havoc:cards executing.count
-scoreboard players operation #Temp plate_havoc.card *= #Level plate_havoc.card
-##Dual
-execute store result storage plate_havoc:cards temp double 0.1 run scoreboard players get #Temp plate_havoc.card
-execute store result storage plate_havoc:cards temp_2 double 0.05 run scoreboard players get #Temp plate_havoc.card
+##Armour
+data modify storage plate_havoc:cards temp set compute default float {type:"mul",inputs:[2,{type:"storage",storage:"plate_havoc:cards",path:"executing.count"}]}
+##Armour Toughness
+data modify storage plate_havoc:cards temp2 set compute default float {type:"mul",inputs:[1,{type:"storage",storage:"plate_havoc:cards",path:"executing.count"}]}
 
 ##Apply to players
 execute as @a[tag=plate_havoc.survivor] run function plate_havoc_content:cards/armoured_up/apply with storage plate_havoc:cards

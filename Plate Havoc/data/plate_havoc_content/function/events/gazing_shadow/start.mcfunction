@@ -1,4 +1,4 @@
-execute if score #PHC.Gazing_Shadow.Cooldown plate_havoc.event matches 1.. run return run function plate_havoc_content:events/gazing_shadow/restart
+execute if score #PHC.Gazing_Shadow.Cooldown plate_havoc.event matches 1.. run return run scoreboard players set #Restart plate_havoc.event 1
 
 function plate_havoc_content:events/gazing_shadow/setup
 function plate_havoc_content:events/gazing_shadow/loop

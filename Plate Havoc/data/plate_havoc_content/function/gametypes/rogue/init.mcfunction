@@ -1,4 +1,4 @@
-tellraw @a [{text:"Void Endurance",color:gold},{text:"\nThe intended Endurance experience. Survive with or without others.",color:"gray"}]
+gamerule block_drops true
 
 data modify storage plate_havoc:ui bar.global.snbt[{id:time}].extra set value [{meta:default,text:"⏳",extra:[{score:{name:"#Visual.Left.Second",objective:plate_havoc.timer},color:yellow},".",{score:{name:"#Visual.Left.Tick",objective:plate_havoc.timer},color:yellow}]}]
 
@@ -14,6 +14,9 @@ data modify storage plate_havoc:data functions.end_condition set value "plate_ha
 data modify storage plate_havoc:data functions.tick set value "plate_havoc_content:gametypes/rogue/tick"
 
 data modify storage plate_havoc:data functions.last_stand set value "plate_havoc_content:gametypes/rogue/last_one"
+
+scoreboard players set #AllowBlockInteraction plate_havoc.num 1
+data modify storage plate_havoc:data functions.gametype_attributes set value "plate_havoc_content:gametypes/rogue/gametype_attributes"
 
 data modify storage plate_havoc:data functions.leaderboard.sort_type set value {type:"cycle"}
 data modify storage plate_havoc:data functions.leaderboard.credit_loop set value "plate_havoc_content:leaderboard/types/cycle/loop"

@@ -4,4 +4,4 @@ execute store result storage plate_havoc:temp temp int 1 run function plate_havo
 
 function plate_havoc_content:cards/777_machine/get with storage plate_havoc:temp
 function plate_havoc_content:cards/777_machine/apply with storage plate_havoc:cards active_data.plate_havoc_content.777_machine
-tellraw @a ["",{text:"Triple 7 Machine",color:green}," has granted: ",{text:"[",color:gray},{storage:"plate_havoc:cards",nbt:active_data.plate_havoc_content.777_machine.id,color:gold},{text:"]",color:gray}]
+tellraw @a ["",{translate:"plate_havoc_content:card.777_machine.name",fallback:"Triple 7 Machine",color:green}," ",{translate:"plate_havoc:shared.has_granted",fallback:"has granted"},": ",{text:"[",color:gray},{storage:"plate_havoc:cards",nbt:active_data.plate_havoc_content.777_machine.id,color:gold},{text:"]",color:gray}]

@@ -96,7 +96,7 @@ data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:card.reward.scale",values:{base:1}}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:reroll.scale",values:{base:1}}
 
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:cyclathron_yield",values:{base:1,min:0},update:[{type:score,value:"#Yield plate_havoc.cyclathron",scale:0.1}]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:cyclathron_yield",values:{base:1,min:0}}
 
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:event.time",values:{base:0.075},update:[{type:score,value:"#Event plate_havoc.timer"}]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc:event.repeats",values:{base:0.001},update:[{type:score,value:"#EventRepeats plate_havoc.num"}]}

@@ -5,4 +5,4 @@ data modify storage plate_havoc:leaderboard temp set value {credit:true}
 data modify storage plate_havoc:leaderboard temp.player set from storage plate_havoc:temp stored_name.raw
 function plate_havoc:misc/logbook/leaderboard/credit/merge with storage plate_havoc:temp stored_name
 
-tellraw @s {text:"Credit earned!",color:green}
+tellraw @s {translate:"plate_havoc:player.earned_credit",fallback:"Earned credit!",color:green}

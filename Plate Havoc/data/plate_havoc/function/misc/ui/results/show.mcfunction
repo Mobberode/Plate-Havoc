@@ -7,7 +7,7 @@ execute store result storage plate_havoc:temp temp.entry int 1 run scoreboard pl
 
 data remove storage plate_havoc:leaderboard viewing
 function plate_havoc:misc/ui/results/get_run_info with storage plate_havoc:temp temp
-execute unless data storage plate_havoc:leaderboard viewing run return run tellraw @s {text:"Cannot find entry!",color:red}
+execute unless data storage plate_havoc:leaderboard viewing run return run tellraw @s {translate:"plate_havoc:error.null_history_entry",fallback:"Cannot find entry!",color:red}
 
 data modify storage plate_havoc:leaderboard viewing.temp set from storage plate_havoc:leaderboard viewing.data.players[0]
 

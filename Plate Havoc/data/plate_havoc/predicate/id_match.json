@@ -1,6 +1,5 @@
 {
   "type": "entity_scores",
-  "condition": "minecraft:entity_scores",
   "entity": "this",
   "scores": {
     "plate_havoc.id": {

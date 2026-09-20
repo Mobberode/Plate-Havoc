@@ -1,0 +1,1 @@
+scoreboard players operation #Visual.Left.Second plate_havoc.timer -= #PHC.Glitched_Timer plate_havoc.temp

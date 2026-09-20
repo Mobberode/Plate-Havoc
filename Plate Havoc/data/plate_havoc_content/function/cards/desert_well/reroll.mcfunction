@@ -1,0 +1,1 @@
+scoreboard players add #PHC.Desert_Well plate_havoc.num 1

@@ -4,4 +4,4 @@ execute store result score #Temp plate_havoc.temp run data get storage plate_hav
 scoreboard players operation #Value plate_havoc.cyclathron -= #Temp plate_havoc.temp
 
 execute store result storage plate_havoc:temp temp float 0.01 run data get storage plate_havoc:temp temp
-tellraw @a ["",{text:"Due Taxes",color:dark_purple}," has deducted: ",{storage:"plate_havoc:temp",nbt:temp,color:aqua}," Cyclathrons."]
+tellraw @a ["",{translate:"plate_havoc_content:card.due_taxes.name",fallback:"Due Taxes",color:dark_purple}," ",{translate:"plate_havoc:shared.deducted",fallback:"deducted"}," ",{storage:"plate_havoc:temp",nbt:temp,color:aqua}," ",{translate:"plate_havoc:shared.Cyclathrons",fallback:"Cyclathrons"},"."]

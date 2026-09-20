@@ -1,0 +1,6 @@
+{
+    "type": "location_check",
+    "predicate": {
+        "light": {"light":{"max":4}}
+    }
+}

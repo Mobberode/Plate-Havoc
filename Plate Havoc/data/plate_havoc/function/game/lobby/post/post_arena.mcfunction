@@ -15,7 +15,7 @@ execute store result storage plate_havoc:data seed.value int 1 run scoreboard pl
 function plate_havoc:misc/seed/set with storage plate_havoc:data seed
 
 function plate_havoc:misc/seed/run_id
-tellraw @a ["Seed: ",{score:{name:"#Seed",objective:plate_havoc.num},color:green},"\nRun ID: ",{score:{name:"#Run",objective:plate_havoc.run_id},color:aqua}]
+tellraw @a [{translate:"plate_havoc:shared.Seed",fallback:"Seed"},": ",{score:{name:"#Seed",objective:plate_havoc.num},color:green},"\n",{translate:"plate_havoc:shared.Run_ID",fallback:"Run ID"},": ",{score:{name:"#Run",objective:plate_havoc.run_id},color:aqua}]
 
 ##Process
 scoreboard players reset * plate_havoc.id

@@ -1,1 +1,0 @@
-$execute store result storage plate_havoc:temp temp.yield int $(value) run data get storage plate_havoc:temp temp.yield

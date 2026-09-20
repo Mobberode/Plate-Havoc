@@ -1,0 +1,2 @@
+execute if score @s[predicate=plate_havoc:periodic_tick/20] plate_havoc_content.card.pitch_black.exposure matches 200.. run function plate_havoc_content:cards/pitch_black/damage
+scoreboard players add @s plate_havoc_content.card.pitch_black.exposure 1

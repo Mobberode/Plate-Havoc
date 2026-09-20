@@ -133,7 +133,7 @@ data modify storage plate_havoc:temp data set value [\
 \
 {id:"plate_havoc_content:ice_road",data:{global:{intensity:{min:6},function:"plate_havoc_content:events/ice_road/start"}}},\
 \
-{id:"plate_havoc_content:monster_spawner",data:{global:{intensity:{min:7},function:"plate_havoc_content:events/monster_spawner/start"}}},\
+{id:"plate_havoc_content:monster_spawner",data:{global:{intensity:{min:5},function:"plate_havoc_content:events/monster_spawner/start"}}},\
 \
 {id:"plate_havoc_content:phantom",data:{global:{intensity:{min:3},function:"plate_havoc_content:events/phantom/start"}}},\
 \

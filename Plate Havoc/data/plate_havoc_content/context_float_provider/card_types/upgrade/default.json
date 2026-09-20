@@ -10,7 +10,7 @@
     {
       "type": "minecraft:mul",
       "inputs": [
-        0.5,
+        0.25,
         {"type": "storage","storage":"plate_havoc:cards","path":"attributes.rerollable.usages","fallback":0},
         {"type": "minecraft:storage",
         "storage": "plate_havoc:custom",

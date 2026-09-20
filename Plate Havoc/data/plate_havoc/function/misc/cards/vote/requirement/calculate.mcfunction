@@ -19,6 +19,6 @@ execute if score #VotingRequirement plate_havoc.players matches ..0 run scoreboa
 execute store result storage plate_havoc:cards voting_requirement int 1 run scoreboard players get #VotingRequirement plate_havoc.players
 
 ##Visual if requirement count changed
-execute unless score #PastVotingRequirement plate_havoc.players = #VotingRequirement plate_havoc.players run tellraw @a ["",{text:"Card Voting Requirement changed to ",color:yellow},{score:{name:"#VotingRequirement",objective:plate_havoc.players},color:gold},{text:"...",color:yellow}]
+#execute unless score #PastVotingRequirement plate_havoc.players = #VotingRequirement plate_havoc.players run tellraw @a ["",{text:"Card Voting Requirement changed to ",color:yellow},{score:{name:"#VotingRequirement",objective:plate_havoc.players},color:gold},{text:"...",color:yellow}]
 
 #tellraw @a ["",{score:{name:"#PastVotingRequirement",objective:plate_havoc.players},color:red},{score:{name:"#VotingRequirement",objective:plate_havoc.players},color:green},{score:{name:"#Match",objective:plate_havoc.players},color:blue}]

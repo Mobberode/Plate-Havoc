@@ -40,6 +40,8 @@ attribute @s waypoint_transmit_range base reset
 
 execute if score #AllowBlockInteraction plate_havoc.num matches 1.. run function plate_havoc:misc/attributes/allow_block_interaction
 
+function plate_havoc:misc/gametype_attributes with storage plate_havoc:data functions
+
 execute store result storage plate_havoc:temp temp int 1 run scoreboard players get @s plate_havoc.survivor.id
 function plate_havoc:misc/survivor/set with storage plate_havoc:temp
 

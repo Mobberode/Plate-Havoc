@@ -1,1 +1,1 @@
-$scoreboard players reset @s $(objective)
+$scoreboard players set @s $(objective) 0

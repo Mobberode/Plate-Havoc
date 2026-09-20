@@ -1,5 +1,4 @@
 {
     "type": "weather_check",
-    "condition": "weather_check",
     "thundering": true
 }

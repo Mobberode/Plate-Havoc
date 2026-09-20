@@ -1,0 +1,1 @@
+execute store result score #PHC.Glitched_Timer plate_havoc.temp run random value 10..45 plate_havoc:seed

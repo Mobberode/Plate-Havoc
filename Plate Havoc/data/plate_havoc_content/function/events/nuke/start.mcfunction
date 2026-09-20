@@ -1,3 +1,5 @@
+execute if score #PHC.Nuke.Cooldown plate_havoc.event matches 1.. run return run scoreboard players set #Restart plate_havoc.event 1
+
 execute store result score #Temp plate_havoc.temp run function plate_havoc:misc/prng {max:100}
 execute if score #PHC.Sapper plate_havoc.temp >= #Temp plate_havoc.temp run return run function plate_havoc_content:events/nuke/sap
 
@@ -13,3 +15,6 @@ function plate_havoc_content:events/nuke/loop
 
 data modify storage plate_havoc:ui temp set value {message:{text:"Nuke will slowly fall.",color:red}}
 function plate_havoc:game/events/message/create_entry
+
+scoreboard players set PHC.Nuke.Cooldown plate_havoc.event 401
+function plate_havoc_content:events/nuke/cooldown

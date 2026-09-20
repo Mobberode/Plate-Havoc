@@ -1,0 +1,1 @@
+execute if entity @s[advancements={plate_havoc_content:cards/endercation=true}] run function plate_havoc_content:cards/endercation/proc

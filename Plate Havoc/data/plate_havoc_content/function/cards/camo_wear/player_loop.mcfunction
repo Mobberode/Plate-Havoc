@@ -1,0 +1,2 @@
+attribute @s attack_damage modifier remove plate_havoc_content:card.camo_wear
+attribute @s[predicate=plate_havoc_content:has_invisibility] attack_damage modifier add plate_havoc_content:card.camo_wear 1.5 add_multiplied_total

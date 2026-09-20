@@ -10,7 +10,10 @@ scoreboard players set #Value plate_havoc.timer 100
 
 function plate_havoc:game/events/pool/init
 
-execute unless data storage plate_havoc:leaderboard {status:true} run tellraw @a {text:"[⚠] Leaderboard unavailable!",color:red}
+execute unless data storage plate_havoc:leaderboard {status:true} run tellraw @a [{text:"[⚠] ",color:red},{translate:"plate_havoc:leaderboard.unavailable",fallback:"Leaderboard unavailable!"}]
+
+function plate_havoc:game/lobby/post/gametype/internal/visual
+tellraw @a {storage:"plate_havoc:temp",nbt:temp,interpret:true}
 
 $function $(function)
 schedule function plate_havoc:game/lobby/arena/run 1s

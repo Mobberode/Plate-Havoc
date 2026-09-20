@@ -1,10 +1,4 @@
-##Set
-scoreboard players set #Temp plate_havoc.card 25
-##Card level
-execute store result score #Level plate_havoc.card run data get storage plate_havoc:cards executing.count
-scoreboard players operation #Temp plate_havoc.card *= #Level plate_havoc.card
-##Store
-execute store result storage plate_havoc:cards temp double 0.1 run scoreboard players get #Temp plate_havoc.card
+data modify storage plate_havoc:cards temp set compute default float {type:"mul",inputs:[2.5,{type:"storage",storage:"plate_havoc:cards",path:"executing.count"}]}
 
 ##Apply to players
 execute as @a[tag=plate_havoc.survivor] run function plate_havoc_content:cards/hearty/apply with storage plate_havoc:cards

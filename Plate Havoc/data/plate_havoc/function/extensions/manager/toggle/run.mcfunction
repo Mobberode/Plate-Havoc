@@ -2,7 +2,7 @@ data remove storage plate_havoc:temp temp
 $data modify storage plate_havoc:temp temp set from storage plate_havoc:data extensions.statuses[{numerical_id:$(temp)}]
 
 #Dont exist, fail
-execute unless data storage plate_havoc:temp temp run return run tellraw @s {text:"Extension not found!",color:red}
+execute unless data storage plate_havoc:temp temp run return fail
 #Else
 function plate_havoc:extensions/manager/toggle/condition
 

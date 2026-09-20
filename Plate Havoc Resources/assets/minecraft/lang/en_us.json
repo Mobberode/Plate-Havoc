@@ -13,6 +13,23 @@
     "plate_havoc:shared.Run_History": "Run History",
     "plate_havoc:shared.Leaderboard": "Leaderboard",
     "plate_havoc:shared.Attributes": "Attributes",
+    "plate_havoc:shared.Seed": "Seed",
+    "plate_havoc:shared.Run_ID": "Run ID",
+    "plate_havoc:shared.Modifier": "Modifier",
+    "plate_havoc:shared.has_granted": "has granted",
+    "plate_havoc:shared.has_given": "has given",
+    "plate_havoc:shared.has_yielded": "has yielded",
+    "plate_havoc:shared.used_on": "used on",
+    "plate_havoc:shared.deducted": "deducted",
+
+
+    "plate_havoc:error.no_perm": "No permissions!",
+    "plate_havoc:error.game_active": "Cannot change mid-game!",
+    "plate_havoc:error.null_history_entry": "Cannot find entry!",
+
+
+    "plate_havoc:player.respawned": "Has respawned",
+    "plate_havoc:player.earned_credit": "Earned credit!",
 
 
     "plate_havoc:description.cyclathrons": "Main currency exchanged for advantages.",
@@ -25,7 +42,10 @@
     "plate_havoc:intermission.accelerate.multiplayer": "to quicken intermission.",
     "plate_havoc:intermission.accelerate.solo": "to start the game.",
     "plate_havoc:awaiting_load": "Waiting for game contents...",
-    
+    "plate_havoc:load_failed": "Loading failed! Restarting.",
+
+
+    "plate_havoc:last_stand": "The clock tolls, looming over death's door...",    
     "plate_havoc:end_status": "Game Over",
     "plate_havoc:end_message": "...and so saw nothingness.",
 
@@ -33,9 +53,11 @@
     "plate_havoc:card.info.exclusive": "Exclusive Cards",
     "plate_havoc:card.reroll": "Reroll Selections",
     "plate_havoc:card.continue": "Continue",
+    "plate_havoc:card.removed": "Removed Card",
     "plate_havoc:card.nothing": "There is nothing. The only way is deeper.",
     "plate_havoc:card.deck": "Card Deck",
     "plate_havoc:card.escape_selection": "Escape",
+    "plate_havoc:card.voting.timed.fail": "A selection was made but was too expensive!",
     "plate_havoc:extensions": "Extensions",
 
 
@@ -49,9 +71,12 @@
     "plate_havoc:difficulty.eclipsed.subtext": "To be forever forgotten.",
     "plate_havoc:difficulty.eclipsed.description": "Everything gets stronger but so do you. Heavily changed mechanics, Deeper Curses by Cycle 5. -0.15x Cost and +0.2x Reward.",
 
+
     "plate_havoc:modifier.chaos_infuser.name": "Chaos Infuser",
     "plate_havoc:modifier.chaos_infuser.description": "Chaos shops every 3rd Cycle with 5 selections that can be drastic.",
 
+
+    "plate_havoc:leaderboard.unavailable": "Leaderboard unavailable!",
     "plate_havoc:leaderboard.run_information": "Run Information",
     "plate_havoc:leaderboard.player_information": "Player Information",
     "plate_havoc:leaderboard.continue": "Press [ ESC ] to Continue...",
@@ -92,9 +117,6 @@
 
     "plate_havoc_content:survivor.jack.name": "Jack",
     "plate_havoc_content:survivor.jack.subtext": "A non-specialized all rounder, suitable and reliable for all kinds of situations.",
-
-    "plate_havoc_content:survivor.hex.name": "Hex",
-    "plate_havoc_content:survivor.hex.subtext": "Deep in my solitude, I feel myself slowly slipping away from me.",
    
     "plate_havoc_content:survivor.phoon.name": "Phoon",
     "plate_havoc_content:survivor.phoon.subtext": "too much for zblock",
@@ -146,9 +168,6 @@
     "plate_havoc_content:card.multi_use_umbrella.name": "Multi-Use Umbrella",
     "plate_havoc_content:card.multi_use_umbrella.description": "Shear when cobwebbed for 1s. 15s immunity to Acid Rain. Splashers activate for 5s with a 1m cooldown when on fire, extinguishing flames.",
 
-    "plate_havoc_content:card.hands_of_creativity.name": "Hands of Creativity",
-    "plate_havoc_content:card.hands_of_creativity.description": "Gain the ability to Break, Place and Interact with blocks.",
-
     "plate_havoc_content:card.box_of_meats.name": "Box of Meats",
     "plate_havoc_content:card.box_of_meats.description": "Gain 3 Cooked Mutton upon the start of a Cycle.",
 
@@ -166,9 +185,6 @@
 
     "plate_havoc_content:card.vampiristic_lifeblood.name": "Vampiristic Lifeblood",
     "plate_havoc_content:card.vampiristic_lifeblood.description": "+5 Max hearts. Killing mobs restores a portion of health.",
-
-    "plate_havoc_content:card.gods_hand.name": "God's Hand",
-    "plate_havoc_content:card.gods_hand.description": "Double Mining speed, +1 Interaction range. Blocks and mob loot now drops.",
 
     "plate_havoc_content:card.glacier_player.name": "Glacier Player",
     "plate_havoc_content:card.glacier_player.description": "Revives a random player if there are none alive and gets consumed for the cycle.",
@@ -194,6 +210,7 @@
 
     "plate_havoc_content:card.critical_rollback.name": "Critical Rollback",
     "plate_havoc_content:card.critical_rollback.description": "Blocks damage that would've killed regardless of health (Max: 2).",
+    "plate_havoc_content:card.critical_rollback.behaviour.remainder": "Rollbacks remaining",
 
     "plate_havoc_content:card.double_jump.name": "Double Jump",
     "plate_havoc_content:card.double_jump.description1": "Gain an additional jump. Press",
@@ -285,6 +302,24 @@
 
     "plate_havoc_content:card.d20.name": "D20",
     "plate_havoc_content:card.d20.description": "For every 3 rerolls with a cost that are used, make the next reroll free.",
+     
+    "plate_havoc_content:card.old_war_stealthkit.name": "Old War Stealthkit",
+    "plate_havoc_content:card.old_war_stealthkit.description": "Become invisible with a +10%% Movement speed increase when under 25%% health.", 
+
+    "plate_havoc_content:card.endercation.name": "Endercation",
+    "plate_havoc_content:card.endercation.description": "10%% chance to teleport the attacker to a random location when hit by an entity.", 
+
+    "plate_havoc_content:card.desert_well.name": "Desert Well",
+    "plate_havoc_content:card.desert_well.description": "Rerolling increases Event time by +12.5%% for the cycle.", 
+
+    "plate_havoc_content:card.rusted_blade.name": "Rusted Blade",
+    "plate_havoc_content:card.rusted_blade.description": "Clocks spawn with +0.125 value for every player that hasn't been damaged for the entire cycle.", 
+
+    "plate_havoc_content:card.digging_claw.name": "Digging Claw",
+    "plate_havoc_content:card.digging_claw.description": "+20%% Block breaking speed when crouched.", 
+
+    "plate_havoc_content:card.camo_wear.name": "Camo Wear",
+    "plate_havoc_content:card.camo_wear.description": "Deal 2.5x Attack damage when invisible.", 
 
     
     "plate_havoc_content:card.piranha_season.name": "Piranha Season",
@@ -437,6 +472,7 @@
 
     "plate_havoc_content:card.cranked.name": "Cranked",
     "plate_havoc_content:card.cranked.description": "Upkeep your Cranked timer (30(90 max)) by collecting Clocks for +((Spawn Time *1.66(*1.33 elsewise)) /Spawn Number) Timing out kills. Clocks explode briefly on Eclipsed.",
+    "plate_havoc_content:card.cranked.behaviour.expired": "'s time expired",
 
     "plate_havoc_content:card.white_eyes.name": "White Eyes",
     "plate_havoc_content:card.white_eyes.description": "Herobrine every 50th teleport summons multiple fake versions of itself directly above Clocks, making them uncollectable. Find the real one to reverse this.",
@@ -500,6 +536,15 @@
     "plate_havoc_content:card.alpha_eater.name": "Alpha Eater",
     "plate_havoc_content:card.alpha_eater.description": "Foods are consumed instantly.",
 
+    "plate_havoc_content:card.pitch_black.name": "Pitch Black",
+    "plate_havoc_content:card.pitch_black.description": "Players take damage if left in total darkness for 10 seconds.",
+    
+    "plate_havoc_content:card.glitched_timer.name": "Glitched Timer",
+    "plate_havoc_content:card.glitched_timer.description": "The cycle time can be off by 10 to 45 seconds.",
+
+    "plate_havoc_content:card.hallucinogenic_overdose.name": "Hallucinogenic Overdose",
+    "plate_havoc_content:card.hallucinogenic_overdose.description": "Applies every overlay on the screen.",
+
 
     "plate_havoc_content:card.oak_effigy.name": "Oak Effigy",
     "plate_havoc_content:card.oak_effigy.description": "When all players are dead, end the current cycle and become consumed, usable once per run.",
@@ -535,6 +580,9 @@
     "plate_havoc_content:objective.description": "Conditions needed to pass this Cycle!",
         
 
+    "plate_havoc_content:gametype.rogue.name": "Forgotten",
+    "plate_havoc_content:gametype.rogue.description": "Lost to be forever forgotten.",    
+
     "plate_havoc_content:music.excuse": "Excuse",
 
     
@@ -542,6 +590,6 @@
 
 
     "plate_havoc:tutorial.introductory": "A roguelite plate game based around surviving random events.",
-    "plate_havoc:tutorial.main": "Survive events that raise the Intensity (🔥), becoming increasingly severe.\n\nCollect Clocks to deduct Time (⏳), the primary goal for the next Cycle.\n\nCyclathrons (€) is a shared currency from Clocks or means for purchasing Cards.\n\nCards can be beneficial, harmful or both (Upgrades & Curses).\n\nSurvivors have unique abilities, different style and stats.\n\nThere are several vanilla changes (0.5x Air Drag, locked Breaking & Building).",
+    "plate_havoc:tutorial.main": "Survive events that raise the Intensity (🔥), becoming increasingly severe.\n\nCollect Clocks to deduct Time (⏳), the primary goal for the next Cycle.\n\nCyclathrons (€) is a shared currency from Clocks or means for purchasing Cards.\n\nCards can be beneficial, harmful or both (Upgrades & Curses).\n\nSurvivors have unique abilities, different style and stats.\n\nThere are several vanilla changes (0.5x Air drag and lessened Breaking & Building).",
     "plate_havoc:tutorial.end": "For Modrinth people, this is a more polished version of the classic game with modern changes and additions from phase 1 of Splintered Worlds. The Discord link is found on the page."
 }
