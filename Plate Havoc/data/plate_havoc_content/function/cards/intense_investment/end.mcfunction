@@ -16,4 +16,4 @@ scoreboard players operation #Value plate_havoc.cyclathron += #Temp plate_havoc.
 scoreboard players operation #Stat.Cyclathrons_Yielded plate_havoc.num += #Temp plate_havoc.temp
 
 #Visual
-tellraw @a ["",{text:"Intense Investment",color:green}," has given: ",{storage:"plate_havoc:ui",nbt:temp,color:aqua}," Cyclathrons."]
+tellraw @a ["",{translate:"plate_havoc_content:card.intense_investment.name",fallback:"Intense Investment",color:green}," ",{translate:"plate_havoc:shared.has_yielded",fallback:"has yielded"},": ",{storage:"plate_havoc:ui",nbt:temp,color:aqua}," ",{translate:"plate_havoc:shared.Cyclathrons",fallback:"Cyclathrons"}]

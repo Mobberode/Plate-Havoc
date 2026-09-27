@@ -34,13 +34,8 @@ scoreboard objectives add plate_havoc.config dummy
 scoreboard objectives add plate_havoc.died deathCount
 scoreboard objectives add plate_havoc.relogged custom:leave_game
 
-scoreboard objectives add plate_havoc.plr.stats.playtime dummy
-scoreboard objectives add plate_havoc.plr.stats.wins dummy
-scoreboard objectives add plate_havoc.plr.stats.taken_damage custom:damage_taken
-
 scoreboard objectives add plate_havoc.stat dummy
 
-scoreboard objectives add plate_havoc.t.stats trigger
 scoreboard objectives add plate_havoc.t.spectator trigger
 scoreboard objectives add plate_havoc.t.credits trigger
 scoreboard objectives add plate_havoc.t.logbook trigger

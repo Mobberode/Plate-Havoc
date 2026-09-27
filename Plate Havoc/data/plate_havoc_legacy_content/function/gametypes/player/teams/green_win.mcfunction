@@ -1,5 +1,3 @@
-scoreboard players add @a[tag=plate_havoc.team.green] plate_havoc.plr.stats.wins 1
-
-data modify storage plate_havoc:ui game.end_status.extra set value [{text:"Green Team won!",color:green}]
+data modify storage plate_havoc:ui game.end_message set value {translate:"plate_havoc_legacy_content:gametype.teams.green",fallback:"Greens won!",color:yellow}
 
 function plate_havoc:game/match/game_over

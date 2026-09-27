@@ -1,1 +1,0 @@
-scoreboard players set @s plate_havoc_content.survivor.hex.time 0

@@ -3,4 +3,4 @@ data modify storage plate_havoc:custom attribute_modifier set value {id:"plate_h
 function plate_havoc:misc/attributes/custom/add_modifier
 function plate_havoc:misc/attributes/custom/input {id:"plate_havoc:event.time"}
 
-tellraw @a ["",{text:"Cube of Decay",color:red}," has rolled on: ",{text:"-25% Event Time",color:red}]
+tellraw @a ["",{translate:"plate_havoc_content:card.cube_of_decay.name",fallback:"Cube of Decay",color:red}," ",{translate:"plate_havoc:shared.has_rolled",fallback:"has rolled"},": ",{text:"-25% ",color:red,extra:[{translate:"plate_havoc:shared.attributes.Event_time",fallback:"Event time"}]}]

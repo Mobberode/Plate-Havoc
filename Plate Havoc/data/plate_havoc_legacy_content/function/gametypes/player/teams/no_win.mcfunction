@@ -1,3 +1,3 @@
-tellraw @a [{text:""},{text:"Game ended with no winners. Only losers",color:red},{text:"\nElasped Time: ",color:gray},{score:{name:"#Visual.Duration.Second",objective:plate_havoc.timer},color:gold},".",{score:{name:"#Visual.Duration.Tick",objective:plate_havoc.timer},color:gold},{text:"\nIntensity: ",color:gray},{storage:"plate_havoc:data",nbt:intensity,color:gold}]
+data modify storage plate_havoc:ui game.end_message set value {translate:"plate_havoc_legacy_content:shared.no_winners",fallback:"Game ended with no winners. Only losers.",color:red}
 
 function plate_havoc:game/match/game_over

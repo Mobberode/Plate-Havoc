@@ -1,2 +1,2 @@
-attribute @s block_break_speed modifier add plate_havoc_content:gametype.rogue.reduce -0.8 add_multiplied_total
-attribute @s block_interaction_range modifier add plate_havoc_content:gametype.rogue.reduce -0.5 add_multiplied_total
+attribute @s block_break_speed modifier add plate_havoc_content:gametype.rogue.reduce -0.75 add_multiplied_total
+attribute @s block_interaction_range modifier add plate_havoc_content:gametype.rogue.reduce -0.33 add_multiplied_total

@@ -1,0 +1,1 @@
+attribute @s max_health modifier add plate_havoc_content:card.withered_deal 20 add_value

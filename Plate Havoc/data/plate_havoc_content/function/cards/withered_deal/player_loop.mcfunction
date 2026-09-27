@@ -1,0 +1,1 @@
+effect give @s[predicate=!plate_havoc_content:has_wither] wither

@@ -1,2 +1,2 @@
 scoreboard players add #Left plate_havoc.timer 1200
-tellraw @a ["",{text:"Cube of Decay",color:red}," has rolled on: ",{text:"+1 Minute to Timer",color:red}]
+tellraw @a ["",{translate:"plate_havoc_content:card.cube_of_decay.name",fallback:"Cube of Decay",color:red}," ",{translate:"plate_havoc:shared.has_rolled",fallback:"has rolled"},": ",{text:"+1 ",color:red,extra:[{translate:"plate_havoc:shared.Minute",fallback:"Minute"}]}]

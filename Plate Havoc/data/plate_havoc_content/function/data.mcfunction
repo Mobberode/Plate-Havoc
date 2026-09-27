@@ -96,7 +96,7 @@ data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_
 ## laser_drill (Warning Time) (Danger Time) (Explosion Power)
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.laser_drill.warning_time",values:{base:0.14},tags:["plate_havoc_content:cube_of_decay.outcome.less_agression","plate_havoc_content:enraged.shorter"]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.laser_drill.danger_time",values:{base:0.06},tags:["plate_havoc_content:cube_of_decay.outcome.less_agression"]}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.laser_drill.power",values:{base:4},tags:["plate_havoc_content:enraged.aggressive","plate_havoc_content:life_harmony.applicable","plate_havoc_content:sunlight.applicable"]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.laser_drill.power",values:{base:5},tags:["plate_havoc_content:enraged.aggressive","plate_havoc_content:life_harmony.applicable","plate_havoc_content:sunlight.applicable"]}
 ## motion_sniper (Ammo) (Delay) (WarningTime) (Damage)
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.motion_sniper.ammo",values:{base:0.006},tags:["plate_havoc_content:enraged.shorter"],update:[{type:score,value:"#PHC.Motion_Sniper.Ammo plate_havoc.event"}]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.motion_sniper.delay",values:{base:0.15},tags:["plate_havoc_content:cube_of_decay.outcome.less_agression","plate_havoc_content:enraged.shorter"],update:[{type:score,value:"#PHC.Motion_Sniper.Delay plate_havoc.event"}]}
@@ -104,7 +104,7 @@ data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.motion_sniper.damage",values:{base:15},tags:["plate_havoc_content:enraged.aggressive","plate_havoc_content:life_harmony.applicable","plate_havoc_content:sunlight.applicable"]}
 ## outer_space_gravity (Duration) (Effect Strength)
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.outer_space_gravity.duration",values:{base:0.6}}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.outer_space_gravity.strength_multiplier",values:{base:0.66}}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.outer_space_gravity.strength_multiplier",values:{base:0.5},update:[{type:score,value:"#PHC.Outer_Space_Gravity.Saved_Multiplier plate_havoc.event"}]}
 ## sapling_drop (Amount) (Delay)
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.sapling_drop.value",values:{base:0.005}}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.sapling_drop.delay",values:{base:0.1},tags:["plate_havoc_content:slow_passing.applicable"]}
@@ -268,6 +268,8 @@ scoreboard objectives add plate_havoc_content.card.impactful_landing.time dummy
 scoreboard objectives add plate_havoc_content.card.bloodlust.value dummy
 scoreboard objectives add plate_havoc_content.card.rusted_blade.damaged custom:damage_taken
 scoreboard objectives add plate_havoc_content.card.pitch_black.exposure dummy
+scoreboard objectives add plate_havoc_content.card.adrenaline.active dummy
+scoreboard objectives add plate_havoc_content.card.adrenaline.times dummy
 
 scoreboard objectives add plate_havoc_content.survivor.charger.amount dummy
 scoreboard objectives add plate_havoc_content.survivor.charger.using dummy
@@ -300,7 +302,7 @@ scoreboard objectives add plate_havoc_content.max_value dummy
 scoreboard objectives add plate_havoc_content.leaderboard.cycle.current dummy
 scoreboard objectives add plate_havoc_content.leaderboard.cycle.saved dummy
 
-data modify storage plate_havoc:temp extension_data set value [plate_havoc_content.event.acid_rain.exposure,plate_havoc_content.event.jump_cooldown,plate_havoc_content.event.jump_afterdown,plate_havoc_content.event.shop_token,plate_havoc_content.event.flame_guardian.time,plate_havoc_content.event.flame_guardian.active,plate_havoc_content.event.motion_sniper.time,plate_havoc_content.event.piranha.attack_delay,plate_havoc_content.event.piranha.attacked_times,plate_havoc_content.card.multi_use_umbrella.splasher_using,plate_havoc_content.card.multi_use_umbrella.splasher_cooldown,plate_havoc_content.card.multi_use_umbrella.acid_immunity,plate_havoc_content.event.piranha.active_time,"plate_havoc_content.card.mutilated_teddy","plate_havoc_content.card.lasting_acid","plate_havoc_content.card.multi_use_umbrella.cobwebbed","plate_havoc_content.card.nanomachines.damage","plate_havoc_content.card.nanomachines.duration","plate_havoc_content.card.nanomachines.stack","plate_havoc_content.card.purified_hourglass.value","plate_havoc_content.card.rusted_blade.damaged","plate_havoc_content.card.pitch_black.exposure"]
+data modify storage plate_havoc:temp extension_data set value [plate_havoc_content.event.acid_rain.exposure,plate_havoc_content.event.jump_cooldown,plate_havoc_content.event.jump_afterdown,plate_havoc_content.event.shop_token,plate_havoc_content.event.flame_guardian.time,plate_havoc_content.event.flame_guardian.active,plate_havoc_content.event.motion_sniper.time,plate_havoc_content.event.piranha.attack_delay,plate_havoc_content.event.piranha.attacked_times,plate_havoc_content.card.multi_use_umbrella.splasher_using,plate_havoc_content.card.multi_use_umbrella.splasher_cooldown,plate_havoc_content.card.multi_use_umbrella.acid_immunity,plate_havoc_content.event.piranha.active_time,"plate_havoc_content.card.mutilated_teddy","plate_havoc_content.card.lasting_acid","plate_havoc_content.card.multi_use_umbrella.cobwebbed","plate_havoc_content.card.nanomachines.damage","plate_havoc_content.card.nanomachines.duration","plate_havoc_content.card.nanomachines.stack","plate_havoc_content.card.purified_hourglass.value","plate_havoc_content.card.rusted_blade.damaged","plate_havoc_content.card.pitch_black.exposure",plate_havoc_content.card.adrenaline.times]
 data modify storage plate_havoc:data score_reset append from storage plate_havoc:temp extension_data[]
 
 data modify storage plate_havoc:temp extension_data set value ["plate_havoc_content.card.blood_money"]

@@ -10,8 +10,6 @@ execute as @a[tag=!plate_havoc.spectator] run function plate_havoc:game/lobby/po
 scoreboard players set #Duration plate_havoc.timer -1
 function plate_havoc:game/time/stopwatch
 
-function plate_havoc:game/time/match
-
 function plate_havoc:misc/on_game_start/loop
 
 scoreboard players operation #Max plate_havoc.timer = #Value plate_havoc.timer

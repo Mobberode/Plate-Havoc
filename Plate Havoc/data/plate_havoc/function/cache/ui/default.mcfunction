@@ -32,4 +32,5 @@ data remove storage plate_havoc:ui game
 data modify storage plate_havoc:ui event_messages set value []
 
 #End
+data modify storage plate_havoc:ui game.end_message set value [{text:"☠ ",color:red},{translate:"plate_havoc:end_message",fallback:"...and so saw nothingness."}," ☠"]
 data modify storage plate_havoc:ui game.end_status set value {id:status,text:"",extra:[{translate:"plate_havoc:end_status",fallback:"Game Over",color:red}]}

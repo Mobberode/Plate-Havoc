@@ -1,7 +1,6 @@
-scoreboard players add @s plate_havoc.plr.stats.wins 1
 tag @s add plate_havoc_content.winner
 
-data modify storage plate_havoc:ui game.end_status.extra set value [{selector:"@a[tag=plate_havoc_content.winner]",color:gold},{text:" Won!"}]
+data modify storage plate_havoc:ui game.end_message set value [{selector:"@a[tag=plate_havoc_content.winner]",color:gold},"",{translate:"plate_havoc_legacy_content:shared.win",fallback:"Won!"}]
 
 function plate_havoc:game/match/game_over
 

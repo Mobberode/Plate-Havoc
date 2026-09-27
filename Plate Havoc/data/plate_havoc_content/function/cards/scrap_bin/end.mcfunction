@@ -12,4 +12,4 @@ execute store result storage plate_havoc:ui temp float 0.01 run scoreboard playe
 scoreboard players operation #Value plate_havoc.cyclathron += #Temp2 plate_havoc.temp
 scoreboard players operation #Stat.Cyclathrons_Yielded plate_havoc.num += #Temp2 plate_havoc.temp
 
-tellraw @a ["",{text:"Scrap Bin",color:green}," has gathered: ",{storage:"plate_havoc:ui",nbt:temp,color:aqua}," Cyclathrons."]
+tellraw @a ["",{translate:"plate_havoc_content:card.scrap_bin.name",fallback:"Scrap Bin",color:green}," ",{translate:"plate_havoc:shared.has_yielded",fallback:"has yielded"},": ",{storage:"plate_havoc:ui",nbt:temp,color:aqua}," ",{translate:"plate_havoc:shared.Cyclathrons",fallback:"Cyclathrons"}]

@@ -1,7 +1,6 @@
 execute unless score @s plate_havoc.test.read matches 2.. run function plate_havoc:test/tutorial
 
 scoreboard players enable @s plate_havoc.t.spectator
-scoreboard players enable @s plate_havoc.t.stats
 scoreboard players enable @s plate_havoc.t.credits
 scoreboard players enable @s plate_havoc.t.console
 scoreboard players enable @s plate_havoc.t.logbook
@@ -18,7 +17,6 @@ execute if entity @s[tag=plate_havoc.spectator] run title @s actionbar {text:"Yo
 execute if score @s plate_havoc.t.exit_dialog matches 1.. run return run function plate_havoc:misc/dialog_close
 execute if score @s plate_havoc.t.survivor_select matches 1.. run function plate_havoc:game/triggers/actions/survivor/check
 execute if score @s plate_havoc.t.spectator matches 1.. run return run function plate_havoc:game/triggers/actions/spectator
-execute if score @s plate_havoc.t.stats matches 1.. run return run function plate_havoc:game/triggers/actions/stats
 execute if score @s plate_havoc.t.credits matches 1.. run return run function plate_havoc:game/triggers/actions/credits
 
 execute if score @s plate_havoc.t.logbook matches 1.. run function plate_havoc:misc/logbook/check

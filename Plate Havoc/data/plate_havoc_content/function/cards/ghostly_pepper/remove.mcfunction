@@ -1,0 +1,2 @@
+data remove storage plate_havoc:custom attributes[{id:"plate_havoc:intensity.gain"}].modifiers[{id:"ghostly_pepper"}]
+function plate_havoc:misc/attributes/custom/input {id:"plate_havoc:intensity.gain"}

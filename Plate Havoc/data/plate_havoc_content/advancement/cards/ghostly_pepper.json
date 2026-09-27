@@ -1,0 +1,9 @@
+{
+  "parent": "plate_havoc:temp",
+  "criteria": {
+    "req":{
+        "trigger": "entity_hurt_player",
+        "conditions": {"damage":{"type":{"tags":[{"id":"freeze","expected":true}]}}}
+    }
+  }
+}

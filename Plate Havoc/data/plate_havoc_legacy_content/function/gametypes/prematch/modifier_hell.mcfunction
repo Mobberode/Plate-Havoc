@@ -1,5 +1,3 @@
-tellraw @a [{text:"Modifier Hell",color:red},{text:"\nArcadic experience with the Modifier limit set to 10!",color:"gray"}]
-
 data modify storage plate_havoc:ui game.spawnpoint.status set value ["",{text:"You can respawn back! Spawnpoint Energy: ",color:aqua},{score:{name:"@s",objective:plate_havoc_content.spawnpoint_energy},color:green},"/",{score:{name:"#Cap",objective:plate_havoc_content.spawnpoint_energy},color:gold}]
 
 data modify storage plate_havoc:data functions.tick_spectator set value "plate_havoc_content:misc/spectator/energy"

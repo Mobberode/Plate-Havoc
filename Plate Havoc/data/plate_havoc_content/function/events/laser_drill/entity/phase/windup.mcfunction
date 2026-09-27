@@ -2,4 +2,4 @@ execute if score @s plate_havoc.timer matches ..0 run return run function plate_
 
 function plate_havoc_content:events/laser_drill/entity/phase/windup_cue
 
-execute at @p[tag=plate_havoc.survivor] run tp ~ 320 ~
+execute positioned as @p[tag=plate_havoc.survivor] run tp ~ 320 ~

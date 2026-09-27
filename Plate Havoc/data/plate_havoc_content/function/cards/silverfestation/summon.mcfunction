@@ -1,2 +1,2 @@
 particle large_smoke ~ ~ ~ 0 0 0 0.025 3
-summon silverfish
+execute summon marker run function plate_havoc:misc/mob/setup/spawn_delayed {entity:{summon:"silverfish",function:"plate_havoc:misc/mob/setup/execute"},ticks_till_spawn:20}

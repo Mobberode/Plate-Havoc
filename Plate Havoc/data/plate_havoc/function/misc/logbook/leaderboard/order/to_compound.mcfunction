@@ -1,4 +1,4 @@
-data modify storage plate_havoc:leaderboard temp.process.value set from storage plate_havoc:leaderboard temp.temp[-1]
+execute store result storage plate_havoc:leaderboard temp.process.value float 1 run data get storage plate_havoc:leaderboard temp.temp[-1]
 
 data modify storage plate_havoc:leaderboard temp.process2 append from storage plate_havoc:leaderboard temp.process
 

@@ -1,2 +1,2 @@
 effect give @a[tag=plate_havoc.survivor] wither 30
-tellraw @a ["",{text:"Cube of Decay",color:red}," has rolled on: ",{text:"All Withered!",color:red}]
+tellraw @a ["",{translate:"plate_havoc_content:card.cube_of_decay.name",fallback:"Cube of Decay",color:red}," ",{translate:"plate_havoc:shared.has_rolled",fallback:"has rolled"},": ",{translate:"plate_havoc_content:card.cube_of_decay.outcome.wither",fallback:"All withered!",color:red}]

@@ -1,5 +1,3 @@
-data modify storage plate_havoc:ui game.end_status.extra set value [{text:"Time out! Survivors win!",color:red}]
-
-scoreboard players add @a[tag=plate_havoc.survivor] plate_havoc.plr.stats.wins 1
+data modify storage plate_havoc:ui game.end_message set value [{translate:"plate_havoc_legacy_content:gametype.arena.time_out",fallback:"Time out! Survivors win!",color:green}]
 
 function plate_havoc:game/match/game_over

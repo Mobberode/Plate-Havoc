@@ -3,4 +3,4 @@ scoreboard players remove @s plate_havoc_content.card.void_rift 1
 effect give @s resistance 3 5
 execute at @s in plate_havoc:arena run function plate_havoc:game/match/player/spread/init
 
-tellraw @s ["",{score:{name:"@s",objective:plate_havoc_content.card.void_rift},color:dark_purple}," Void Rifts remaining."]
+tellraw @s ["",{score:{name:"@s",objective:plate_havoc_content.card.void_rift},color:dark_purple}," ",{translate:"plate_havoc_content:card.void_rift.remainder",fallback:"Void Rifts remaining."}]

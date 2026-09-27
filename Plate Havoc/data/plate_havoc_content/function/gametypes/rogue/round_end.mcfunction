@@ -8,7 +8,7 @@ scoreboard players set #Game plate_havoc.status 1
 scoreboard players add #Value plate_havoc.round 1
 scoreboard players add @a[tag=!plate_havoc.spectator] plate_havoc_content.leaderboard.cycle.current 1
 #Stat.Cycle.Cyclathrons_Yielded plate_havoc.temp
-tellraw @a ["",{score:{name:"#Stat.Cycle.Clocks_Spawned",objective:plate_havoc.temp},color:yellow},{text:" Clock(s)",color:yellow}," yielded: ",{text:"€",color:aqua},{score:{name:"#Stat.Cycle.Cyclathrons_Yielded",objective:plate_havoc.temp},color:aqua},"*0.01"\
+tellraw @a ["",{score:{name:"#Stat.Cycle.Collected_Clocks",objective:plate_havoc.temp},color:yellow},{text:" Clock(s)",color:yellow}," yielded: ",{text:"€",color:aqua},{score:{name:"#Stat.Cycle.Cyclathrons_Yielded",objective:plate_havoc.temp},color:aqua},"*0.01"\
 ]
 
 function plate_havoc:misc/cards/running/types/run {type:on.end}
@@ -26,7 +26,7 @@ scoreboard players reset * plate_havoc.event
 scoreboard players reset * plate_havoc.temp
 function plate_havoc_content:gametypes/rogue/intermission
 
-execute unless data storage plate_havoc:data {run_tags:["no_void_skies:dont_change_void"]} run function plate_havoc_content:gametypes/rogue/arena_visual
+function plate_havoc_content:gametypes/rogue/arena_visual
 
 execute if data storage plate_havoc:data {run_tags:["sunlight"]} if score #Value plate_havoc.round matches 15.. unless data storage plate_havoc:cards match_types[{id:"plate_havoc_content:curse"}].requirements[{type:cycle,value:[1]}] run data modify storage plate_havoc:cards match_types[{id:"plate_havoc_content:curse"}].requirements[{type:cycle}].value set value [1]
 

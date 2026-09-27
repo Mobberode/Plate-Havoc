@@ -3,4 +3,4 @@ data modify storage plate_havoc:custom attribute_modifier set value {id:"plate_h
 function plate_havoc:misc/attributes/custom/add_modifier_grouped
 function plate_havoc:misc/attributes/custom/update_global
 
-tellraw @a ["",{text:"Cube of Decay",color:red}," has rolled on: ",{text:"Less Event Aggression",color:green}]
+tellraw @a ["",{translate:"plate_havoc_content:card.cube_of_decay.name",fallback:"Cube of Decay",color:red}," ",{translate:"plate_havoc:shared.has_rolled",fallback:"has rolled"},": ",{text:"-20% ",color:green,extra:[{translate:"plate_havoc_content:card.cube_of_decay.outcome.less_agression",fallback:"Event aggression"}]}]

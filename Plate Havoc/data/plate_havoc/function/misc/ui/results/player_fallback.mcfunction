@@ -1,3 +1,3 @@
-data modify storage plate_havoc:leaderboard viewing.visual merge value {profile:"Cannot find player!",profile_info:[{text:"Nothing to show!",color:red}]}
+data modify storage plate_havoc:leaderboard viewing.visual merge value {profile:{translate:"plate_havoc:shared.Nothing",fallback:"Nothing"},profile_info:[{translate:"plate_havoc:shared.Nothing",fallback:"Nothing",color:red}]}
 data modify storage plate_havoc:leaderboard viewing.visual.profile set from storage plate_havoc:leaderboard viewing.temp.player
 data modify storage plate_havoc:leaderboard viewing.visual.profile_info set from storage plate_havoc:leaderboard viewing.temp.snbt

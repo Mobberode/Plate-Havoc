@@ -1,2 +1,2 @@
-tellraw @a [{text:"<?> Not yet."}]
+tellraw @a ["<",{text:"?",hover_event:{action:"show_text",value:[{text:"?\n"},{translate:"plate_havoc:shared.Type",fallback:Type},": ?\n?"]}},"> ",{translate:"plate_havoc_content:card.glacier_player.behaviour.init",fallback:"Not yet."}]
 function plate_havoc_content:cards/glacier_player/tick

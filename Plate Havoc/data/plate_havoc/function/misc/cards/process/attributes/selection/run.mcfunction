@@ -2,4 +2,6 @@ execute store result score #Card_Type.Attribute.Selection.Max_Selections plate_h
 
 execute store result score #Card_Type.Attribute.Selection.Minimum_Selections plate_havoc.num run data get storage plate_havoc:cards attributes.selection.skippable.minimum_selections
 
+execute if score #Card_Type.Attribute.Selection.Max_Selections plate_havoc.num > #Card_Type.Attribute.Selection.Minimum_Selections plate_havoc.num run scoreboard players operation #Card_Type.Attribute.Selection.Minimum_Selections plate_havoc.num = #Card_Type.Attribute.Selection.Max_Selections plate_havoc.num
+
 execute if data storage plate_havoc:cards {attributes:{selection:{skippable:{}}}} run function plate_havoc:misc/cards/process/attributes/selection/skippable

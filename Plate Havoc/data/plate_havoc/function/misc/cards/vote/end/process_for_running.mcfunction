@@ -1,6 +1,6 @@
 scoreboard players add #Card.SelectionsMade plate_havoc.temp 1
 #
-function plate_havoc:misc/cards/attributes/selection/continue_condition
+execute store result score #Card.Continue plate_havoc.num run function plate_havoc:misc/cards/attributes/selection/continue_condition
 
 ##Process
 function plate_havoc:misc/cards/vote/end/process

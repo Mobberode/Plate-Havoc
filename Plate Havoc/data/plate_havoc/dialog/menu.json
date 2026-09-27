@@ -8,7 +8,6 @@
         {"label":{"translate":"plate_havoc:extensions","fallback":"Extensions"},"action":{"type":"run_command","command":"/trigger plate_havoc.t.extensions set -1"}},
         {"label":{"translate":"plate_havoc:shared.Survivors","fallback":"Survivors"},"action":{"type":"run_command","command":"/trigger plate_havoc.t.survivor_select"}},
         {"label":"Spectator","action":{"type":"run_command","command":"/trigger plate_havoc.t.spectator"}},
-        {"label":"Logbook","action":{"type":"run_command","command":"/trigger plate_havoc.t.logbook"}},
-        {"label":"Stats","action":{"type":"run_command","command":"/trigger plate_havoc.t.stats"}}
+        {"label":"Logbook","action":{"type":"run_command","command":"/trigger plate_havoc.t.logbook"}}
     ]
 }

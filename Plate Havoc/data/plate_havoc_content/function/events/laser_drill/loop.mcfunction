@@ -1,1 +1,1 @@
-execute in plate_havoc:arena as @e[x=0,type=marker,tag=plate_havoc_content.event.laser_drill] at @s run function plate_havoc_content:events/laser_drill/entity/tick
+execute in plate_havoc:arena as @e[x=0,tag=plate_havoc_content.event.laser_drill,type=marker] positioned as @s run function plate_havoc_content:events/laser_drill/entity/tick

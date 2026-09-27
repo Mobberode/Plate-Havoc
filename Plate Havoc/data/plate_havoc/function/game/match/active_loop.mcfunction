@@ -12,6 +12,8 @@ scoreboard players remove #Value plate_havoc.timer 1
 ##Player
 execute store result score #Extra plate_havoc.jumps.count if data storage plate_havoc:data extra_jumps[]
 
+execute in plate_havoc:arena as @e[x=0,tag=plate_havoc.spawn_delayed,type=marker] positioned as @s run function plate_havoc:misc/mob/setup/tick
+
 execute as @a[tag=!plate_havoc.spectator,tag=plate_havoc.survivor] at @s run function plate_havoc:game/match/player_loop
 
 ##Data-Driven Functions

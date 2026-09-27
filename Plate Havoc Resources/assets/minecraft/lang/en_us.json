@@ -1,6 +1,11 @@
 {
     "plate_havoc:shared.and": "and",
     "plate_havoc:shared.an": "an",
+    "plate_havoc:shared.Second": "Second",
+    "plate_havoc:shared.Seconds": "Seconds",
+    "plate_havoc:shared.Minute": "Minute",
+    "plate_havoc:shared.Minutes": "Minutes",
+    "plate_havoc:shared.Type": "Type",
     "plate_havoc:shared.Survivor": "Survivor",
     "plate_havoc:shared.Survivors": "Survivors",
     "plate_havoc:shared.Deaths": "Deaths",
@@ -20,9 +25,16 @@
     "plate_havoc:shared.has_given": "has given",
     "plate_havoc:shared.has_yielded": "has yielded",
     "plate_havoc:shared.used_on": "used on",
+    "plate_havoc:shared.has_rolled": "has rolled",
+    "plate_havoc:shared.has_rolled_on": "has rolled on",
     "plate_havoc:shared.deducted": "deducted",
+    "plate_havoc:shared.Nothing": "Nothing",
+    "plate_havoc:shared.Voted_by": "Voted by",
 
+    "plate_havoc:shared.attributes.Event_time": "Event time",
+    "plate_havoc:shared.attributes.Event_repeats": "Event count",
 
+    
     "plate_havoc:error.no_perm": "No permissions!",
     "plate_havoc:error.game_active": "Cannot change mid-game!",
     "plate_havoc:error.null_history_entry": "Cannot find entry!",
@@ -72,10 +84,6 @@
     "plate_havoc:difficulty.eclipsed.description": "Everything gets stronger but so do you. Heavily changed mechanics, Deeper Curses by Cycle 5. -0.15x Cost and +0.2x Reward.",
 
 
-    "plate_havoc:modifier.chaos_infuser.name": "Chaos Infuser",
-    "plate_havoc:modifier.chaos_infuser.description": "Chaos shops every 3rd Cycle with 5 selections that can be drastic.",
-
-
     "plate_havoc:leaderboard.unavailable": "Leaderboard unavailable!",
     "plate_havoc:leaderboard.run_information": "Run Information",
     "plate_havoc:leaderboard.player_information": "Player Information",
@@ -120,6 +128,7 @@
    
     "plate_havoc_content:survivor.phoon.name": "Phoon",
     "plate_havoc_content:survivor.phoon.subtext": "too much for zblock",
+    "plate_havoc_content:survivor.phoon.description": "No Air Drag. Gain more and more speed on consecutive jumps.",
 
     "plate_havoc_content:survivor.clover.name": "Clover",
     "plate_havoc_content:survivor.clover.subtext": "Old storage droid operating on batteries, restored by Clocks.",
@@ -136,7 +145,7 @@
     "plate_havoc_content:card.netherite_clock.description": "+0.2 Cyclathron yield, +1 Time reduction. Events last 10%% shorter.",
 
     "plate_havoc_content:card.copper_clock.name": "Copper Clock",
-    "plate_havoc_content:card.copper_clock.description": "-0.2 Cyclathron yield but other sources of Cyclathrons are stronger. -1 Time reduction.",
+    "plate_havoc_content:card.copper_clock.description": "-0.15 Cyclathron yield but other sources of Cyclathrons are stronger. -1 Time reduction.",
 
     "plate_havoc_content:card.healing_clock.name": "Healing Infused Clock",
     "plate_havoc_content:card.healing_clock.description": "Collecting Clocks restores a portion of health.",
@@ -188,15 +197,18 @@
 
     "plate_havoc_content:card.glacier_player.name": "Glacier Player",
     "plate_havoc_content:card.glacier_player.description": "Revives a random player if there are none alive and gets consumed for the cycle.",
+    "plate_havoc_content:card.glacier_player.behaviour.init": "Not yet.",
+    "plate_havoc_content:card.glacier_player.behaviour.revive": "was sacrificed.",
 
     "plate_havoc_content:card.void_rift.name": "Void Rift",
     "plate_havoc_content:card.void_rift.description": "Falling to the Void teleports you back to the surface.",
+    "plate_havoc_content:card.void_rift.remainder": "Void Rifts remaining.",
 
     "plate_havoc_content:card.mechanical_extender.name": "Mechanical Extender",
     "plate_havoc_content:card.mechanical_extender.description": "+0.5 Interaction range. +0.375 Clock collection range (Max: 3).",
 
     "plate_havoc_content:card.gravity_coil.name": "Gravity Coil",
-    "plate_havoc_content:card.gravity_coil.description1": "+10%% Jump Strength, slightly lowered gravity. Hold",
+    "plate_havoc_content:card.gravity_coil.description1": "+10%% Jump strength, slightly lowered gravity. Hold",
     "plate_havoc_content:card.gravity_coil.description2": "to decrease gravity further.",
 
     "plate_havoc_content:card.material_kit.name": "Material Kit",
@@ -246,7 +258,7 @@
     "plate_havoc_content:card.midas_touch.description": "Usage of an Artefact increases Cyclathron yield by 0.1 for the cycle.",
 
     "plate_havoc_content:card.gashed_tissue.name": "Gashed Tissue",
-    "plate_havoc_content:card.gashed_tissue.description": "Taking damage yields Cyclathrons. Increases the lower the Max health.",
+    "plate_havoc_content:card.gashed_tissue.description": "Taking damage yields Cyclathrons, scaled by Max health.",
 
     "plate_havoc_content:card.nanomachines.name": "Nanomachines",
     "plate_havoc_content:card.nanomachines.description": "Receiving 8 or more hearts of damage over 1.5 seconds doubles Armour for 8 seconds. Can be stacked for a longer duration.",
@@ -304,13 +316,16 @@
     "plate_havoc_content:card.d20.description": "For every 3 rerolls with a cost that are used, make the next reroll free.",
      
     "plate_havoc_content:card.old_war_stealthkit.name": "Old War Stealthkit",
-    "plate_havoc_content:card.old_war_stealthkit.description": "Become invisible with a +10%% Movement speed increase when under 25%% health.", 
+    "plate_havoc_content:card.old_war_stealthkit.description": "Become invisible with a +10%% Movement speed increase when under 40%% health.", 
 
     "plate_havoc_content:card.endercation.name": "Endercation",
     "plate_havoc_content:card.endercation.description": "10%% chance to teleport the attacker to a random location when hit by an entity.", 
 
     "plate_havoc_content:card.desert_well.name": "Desert Well",
     "plate_havoc_content:card.desert_well.description": "Rerolling increases Event time by +12.5%% for the cycle.", 
+
+    "plate_havoc_content:card.ghostly_pepper.name": "Ghostly Pepper",
+    "plate_havoc_content:card.ghostly_pepper.description": "Taking freeze damage takes away some intensity and reduces its gain value for 15 seconds.", 
 
     "plate_havoc_content:card.rusted_blade.name": "Rusted Blade",
     "plate_havoc_content:card.rusted_blade.description": "Clocks spawn with +0.125 value for every player that hasn't been damaged for the entire cycle.", 
@@ -320,6 +335,12 @@
 
     "plate_havoc_content:card.camo_wear.name": "Camo Wear",
     "plate_havoc_content:card.camo_wear.description": "Deal 2.5x Attack damage when invisible.", 
+
+    "plate_havoc_content:card.adrenaline.name": "Adrenaline",
+    "plate_havoc_content:card.adrenaline.description": "+0.75 Max hearts every time Health reaches 15%% or below.", 
+
+    "plate_havoc_content:card.withered_deal.name": "Withered Deal",
+    "plate_havoc_content:card.withered_deal.description": "+10 Max hearts but permanently get the Wither status effect.", 
 
     
     "plate_havoc_content:card.piranha_season.name": "Piranha Season",
@@ -339,6 +360,11 @@
 
     "plate_havoc_content:card.cube_of_decay.name": "Cube of Decay",
     "plate_havoc_content:card.cube_of_decay.description": "Spawns a timed purple cube, requires nearby player(s) to shrink. Shrinking with >70%% time results in a positive outcome. Timing out results in a negative outcome, else, nothing happens.",
+    "plate_havoc_content:card.cube_of_decay.outcome.steal_cyclathron": "Steal 1/4 Cyclathrons",
+    "plate_havoc_content:card.cube_of_decay.outcome.wither": "All withered!",
+    "plate_havoc_content:card.cube_of_decay.outcome.cyclathron_reward": "Cyclathron reward",
+    "plate_havoc_content:card.cube_of_decay.outcome.health_boost": "Temporary health boost",
+    "plate_havoc_content:card.cube_of_decay.outcome.less_agression": "Event aggression",
 
     "plate_havoc_content:card.always_hungry.name": "Always Hungry",
     "plate_havoc_content:card.always_hungry.description": "Players get incredibly hungry within a short period of time. Hunger management required.",
@@ -375,9 +401,6 @@
 
     "plate_havoc_content:card.electrified_rod.name": "Electrified Rod",
     "plate_havoc_content:card.electrified_rod.description": "Lightning Bolts chain to nearby mobs and Creepers spawn charged with increased stats.",
-
-    "plate_havoc_content:card.task_manager.name": "Task Manager",
-    "plate_havoc_content:card.task_manager.description": "Assigns tasks during the cycle that must be completed.",
 
     "plate_havoc_content:card.extra_measures.name": "Extra Measures",
     "plate_havoc_content:card.extra_measures.description": "Laser Drills upon firing, calls upon an extra, faster but weaker drill.",
@@ -427,9 +450,6 @@
     "plate_havoc_content:card.quick_time_stopping.name": "Quick Time Stopping",
     "plate_havoc_content:card.quick_time_stopping.description": "The Target block now appears directly in front of you with drastically reduced reaction time.",
 
-    "plate_havoc_content:card.screeching_null.name": "Screeching Null",
-    "plate_havoc_content:card.screeching_null.description": "Evade and avoid collision as it screeches, hastily homing in.",
-
     "plate_havoc_content:card.gazing_surprise.name": "Gazing Surprise",
     "plate_havoc_content:card.gazing_surprise.description": "Gazing Shadow will teleport directly to a player upon reaching half of its duration.",
 
@@ -463,6 +483,7 @@
 
     "plate_havoc_content:card.fragile_void.name": "Fragility of the Void",
     "plate_havoc_content:card.fragile_void.description": "Implosions become fatal.",
+    "plate_havoc_content:card.fragile_void.kill": "was caught in a void implosion.",
 
     "plate_havoc_content:card.void_pull.name": "Void Pull",
     "plate_havoc_content:card.void_pull.description": "The Void pulls down those who stay airborne. 1.5x Fall Damage and increased Void damage.",
@@ -581,7 +602,9 @@
         
 
     "plate_havoc_content:gametype.rogue.name": "Forgotten",
-    "plate_havoc_content:gametype.rogue.description": "Lost to be forever forgotten.",    
+    "plate_havoc_content:gametype.rogue.description": "Lost to be forever forgotten.",
+    "plate_havoc_content:gametype.rogue.arena.late_game": "Doom lingers. It is not long till destruction arises.",
+    "plate_havoc_content:gametype.rogue.arena.end_game": "Can one withstand such an descent into true madness?",
 
     "plate_havoc_content:music.excuse": "Excuse",
 
@@ -591,5 +614,61 @@
 
     "plate_havoc:tutorial.introductory": "A roguelite plate game based around surviving random events.",
     "plate_havoc:tutorial.main": "Survive events that raise the Intensity (🔥), becoming increasingly severe.\n\nCollect Clocks to deduct Time (⏳), the primary goal for the next Cycle.\n\nCyclathrons (€) is a shared currency from Clocks or means for purchasing Cards.\n\nCards can be beneficial, harmful or both (Upgrades & Curses).\n\nSurvivors have unique abilities, different style and stats.\n\nThere are several vanilla changes (0.5x Air drag and lessened Breaking & Building).",
-    "plate_havoc:tutorial.end": "For Modrinth people, this is a more polished version of the classic game with modern changes and additions from phase 1 of Splintered Worlds. The Discord link is found on the page."
+    "plate_havoc:tutorial.end": "For Modrinth people, this is a more polished version of the classic game with modern changes and additions from phase 1 of Splintered Worlds. The Discord link is found on the page.",
+
+    "plate_havoc_legacy_content:gametype.arena.name": "Arena",
+    "plate_havoc_legacy_content:gametype.arena.description": "Be friends or enemies with the people around you. Survive 3 minutes. Alive players win when the time goes out!",
+    "plate_havoc_legacy_content:gametype.arena.time_out": "Time out! Survivors win!",
+
+    "plate_havoc_legacy_content:gametype.border_says.name": "Border Says",
+    "plate_havoc_legacy_content:gametype.border_says.description": "Follow the border's request and the border wont shrink!",
+
+    "plate_havoc_legacy_content:gametype.chill_jog.name": "Chill Jog",
+    "plate_havoc_legacy_content:gametype.chill_jog.description": "Chill and survive with or without others with longer breaks.",
+
+    "plate_havoc_legacy_content:gametype.deathzone.name": "Death Zone",
+    "plate_havoc_legacy_content:gametype.deathzone.description": "All Events can occur. Cooperate to live the longest.",
+
+    "plate_havoc_legacy_content:gametype.endurance_chaos.name": "Endurance Chaos",
+    "plate_havoc_legacy_content:gametype.endurance_chaos.description": "Struggle to survive the harsh pacing with or without others!",
+
+    "plate_havoc_legacy_content:gametype.endurance_survival.name": "Endurance Survival",
+    "plate_havoc_legacy_content:gametype.endurance_survival.description": "Survive as long as possible with or without others. In Survival!",
+
+    "plate_havoc_legacy_content:gametype.endurance.name": "Endurance",
+    "plate_havoc_legacy_content:gametype.endurance.description": "Survive as long as possible with or without others.",
+
+    "plate_havoc_legacy_content:gametype.bleed.name": "Haemorrhage",
+    "plate_havoc_legacy_content:gametype.bleed.description": "Survive while bleeding out. Grab hearts to heal your team",
+
+    "plate_havoc_legacy_content:gametype.juggernaut.name": "Juggernaut",
+    "plate_havoc_legacy_content:gametype.juggernaut.description": "Take down the Juggernaut or outlast everyone against you!",
+    "plate_havoc_legacy_content:gametype.juggernaut.jug_win": "Juggernaut Victory!",
+    "plate_havoc_legacy_content:gametype.juggernaut.jug_lose": " Non-Juggernaut Victory!",
+
+    "plate_havoc_legacy_content:gametype.lava_rush.name": "Lava Rush",
+    "plate_havoc_legacy_content:gametype.lava_rush.description": "Gather, Build, Kill, Survive.",
+
+    "plate_havoc_legacy_content:gametype.modifier_hell.name": "Modifier Hell",
+    "plate_havoc_legacy_content:gametype.modifier_hell.description": "Arcadic experience with the Modifier limit set to 10!",
+
+    "plate_havoc_legacy_content:gametype.sotf.name": "Survival of the Fittest",
+    "plate_havoc_legacy_content:gametype.sotf.description": "Be the last one standing",
+
+    "plate_havoc_legacy_content:gametype.teams.name": "Team Battle",
+    "plate_havoc_legacy_content:gametype.teams.description": "Outlast the other Team!",
+    "plate_havoc_legacy_content:gametype.teams.yellow": "Yellows won!",
+    "plate_havoc_legacy_content:gametype.teams.green": "Greens won!",
+
+    "plate_havoc_legacy_content:gametype.vip.name": "VIP Protection",
+    "plate_havoc_legacy_content:gametype.vip.description": "Dont let the VIP die!",
+    "plate_havoc_legacy_content:gametype.vip.lose": "VIP died!",
+    
+
+    "plate_havoc_legacy_content:shared.no_winners": "Game ended with no winners. Only losers.",
+    "plate_havoc_legacy_content:shared.win": "Won!",
+    
+
+    "plate_havoc:modifier.chaos_infuser.name": "Chaos Infuser",
+    "plate_havoc:modifier.chaos_infuser.description": "Chaos shops every 3rd Cycle with 5 selections that can be drastic."
 }

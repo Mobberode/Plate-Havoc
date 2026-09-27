@@ -1,5 +1,13 @@
 {
     "values": [
-        "plate_havoc:ignore"
+        "plate_havoc:ignore",
+        "wither",
+        "on_fire",
+        "drown",
+        "thorns",
+        "starve",
+        "magic",
+        "ender_pearl",
+        "fall"
     ]
 }

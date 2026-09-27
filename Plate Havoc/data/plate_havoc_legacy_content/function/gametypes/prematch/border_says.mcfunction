@@ -1,5 +1,3 @@
-tellraw @a [{text:"Border Says",color:aqua},{text:"\nFollow the border's request and the border wont shrink!",color:"gray"}]
-
 data modify storage plate_havoc:ui bar.global.snbt append value {id:border_width,text:"",extra:[{meta:default,text:"[\\\\\\]",extra:[{meta:value,score:{name:"#BaseWorldBorderWidth",objective:plate_havoc.num},color:aqua}]}]}
 data modify storage plate_havoc:ui bar.global.snbt append value {id:border_order,text:"",extra:[{meta:default,text:"✖",extra:[{meta:value,storage:"plate_havoc:custom",nbt:"border_says_warnings",color:red,interpret:true}]}]}
 

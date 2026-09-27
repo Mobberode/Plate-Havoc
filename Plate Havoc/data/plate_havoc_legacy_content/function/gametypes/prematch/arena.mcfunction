@@ -1,5 +1,3 @@
-tellraw @a [{text:"Arena",color:aqua},{text:"\nBe friends or enemies with the people around you. Survive 3 minutes. Alive players win when the time goes out!",color:"gray"}]
-
 data modify storage plate_havoc:temp id_attribute set value "plate_havoc:event.time"
 data modify storage plate_havoc:custom attribute_modifier set value {id:"plate_havoc_content:gametype_specific",value:-0.5,operation:"add_multiplied_total"}
 function plate_havoc:misc/attributes/custom/add_modifier
