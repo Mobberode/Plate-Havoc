@@ -1,0 +1,1 @@
+attribute @s attack_damage modifier add plate_havoc_content:card.sharpened_glass 1 add_multiplied_total

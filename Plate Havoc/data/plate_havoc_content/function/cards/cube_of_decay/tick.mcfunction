@@ -10,7 +10,11 @@ function plate_havoc_content:cards/cube_of_decay/values with storage plate_havoc
 ##Visual
 execute store result storage plate_havoc:cards active_data.plate_havoc_content.cube_of_decay.visual float -0.01 run scoreboard players get @s plate_havoc.temp
 execute store result storage plate_havoc:cards active_data.plate_havoc_content.cube_of_decay.visual2 float 0.01 run scoreboard players get @s plate_havoc.temp
-scoreboard players operation #Temp plate_havoc.timer = @s plate_havoc.timer
+data modify storage plate_havoc:cards active_data.plate_havoc_content.cube_of_decay.visual2 set string storage plate_havoc:cards active_data.plate_havoc_content.cube_of_decay.visual2 0 -1
+
 scoreboard players operation #Temp plate_havoc_content.card.cube_of_decay.shrink_player_current = @s plate_havoc_content.card.cube_of_decay.shrink_player_current
 scoreboard players operation #Temp plate_havoc_content.card.cube_of_decay.shrink_player_requirement = @s plate_havoc_content.card.cube_of_decay.shrink_player_requirement
+
+scoreboard players operation #Temp plate_havoc.timer = @s plate_havoc.timer
+function plate_havoc:game/time/convert
 function plate_havoc_content:cards/cube_of_decay/update

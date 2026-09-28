@@ -163,7 +163,7 @@ data modify storage plate_havoc:events active_data.plate_havoc_content.shop set 
 #{item:"barrier",cost:{price:0,type:percentage},visual:"barrier"},
 
 ## Cube of Decay
-data modify storage plate_havoc:cards active_data.plate_havoc_content.cube_of_decay set value {positive:["plate_havoc_content:cards/cube_of_decay/outcomes/positive/less_agression","plate_havoc_content:cards/cube_of_decay/outcomes/positive/cyclathron_reward","plate_havoc_content:cards/cube_of_decay/outcomes/positive/health_boost"],negative:["plate_havoc_content:cards/cube_of_decay/outcomes/negative/event_time","plate_havoc_content:cards/cube_of_decay/outcomes/negative/increase_event_count","plate_havoc_content:cards/cube_of_decay/outcomes/negative/add_time","plate_havoc_content:cards/cube_of_decay/outcomes/negative/wither","plate_havoc_content:cards/cube_of_decay/outcomes/negative/steal_cyclathron"]}
+data modify storage plate_havoc:cards active_data.plate_havoc_content.cube_of_decay set value {positive:[{function:"plate_havoc_content:cards/cube_of_decay/outcomes/positive/less_agression",visual:{text:"-20% ",extra:[{translate:"plate_havoc_content:card.cube_of_decay.outcome.less_agression",fallback:"Event aggression"}]}},{function:"plate_havoc_content:cards/cube_of_decay/outcomes/positive/cyclathron_reward",visual:{translate:"plate_havoc_content:card.cube_of_decay.outcome.cyclathron_reward",fallback:"Cyclathron reward"}},{function:"plate_havoc_content:cards/cube_of_decay/outcomes/positive/health_boost",visual:{translate:"plate_havoc_content:card.cube_of_decay.outcome.health_boost",fallback:"Temporary health boost"}}],negative:[{function:"plate_havoc_content:cards/cube_of_decay/outcomes/negative/event_time",visual:{text:"-25% ",extra:[{translate:"plate_havoc:shared.attributes.Event_time",fallback:"Event time"}]}},{function:"plate_havoc_content:cards/cube_of_decay/outcomes/negative/increase_event_count",visual:{text:"+1 ",extra:[{translate:"plate_havoc:shared.attributes.Event_repeats",fallback:"Event count"}]}},{function:"plate_havoc_content:cards/cube_of_decay/outcomes/negative/add_time",visual:{text:"+1 ",extra:[{translate:"plate_havoc:shared.Minute",fallback:"Minute"}]}},{function:"plate_havoc_content:cards/cube_of_decay/outcomes/negative/wither",visual:{translate:"plate_havoc_content:card.cube_of_decay.outcome.wither",fallback:"All withered!"}},{function:"plate_havoc_content:cards/cube_of_decay/outcomes/negative/steal_cyclathron",visual:{translate:"plate_havoc_content:card.cube_of_decay.outcome.steal_cyclathron",fallback:"Steal 1/4 Cyclathrons"}}]}
 ## 777 Machine
 data modify storage plate_havoc:cards active_data.plate_havoc_content.777_machine set value [{id:regeneration,amplifier:0},{id:invisibility,amplifier:0},{id:resistance,amplifier:1},{id:fire_resistance,amplifier:0},{id:saturation,amplifier:0}]
 ## Mentally Parrotsane
@@ -178,6 +178,9 @@ data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:card.midas_touch.value",values:{base:0.01}}
 ## Gashed Tissue
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:card.gashed_tissue.scale",values:{base:1},tags:["plate_havoc_content:copper_clock"]}
+## Bombardement
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:card.bombardement.summon",values:{base:0.035},update:[{type:score,value:"#PHC.Bombardement.Summon plate_havoc.temp"}]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:card.bombardement.spawn_area",values:{base:0.05},update:[{type:storage,value:'plate_havoc:data seed.ranges."plate_havoc_content:bombardement".xz.min',scale:-1,numeric_type:int},{type:storage,value:'plate_havoc:data seed.ranges."plate_havoc_content:bombardement".xz.max',scale:1,numeric_type:int}]}
 
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:clock.time_reduction",values:{base:0.04},update:[{type:score,value:"#ClockCollectTimeReduction plate_havoc.num"}]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:clock.range",values:{base:1},update:[{type:score,value:'#PHC.Clock.Range plate_havoc.temp'},{type:storage,value:'plate_havoc:data active_data.plate_havoc_content.clock.range'},{type:storage,value:'plate_havoc:data active_data.plate_havoc_content.clock.range_halved',scale:0.0005}]}
@@ -269,7 +272,8 @@ scoreboard objectives add plate_havoc_content.card.bloodlust.value dummy
 scoreboard objectives add plate_havoc_content.card.rusted_blade.damaged custom:damage_taken
 scoreboard objectives add plate_havoc_content.card.pitch_black.exposure dummy
 scoreboard objectives add plate_havoc_content.card.adrenaline.active dummy
-scoreboard objectives add plate_havoc_content.card.adrenaline.times dummy
+scoreboard objectives add plate_havoc_content.card.adrenaline.stacks dummy
+scoreboard objectives add plate_havoc_content.card.adrenaline.cycles dummy
 
 scoreboard objectives add plate_havoc_content.survivor.charger.amount dummy
 scoreboard objectives add plate_havoc_content.survivor.charger.using dummy
@@ -302,10 +306,12 @@ scoreboard objectives add plate_havoc_content.max_value dummy
 scoreboard objectives add plate_havoc_content.leaderboard.cycle.current dummy
 scoreboard objectives add plate_havoc_content.leaderboard.cycle.saved dummy
 
-data modify storage plate_havoc:temp extension_data set value [plate_havoc_content.event.acid_rain.exposure,plate_havoc_content.event.jump_cooldown,plate_havoc_content.event.jump_afterdown,plate_havoc_content.event.shop_token,plate_havoc_content.event.flame_guardian.time,plate_havoc_content.event.flame_guardian.active,plate_havoc_content.event.motion_sniper.time,plate_havoc_content.event.piranha.attack_delay,plate_havoc_content.event.piranha.attacked_times,plate_havoc_content.card.multi_use_umbrella.splasher_using,plate_havoc_content.card.multi_use_umbrella.splasher_cooldown,plate_havoc_content.card.multi_use_umbrella.acid_immunity,plate_havoc_content.event.piranha.active_time,"plate_havoc_content.card.mutilated_teddy","plate_havoc_content.card.lasting_acid","plate_havoc_content.card.multi_use_umbrella.cobwebbed","plate_havoc_content.card.nanomachines.damage","plate_havoc_content.card.nanomachines.duration","plate_havoc_content.card.nanomachines.stack","plate_havoc_content.card.purified_hourglass.value","plate_havoc_content.card.rusted_blade.damaged","plate_havoc_content.card.pitch_black.exposure",plate_havoc_content.card.adrenaline.times]
+scoreboard objectives add plate_havoc_content.stat.collected_clocks dummy
+
+data modify storage plate_havoc:temp extension_data set value [plate_havoc_content.event.acid_rain.exposure,plate_havoc_content.event.jump_cooldown,plate_havoc_content.event.jump_afterdown,plate_havoc_content.event.shop_token,plate_havoc_content.event.flame_guardian.time,plate_havoc_content.event.flame_guardian.active,plate_havoc_content.event.motion_sniper.time,plate_havoc_content.event.piranha.attack_delay,plate_havoc_content.event.piranha.attacked_times,plate_havoc_content.card.multi_use_umbrella.splasher_using,plate_havoc_content.card.multi_use_umbrella.splasher_cooldown,plate_havoc_content.card.multi_use_umbrella.acid_immunity,plate_havoc_content.event.piranha.active_time,"plate_havoc_content.card.mutilated_teddy","plate_havoc_content.card.lasting_acid","plate_havoc_content.card.multi_use_umbrella.cobwebbed","plate_havoc_content.card.nanomachines.damage","plate_havoc_content.card.nanomachines.duration","plate_havoc_content.card.nanomachines.stack","plate_havoc_content.card.purified_hourglass.value","plate_havoc_content.card.rusted_blade.damaged","plate_havoc_content.card.pitch_black.exposure"]
 data modify storage plate_havoc:data score_reset append from storage plate_havoc:temp extension_data[]
 
-data modify storage plate_havoc:temp extension_data set value ["plate_havoc_content.card.blood_money"]
+data modify storage plate_havoc:temp extension_data set value ["plate_havoc_content.card.blood_money","plate_havoc_content.stat.collected_clocks"]
 data modify storage plate_havoc:data init_score_reset append from storage plate_havoc:temp extension_data[]
 
 ##Edits

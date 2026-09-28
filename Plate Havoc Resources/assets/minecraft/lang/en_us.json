@@ -186,7 +186,7 @@
     "plate_havoc_content:card.determination.name": "Determination",
     "plate_havoc_content:card.determination.description": "Upon Last Stand, receive minor stat improvements and any additional benefits. Becomes more powerful on solo.",
 
-    "plate_havoc_content:card.fire_guardian.name": "Fire Guardian for Hire",
+    "plate_havoc_content:card.fire_guardian.name": "Flame Bodyguard",
     "plate_havoc_content:card.fire_guardian.description": "Flame Guardian protects all players, shooting flame projectiles towards hostiles that no longer ignite blocks.",
 
     "plate_havoc_content:card.boxless_desires.name": "Boxless Desires",
@@ -337,10 +337,22 @@
     "plate_havoc_content:card.camo_wear.description": "Deal 2.5x Attack damage when invisible.", 
 
     "plate_havoc_content:card.adrenaline.name": "Adrenaline",
-    "plate_havoc_content:card.adrenaline.description": "+0.75 Max hearts every time Health reaches 15%% or below.", 
+    "plate_havoc_content:card.adrenaline.description": "+0.75 Max hearts every time Health reaches 15%% or below. Stacks reset every 3rd Cycle upon initial application.", 
+
+    "plate_havoc_content:card.lottery_ticket.name": "Lottery Ticket",
+    "plate_havoc_content:card.lottery_ticket.description": "*1.33 Max hearts if the number of total Clocks collected by you is a multiple of 9, 15, 28, 34 or 50.", 
 
     "plate_havoc_content:card.withered_deal.name": "Withered Deal",
     "plate_havoc_content:card.withered_deal.description": "+10 Max hearts but permanently get the Wither status effect.", 
+
+    "plate_havoc_content:card.sharpened_glass.name": "Sharpened Glass",
+    "plate_havoc_content:card.sharpened_glass.description": "Deal double damage but get damaged by 2.5 hearts for every hit to an entity.", 
+
+    "plate_havoc_content:card.emergency_hammer.name": "Emergency Hammer",
+    "plate_havoc_content:card.emergency_hammer.description": "*1.5 Block breaking speed when on fire..", 
+
+    "plate_havoc_content:card.dandelion.name": "Dandelion",
+    "plate_havoc_content:card.dandelion.description": "Collecting Clocks inflict Weakness and Slowness on hostile mobs for 10 seconds.", 
 
     
     "plate_havoc_content:card.piranha_season.name": "Piranha Season",
@@ -505,7 +517,7 @@
     "plate_havoc_content:card.auric_cannon.description": "Stop it from firing by breaking apart its parts before it wipes out the entire plate.",
 
     "plate_havoc_content:card.bombardement.name": "Bombardement",
-    "plate_havoc_content:card.bombardement.description": "Tons of piercing lasers slowly come from above every minute, fatal to anyone that touches them.",
+    "plate_havoc_content:card.bombardement.description": "Tons of piercing red lasers shoot out from above every 35 seconds, covering a large area and obliterating anyone who touches them.",
 
 
     "plate_havoc_content:card.the_forgotten.name": "Snowy Photograph",
@@ -605,8 +617,6 @@
     "plate_havoc_content:gametype.rogue.description": "Lost to be forever forgotten.",
     "plate_havoc_content:gametype.rogue.arena.late_game": "Doom lingers. It is not long till destruction arises.",
     "plate_havoc_content:gametype.rogue.arena.end_game": "Can one withstand such an descent into true madness?",
-
-    "plate_havoc_content:music.excuse": "Excuse",
 
     
     "plate_havoc_content:selection_open_action_prompt": "whilst looking down to open selection.",

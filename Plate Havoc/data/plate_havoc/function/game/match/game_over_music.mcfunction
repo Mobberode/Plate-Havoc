@@ -1,0 +1,1 @@
+$execute as @a at @s run playsound $(game_over) music @s ~ ~ ~ 10000000 1 1

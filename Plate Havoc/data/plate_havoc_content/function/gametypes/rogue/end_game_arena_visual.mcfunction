@@ -1,6 +1,7 @@
 tellraw @a {translate:"plate_havoc_content:gametype.rogue.arena.end_game",fallback:"Can one withstand such an descent into true madness?",color:red}
 
 data modify storage plate_havoc:cards match_types[{id:"plate_havoc_content:curse"}].attributes.selection.max_selections set value 2
+data modify storage plate_havoc:data game.music.game_over set value "plate_havoc_content:music/intro"
 
 execute if data storage plate_havoc:data {run_tags:["no_void_skies:dont_change_void"]} run return fail
 

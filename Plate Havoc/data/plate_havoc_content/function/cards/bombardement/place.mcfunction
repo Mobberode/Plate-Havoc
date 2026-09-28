@@ -1,0 +1,1 @@
+$summon marker ~$(x) 320 ~$(z) {Tags:["plate_havoc_content.card.bombardement"]}

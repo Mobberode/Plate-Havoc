@@ -1,0 +1,2 @@
+scoreboard players remove @s plate_havoc_content.card.adrenaline.cycles 1
+execute unless score @s plate_havoc_content.card.adrenaline.cycles matches 1.. run function plate_havoc_content:cards/adrenaline/remove

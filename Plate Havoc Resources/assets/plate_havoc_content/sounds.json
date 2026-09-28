@@ -3,5 +3,10 @@
     "sounds":[
       {"type":"file","name":"plate_havoc_content:music/excuse","attenuation_distance": 0,"stream":true,"pitch": 1,"preload": true}
     ]
+  },
+  "music/intro": {
+    "sounds":[
+      {"type":"file","name":"plate_havoc_content:music/intro","attenuation_distance": 0,"stream":true,"pitch": 1,"preload": true}
+    ]
   }
 }

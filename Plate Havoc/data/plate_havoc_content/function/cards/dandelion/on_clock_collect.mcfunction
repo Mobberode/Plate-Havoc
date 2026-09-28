@@ -1,0 +1,1 @@
+execute in plate_havoc:arena as @e[x=0,tag=plate_havoc.mob,type=#plate_havoc:hostile] run function plate_havoc_content:cards/dandelion/apply

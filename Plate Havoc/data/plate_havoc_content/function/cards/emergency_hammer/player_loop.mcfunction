@@ -1,0 +1,2 @@
+attribute @s block_break_speed modifier remove plate_havoc_content:card.emergency_hammer
+attribute @s[predicate=plate_havoc:on_fire] block_break_speed modifier add plate_havoc_content:card.emergency_hammer 0.5 add_multiplied_total

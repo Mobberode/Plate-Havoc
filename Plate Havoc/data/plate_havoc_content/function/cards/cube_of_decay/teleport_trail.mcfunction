@@ -1,0 +1,1 @@
+$particle trail{color:16617725,duration:50,target:$(Pos)} ~ ~ ~ 5 5 5 0.1 50

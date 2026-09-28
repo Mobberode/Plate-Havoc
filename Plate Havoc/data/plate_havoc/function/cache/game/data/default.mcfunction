@@ -15,7 +15,9 @@ scoreboard players set #10 plate_havoc.num 10
 scoreboard players set #15 plate_havoc.num 15
 scoreboard players set #20 plate_havoc.num 20
 scoreboard players set #25 plate_havoc.num 25
+scoreboard players set #28 plate_havoc.num 28
 scoreboard players set #30 plate_havoc.num 30
+scoreboard players set #34 plate_havoc.num 34
 scoreboard players set #40 plate_havoc.num 40
 scoreboard players set #50 plate_havoc.num 50
 scoreboard players set #60 plate_havoc.num 60
@@ -124,3 +126,5 @@ data modify storage plate_havoc:data init_score_reset set value ["plate_havoc.pl
 ##Cyclathron
 scoreboard players set #Saved plate_havoc.cyclathron -1
 scoreboard players set #Value plate_havoc.cyclathron 0
+
+data modify storage plate_havoc:data game set value {music:{game_over:"plate_havoc_content:music/excuse"}}

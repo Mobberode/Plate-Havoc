@@ -1,5 +1,5 @@
 ##UUID = 0000000c-0000-03f2-0000-091000001523
-summon text_display ~ ~ ~ {UUID:[I;12,1010,2320,5411],Tags:["plate_havoc.dont_interact"],billboard:"center",see_through:true,transformation:{translation:[0.0,0.125,0.0],left_rotation:[0,0,0,1],right_rotation:[0,0,0,1],scale:[1,1,1]}}
+summon text_display ~ ~ ~ {UUID:[I;12,1010,2320,5411],Tags:["plate_havoc.dont_interact"],billboard:"center",see_through:true,transformation:{translation:[0.0,0.25,0.0],left_rotation:[0,0,0,1],right_rotation:[0,0,0,1],scale:[.5,.5,.5]}}
 
 ride 0000000c-0000-03f2-0000-091000001523 mount @s
 
@@ -47,5 +47,8 @@ scoreboard players operation #Hitbox plate_havoc.temp /= #2 plate_havoc.num
 #minimum (7.5)
 execute if score #Hitbox plate_havoc.temp matches ..750 run scoreboard players set #Hitbox plate_havoc.temp 750
 execute store result storage plate_havoc:cards active_data.plate_havoc_content.cube_of_decay.hitbox double 0.01 run scoreboard players get #Hitbox plate_havoc.temp
+
+##Outcomes
+function plate_havoc_content:cards/cube_of_decay/get_outcomes
 
 spreadplayers ~ ~ 32 64 false @s

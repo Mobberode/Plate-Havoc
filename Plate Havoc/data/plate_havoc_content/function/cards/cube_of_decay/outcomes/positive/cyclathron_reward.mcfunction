@@ -5,5 +5,3 @@ execute if score #Temp plate_havoc.temp matches ..499 run scoreboard players set
 scoreboard players operation #Value plate_havoc.cyclathron += #Temp plate_havoc.temp
 
 scoreboard players operation #Stat.Cyclathrons_Yielded plate_havoc.num += #Temp plate_havoc.temp
-
-tellraw @a ["",{translate:"plate_havoc_content:card.cube_of_decay.name",fallback:"Cube of Decay",color:red}," ",{translate:"plate_havoc:shared.has_rolled",fallback:"has rolled"},": ",{translate:"plate_havoc_content:card.cube_of_decay.outcome.cyclathron_reward",fallback:"Cyclathron reward",color:green}]
