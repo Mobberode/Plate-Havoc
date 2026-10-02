@@ -127,4 +127,4 @@ data modify storage plate_havoc:data init_score_reset set value ["plate_havoc.pl
 scoreboard players set #Saved plate_havoc.cyclathron -1
 scoreboard players set #Value plate_havoc.cyclathron 0
 
-data modify storage plate_havoc:data game set value {music:{game_over:"plate_havoc_content:music/excuse"}}
+data modify storage plate_havoc:data game set value {music:{game_over:"plate_havoc_content:music/excuse"},requirements:{active:[{type:"plate_havoc:intensity",function:"plate_havoc:misc/requirements/type/intensity"},{type:"plate_havoc:player",function:"plate_havoc:misc/requirements/type/player"},{type:"plate_havoc:card",function:"plate_havoc:misc/requirements/type/card"},{type:"plate_havoc:advancement",function:"plate_havoc:misc/requirements/type/advancement"},{type:"plate_havoc:custom",function:"plate_havoc:misc/function"}]}}

@@ -1,0 +1,2 @@
+execute store result score #Temp plate_havoc.temp run data get storage plate_havoc:data game.requirements.temp.value
+execute if score #Max plate_havoc.players >= #Temp plate_havoc.temp run scoreboard players add #Requirements.Passed plate_havoc.temp 1

@@ -1,2 +1,0 @@
-execute store result score #Temp plate_havoc.temp run data get storage plate_havoc:cards temp.value
-execute if score #Value plate_havoc.round >= #Temp plate_havoc.temp run scoreboard players add #RequirementsPassed plate_havoc.temp 1

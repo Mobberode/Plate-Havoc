@@ -1,0 +1,1 @@
+$execute if data storage plate_havoc:events pool.available[{id:'$(event)'}] run scoreboard players add #Requirements.Passed plate_havoc.temp 1

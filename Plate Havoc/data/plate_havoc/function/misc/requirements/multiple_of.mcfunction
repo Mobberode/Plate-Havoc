@@ -1,0 +1,2 @@
+execute store result score #Temp plate_havoc.temp run data get storage plate_havoc:data game.requirements.input.passes_needed
+execute unless score #Temp plate_havoc.temp > #Requirements.Needed plate_havoc.temp run scoreboard players operation #Requirements.Needed plate_havoc.temp = #Temp plate_havoc.temp

@@ -38,6 +38,7 @@ data modify storage plate_havoc:leaderboard data_functions insert -3 value {func
 data modify storage plate_havoc:leaderboard data_functions insert -3 value {function:"plate_havoc_content:leaderboard/data/artefacts_activated"}
 data modify storage plate_havoc:leaderboard data_functions insert -3 value {function:"plate_havoc_content:leaderboard/data/defeated_the_forgotten"}
 
+data modify storage plate_havoc:data game.requirements.active append value {type:"plate_havoc_content:cycle",function:"plate_havoc:misc/requirements/type/cycle"}
 ### Game contents
 scoreboard players set #Value plate_havoc.round 0
 
