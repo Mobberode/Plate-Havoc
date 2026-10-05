@@ -1,4 +1,4 @@
-execute store result score #Level plate_havoc.card run data get storage plate_havoc:cards executing.count
+execute store result score #Level plate_havoc.card run data get storage plate_havoc:data game.events.temp.count
 
 #
 

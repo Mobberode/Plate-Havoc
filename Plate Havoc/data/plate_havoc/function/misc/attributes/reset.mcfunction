@@ -45,4 +45,4 @@ function plate_havoc:misc/gametype_attributes with storage plate_havoc:data func
 execute store result storage plate_havoc:temp temp int 1 run scoreboard players get @s plate_havoc.survivor.id
 function plate_havoc:misc/survivor/set with storage plate_havoc:temp
 
-function plate_havoc:misc/cards/running/types/run {type:set.attribute}
+function plate_havoc:misc/game_events/run_type {type:"plate_havoc:player.setup"}

@@ -78,9 +78,6 @@ data modify storage plate_havoc:data functions.leaderboard.credit_loop set value
 data modify storage plate_havoc:data functions.leaderboard.credit_start set value "plate_havoc:misc/logbook/leaderboard/credit/type/time_elasped/start"
 data modify storage plate_havoc:leaderboard players set value []
 
-##Holds all functions that will be ran when game starts
-data modify storage plate_havoc:data on_game_start set value []
-
 ##Events Global
 scoreboard players set #EventNotify plate_havoc.num 1
 
@@ -115,6 +112,7 @@ data modify storage plate_havoc:events pool set value {available:[],unavailable:
 data modify storage plate_havoc:events active_data set value {}
 data modify storage plate_havoc:events running set value []
 
+
 ##Cards
 data modify storage plate_havoc:cards active_data set value {}
 
@@ -127,4 +125,4 @@ data modify storage plate_havoc:data init_score_reset set value ["plate_havoc.pl
 scoreboard players set #Saved plate_havoc.cyclathron -1
 scoreboard players set #Value plate_havoc.cyclathron 0
 
-data modify storage plate_havoc:data game set value {music:{game_over:"plate_havoc_content:music/excuse"},requirements:{active:[{type:"plate_havoc:intensity",function:"plate_havoc:misc/requirements/type/intensity"},{type:"plate_havoc:player",function:"plate_havoc:misc/requirements/type/player"},{type:"plate_havoc:card",function:"plate_havoc:misc/requirements/type/card"},{type:"plate_havoc:advancement",function:"plate_havoc:misc/requirements/type/advancement"},{type:"plate_havoc:custom",function:"plate_havoc:misc/function"}]}}
+data modify storage plate_havoc:data game set value {music:{game_over:"plate_havoc_content:music/excuse"},requirements:{active:[{type:"plate_havoc:intensity",function:"plate_havoc:misc/requirements/type/intensity"},{type:"plate_havoc:player",function:"plate_havoc:misc/requirements/type/player"},{type:"plate_havoc:card",function:"plate_havoc:misc/requirements/type/card"},{type:"plate_havoc:advancement",function:"plate_havoc:misc/requirements/type/advancement"},{type:"plate_havoc:custom",function:"plate_havoc:misc/function"}]},events:{active:[],execute:[]}}

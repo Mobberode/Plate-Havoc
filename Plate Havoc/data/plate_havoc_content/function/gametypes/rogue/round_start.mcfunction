@@ -16,16 +16,14 @@ advancement revoke @a from plate_havoc:temp
 function plate_havoc:misc/cards/running/types/start
 
 data modify storage plate_havoc:data default_gamemode set value "survival"
-execute as @a[tag=!plate_havoc.spectator] in plate_havoc:arena run function plate_havoc_content:gametypes/rogue/player_start
+execute as @a[tag=!plate_havoc.spectator] in plate_havoc:arena run function plate_havoc:game/match/player/spawn
 
 #
 data modify storage plate_havoc:custom attributes[].refresh set value true
 function plate_havoc:misc/attributes/custom/update_global
 
-function plate_havoc:misc/cards/running/types/run {type:one_time}
-data remove storage plate_havoc:cards running.total[].functions[{type:"one_time"}]
-
-function plate_havoc:misc/cards/running/types/run {type:on.start}
+function plate_havoc:misc/game_events/run_type_clear {type:"plate_havoc:once"}
+function plate_havoc:misc/game_events/run_type {type:"plate_havoc_content:cycle.start"}
 
 data modify storage plate_havoc:custom attributes[].refresh set value true
 function plate_havoc:misc/attributes/custom/update_global

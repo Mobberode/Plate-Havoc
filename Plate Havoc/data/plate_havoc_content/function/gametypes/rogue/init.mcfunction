@@ -26,9 +26,8 @@ data modify storage plate_havoc:data default_gamemode set value "survival"
 difficulty hard
 gamerule keep_inventory true
 
-data modify storage plate_havoc:data on_game_start append value "plate_havoc:game/time/tick_down"
-
-data modify storage plate_havoc:data on_game_start append value "plate_havoc_content:gametypes/rogue/round_start"
+data modify storage plate_havoc:data game.events.active append value {type:"plate_havoc:game.start",function:"plate_havoc:game/time/tick_down"}
+data modify storage plate_havoc:data game.events.active append value {type:"plate_havoc:game.start",function:"plate_havoc_content:gametypes/rogue/round_start"}
 
 data modify storage plate_havoc:leaderboard data_functions insert 1 value {function:"plate_havoc_content:leaderboard/data/cycle"}
 data modify storage plate_havoc:leaderboard data_functions insert -2 value {function:"plate_havoc_content:leaderboard/data/cards"}

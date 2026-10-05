@@ -11,7 +11,7 @@ data modify storage plate_havoc:data extensions.statuses set from storage plate_
 function #plate_havoc:init
 function plate_havoc:extensions/manager/run
 
-function plate_havoc:extensions/handler/run {type:"plate_havoc:cache"}
+function plate_havoc:misc/game_events/run_type {type:"plate_havoc:cache"}
 
 data modify storage plate_havoc:cards temp set value {pool:[],process:{id:""}}
 data modify storage plate_havoc:cards temp.pool append from storage plate_havoc:data content.cards[{exclusive:{values:[{}]}}]

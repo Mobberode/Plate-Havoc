@@ -36,8 +36,7 @@ scoreboard players reset * plate_havoc.temp
 
 function plate_havoc:misc/cards/running/types/start
 
-function plate_havoc:misc/cards/running/types/run {type:on.start}
-execute as @a run function plate_havoc:misc/cards/running/types/run {type:set.attribute}
+function plate_havoc:misc/game_events/run_type {type:"plate_havoc_content:cycle.start"}
+execute as @a run function plate_havoc:misc/game_events/run_type {type:"plate_havoc:player.setup"}
 
-function plate_havoc:misc/cards/running/types/run {type:one_time}
-data remove storage plate_havoc:cards running.total[].functions[{type:"one_time"}]
+function plate_havoc:misc/game_events/run_type_clear {type:"plate_havoc:once"}

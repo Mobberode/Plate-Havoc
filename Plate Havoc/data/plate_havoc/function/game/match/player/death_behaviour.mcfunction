@@ -1,4 +1,4 @@
-function plate_havoc:misc/cards/running/types/run {type:on.death}
+function plate_havoc:misc/game_events/run_type {type:"plate_havoc:player.death"}
 scoreboard players add #Stat.Total_Deaths plate_havoc.num 1
 
 ##LMS

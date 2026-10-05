@@ -1,4 +1,5 @@
 clear
+item fill entity @s enderchest.* with air
 recipe take @s *
 scoreboard players operation @s plate_havoc.run_id = #Run plate_havoc.run_id
 function plate_havoc:misc/assign_id

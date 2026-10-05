@@ -8,7 +8,7 @@ data modify storage plate_havoc:temp id_attribute set value "plate_havoc:event.t
 data modify storage plate_havoc:custom attribute_modifier set value {id:"plate_havoc_content:gametype_specific",value:-0.25,operation:"add_multiplied_total"}
 function plate_havoc:misc/attributes/custom/add_modifier
 
-data modify storage plate_havoc:data on_game_start append value "plate_havoc_legacy_content:gametypes/prematch/juggernaut/run"
+data modify storage plate_havoc:data game.events.active append value {type:"plate_havoc:game.start",function:"plate_havoc_legacy_content:gametypes/prematch/juggernaut/run"}
 
 data modify storage plate_havoc:data functions.tick_spectator set value ""
 

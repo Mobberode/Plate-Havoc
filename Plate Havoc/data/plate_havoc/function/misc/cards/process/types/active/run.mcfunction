@@ -31,7 +31,7 @@ function plate_havoc:misc/cards/process/attributes/after_pause/start
 
 scoreboard players set #Card.Slots_Removed plate_havoc.num 0
 
-function plate_havoc:misc/cards/running/types/run {type:changed_card_type}
+function plate_havoc:misc/cards/running/types/run {type:"plate_havoc:card.type_changed"}
 function plate_havoc:misc/attributes/custom/update_global
 
 data remove storage plate_havoc:cards active_types[-1]

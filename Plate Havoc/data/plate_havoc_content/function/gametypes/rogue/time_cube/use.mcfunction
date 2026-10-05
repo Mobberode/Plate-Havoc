@@ -4,7 +4,7 @@ data remove storage plate_havoc:custom clock_entity_data
 data modify storage plate_havoc:custom clock_entity_data set from entity @s data
 scoreboard players operation #Clock plate_havoc_content.value = @s plate_havoc_content.value
 
-function plate_havoc:misc/cards/running/types/run {type:on.clock.collect}
+function plate_havoc:misc/game_events/run_type {type:"plate_havoc_content:clock.collect"}
 
 execute store result score #Temp plate_havoc.cyclathron run compute default float {type:mul,inputs:[{type:"storage",storage:"plate_havoc:custom",path:"attributes[{id:'plate_havoc:cyclathron_yield'}].output"},{type:from_int,input:{type:score,target:{type:"fixed",name:"#Clock"},score:plate_havoc_content.value}}]}
 

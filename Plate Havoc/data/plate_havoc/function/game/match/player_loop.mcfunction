@@ -15,7 +15,7 @@ execute store result storage plate_havoc:temp temp int 1 run scoreboard players 
 execute unless score @s plate_havoc.survivor.tick_ability matches ..0 run function plate_havoc:misc/survivor/tick with storage plate_havoc:temp
 
 scoreboard players operation @s plate_havoc.player.single_tick.damage.taken += @s plate_havoc.player.single_tick.damage.absorbed
-function plate_havoc:misc/cards/running/types/run {type:player_loop}
+function plate_havoc:misc/game_events/run_type {type:"plate_havoc:player.tick"}
 
 ##Single tick
 scoreboard players set @s plate_havoc.player.single_tick.damage.dealt 0

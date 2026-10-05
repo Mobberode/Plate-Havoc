@@ -6,4 +6,4 @@ scoreboard players set #ClockCollected plate_havoc.temp 0
 function plate_havoc_content:gametypes/rogue/time_cube/range with storage plate_havoc:data active_data.plate_havoc_content.clock
 execute if score #ClockCollected plate_havoc.temp matches 1.. run return run function plate_havoc_content:gametypes/rogue/time_cube/use
 
-function plate_havoc:misc/cards/running/types/run {type:on.clock.tick}
+function plate_havoc:misc/game_events/run_type {type:"plate_havoc_content:clock.tick"}

@@ -37,7 +37,6 @@ scoreboard objectives add plate_havoc.relogged custom:leave_game
 scoreboard objectives add plate_havoc.stat dummy
 
 scoreboard objectives add plate_havoc.t.spectator trigger
-scoreboard objectives add plate_havoc.t.credits trigger
 scoreboard objectives add plate_havoc.t.logbook trigger
 scoreboard objectives add plate_havoc.z.run_history.gametype_index dummy
 scoreboard objectives add plate_havoc.z.run_history.tab dummy

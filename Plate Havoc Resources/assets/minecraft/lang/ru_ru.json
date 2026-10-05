@@ -1,3 +1,653 @@
 {
+    "plate_havoc:shared.and": "и",
+    "plate_havoc:shared.an": "an",
+    "plate_havoc:shared.Survivor": "Выживший",
+    "plate_havoc:shared.Survivors": "Выжившие",
+    "plate_havoc:shared.Deaths": "Смерти",
+    "plate_havoc:shared.Profile": "Профиль",
+    "plate_havoc:shared.Cyclathrons": "Циклатроны",
+    "plate_havoc:shared.Cycle": "Цикл",
+    "plate_havoc:shared.Intensity": "Интенсивность",
+    "plate_havoc:shared.Time": "Время",
+    "plate_havoc:shared.Players": "Игроки",
+    "plate_havoc:shared.Run_History": "История забегов",
+    "plate_havoc:shared.Leaderboard": "Таблица лидеров",
+    "plate_havoc:shared.Attributes": "Характеристики",
+    "plate_havoc:shared.Second": "Секунда",
+    "plate_havoc:shared.Seconds": "Секунды",
+    "plate_havoc:shared.Minute": "Минута",
+    "plate_havoc:shared.Minutes": "Минуты",
+    "plate_havoc:shared.Type": "Тип",
+    "plate_havoc:shared.Console": "Консоль",
+    "plate_havoc:shared.Logbook": "Журнал",
+    "plate_havoc:shared.Spectator": "Наблюдатель",
+    "plate_havoc:shared.Credits": "Титры",
+    "plate_havoc:shared.Seed": "Сид",
+    "plate_havoc:shared.Run_ID": "ID забега",
+    "plate_havoc:shared.Modifier": "Модификатор",
+    "plate_havoc:shared.has_granted": "даровал",
+    "plate_havoc:shared.has_given": "выдал",
+    "plate_havoc:shared.has_yielded": "принес",
+    "plate_havoc:shared.used_on": "использовано на",
+    "plate_havoc:shared.has_rolled": "выпало",
+    "plate_havoc:shared.has_rolled_on": "выпало на",
+    "plate_havoc:shared.deducted": "вычтено",
+    "plate_havoc:shared.Nothing": "Ничего",
+    "plate_havoc:shared.Voted_by": "Голос от",
+
+    "plate_havoc:shared.attributes.Event_time": "Время события",
+    "plate_havoc:shared.attributes.Event_repeats": "Количество событий",
+
+
+    "plate_havoc:error.no_perm": "Недостаточно прав!",
+    "plate_havoc:error.game_active": "Нельзя изменить во время игры!",
+    "plate_havoc:error.null_history_entry": "Запись не найдена!",
+
+
+    "plate_havoc:player.respawned": "Возродился",
+    "plate_havoc:player.earned_credit": "Заработан кредит!",
+
     
+    "plate_havoc:description.cyclathrons": "Основная валюта, обмениваемая на преимущества.",
+    "plate_havoc:description.intensity": "Серьезность событий.\nЧем выше значение, тем опаснее.",
+    "plate_havoc:description.players": "Количество игроков, находящихся в текущем забеге.",
+
+    "plate_havoc:bar.intermission.active": "Перерыв",
+    "plate_havoc:bar.intermission.waiting": "Ожидание присоединения игроков.",
+    "plate_havoc:intermission.accelerate.multiplayer": "чтобы ускорить перерыв.",
+    "plate_havoc:intermission.accelerate.solo": "чтобы начать игру.",
+    "plate_havoc:awaiting_load": "Загрузка игровых материалов...",
+
+    "plate_havoc:end_status": "Игра окончена",
+    "plate_havoc:end_message": "...и так увидел ничто.",
+
+    "plate_havoc:card.info.exclusive": "Эксклюзивные карты",
+    "plate_havoc:card.reroll": "Перебросить выбор",
+    "plate_havoc:card.continue": "Продолжить",
+    "plate_havoc:card.nothing": "Здесь ничего нет. Единственный путь — глубже.",
+    "plate_havoc:card.deck": "Колода карт",
+    "plate_havoc:card.escape_selection": "Побег",
+    "plate_havoc:extensions": "Расширения",
+
+    "plate_havoc:difficulty.sunlight.name": "Солнечный свет",
+    "plate_havoc:difficulty.sunlight.subtext": "Открытие странного мира",
+    "plate_havoc:difficulty.sunlight.description": "Проклятия каждые 2 цикла, в 1.5 раза больше циклатронов, более легкие и спокойные события, получение эксклюзивного улучшения.",
+    "plate_havoc:difficulty.moonlight.name": "Лунный свет",
+    "plate_havoc:difficulty.moonlight.subtext": "Без выхода",
+    "plate_havoc:difficulty.moonlight.description": "Базовая сложность.",
+    "plate_havoc:difficulty.eclipsed.name": "Затмение",
+    "plate_havoc:difficulty.eclipsed.subtext": "Быть навеки забытым.",
+    "plate_havoc:difficulty.eclipsed.description": "Всё становится сильнее, но и вы тоже. Сильно измененная механика, более глубокие проклятия к 5-му циклу. -0.15x к стоимости и +0.2x к награде.",
+
+    "plate_havoc_content:modifier.chaos_infuser.name": "Инфузор хаоса",
+    "plate_havoc_content:modifier.chaos_infuser.description": "Магазины хаоса каждые 3 цикла с 5 кардинальными вариантами выбора.",
+
+    "plate_havoc:leaderboard.run_information": "Информация о забеге",
+    "plate_havoc:leaderboard.player_information": "Информация об игроке",
+    "plate_havoc:leaderboard.continue": "Нажмите [ ESC ] для продолжения...",
+    "plate_havoc_content:leaderboard.player.damage_dealt": "Нанесено урона",
+    "plate_havoc_content:leaderboard.player.damage_taken": "Получено урона",
+
+    "plate_havoc_content:leaderboard.artefacts_activated": "Активировано артефактов",
+    "plate_havoc_content:leaderboard.clocks_collected": "Собрано часов",
+    "plate_havoc_content:leaderboard.cyclathrons_yielded": "Добыто циклатронов",
+    "plate_havoc_content:leaderboard.cycle_reached": "Достигнутый цикл",
+    "plate_havoc_content:leaderboard.defeated_the_forgotten": "Победил Забытого",
+    "plate_havoc_content:leaderboard.events_occured": "Произошло событий",
+    "plate_havoc_content:leaderboard.elapsed_time": "Прошедшее время",
+    "plate_havoc_content:leaderboard.intensity_reached": "Достигнутая интенсивность",
+    "plate_havoc_content:leaderboard.total_deaths": "Всего смертей",
+    "plate_havoc_content:leaderboard.card_rerolls": "Перебросы карт",
+
+    "plate_havoc_legacy_content:leaderboard.border_size": "Размер границы",
+    "plate_havoc_legacy_content:leaderboard.lava_height": "Высота лавы",
+
+    "plate_havoc_content:action_key.charge.sprint": "Заряженный спринт",
+    "plate_havoc_content:action_key.charge.jump": "Заряженный прыжок",
+    "plate_havoc_content:action_key.charge.cancel": "Отмена заряда",
+
+    "plate_havoc_content:survivor.charger.name": "Таран",
+    "plate_havoc_content:survivor.survivor.charger.subtext": "Медленнее большинства, но компенсирует это защитным потенциалом за счет множества дополнительных способностей: от тарана для побега из сложных ситуаций до помощи в общей мобильности.",
+
+    "plate_havoc_content:survivor.standee.name": "Манекен",
+    "plate_havoc_content:survivor.standee.subtext": "Сосредоточен на сборе и стратегическом мышлении, полагается на опилки, которые нужно собирать для применения различных подспособностей; эффективен при правильном использовании.",
+
+    "plate_havoc_content:survivor.voidternity.name": "Пустотелый",
+    "plate_havoc_content:survivor.voidternity.subtext": "Смертоносный, но хрупкий противник, чьи характеристики выше среднего ценой быстрого голодания; зависит от нанесения огромного урона опасным или толстым целям.",
+
+    "plate_havoc_content:survivor.serial_303.name": "Серийный 303",
+    "plate_havoc_content:survivor.serial_303.subtext": "Перепрофилирован для поддержки. Нейтрализуйте устройства, латайте близлежащих игроков и используйте разгон (Overclock) для создания битлатронов ценой пассивного истощения здоровья.",
+
+    "plate_havoc_content:survivor.jack.name": "Джек",
+    "plate_havoc_content:survivor.jack.subtext": "Неспециализированный универсал, подходящий и надежный для любых ситуаций.",
+
+    "plate_havoc_content:survivor.phoon.name": "Фун",
+    "plate_havoc_content:survivor.phoon.subtext": "слишком круто для zblock",
+
+    "plate_havoc_content:survivor.clover.name": "Клевер",
+    "plate_havoc_content:survivor.clover.subtext": "Старый складской дроид на батарейках, восстанавливаемый с помощью часов.",
+
+    "plate_havoc_content:card.iron_clock.name": "Железные часы",
+    "plate_havoc_content:card.iron_clock.description": "+0.15 к добыче циклатронов.",
+
+    "plate_havoc_content:card.diamond_clock.name": "Алмазные часы",
+    "plate_havoc_content:card.diamond_clock.description": "+0.15 к добыче циклатронов и +0.5 к сокращению времени.",
+
+    "plate_havoc_content:card.netherite_clock.name": "Незеритовые часы",
+    "plate_havoc_content:card.netherite_clock.description": "+0.2 к добыче циклатронов, +1 к сокращению времени. События длятся на 10%% короче.",
+
+    "plate_havoc_content:card.copper_clock.name": "Медные часы",
+    "plate_havoc_content:card.copper_clock.description": "-0.2 к добыче циклатронов, но другие источники циклатронов эффективнее. -1 к сокращению времени.",
+
+    "plate_havoc_content:card.healing_clock.name": "Часы с целебной инфузией",
+    "plate_havoc_content:card.healing_clock.description": "Сбор часов восстанавливает часть здоровья.",
+
+    "plate_havoc_content:card.splitting_clocks.name": "Раздвоенные часы",
+    "plate_havoc_content:card.splitting_clocks.description": "+1 к количеству появляющихся часов. Время появления часов *1.33 (*1.5 на 2-м стаке) (Макс.: 2).",
+
+    "plate_havoc_content:card.purified_hourglass.name": "Очищенные песочные часы",
+    "plate_havoc_content:card.purified_hourglass.description": "Сбор проклятых часов откладывает таймер события на 50%% от его максимального значения и дает суммирующийся множитель значения +0.2, используемый при сборе обычных часов.",
+
+    "plate_havoc_content:card.chilled_temper.name": "Хладнокровие",
+    "plate_havoc_content:card.chilled_temper.description": "-15%% к накоплению интенсивности и -20%% к масштабированию интенсивности.",
+
+    "plate_havoc_content:card.swift_feets.name": "Шустрые ножки",
+    "plate_havoc_content:card.swift_feets.description": "+10%% к скорости передвижения и +0.12 к эффективности движения в воде (Макс.: 3).",
+
+    "plate_havoc_content:card.hearty.name": "Крепыш",
+    "plate_havoc_content:card.hearty.description": "+1.25 к макс. сердцам. (Макс.: 4)",
+
+    "plate_havoc_content:card.armoured_up.name": "Экипирован броней",
+    "plate_havoc_content:card.armoured_up.description": "+1 к броне и +0.5 к прочности брони (Макс.: 5).",
+
+    "plate_havoc_content:card.strength_training.name": "Силовые тренировки",
+    "plate_havoc_content:card.strength_training.description": "+1.5 к урону от атаки и +0.2 к сопротивлению отбрасыванию (Макс.: 3).",
+
+    "plate_havoc_content:card.box_of_wind.name": "Коробка ветряных зарядов",
+    "plate_havoc_content:card.box_of_wind.description": "Дает 5 ветряных зарядов в начале цикла.",
+
+    "plate_havoc_content:card.multi_use_umbrella.name": "Многоразовый зонт",
+    "plate_havoc_content:card.multi_use_umbrella.description": "Срезает паутину за 1с. 15-секундный иммунитет к кислотному дождю. Брызгалки активируются на 5с с перезагрузкой в 1м при возгорании, туша пламя.",
+
+    "plate_havoc_content:card.box_of_meats.name": "Коробка с мясом",
+    "plate_havoc_content:card.box_of_meats.description": "Дает 3 приготовленные баранины в начале цикла.",
+
+    "plate_havoc_content:card.intense_investment.name": "Интенсивные инвестиции",
+    "plate_havoc_content:card.intense_investment.description": "Конвертирует 15%% интенсивности, полученной за текущий цикл, удваивая ее в циклатроны.",
+
+    "plate_havoc_content:card.determination.name": "Решимость",
+    "plate_havoc_content:card.determination.description": "При последнем рубеже (Last Stand) вы получаете небольшие улучшения характеристик и любые дополнительные бонусы. Становится сильнее в одиночной игре.",
+
+    "plate_havoc_content:card.fire_guardian.name": "Наемный огненный страж",
+    "plate_havoc_content:card.fire_guardian.description": "Огненный страж защищает всех игроков, выпуская огненные снаряды по врагам, которые больше не поджигают блоки.",
+
+    "plate_havoc_content:card.boxless_desires.name": "Желания без коробки",
+    "plate_havoc_content:card.boxless_desires.description": "Дает 3 ветряных заряда и 2 приготовленные баранины в начале цикла. Дает 2 ветряных заряда и 1 приготовленную баранину каждые 30с во время цикла. События с предметами на 50%% ценнее.",
+
+    "plate_havoc_content:card.vampiristic_lifeblood.name": "Вампирическая кровь",
+    "plate_havoc_content:card.vampiristic_lifeblood.description": "+5 к макс. сердцам. Убийство мобов восстанавливает часть здоровья.",
+
+    "plate_havoc_content:card.glacier_player.name": "Ледниковый игрок",
+    "plate_havoc_content:card.glacier_player.description": "Возрождает случайного игрока, если в живых никого нет, и расходуется на этот цикл.",
+
+    "plate_havoc_content:card.void_rift.name": "Разлом пустоты",
+    "plate_havoc_content:card.void_rift.description": "Падение в пустоту телепортирует вас обратно на поверхность.",
+
+    "plate_havoc_content:card.mechanical_extender.name": "Механический удлинитель",
+    "plate_havoc_content:card.mechanical_extender.description": "+0.5 к дальности взаимодействия. +0.375 к дальности сбора часов (Макс.: 3).",
+
+    "plate_havoc_content:card.gravity_coil.name": "Гравитационная катушка",
+    "plate_havoc_content:card.gravity_coil.description1": "+10%% к силе прыжка, слегка снижена гравитация. Удерживайте",
+    "plate_havoc_content:card.gravity_coil.description2": "для дальнейшего уменьшения гравитации.",
+
+    "plate_havoc_content:card.material_kit.name": "Набор материалов",
+    "plate_havoc_content:card.material_kit.description": "Предоставляет строительные блоки в начале цикла.",
+
+    "plate_havoc_content:card.player_radar_module.name": "Радар игроков",
+    "plate_havoc_content:card.player_radar_module.description": "Игроки постоянно подсвечиваются.",
+
+    "plate_havoc_content:card.hostile_radar_module.name": "Радар врагов",
+    "plate_havoc_content:card.hostile_radar_module.description": "Каждые 10 секунд подсвечивает всех не отмеченных враждебных мобов.",
+
+    "plate_havoc_content:card.critical_rollback.name": "Критический откат",
+    "plate_havoc_content:card.critical_rollback.description": "Блокирует урон, который привел бы к смерти, независимо от здоровья (Макс.: 2).",
+
+    "plate_havoc_content:card.double_jump.name": "Двойной прыжок",
+    "plate_havoc_content:card.double_jump.description1": "Дает дополнительный прыжок. Нажмите",
+    "plate_havoc_content:card.double_jump.description2": "в воздухе для использования.",
+
+    "plate_havoc_content:card.triple_jump.name": "Тройной прыжок",
+    "plate_havoc_content:card.triple_jump.description1": "Дает дополнительный прыжок. Нажмите",
+    "plate_havoc_content:card.triple_jump.description2": "в воздухе для использования.",
+
+    "plate_havoc_content:card.777_machine.name": "Автомат «Три семёрки»",
+    "plate_havoc_content:card.777_machine.description": "Случайный положительный эффект выдается всем игрокам на минуту в начале цикла.",
+
+    "plate_havoc_content:card.temporal_manipulation.name": "Манипуляция временем",
+    "plate_havoc_content:card.temporal_manipulation.description": "В первые 25 секунд цикла часы появляются вдвое быстрее, +80%% к времени события при изменении некоторых временных характеристик.",
+
+    "plate_havoc_content:card.bouncier_pads.name": "Более упругие плиты",
+    "plate_havoc_content:card.bouncier_pads.description": "Более крупные и сильные пружинящие плиты, появляющиеся с самого начала.",
+
+    "plate_havoc_content:card.spy_shine.name": "Шпионский блеск",
+    "plate_havoc_content:card.spy_shine.description1": "для выстрела (долгая перезагрузка при промахе). +1 к ускорению (без лимита) при попадании.",
+    "plate_havoc_content:card.spy_shine.description2": "для ускорения (движение назад; удерживайте для увеличения мощности (+4%% за тик, лимит до 300%%)). Выстрелы действуют только на врагов.",
+
+    "plate_havoc_content:card.shock_absorber.name": "Амортизатор",
+    "plate_havoc_content:card.shock_absorber.description": "При ударе молнией собирает ближайшие часы и увеличивает урон от атаки в 1.33 раза на 10 секунд.",
+
+    "plate_havoc_content:card.mechanical_heart.name": "Механическое сердце",
+    "plate_havoc_content:card.mechanical_heart.description": "Уровень здоровья ниже 20%% удаляет дополнительный тик из времени цикла и времени появления часов на нечетных тиках (суммируется).",
+
+    "plate_havoc_content:card.blood_money.name": "Кровавые деньги",
+    "plate_havoc_content:card.blood_money.description": "Удары в ближнем бою приносят циклатроны от урона, нанесенного существу. Накопленный урон навсегда увеличивает урон от атаки до +2.5 макс.",
+
+    "plate_havoc_content:card.midas_touch.name": "Прикосновение Мидаса",
+    "plate_havoc_content:card.midas_touch.description": "Использование артефакта увеличивает добычу циклатронов на 0.1 на этот цикл.",
+
+    "plate_havoc_content:card.gashed_tissue.name": "Рваная ткань",
+    "plate_havoc_content:card.gashed_tissue.description": "Получение урона приносит циклатроны. Увеличивается тем сильнее, чем ниже максимальное здоровье.",
+
+    "plate_havoc_content:card.nanomachines.name": "Наномашины",
+    "plate_havoc_content:card.nanomachines.description": "Получение 8 или более сердец урона за 1.5 секунды удваивает броню на 8 секунд. Можно суммировать для увеличения длительности.",
+
+    "plate_havoc_content:card.deflecting_barrier.name": "Отражающий барьер",
+    "plate_havoc_content:card.deflecting_barrier.description": "Отражает некоторые ближайшие снаряды, расходуя энергию (некоторые стоят дороже). Восстанавливается через 30 секунд после поломки.",
+
+    "plate_havoc_content:card.weight_scaler.name": "Регулятор веса",
+    "plate_havoc_content:card.weight_scaler.description": "Скорость атаки увеличивается по мере опустошения шкалы голода.",
+
+    "plate_havoc_content:card.artetractor.name": "Артефактор",
+    "plate_havoc_content:card.artetractor.description": "Теперь появляется дополнительный артефакт.",
+
+    "plate_havoc_content:card.brass_knuckles.name": "Кастет",
+    "plate_havoc_content:card.brass_knuckles.description": "Атаки кулаком наносят в 1.2 раза больше урона.",
+
+    "plate_havoc_content:card.scrap_bin.name": "Мусорный контейнер",
+    "plate_havoc_content:card.scrap_bin.description": "Половина несобранных часов собирается в конце цикла со стоимостью 0.75x от их номинала.",
+
+    "plate_havoc_content:card.roller_skates.name": "Роликовые коньки",
+    "plate_havoc_content:card.roller_skates.description": "Набирайте скорость без трения с усиленными спринтерскими прыжками. Присядьте, чтобы остановиться. +0.75 к эффективности движения и 2x к высоте шага.",
+
+    "plate_havoc_content:card.jet_boots.name": "Реактивные ботинки",
+    "plate_havoc_content:card.jet_boots.description": "Дает дополнительный, более мощный прыжок в направлении взгляда, дальность зависит от скорости. -33%% урона от падения.",
+
+    "plate_havoc_content:card.emergency_pads.name": "Аварийные плиты",
+    "plate_havoc_content:card.emergency_pads.description": "Более редкие, слабые, но мощные пружинящие плиты, появляющиеся чуть выше уровня пустоты.",
+
+    "plate_havoc_content:card.tailsman_of_hope.name": "Талисман надежды",
+    "plate_havoc_content:card.tailsman_of_hope.description": "Гарантирует положительное событие каждое 30-е событие.",
+
+    "plate_havoc_content:card.sapper.name": "Сапер",
+    "plate_havoc_content:card.sapper.description": "10%% шанс полностью отключить несколько опасностей (мины) или смягчить более серьезные угрозы (Макс.: 20%%).",
+
+    "plate_havoc_content:card.suction_cups.name": "Присоски",
+    "plate_havoc_content:card.suction_cups.description1": "Столкновение со стеной при удержании",
+    "plate_havoc_content:card.suction_cups.description2": "слегка отбрасывает вас назад и конвертирует импульс в высоту.",
+
+    "plate_havoc_content:card.static_shreds.name": "Статические осколки",
+    "plate_havoc_content:card.static_shreds.description": "Часть чего-то большего? Получайте больше трудностей с каждым новым стаком.",
+
+    "plate_havoc_content:card.iridescent_shards.name": "Иризирующие осколки",
+    "plate_havoc_content:card.iridescent_shards.description": "3 секунды полета, возобновляемые на земле.",
+
+    "plate_havoc_content:card.divine_intervention.name": "Божественное вмешательство",
+    "plate_havoc_content:card.divine_intervention.description": "Артефакт процветания становится гарантированным и немного сильнее.",
+
+    "plate_havoc_content:card.gilded_vial.name": "Позолоченный флакон",
+    "plate_havoc_content:card.gilded_vial.description": "Часы удаляют дополнительные +0.5 секунды (Макс.: 1.5).",
+
+    "plate_havoc_content:card.turtle_shell.name": "Панцирь черепахи",
+    "plate_havoc_content:card.turtle_shell.description": "Дает +1 к броне и удваивает текущую прочность брони, но скорость передвижения и урон от атаки уменьшаются вдвое.",
+
+    "plate_havoc_content:card.d20.name": "D20",
+    "plate_havoc_content:card.d20.description": "Каждые 3 использованных платных переброса делают следующий переброс бесплатным.",
+
+    "plate_havoc_content:card.old_war_stealthkit.name": "Набор скрытности старой войны",
+    "plate_havoc_content:card.old_war_stealthkit.description": "Становитесь невидимым с увеличением скорости передвижения на +10%% при здоровье ниже 25%%.",
+
+    "plate_havoc_content:card.endercation.name": "Эндеркация",
+    "plate_havoc_content:card.endercation.description": "10%% шанс телепортировать атакующего в случайное место при получении урона от существа.",
+
+    "plate_havoc_content:card.desert_well.name": "Пустынный колодец",
+    "plate_havoc_content:card.desert_well.description": "Переброс увеличивает время события на +12.5%% на этот цикл.",
+
+    "plate_havoc_content:card.rusted_blade.name": "Ржавый клинок",
+    "plate_havoc_content:card.rusted_blade.description": "Часы появляются со стоимостью +0.125 за каждого игрока, который не получал урона в течение всего цикла.",
+
+    "plate_havoc_content:card.digging_claw.name": "Копательный коготь",
+    "plate_havoc_content:card.digging_claw.description": "+20%% к скорости разрушения блоков в присяде.",
+
+    "plate_havoc_content:card.camo_wear.name": "Камуфляжная экипировка",
+    "plate_havoc_content:card.camo_wear.description": "Наносите в 2.5 раза больше урона в невидимости.",
+    "plate_havoc_content:card.adrenaline.name": "Адреналин",
+    "plate_havoc_content:card.adrenaline.description": "+0.75 к макс. здоровью каждый раз, когда здоровье падает до 15%% или ниже. Эффект сбрасывается каждый 3-й цикл при первом срабатывании.",
+
+    "plate_havoc_content:card.lottery_ticket.name": "Лотерейный билет",
+    "plate_havoc_content:card.lottery_ticket.description": "+1.33 к макс. здоровью, если общее количество собранных вами часов кратно 9, 15, 28, 34 или 50.",
+
+    "plate_havoc_content:card.withered_deal.name": "Иссушенная сделка",
+    "plate_havoc_content:card.withered_deal.description": "+10 к макс. здоровью, но на вас постоянно наложен эффект «Иссушение».",
+
+    "plate_havoc_content:card.sharpened_glass.name": "Заточенное стекло",
+    "plate_havoc_content:card.sharpened_glass.description": "Наносит вдвое больше урона, но вы получаете 2.5 сердечка урона за каждый удар по существу.",
+
+    "plate_havoc_content:card.emergency_hammer.name": "Аварийный молоток",
+    "plate_havoc_content:card.emergency_hammer.description": "Скорость разрушения блоков увеличена в 1.5 раза, когда вы горящих.",
+
+    "plate_havoc_content:card.dandelion.name": "Одуванчик",
+    "plate_havoc_content:card.dandelion.description": "Сбор часов накладывает на враждебных мобов Слабость и Медлительность на 10 секунд.",
+
+
+    "plate_havoc_content:card.piranha_season.name": "Сезон пираний",
+    "plate_havoc_content:card.piranha_season.description": "Пираньи заполняют воду, нанося в 1.5 раза больше урона.",
+
+    "plate_havoc_content:card.enraged.name": "В ярости",
+    "plate_havoc_content:card.enraged.description": "Часы имеют повышенную ценность, но она со временем падает до половины максимальной. *0.9 к времени, *1.33 к накоплению интенсивности. События агрессивнее, но короче на 20%%.",
+
+    "plate_havoc_content:card.cursed_clocks.name": "Проклятые часы",
+    "plate_havoc_content:card.cursed_clocks.description": "Каждые четвертые часы прокляты и наносят урон вместо этого. Увеличивает время цикла и событий. Передается.",
+
+    "plate_havoc_content:card.new_years.name": "Новый год",
+    "plate_havoc_content:card.new_years.description": "Фейерверки гарантированы в начале и порождают на 25%% (Макс.: 50%%) больше фейерверков. Быстрее на втором стаке.",
+
+    "plate_havoc_content:card.silverfestation.name": "Серебряное заражение",
+    "plate_havoc_content:card.silverfestation.description": "Мобы заражены. Сбор часов имеет 15%% шанс призвать чешуйницу.",
+
+    "plate_havoc_content:card.cube_of_decay.name": "Куб распада",
+    "plate_havoc_content:card.cube_of_decay.description": "Призывает временный фиолетовый куб, требующий от игроков уменьшения. Уменьшение с >70%% времени дает положительный результат. Истечение таймера дает отрицательный результат, иначе ничего не происходит.",
+
+    "plate_havoc_content:card.always_hungry.name": "Всегда голоден",
+    "plate_havoc_content:card.always_hungry.description": "Игроки невероятно быстро проголодаются. Требуется управление голодом.",
+
+    "plate_havoc_content:card.life_harmony.name": "Гармония жизни",
+    "plate_havoc_content:card.life_harmony.description": "Чем больше живых мобов, тем сильнее влияние на агрессивность событий.",
+
+    "plate_havoc_content:card.slow_passing.name": "Медленное течение",
+    "plate_havoc_content:card.slow_passing.description": "Часы имеют сниженную ценность, но со временем созревают до утроенного максимума. Слишком долгое ожидание быстро портит их ценность до 20%%. Больше времени, большая длительность.",
+
+    "plate_havoc_content:card.rf_strike_pack.name": "Пакет ударов РФ",
+    "plate_havoc_content:card.rf_strike_pack.description": "Снайперы движения стреляют очередями с удвоенным боезапасом, но уменьшенным вдвое уроном.",
+
+    "plate_havoc_content:card.unification.name": "Унификация",
+    "plate_havoc_content:card.unification.description": "Мобы получают все более мощные эффекты, чем дольше они живы.",
+
+    "plate_havoc_content:card.repetition.name": "Повторение",
+    "plate_havoc_content:card.repetition.description": "Количество событий при старте цикла равно (Количество циклов * Событий за действие), с лимитом в 50.",
+
+    "plate_havoc_content:card.meagre_clocks.name": "Скудные часы",
+    "plate_havoc_content:card.meagre_clocks.description": "Часы появляются в два раза дольше, но -15%% к стоимости карт и +25%% к награде за карты.",
+
+    "plate_havoc_content:card.putrid_stink.name": "Зловонный запах",
+    "plate_havoc_content:card.putrid_stink.description": "Нахождение рядом с зомби накладывает отравление.",
+
+    "plate_havoc_content:card.rising_undead.name": "Восстающая нежить",
+    "plate_havoc_content:card.rising_undead.description": "Мобы нежити появляются каждые 30 секунд.",
+
+    "plate_havoc_content:card.time_panic.name": "Временная паника",
+    "plate_havoc_content:card.time_panic.description": "Таймер событий уменьшается от 0%% до 25%% в зависимости от близости оставшегося времени к нулю. Накопление интенсивности работает наоборот.",
+
+    "plate_havoc_content:card.herobrine_shrine.name": "Храм Херобрина",
+    "plate_havoc_content:card.herobrine_shrine.description": "Херобрин теперь постоянно преследует игроков. Замедление III вместо II при проклятии.",
+
+    "plate_havoc_content:card.electrified_rod.name": "Электризованный жезл",
+    "plate_havoc_content:card.electrified_rod.description": "Удары молний бьют цепью по мобам, а криперы появляются заряженными и с улучшенными характеристиками.",
+
+    "plate_havoc_content:card.task_manager.name": "Диспетчер задач",
+    "plate_havoc_content:card.task_manager.description": "Назначает задачи во время цикла, которые необходимо выполнить.",
+
+    "plate_havoc_content:card.extra_measures.name": "Дополнительные меры",
+    "plate_havoc_content:card.extra_measures.description": "Лазерные буры при стрельбе вызывают дополнительный, более быстрый, но слабый бур.",
+
+    "plate_havoc_content:card.short_fuses.name": "Короткие фитили",
+    "plate_havoc_content:card.short_fuses.description": "Криперы, падающие ядерные заряды и динамит взрываются быстрее (25%% * стак) (Макс.: 50%%).",
+
+    "plate_havoc_content:card.mutilated_teddy.name": "Изуродованный мишка",
+    "plate_havoc_content:card.mutilated_teddy.description": "Атаки враждебных мобов отнимают полсердца на этот цикл.",
+
+    "plate_havoc_content:card.proximity_field.name": "Поле близости",
+    "plate_havoc_content:card.proximity_field.description": "Появляется втрое больше мин, разбросанных по плите.",
+
+    "plate_havoc_content:card.bloody_needle.name": "Кровавая игла",
+    "plate_havoc_content:card.bloody_needle.description": "Здоровье и урон мобов масштабируются от интенсивности.",
+
+    "plate_havoc_content:card.pausing_gaze.name": "Замирающий взгляд",
+    "plate_havoc_content:card.pausing_gaze.description": "Взирающая тень приостанавливает время своим присутствием, но длится на 40%% короче.",
+
+    "plate_havoc_content:card.lasting_acid.name": "Долгоиграющая кислота",
+    "plate_havoc_content:card.lasting_acid.description": "Кислота держится 10 секунд при контакте. Смывайте ее водой.",
+
+    "plate_havoc_content:card.wilted_clover.name": "Увядший клевер",
+    "plate_havoc_content:card.wilted_clover.description": "У куба распада появляются более суровые негативные исходы. Автомат «Три семёрки» может выпасть с отрицательными эффектами.",
+
+    "plate_havoc_content:card.incendiary_rounds.name": "Зажигательные патроны",
+    "plate_havoc_content:card.incendiary_rounds.description": "Пули снайпера движения поджигают цели.",
+
+    "plate_havoc_content:card.arachnophobia.name": "Арахнофобия",
+    "plate_havoc_content:card.arachnophobia.description": "Паутина порождает паучков, цепляющихся за ближайших игроков.",
+
+    "plate_havoc_content:card.shulker_x.name": "Шалкер-тактика: X-формат",
+    "plate_havoc_content:card.shulker_x.description": "Снаряды шалкера периодически выстреливают в игрока в форме буквы X.",
+
+    "plate_havoc_content:card.radioactive_cloud.name": "Радиоактивное облако",
+    "plate_havoc_content:card.radioactive_cloud.description": "Взрывы ядерных зарядов создают долговечное радиационное облако, накладывающее яд.",
+
+    "plate_havoc_content:card.dashermen.name": "Рысаки",
+    "plate_havoc_content:card.dashermen.description": "Стиратель визжит, меняя траекторию и совершая рывок к другому игроку при близком контакте.",
+
+    "plate_havoc_content:card.void_implosions.name": "Имплозии пустоты",
+    "plate_havoc_content:card.void_implosions.description": "Появляются имплозии, наносящие 5 сердец урона.",
+
+    "plate_havoc_content:card.deathroll.name": "Смертельный рулон",
+    "plate_havoc_content:card.deathroll.description": "2 выбора вместо 3 в магазинах проклятий. +20%% к награде за карты.",
+
+    "plate_havoc_content:card.quick_time_stopping.name": "Быстрая остановка времени",
+    "plate_havoc_content:card.quick_time_stopping.description": "Целевой блок теперь появляется прямо перед вами с кардинально уменьшенным временем реакции.",
+
+    "plate_havoc_content:card.screeching_null.name": "Визжащий ноль",
+    "plate_havoc_content:card.screeching_null.description": "Уклоняйтесь от столкновений под его визг, пока он поспешно преследует вас.",
+
+    "plate_havoc_content:card.gazing_surprise.name": "Внезапный взгляд",
+    "plate_havoc_content:card.gazing_surprise.description": "Взирающая тень телепортируется прямо к игроку при достижении половины своей длительности.",
+
+    "plate_havoc_content:card.kamikaze.name": "Камикадзе",
+    "plate_havoc_content:card.kamikaze.description": "Через 10 секунд криперы бросаются к своей цели, взрываясь при сближении или при касании земли.",
+
+    "plate_havoc_content:card.impactful_landing.name": "Ударное приземление",
+    "plate_havoc_content:card.impactful_landing.description": "Бризы выпускают ветряной заряд при приземлении после прыжка.",
+
+    "plate_havoc_content:card.connected_lasers.name": "Соединенные лазеры",
+    "plate_havoc_content:card.connected_lasers.description": "Лазерные конструкции больше не вращаются, но могут соединяться с другой конструкцией.",
+
+    "plate_havoc_content:card.event_horizon.name": "Горизонт событий",
+    "plate_havoc_content:card.event_horizon.description": "Приближение к черной дыре снижает скорость передвижения. +15%% к максимальному размеру и скорости.",
+
+    "plate_havoc_content:card.guided_charges.name": "Управляемые заряды",
+    "plate_havoc_content:card.guided_charges.description": "1 из 20 падающих сверху ветряных зарядов будет наводиться на игроков.",
+
+    "plate_havoc_content:card.shock_resistant.name": "Ударопрочный",
+    "plate_havoc_content:card.shock_resistant.description": "Духу требуется дополнительный удар током, чтобы стать послушным.",
+
+    "plate_havoc_content:card.bloodlust.name": "Жажда крови",
+    "plate_havoc_content:card.bloodlust.description": "Получение урона от моба навсегда увеличивает урон от атаки этого моба на 0.2.",
+
+    "plate_havoc_content:card.creeplets.name": "Криперята",
+    "plate_havoc_content:card.creeplets.description": "2 дополнительных меньших и слабых крипера появляются прямо рядом с основным крипером.",
+
+    "plate_havoc_content:card.laser_construct_mk2.name": "Лазерная конструкция MKII",
+    "plate_havoc_content:card.laser_construct_mk2.description": "Каждая 1 из 5 появляющихся лазерных конструкций выпускает длинные горизонтальные лучи, быстро проходящие через всю плиту за 5 секунд.",
+
+    "plate_havoc_content:card.fragile_void.name": "Хрупкость пустоты",
+    "plate_havoc_content:card.fragile_void.description": "Имплозии становятся смертельными.",
+
+    "plate_havoc_content:card.void_pull.name": "Тяга пустоты",
+    "plate_havoc_content:card.void_pull.description": "Пустота затягивает тех, кто долго находится в воздухе. В 1.5 раза больше урона от падения и увеличенный урон от пустоты.",
+
+    "plate_havoc_content:card.run_it_back.name": "Повторить забег",
+    "plate_havoc_content:card.run_it_back.description": "Количество событий за одно действие увеличивается на 1. Не может быть активировано повторно и не добавляет интенсивности.",
+
+    "plate_havoc_content:card.cranked.name": "На взводе",
+    "plate_havoc_content:card.cranked.description": "Поддерживайте таймер (30 (90 макс.)) сбором часов для +((Время появления * 1.66 (иначе * 1.33)) / Количество появления). Истечение времени убивает. Часы взрываются на затмении.",
+
+    "plate_havoc_content:card.white_eyes.name": "Белые глаза",
+    "plate_havoc_content:card.white_eyes.description": "Херобрин каждые 50 телепортаций призывает несколько поддельных версий себя прямо над часами, делая их несоббираемыми. Найдите настоящую, чтобы отменить это.",
+
+    "plate_havoc_content:card.trigger_happy.name": "Безбашенный",
+    "plate_havoc_content:card.trigger_happy.description": "Снайпер движения теперь имеет случайную последовательность от 3 до 8 и дает краткий индикатор выстрела. Стойте на нечетных, двигайтесь на четных и прыгайте на последней пуле.",
+
+    "plate_havoc_content:card.auric_cannon.name": "Золотая пушка",
+    "plate_havoc_content:card.auric_cannon.description": "Остановите ее стрельбу, разобрав ее части до того, как она зачистит всю плиту.",
+
+    "plate_havoc_content:card.bombardement.name": "Бомбардировка",
+    "plate_havoc_content:card.bombardement.description": "Тонны пронзающих лазеров медленно опускаются сверху каждую минуту, смертельные для любого, кто их коснется.",
+
+    "plate_havoc_content:card.the_forgotten.name": "Заснеженная фотография",
+    "plate_havoc_content:card.the_forgotten.description": "",
+
+    "plate_havoc_content:card.historically_accurate_nuke.name": "Исторически достоверная ядерка",
+    "plate_havoc_content:card.historically_accurate_nuke.description": "Ядерные заряды становятся в 1000 раз мощнее.",
+
+    "plate_havoc_content:card.due_taxes.name": "Налоги к уплате",
+    "plate_havoc_content:card.due_taxes.description": "Общий баланс циклатронов облагается налогом в 20%% в конце цикла.",
+
+    "plate_havoc_content:card.pvp_slop.name": "ПВП-халтура",
+    "plate_havoc_content:card.pvp_slop.description": "Что эта халтура делает в моей игре, броууу!!!",
+
+    "plate_havoc_content:card.67.name": "Шесть семь",
+    "plate_havoc_content:card.67.description": "+0.067 к каждой характеристике.",
+
+    "plate_havoc_content:card.untitled_document.name": "Безымянный документ",
+    "plate_havoc_content:card.untitled_document.description": "Инвентарь игрока очищается при появлении.",
+
+    "plate_havoc_content:card.close_up.name": "Крупный план",
+    "plate_havoc_content:card.close_up.description": "Камера от третьего лица теперь на 2.75 блока ближе к игроку.",
+
+    "plate_havoc_content:card.overtime.name": "Овертайм",
+    "plate_havoc_content:card.overtime.description": "Цикл длится на (9 * Цикл) секунд дольше.",
+
+    "plate_havoc_content:card.locked_spacebar.name": "Заблокированный пробел",
+    "plate_havoc_content:card.locked_spacebar.description": "Антихрист вернулся к жизни?!",
+
+    "plate_havoc_content:card.bitlathron.name": "Битлатрон",
+    "plate_havoc_content:card.bitlathron.description": "Часы больше не появляются. Циклатроны теперь получаются пассивно.",
+
+    "plate_havoc_content:card.shulker_rf.name": "Шалкер-тактика: Обычный огонь",
+    "plate_havoc_content:card.shulker_rf.description": "X-формация снарядов шалкера выпускается каждую секунду. ГГ!",
+
+    "plate_havoc_content:card.shulker_minigun.name": "Шалкер-тактика: Миниган",
+    "plate_havoc_content:card.shulker_minigun.description": "Ох-хо-хо.",
+
+    "plate_havoc_content:card.risk_of_piranhas.name": "Риск пираний",
+    "plate_havoc_content:card.risk_of_piranhas.description": "Пираньи, если активны, кусают под дождем, но с уменьшенным вдвое уроном и более долгим временем укуса.",
+
+    "plate_havoc_content:card.one_less_choice.name": "На один выбор меньше",
+    "plate_havoc_content:card.one_less_choice.description": "Количество карт для выбора уменьшено на единицу.",
+
+    "plate_havoc_content:card.mentally_parrotsane.name": "Ментально попугаевый бред",
+    "plate_havoc_content:card.mentally_parrotsane.description": "Звуки мобов и индикаторы будут время от времени случайно воспроизводиться для всех. Может активироваться при действии или другими событиями и картами.",
+
+    "plate_havoc_content:card.alpha_eater.name": "Альфа-едок",
+    "plate_havoc_content:card.alpha_eater.description": "Еда расходуется мгновенно.",
+
+    "plate_havoc_content:card.pitch_black.name": "Кромешная тьма",
+    "plate_havoc_content:card.pitch_black.description": "Игроки получают урон, если остаются в полной темноте в течение 10 секунд.",
+
+    "plate_havoc_content:card.glitched_timer.name": "Глючный таймер",
+    "plate_havoc_content:card.glitched_timer.description": "Время цикла может отклоняться на 10–45 секунд.",
+
+    "plate_havoc_content:card.hallucinogenic_overdose.name": "Галлюциногенная передозировка",
+    "plate_havoc_content:card.hallucinogenic_overdose.description": "Применяет каждый накладываемый визуальный эффект на экран.",
+
+    "plate_havoc_content:card.oak_effigy.name": "Дубовое изваяние",
+    "plate_havoc_content:card.oak_effigy.description": "Когда все игроки мертвы, завершает текущий цикл и расходуется; используется раз за забег.",
+
+    "plate_havoc_content:card.wrath_injection.name": "Инъекция гнева",
+    "plate_havoc_content:card.wrath_injection.description": "Игроки получают +1.5 к урону от атаки, но мобы получают в 1.25 раза больше урона.",
+
+    "plate_havoc_content:card_type.difficulty": "ОПЕРЕНИЕ / СВЕТ",
+    "plate_havoc_content:card_type.difficulty.description": "Выберите сложность.",
+    "plate_havoc_content:card_type.difficulty.subtext": "Увидите ли вы свет?",
+
+    "plate_havoc_content:card_type.upgrade": "УЛУЧШЕНИЯ",
+    "plate_havoc_content:card_type.upgrade.description": "Предоставляет преимущества, облегчающие игру.",
+    "plate_havoc_content:card_type.upgrade.subtext": "Станьте сильнее.",
+
+    "plate_havoc_content:card_type.curse": "ПРОКЛЯТИЯ",
+    "plate_havoc_content:card_type.curse.description": "Вносит изменения и недостатки, усложняющие игру. Может вознаградить циклатронами в зависимости от тяжести.",
+    "plate_havoc_content:card_type.curse.subtext": "Станьте проклятым.",
+
+    "plate_havoc_content:card_type.deeper_curse": "БОЛЕЕ ГЛУБОКИЕ ПРОКЛЯТИЯ",
+    "plate_havoc_content:card_type.deeper_curse.description": "Вносит радикально иные изменения в игровой процесс и более значительные недостатки по сравнению с обычными проклятиями.",
+    "plate_havoc_content:card_type.deeper_curse.subtext": "Станьте сильнее сглаженными.",
+
+    "plate_havoc_content:card_type.chaos": "ХАОС",
+    "plate_havoc_content:card_type.chaos.subtext": "Впадите в хаос...",
+
+    "plate_havoc_content:card_type.descend": "НИСХОЖДЕНИЕ",
+    "plate_havoc_content:card_type.descend.subtext": "Что уготовила судьба?",
+
+    "plate_havoc_content:objective.indicator": "Цикл задач",
+    "plate_havoc_content:objective.description": "Условия, необходимые для прохождения этого цикла!",
+
+    "plate_havoc_content:gametype.rogue.name": "Забытый",
+    "plate_havoc_content:gametype.rogue.description": "Потерян, чтобы быть навеки забытым.",
+
+    "plate_havoc_content:music.excuse": "Оправдание",
+
+    "plate_havoc_content:selection_open_action_prompt": "глядя вниз, чтобы открыть выбор.",
+
+    "plate_havoc:tutorial.introductory": "Рогалик-игра на платформе, основанная на выживании в случайных событиях.",
+    "plate_havoc:tutorial.main": "Выживайте в событиях, повышающих интенсивность (🔥), становящихся всё более суровыми.\n\nСобирайте часы, чтобы вычитать время (⏳) — главную цель для следующего цикла.\n\nЦиклатроны (€) — общая валюта от часов или средство покупки карт.\n\nКарты могут быть полезными, вредными или тем и другим одновременно (улучшения и проклятия).\n\nУ выживших есть уникальные способности, стили и характеристики.\n\nПрисутствует несколько ванильных изменений (сопротивление воздуха 0.5x, а также уменьшенные разрушение и строительство).",
+    "plate_havoc:tutorial.end": "Для пользователей Modrinth: это более отполированная версия классической игры с современными изменениями и дополнениями из фазы 1 Splintered Worlds. Ссылка на Discord указана на странице.",
+
+    "plate_havoc_legacy_content:gametype.arena.name": "Арена",
+    "plate_havoc_legacy_content:gametype.arena.description": "Будьте друзьями или врагами с окружающими. Выживите 3 минуты. Выжившие игроки побеждают, когда время истекает!",
+    "plate_havoc_legacy_content:gametype.arena.time_out": "Время вышло! Выжившие побеждают!",
+
+    "plate_havoc_legacy_content:gametype.border_says.name": "Граница приказывет",
+    "plate_havoc_legacy_content:gametype.border_says.description": "Выполняйте требования границы, и она не будет сужаться!",
+
+    "plate_havoc_legacy_content:gametype.chill_jog.name": "Спокойный забег",
+    "plate_havoc_legacy_content:gametype.chill_jog.description": "Расслабляйтесь и выживайте с другими или в одиночку с более долгими перерывами.",
+
+    "plate_havoc_legacy_content:gametype.deathzone.name": "Зона смерти",
+    "plate_havoc_legacy_content:gametype.deathzone.description": "Могут происходить любые события. Сотрудничайте, чтобы прожить как можно дольше.",
+
+    "plate_havoc_legacy_content:gametype.endurance_chaos.name": "Хаотичное выживание",
+    "plate_havoc_legacy_content:gametype.endurance_chaos.description": "Постарайтесь выжить в суровом темпе с другими или в одиночку!",
+
+    "plate_havoc_legacy_content:gametype.endurance_survival.name": "Испытание на выносливость",
+    "plate_havoc_legacy_content:gametype.endurance_survival.description": "Выживайте как можно дольше с другими или в одиночку. В режиме выживания!",
+
+    "plate_havoc_legacy_content:gametype.endurance.name": "Выносливость",
+    "plate_havoc_legacy_content:gametype.endurance.description": "Выживайте как можно дольше с другими или в одиночку.",
+
+    "plate_havoc_legacy_content:gametype.bleed.name": "Кровотечение",
+    "plate_havoc_legacy_content:gametype.bleed.description": "Выживайте, истекая кровью. Собирайте сердечки, чтобы исцелить свою команду",
+
+    "plate_havoc_legacy_content:gametype.gametype.juggernaut.name": "Джаггернаут",
+    "plate_havoc_legacy_content:gametype.juggernaut.description": "Одолейте Джаггернаута или переживите всех остальных!",
+    "plate_havoc_legacy_content:gametype.juggernaut.jug_win": "Победа Джаггернаута!",
+    "plate_havoc_legacy_content:gametype.juggernaut.jug_lose": "Победа остальных!",
+
+    "plate_havoc_legacy_content:gametype.lava_rush.name": "Лавовая гонка",
+    "plate_havoc_legacy_content:gametype.lava_rush.description": "Собирайте, стройте, убивайте, выживайте.",
+
+    "plate_havoc_legacy_content:gametype.modifier_hell.name": "Ад модификаторов",
+    "plate_havoc_legacy_content:gametype.modifier_hell.description": "Аркадный опыт с лимитом модификаторов до 10!",
+
+    "plate_havoc_legacy_content:gametype.sotf.name": "Естественный отбор",
+    "plate_havoc_legacy_content:gametype.sotf.description": "Останьтесь последним выжившим",
+
+    "plate_havoc_legacy_content:gametype.teams.name": "Командная битва",
+    "plate_havoc_legacy_content:gametype.teams.description": "Переживите вражескую команду!",
+    "plate_havoc_legacy_content:gametype.teams.yellow": "Жёлтые победили!",
+    "plate_havoc_legacy_content:gametype.teams.green": "Зелёные победили!",
+
+    "plate_havoc_legacy_content:gametype.vip.name": "Защита VIP",
+    "plate_havoc_legacy_content:gametype.vip.description": "Не дайте VIP-персоне погибнуть!",
+    "plate_havoc_legacy_content:gametype.vip.lose": "VIP погиб!",
+
+    "plate_havoc_legacy_content:shared.no_winners": "Игра закончилась без победителей. Только проигравшие.",
+    "plate_havoc_legacy_content:shared.win": "Победа!"
 }

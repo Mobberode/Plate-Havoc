@@ -22,6 +22,11 @@ Dying is to be expected. Unlock more and more content after each attempt for use
 
 ![Death.](https://raw.githubusercontent.com/Mobberode/assets/0b18a3289b85819889754e5b6002277c1e731543/mobberode/plate%20havoc/gifs/death.gif)
 
+## Localization
+Plate Havoc supports the following languages: Keep in mind Events are untranslatable at the moment.\
+- Simplified Chinese (by xinsu_wa)
+- Russian (by Reyn)
+
 ## Extensions
 Resource for players wanting to create custom content for Plate Havoc.\
 [Plate Havoc | Extensions Wiki](https://github.com/Mobberode/Plate-Havoc/wiki)

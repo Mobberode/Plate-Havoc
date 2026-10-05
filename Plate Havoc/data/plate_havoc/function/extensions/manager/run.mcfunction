@@ -11,9 +11,8 @@ data modify storage plate_havoc:data extensions.menu[].extra append value "\n\n"
 data remove storage plate_havoc:data extensions.menu[-1].extra[-1]
 
 ##Run all active extensions
-data modify storage plate_havoc:data extensions.run set value []
-data modify storage plate_havoc:data extensions.run append from storage plate_havoc:data extensions.statuses[{status:true}].function
-execute if data storage plate_havoc:data extensions.run[-1] run function plate_havoc:extensions/handler/loop
+data modify storage plate_havoc:data game.events.execute append from storage plate_havoc:data extensions.statuses[{status:true}]
+execute if data storage plate_havoc:data game.events.execute[-1] run function plate_havoc:misc/game_events/loop
 
 #
 execute store result score #Active plate_havoc.t.extensions if data storage plate_havoc:data extensions.statuses[{status:true}]

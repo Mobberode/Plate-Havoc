@@ -10,4 +10,4 @@ execute store result score #Value plate_havoc.intensity run random value 2500..3
 
 scoreboard players set #Left plate_havoc.timer 3600
 
-data modify storage plate_havoc:data on_game_start append value "plate_havoc:game/time/tick_down"
+data modify storage plate_havoc:data game.events.active append value {type:"plate_havoc:game.start",function:"plate_havoc:game/time/tick_down"}

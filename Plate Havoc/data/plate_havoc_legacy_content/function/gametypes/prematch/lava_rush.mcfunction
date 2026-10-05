@@ -17,7 +17,7 @@ gamerule random_tick_speed 115
 gamerule advance_time true
 gamerule advance_weather true
 
-data modify storage plate_havoc:data on_game_start append value "plate_havoc_legacy_content:gametypes/prematch/lava_rush/run"
+data modify storage plate_havoc:data game.events.active append value {type:"plate_havoc:game.start",function:"plate_havoc_legacy_content:gametypes/prematch/lava_rush/run"}
 
 team modify plate_havoc.player friendlyFire false
 

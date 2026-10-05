@@ -1,4 +1,4 @@
-data modify storage plate_havoc:data on_game_start append from storage plate_havoc:modifiers current.function
+data modify storage plate_havoc:data game.events.active append from storage plate_havoc:modifiers current.behaviours
 
 data modify storage plate_havoc:modifiers current.temp set value []
 data modify storage plate_havoc:modifiers current.temp prepend from storage plate_havoc:modifiers current.name

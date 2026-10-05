@@ -1,2 +1,0 @@
-scoreboard players set @s plate_havoc.t.credits 0
-tellraw @s ["Plate Havoc","\n",{text:"- Mobberode -",color:red},{text:"\n[Discord]",click_event:{action:"open_url",url:"https://discord.gg/fvsvmavex8"},underlined:true,color:blue},"\n",{text:"Icement | Creator",color:gold},"\n\n",{text:"- Contributors -",color:yellow},"\n",{text:"Reyn",color:gold}]

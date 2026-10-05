@@ -11,7 +11,7 @@ scoreboard players add @a[tag=!plate_havoc.spectator] plate_havoc_content.leader
 tellraw @a ["",{score:{name:"#Stat.Cycle.Collected_Clocks",objective:plate_havoc.temp},color:yellow},{text:" Clock(s)",color:yellow}," yielded: ",{text:"€",color:aqua},{score:{name:"#Stat.Cycle.Cyclathrons_Yielded",objective:plate_havoc.temp},color:aqua},"*0.01"\
 ]
 
-function plate_havoc:misc/cards/running/types/run {type:on.end}
+function plate_havoc:misc/game_events/run_type {type:"plate_havoc_content:cycle.end"}
 function plate_havoc:misc/cyclathron_visual
 
 function plate_havoc:misc/attributes/custom/update_global

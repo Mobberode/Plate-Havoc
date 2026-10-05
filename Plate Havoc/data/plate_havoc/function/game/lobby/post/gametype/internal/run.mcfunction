@@ -23,7 +23,7 @@ execute unless data storage plate_havoc:data gametype.modifiers{status:false} ru
 execute store result storage plate_havoc:data intensity float 0.001 run scoreboard players get #Value plate_havoc.intensity
 data modify storage plate_havoc:ui intensity set string storage plate_havoc:data intensity 0 -1
 
-function plate_havoc:extensions/handler/run {type:"plate_havoc:game.start"}
+function plate_havoc:misc/game_events/run_type {type:"plate_havoc:game.load"}
 data modify storage plate_havoc:data extensions.game append string storage plate_havoc:data extensions.statuses[{status:true}].id
 
 stopwatch remove plate_havoc:load_time

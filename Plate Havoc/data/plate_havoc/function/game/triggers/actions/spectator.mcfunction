@@ -7,3 +7,4 @@ tag @s add plate_havoc.spectator
 tag @s remove plate_havoc.survivor
 gamemode spectator
 clear
+item fill entity @s enderchest.* with air

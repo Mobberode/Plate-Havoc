@@ -3,6 +3,6 @@ execute store result score @s plate_havoc_content.value run data get storage pla
 
 scoreboard players add #Stat.Cycle.Clocks_Spawned plate_havoc.temp 1
 
-function plate_havoc:misc/cards/running/types/run {type:on.clock.init}
+function plate_havoc:misc/game_events/run_type {type:"plate_havoc_content:clock.init"}
 
 function plate_havoc_content:gametypes/rogue/time_cube/entity_set

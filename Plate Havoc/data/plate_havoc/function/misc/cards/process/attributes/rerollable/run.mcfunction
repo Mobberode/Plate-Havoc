@@ -8,7 +8,7 @@ execute unless data storage plate_havoc:cards temp_pool[-1] run return fail
 execute unless data storage plate_havoc:cards attributes.rerollable.cost{retain_cost:true} run data modify storage plate_havoc:cards attributes.rerollable.usages set value 0
 
 data remove storage plate_havoc:cards attributes.rerollable.cost.temp
-function plate_havoc:misc/cards/running/types/run {type:reroll.apply}
+function plate_havoc:misc/game_events/run_type {type:"plate_havoc:card.reroll.apply"}
 execute unless data storage plate_havoc:cards attributes.rerollable.cost.temp run function plate_havoc:misc/cards/process/attributes/rerollable/init_cost
 
 ##Label for active

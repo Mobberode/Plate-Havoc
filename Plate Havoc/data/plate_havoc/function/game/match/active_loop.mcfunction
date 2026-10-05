@@ -25,6 +25,4 @@ execute unless score #Playing plate_havoc.status matches 1.. run return fail
 execute if score #Value plate_havoc.timer matches ..0 run function plate_havoc:game/match/macro with storage plate_havoc:data functions
 
 ##Cards
-function plate_havoc:misc/cards/running/types/run {type:loop}
-
-function plate_havoc:extensions/handler/run {type:"plate_havoc:game.loop"}
+function plate_havoc:misc/game_events/run_type {type:"plate_havoc:game.loop"}

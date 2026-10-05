@@ -6,7 +6,6 @@ execute unless data storage plate_havoc:temp temp run function plate_havoc:misc/
 
 ##Remove the card
 $data remove storage plate_havoc:cards running.total[{id:"$(id)"}]
-$data remove storage plate_havoc:cards running.active[{id:"$(id)"}]
 
 $data remove storage plate_havoc:custom attributes[].modifiers[{tags:["$(id)"]}]
 function plate_havoc:misc/attributes/custom/update_global

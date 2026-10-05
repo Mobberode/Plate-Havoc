@@ -3,7 +3,7 @@ data modify storage plate_havoc:cards attributes.rerollable.usages set compute d
 scoreboard players add #Stat.Card_Rerolls_Used plate_havoc.num 1
 #
 data remove storage plate_havoc:cards attributes.rerollable.cost.temp
-function plate_havoc:misc/cards/running/types/run {type:reroll.use}
+function plate_havoc:misc/game_events/run_type {type:"plate_havoc:card.reroll.use"}
 execute unless data storage plate_havoc:cards attributes.rerollable.cost.temp run function plate_havoc:misc/cards/process/attributes/rerollable/init_cost
 execute store result score #Temp plate_havoc.cyclathron run data get storage plate_havoc:cards attributes.rerollable.cost.temp 100
 
