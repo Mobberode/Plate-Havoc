@@ -30,12 +30,12 @@ data modify storage plate_havoc:data game.events.active append value {type:"plat
 data modify storage plate_havoc:data game.events.active append value {type:"plate_havoc:game.start",function:"plate_havoc_content:gametypes/rogue/round_start"}
 
 data modify storage plate_havoc:leaderboard data_functions insert 1 value {function:"plate_havoc_content:leaderboard/data/cycle"}
-data modify storage plate_havoc:leaderboard data_functions insert -2 value {function:"plate_havoc_content:leaderboard/data/cards"}
-data modify storage plate_havoc:leaderboard data_functions insert -3 value {function:"plate_havoc_content:leaderboard/data/cyclathrons_yielded"}
-data modify storage plate_havoc:leaderboard data_functions insert -3 value {function:"plate_havoc_content:leaderboard/data/card_rerolls"}
-data modify storage plate_havoc:leaderboard data_functions insert -3 value {function:"plate_havoc_content:leaderboard/data/clocks_collected"}
-data modify storage plate_havoc:leaderboard data_functions insert -3 value {function:"plate_havoc_content:leaderboard/data/artefacts_activated"}
-data modify storage plate_havoc:leaderboard data_functions insert -3 value {function:"plate_havoc_content:leaderboard/data/defeated_the_forgotten"}
+data modify storage plate_havoc:leaderboard data_functions insert -3 value {function:"plate_havoc_content:leaderboard/data/cards"}
+data modify storage plate_havoc:leaderboard data_functions insert -4 value {function:"plate_havoc_content:leaderboard/data/cyclathrons_yielded"}
+data modify storage plate_havoc:leaderboard data_functions insert -4 value {function:"plate_havoc_content:leaderboard/data/card_rerolls"}
+data modify storage plate_havoc:leaderboard data_functions insert -4 value {function:"plate_havoc_content:leaderboard/data/clocks_collected"}
+data modify storage plate_havoc:leaderboard data_functions insert -4 value {function:"plate_havoc_content:leaderboard/data/artefacts_activated"}
+data modify storage plate_havoc:leaderboard data_functions insert -4 value {function:"plate_havoc_content:leaderboard/data/defeated_the_forgotten"}
 
 data modify storage plate_havoc:data game.requirements.active append value {type:"plate_havoc_content:cycle",function:"plate_havoc:misc/requirements/type/cycle"}
 ### Game contents

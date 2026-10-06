@@ -71,7 +71,7 @@ data modify storage plate_havoc:ui tabs set value [{title:"Survivors",function:"
 
 #Leaderboard
 data modify storage plate_havoc:data functions.leaderboard.sort_type set value {type:"intensity",scale:1000}
-data modify storage plate_havoc:leaderboard data_functions set value [{function:"plate_havoc_content:leaderboard/data/seed"},{function:"plate_havoc_content:leaderboard/data/status"},{function:"plate_havoc_content:leaderboard/data/difficulty"},{function:"plate_havoc_content:leaderboard/data/gametype"},{function:"plate_havoc_content:leaderboard/data/time"},{function:"plate_havoc_content:leaderboard/data/intensity"},{function:"plate_havoc_content:leaderboard/data/events_occured"},{function:"plate_havoc_content:leaderboard/data/total_deaths"},{function:"plate_havoc_content:leaderboard/data/extensions"}]
+data modify storage plate_havoc:leaderboard data_functions set value [{function:"plate_havoc_content:leaderboard/data/seed"},{function:"plate_havoc_content:leaderboard/data/status"},{function:"plate_havoc_content:leaderboard/data/difficulty"},{function:"plate_havoc_content:leaderboard/data/gametype"},{function:"plate_havoc_content:leaderboard/data/time"},{function:"plate_havoc_content:leaderboard/data/intensity"},{function:"plate_havoc_content:leaderboard/data/events_occured"},{function:"plate_havoc_content:leaderboard/data/total_deaths"},{function:"plate_havoc_content:leaderboard/data/modifiers"},{function:"plate_havoc_content:leaderboard/data/extensions"},]
 data modify storage plate_havoc:leaderboard player_data_functions set value ["plate_havoc_content:leaderboard/data/player/survivor","plate_havoc_content:leaderboard/data/player/damage_dealt","plate_havoc_content:leaderboard/data/player/damage_taken","plate_havoc_content:leaderboard/data/player/deaths"]
 
 data modify storage plate_havoc:data functions.leaderboard.credit_loop set value "plate_havoc:misc/logbook/leaderboard/credit/type/time_elasped/loop"
@@ -112,6 +112,8 @@ data modify storage plate_havoc:events pool set value {available:[],unavailable:
 data modify storage plate_havoc:events active_data set value {}
 data modify storage plate_havoc:events running set value []
 
+##Modifiers
+data modify storage plate_havoc:modifiers active set value []
 
 ##Cards
 data modify storage plate_havoc:cards active_data set value {}

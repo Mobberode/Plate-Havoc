@@ -685,5 +685,29 @@
     
 
     "plate_havoc_content:modifier.chaos_infuser.name": "Chaos Infuser",
-    "plate_havoc_content:modifier.chaos_infuser.description": "Chaos shops every 3rd Cycle with 5 selections that can be drastic."
+    "plate_havoc_content:modifier.chaos_infuser.description": "Chaos shops every 3rd Cycle with 5 selections that can be drastic.",
+
+    "plate_havoc_content:modifier.sniper_frenzy.name": "Sniper Frenzy",
+    "plate_havoc_content:modifier.sniper_frenzy.description": "Motion Snipers will constantly target players.",
+
+    "plate_havoc_content:modifier.outer_space.name": "Outer Space",
+    "plate_havoc_content:modifier.outer_space.description": "Lowered Gravity.",
+    
+    "plate_havoc_content:modifier.gigantism.name": "Gigantism",
+    "plate_havoc_content:modifier.gigantism.description": "I can hold 4 water bottles!",
+
+    "plate_havoc_content:modifier.immortal_blackhole.name": "Immortal Blackhole",
+    "plate_havoc_content:modifier.immortal_blackhole.description": "It cannot be escaped.",
+
+    "plate_havoc_content:modifier.creaking_forest.name": "Creaking Forest",
+    "plate_havoc_content:modifier.creaking_forest.description": "2 pairs of eyes are always better than a pair.",
+
+    "plate_havoc_content:modifier.keeping_track.name": "Keeping Track",
+    "plate_havoc_content:modifier.keeping_track.description": "What was it again?",
+    
+    "plate_havoc_content:modifier.fragile.name": "Fragile",
+    "plate_havoc_content:modifier.fragile.description": "A shatter away.",
+
+    "plate_havoc_content:modifier.relentless.name": "Relentless",
+    "plate_havoc_content:modifier.relentless.description": "Everything quakes violently."
 }

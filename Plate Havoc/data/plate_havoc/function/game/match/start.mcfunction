@@ -11,6 +11,7 @@ scoreboard players set #Duration plate_havoc.timer -1
 function plate_havoc:game/time/stopwatch
 
 function plate_havoc:misc/game_events/run_type {type:"plate_havoc:game.start"}
+function plate_havoc:misc/game_events/run_type_clear {type:"plate_havoc:once"}
 
 scoreboard players operation #Max plate_havoc.timer = #Value plate_havoc.timer
 
