@@ -71,7 +71,7 @@
 
     "plate_havoc:difficulty.sunlight.name": "Солнечный свет",
     "plate_havoc:difficulty.sunlight.subtext": "Открытие странного мира",
-    "plate_havoc:difficulty.sunlight.description": "Проклятия каждые 2 цикла, в 1.5 раза больше циклатронов, более легкие и спокойные события, получение эксклюзивного улучшения.",
+    "plate_havoc:difficulty.sunlight.description": "в 1.5 раза больше циклатронов, более легкие и спокойные события, получение эксклюзивного улучшения.",
     "plate_havoc:difficulty.moonlight.name": "Лунный свет",
     "plate_havoc:difficulty.moonlight.subtext": "Без выхода",
     "plate_havoc:difficulty.moonlight.description": "Базовая сложность.",
@@ -652,6 +652,8 @@
     "plate_havoc_legacy_content:shared.win": "Победа!",
     
     "plate_havoc:tutorial.lang_check": "Language translations found!",
+    "plate_havoc:shared.Modifiers": "Modifiers",
+
 
     "plate_havoc_content:modifier.sniper_frenzy.name": "Sniper Frenzy",
     "plate_havoc_content:modifier.sniper_frenzy.description": "Motion Snipers will constantly target players.",

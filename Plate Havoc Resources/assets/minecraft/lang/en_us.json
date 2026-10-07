@@ -25,6 +25,7 @@
     "plate_havoc:shared.Seed": "Seed",
     "plate_havoc:shared.Run_ID": "Run ID",
     "plate_havoc:shared.Modifier": "Modifier",
+    "plate_havoc:shared.Modifiers": "Modifiers",
     "plate_havoc:shared.has_granted": "has granted",
     "plate_havoc:shared.has_given": "has given",
     "plate_havoc:shared.has_yielded": "has yielded",
@@ -79,7 +80,7 @@
 
     "plate_havoc:difficulty.sunlight.name": "Sunlight",
     "plate_havoc:difficulty.sunlight.subtext": "Discovering a strange world",
-    "plate_havoc:difficulty.sunlight.description": "Curses every 2 cycles, 1.5x Cyclathrons, Easier, chiller events, Get an exclusive upgrade.",
+    "plate_havoc:difficulty.sunlight.description": "1.5x Cyclathrons, Easier, chiller events, Get an exclusive upgrade.",
     "plate_havoc:difficulty.moonlight.name": "Moonlight",
     "plate_havoc:difficulty.moonlight.subtext": "With no way out",
     "plate_havoc:difficulty.moonlight.description": "The base difficulty.",

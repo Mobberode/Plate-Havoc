@@ -1,19 +1,14 @@
 data modify storage plate_havoc:data run_tags[{id:"plate_havoc:difficulty"}] merge value {value:"sunlight",snbt:{translate:"plate_havoc:difficulty.sunlight.name",fallback:"Sunlight",color:yellow}}
-data modify storage plate_havoc:cards match_types[{id:"plate_havoc_content:curse"}].requirements[{type:cycle}].value set value [2]
-
-data modify storage plate_havoc:temp id_attribute set value "plate_havoc:event.time"
-data modify storage plate_havoc:custom attribute_modifier set value {id:"plate_havoc_content:difficulty.sunlight",value:0.025,operation:"add_value"}
-function plate_havoc:misc/attributes/custom/add_modifier
 
 data modify storage plate_havoc:temp group_attribute set value "plate_havoc_content:sunlight.applicable"
-data modify storage plate_havoc:custom attribute_modifier set value {id:"plate_havoc_content:difficulty.sunlight",value:-0.15,operation:"add_multiplied_total"}
+data modify storage plate_havoc:custom attribute_modifier set value {id:"plate_havoc_content:difficulty.sunlight",value:-0.2,operation:"add_multiplied_total"}
 function plate_havoc:misc/attributes/custom/add_modifier_grouped
 
 data modify storage plate_havoc:temp id_attribute set value "plate_havoc:cyclathron_yield"
 data modify storage plate_havoc:custom attribute_modifier set value {id:"plate_havoc_content:difficulty.sunlight",value:0.5,operation:"add_multiplied_total"}
 function plate_havoc:misc/attributes/custom/add_modifier
 
-data modify storage plate_havoc:cards running.total prepend value {id:"plate_havoc_content:oak_effigy",count:1,max:1,duration:-1,functions:[{function:"plate_havoc_content:cards/oak_effigy/activate",type:"prevent_end"},{function:"plate_havoc_content:cards/oak_effigy/init",type:"plate_havoc_content:cycle.start"}],display:{text:"",extra:[{meta:name,translate:"plate_havoc_content:card.oak_effigy.name",fallback:"Oak Effigy",color:yellow}],hover_event:{action:show_text,value:["",{meta:name,translate:"plate_havoc_content:card.oak_effigy.name",fallback:"Oak Effigy",color:yellow},"\n",{meta:description,text:"",extra:[{translate:"plate_havoc_content:card.oak_effigy.description",fallback:"When all players are dead, end the current cycle and become consumed, usable once per run."}]}]}}}
+data modify storage plate_havoc:cards running.total prepend value {id:"plate_havoc_content:oak_effigy",count:1,max:1,duration:-1,functions:[{function:"plate_havoc_content:cards/oak_effigy/activate",type:"plate_havoc:game.prevent_end"},{function:"plate_havoc_content:cards/oak_effigy/init",type:"plate_havoc_content:cycle.start"}],display:{text:"",extra:[{meta:name,translate:"plate_havoc_content:card.oak_effigy.name",fallback:"Oak Effigy",color:yellow}],hover_event:{action:show_text,value:["",{meta:name,translate:"plate_havoc_content:card.oak_effigy.name",fallback:"Oak Effigy",color:yellow},"\n",{meta:description,text:"",extra:[{translate:"plate_havoc_content:card.oak_effigy.description",fallback:"When all players are dead, end the current cycle and become consumed, usable once per run."}]}]}}}
 
 ##Visual
 data modify storage plate_havoc:cards snbt set from storage plate_havoc:cards template.data.snbt

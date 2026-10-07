@@ -72,7 +72,7 @@
 
     "plate_havoc:difficulty.sunlight.name": "Сонячне світло",
     "plate_havoc:difficulty.sunlight.subtext": "Відкриття дивного світу",
-    "plate_havoc:difficulty.sunlight.description": "Прокляття кожні 2 цикли, 1.5x циклатронів, легші та спокійніші події, отримайте ексклюзивне покращення.",
+    "plate_havoc:difficulty.sunlight.description": "1.5x циклатронів, легші та спокійніші події, отримайте ексклюзивне покращення.",
     "plate_havoc:difficulty.moonlight.name": "Місячне світло",
     "plate_havoc:difficulty.moonlight.subtext": "Без виходу",
     "plate_havoc:difficulty.moonlight.description": "Базова складність.",
@@ -685,5 +685,7 @@
     "plate_havoc_content:modifier.fragile.description": "A shatter away.",
 
     "plate_havoc_content:modifier.relentless.name": "Relentless",
-    "plate_havoc_content:modifier.relentless.description": "Everything quakes violently."
+    "plate_havoc_content:modifier.relentless.description": "Everything quakes violently.",
+
+    "plate_havoc:shared.Modifiers": "Modifiers"
 }

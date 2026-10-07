@@ -60,7 +60,7 @@
     "plate_havoc:extensions": "扩展",
     "plate_havoc:difficulty.sunlight.name": "阳光",
     "plate_havoc:difficulty.sunlight.subtext": "发现一个陌生的世界",
-    "plate_havoc:difficulty.sunlight.description": "每 2 个循环一次诅咒，1.5 倍 Cyclathrons，更轻松、更温和的事件，获得一次专属升级。",
+    "plate_havoc:difficulty.sunlight.description": "1.5 倍 Cyclathrons，更轻松、更温和的事件，获得一次专属升级。",
     "plate_havoc:difficulty.moonlight.name": "月光",
     "plate_havoc:difficulty.moonlight.subtext": "无路可逃",
     "plate_havoc:difficulty.moonlight.description": "基础难度。",
@@ -504,5 +504,7 @@
     "plate_havoc_content:modifier.fragile.description": "A shatter away.",
 
     "plate_havoc_content:modifier.relentless.name": "Relentless",
-    "plate_havoc_content:modifier.relentless.description": "Everything quakes violently."
+    "plate_havoc_content:modifier.relentless.description": "Everything quakes violently.",
+  
+    "plate_havoc:shared.Modifiers": "Modifiers"
 }

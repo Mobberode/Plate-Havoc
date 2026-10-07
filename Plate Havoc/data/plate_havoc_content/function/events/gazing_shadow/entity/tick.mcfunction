@@ -7,7 +7,7 @@ execute if data storage plate_havoc:cards running.total[{id:"plate_havoc_content
 
 scoreboard players set #PHC.Gazing_Shadow.Seen plate_havoc.event 0
 scoreboard players set #PHC.Gazing_Shadow.Temp plate_havoc.temp 0
-execute as 00000000-0000-0005-0000-0001000007e9 facing entity @a[tag=plate_havoc.survivor] eyes run function plate_havoc_content:events/gazing_shadow/view/loop
+execute as 00000000-0000-0005-0000-0001000007e9 facing entity @a[tag=plate_havoc.survivor,predicate=!plate_havoc_content:has_invisibility] eyes run function plate_havoc_content:events/gazing_shadow/view/loop
 
 scoreboard players operation #Temp plate_havoc.players = #Current plate_havoc.players
 scoreboard players operation #Temp plate_havoc.players /= #2 plate_havoc.num

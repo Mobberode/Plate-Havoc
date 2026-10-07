@@ -28,8 +28,6 @@ function plate_havoc_content:gametypes/rogue/intermission
 
 function plate_havoc_content:gametypes/rogue/arena_visual
 
-execute if data storage plate_havoc:data {run_tags:["sunlight"]} if score #Value plate_havoc.round matches 15.. unless data storage plate_havoc:cards match_types[{id:"plate_havoc_content:curse"}].requirements[{type:cycle,value:[1]}] run data modify storage plate_havoc:cards match_types[{id:"plate_havoc_content:curse"}].requirements[{type:cycle}].value set value [1]
-
 execute in plate_havoc:arena run function plate_havoc:misc/world/apply_all
 
 function plate_havoc:misc/ui/bar_visuals/remove_tagged {tag:"plate_havoc_content:rogue.intermission_start"}
