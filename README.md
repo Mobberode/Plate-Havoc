@@ -26,6 +26,7 @@ Dying is to be expected. Unlock more and more content after each attempt for use
 Plate Havoc supports the following languages: Keep in mind Events are untranslatable at the moment.\
 - Simplified Chinese (by xinsu_wa)
 - Russian (by Reyn)
+- Ukrainian (by Reyn)
 
 ## Extensions
 Resource for players wanting to create custom content for Plate Havoc.\
