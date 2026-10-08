@@ -118,6 +118,9 @@ data modify storage plate_havoc:modifiers active set value []
 ##Cards
 data modify storage plate_havoc:cards active_data set value {}
 
+##Objectives
+data modify storage plate_havoc:data game.objectives set value {active:[{id:"plate_havoc_content:time",display:"Let the time expire!",functions:{init:"plate_havoc_content:objectives/time/init",loop:"plate_havoc_content:objectives/time/loop",completed:"plate_havoc_content:objectives/time/completed"},completed:false}],pool:{available:[],unavailable:[{id:"plate_havoc_content:rift",display:"Spark the rift.",requirements:{type:cycle,value:8}}]}}
+
 ##Global
 ##Score Reseter
 data modify storage plate_havoc:data score_reset set value ["plate_havoc.player.single_tick.damage.dealt"]

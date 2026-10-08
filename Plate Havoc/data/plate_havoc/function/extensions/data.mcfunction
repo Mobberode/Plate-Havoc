@@ -15,7 +15,6 @@ function plate_havoc:misc/game_events/run_type {type:"plate_havoc:cache"}
 
 data modify storage plate_havoc:cards temp set value {pool:[],process:{id:""}}
 data modify storage plate_havoc:cards temp.pool append from storage plate_havoc:data content.cards[{exclusive:{values:[{}]}}]
-data remove storage plate_havoc:cards temp.pool[{exclusive:{allow_one_ways:true}}]
 function plate_havoc:misc/cards/pool/exclusive/prevent_one_ways/init
 
 data modify storage plate_havoc:leaderboard eligble_gametypes set from storage plate_havoc:data content.gametypes
