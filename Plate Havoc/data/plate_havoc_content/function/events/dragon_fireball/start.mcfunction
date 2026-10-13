@@ -1,0 +1,8 @@
+#Data
+data modify storage plate_havoc:events active_data.shared.distance set from storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.dragon_fireball.distance"}].output
+data modify storage plate_havoc:events active_data.shared.speed set from storage plate_havoc:custom attributes[{id:"plate_havoc_content:event.dragon_fireball.speed"}].output
+
+function plate_havoc_content:events/dragon_fireball/run
+
+data modify storage plate_havoc:ui temp set value {message:{text:"A Dragon Fireball is landing.",color:red}}
+function plate_havoc:game/events/message/create_entry

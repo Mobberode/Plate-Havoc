@@ -3,7 +3,7 @@
     "title": "Plate Havoc Console",
     "columns": 1,
     "exit_action": {"label":"Back","action":{"type":"show_dialog","dialog":"plate_havoc:console"}},
-    "inputs": [{"key":"id","type":"text","label":"Modifier ID","max_length":128}],
+    "inputs": [{"key":"id","type":"text","label":"Modifier ID","max_length":128,"initial":"plate_havoc_content:"}],
     
     "actions": [
     {"label":"Force Modifier","action":{"type":"dynamic/run_command","template":"function plate_havoc:console/force_modifier {id:'$(id)'}"}}

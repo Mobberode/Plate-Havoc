@@ -1,10 +1,10 @@
 scoreboard players operation #dx distance = @s plate_havoc.x
 scoreboard players operation #dy distance = @s plate_havoc.y
 scoreboard players operation #dz distance = @s plate_havoc.z
-#PHC.BlackHole.Entity_Size plate_havoc.event
-scoreboard players operation #dx distance -= #PHC.BlackHole.X plate_havoc.temp
-scoreboard players operation #dy distance -= #PHC.BlackHole.Y plate_havoc.temp
-scoreboard players operation #dz distance -= #PHC.BlackHole.Z plate_havoc.temp
+#PHC.Black_Hole.Entity_Size plate_havoc.event
+scoreboard players operation #dx distance -= #PHC.Black_Hole.X plate_havoc.temp
+scoreboard players operation #dy distance -= #PHC.Black_Hole.Y plate_havoc.temp
+scoreboard players operation #dz distance -= #PHC.Black_Hole.Z plate_havoc.temp
 
 execute if score #dx distance matches ..-1 run scoreboard players operation #dx distance *= #-1 plate_havoc.num
 execute if score #dy distance matches ..-1 run scoreboard players operation #dy distance *= #-1 plate_havoc.num

@@ -1,7 +1,9 @@
 $execute unless data storage plate_havoc:data content.events[{id:'$(id)'}] run return fail
 
 data modify storage plate_havoc:events temp set value {}
-$data modify storage plate_havoc:events temp.function set from storage plate_havoc:data content.events[{id:'$(id)'}].data.global.function
+$data modify storage plate_havoc:events temp.temp.id set value '$(id)'
+data modify storage plate_havoc:events temp.temp.gametype set from storage plate_havoc:data gametype.id
+function plate_havoc:console/zzz/event_gametype_specific with storage plate_havoc:events temp.temp
 $data modify storage plate_havoc:events temp.count set value $(count)
 data modify storage plate_havoc:events running append from storage plate_havoc:events temp
 

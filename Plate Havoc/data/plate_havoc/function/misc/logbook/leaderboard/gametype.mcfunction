@@ -1,0 +1,2 @@
+data modify storage plate_havoc:leaderboard temp.gametype_visual.hover_event.value append value "\n"
+data modify storage plate_havoc:leaderboard temp.gametype_visual.hover_event.value append from storage plate_havoc:data gametype.description

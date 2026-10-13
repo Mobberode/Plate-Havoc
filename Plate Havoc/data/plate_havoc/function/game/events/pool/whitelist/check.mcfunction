@@ -1,0 +1,1 @@
+$execute unless data storage plate_havoc:temp temp.process{whitelist:['$(gametype)']} run data remove storage plate_havoc:events temp[{id:'$(id)'}]

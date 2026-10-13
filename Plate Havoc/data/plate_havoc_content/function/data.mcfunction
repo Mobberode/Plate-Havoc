@@ -22,9 +22,9 @@ data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.fire_rain.delay",values:{base:0.05},tags:["plate_havoc_content:slow_passing.applicable"]}
 ## fireballs (Distance in Blocks away from Target)
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.fireballs.distance",values:{base:125}}
-## dragonball (Distance in Blocks away from Target) (Speed (100 = 0.01))
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.dragonball.distance",values:{base:100}}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.dragonball.speed",values:{base:0.45},tags:["plate_havoc_content:enraged.aggressive","plate_havoc_content:life_harmony.applicable","plate_havoc_content:sunlight.applicable"]}
+## dragon_fireball (Distance in Blocks away from Target) (Speed (100 = 0.01))
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.dragon_fireball.distance",values:{base:100}}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.dragon_fireball.speed",values:{base:0.45},tags:["plate_havoc_content:enraged.aggressive","plate_havoc_content:life_harmony.applicable","plate_havoc_content:sunlight.applicable"]}
 ## buff_shield (Max Durability)
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.buff_shield.max_durability",values:{base:0.032},tags:["plate_havoc_content:boxless_desires.applicable"]}
 ## buff_pearl (Amount)
@@ -52,12 +52,12 @@ data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.jump_cooldown.duration",values:{base:0.3},tags:["plate_havoc_content:enraged.shorter"]}
 ## anvil (Distance (in blocks))
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.anvil.distance",values:{base:75}}
-## blackhole (Duration) (Duration Extension) (Base Size) (Growth Limit) (Speed)
+## black_hole (Duration) (Duration Extension) (Base Size) (Growth Limit) (Speed)
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.black_hole.duration",values:{base:0.75},tags:["plate_havoc_content:slow_passing.applicable","plate_havoc_content:enraged.shorter","plate_havoc_content:netherite_clock.applicable","plate_havoc_content:sunlight.applicable"]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.black_hole.duration.extend",values:{base:0.25},tags:["plate_havoc_content:slow_passing.applicable","plate_havoc_content:netherite_clock.applicable"]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.black_hole.base_size",values:{base:0.115},tags:["plate_havoc_content:enraged.aggressive","plate_havoc_content:life_harmony.applicable"]}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.black_hole.max_size",values:{base:0.2},tags:["plate_havoc_content:enraged.aggressive"],update:[{type:score,value:"#PHC.BlackHole.Size_Limit plate_havoc.event"}]}
-data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.black_hole.growth_limit",values:{base:0.005},update:[{type:score,value:"#PHC.BlackHole.Growth_Limit plate_havoc.event"}]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.black_hole.max_size",values:{base:0.2},tags:["plate_havoc_content:enraged.aggressive"],update:[{type:score,value:"#PHC.Black_Hole.Size_Limit plate_havoc.event"}]}
+data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.black_hole.growth_limit",values:{base:0.005},update:[{type:score,value:"#PHC.Black_Hole.Growth_Limit plate_havoc.event"}]}
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.black_hole.speed",values:{base:0.0675},update:[{type:storage,value:"plate_havoc:events active_data.plate_havoc_content.black_hole.speed"}]}
 ## soulsand (Amount of blocks to corrupt)
 data modify storage plate_havoc:custom attributes append value {id:"plate_havoc_content:event.soul_sand.spread",values:{base:0.012}}

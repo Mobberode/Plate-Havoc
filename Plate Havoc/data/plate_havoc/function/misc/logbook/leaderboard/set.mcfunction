@@ -5,6 +5,16 @@ data modify storage plate_havoc:leaderboard temp set value {data:{players:[]},vi
 execute store result score #ResultEntries plate_havoc.num if data storage plate_havoc:leaderboard results[]
 execute store result storage plate_havoc:leaderboard temp.entry int 1 run scoreboard players add #ResultEntries plate_havoc.num 1
 data modify storage plate_havoc:leaderboard temp.gametype set from storage plate_havoc:data gametype.id
+#
+data modify storage plate_havoc:leaderboard temp.gametype_visual set value {hover_event:{action:show_text,value:[""]}}
+data modify storage plate_havoc:leaderboard temp.gametype_visual merge from storage plate_havoc:data gametype.name
+data modify storage plate_havoc:leaderboard temp.gametype_visual.hover_event.value append from storage plate_havoc:data gametype.name
+
+execute unless data storage plate_havoc:data gametype.name run data modify storage plate_havoc:leaderboard temp.gametype_visual.text set from storage plate_havoc:data gametype.id
+execute if data storage plate_havoc:data gametype.name run data modify storage plate_havoc:leaderboard temp.gametype_visual.hover_event.value append value " "
+data modify storage plate_havoc:leaderboard temp.gametype_visual.hover_event.value append from storage plate_havoc:data gametype.id
+
+execute if data storage plate_havoc:data gametype.description run function plate_havoc:misc/logbook/leaderboard/gametype
 
 ##Data
 function plate_havoc:misc/logbook/leaderboard/data

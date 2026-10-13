@@ -1,1 +1,0 @@
-$data remove storage plate_havoc:events temp[{exclude:["$(id)"]}]

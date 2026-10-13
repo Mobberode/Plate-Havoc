@@ -1,5 +1,7 @@
 execute store result score #Temp plate_havoc.num run data get storage plate_havoc:custom attributes[{id:"plate_havoc:intensity.gain"}].output 1000
 scoreboard players operation #Value plate_havoc.intensity += #Temp plate_havoc.num
+scoreboard players operation #Total plate_havoc.intensity += #Temp plate_havoc.num
+
 #Cap
 execute if score #Value plate_havoc.intensity matches 1024001.. run scoreboard players set #Value plate_havoc.intensity 1024000
 

@@ -1,4 +1,4 @@
-scoreboard players operation #PHC.BlackHole.Duration plate_havoc.event *= #MaxRunCount plate_havoc.num
+scoreboard players operation #PHC.Black_Hole.Duration plate_havoc.event *= #MaxRunCount plate_havoc.num
 
 function plate_havoc:game/events/placements/avoid_player/init
 

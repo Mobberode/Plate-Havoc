@@ -5,7 +5,7 @@ data modify storage plate_havoc_content:temp data set value [\
 \
 {id:"plate_havoc_content:gigantism",name:{translate:"plate_havoc_content:modifier.gigantism.name",fallback:"Gigantism",color:red},description:{translate:"plate_havoc_content:modifier.gigantism.description",fallback:"I can hold 4 water bottles!"},behaviours:[{type:"plate_havoc:player.setup",function:"plate_havoc_content:modifiers/gigantism/set"}]},\
 \
-{id:"plate_havoc_content:immortal_blackhole",name:{translate:"plate_havoc_content:modifier.immortal_blackhole.name",fallback:"Immortal Blackhole Frenzy",color:gray},description:{translate:"plate_havoc_content:modifier.immortal_blackhole.description",fallback:"It cannot be escaped."},behaviours:[{type:"plate_havoc:game.start",function:"plate_havoc_content:modifiers/immortal_blackhole/start"}]},\
+{id:"plate_havoc_content:immortal_black_hole",name:{translate:"plate_havoc_content:modifier.immortal_black_hole.name",fallback:"Immortal Black Hole Frenzy",color:gray},description:{translate:"plate_havoc_content:modifier.immortal_black_hole.description",fallback:"It cannot be escaped."},behaviours:[{type:"plate_havoc:game.start",function:"plate_havoc_content:modifiers/immortal_black_hole/start"}]},\
 \
 {id:"plate_havoc_content:creaking_forest",name:{translate:"plate_havoc_content:modifier.creaking_forest.name",fallback:"Creaking Forest",color:gray},description:{translate:"plate_havoc_content:modifier.creaking_forest.description",fallback:"2 pairs of eyes are always better than a pair."},behaviours:[{type:"plate_havoc:once",function:"plate_havoc_content:modifiers/creaking_forest/start"},{type:"plate_havoc:game.loop",function:"plate_havoc_content:modifiers/creaking_forest/loop"}]},\
 \

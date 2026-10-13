@@ -672,8 +672,8 @@
     "plate_havoc_content:modifier.gigantism.name": "Gigantism",
     "plate_havoc_content:modifier.gigantism.description": "I can hold 4 water bottles!",
 
-    "plate_havoc_content:modifier.immortal_blackhole.name": "Immortal Blackhole",
-    "plate_havoc_content:modifier.immortal_blackhole.description": "It cannot be escaped.",
+    "plate_havoc_content:modifier.immortal_black_hole.name": "Immortal Black Hole",
+    "plate_havoc_content:modifier.immortal_black_hole.description": "It cannot be escaped.",
 
     "plate_havoc_content:modifier.creaking_forest.name": "Creaking Forest",
     "plate_havoc_content:modifier.creaking_forest.description": "2 pairs of eyes are always better than a pair.",
@@ -687,5 +687,7 @@
     "plate_havoc_content:modifier.relentless.name": "Relentless",
     "plate_havoc_content:modifier.relentless.description": "Everything quakes violently.",
 
-    "plate_havoc:shared.Modifiers": "Modifiers"
+    "plate_havoc:shared.Modifiers": "Modifiers",
+
+    "plate_havoc_content:leaderboard.intensity_total": "Total Intensity"
 }

@@ -1,5 +1,5 @@
 data modify storage plate_havoc:leaderboard temp.interactable.extra[{meta:entry}].text set string storage plate_havoc:leaderboard temp.entry
-data modify storage plate_havoc:leaderboard temp.interactable.extra[{meta:gametype}].text set from storage plate_havoc:leaderboard temp.gametype
+data modify storage plate_havoc:leaderboard temp.interactable.extra[{meta:gametype}] merge from storage plate_havoc:leaderboard temp.gametype_visual
 data modify storage plate_havoc:leaderboard temp.interactable.extra[{meta:status}].extra append from storage plate_havoc:leaderboard temp.data.status
 
 $data modify storage plate_havoc:leaderboard temp.interactable.extra[{meta:sort_type}].text set string storage plate_havoc:leaderboard temp.data.$(sort_type)

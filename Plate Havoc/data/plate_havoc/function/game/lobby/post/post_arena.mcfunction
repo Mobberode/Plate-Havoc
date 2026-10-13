@@ -28,6 +28,7 @@ scoreboard players reset * plate_havoc.stat
 scoreboard players set #Active plate_havoc.status 1
 scoreboard players set #Playing plate_havoc.status 1
 scoreboard players set #Game plate_havoc.status 2
+scoreboard players operation #Total plate_havoc.intensity = #Value plate_havoc.intensity
 
 data modify storage plate_havoc:custom attributes[].refresh set value true
 function plate_havoc:misc/attributes/custom/update_global

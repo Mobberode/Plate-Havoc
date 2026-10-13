@@ -1,7 +1,9 @@
 scoreboard players operation #EventNotify.Current plate_havoc.num = #EventNotify plate_havoc.num
 execute unless data storage plate_havoc:events running[] run data modify storage plate_havoc:events running set value []
 
-execute unless score #Value plate_havoc.intensity < #Event.Pool_Intensity_Update plate_havoc.intensity run function plate_havoc:game/events/pool/match/init
+execute unless score #Total plate_havoc.intensity < #Event.Pool_Intensity_Update plate_havoc.intensity run function plate_havoc:game/events/pool/match/init
 
 function plate_havoc:game/events/start
 function plate_havoc:misc/game_events/run_type {type:"plate_havoc:action"}
+
+execute as @a at @s run playsound block.bell.use ui @s ~ ~ ~ 0.33 1.75 1

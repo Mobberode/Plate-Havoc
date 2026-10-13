@@ -11,8 +11,9 @@ execute unless score #Requirements.Needed plate_havoc.temp matches 1.. run retur
 
 ##Types
 scoreboard players set #Requirements.Passed plate_havoc.temp 0
-execute if data storage plate_havoc:data game.requirements.input{type:multiple_of} run function plate_havoc:misc/requirements/multiple_of
-execute if data storage plate_havoc:data game.requirements.input{type:any_of} run scoreboard players set #Requirements.Needed plate_havoc.temp 1
+
+execute if data storage plate_havoc:data game.requirements.input.original{type:multiple_of} run function plate_havoc:misc/requirements/multiple_of
+execute if data storage plate_havoc:data game.requirements.input.original{type:any_of} run scoreboard players set #Requirements.Needed plate_havoc.temp 1
 
 ##Check
 scoreboard players set #Requirements.Successful plate_havoc.temp 0
